@@ -1,0 +1,25 @@
+# HAX art
+
+> Artwork for HAX (https://haxtheweb.org), open-source tools for creating, remixing and publishing web content without needing to understand the web. The mascot is the World Traveler: a red-helmeted time traveler in steampunk goggles who carries the best ideas of every era into the future. Tagline: "Dream it, remix it, have it, share it."
+
+Most variants are AI-generated remixes of the original human-made character; several parody other works and need review before official promotion. Attribution: HAX (haxtheweb), https://github.com/haxtheweb/art. Never rename or delete files: external sites hotlink them.
+
+## Start here
+- [AGENTS.md](https://github.com/haxtheweb/art/blob/main/AGENTS.md): repo map, usage guidance, contribution rules
+- [manifest.json](https://raw.githubusercontent.com/haxtheweb/art/main/manifest.json): catalog of all 36 World Traveler images with alt text, style tags, setting, third-party flags
+- [World Traveler story and character sheet](https://github.com/haxtheweb/art/blob/main/world-traveler/README.md)
+- [Contact sheet of all variants](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/contact-sheet.jpg)
+
+## Key images
+- [Default mascot (classic burst)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png)
+- [Helmet icon](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-17.jpeg)
+- [Primary logo (SVG)](https://raw.githubusercontent.com/haxtheweb/art/main/HAXLogo.svg)
+- [8-bit RPG dungeon](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png)
+- [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png)
+
+## Policy
+- [LICENSING.md](https://github.com/haxtheweb/art/blob/main/LICENSING.md): proposed CC BY 4.0 for HAX-original art; third-party parodies excluded
+
+## Optional
+- [HAX project](https://haxtheweb.org)
+- [HAX on GitHub](https://github.com/haxtheweb)
