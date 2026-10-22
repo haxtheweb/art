@@ -1,0 +1,785 @@
+{
+  "name": "haxtheweb/art",
+  "description": "Artwork for HAX (haxtheweb.org). The World Traveler is HAX's mascot: a red-helmeted time traveler in steampunk goggles who carries the best ideas of every era into the future.",
+  "license_status": "proposed CC BY 4.0 for artwork (see LICENSING.md); repo LICENSE file is still Apache-2.0",
+  "attribution": "HAX (haxtheweb) - https://github.com/haxtheweb/art",
+  "character": {
+    "name": "World Traveler",
+    "aliases": [
+      "World Changer",
+      "Future Traveler"
+    ],
+    "tagline": "Dream it, remix it, have it, share it."
+  },
+  "contact_sheet": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/contact-sheet.jpg",
+  "world_traveler_count": 36,
+  "world_traveler": [
+    {
+      "id": "world-traveler-01",
+      "file": "world-traveler/funny-traveler-01.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg",
+      "title": "Android portrait",
+      "alt": "Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead.",
+      "role": "portrait",
+      "styles": [
+        "flat-vector",
+        "portrait",
+        "robot"
+      ],
+      "setting": "future",
+      "width": 1024,
+      "height": 1029,
+      "bytes": 418835,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-02",
+      "file": "world-traveler/funny-traveler-02.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png",
+      "title": "Glitch double-exposure badge",
+      "alt": "Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "glitch",
+        "cartoon"
+      ],
+      "setting": "digital",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1692171,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-03",
+      "file": "world-traveler/funny-traveler-03.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png",
+      "title": "Egyptian wall",
+      "alt": "The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight beam, with a second figure at lower right.",
+      "role": "time-travel",
+      "styles": [
+        "painting",
+        "hieroglyphs",
+        "time-travel"
+      ],
+      "setting": "ancient-egypt",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1338085,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Shows the 'takes the best ideas from every era' theme."
+    },
+    {
+      "id": "world-traveler-04",
+      "file": "world-traveler/funny-traveler-04.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-04.png",
+      "title": "Wide-eyed panic",
+      "alt": "Starburst badge: the traveler with wide eyes and gritted teeth behind cyan goggles.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "cartoon",
+        "expression"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1055380,
+      "canon": true,
+      "third_party_reference": "Cartoon style resembles a popular animated series (unconfirmed)",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-05",
+      "file": "world-traveler/funny-traveler-05.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-05.png",
+      "title": "This is fine",
+      "alt": "The traveler sits calmly on a stool in a burning living room, lightbulb glowing.",
+      "role": "meme",
+      "styles": [
+        "scene",
+        "meme",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1335089,
+      "canon": true,
+      "third_party_reference": "Reproduces a well-known 'this is fine' meme composition",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-06",
+      "file": "world-traveler/funny-traveler-06.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg",
+      "title": "Helmet icon (checkerboard)",
+      "alt": "Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background.",
+      "role": "icon",
+      "styles": [
+        "icon",
+        "flat-vector"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1780640,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "JPEG cannot be transparent: the checkerboard is baked into the pixels. Prefer 17/20 or the SVG logo for clean use."
+    },
+    {
+      "id": "world-traveler-07",
+      "file": "world-traveler/funny-traveler-07.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-07.png",
+      "title": "Tiger in a HAX hoodie",
+      "alt": "Line-art tiger wearing goggles, a red HAX hoodie and a green backpack with a lightbulb, standing in a child's bedroom.",
+      "role": "character-swap",
+      "styles": [
+        "line-art",
+        "character-swap",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1458829,
+      "canon": true,
+      "third_party_reference": "Evokes a famous comic-strip tiger (unconfirmed)",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-08",
+      "file": "world-traveler/funny-traveler-08.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png",
+      "title": "Cyberpunk traveler",
+      "alt": "A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back.",
+      "role": "scene",
+      "styles": [
+        "photoreal",
+        "cyberpunk",
+        "human"
+      ],
+      "setting": "future",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1603680,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Closest to 'sees the future' framing."
+    },
+    {
+      "id": "world-traveler-09",
+      "file": "world-traveler/funny-traveler-09.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg",
+      "title": "Green helmet portrait",
+      "alt": "Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray.",
+      "role": "icon",
+      "styles": [
+        "icon",
+        "portrait",
+        "color-variant"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 644473,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Green colorway."
+    },
+    {
+      "id": "world-traveler-10",
+      "file": "world-traveler/funny-traveler-10.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-10.png",
+      "title": "Yellow-burst cartoon",
+      "alt": "Starburst badge with a yellow-skinned cartoon traveler wearing round glasses under the HAX helmet.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "cartoon",
+        "parody"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1607349,
+      "canon": true,
+      "third_party_reference": "Style parodies a long-running animated sitcom",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-11",
+      "file": "world-traveler/funny-traveler-11.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-11.jpeg",
+      "title": "Foil balloon",
+      "alt": "A silver star-shaped foil balloon printed with the helmeted traveler on a black background.",
+      "role": "merch",
+      "styles": [
+        "product-mockup",
+        "3d",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 609653,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-12",
+      "file": "world-traveler/funny-traveler-12.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-12.png",
+      "title": "Paper-cut collage",
+      "alt": "Torn-paper collage of the traveler resting his chin on his arm, red and white paper burst behind, yellow lightbulb.",
+      "role": "badge",
+      "styles": [
+        "paper-craft",
+        "collage",
+        "starburst-badge"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1465403,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-13",
+      "file": "world-traveler/funny-traveler-13.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-13.png",
+      "title": "Hoodie kid, tan burst",
+      "alt": "Traveler in a red HAX hoodie with goggles and green backpack, hands on a desk, tan and orange starburst.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "flat-vector",
+        "sketch"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 923154,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-14",
+      "file": "world-traveler/funny-traveler-14.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-14.png",
+      "title": "Lava of Deployment",
+      "alt": "A cloaked traveler with backpack holds a glowing bulb at the rim of a volcano; title text 'Mountain of Lava' and 'Lava of Deployement' (sic).",
+      "role": "poster",
+      "styles": [
+        "poster",
+        "fantasy",
+        "devops-humor"
+      ],
+      "setting": "mythic",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1453046,
+      "canon": true,
+      "third_party_reference": "Riffs on a famous fantasy volcano setting",
+      "reuse": "homage-review-before-promoting",
+      "notes": "Image text contains the typo 'Deployement'."
+    },
+    {
+      "id": "world-traveler-15",
+      "file": "world-traveler/funny-traveler-15.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+      "title": "Classic burst",
+      "alt": "The baseline look: red helmet with HAX band, cyan goggles, green backpack with lightbulb, chin on arms, white starburst in a red circle.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "flat-vector"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 939909,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Good reference for the 'standard' on-model look."
+    },
+    {
+      "id": "world-traveler-16",
+      "file": "world-traveler/funny-traveler-16.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-16.png",
+      "title": "The Cheat, HAX-ified",
+      "alt": "A yellow round creature in sunglasses wearing a red HAX hoodie and green backpack with a lightbulb; caption 'New Character: The Cheat (HAX-ified!)'.",
+      "role": "character-swap",
+      "styles": [
+        "character-swap",
+        "sticker",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 735188,
+      "canon": true,
+      "third_party_reference": "Reskins a web-cartoon character",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-17",
+      "file": "world-traveler/funny-traveler-17.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-17.jpeg",
+      "title": "Helmet icon, light gray",
+      "alt": "Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray.",
+      "role": "icon",
+      "styles": [
+        "icon",
+        "flat-vector"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1190192,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Near-duplicate of 20."
+    },
+    {
+      "id": "world-traveler-18",
+      "file": "world-traveler/funny-traveler-18.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-18.png",
+      "title": "Halloween",
+      "alt": "The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins.",
+      "role": "seasonal",
+      "styles": [
+        "scene",
+        "gothic",
+        "seasonal"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1391964,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-19",
+      "file": "world-traveler/funny-traveler-19.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png",
+      "title": "8-bit RPG dungeon",
+      "alt": "Pixel-art traveler in a torch-lit stone dungeon with a status plate reading 'WORLD TRAVELER, HP 100/100, MP 50/100'.",
+      "role": "rpg",
+      "styles": [
+        "pixel-art",
+        "rpg",
+        "game"
+      ],
+      "setting": "medieval-8bit",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1472290,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Links the traveler to the rpg-character lineage."
+    },
+    {
+      "id": "world-traveler-20",
+      "file": "world-traveler/funny-traveler-20.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg",
+      "title": "Helmet icon, light gray (alt)",
+      "alt": "Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray.",
+      "role": "icon",
+      "styles": [
+        "icon",
+        "flat-vector"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1362856,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Near-duplicate of 17."
+    },
+    {
+      "id": "world-traveler-21",
+      "file": "world-traveler/funny-traveler-21.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-21.png",
+      "title": "Trading card",
+      "alt": "A collectible trading card titled WORLD TRAVELER with attacks BIT HACK and HESG and flavor text about manipulating data streams.",
+      "role": "card",
+      "styles": [
+        "trading-card",
+        "game",
+        "humor"
+      ],
+      "setting": "fantasy",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1649500,
+      "canon": true,
+      "third_party_reference": "Imitates a well-known trading-card layout",
+      "reuse": "homage-review-before-promoting",
+      "notes": "Card contains small, partly illegible text."
+    },
+    {
+      "id": "world-traveler-22",
+      "file": "world-traveler/funny-traveler-22.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg",
+      "title": "Pixel helmet face",
+      "alt": "Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below.",
+      "role": "icon",
+      "styles": [
+        "pixel-art",
+        "8-bit",
+        "icon"
+      ],
+      "setting": "retro",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 855389,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "8-bit form."
+    },
+    {
+      "id": "world-traveler-23",
+      "file": "world-traveler/funny-traveler-23.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-23.png",
+      "title": "Toy-brick world",
+      "alt": "A blocky toy-style figure in a red HAX hoodie and goggles with a lightbulb on an antenna, standing on green studs under blue sky.",
+      "role": "scene",
+      "styles": [
+        "3d",
+        "blocky",
+        "game"
+      ],
+      "setting": "game-world",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 964598,
+      "canon": true,
+      "third_party_reference": "Blocky style resembles popular toy-brick and sandbox-game aesthetics",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-24",
+      "file": "world-traveler/funny-traveler-24.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-24.jpeg",
+      "title": "Classic burst, face hidden",
+      "alt": "Flat-vector starburst badge: helmet, goggles and backpack with the face hidden behind folded arms.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "flat-vector"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 423882,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-25",
+      "file": "world-traveler/funny-traveler-25.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-25.jpeg",
+      "title": "Helmet portrait, cyan goggles",
+      "alt": "Red helmet with HAX band, glowing cyan goggles and a lightbulb on top, calm human face below, on light gray.",
+      "role": "icon",
+      "styles": [
+        "icon",
+        "portrait"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 694227,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-26",
+      "file": "world-traveler/funny-traveler-26.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-26.png",
+      "title": "Web, Web everywhere",
+      "alt": "Single-panel ink comic: the traveler crawls across a beach of sandcastles; caption 'Web, Web everywhere, but not a drop to drink.'",
+      "role": "comic",
+      "styles": [
+        "comic",
+        "single-panel",
+        "humor",
+        "web-metaphor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1694911,
+      "canon": true,
+      "third_party_reference": "Imitates a single-panel newspaper cartoonist's style and includes a visible artist-style signature",
+      "reuse": "homage-review-before-promoting",
+      "notes": "Highest reuse-risk image: do not promote as original HAX art without review."
+    },
+    {
+      "id": "world-traveler-27",
+      "file": "world-traveler/funny-traveler-27.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-27.png",
+      "title": "Layered papercraft",
+      "alt": "Layered cut-paper version of the traveler with soft shadows under a white and red burst.",
+      "role": "badge",
+      "styles": [
+        "paper-craft",
+        "3d",
+        "starburst-badge"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1378054,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-28",
+      "file": "world-traveler/funny-traveler-28.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png",
+      "title": "Toy-room 3D",
+      "alt": "A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks.",
+      "role": "scene",
+      "styles": [
+        "3d",
+        "render",
+        "character"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1160913,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-29",
+      "file": "world-traveler/funny-traveler-29.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png",
+      "title": "The ocean is rising",
+      "alt": "Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption 'The ocean is rising.'",
+      "role": "comic",
+      "styles": [
+        "engraving",
+        "comic",
+        "web-metaphor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1738282,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Supports the 'data flows like water' idea."
+    },
+    {
+      "id": "world-traveler-30",
+      "file": "world-traveler/funny-traveler-30.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.jpeg",
+      "title": "Sticker badge",
+      "alt": "Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb.",
+      "role": "sticker",
+      "styles": [
+        "sticker",
+        "flat-vector",
+        "color-variant"
+      ],
+      "setting": "brand",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 371906,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-31",
+      "file": "world-traveler/funny-traveler-31.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-31.jpeg",
+      "title": "Pixel helmet, detailed",
+      "alt": "Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face.",
+      "role": "icon",
+      "styles": [
+        "pixel-art",
+        "16-bit",
+        "icon"
+      ],
+      "setting": "retro",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 840861,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "More detailed than 22."
+    },
+    {
+      "id": "world-traveler-32",
+      "file": "world-traveler/funny-traveler-32.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-32.png",
+      "title": "Blue soda bottle",
+      "alt": "A glass bottle of blue soda in a park, its label showing the starburst traveler.",
+      "role": "merch",
+      "styles": [
+        "product-mockup",
+        "merch",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1307388,
+      "canon": true,
+      "third_party_reference": "Uses an existing beverage brand's label layout and name",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-33",
+      "file": "world-traveler/funny-traveler-33.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-33.png",
+      "title": "He's on fire",
+      "alt": "The traveler dunks a basketball with flaming arms under the caption 'HE'S ON FIRE!'; scoreboard counts commits, pushes, merges, repos and builds.",
+      "role": "game",
+      "styles": [
+        "game",
+        "sports",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1748969,
+      "canon": true,
+      "third_party_reference": "Parodies an arcade basketball game's announcer and scoreboard",
+      "reuse": "homage-review-before-promoting",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-34",
+      "file": "world-traveler/funny-traveler-34.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-34.png",
+      "title": "I my tummy hurts",
+      "alt": "Crayon-style drawing of the traveler looking distressed with the caption 'I MY TUMMY HURTS'.",
+      "role": "humor",
+      "styles": [
+        "crayon",
+        "child-drawing",
+        "humor"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1454845,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": "Intentionally naive style."
+    },
+    {
+      "id": "world-traveler-35",
+      "file": "world-traveler/funny-traveler-35.jpeg",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-35.jpeg",
+      "title": "Pixel helmet, green goggles",
+      "alt": "Pixel-art orange helmet with HAX band and dark green goggles with cyan lenses, a lightbulb on top.",
+      "role": "icon",
+      "styles": [
+        "pixel-art",
+        "8-bit",
+        "icon",
+        "color-variant"
+      ],
+      "setting": "retro",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 917840,
+      "canon": true,
+      "third_party_reference": null,
+      "reuse": "hax-original-or-unreviewed",
+      "notes": ""
+    },
+    {
+      "id": "world-traveler-36",
+      "file": "world-traveler/funny-traveler-36.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-36.png",
+      "title": "Yellow-burst cartoon (2)",
+      "alt": "Starburst badge with a yellow-skinned cartoon traveler with wide eyes and a smile under the HAX helmet.",
+      "role": "badge",
+      "styles": [
+        "starburst-badge",
+        "cartoon",
+        "parody"
+      ],
+      "setting": "present",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 890828,
+      "canon": true,
+      "third_party_reference": "Style parodies a long-running animated sitcom",
+      "reuse": "homage-review-before-promoting",
+      "notes": "Maintainer said this one can be ignored or removed."
+    }
+  ],
+  "other_groups": [
+    {
+      "path": "haxtheweb/",
+      "description": "HAX brand assets: logos (SVG/AI/PSD), stickers, banners and thumbnails, the EdTech Joker / DedSec animated GIF series, how-to and 'creating web components' graphics. Not individually cataloged yet.",
+      "contains_world_traveler": "hax-traveler-world-changer.jpg"
+    },
+    {
+      "path": "presentation-materials/",
+      "description": "Diagrams for talks: HAX history, a legend, and the class-club-lab pipeline. Not individually cataloged yet."
+    },
+    {
+      "path": "HAXLogo.svg",
+      "description": "Primary HAX logo (vector). Also at haxtheweb/HAXlogo.svg."
+    }
+  ]
+}
