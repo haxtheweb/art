@@ -22,7 +22,7 @@ const slides = [
 ];
 // slide 1: the whole animation as an embedded video, poster frame = title scene
 const v = pres.addSlide();
-v.addMedia({ type: 'video', path: path.join(__dirname, '..', 'media', 'hax-in-a-minute.mp4'), cover: S('01-what-is-hax.png'), x: 0, y: 0, w: 10, h: 5.625 });
+v.addMedia({ type: 'video', path: path.join(__dirname, '..', 'media', 'hax-in-a-minute.mp4'), cover: 'data:image/png;base64,' + require('fs').readFileSync(S('01-what-is-hax.png')).toString('base64'), x: 0, y: 0, w: 10, h: 5.625 });
 v.addNotes('Play the video (about a minute). The following slides are the end frame of each scene, for talking through at your own pace.\n\n' + slides.map(s => s[2]).join('\n\n'));
 slides.forEach(([file, alt, notes]) => {
   const s = pres.addSlide();
