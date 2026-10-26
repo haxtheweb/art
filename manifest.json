@@ -778,6 +778,18 @@
       "description": "Diagrams for talks: HAX history, a legend, and the class-club-lab pipeline. Not individually cataloged yet."
     },
     {
+      "path": "presentation-materials/hax-in-a-minute/",
+      "description": "'HAX in under a minute' whiteboard-doodle explainer (DDD-styled, rpg-character cast incl. the zpg zombie pirate girl): interactive index.html plus MP4, GIFs (full and seamless lift-off loop), PPTX and light/dark PNG stills, with the render tools. AI-assisted (Claude) under HAX team direction.",
+      "files": [
+        "index.html",
+        "media/hax-in-a-minute.mp4",
+        "media/hax-in-a-minute.gif",
+        "media/hax-lift-off-loop.gif",
+        "media/hax-in-a-minute.pptx",
+        "media/stills/"
+      ]
+    },
+    {
       "path": "HAXLogo.svg",
       "description": "Primary HAX logo (vector). Also at haxtheweb/HAXlogo.svg."
     }

@@ -1,0 +1,20 @@
+{
+  "name": "hax-in-a-minute-tools",
+  "private": true,
+  "description": "Render the HAX in a minute doodle board to MP4, GIF, PNG stills and PPTX",
+  "license": "Apache-2.0",
+  "scripts": {
+    "stills": "node render.js stills ../media/stills '{\"names\":\"[\\\"what-is-hax\\\",\\\"ecosystem\\\",\\\"magic-script\\\",\\\"pillars\\\",\\\"lift-off\\\"]\"}' && node render.js stills ../media/stills '{\"scheme\":\"dark\",\"suffix\":\"-dark\",\"names\":\"[\\\"what-is-hax\\\",\\\"ecosystem\\\",\\\"magic-script\\\",\\\"pillars\\\",\\\"lift-off\\\"]\"}'",
+    "mp4": "node render.js video ../media/hax-in-a-minute.mp4 '{\"fps\":30,\"tail\":6,\"ff\":[\"-c:v\",\"libx264\",\"-preset\",\"veryfast\",\"-crf\",\"20\",\"-pix_fmt\",\"yuv420p\",\"-movflags\",\"+faststart\"]}'",
+    "gif": "sh gif.sh",
+    "pptx": "node deck.js",
+    "all": "npm run stills && npm run mp4 && npm run gif && npm run pptx"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.0.0",
+    "@fontsource/roboto-condensed": "^5.0.0",
+    "@fontsource/roboto-slab": "^5.0.0",
+    "playwright": "^1.40.0",
+    "pptxgenjs": "^3.12.0"
+  }
+}

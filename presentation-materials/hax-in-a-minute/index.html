@@ -1,0 +1,776 @@
+<title>HAX Doodle Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A one-minute doodle tour of HAX: what it is, why the ecosystem is powerful, the seven pillars, and what you will launch.">
+<meta property="og:title" content="HAX in under a minute">
+<meta property="og:description" content="What HAX is, why it scales, the seven pillars, and what you will launch. Our pillars are your engines of change!">
+<meta property="og:type" content="video.other">
+<meta property="og:image" content="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png">
+<meta property="og:video" content="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/hax-in-a-minute.mp4">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@700;900&display=swap">
+<style>
+/* Layout: one 16:9 board in a DDD card frame; a navy gradient caption band (DDD navBar) runs along its foot.
+   Colours, type, radii, borders and focus follow the DDD design system; drawn marks use its base palette. */
+:root {
+  /* DDD base palette */
+  --ddd-theme-default-nittanyNavy: #001e44;
+  --ddd-theme-default-beaverBlue: #1e407c;
+  --ddd-theme-default-potentialMidnight: #000321;
+  --ddd-theme-default-coalyGray: #262626;
+  --ddd-theme-default-slateGray: #314d64;
+  --ddd-theme-default-limestoneGray: #a2aaad;
+  --ddd-theme-default-limestoneLight: #e4e5e7;
+  --ddd-theme-default-limestoneMaxLight: #f2f2f4;
+  --ddd-theme-default-white: #ffffff;
+  --ddd-theme-default-pughBlue: #96bee6;
+  --ddd-theme-default-skyBlue: #009cde;
+  --ddd-theme-default-link: #005fa9;
+  --ddd-theme-default-linkLight: #cce9ff;
+  --ddd-theme-default-keystoneYellow: #ffd100;
+  --ddd-theme-default-inventOrange: #e98300;
+  --ddd-theme-default-futureLime: #99cc00;
+  --ddd-theme-default-opportunityGreen: #008755;
+  --ddd-theme-default-discoveryCoral: #f2665e;
+  --ddd-theme-default-original87Pink: #bc204b;
+  --ddd-theme-default-wonderPurple: #491d70;
+  --ddd-theme-default-athertonViolet: #ac8dce;
+  --ddd-font-primary: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  --ddd-font-secondary: "Roboto Slab", serif;
+  --ddd-font-navigation: "Roboto Condensed", sans-serif;
+  --ddd-radius-sm: 8px; --ddd-radius-md: 12px; --ddd-radius-xl: 20px; --ddd-radius-rounded: 100px;
+  --ddd-border-sm: 2px; --ddd-border-lg: 4px;
+  --ddd-focus-offset: 2px;
+  --ddd-spacing-2: 8px; --ddd-spacing-3: 12px; --ddd-spacing-4: 16px; --ddd-spacing-6: 24px; --ddd-spacing-8: 32px;
+  /* roles, light */
+  --page: var(--ddd-theme-default-limestoneMaxLight);
+  --board: var(--ddd-theme-default-white);
+  --frame: var(--ddd-theme-default-limestoneLight);
+  --ink: var(--ddd-theme-default-coalyGray);
+  --heading: var(--ddd-theme-default-nittanyNavy);
+  --link: var(--ddd-theme-default-link);
+  --muted: var(--ddd-theme-default-slateGray);
+  --shadow: rgba(0, 3, 33, 0.15) 0px 8px 16px 0px;
+  --s0: var(--ddd-theme-default-nittanyNavy); --s1: var(--ddd-theme-default-beaverBlue); --s2: var(--ddd-theme-default-discoveryCoral);
+  --s3: var(--ddd-theme-default-opportunityGreen); --s4: var(--ddd-theme-default-inventOrange); --s5: var(--ddd-theme-default-limestoneGray);
+  --s6: var(--ddd-theme-default-wonderPurple); --s7: var(--ddd-theme-default-keystoneYellow);
+  --f0: var(--ddd-theme-default-nittanyNavy); --f1: var(--ddd-theme-default-skyBlue); --f2: var(--ddd-theme-default-discoveryCoral);
+  --f3: var(--ddd-theme-default-futureLime); --f4: var(--ddd-theme-default-keystoneYellow); --f5: var(--ddd-theme-default-limestoneGray);
+  --f6: var(--ddd-theme-default-athertonViolet); --f7: var(--ddd-theme-default-keystoneYellow);
+  --t0: var(--ddd-theme-default-coalyGray); --t1: var(--ddd-theme-default-beaverBlue); --t2: var(--ddd-theme-default-original87Pink);
+  --t3: var(--ddd-theme-default-opportunityGreen); --t4: #663c00; --t5: var(--ddd-theme-default-slateGray);
+  --t6: var(--ddd-theme-default-wonderPurple); --t7: var(--ddd-theme-default-nittanyNavy);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: var(--ddd-theme-default-potentialMidnight); --board: var(--ddd-theme-default-coalyGray); --frame: var(--ddd-theme-default-limestoneGray);
+    --ink: var(--ddd-theme-default-white); --heading: var(--ddd-theme-default-white); --link: var(--ddd-theme-default-linkLight);
+    --muted: var(--ddd-theme-default-limestoneLight); --shadow: rgba(150, 190, 230, 0.1) 0px 8px 16px 0px;
+    --s0: #ffffff; --s1: var(--ddd-theme-default-pughBlue); --s3: var(--ddd-theme-default-futureLime); --s6: var(--ddd-theme-default-athertonViolet);
+    --f0: #ffffff;
+    --t0: #ffffff; --t1: var(--ddd-theme-default-linkLight); --t2: var(--ddd-theme-default-discoveryCoral); --t3: var(--ddd-theme-default-futureLime);
+    --t4: var(--ddd-theme-default-keystoneYellow); --t5: var(--ddd-theme-default-limestoneLight); --t6: var(--ddd-theme-default-athertonViolet); --t7: #ffffff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --page: var(--ddd-theme-default-potentialMidnight); --board: var(--ddd-theme-default-coalyGray); --frame: var(--ddd-theme-default-limestoneGray);
+  --ink: var(--ddd-theme-default-white); --heading: var(--ddd-theme-default-white); --link: var(--ddd-theme-default-linkLight);
+  --muted: var(--ddd-theme-default-limestoneLight); --shadow: rgba(150, 190, 230, 0.1) 0px 8px 16px 0px;
+  --s0: #ffffff; --s1: var(--ddd-theme-default-pughBlue); --s3: var(--ddd-theme-default-futureLime); --s6: var(--ddd-theme-default-athertonViolet);
+  --f0: #ffffff;
+  --t0: #ffffff; --t1: var(--ddd-theme-default-linkLight); --t2: var(--ddd-theme-default-discoveryCoral); --t3: var(--ddd-theme-default-futureLime);
+  --t4: var(--ddd-theme-default-keystoneYellow); --t5: var(--ddd-theme-default-limestoneLight); --t6: var(--ddd-theme-default-athertonViolet); --t7: #ffffff;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--ddd-font-primary);
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 40px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; }
+header { padding-bottom: var(--ddd-spacing-4); }
+h1 { font-family: var(--ddd-font-primary); font-weight: 700; font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: normal; margin: 0 0 var(--ddd-spacing-3); color: var(--heading); }
+h1::after { content: ""; display: block; width: 84px; height: 4px; margin-top: var(--ddd-spacing-2); background: var(--ddd-theme-default-beaverBlue); border-radius: 2px; }
+:root[data-theme="dark"] h1::after { background: var(--ddd-theme-default-pughBlue); }
+header p { margin: 0; color: var(--muted); max-width: 60ch; }
+.board-wrap { border: var(--ddd-border-lg) solid var(--frame); border-radius: var(--ddd-radius-xl); background: var(--board); overflow: hidden; box-shadow: var(--shadow); }
+svg { display: block; width: 100%; height: auto; }
+.controls { display: flex; align-items: center; gap: var(--ddd-spacing-3); margin-top: var(--ddd-spacing-4); min-width: 0; }
+.btn, .chip {
+  font-family: var(--ddd-font-navigation); font-weight: 700; font-size: 16px; cursor: pointer;
+  border: var(--ddd-border-sm) solid var(--frame); background: var(--board); color: var(--heading);
+}
+.btn { min-width: 96px; min-height: 44px; padding: 0 var(--ddd-spacing-4); border-radius: var(--ddd-radius-rounded); background: var(--ddd-theme-default-nittanyNavy); border-color: var(--ddd-theme-default-nittanyNavy); color: #fff; }
+.btn:hover, .btn:focus-visible { background: var(--ddd-theme-default-beaverBlue); border-color: var(--ddd-theme-default-beaverBlue); }
+.chip { min-height: 40px; padding: 0 var(--ddd-spacing-4); border-radius: var(--ddd-radius-md); }
+.chip:hover { border-color: var(--ddd-theme-default-beaverBlue); }
+.chip[aria-current="true"] { background: var(--ddd-theme-default-nittanyNavy); border-color: var(--ddd-theme-default-nittanyNavy); color: #fff; box-shadow: inset 0 -4px 0 var(--ddd-theme-default-keystoneYellow); }
+:root[data-theme="dark"] .chip[aria-current="true"] { background: var(--ddd-theme-default-beaverBlue); border-color: var(--ddd-theme-default-pughBlue); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--link); outline-offset: var(--ddd-focus-offset); }
+input[type="range"] { flex: 1; min-width: 0; accent-color: var(--ddd-theme-default-beaverBlue); height: 44px; }
+#clock { font-family: var(--ddd-font-navigation); font-variant-numeric: tabular-nums; color: var(--muted); min-width: 4.6em; text-align: right; }
+.chips { display: flex; flex-wrap: wrap; gap: var(--ddd-spacing-2); margin-top: var(--ddd-spacing-3); }
+details { margin-top: var(--ddd-spacing-6); border-top: var(--ddd-border-sm) solid var(--frame); padding-top: var(--ddd-spacing-4); }
+summary { cursor: pointer; font-family: var(--ddd-font-navigation); font-weight: 700; font-size: 20px; color: var(--heading); }
+.script { margin: var(--ddd-spacing-3) 0 0; padding: 0; list-style: none; display: grid; gap: var(--ddd-spacing-3); max-width: 70ch; }
+.script li { display: grid; grid-template-columns: 3.2em minmax(0, 1fr); gap: var(--ddd-spacing-3); }
+.script time { font-family: var(--ddd-font-navigation); font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* SVG drawing language: strokes, fills and text each read their own DDD token */
+.bg { fill: var(--board); }
+.d, .st { stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill-opacity: 0; }
+.s0 { stroke: var(--s0); } .s1 { stroke: var(--s1); } .s2 { stroke: var(--s2); } .s3 { stroke: var(--s3); }
+.s4 { stroke: var(--s4); } .s5 { stroke: var(--s5); } .s6 { stroke: var(--s6); } .s7 { stroke: var(--s7); }
+.f0 { fill: var(--f0); } .f1 { fill: var(--f1); } .f2 { fill: var(--f2); } .f3 { fill: var(--f3); }
+.f4 { fill: var(--f4); } .f5 { fill: var(--f5); } .f6 { fill: var(--f6); } .f7 { fill: var(--f7); }
+.tx { font-family: var(--ddd-font-primary); font-weight: 500; white-space: pre; stroke: none; }
+.tx.f0 { fill: var(--t0); } .tx.f1 { fill: var(--t1); } .tx.f2 { fill: var(--t2); } .tx.f3 { fill: var(--t3); }
+.tx.f4 { fill: var(--t4); } .tx.f5 { fill: var(--t5); } .tx.f6 { fill: var(--t6); } .tx.f7 { fill: var(--t7); }
+.tx.fh { fill: var(--heading); } .tx.fw { fill: #ffffff; }
+.mk { font-family: var(--ddd-font-secondary); font-weight: 900; }
+.cd { font-family: var(--ddd-font-navigation); font-weight: 700; }
+.bd { font-weight: 700; }
+.band { fill: url(#navBar); }
+.bandline { fill: var(--ddd-theme-default-keystoneYellow); }
+.spr path { shape-rendering: crispEdges; }
+.hop { animation: hop 0.7s steps(1, end) infinite alternate; }
+.wave { transform-box: fill-box; transform-origin: 100% 100%; animation: wave 0.9s ease-in-out infinite alternate; }
+.flame { transform-box: fill-box; transform-origin: 50% 0; animation: flick 0.14s steps(2) infinite alternate; }
+.tw { animation: tw 1.5s ease-in-out infinite alternate; }
+.tw2 { animation: tw 1s ease-in-out infinite alternate; }
+@keyframes hop { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+@keyframes wave { from { transform: rotate(-12deg); } to { transform: rotate(16deg); } }
+@keyframes flick { from { transform: scale(1, 1); } to { transform: scale(0.82, 1.22); } }
+@keyframes tw { from { opacity: 0.45; } to { opacity: 1; } }
+.paused .hop, .paused .wave, .paused .flame, .paused .tw { animation-play-state: paused; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .spr { filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.6)); } }
+:root[data-theme="dark"] .spr { filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.6)); }
+@media (prefers-reduced-motion: reduce) { .hop, .wave, .flame, .tw, .tw2 { animation: none; } }
+.dl { margin-top: var(--ddd-spacing-8); }
+.dl h2 { font-family: var(--ddd-font-primary); font-weight: 700; font-size: 28px; color: var(--heading); margin: 0 0 var(--ddd-spacing-4); }
+.dl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: var(--ddd-spacing-4); }
+.dl-card { display: flex; flex-direction: column; gap: var(--ddd-spacing-2); padding: var(--ddd-spacing-4); border: var(--ddd-border-sm) solid var(--frame); border-radius: var(--ddd-radius-md); background: var(--board); color: var(--ink); text-decoration: none; min-width: 0; }
+.dl-card:hover, .dl-card:focus-visible { border-color: var(--ddd-theme-default-beaverBlue); }
+.dl-card:focus-visible { outline: 2px solid var(--link); outline-offset: var(--ddd-focus-offset); }
+.dl-card strong { font-family: var(--ddd-font-navigation); font-size: 20px; color: var(--heading); }
+.dl-card span { color: var(--muted); font-size: 16px; }
+.dl-card img { width: 100%; height: auto; border-radius: var(--ddd-radius-sm); display: block; }
+.stills { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); gap: var(--ddd-spacing-3); margin-top: var(--ddd-spacing-4); }
+.stills a { display: block; border-radius: var(--ddd-radius-sm); overflow: hidden; border: var(--ddd-border-sm) solid var(--frame); }
+.stills a:focus-visible { outline: 2px solid var(--link); outline-offset: var(--ddd-focus-offset); }
+.stills img { width: 100%; height: auto; display: block; }
+footer { margin-top: var(--ddd-spacing-8); color: var(--muted); font-size: 14px; }
+footer a { color: var(--link); }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>HAX in under a minute</h1>
+    <p>A doodle-board tour of what HAX is, why it scales and what keeps it standing.</p>
+  </header>
+
+  <div class="board-wrap">
+    <svg id="board" viewBox="0 0 1280 720" role="img" aria-label="Animated whiteboard doodle, under a minute. HAX is the open web built from plain text and blocks anyone can edit. The ecosystem is web components, the HAX editor that reads component schema, the CLI, single-site Node.js, multisite PHP and Node.js, multi-tenant PHP, and static publishing. The magic script loads each element once and reuses it on later pages. Seven community pillars hold up students, designers, educators, developers and AI agents. Everyone gets a rocket for a different use case, such as docs, a portfolio, a website, a blog or a course, with the pillars as engines.">
+      <defs>
+        
+        <linearGradient id="navBar" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#001e44"/><stop offset="0.31" stop-color="#001e44"/>
+            <stop offset="0.76" stop-color="#1e407c"/><stop offset="1" stop-color="#000321"/>
+          </linearGradient>
+        </defs>
+      <rect class="bg" width="1280" height="720"/>
+      <rect class="band" x="0" y="644" width="1280" height="76"/>
+      <rect class="bandline" x="0" y="640" width="1280" height="4"/>
+      <g id="scenes"></g>
+      <g id="sprites"></g>
+    </svg>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="pp" type="button">Pause</button>
+    <input type="range" id="seek" min="0" max="30" step="0.01" value="0" aria-label="Timeline">
+    <span id="clock">0:00 / 0:30</span>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Jump to a section"></div>
+
+  <details>
+    <summary>Narration script (under a minute)</summary>
+    <ul class="script">
+      <li><time>0:00</time><span>HAX is the open web, built from plain text and blocks that anyone can edit. Each block is a web component.</span></li>
+      <li><time>0:08</time><span>Same blocks, same editor, which reads each component's schema. Run it as a single site, multisite or multi-tenant, or publish plain static files.</span></li>
+      <li><time>0:17</time><span>The magic script loads each element once. Later pages only fetch what is new, so every follow-up request is faster.</span></li>
+      <li><time>0:30</time><span>Seven community pillars hold it up for students, designers, educators, developers and AI agents: accessible, extensible, free and open, efficient, platform agnostic, remixable and sustainable.</span></li>
+      <li><time>0:43</time><span>So what will you launch? A docs site, a portfolio, a website, a blog, a course. Everyone gets a rocket, and our pillars are your engines of change!</span></li>
+    </ul>
+  </details>
+
+  <section class="dl" aria-labelledby="dl-h">
+    <h2 id="dl-h">Take it with you</h2>
+    <div class="dl-grid">
+      <a class="dl-card" href="media/hax-in-a-minute.mp4" download><strong>Video (MP4)</strong><span>1080p, about a minute. For slides and social posts.</span></a>
+      <a class="dl-card" href="media/hax-in-a-minute.pptx" download><strong>Slides (PPTX)</strong><span>The video, then one slide per scene with speaker notes.</span></a>
+      <a class="dl-card" href="media/hax-in-a-minute.gif" download><strong>GIF, full</strong><span>The whole piece at 960px. For READMEs and chat.</span></a>
+      <a class="dl-card" href="media/hax-lift-off-loop.gif" download><img src="media/hax-lift-off-loop.gif" alt="Rockets cruising through falling stars, looping" width="960" height="540" loading="lazy"><strong>GIF, lift-off loop</strong><span>A seamless 4 s loop.</span></a>
+    </div>
+    <div class="stills" aria-label="Stills, one per scene, light and dark"><a href="media/stills/01-what-is-hax.png" download><img src="media/stills/01-what-is-hax.png" alt="What is HAX scene" loading="lazy" width="1920" height="1080"></a><a href="media/stills/02-ecosystem.png" download><img src="media/stills/02-ecosystem.png" alt="Ecosystem scene" loading="lazy" width="1920" height="1080"></a><a href="media/stills/03-magic-script.png" download><img src="media/stills/03-magic-script.png" alt="Magic script scene" loading="lazy" width="1920" height="1080"></a><a href="media/stills/04-pillars.png" download><img src="media/stills/04-pillars.png" alt="Pillars scene" loading="lazy" width="1920" height="1080"></a><a href="media/stills/05-lift-off.png" download><img src="media/stills/05-lift-off.png" alt="Lift off scene" loading="lazy" width="1920" height="1080"></a><a href="media/stills/01-what-is-hax-dark.png" download><img src="media/stills/01-what-is-hax-dark.png" alt="What is HAX scene (dark)" loading="lazy" width="1920" height="1080"></a><a href="media/stills/02-ecosystem-dark.png" download><img src="media/stills/02-ecosystem-dark.png" alt="Ecosystem scene (dark)" loading="lazy" width="1920" height="1080"></a><a href="media/stills/03-magic-script-dark.png" download><img src="media/stills/03-magic-script-dark.png" alt="Magic script scene (dark)" loading="lazy" width="1920" height="1080"></a><a href="media/stills/04-pillars-dark.png" download><img src="media/stills/04-pillars-dark.png" alt="Pillars scene (dark)" loading="lazy" width="1920" height="1080"></a><a href="media/stills/05-lift-off-dark.png" download><img src="media/stills/05-lift-off-dark.png" alt="Lift off scene (dark)" loading="lazy" width="1920" height="1080"></a></div>
+  </section>
+
+  <footer>Made for <a href="https://haxtheweb.org">HAXTheWeb</a>. Source and media: <a href="https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute">haxtheweb/art</a>.</footer>
+</div>
+
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg', T = 30, fieldUpdate = null;
+  var svg = document.getElementById('board'), root = document.getElementById('scenes');
+  var anims = [], scenes = [], cur = { a0: 0, a: 0, f: 1 }, nextStart = 0;
+  function tm(x) { return cur.a + (x - cur.a0) * cur.f; }
+  anims.push = function (o) { o.s = tm(o.s); o.e = tm(o.e); return Array.prototype.push.call(this, o); };
+
+  function el(tag, attrs, parent) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function clamp(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+  function eio(u) { return u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2; }
+  function eio3(u) { return u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2; }
+  /* a, b: authored timeline; f: stretch factor that slows the scene down */
+  function scene(a, b, name, last, f, hold) {
+    f = f || 1;
+    var g = el('g', {}, root), ra = nextStart, rb = ra + (b - a) * f + (hold || 0);
+    g._sg = el('g', {}, document.getElementById('sprites'));
+    cur = { a0: a, a: ra, f: f }; nextStart = rb;
+    scenes.push({ g: g, sg: g._sg, a: ra, b: rb, name: name, last: !!last, on: true });
+    return g;
+  }
+
+  /* a stroke that draws itself between times s and e; optional marker fill fades in at the end */
+  function draw(parent, tag, attrs, col, s, e, fill) {
+    var sw = attrs.sw; delete attrs.sw;
+    attrs['class'] = 'd s' + col + (fill ? ' f' + col : '');
+    var n = el(tag, attrs, parent), len = 1000;
+    try { len = n.getTotalLength() || 1000; } catch (x) {}
+    n.style.strokeDasharray = len + ' ' + len;
+    n.style.strokeDashoffset = len;
+    n.style.visibility = 'hidden';
+    if (sw) n.style.strokeWidth = sw;
+    anims.push({ s: s, e: e, p: -1, fn: function (p) {
+      n.style.visibility = p <= 0 ? 'hidden' : 'visible';
+      n.style.strokeDashoffset = len * (1 - eio(p));
+      if (fill) n.style.fillOpacity = fill * clamp((p - 0.6) / 0.4);
+    } });
+    return n;
+  }
+  /* a shape that is simply there (used inside pop groups) */
+  function sh(parent, tag, attrs, col, fill) {
+    var sw = attrs.sw; delete attrs.sw;
+    attrs['class'] = 'st s' + col + (fill ? ' f' + col : '');
+    var n = el(tag, attrs, parent);
+    n.style.fillOpacity = fill || 0;
+    if (sw) n.style.strokeWidth = sw;
+    return n;
+  }
+  /* DDD type scale (px); sizes snap to the nearest step */
+  function snap(n) {
+    var sc = [12, 14, 16, 18, 20, 22, 24, 28, 32, 36, 40, 48, 56, 64, 72], b = sc[0], i;
+    for (i = 0; i < sc.length; i++) if (Math.abs(sc[i] - n) < Math.abs(b - n)) b = sc[i];
+    return b;
+  }
+  /* handwriting: letters appear one by one; no o.s means static text */
+  function text(parent, x, y, str, o) {
+    o = o || {};
+    var t = el('text', { x: x, y: y, 'class': 'tx ' + (o.cls || 'f0') + (o.marker ? ' mk' : '') + (o.cond ? ' cd' : '') + (o.bold ? ' bd' : '') }, parent);
+    t.style.fontSize = snap(o.size || 32) + 'px';
+    if (o.anchor) t.setAttribute('text-anchor', o.anchor);
+    if (o.s == null) { t.textContent = str; return t; }
+    var spans = [], shown = 0, i;
+    for (i = 0; i < str.length; i++) {
+      var sp = el('tspan', {}, t); sp.textContent = str.charAt(i); sp.style.fillOpacity = 0; spans.push(sp);
+    }
+    anims.push({ s: o.s, e: o.e, p: -1, fn: function (p) {
+      var n = Math.round(p * spans.length), j;
+      if (n === shown) return;
+      if (n > shown) for (j = shown; j < n; j++) spans[j].style.fillOpacity = 1;
+      else for (j = n; j < shown; j++) spans[j].style.fillOpacity = 0;
+      shown = n;
+    } });
+    return t;
+  }
+  /* a group that drops/fades in */
+  function pop(parent, s, e, dy, build) {
+    var g = el('g', {}, parent); build(g);
+    g.style.opacity = 0;
+    anims.push({ s: s, e: e, p: -1, fn: function (p) {
+      var q = eio(p); g.style.opacity = q; g.style.transform = 'translateY(' + ((1 - q) * dy) + 'px)';
+    } });
+    return g;
+  }
+  function title(g, str, s, e) {
+    text(g, 70, 120, str, { size: 56, marker: 1, cls: 'fh', s: s, e: e });
+    draw(g, 'path', { d: 'M72 150 H156', sw: 8 }, 7, e - 0.1, e + 0.3);
+  }
+  function capt(g, str, s, e) { text(g._sg, 640, 694, str, { size: 36, anchor: 'middle', cls: 'fw', s: s, e: e }); }
+
+  /* characters */
+  function person(parent, x, y, sc, s, kind) {
+    var o = el('g', { transform: 'translate(' + x + ' ' + y + ') scale(' + sc + ')' }, parent), t = s;
+    function d(tag, a, col, fill, par) { draw(par || o, tag, a, col, t, t + 0.4, fill); t += 0.1; }
+    var body = { traveler: 3, student: 1, designer: 2, educator: 4, developer: 3 }[kind] || 3;
+    d('path', { d: 'M-9 0 L-12 -32' }, 0);
+    d('path', { d: 'M9 0 L12 -32' }, 0);
+    d('rect', { x: -19, y: -86, width: 38, height: 56, rx: 15 }, body, 0.3);
+    d('circle', { cx: 0, cy: -103, r: 17 }, 0);
+    d('circle', { cx: 7, cy: -104, r: 2.5 }, 0, 1);
+    d('path', { d: 'M18 -72 L34 -62' }, 0);
+    if (kind === 'traveler') {
+      d('rect', { x: -34, y: -80, width: 15, height: 34, rx: 6 }, 4, 0.3);
+      d('path', { d: 'M-28 -114 H28' }, 0);
+      d('path', { d: 'M-15 -114 Q0 -143 15 -114' }, 4, 0.4);
+      d('path', { d: 'M36 -4 V-124' }, 0);
+    } else if (kind === 'student') {
+      d('rect', { x: -34, y: -80, width: 15, height: 34, rx: 6 }, 4, 0.3);
+      d('path', { d: 'M-24 -116 L0 -128 L24 -116 L0 -106 Z' }, 0, 0.5);
+      d('rect', { x: 28, y: -72, width: 22, height: 17, rx: 3 }, 2, 0.35);
+    } else if (kind === 'designer') {
+      d('path', { d: 'M-18 -114 Q0 -138 20 -112 Z' }, 2, 0.5);
+      d('path', { d: 'M30 -48 L54 -94' }, 4);
+    } else if (kind === 'educator') {
+      d('circle', { cx: -4, cy: -105, r: 5.5 }, 0);
+      d('circle', { cx: 9, cy: -105, r: 5.5 }, 0);
+      d('path', { d: 'M36 -6 V-112' }, 4);
+    } else if (kind === 'developer') {
+      d('path', { d: 'M-16 -116 Q0 -136 16 -116' }, 1, 0.35);
+      d('rect', { x: -22, y: -88, width: 44, height: 30, rx: 3 }, 1, 0.3);
+      d('path', { d: 'M-30 -54 H30' }, 0);
+    }
+    var w = el('g', { 'class': 'wave' }, o);
+    d('path', { d: 'M-18 -74 L-38 -96' }, 0, 0, w);
+    return o;
+  }
+  /* rpg-character art: the element's own lib/*.svg layers (skin, hair, face, shirt, pants, hat...) composed in its draw order. zpg is the element's seed "zpg". */
+  var RPG = {"zpg":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#66DE52\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#66DE52\"/><g fill=\"#B489D7\" fill-opacity=\".2\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#282828\"/><path d=\"M48 72v5H38v-5h5v-5h20v5h5v5H58v-5H48Z\" fill=\"#000\"/><path d=\"M43 72H28V57h15v15Z\" fill=\"#645841\"/><path d=\"M28 70h-5m20-8h5v-2h5v-2h6v-1\" stroke=\"#645841\"/><path d=\"M28 112V87h5v25h-5Zm10 0h35V87H58v2h-2v2h-3v1h-5v-1h-3v-2h-2v-2h-5v25Zm50 0H78V92h5v15h5v5Z\" fill=\"#3D3D3D\"/><path d=\"M38 87h5v2h2v2h3v1h5v-1h3v-2h2v-2h15v25h-5.047V88H59v2h-2v2h-3v1h-7v-1h-3v-2h-2v-2h-4v-1Zm45 5h-5v20h5V92Zm-55 20h5V87h-5v25Z\" fill=\"#2E2E2E\"/><path d=\"M48 127H38v-20h35v20H58v-5H48v5Z\" fill=\"#616E9D\"/><path d=\"M48 127v-5h-5v5h5Zm20 0h5v-20h-5v20Z\" fill=\"#4B598A\"/><path d=\"M38 125v2h10v-2H38Zm20 2v-2h15v2H58Z\" fill=\"#7E8DC1\"/><path d=\"M68 127v-2h5v2h-5Zm-25 0v-2h5v2h-5Z\" fill=\"#5A6794\"/><path d=\"M48.5 122v-5.5m0 0h-2V107m2 9.5h2\" stroke=\"#4B598A\"/><path d=\"M48 108h1v1h-1v-1Z\" stroke=\"#CDC4A3\"/><path d=\"M50 88.5h1m-4 0h-1\" stroke=\"#632083\"/><path d=\"M47 90v-3h3v3h-3Zm2 12h-1v-1h-.5v-2H47v-1.5h-.5V96H46v-5.5h.5V90h4v.5h.5V96h-.5v1.5H50V99h-.5v2H49v1Z\" fill=\"#7D3DA4\"/><path d=\"M47 91v-1h3v1h-.429v1h-.714v1h-.714v-1h-.714v-1H47Z\" fill=\"#632083\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".5\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M83 57H28v20h5v5h45v-5h5V57Zm-55 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H28v-5h55v20h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\" fill-opacity=\".75\"/><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#8F8F8F\" fill-opacity=\".5\"/><path d=\"M13 87v5h10v25h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h10v-5h5V77h-5V57h5V47H93V27h-5V17h-5v-5H28v5h-5v10h-5v20H8v10h5v20H8v10h5Zm15 0v-5h-5V57h-5v20h-5v10h15Zm0 0h5v30h-5V87Zm5-45h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm10 40h10V57h5v20h5v10H88v5h-5v-5h-5v-5Zm0 0H33v-5h-5V57h55v20h-5v5Zm5 10v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5ZM33 62h5v5h-5v-5Zm35 0v5h5v-5h-5Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V92H13v-5H8V77h5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10h-5v20h5v10h-5v5H88v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#89EDD5\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#676668\" style=\"mix-blend-mode:hard-light\"/><path d=\"M28 47h-5V27h5V17h7.5v-5h35v5H83v10h5v20H78v5H28v-5Z\" fill=\"#383838\"/><path d=\"M28 52v-5h50v5H28Z\" fill=\"#890000\"/><path d=\"M35.5 27H32v4.12h-4V47h-5V27h5V17h7.5v-5h10v5h-6v4h-4v6Z\" fill=\"#4F4F4F\"/><path d=\"M63 52v-5h10v-5h5V27h-7.5v-5h-20V12h20v5H83v10h5v20H78v5H63Z\" fill=\"#262526\"/><path d=\"M23 47V27h5V17h7.5v-5h10v10h5v5h5v-5h5V12h10v5H83v10h5v20h-2V29h-3v-2h-2v-8H70.5v-2h-2v-3h-6v8h-2v2h-3v3h-2v2h-5v-2h-2v-3h-3v-2h-2v-8h-6v3h-2v2H30v8h-2v2h-3v18h-2Z\" fill=\"#B69B11\"/><path d=\"M63 52h15v-5H63v5Z\" fill=\"#680505\"/><path d=\"M62.5 22h-2V12h10v5H83v10h5v20h-2V29h-3v-2h-2v-8H70.5v-2h-2v-3h-6v8Z\" fill=\"#98720F\"/><path d=\"M25 29v18h-2V27h5V17h7.5v-5h10v5h-2v-3h-6v3h-2v2H30v8h-2v2h-3Z\" fill=\"#E0C32E\"/><path d=\"M8 52v5h95v-5h5V42H98v5h-5V27h-5V17h-5v-5H70.5V7h-15v15h-5V7h-15v5H28v5h-5v10h-5v20h-5v-5H3v10h5Zm15-25v20h5v5h50v-5h10V27h-5V17H70.5v-5h-10v10h-5v5h-5v-5h-5V12h-10v5H28v10h-5Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M45.5 33.5v-3h-3v3h6v-3h9v3h6v-3h-3v9h-3v-3h-3v3h3v6h3v-3h-6v3h-3v-3h-6v3h3v-6h3v-3h-3v3h-3v-6Z\" fill=\"#fff\"/><path d=\"M60.5 39.75h.25v-6h3v-3.5h-3.5v3h-2.5v-3h-9.5v3h-2.5v-3h-3.5v3.5h3v6h3v2.5h-3v3.5h3.5v-3h2.5v3h3.5v-3h2.5v3h3.5v-3.5h-3v-2.5h2.75Zm-3.25-3v2.5h-2.5v-2.5h2.5Zm-8.5 2.5v-2.5h2.5v2.5h-2.5Z\" stroke=\"#000\" stroke-opacity=\".15\" stroke-width=\".5\"/>","ai":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#A7A7A7\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#A7A7A7\"/><g fill=\"#878787\" fill-opacity=\".1\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M28 97V87h5v10h-5Zm10-10v27h5v-1h1v-1h3v1h1v1h5v-1h1v-1h3v1h1v1h5v-1h1v-1h3v1h1v1h5V87h-9v4h-1v1h-3v2h-2v2H48v-2h-2v-2h-2v-1h-1v-4h-5Zm45 10h-5v-5h5v5Z\" fill=\"#F3F7F9\"/><path d=\"M42 109v3h1v-1h5v1h1v-3h-1v-3h-5v3h-1Zm11 3h-1v-3h1v-3h5v3h1v3h-1v-1h-5v1Zm10 0h-1v-3h1v-3h5v3h1V88h4v25h-4v-1h-1v-1h-5v1Z\" fill=\"#EFF3F4\"/><path d=\"M42 88h-4v-1h5v4h1v1h2v2h2v2h10v-2h2v-2h3v-1h1v-4h9v1h-8v4h-1v1h-3v2h-2v2H47v-2h-2v-2h-2v-1h-1v-4Zm36 8v1h5v-1h-5Zm-50 0v1h5v-1h-5Zm10 17h4v-1h1v-1h5v1h1v1h3v-1h1v-1h5v1h1v1h3v-1h1v-1h5v1h1v1h4v1h-5v-1h-1v-1h-3v1h-1v1h-5v-1h-1v-1h-3v1h-1v1h-5v-1h-1v-1h-3v1h-1v1h-5v-1Z\" fill=\"#D7E2E2\"/><path d=\"M46 87v3h1v1h1v1h1v1h5v-1h3v-1h2v-1h1v-3\" stroke=\"#C8BE9B\"/><path d=\"M51 94v-1h1v1h-1Z\" stroke=\"#A7D7AC\"/><path d=\"M48 127H38v-20h35v20H58v-5H48v5Z\" fill=\"#616E9D\"/><path d=\"M48 127v-5h-5v5h5Zm20 0h5v-20h-5v20Z\" fill=\"#4B598A\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".75\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M88 57H23v15h5v5h5v5h45v-5h5V67h5V57Zm-60 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\"/><path d=\"M18 27v20H8v10h10v20h5v5h5v5h-5v30h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h-5v-5h-5v-5h10V67h5V57h10V47H93V27h-5V17h-5v-5H28v5h-5v10h-5Zm15 15h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm20 25V57H23v15h5v5h5v5h45v-5h5V67h5Zm-5 25v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5Zm-30-10h5V87h-5v30Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M38 67h-5v-5h5v5Zm30-5v5h5v-5h-5Z\" fill=\"#000\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V87h5v-5h-5v-5h-5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10H93v10h-5v15H78v5h5v5h5v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#979797\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#676668\" style=\"mix-blend-mode:hard-light\"/>","student":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#F7DECE\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#F7DECE\"/><g fill=\"#B489D7\" fill-opacity=\".1\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M48 72h-5v-5h5v5h10v-5h5v5h-5v5H48v-5Z\" fill=\"#000\"/><path d=\"M28 112V87h5v25h-5Zm10 0h35V87H58v2h-2v2h-3v1h-5v-1h-3v-2h-2v-2h-5v25Zm50 0H78V92h5v15h5v5Z\" fill=\"#F8F8F8\"/><path d=\"M38 87h5v2h2v2h3v1h5v-1h3v-2h2v-2h15v25h-5.047V88H59v2h-2v2h-3v1h-7v-1h-3v-2h-2v-2h-4v-1Zm45 5h-5v20h5V92Zm-55 20h5V87h-5v25Z\" fill=\"#F0F0F0\"/><path d=\"M48 127H38v-20h35v20H58v-5H48v5Z\" fill=\"#E8E8E8\"/><path d=\"M48 127v-5h-5v5h5Zm20 0h5v-20h-5v20Z\" fill=\"#D2D2D2\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".75\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M88 57H23v15h5v5h5v5h45v-5h5V67h5V57Zm-60 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\"/><path d=\"M18 27v20H8v10h10v20h5v5h5v5h-5v30h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h-5v-5h-5v-5h10V67h5V57h10V47H93V27h-5V17h-5v-5H28v5h-5v10h-5Zm15 15h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm20 25V57H23v15h5v5h5v5h45v-5h5V67h5Zm-5 25v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5Zm-30-10h5V87h-5v30Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M38 67h-5v-5h5v5Zm30-5v5h5v-5h-5Z\" fill=\"#000\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V87h5v-5h-5v-5h-5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10H93v10h-5v15H78v5h5v5h5v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#89EDD5\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#676668\" style=\"mix-blend-mode:hard-light\"/>","designer":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#5DB1FF\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#5DB1FF\"/><g fill=\"#B489D7\" fill-opacity=\".2\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#A42424\"/><path d=\"M53 62.5h-5v10h10v-5h-5v-5Zm15 17v-5H38v5h30Z\" fill=\"#000\"/><path d=\"M78 72H63V57h15v15Zm-35 0H28V57h15v15Z\" fill=\"#BCD7EA\" fill-opacity=\".5\"/><path d=\"M43 64h20m0-.5V72h15v-8m-35-.5V72H28v-8\" stroke=\"#C8BE9B\"/><path d=\"M28 112V87h5v25h-5Zm10 0h35V87H58v2h-2v2h-3v1h-5v-1h-3v-2h-2v-2h-5v25Zm50 0H78V92h5v15h5v5Z\" fill=\"#3D3D3D\"/><path d=\"M38 87h5v2h2v2h3v1h5v-1h3v-2h2v-2h15v25h-5.047V88H59v2h-2v2h-3v1h-7v-1h-3v-2h-2v-2h-4v-1Zm45 5h-5v20h5V92Zm-55 20h5V87h-5v25Z\" fill=\"#2E2E2E\"/><path d=\"M48 122H38v-15h35v15H48Z\" fill=\"#4A4A4A\"/><path d=\"M68 122h5v-15h-5v15Z\" fill=\"#323232\"/><path d=\"M38 120v2h10v-2H38Zm20 2v-2h15v2H58Z\" fill=\"#9C9C9C\"/><path d=\"M68 122v-2h5v2h-5Z\" fill=\"#5C5C5C\"/><path d=\"M48.5 122v-5.5m0 0h-2V107m2 9.5h2\" stroke=\"#323232\"/><path d=\"M48 108h1v1h-1v-1Z\" stroke=\"#CDC4A3\"/><path d=\"M46 89h5v5h-5v-5Zm-5-2h5v5h-5v-5Zm0 5h5v4h-5v-4Zm10 0h5v4h-5v-4Zm0-5h5v5h-5v-5Z\" fill=\"#4A4A4A\"/><path d=\"M56 92H41v-5h5v2h5v-2h5v5Z\" fill=\"#323232\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".5\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M83 57H28v20h5v5h45v-5h5V57Zm-55 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H28v-5h55v20h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\" fill-opacity=\".75\"/><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#8F8F8F\" fill-opacity=\".5\"/><path d=\"M13 87v5h10v25h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h10v-5h5V77h-5V57h5V47H93V27h-5V17h-5v-5H28v5h-5v10h-5v20H8v10h5v20H8v10h5Zm15 0v-5h-5V57h-5v20h-5v10h15Zm0 0h5v30h-5V87Zm5-45h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm10 40h10V57h5v20h5v10H88v5h-5v-5h-5v-5Zm0 0H33v-5h-5V57h55v20h-5v5Zm5 10v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5ZM33 62h5v5h-5v-5Zm35 0v5h5v-5h-5Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V92H13v-5H8V77h5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10h-5v20h5v10h-5v5H88v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#EB1387\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#583177\" style=\"mix-blend-mode:hard-light\"/><path d=\"M32 37V22h-5v25h-5v10H7V37h5V22h5V12h5V7h10v5h10v5h5v20H32Z\" fill=\"#E7E7E7\"/><path d=\"M22 2v5h20v10h10v20H32V22h5v-5h-5v5h-5v35H7v5h15V47h10v-5h15V12H32V2H22Z\" fill=\"#000\"/><path d=\"M17 7h5v5H12v25H7v20H2V37h5V22h10V7Z\" fill=\"#000\"/><path d=\"M37 27v-5h-5v15h10V27h-5Z\" fill=\"#D8AAAA\"/><path d=\"M78 37V22h5v25h5v10h15V37h-5V22h-5V12h-5V7H78v5H68v5h-5v20h15Z\" fill=\"#E7E7E7\"/><path d=\"M88 2v5H68v10H58v20h20V22h-5v-5h5v5h5v35h20v5H88V47H78v-5H63V12h15V2h10Z\" fill=\"#000\"/><path d=\"M93 7h-5v5h10v25h5v20h5V37h-5V22H93V7Z\" fill=\"#000\"/><path d=\"M73 27v-5h5v15H68V27h5Z\" fill=\"#D8AAAA\"/><path d=\"M17 47h5V22h5v25h-5v10h-5V47Zm20-20V12h5v5h5v20h-5V27h-5Zm36 0V12h-5v5h-5v20h5V27h5Zm20 10V22h5v15h5v20h-5V37h-5Z\" fill=\"#D5D5D5\"/><path d=\"M12 37v20H7V37h5V22h5v15h-5Zm10-25h-5v5h5v-5Zm61 10h5v25h5v10h-5V47h-5V22Z\" fill=\"#EBEBEB\"/>","educator":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#FFDC5D\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#FFDC5D\"/><g fill=\"#B489D7\" fill-opacity=\".15\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#E3CE96\"/><path d=\"M68 77H38v-5h30v5Z\" fill=\"#000\"/><path d=\"M78 72H63V57h15v15Zm-35 0H28V57h15v15Z\" fill=\"#BCD7EA\" fill-opacity=\".5\"/><path d=\"M43 64h20\" stroke=\"#C8BE9B\"/><path d=\"M28 112V87h5v25h-5Zm10 0h35V87H58v2h-2v2h-3v1h-5v-1h-3v-2h-2v-2h-5v25Zm50 0H78V92h5v15h5v5Z\" fill=\"#F8F8F8\"/><path d=\"M38 87h5v2h2v2h3v1h5v-1h3v-2h2v-2h15v25h-5.047V88H59v2h-2v2h-3v1h-7v-1h-3v-2h-2v-2h-4v-1Zm45 5h-5v20h5V92Zm-55 20h5V87h-5v25Z\" fill=\"#F0F0F0\"/><path d=\"M48 122H38v-15h35v15H48Z\" fill=\"#616E9D\"/><path d=\"M68 122h5v-15h-5v15Z\" fill=\"#4B598A\"/><path d=\"M38 120v2h10v-2H38Zm20 2v-2h15v2H58Z\" fill=\"#7E8DC1\"/><path d=\"M68 122v-2h5v2h-5Z\" fill=\"#5A6794\"/><path d=\"M48.5 122v-5.5m0 0h-2V107m2 9.5h2\" stroke=\"#4B598A\"/><path d=\"M48 108h1v1h-1v-1Z\" stroke=\"#CDC4A3\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".5\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M83 57H28v20h5v5h45v-5h5V57Zm-55 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H28v-5h55v20h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\" fill-opacity=\".75\"/><path d=\"M23 57h-5v20h-5v10h15v-5h-5V57Zm70 0h-5v25H78v5h5v5h5v-5h10V77h-5V57Z\" fill=\"#8F8F8F\" fill-opacity=\".5\"/><path d=\"M13 87v5h10v25h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h10v-5h5V77h-5V57h5V47H93V27h-5V17h-5v-5H28v5h-5v10h-5v20H8v10h5v20H8v10h5Zm15 0v-5h-5V57h-5v20h-5v10h15Zm0 0h5v30h-5V87Zm5-45h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm10 40h10V57h5v20h5v10H88v5h-5v-5h-5v-5Zm0 0H33v-5h-5V57h55v20h-5v5Zm5 10v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5ZM33 62h5v5h-5v-5Zm35 0v5h5v-5h-5Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V92H13v-5H8V77h5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10h-5v20h5v10h-5v5H88v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#EB1387\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#583177\" style=\"mix-blend-mode:hard-light\"/><path d=\"M18 27h5v-1H8v-5h10v-5h10v-5h15V6h25v5h15v5h10v5h10v5H88v1h5v20H68v6.5h-5V57h-5v3H48v-3h-5v-5h-5v-5H18V27Z\" fill=\"#2F2D97\"/><path d=\"M33 26H8v-5h10v-5h10v-5h15V6h25v5h15v5h10v5h10v5H78v-5H63v-5H48v5H33v5Z\" fill=\"#1B1A74\"/><path d=\"M38 57v-5h5v5h5v3h10v-3h5v-3.5h5V47h25V27h-5v-1h15v-5H93v-5H83v-5H68V6H43v5H28v5H18v5H8v5h15v1h-5v20h-5V31H8v-5H3v-5h5v-5h10v-5h10V6h15V1h25v5h15v5h10v5h10v5h5v5h-5v5h-5v16h-5v6.5H68V57h-5v3h-5v5H48v-5h-5v-3h-5Z\" fill=\"#000\"/><path d=\"M38 52v-5H18v5h20Z\" fill=\"#000\"/><path d=\"M74.5 31.5V24h4v7.5h-4Z\" fill=\"#D7D3D3\"/><path d=\"M79 19h-5v5h5v-5Z\" fill=\"#E8E3E3\"/><path d=\"M74.25 24v8m1.5-8v9m1.5-9v9m1.5-9v8\" stroke=\"#E8E3E3\"/><path d=\"M74 24h5m-3.5-5h2\" stroke=\"#DBB83B\"/><path d=\"M72.5 5.5V8h1v2h1v2.5h1v4h1V19\" stroke=\"#665F47\"/>","developer":"<path d=\"M83 57H23v15h5v5h5v5h10v25h20V82h15v-5h5V67h5V57h-5Z\" fill=\"#7C533E\"/><path d=\"M28 117V87h5v30h-5Zm50 0V92h5v15h5v10H78Z\" fill=\"#7C533E\"/><g fill=\"#B489D7\" fill-opacity=\".3\" style=\"mix-blend-mode:multiply\"><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\"/><path d=\"M48 77v-5h10v5H48ZM33 87h-5v30h5V87Zm50 5h-5v25h5V92Z\"/></g><path d=\"M43 72h5v-5h10v5h5v5h-5v-5H48v5h-5v-5Z\" fill=\"#000\"/><path d=\"M78 72H63V57h15v15Zm-35 0H28V57h15v15Z\" fill=\"#BCD7EA\" fill-opacity=\".5\"/><path d=\"M43 64h20m0-.5V72h15v-8m-35-.5V72H28v-8\" stroke=\"#C8BE9B\"/><path d=\"M28 112V87h5v25h-5Zm10 0h35V87H38v25Zm50 0H78V92h5v15h5v5Z\" fill=\"#F0F0F0\"/><path d=\"M40.5 87v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m3-25v25m8-20v20m3-20v20m3 0v-5m3 5v-5m-55-20v25m-3-25v25\" stroke=\"#EAEAE9\"/><path d=\"M33 112h-5v-2h5v2Zm45-2v2h10v-2H78ZM43 89v-2h11v2h-1v1h-1v-1h-1v-1h-5v1h-1v1h-1v-1h-1Z\" fill=\"#FBFBFB\"/><path d=\"M48 90h1v1h-1v-1Zm0 5h1v1h-1v-1Zm0 5h1v1h-1v-1Zm0 5h1v1h-1v-1Zm0 6v-1h1v1h-1Z\" stroke=\"#CDC4A3\"/><path d=\"M68 87h5v25h-5V87Zm15 25V92h-5v20h5Zm-50 0V87h-5v25h5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 122H38v-15h35v15H48Z\" fill=\"#616E9D\"/><path d=\"M68 122h5v-15h-5v15Z\" fill=\"#4B598A\"/><path d=\"M38 120v2h10v-2H38Zm20 2v-2h15v2H58Z\" fill=\"#7E8DC1\"/><path d=\"M68 122v-2h5v2h-5Z\" fill=\"#5A6794\"/><path d=\"M48.5 122v-5.5m0 0h-2V107m2 9.5h2\" stroke=\"#4B598A\"/><path d=\"M48 108h1v1h-1v-1Z\" stroke=\"#CDC4A3\"/><path d=\"M50 88.5h1m-4 0h-1\" stroke=\"#632083\"/><path d=\"M47 90v-3h3v3h-3Zm2 12h-1v-1h-.5v-2H47v-1.5h-.5V96H46v-5.5h.5V90h4v.5h.5V96h-.5v1.5H50V99h-.5v2H49v1Z\" fill=\"#7D3DA4\"/><path d=\"M47 91v-1h3v1h-.429v1h-.714v1h-.714v-1h-.714v-1H47Z\" fill=\"#632083\"/><path d=\"M33 42h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Zm35 0h-5V32h5v-5h5v5h5v10h-5v-5h-5v5Z\" fill=\"#fff\" fill-opacity=\".75\"/><path d=\"M73 37v5h5v-5h-5Z\" fill=\"#CCC\" fill-opacity=\".75\"/><path d=\"M88 47H78V32h-5v-5h-5v5h-5v15H43V32h-5v-5h-5v5h-5v15h-5V27h5V17h55v10h5v20Z\" fill=\"#C4C4C4\" fill-opacity=\".5\"/><path d=\"M63 22H43v-5h40v10h5v20H78V32h-5v-5H63v-5Z\" fill=\"#A4A2A2\" fill-opacity=\".5\"/><path d=\"M88 57H23v15h5v5h5v5h45v-5h5V67h5V57Zm-60 60v-5h5v5h-5Zm50 0v-5h10v5H78Z\" fill=\"#DEDDDD\" fill-opacity=\".25\"/><path d=\"M78 62H23v-5h65v10h-5v10h-5v5H68v-5h5v-5h5V62Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M48 77v-5h10v5H48Zm-15 35h-5v5h5v-5Zm50 0h-5v5h5v-5Z\" fill=\"#C4C4C4\" fill-opacity=\".25\"/><path d=\"M38 47h-5v-5h5v5Zm35 0h-5v-5h5v5Z\" fill=\"#AAA\"/><path d=\"M18 27v20H8v10h10v20h5v5h5v5h-5v30h5v5h5v10h15v-5h10v5h20v-10h10v-5h5v-10h-5V92h-5v-5h-5v-5h10V67h5V57h10V47H93V27h-5V17h-5v-5H28v5h-5v10h-5Zm15 15h-5v5h-5V27h5V17h55v10h5v20H78v-5h-5v-5h-5v5h-5v5H43v-5h-5v-5h-5v5Zm0 0h5v5h-5v-5Zm35 0v5h5v-5h-5Zm20 25V57H23v15h5v5h5v5h45v-5h5V67h5Zm-5 25v15h5v10H78V92h5Zm-25 35h15V87H38v40h10v-5h10v5Zm-30-10h5V87h-5v30Z\" fill=\"#000\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M38 67h-5v-5h5v5Zm30-5v5h5v-5h-5Z\" fill=\"#000\"/><path d=\"M33 142H0V0h113v142H33Zm15-10H33v-10h-5v-5h-5V87h5v-5h-5v-5h-5V57H8V47h10V27h5V17h5v-5h55v5h5v10h5v20h10v10H93v10h-5v15H78v5h5v5h5v15h5v10h-5v5H78v10H58v-5H48v5Z\" fill=\"transparent\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"/><path d=\"M28 17h5v5h-5v-5Zm0 5h5v5h-5v-5Zm5-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-55 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm0-5h5v5h-5v-5ZM73 37h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-45-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-20 5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-35-5h5v5h-5v-5Zm5 0h5v5h-5v-5Zm-5 5h5v5h-5v-5Z\" fill=\"#1390EB\"/><path d=\"M78 27h10v20H78V27Zm0-5h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm-5 0h5v5h-5v-5Zm5 5h5v5h-5v-5Zm-10-5h5v5h-5v-5Zm-20-5h40v5H43v-5Z\" fill=\"#736083\" style=\"mix-blend-mode:hard-light\"/><path d=\"M43 62V57H8V47H18V27H23V17H28V12H43V7H50V12H53H56V7H63V12H83V17H88V27H93V47H103V57H63V62H43Z\" fill=\"#E8BA46\"/>\n<path d=\"M50 22V12H56V22H50Z\" fill=\"#D8920B\"/>\n<path d=\"M63 27V12H68V27H63Z\" fill=\"#D8920B\"/>\n<path d=\"M43 27V12H38V27H43Z\" fill=\"#D8920B\"/>\n<path d=\"M13 52V47H43V52H63V47H88V27H83V17H78V12H83V17H88V27H93V47H98V52H63V57H43V52H13Z\" fill=\"#D8920B\"/>\n<path d=\"M8 47H13V27H18V17H23V12H28V7H43V2H50V7H56V2H63V7H83V12H88V17H93V27H98V47H103V57H63V52H98V47H93V27H88V17H83V12H63V7H56V12H50V7H43V12H28V17H23V27H18V47H13V52H43V57H8V47Z\" fill=\"black\"/>\n<path d=\"M43 62V57H63V62H43Z\" fill=\"black\"/>\n<path d=\"M23 47H18V27H23V17H28V12H38V17H28V27H23V47Z\" fill=\"#F3CC65\"/>\n<path d=\"M56 29H50V31H47V34H45V40H47V43H50V45H56V43H59V40H61V34H59V31H56V29Z\" fill=\"#FDFBF4\"/>\n<path d=\"M50 34V37M50 40V37M50 37H56V34V40\" stroke=\"black\" stroke-width=\"3\"/>"};
+  function rpg(sceneG, key, x, footY, sc, s) {
+    var outer = el('g', { 'class': 'spr' }, sceneG._sg), hop = el('g', { 'class': 'hop' }, outer);
+    var g = el('g', { transform: 'translate(' + (x - 113 * sc / 2) + ' ' + (footY - 134 * sc) + ') scale(' + sc + ')' }, hop);
+    g.innerHTML = RPG[key];
+    outer.style.opacity = 0;
+    anims.push({ s: s, e: s + 0.5, p: -1, fn: function (p) {
+      var q = eio(p); outer.style.opacity = q > 0 ? 1 : 0; outer.style.transform = 'translateY(' + ((1 - q) * -90) + 'px)';
+    } });
+    return outer;
+  }
+  function robot(parent, x, y, sc, s) {
+    var o = el('g', { transform: 'translate(' + x + ' ' + y + ') scale(' + sc + ')' }, parent), t = s;
+    function d(tag, a, col, fill) { draw(o, tag, a, col, t, t + 0.4, fill); t += 0.1; }
+    d('path', { d: 'M-18 0 V-30' }, 6);
+    d('path', { d: 'M18 0 V-30' }, 6);
+    d('rect', { x: -40, y: -100, width: 80, height: 70, rx: 10 }, 6, 0.3);
+    d('rect', { x: -34, y: -162, width: 68, height: 52, rx: 12 }, 6, 0.3);
+    d('circle', { cx: -12, cy: -137, r: 5 }, 6, 1);
+    d('circle', { cx: 12, cy: -137, r: 5 }, 6, 1);
+    d('path', { d: 'M-11 -121 H11' }, 6);
+    d('path', { d: 'M0 -162 V-180' }, 6);
+    d('circle', { cx: 0, cy: -186, r: 6 }, 7, 1);
+    d('path', { d: 'M-40 -86 L-62 -62' }, 6);
+    d('path', { d: 'M40 -86 L64 -108' }, 6);
+    d('rect', { x: -15, y: -82, width: 30, height: 16, rx: 4 }, 7, 0.6);
+    return o;
+  }
+  /* a bar that grows from the left */
+  function grow(parent, x, y, w, h, col, s, e) {
+    var n = sh(parent, 'rect', { x: x, y: y, width: w, height: h, rx: h / 2, sw: 3 }, col, 0.45);
+    n.style.transformBox = 'fill-box'; n.style.transformOrigin = '0 50%'; n.style.visibility = 'hidden';
+    anims.push({ s: s, e: e, p: -1, fn: function (p) { n.style.visibility = p > 0 ? 'visible' : 'hidden'; n.style.transform = 'scaleX(' + eio(p) + ')'; } });
+  }
+  /* a labeled component chip that flies from one point to another */
+  function packet(parent, tag, col, fx, fy, tx, ty, s, e) {
+    var g = el('g', {}, parent);
+    sh(g, 'rect', { x: -62, y: -13, width: 124, height: 26, rx: 8, sw: 3.5 }, col, 0.35);
+    text(g, 0, 5, tag, { size: 14, anchor: 'middle', cond: true });
+    g.style.opacity = 0;
+    anims.push({ s: s, e: e, p: -1, fn: function (p) {
+      var q = eio(p);
+      g.style.opacity = p > 0 ? 1 : 0;
+      g.style.transform = 'translate(' + (fx + (tx - fx) * q) + 'px,' + (fy + (ty - fy) * q) + 'px)';
+    } });
+  }
+  function chip(parent, tag, col, cx, cy, s) {
+    pop(parent, s, s + 0.25, 8, function (p) {
+      sh(p, 'rect', { x: cx - 62, y: cy - 13, width: 124, height: 26, rx: 8, sw: 3.5 }, col, 0.35);
+      text(p, cx, cy + 5, tag, { size: 14, anchor: 'middle', cond: true });
+    });
+  }
+
+  /* ---------- Scene 1: what is HAX ---------- */
+  var g1 = scene(0, 5.9, 'What it is', false, 0.6, 4);
+  title(g1, 'What is HAX?', 0.2, 1.4);
+  draw(g1, 'rect', { x: 660, y: 170, width: 520, height: 330, rx: 16 }, 0, 0.8, 2.0);
+  draw(g1, 'rect', { x: 680, y: 190, width: 480, height: 30, rx: 15, sw: 3.5 }, 0, 1.8, 2.4);
+  text(g1, 702, 212, 'my-site.org/lesson-1', { size: 20, cls: 'f5', cond: true, s: 2.2, e: 2.9 });
+  text(g1, 690, 258, 'Lesson 1: The water cycle', { size: 28, s: 2.3, e: 3.1 });
+  text(g1, 690, 290, 'Normal text is just HTML, so anyone can read it.', { size: 18, s: 3.0, e: 3.7 });
+  text(g1, 690, 314, 'Blocks drop in wherever you want more.', { size: 18, s: 3.5, e: 4.0 });
+  function block(x, y, w, h, col, label, s) {
+    pop(g1, s, s + 0.45, -50, function (p) {
+      sh(p, 'rect', { x: x, y: y, width: w, height: h, rx: 8 }, col, 0.22);
+      text(p, x + w / 2, y + h / 2 + 7, label, { size: 22, anchor: 'middle', cond: true });
+    });
+  }
+  block(690, 336, 220, 100, 3, '<video-player>', 3.9);
+  block(930, 336, 220, 100, 4, '<multiple-choice>', 4.2);
+  block(690, 448, 460, 40, 2, '<grid-plate>', 4.5);
+  text(g1, 70, 250, 'Start with plain text', { size: 36, s: 2.2, e: 3.2 });
+  text(g1, 70, 310, 'Drop in blocks anywhere', { size: 36, s: 3.2, e: 4.2 });
+  text(g1, 70, 370, 'Each block: a web component', { size: 36, s: 4.2, e: 5.2 });
+  rpg(g1, 'zpg', 250, 598, 1.4, 1.0);
+  draw(g1, 'rect', { x: 352, y: 404, width: 108, height: 54, rx: 16 }, 0, 1.6, 2.0, 0.08);
+  draw(g1, 'path', { d: 'M366 458 L340 478 L390 458', sw: 4 }, 0, 1.9, 2.2);
+  text(g1, 406, 441, 'Ahoy!', { size: 28, anchor: 'middle', bold: true, s: 2.0, e: 2.4 });
+  draw(g1, 'path', { d: 'M335 520 Q480 520 640 430' }, 2, 3.0, 3.8);
+  draw(g1, 'path', { d: 'M623 453 L640 430 L612 432' }, 2, 3.7, 4.0);
+  capt(g1, 'HAX: the open web, built from blocks anyone can edit.', 4.8, 5.8);
+
+  /* ---------- Scene 2: the ecosystem ---------- */
+  var g2 = scene(6, 13.2, 'Ecosystem', false, 0.6, 5);
+  title(g2, 'Why is it so powerful?', 6.3, 7.4);
+  var HUB = { x: 640, y: 395, r: 66 }, NR = 40;
+  draw(g2, 'circle', { cx: HUB.x, cy: HUB.y, r: HUB.r }, 4, 6.8, 7.4, 0.25);
+  text(g2, HUB.x, HUB.y + 15, 'HAX', { size: 44, marker: 1, anchor: 'middle', s: 7.2, e: 7.6 });
+  text(g2, 350, 188, 'build', { size: 28, cls: 'f5', anchor: 'middle', s: 7.4, e: 7.8 });
+  text(g2, 930, 166, 'run + publish', { size: 28, cls: 'f5', anchor: 'middle', s: 7.4, e: 7.8 });
+  function eicon(p, kind, cx, cy, col) {
+    var a, b;
+    if (kind === 'blocks') {
+      sh(p, 'rect', { x: cx - 24, y: cy - 2, width: 22, height: 18, rx: 3 }, col, 0.2);
+      sh(p, 'rect', { x: cx + 2, y: cy - 2, width: 22, height: 18, rx: 3 }, col, 0.2);
+      sh(p, 'rect', { x: cx - 11, y: cy - 24, width: 22, height: 18, rx: 3 }, col, 0.2);
+    } else if (kind === 'pencil') {
+      sh(p, 'path', { d: 'M' + (cx - 20) + ' ' + (cy + 20) + ' L' + (cx - 15) + ' ' + (cy + 6) + ' L' + (cx + 9) + ' ' + (cy - 18) + ' L' + (cx + 21) + ' ' + (cy - 6) + ' L' + (cx - 3) + ' ' + (cy + 18) + ' Z' }, col, 0.2);
+    } else if (kind === 'term') {
+      sh(p, 'rect', { x: cx - 25, y: cy - 18, width: 50, height: 36, rx: 6 }, col);
+      text(p, cx, cy + 8, '>_', { size: 24, anchor: 'middle' });
+    } else if (kind === 'grid') {
+      for (a = -1; a <= 1; a++) for (b = -1; b <= 1; b++) sh(p, 'circle', { cx: cx + b * 14, cy: cy + a * 14, r: 4.2 }, col, 1);
+    } else if (kind === 'page') {
+      sh(p, 'rect', { x: cx - 16, y: cy - 22, width: 32, height: 44, rx: 4 }, col, 0.2);
+      sh(p, 'path', { d: 'M' + (cx - 8) + ' ' + (cy - 8) + ' H' + (cx + 8) + ' M' + (cx - 8) + ' ' + (cy + 2) + ' H' + (cx + 8) + ' M' + (cx - 8) + ' ' + (cy + 12) + ' H' + (cx + 2), sw: 3.5 }, col);
+    } else if (kind === 'pages') {
+      sh(p, 'rect', { x: cx - 26, y: cy - 14, width: 28, height: 36, rx: 4 }, col, 0.2);
+      sh(p, 'rect', { x: cx - 2, y: cy - 22, width: 28, height: 36, rx: 4 }, col, 0.2);
+    } else {
+      sh(p, 'rect', { x: cx - 21, y: cy - 22, width: 42, height: 44, rx: 5 }, col, 0.2);
+      text(p, cx, cy + 6, '</>', { size: 18, anchor: 'middle' });
+    }
+  }
+  var nodes = [
+    { x: 350, y: 250, col: 1, icon: 'blocks', l1: 'Web components', l2: 'the blocks' },
+    { x: 350, y: 400, col: 3, icon: 'pencil', l1: 'HAX editor', l2: 'reads component schema' },
+    { x: 350, y: 550, col: 0, icon: 'term', l1: 'HAX CLI', l2: 'create + audit' },
+    { x: 930, y: 235, col: 2, icon: 'page', l1: 'Single site', l2: 'Node.js' },
+    { x: 930, y: 340, col: 4, icon: 'pages', l1: 'Multisite', l2: 'PHP + Node.js' },
+    { x: 930, y: 445, col: 1, icon: 'grid', l1: 'Multi-tenant', l2: 'PHP' },
+    { x: 930, y: 550, col: 3, icon: 'static', l1: 'Static publishing', l2: 'plain files, any host' }
+  ];
+  nodes.forEach(function (n, i) {
+    var s0 = 7.6 + 0.42 * i;
+    var vx = n.x - HUB.x, vy = n.y - HUB.y, d = Math.sqrt(vx * vx + vy * vy), ux = vx / d, uy = vy / d;
+    var x1 = HUB.x + ux * (HUB.r + 8), y1 = HUB.y + uy * (HUB.r + 8);
+    var x2 = n.x - ux * (NR + 8), y2 = n.y - uy * (NR + 8);
+    draw(g2, 'path', { d: 'M' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' L' + x2.toFixed(1) + ' ' + y2.toFixed(1), sw: 3.5 }, 5, s0, s0 + 0.4);
+    draw(g2, 'circle', { cx: n.x, cy: n.y, r: NR }, n.col, s0 + 0.25, s0 + 0.7, 0.12);
+    pop(g2, s0 + 0.6, s0 + 0.9, 10, function (p) { eicon(p, n.icon, n.x, n.y, n.col); });
+    var left = n.x < 640, lx = left ? n.x - NR - 12 : n.x + NR + 12, an = left ? 'end' : 'start';
+    text(g2, lx, n.y - 2, n.l1, { size: 28, anchor: an, bold: true, s: s0 + 0.7, e: s0 + 1.1 });
+    text(g2, lx, n.y + 26, n.l2, { size: 20, anchor: an, cls: 'f5', s: s0 + 0.9, e: s0 + 1.3 });
+  });
+  capt(g2, 'Same blocks, same editor, every way to run and publish.', 11.5, 12.9);
+
+  /* ---------- Scene: the magic script loads only what is new ---------- */
+  var gL = scene(40, 51.8, 'Magic script', false, 0.6, 6);
+  title(gL, 'Why does it get faster?', 40.2, 41.4);
+  function slotsAt(px) {
+    return [{ x: px + 16, y: 210, w: 130, h: 70 }, { x: px + 162, y: 210, w: 142, h: 70 }, { x: px + 16, y: 292, w: 288, h: 60 }];
+  }
+  function mid(sl) { return [sl.x + sl.w / 2, sl.y + sl.h / 2]; }
+  function slotFill(sl, col, s) {
+    pop(gL, s, s + 0.3, 0, function (p) { sh(p, 'rect', { x: sl.x, y: sl.y, width: sl.w, height: sl.h, rx: 8, sw: 3 }, col, 0.22); });
+  }
+  var P1 = slotsAt(60), P2 = slotsAt(900);
+  draw(gL, 'rect', { x: 60, y: 170, width: 320, height: 200, rx: 12 }, 0, 40.8, 41.6);
+  text(gL, 220, 158, 'Page 1', { size: 30, marker: 1, anchor: 'middle', s: 41.2, e: 41.7 });
+  P1.forEach(function (sl, i) { draw(gL, 'rect', { x: sl.x, y: sl.y, width: sl.w, height: sl.h, rx: 8, sw: 3 }, 5, 41.5 + 0.2 * i, 41.9 + 0.2 * i); });
+  draw(gL, 'path', { d: 'M575 520 Q545 520 548 495 Q550 470 580 472 Q585 440 625 442 Q655 428 678 455 Q712 450 715 485 Q735 500 715 520 Z' }, 0, 41.6, 42.4, 0.1);
+  text(gL, 640, 500, 'CDN', { size: 26, anchor: 'middle', s: 42.2, e: 42.6 });
+  text(gL, 640, 560, 'loads a component only when its tag shows up', { size: 22, cls: 'f5', anchor: 'middle', s: 42.4, e: 43.2 });
+  draw(gL, 'rect', { x: 460, y: 190, width: 360, height: 170, rx: 14 }, 3, 42.2, 43.0, 0.08);
+  text(gL, 640, 222, 'kept in the browser', { size: 24, anchor: 'middle', s: 42.8, e: 43.4 });
+  var T1 = [['grid-plate', 4], ['video-player', 3], ['multiple-choice', 1]];
+  T1.forEach(function (tg, i) {
+    var c = mid(P1[i]), s0 = 43.4 + 0.4 * i;
+    slotFill(P1[i], tg[1], s0 + 0.7);
+    packet(gL, tg[0], tg[1], 600, 470, c[0], c[1], s0, s0 + 0.8);
+    chip(gL, tg[0], tg[1], 640, 248 + 38 * i, s0 + 1.0);
+  });
+  draw(gL, 'rect', { x: 60, y: 410, width: 320, height: 22, rx: 11, sw: 3 }, 5, 43.4, 43.8);
+  grow(gL, 60, 410, 320, 22, 2, 43.6, 45.2);
+  text(gL, 220, 468, '3 downloads', { size: 26, anchor: 'middle', cls: 'f2', s: 45.0, e: 45.6 });
+
+  draw(gL, 'rect', { x: 900, y: 170, width: 320, height: 200, rx: 12 }, 0, 45.6, 46.4);
+  text(gL, 1060, 158, 'Page 2', { size: 30, marker: 1, anchor: 'middle', s: 46.0, e: 46.5 });
+  P2.forEach(function (sl, i) { draw(gL, 'rect', { x: sl.x, y: sl.y, width: sl.w, height: sl.h, rx: 8, sw: 3 }, 5, 46.3 + 0.2 * i, 46.7 + 0.2 * i); });
+  draw(gL, 'path', { d: 'M826 248 Q865 235 900 246' }, 3, 46.9, 47.4);
+  draw(gL, 'path', { d: 'M885 236 L900 246 L884 256' }, 3, 47.3, 47.6);
+  draw(gL, 'path', { d: 'M826 324 Q865 333 902 325' }, 3, 47.1, 47.6);
+  draw(gL, 'path', { d: 'M887 315 L902 325 L886 335' }, 3, 47.5, 47.8);
+  text(gL, 862, 292, 'reuse', { size: 22, anchor: 'middle', cls: 'f3', s: 47.4, e: 47.9 });
+  slotFill(P2[0], 4, 47.7); chip(gL, 'grid-plate', 4, mid(P2[0])[0], mid(P2[0])[1], 47.7);
+  slotFill(P2[2], 1, 47.9); chip(gL, 'multiple-choice', 1, mid(P2[2])[0], mid(P2[2])[1], 47.9);
+  text(gL, 640, 386, 'no second download', { size: 24, anchor: 'middle', cls: 'f3', s: 47.9, e: 48.5 });
+  var cB = mid(P2[1]);
+  slotFill(P2[1], 2, 48.8);
+  packet(gL, 'media-image', 2, 680, 470, cB[0], cB[1], 48.0, 48.9);
+  draw(gL, 'rect', { x: 900, y: 410, width: 320, height: 22, rx: 11, sw: 3 }, 5, 47.6, 48.0);
+  grow(gL, 900, 410, 107, 22, 3, 48.0, 49.0);
+  text(gL, 1060, 468, '1 download', { size: 26, anchor: 'middle', cls: 'f3', s: 49.0, e: 49.6 });
+  capt(gL, 'The magic script loads each element once, then reuses it.', 50.0, 51.4);
+
+  /* ---------- Scene 3: the seven community pillars ---------- */
+  var g3 = scene(13, 25.2, 'Pillars', false, 0.6, 5.5);
+  title(g3, 'Seven pillars hold everyone up', 13.3, 14.6);
+  draw(g3, 'path', { d: 'M40 590 H1240' }, 0, 13.8, 14.5);
+  function pIcon(p, i, cx, cy, col) {
+    function X(n) { return cx + n; }
+    function Y(n) { return cy + n; }
+    if (i === 0) {
+      sh(p, 'circle', { cx: cx, cy: Y(-22), r: 7 }, col);
+      sh(p, 'path', { d: 'M' + cx + ' ' + Y(-14) + ' V' + Y(8) + ' M' + X(-15) + ' ' + Y(-6) + ' H' + X(15) + ' M' + cx + ' ' + Y(8) + ' L' + X(-10) + ' ' + Y(26) + ' M' + cx + ' ' + Y(8) + ' L' + X(10) + ' ' + Y(26) }, col);
+    } else if (i === 1) {
+      sh(p, 'rect', { x: X(-14), y: Y(-14), width: 28, height: 28, rx: 5 }, col, 0.2);
+      sh(p, 'path', { d: 'M' + cx + ' ' + Y(-14) + ' V' + Y(-26) + ' M' + X(14) + ' ' + cy + ' H' + X(26) + ' M' + cx + ' ' + Y(14) + ' V' + Y(26) + ' M' + X(-14) + ' ' + cy + ' H' + X(-26) }, col);
+    } else if (i === 2) {
+      sh(p, 'rect', { x: X(-16), y: Y(-4), width: 32, height: 26, rx: 5 }, col, 0.2);
+      sh(p, 'path', { d: 'M' + X(-9) + ' ' + Y(-4) + ' V' + Y(-12) + ' Q' + X(-9) + ' ' + Y(-24) + ' ' + X(3) + ' ' + Y(-24) + ' Q' + X(15) + ' ' + Y(-24) + ' ' + X(15) + ' ' + Y(-14) }, col);
+    } else if (i === 3) {
+      sh(p, 'path', { d: 'M' + X(6) + ' ' + Y(-26) + ' L' + X(-12) + ' ' + Y(4) + ' H' + cx + ' L' + X(-6) + ' ' + Y(26) + ' L' + X(14) + ' ' + Y(-6) + ' H' + X(2) + ' Z' }, col, 0.3);
+    } else if (i === 4) {
+      sh(p, 'circle', { cx: cx, cy: cy, r: 24 }, col, 0.12);
+      sh(p, 'ellipse', { cx: cx, cy: cy, rx: 10, ry: 24 }, col);
+      sh(p, 'path', { d: 'M' + X(-24) + ' ' + cy + ' H' + X(24) }, col);
+    } else if (i === 5) {
+      sh(p, 'circle', { cx: cx, cy: Y(-20), r: 6 }, col);
+      sh(p, 'circle', { cx: X(-18), cy: Y(18), r: 6 }, col);
+      sh(p, 'circle', { cx: X(18), cy: Y(18), r: 6 }, col);
+      sh(p, 'path', { d: 'M' + cx + ' ' + Y(-14) + ' V' + Y(2) + ' M' + X(-18) + ' ' + Y(12) + ' V' + Y(6) + ' Q' + X(-18) + ' ' + Y(2) + ' ' + cx + ' ' + Y(2) + ' M' + X(18) + ' ' + Y(12) + ' V' + Y(6) + ' Q' + X(18) + ' ' + Y(2) + ' ' + cx + ' ' + Y(2) }, col);
+    } else {
+      sh(p, 'path', { d: 'M' + X(-18) + ' ' + Y(18) + ' Q' + X(-22) + ' ' + Y(-20) + ' ' + X(20) + ' ' + Y(-22) + ' Q' + X(22) + ' ' + Y(14) + ' ' + X(-18) + ' ' + Y(18) + ' Z' }, col, 0.2);
+      sh(p, 'path', { d: 'M' + X(-18) + ' ' + Y(18) + ' L' + X(6) + ' ' + Y(-8) }, col);
+    }
+  }
+  var pillars = [
+    { n: ['Accessible'], col: 1, sub: ['built for', 'every user'] },
+    { n: ['Extensible'], col: 3, sub: ['build on', 'what exists'] },
+    { n: ['Free and', 'Open'], col: 4, sub: ['open APIs,', 'no lock-in'] },
+    { n: ['Efficient'], col: 2, sub: ['lean, fast,', 'lazy-loaded'] },
+    { n: ['Platform', 'Agnostic'], col: 1, sub: ['works in any', 'CMS or static'] },
+    { n: ['Remixable'], col: 3, sub: ['fork it,', 'remix it'] },
+    { n: ['Sustainable'], col: 4, sub: ['environment,', 'tech, project'] }
+  ];
+  pillars.forEach(function (c, i) {
+    var x = 73 + 164 * i, cx = x + 75, cs = 14.4 + 0.8 * i;
+    draw(g3, 'rect', { x: x, y: 330, width: 150, height: 260, rx: 10 }, c.col, cs, cs + 0.6, 0.12);
+    c.n.forEach(function (ln, j) {
+      text(g3, cx, (c.n.length > 1 ? 372 : 386) + j * 27, ln, { size: 24, anchor: 'middle', cond: true, s: cs + 0.5, e: cs + 0.9 + 0.1 * j });
+    });
+    pop(g3, cs + 0.8, cs + 1.1, 10, function (p) { pIcon(p, i, cx, 455, c.col); });
+    text(g3, cx, 522, c.sub[0], { size: 20, anchor: 'middle', s: cs + 0.9, e: cs + 1.3 });
+    text(g3, cx, 548, c.sub[1], { size: 20, anchor: 'middle', s: cs + 1.2, e: cs + 1.6 });
+  });
+  draw(g3, 'rect', { x: 50, y: 280, width: 1180, height: 50, rx: 10 }, 4, 21.0, 21.6, 0.25);
+  var crew = [['ai', 'AI agents', 190], ['student', 'students', 410], ['designer', 'designers', 640], ['educator', 'educators', 870], ['developer', 'developers', 1090]];
+  crew.forEach(function (c, k) {
+    var s0 = 21.4 + 0.3 * k;
+    rpg(g3, c[0], c[2], 282, 0.95, s0);
+    text(g3, c[2], 316, c[1], { size: 22, anchor: 'middle', bold: true, s: s0 + 0.5, e: s0 + 0.9 });
+  });
+  capt(g3, 'Seven pillars: a foundation everyone can build on.', 23.2, 24.6);
+
+
+  /* ---------- Scene 5: everyone gets a rocket, each for a use case ---------- */
+  var g5 = scene(26, 32.9, 'Lift off', true, 0.6, 4.5);
+  title(g5, 'What will you launch?', 26.2, 27.2);
+  /* endless starfield: after lift-off the stars stream downward forever, so the rockets read as still climbing.
+     Three parallax layers whose speeds divide the 540-unit sky, so the motion loops seamlessly every 4 s. */
+  var sky = el('g', { 'clip-path': 'url(#skyclip)' }, g5), stars = [], rnd = 7;
+  g5.insertBefore(sky, g5.firstChild);
+  (function () {
+    var cp = document.createElementNS(NS, 'clipPath'); cp.setAttribute('id', 'skyclip');
+    var rc = document.createElementNS(NS, 'rect'); rc.setAttribute('width', 1280); rc.setAttribute('height', 540);
+    cp.appendChild(rc); document.querySelector('#board defs').appendChild(cp);
+  })();
+  function rand() { rnd = (rnd * 16807) % 2147483647; return rnd / 2147483647; }
+  [[34, 135, 'far'], [16, 270, 'mid'], [9, 540, 'near']].forEach(function (L) {
+    for (var k = 0; k < L[0]; k++) {
+      var x = 20 + rand() * 1240, y0 = rand() * 540, g = el('g', {}, sky), tail = null;
+      if (L[2] === 'far') {
+        el('circle', { cx: 0, cy: 0, r: 1.6 + rand() * 1.2, 'class': rand() < 0.5 ? 'f5' : 'f1', opacity: 0.7 }, g);
+      } else if (L[2] === 'mid') {
+        tail = el('path', { d: 'M0 0 V0', 'class': 'st s1', 'stroke-width': 3, opacity: 0.45 }, g);
+        el('circle', { cx: 0, cy: 0, r: 3.2, 'class': 'f1' }, g);
+      } else {
+        tail = el('path', { d: 'M0 0 V0', 'class': 'st s7', 'stroke-width': 4, opacity: 0.5 }, g);
+        var tw = el('g', { 'class': 'tw2' }, g);
+        tw.style.animationDelay = (-rand() * 2) + 's';
+        el('path', { d: 'M-12 0 H12 M0 -12 V12 M-5 -5 L5 5 M-5 5 L5 -5', 'class': 'st s7', 'stroke-width': 3.5 }, tw);
+      }
+      g.style.opacity = 0;
+      stars.push({ g: g, x: x, y0: y0, v: L[1], tail: tail, born: 26.2 + rand() * 1.2 });
+    }
+  });
+  var L5 = tm(28.6), R5 = tm(30.6) - L5, B5 = tm(31.4 + 0.25 * 4), bobs = [];
+  stars.forEach(function (st) { st.born = tm(st.born); });
+  fieldUpdate = function (time) {
+    var e = time - L5, off = e <= 0 ? 0 : (e < R5 ? 0.5 * e * e / R5 : e - R5 / 2), sp = e <= 0 ? 0 : Math.min(1, e / R5);
+    stars.forEach(function (st) {
+      var y = ((st.y0 + st.v * off) % 540 + 540) % 540;
+      st.g.style.opacity = clamp((time - st.born) / 0.4);
+      st.g.setAttribute('transform', 'translate(' + st.x.toFixed(1) + ' ' + y.toFixed(1) + ')');
+      if (st.tail) st.tail.setAttribute('d', 'M0 0 V' + (-st.v * 0.09 * sp).toFixed(1));
+    });
+    var c = time - B5;
+    bobs.forEach(function (b, i) {
+      b.style.transform = c > 0 ? 'translate(' + (2 * Math.sin(Math.PI * (c + i * 0.3))).toFixed(2) + 'px,' + (4 * Math.sin(Math.PI * (c + i * 0.4))).toFixed(2) + 'px)' : '';
+    });
+  };
+  draw(g5, 'path', { d: 'M40 548 H1240' }, 0, 26.3, 26.8);
+  var rockets = [
+    { x: 200, col: 6, ch: 'ai', n: 'Docs', sub: 'answers + guides' },
+    { x: 420, col: 1, ch: 'student', n: 'Portfolio', sub: 'show your work' },
+    { x: 640, col: 3, ch: 'zpg', n: 'Website', sub: 'pages anyone can edit' },
+    { x: 860, col: 2, ch: 'designer', n: 'Blog', sub: 'write + publish' },
+    { x: 1080, col: 4, ch: 'educator', n: 'Course', sub: 'lessons + quizzes' }
+  ];
+  var rise = [-190, -210, -230, -210, -190], defs = document.querySelector('#board defs');
+  rockets.forEach(function (r, i) {
+    var r0 = 26.6 + 0.3 * i;
+    var base = el('g', { transform: 'translate(' + r.x + ' 544)' }, g5);
+    var bob = el('g', {}, base); bobs.push(bob);
+    var launch = el('g', {}, bob);
+    var big = el('g', { transform: 'scale(0.8)' }, launch);
+    var flameG = el('g', {}, big);
+    flameG.style.opacity = 0;
+    var fl = el('g', { 'class': 'flame' }, flameG);
+    /* opaque underlay so falling stars pass behind the rocket */
+    el('path', { d: 'M-30 -22 C-42 -66 -42 -140 0 -182 C42 -140 42 -66 30 -22 Z M-32 -44 L-60 -4 L-32 -22 Z M32 -44 L60 -4 L32 -22 Z M-32 -22 H32 V0 H-32 Z', 'class': 'bg' }, big);
+    sh(fl, 'path', { d: 'M-24 0 Q0 84 24 0 Z' }, 4, 0.7);
+    sh(fl, 'path', { d: 'M-11 0 Q0 46 11 0 Z' }, 2, 0.8);
+    draw(big, 'rect', { x: -32, y: -22, width: 64, height: 22, rx: 4 }, 0, r0, r0 + 0.4);
+    [1, 3, 4, 2, 1, 3, 4].forEach(function (c, k) {
+      draw(big, 'path', { d: 'M' + (-27 + 9 * k) + ' -19 V-3', sw: 4 }, c, r0 + 0.3 + 0.05 * k, r0 + 0.55 + 0.05 * k);
+    });
+    draw(big, 'path', { d: 'M-30 -22 C-42 -66 -42 -140 0 -182 C42 -140 42 -66 30 -22 Z' }, r.col, r0 + 0.2, r0 + 0.8, 0.18);
+    draw(big, 'path', { d: 'M-32 -44 L-60 -4 L-32 -22' }, 2, r0 + 0.5, r0 + 0.8, 0.25);
+    draw(big, 'path', { d: 'M32 -44 L60 -4 L32 -22' }, 2, r0 + 0.5, r0 + 0.8, 0.25);
+    draw(big, 'circle', { cx: 0, cy: -106, r: 25 }, 0, r0 + 0.6, r0 + 0.9, 0.12);
+    /* the pilot: this rpg-character's head, clipped into the porthole */
+    var cp = document.createElementNS(NS, 'clipPath'); cp.setAttribute('id', 'port' + i);
+    var cc = document.createElementNS(NS, 'circle'); cc.setAttribute('cx', 0); cc.setAttribute('cy', -106); cc.setAttribute('r', 22);
+    cp.appendChild(cc); defs.appendChild(cp);
+    pop(big, r0 + 0.85, r0 + 1.1, 0, function (p) {
+      var cg = el('g', { 'clip-path': 'url(#port' + i + ')' }, p);
+      var hs = el('svg', { x: -29, y: -135, width: 58, height: 58, viewBox: '12 4 90 90' }, cg);
+      hs.innerHTML = RPG[r.ch];
+    });
+    anims.push({ s: 28.4 + 0.25 * i, e: 28.9 + 0.25 * i, p: -1, fn: function (p) { flameG.style.opacity = p; } });
+    anims.push({ s: 28.6 + 0.25 * i, e: 31.4 + 0.25 * i, p: -1, fn: function (p) {
+      var q = eio3(p), k = i - 2;
+      launch.style.transform = 'translate(' + (45 * k * q) + 'px,' + (rise[i] * q) + 'px) rotate(' + (7 * k * q) + 'deg)';
+    } });
+    /* the use case stays on the launch pad */
+    text(g5, r.x, 584, r.n, { size: 28, anchor: 'middle', bold: true, cls: 'f' + r.col, s: r0 + 0.9, e: r0 + 1.3 });
+    text(g5, r.x, 612, r.sub, { size: 18, anchor: 'middle', cls: 'f5', s: r0 + 1.1, e: r0 + 1.5 });
+  });
+  capt(g5, 'Our pillars are your engines of change!', 28.4, 29.8);
+  text(g5, 1210, 122, 'haxtheweb.org', { size: 40, marker: 1, cls: 'f1', anchor: 'end', s: 31.6, e: 32.3 });
+  draw(g5, 'path', { d: 'M900 142 Q1050 132 1210 144', sw: 4 }, 2, 32.2, 32.7);
+
+  /* ---------- player ---------- */
+  T = nextStart;
+  var seek = document.getElementById('seek'), clock = document.getElementById('clock'), pp = document.getElementById('pp');
+  seek.max = T;
+  var chipsEl = document.getElementById('chips'), chips = [];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var t = 0, playing = !reduce, lastTs = 0, lastDraw = 0, curScene = -1, cruise = 0, cruising = false;
+
+  scenes.forEach(function (sc, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.textContent = sc.name;
+    b.addEventListener('click', function () { t = sc.a + 0.01; playing = true; cruise = 0; cruising = false; render(); });
+    chipsEl.appendChild(b); chips.push(b);
+  });
+
+  function fmt(v) { var q = Math.floor(v), m = Math.floor(q / 60), r = q % 60; return m + ':' + (r < 10 ? '0' : '') + r; }
+  function render() {
+    var i, sc, on, o;
+    for (i = 0; i < scenes.length; i++) {
+      sc = scenes[i]; on = t >= sc.a && t <= sc.b;
+      if (on !== sc.on) { sc.g.style.display = on ? '' : 'none'; sc.sg.style.display = on ? '' : 'none'; sc.on = on; }
+      if (on) {
+        o = Math.min(1, (t - sc.a) / 0.3);
+        if (!sc.last) o = Math.min(o, (sc.b - t) / 0.5);
+        sc.g.style.opacity = clamp(o); sc.sg.style.opacity = clamp(o);
+      }
+    }
+    for (i = 0; i < anims.length; i++) {
+      var a = anims[i], p = clamp((t - a.s) / (a.e - a.s));
+      if (p !== a.p) { a.p = p; a.fn(p); }
+    }
+    if (fieldUpdate) fieldUpdate(t + cruise);
+    seek.value = t;
+    clock.textContent = fmt(t) + ' / ' + fmt(T);
+    var cs = 0;
+    for (i = 0; i < scenes.length; i++) if (t >= scenes[i].a) cs = i;
+    if (cs !== curScene) {
+      curScene = cs;
+      chips.forEach(function (c, j) { if (j === cs) c.setAttribute('aria-current', 'true'); else c.removeAttribute('aria-current'); });
+    }
+    pp.textContent = playing ? 'Pause' : (t >= T - 0.01 ? 'Replay' : 'Play');
+    if (playing) svg.classList.remove('paused'); else svg.classList.add('paused');
+  }
+
+  pp.addEventListener('click', function () {
+    if (t >= T - 0.01) { t = 0; playing = true; } else { playing = !playing; }
+    cruise = 0; cruising = false;
+    render();
+  });
+  seek.addEventListener('input', function () { t = parseFloat(seek.value) || 0; playing = false; cruise = 0; cruising = false; render(); });
+
+  function frame(ts) {
+    var dt = lastTs ? Math.min(0.1, (ts - lastTs) / 1000) : 0;
+    lastTs = ts;
+    if (playing) {
+      t += dt;
+      if (t >= T) { t = T; playing = false; lastDraw = 0; cruising = !reduce; }
+      if (ts - lastDraw > 30 || !playing) { lastDraw = ts; render(); }
+    } else if (cruising && fieldUpdate) {
+      /* the video has ended but the rockets keep going: stars fall forever */
+      cruise += dt;
+      if (cruise > 4000) cruise -= 4000;
+      if (ts - lastDraw > 30) { lastDraw = ts; fieldUpdate(T + cruise); }
+    }
+    requestAnimationFrame(frame);
+  }
+  window.hdbSeek = function (time) { playing = false; cruising = false; t = Math.min(time, T); cruise = Math.max(0, time - T); render(); };
+  window.hdbDuration = function () { return T; };
+  render();
+  requestAnimationFrame(frame);
+})();
+</script>
