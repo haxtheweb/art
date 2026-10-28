@@ -19,6 +19,7 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [WANTED: HAX, the Open Web Outlaw (old-west poster, rpg-character in a cowboy hat)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg)
 
 ## Explainers
+- [HAX the Web (16-bit attract-mode game: an rpg-character collects 12 pieces of HAX lore, then a run report explains each)](https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-the-web-game)
 - [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
 
 ## Policy
