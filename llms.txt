@@ -21,6 +21,8 @@ Most variants are AI-generated remixes of the original human-made character; sev
 ## Explainers
 - [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
 
+- [HAX Episode XXVI: Return of the Open Web (space-opera opening crawl recapping HAX's history, standards and 2026 journey; parody format, original music)](https://github.com/haxtheweb/art/tree/main/presentation-materials/episode-xxvi)
+
 ## Policy
 - [LICENSING.md](https://github.com/haxtheweb/art/blob/main/LICENSING.md): proposed CC BY 4.0 for HAX-original art; third-party parodies excluded
 

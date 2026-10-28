@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HAX Episode XXVI: Return of the Open Web. A space-opera opening crawl about the HAX journey against walled gardens.">
+<title>HAX Episode XXVI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700;800&family=Saira:wght@700;800&family=Saira+Extra+Condensed:wght@800;900&display=swap">
+<style>
+/* Layout: full-bleed starfield, centered perspective crawl, end card with call to action. Single committed dark look. */
+:root {
+  --space: #02030a;
+  --star: #e9ecff;
+  --gold: #f2c230;
+  --gold-dim: #b88d12;
+  --blue: #6fb6ff;
+  --ink: #0b0e1c;
+  --crawl: "Saira", "Franklin Gothic Medium", "Arial", sans-serif;
+  --display: "Saira Extra Condensed", "Arial Narrow", Impact, sans-serif;
+  --body: "Saira Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body {
+  background: var(--space);
+  color: var(--gold);
+  font-family: var(--body);
+  overflow: hidden;
+}
+canvas#stars { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+
+.stage { position: fixed; inset: 0; overflow: hidden; }
+
+.intro {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  text-align: center;
+  color: var(--blue);
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: clamp(1.1rem, 3.4vw, 1.9rem);
+  line-height: 1.4;
+  opacity: 0;
+  animation: intro 6s ease-in-out 0.4s forwards;
+}
+@keyframes intro { 0% {opacity:0} 15% {opacity:1} 80% {opacity:1} 100% {opacity:0} }
+
+.logo {
+  position: absolute; left: 50%; top: 50%;
+  font-family: var(--display); font-weight: 900;
+  font-size: clamp(5rem, 26vw, 18rem);
+  letter-spacing: 0.04em; line-height: 0.85;
+  color: transparent;
+  -webkit-text-stroke: clamp(2px, 0.5vw, 5px) var(--gold);
+  transform: translate(-50%, -50%) scale(2.6);
+  opacity: 0;
+  animation: logo 9s cubic-bezier(.3,.1,.4,1) 6.6s forwards;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@keyframes logo {
+  0% { transform: translate(-50%,-50%) scale(2.6); opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translate(-50%,-50%) scale(0.05); opacity: 0; }
+}
+
+.fade { position: absolute; inset: 0 0 auto; height: 30%; background: linear-gradient(var(--space) 20%, transparent); z-index: 2; pointer-events: none; }
+
+.perspective {
+  position: absolute; inset: 0;
+  perspective: 360px;
+  perspective-origin: 50% 8%;
+  overflow: hidden;
+}
+.plane {
+  position: absolute; left: 50%; bottom: 0;
+  width: min(128vw, 1500px); height: 0;
+  transform-origin: 50% 0;
+  transform: translateX(-50%) rotateX(58deg);
+}
+.crawl {
+  position: absolute; left: 0; right: 0; top: 0;
+  font-family: var(--crawl);
+  font-size: clamp(1.5rem, 5.6vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.22;
+  text-align: justify;
+  hyphens: auto;
+  visibility: hidden;
+}
+.crawl.on { visibility: visible; }
+.crawl .episode, .crawl h1 { text-align: center; margin: 0; }
+.crawl .episode { font-size: 0.85em; letter-spacing: 0.08em; font-weight: 700; }
+.crawl h1 {
+  font-family: var(--display); font-weight: 900;
+  font-size: 2em; line-height: 1; letter-spacing: 0.04em;
+  margin: 0.2em 0 0.8em; text-wrap: balance;
+}
+.crawl p { margin: 0 0 1em; }
+.crawl strong { font-weight: 800; letter-spacing: 0.03em; }
+
+/* Start screen */
+.start {
+  position: absolute; inset: 0; z-index: 4;
+  display: grid; place-items: center; text-align: center;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.start-inner { display: grid; gap: 20px; justify-items: center; }
+.start .ep { color: var(--blue); letter-spacing: 0.3em; text-transform: uppercase; font-size: 1rem; }
+.start .big { font-family: var(--display); font-weight: 900; font-size: clamp(4rem, 20vw, 9rem); line-height: .85; color: transparent; -webkit-text-stroke: 3px var(--gold); letter-spacing: .04em; }
+.start-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.start .quiet { background: none; border: 1px solid var(--gold-dim); color: var(--gold); font-family: var(--body); font-weight: 700; font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; padding: 10px 18px; cursor: pointer; border-radius: 2px; }
+.start .quiet:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+button.cta { border: 0; cursor: pointer; }
+body.running .start { display: none; }
+body:not(.running) .intro, body:not(.running) .logo { animation: none; opacity: 0; }
+
+/* End card */
+.end {
+  position: absolute; inset: 0; z-index: 3;
+  display: grid; place-items: center;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px;
+  text-align: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity 1.4s ease, visibility 0s linear 1.4s;
+}
+.end.show { opacity: 1; visibility: visible; transition: opacity 1.4s ease; }
+.end-inner { display: grid; gap: 18px; justify-items: center; max-width: 34rem; }
+.end .kicker { color: var(--blue); font-size: 1rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; }
+.end h2 {
+  margin: 0; font-family: var(--display); font-weight: 900;
+  font-size: clamp(2.6rem, 11vw, 5rem); line-height: 0.95; letter-spacing: 0.03em;
+  color: var(--gold); text-wrap: balance;
+}
+.end p { margin: 0; color: var(--star); font-size: 1.15rem; line-height: 1.45; opacity: 0.85; }
+.cta {
+  display: inline-block; margin-top: 6px;
+  padding: 14px 30px;
+  font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: 0.08em;
+  color: var(--ink); background: var(--gold);
+  text-decoration: none; border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--gold), 0 0 32px -4px var(--gold);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cta:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px var(--gold), 0 0 48px 0 var(--gold); }
+.cta:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.standards { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 4px; }
+.standards span {
+  font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--gold-dim); padding: 4px 10px; border-radius: 2px;
+}
+
+.controls {
+  position: fixed; z-index: 5;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: flex; gap: 8px;
+}
+.controls button {
+  font-family: var(--body); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--star); background: rgba(10,12,28,0.7);
+  border: 1px solid rgba(233,236,255,0.3); padding: 8px 14px; border-radius: 2px; cursor: pointer;
+}
+.controls button:hover { border-color: var(--gold); color: var(--gold); }
+.controls button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* Skipped / reduced motion: static readable version */
+body.static { overflow: auto; }
+body.static .intro, body.static .logo, body.static .fade { display: none; }
+body.static .stage { position: relative; inset: auto; overflow: visible; }
+body.static .perspective { position: relative; perspective: none; display: block; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 0; }
+body.static .start { display: none; }
+body.static .plane { position: static; transform: none; width: auto; height: auto; }
+body.static .crawl { visibility: visible; max-width: 40rem; position: relative; top: auto; margin: 0 auto; transform: none !important; opacity: 1; animation: none; font-size: clamp(1.1rem, 3.2vw, 1.4rem); text-align: left; }
+body.static .end { position: relative; inset: auto; opacity: 1; visibility: visible; padding-block: 24px 120px; }
+@media (prefers-reduced-motion: reduce) {
+  .intro, .logo { animation: none !important; }
+}
+</style>
+
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<div class="stage" id="stage">
+  <div class="intro" aria-hidden="true">Not so long ago, in a browser tab<br>not so far away....</div>
+  <div class="logo" aria-hidden="true">HAX</div>
+  <div class="fade"></div>
+  <div class="start" id="start">
+    <div class="start-inner">
+      <div class="ep">Episode XXVI</div>
+      <div class="big">HAX</div>
+      <div class="start-btns">
+        <button type="button" class="cta" id="go">Begin with sound</button>
+        <button type="button" class="quiet" id="go-quiet">Play silently</button>
+      </div>
+    </div>
+  </div>
+  <div class="perspective"><div class="plane">
+    <article class="crawl" id="crawl">
+      <p class="episode">Episode XXVI</p>
+      <h1>RETURN OF THE OPEN WEB</h1>
+      <p>It is a period of walled gardens. For nearly a decade, rebel developers striking from a hidden repository in Happy Valley have waged war against the <strong>EDTECH EMPIRE</strong>, whose LMS fortresses lock knowledge behind licenses, logins and proprietary formats that die the moment the contract does.</p>
+      <p>Across the galaxy, the <strong>SILICON VALLEY HOSTING OVERLORDS</strong> tighten their grip, renting creators back their own words by the month and turning every humble website into a subscription with a dashboard and an upsell.</p>
+      <p>Armed only with <strong>WEB STANDARDS</strong>, the Rebellion forged HAX. Web Components that run in any browser. Plain HTML anyone can read. JSON Outline Schema to give every site a spine. OER Schema so learning can be found and remixed. WCAG accessibility in every block. Sites that are portable, remixable, static-capable and <em>owned</em>. All of it Apache-2.0. None of it rented.</p>
+      <p>Now, in the year twenty-six, version 26 rolls off the line and the Rebellion advances on every front. The <strong>DDD</strong> design system unites themes and admin screens under one language. A new plugin architecture lets the core keep raising the baseline, so no old site is left behind. Lit SSR and AI-readiness make what creators build visible to humans and agents alike. Learn HAX rises to train new recruits, in 102 languages.</p>
+      <p>The Empire's plan depends on content being trapped. The Rebellion's plan is simpler: humans and AI remixing each other's work, accessibly, on the open web, with no one holding the keys but the people who made it.</p>
+      <p>As the overlords count their recurring revenue, a small band of educators, designers and developers gathers at the Rebellion's base, preparing to welcome anyone brave enough to publish something they actually own....</p>
+    </article>
+  </div></div>
+
+  <section class="end" id="end" aria-labelledby="end-title">
+    <div class="end-inner">
+      <div class="kicker">The base is open</div>
+      <h2 id="end-title">Join the Rebellion</h2>
+      <p>Build your site, own your content, and help us take back the web, one standard at a time.</p>
+      <div class="standards" aria-label="Standards HAX is built on">
+        <span>Web Components</span><span>HTML</span><span>JSON Outline Schema</span><span>OER Schema</span><span>WCAG</span><span>Apache-2.0</span>
+      </div>
+      <a class="cta" href="https://hax.psu.edu" target="_blank" rel="noopener">HAX.PSU.EDU</a>
+    </div>
+  </section>
+</div>
+
+<div class="controls">
+  <button type="button" id="mute" aria-pressed="false">Mute</button>
+  <button type="button" id="replay">Replay</button>
+  <button type="button" id="skip">Skip</button>
+</div>
+
+<script>
+(function () {
+  /* ---------- Starfield ---------- */
+  var c = document.getElementById('stars'), cx = c.getContext('2d'), stars = [];
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size() {
+    var d = window.devicePixelRatio || 1;
+    c.width = innerWidth * d; c.height = innerHeight * d;
+    cx.setTransform(d, 0, 0, d, 0, 0);
+    stars = [];
+    var n = Math.round(innerWidth * innerHeight / 2600);
+    for (var i = 0; i < n; i++) stars.push({ x: Math.random() * innerWidth, y: Math.random() * innerHeight, r: Math.random() * 1.3 + 0.2, p: Math.random() * 6.28, s: 0.4 + Math.random() * 1.4 });
+  }
+  function draw(t) {
+    cx.clearRect(0, 0, innerWidth, innerHeight);
+    for (var i = 0; i < stars.length; i++) {
+      var s = stars[i];
+      cx.globalAlpha = still ? 0.8 : 0.55 + 0.45 * Math.sin(s.p + t / 1000 * s.s);
+      cx.fillStyle = '#e9ecff';
+      cx.beginPath(); cx.arc(s.x, s.y, s.r, 0, 6.283); cx.fill();
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+  size(); addEventListener('resize', function () { size(); if (still) draw(0); });
+  requestAnimationFrame(draw);
+
+  /* ---------- Music: an original, extremely cheesy HAX fanfare ---------- */
+  var Music = (function () {
+    var ac = null, master = null, bus = null, verb = null, voices = [];
+    var BPM = 104, B = 60 / BPM;
+    function mf(m) { return 440 * Math.pow(2, (m - 69) / 12); }
+    function init() {
+      if (ac) return;
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      ac = new AC();
+      master = ac.createGain(); master.gain.value = 0.55;
+      var comp = ac.createDynamicsCompressor();
+      comp.threshold.value = -16; comp.ratio.value = 4;
+      master.connect(comp); comp.connect(ac.destination);
+      bus = ac.createGain(); bus.connect(master);
+      verb = ac.createConvolver();
+      var len = ac.sampleRate * 2.8, ir = ac.createBuffer(2, len, ac.sampleRate);
+      for (var ch = 0; ch < 2; ch++) {
+        var d = ir.getChannelData(ch);
+        for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.6);
+      }
+      verb.buffer = ir;
+      var wet = ac.createGain(); wet.gain.value = 0.32;
+      bus.connect(verb); verb.connect(wet); wet.connect(master);
+    }
+    function track(n) { voices.push(n); }
+    function env(g, t, a, peak, sus, dur, rel) {
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(peak, t + a);
+      g.gain.exponentialRampToValueAtTime(Math.max(sus, 0.0002), t + a + 0.12);
+      g.gain.setValueAtTime(Math.max(sus, 0.0002), t + Math.max(dur, a + 0.13));
+      g.gain.exponentialRampToValueAtTime(0.0001, t + Math.max(dur, a + 0.13) + rel);
+    }
+    function brass(m, t, dur, vol) {
+      var f = mf(m), g = ac.createGain(), lp = ac.createBiquadFilter();
+      lp.type = 'lowpass'; lp.Q.value = 2;
+      lp.frequency.setValueAtTime(f * 1.5, t);
+      lp.frequency.exponentialRampToValueAtTime(Math.min(f * 7, 9000), t + 0.07);
+      lp.frequency.exponentialRampToValueAtTime(Math.min(f * 4, 6000), t + 0.3);
+      env(g, t, 0.035, vol, vol * 0.7, dur, 0.18);
+      lp.connect(g); g.connect(bus);
+      [-7, 0, 7].forEach(function (cents) {
+        var o = ac.createOscillator(); o.type = 'sawtooth';
+        o.frequency.value = f; o.detune.value = cents;
+        if (dur > 0.5) {
+          var lfo = ac.createOscillator(), lg = ac.createGain();
+          lfo.frequency.value = 5.3; lg.gain.setValueAtTime(0, t); lg.gain.linearRampToValueAtTime(9, t + dur);
+          lfo.connect(lg); lg.connect(o.detune); lfo.start(t); lfo.stop(t + dur + 0.3); track(lfo);
+        }
+        o.connect(lp); o.start(t); o.stop(t + dur + 0.3); track(o);
+      });
+    }
+    function strings(m, t, dur, vol) {
+      var f = mf(m), g = ac.createGain(), lp = ac.createBiquadFilter();
+      lp.type = 'lowpass'; lp.frequency.value = Math.min(f * 5, 4000);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.linearRampToValueAtTime(vol, t + 0.35);
+      g.gain.setValueAtTime(vol, t + dur);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.6);
+      lp.connect(g); g.connect(bus);
+      [-12, 4, 13].forEach(function (cents) {
+        var o = ac.createOscillator(); o.type = 'sawtooth';
+        o.frequency.value = f; o.detune.value = cents;
+        o.connect(lp); o.start(t); o.stop(t + dur + 0.7); track(o);
+      });
+    }
+    function noise(sec) {
+      var b = ac.createBuffer(1, ac.sampleRate * sec, ac.sampleRate), d = b.getChannelData(0);
+      for (var i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+      var s = ac.createBufferSource(); s.buffer = b; return s;
+    }
+    function timp(m, t, vol) {
+      var o = ac.createOscillator(), g = ac.createGain(), f = mf(m);
+      o.type = 'sine';
+      o.frequency.setValueAtTime(f * 1.6, t);
+      o.frequency.exponentialRampToValueAtTime(f, t + 0.06);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(vol, t + 0.008);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 1.4);
+      o.connect(g); g.connect(bus); o.start(t); o.stop(t + 1.5); track(o);
+      var n = noise(0.2), ng = ac.createGain(), nf = ac.createBiquadFilter();
+      nf.type = 'lowpass'; nf.frequency.value = 900;
+      ng.gain.setValueAtTime(vol * 0.5, t); ng.gain.exponentialRampToValueAtTime(0.0001, t + 0.18);
+      n.connect(nf); nf.connect(ng); ng.connect(bus); n.start(t); track(n);
+    }
+    function cymbal(t, vol) {
+      var n = noise(3), g = ac.createGain(), hp = ac.createBiquadFilter();
+      hp.type = 'highpass'; hp.frequency.value = 5500;
+      g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.0001, t + 2.8);
+      n.connect(hp); hp.connect(g); g.connect(bus); n.start(t); track(n);
+    }
+    function snare(t, vol) {
+      var n = noise(0.2), g = ac.createGain(), bp = ac.createBiquadFilter();
+      bp.type = 'bandpass'; bp.frequency.value = 2200; bp.Q.value = 0.7;
+      g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.12);
+      n.connect(bp); bp.connect(g); g.connect(bus); n.start(t); track(n);
+    }
+    function roll(t, dur, vol) {
+      for (var x = 0; x < dur; x += 0.055) snare(t + x, vol * (0.3 + 0.7 * x / dur));
+    }
+
+    // Chords (MIDI triads), one per bar.
+    var C = [48, 52, 55], Em = [47, 52, 55], Dm = [50, 53, 57], F = [48, 53, 57], Am = [45, 48, 52], G = [47, 50, 55], G7 = [47, 53, 55];
+    var themeA = [
+      // [midi, beat, beats]
+      [67, 0, .75], [72, .75, .25], [76, 1, 2], [74, 3, .5], [72, 3.5, .5],
+      [79, 4, 3], [76, 7, 1],
+      [77, 8, .75], [76, 8.75, .25], [74, 9, 1], [69, 10, 1], [74, 11, 1],
+      [72, 12, 3.5],
+      [69, 16, .5], [72, 16.5, .5], [77, 17, 2], [76, 19, .5], [74, 19.5, .5],
+      [76, 20, .75], [74, 20.75, .25], [72, 21, 1], [67, 22, 2],
+      [69, 24, .5], [71, 24.5, .5], [72, 25, .5], [74, 25.5, .5], [76, 26, 1], [77, 27, .5], [79, 27.5, .5],
+      [84, 28, 3.5]
+    ];
+    var chordsA = [C, Em, Dm, C, F, C, G7, C];
+    var themeB = [
+      [69, 0, 2], [72, 2, 1], [76, 3, 1],
+      [77, 4, 3], [76, 7, 1],
+      [79, 8, 2], [76, 10, 1], [72, 11, 1],
+      [74, 12, 4],
+      [81, 16, 2], [79, 18, 1], [76, 19, 1],
+      [77, 20, 2], [81, 22, 2],
+      [74, 24, 1], [76, 25, 1], [77, 26, 1], [81, 27, 1],
+      [79, 28, 4]
+    ];
+    var chordsB = [Am, F, C, G, Am, F, Dm, G];
+
+    function section(t0, mel, chords, opts) {
+      mel.forEach(function (n) {
+        brass(n[0], t0 + n[1] * B, n[2] * B * 0.95, 0.16);
+        if (opts.octave) brass(n[0] - 12, t0 + n[1] * B, n[2] * B * 0.95, 0.09);
+      });
+      chords.forEach(function (ch, i) {
+        var bt = t0 + i * 4 * B;
+        ch.forEach(function (m) { strings(m + 12, bt, 4 * B * 0.97, 0.035); });
+        timp(ch[0] - 12, bt, 0.7);
+        timp(ch[0] - 12, bt + 2 * B, 0.4);
+        // marching low-brass "HAX HAX HAX" stabs
+        if (opts.stabs) [1, 1.5, 3].forEach(function (b) {
+          ch.forEach(function (m) { brass(m - 12, bt + b * B, 0.18, 0.05); });
+          snare(bt + b * B, 0.12);
+        });
+      });
+    }
+    function finale(t) {
+      // HAX! HAX! HAX!
+      [0, 0.5, 1].forEach(function (b, i) {
+        [60, 64, 67, 72].forEach(function (m) { brass(m, t + b * B, 0.3, 0.09); });
+        timp(36, t + b * B, 0.8); snare(t + b * B, 0.3);
+      });
+      var tt = t + 2 * B;
+      [48, 60, 64, 67, 72, 76].forEach(function (m) { brass(m, tt, 4.2, 0.08); strings(m, tt, 4, 0.03); });
+      timp(36, tt, 1); cymbal(tt, 0.25);
+      roll(tt + 0.05, 2.2, 0.2);
+      timp(36, tt + 2.4, 1);
+    }
+    return {
+      play: function (delay) {
+        init(); if (!ac) return;
+        ac.resume();
+        var t = ac.currentTime + delay;
+        // opening hit as the logo appears
+        [48, 55, 60, 64, 67, 72].forEach(function (m) { brass(m, t, 2.4 * B, 0.08); });
+        timp(36, t, 1); cymbal(t, 0.3);
+        roll(t + 2.6 * B, 1.3 * B, 0.18);
+        var s = t + 4 * B;
+        section(s, themeA, chordsA, {});
+        section(s + 32 * B, themeB, chordsB, { stabs: true });
+        section(s + 64 * B, themeA, chordsA, { octave: true, stabs: true });
+        finale(s + 96 * B);
+      },
+      stop: function () {
+        if (!ac) return;
+        var t = ac.currentTime;
+        bus.gain.cancelScheduledValues(t);
+        bus.gain.setValueAtTime(bus.gain.value, t);
+        bus.gain.linearRampToValueAtTime(0, t + 0.6);
+        var old = voices; voices = [];
+        setTimeout(function () {
+          old.forEach(function (v) { try { v.stop(); } catch (e) {} });
+          bus.gain.cancelScheduledValues(ac.currentTime);
+          bus.gain.setValueAtTime(1, ac.currentTime);
+        }, 700);
+      },
+      finaleNow: function () {
+        if (!ac) return;
+        var self = this; this.stop();
+        setTimeout(function () { finale(ac.currentTime + 0.05); }, 750);
+      },
+      mute: function (on) { if (master) master.gain.setTargetAtTime(on ? 0 : 0.55, ac.currentTime, 0.05); },
+      length: function () { return (4 + 96) * B + 2 * B + 4; },
+      beat: B
+    };
+  })();
+
+  /* ---------- Sequence ---------- */
+  var body = document.body, end = document.getElementById('end'), crawl = document.getElementById('crawl');
+  var anim = null, timers = [], withSound = false, muted = false;
+  var LOGO_AT = 6.6, CRAWL_AT = 8.2;
+
+  function clearAll() {
+    timers.forEach(clearTimeout); timers = [];
+    if (anim) { anim.cancel(); anim = null; }
+  }
+  function showEnd(playFinale) {
+    clearAll();
+    body.classList.add('static'); end.classList.add('show'); window.scrollTo(0, 0);
+    if (withSound && playFinale) Music.finaleNow();
+  }
+  function runCrawl() {
+    crawl.classList.add('on');
+    var h = crawl.offsetHeight;
+    // Duration chosen so the crawl ends with the music's last section.
+    var musicEnd = LOGO_AT + 100 * Music.beat;
+    var dur = Math.max(30, musicEnd - CRAWL_AT) * 1000;
+    var distance = h + innerHeight * 3.2;
+    anim = crawl.animate([
+      { transform: 'translateY(' + innerHeight * 0.05 + 'px)', opacity: 1 },
+      { transform: 'translateY(' + (-distance * 0.9) + 'px)', opacity: 1, offset: 0.9 },
+      { transform: 'translateY(' + (-distance) + 'px)', opacity: 0 }
+    ], { duration: dur, easing: 'linear', fill: 'forwards' });
+    anim.onfinish = function () { showEnd(false); };
+  }
+  function start(sound) {
+    clearAll();
+    withSound = sound;
+    Music.stop();
+    body.classList.remove('static'); end.classList.remove('show'); crawl.classList.remove('on');
+    body.classList.remove('running'); void body.offsetWidth; body.classList.add('running');
+    if (sound) { Music.play(LOGO_AT); Music.mute(muted); }
+    timers.push(setTimeout(runCrawl, CRAWL_AT * 1000));
+  }
+
+  document.getElementById('go').addEventListener('click', function () { start(true); });
+  document.getElementById('go-quiet').addEventListener('click', function () { start(false); });
+  document.getElementById('skip').addEventListener('click', function () { showEnd(true); });
+  document.getElementById('replay').addEventListener('click', function () { start(withSound || !muted); });
+  var muteBtn = document.getElementById('mute');
+  muteBtn.addEventListener('click', function () {
+    muted = !muted; Music.mute(muted);
+    muteBtn.textContent = muted ? 'Unmute' : 'Mute';
+    muteBtn.setAttribute('aria-pressed', String(muted));
+  });
+  if (still) showEnd(false);
+
+})();
+
+</script>
+</body>
+</html>
