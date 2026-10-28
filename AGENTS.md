@@ -8,7 +8,7 @@ This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-
 |---|---|
 | `world-traveler/` | 36 variants of the **World Traveler**, HAX's mascot (also called *World Changer* or *Future Traveler*). Files are named `funny-traveler-NN.(png\|jpeg)`. |
 | `haxtheweb/` | HAX brand assets: logos, stickers, banners, thumbnails, GIFs, how-to graphics, and layered source files (`.psd`, `.ai`). |
-| `presentation-materials/` | Diagrams for talks (HAX history, legend, class-club-lab pipeline), and `hax-in-a-minute/`: a one-minute doodle explainer with MP4, GIF, PPTX and stills. |
+| `presentation-materials/` | Diagrams for talks (HAX history, legend, class-club-lab pipeline), and `hax-in-a-minute/`: a one-minute doodle explainer with MP4, GIF, PPTX and stills; `hax-the-web-intro/`: a 30-second neon opening-titles homage (interactive page plus stills; parody, review before official promotion). |
 | `HAXLogo.svg` | Primary vector logo. |
 | `manifest.json` | Catalog of every World Traveler image: alt text, style tags, setting, size, third-party flags. |
 | `llms.txt` | Short index for LLM crawlers. |

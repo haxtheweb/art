@@ -15,7 +15,7 @@ A red-helmeted, steampunk-goggled time traveler who collects the best ideas of e
 | [`world-traveler/`](world-traveler/) | 36 variants of the mascot, plus a contact sheet |
 | [`haxtheweb/`](haxtheweb/) | Logos, stickers, banners, thumbnails, GIFs, layered source files |
 | [`haxtheweb/wanted-poster/`](haxtheweb/wanted-poster/) | WANTED: HAX, the Open Web Outlaw: an old-west poster starring the `rpg-character` in a cowboy hat, with alt text and a social caption |
-| [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills |
+| [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills; [HAX The Web opening titles](presentation-materials/hax-the-web-intro/): a 30-second neon title sequence |
 | [`HAXLogo.svg`](HAXLogo.svg) | Primary logo |
 | [`manifest.json`](manifest.json) | Machine-readable catalog with alt text and tags |
 | [`AGENTS.md`](AGENTS.md) / [`llms.txt`](llms.txt) | Guides for LLMs and coding agents |
