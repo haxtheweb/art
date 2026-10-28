@@ -18,6 +18,11 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png)
 - [WANTED: HAX, the Open Web Outlaw (old-west poster, rpg-character in a cowboy hat)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg)
 
+- [RPG Glitch still (rpg-character on an 80s CRT)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png)
+
+## Interactive
+- [RPG Glitch: click for a new glitching rpg-character with a shareable link](https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch)
+
 ## Explainers
 - [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
 

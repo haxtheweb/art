@@ -15,6 +15,7 @@ A red-helmeted, steampunk-goggled time traveler who collects the best ideas of e
 | [`world-traveler/`](world-traveler/) | 36 variants of the mascot, plus a contact sheet |
 | [`haxtheweb/`](haxtheweb/) | Logos, stickers, banners, thumbnails, GIFs, layered source files |
 | [`haxtheweb/wanted-poster/`](haxtheweb/wanted-poster/) | WANTED: HAX, the Open Web Outlaw: an old-west poster starring the `rpg-character` in a cowboy hat, with alt text and a social caption |
+| [`haxtheweb/rpg-glitch/`](haxtheweb/rpg-glitch/) | RPG Glitch: the `rpg-character` glitching between versions of itself on an 80s CRT. Click for a new character; every character gets a shareable link that also opens in [rpg-me](https://github.com/haxtheweb/rpg-me) |
 | [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills |
 | [`HAXLogo.svg`](HAXLogo.svg) | Primary logo |
 | [`manifest.json`](manifest.json) | Machine-readable catalog with alt text and tags |
