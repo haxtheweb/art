@@ -17,6 +17,9 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [8-bit RPG dungeon](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png)
 - [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png)
 
+## Explainers
+- [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
+
 ## Policy
 - [LICENSING.md](https://github.com/haxtheweb/art/blob/main/LICENSING.md): proposed CC BY 4.0 for HAX-original art; third-party parodies excluded
 

@@ -14,7 +14,7 @@ A red-helmeted, steampunk-goggled time traveler who collects the best ideas of e
 |---|---|
 | [`world-traveler/`](world-traveler/) | 36 variants of the mascot, plus a contact sheet |
 | [`haxtheweb/`](haxtheweb/) | Logos, stickers, banners, thumbnails, GIFs, layered source files |
-| [`presentation-materials/`](presentation-materials/) | Diagrams for talks |
+| [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills |
 | [`HAXLogo.svg`](HAXLogo.svg) | Primary logo |
 | [`manifest.json`](manifest.json) | Machine-readable catalog with alt text and tags |
 | [`AGENTS.md`](AGENTS.md) / [`llms.txt`](llms.txt) | Guides for LLMs and coding agents |
