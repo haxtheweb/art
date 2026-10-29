@@ -133,36 +133,104 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
   </div>
   <div class="controls" aria-label="Character controls">
     <button class="primary" id="remix" type="button">Remix</button>
-    <span class="seed" id="seedLabel">seed: --------</span>
-    <label class="sr-only" for="hat">Hat</label>
-    <select id="hat"></select>
+    <span class="seed" id="seedLabel">seed: btopro</span>
+    <label class="sr-only" for="preset">Costume</label>
+    <select id="preset"></select>
+    <label class="sr-only" for="pet">Pet</label>
+    <select id="pet"></select>
+    <label class="sr-only" for="expression">Mood</label>
+    <select id="expression"></select>
+    <label class="sr-only" for="pose">Pose</label>
+    <select id="pose"></select>
     <label class="toggle"><input type="checkbox" id="fire"> On fire</label>
     <button id="pause" type="button" aria-pressed="false">Pause glitch</button>
     <span class="spacer"></span>
     <button id="copy" type="button">Copy link</button>
+    <button id="embed" type="button">Copy HAX embed</button>
     <button id="shareX" type="button">Share on X</button>
     <button id="shareLinkedIn" type="button">Share on LinkedIn</button>
     <a class="btn" id="rpgme" href="https://rpg-me.hax.cloud/">Edit in rpg-me</a>
   </div>
   <p class="status" id="status" role="status" aria-live="polite"></p>
   <footer>
-    Click the screen or press Remix for a new character. Every character has its own link, and the link opens the same character in <a href="https://github.com/haxtheweb/rpg-me">rpg-me</a>.
+    Click the screen or press Remix for a new character. Every character has its own link, and Copy HAX embed gives you <code>&lt;rpg-character code="…"&gt;</code> to drop the exact same character into any HAX page. Edit in <a href="https://github.com/haxtheweb/rpg-me">rpg-me</a> opens its base look.
     Made for <a href="https://haxtheweb.org">HAXTheWeb</a> with the <a href="https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character">rpg-character</a> element's own art. Source: <a href="https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch">haxtheweb/art</a>.
   </footer>
 </main>
-<script>
-(function () {
-  "use strict";
-  /* ---------- character model (same traits and seed rules as rpg-character and rpg-me) ---------- */
+<script type="module">
+  /* ---------- character model: the element's own code and overlay modules ---------- */
+  import { encodeCharacter, decodeCharacter, codeSlots } from "./rpg-character/rpg-character-code.js";
+  import { skinColors, overlayColors, expressionArt, poseArt, armRegions, parseCells } from "./rpg-character/rpg-character-overlays.js";
+  import { seasonFor, seasonalPick } from "./rpg-character/rpg-character-seasons.js";
+
   var ART = "rpg-character/";
-  var HATS = ["none", "party", "bunny", "coffee", "construction", "cowboy", "education", "knight", "ninja", "pirate", "watermelon"];
-  var CHAR_BUILDER = ["accessories", "base", "leg", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
-  var FUN_KEYS = { zpg: "7501517984378880262144", edtechjoker: "712215550", btopro: "7122155501" };
-  // rpg-me's 8-digit seed order
-  var RPG_ME_ORDER = ["base", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
   var SHARE_TEXT = "Check out my glitched RPG character, brought to the world by";
+  var FUN_KEYS = { zpg: "7501517984378880262144", edtechjoker: "712215550", btopro: "7122155501" };
+  var CHAR_BUILDER = ["accessories", "base", "leg", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
+  // rpg-me's 8-digit seed order, and the hats its (older) rpg-character knows
+  var RPG_ME_ORDER = ["base", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
+  var RPG_ME_HATS = ["none", "party", "bunny", "coffee", "construction", "cowboy", "education", "knight", "ninja", "pirate", "watermelon"];
+  // Left out on purpose: the element's pop-culture archetype presets and their
+  // signature pieces. RPG Glitch sticks to HAX-original and generic looks.
+  // Keep in step with EXCLUDE in tools/sync-art.sh.
+  var EXCLUDED = {
+    preset: ["space-knight", "boy-wizard", "ghost-hunter", "time-scientist", "adventurer", "plumber", "miner", "elf-hero", "trainer", "vigilante", "web-hero", "hammer-god", "monster"],
+    hat: ["plumber-cap", "trainer-cap", "long-cap", "cowl", "winged-helmet", "flat-top", "wild-hair", "messy-hair"],
+    mask: ["block-head", "web"],
+    makeup: ["monster", "round-glasses"],
+    item: ["laser-sword-blue", "laser-sword-green", "laser-sword-red", "beam-wand", "capture-ball", "war-hammer", "whip"],
+    offhand: ["proton-pack"],
+    feet: ["hoverboard"]
+  };
+  // preset gear defaults, from rpg-character.js (allowed presets only)
+  var PRESETS = {
+    hockey: { hat: "hockey", item: "hockey-stick", feet: "skates" }, football: { hat: "football", item: "football" },
+    firefighter: { hat: "firefighter" }, police: { hat: "police" }, veteran: { hat: "military" }, nurse: { hat: "nurse" },
+    it: { item: "phone" }, doctor: { hat: "doctor" }, soda: { hat: "soda", item: "milkshake" },
+    knight: { hat: "knight", item: "sword", offhand: "shield" }, pirate: { hat: "pirate", item: "sword" }, graduate: { hat: "education" },
+    basketball: { hat: "headband", item: "basketball" }, baseball: { hat: "baseball", item: "baseball-bat" }, soccer: { item: "soccer-ball" },
+    tennis: { hat: "visor", item: "tennis-racket" }, golf: { hat: "visor", item: "golf-club" }, cycling: { hat: "bike-helmet" },
+    teacher: { item: "book" }, scientist: { hat: "goggles", item: "flask" }, chef: { hat: "chef", item: "spatula" },
+    farmer: { hat: "straw", item: "pitchfork" }, artist: { hat: "beret", item: "paintbrush", offhand: "palette" }, musician: { item: "guitar" },
+    mail: { hat: "mail", item: "envelope" }, pilot: { hat: "pilot" }, astronaut: { hat: "astronaut" },
+    construction: { hat: "construction", item: "hammer" }, wizard: { hat: "wizard", item: "wand", makeup: "white-beard" },
+    superhero: { makeup: "domino" }, robot: { hat: "robot" }, dinosaur: { hat: "dino" }, ninja: { hat: "ninja", item: "sword" },
+    witch: { hat: "witch", item: "broom" }, vampire: { makeup: "fangs" }, mummy: { mask: "mummy" }, skeleton: { makeup: "skull" },
+    ghost: { mask: "ghost" }, pumpkin: { mask: "pumpkin", item: "candy-bucket" }, zombie: { makeup: "zombie" },
+    santa: { hat: "santa", item: "sack", makeup: "white-beard" }, elf: { hat: "elf", item: "candy-cane" },
+    reindeer: { hat: "antlers", makeup: "red-nose" }, snowman: { hat: "top-hat", makeup: "carrot" },
+    "easter-bunny": { hat: "bunny", item: "basket", makeup: "bunny" }, colonial: { hat: "tricorn", item: "sword" },
+    reaper: { hat: "hood", item: "scythe", makeup: "skull" }, wrestler: { mask: "wrestler", item: "champ-belt" },
+    werewolf: { mask: "werewolf" }, horseman: { mask: "shadow", item: "jack-o-lantern" }, mascot: { mask: "lion" },
+    band: { hat: "shako", item: "trumpet" }
+  };
+  var PERCHED = ["parrot", "owl", "bat"];
+  var COSTUME_HATS = ["helmet", "astronaut", "wizard", "witch", "robot", "dino", "santa", "elf", "antlers", "tricorn", "wig", "hood", "shako", "edit", "error", "good", "warning"];
+  var SLOT = {};
+  codeSlots.forEach(function (s) { SLOT[s.name] = s; });
+  function allowed(name) {
+    return SLOT[name].values.filter(function (v) { return v !== "none" && v !== "random" && (EXCLUDED[name] || []).indexOf(v) === -1; });
+  }
+  var LIST = {};
+  ["preset", "hat", "mask", "makeup", "item", "offhand", "feet", "pet", "expression", "pose"].forEach(function (n) { LIST[n] = allowed(n); });
+  var RANDOM_HATS = LIST.hat.filter(function (h) { return COSTUME_HATS.indexOf(h) === -1; });
 
   function rnd(n) { return Math.floor(Math.random() * n); }
+  function pick(list) { return list[rnd(list.length)]; }
+  function label(v) { return v === "it" ? "IT" : v === "none" ? "none" : (v.charAt(0).toUpperCase() + v.slice(1)).replace(/-/g, " "); }
+  function blank() {
+    var c = { flagText: "" };
+    codeSlots.forEach(function (s) { c[s.name] = s.values[0]; });
+    return c;
+  }
+  function clone(c) { var o = {}; for (var k in c) { o[k] = c[k]; } return o; }
+  // drop anything excluded, and resolve hat "random" the way the element does
+  function sanitize(c) {
+    Object.keys(EXCLUDED).forEach(function (n) { if (EXCLUDED[n].indexOf(c[n]) !== -1) { c[n] = "none"; } });
+    if (c.hat === "random") { c.hat = pick(RANDOM_HATS); }
+    if (PRESETS[c.preset] === undefined) { c.preset = "none"; }
+    return c;
+  }
   function clampTrait(k, v) {
     v = parseInt(v, 10);
     if (isNaN(v) || v < 0) { v = 0; }
@@ -170,74 +238,157 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     if (k === "face") { return v > 5 ? 5 : v; }
     return v > 9 ? 9 : v;
   }
-  // rpg-character's seed-to-traits logic, for word seeds like "btopro"
-  function traitsFromWord(word) {
+  // rpg-character's traitsFromSeed(), for word seeds like "btopro"
+  function fromWord(word) {
     var s = 54;
     for (var i = 0; i < word.length && i < 64; i++) { s *= word.charCodeAt(i); }
-    var d = FUN_KEYS[word] || BigInt(s).toString();
-    var t = {};
+    var d = FUN_KEYS[word] || BigInt(s).toString(), c = blank();
     CHAR_BUILDER.forEach(function (k, i) {
       if (k === "leg") { return; }
       var v = d[i] !== undefined ? parseInt(d[i], 10) : 0;
-      if (k === "base") { t[k] = v >= 5 ? 1 : 0; }
-      else if (k === "face") { t[k] = v > 5 ? 1 : v; }
-      else { t[k] = v; }
+      if (k === "base") { c[k] = v >= 5 ? 1 : 0; }
+      else if (k === "face") { c[k] = v > 5 ? 1 : v; }
+      else { c[k] = v; }
     });
-    return t;
-  }
-  // rpg-me's numeric seed: one digit per trait, left-padded to 8
-  function traitsFromDigits(seed) {
-    var p = seed.padStart(8, "0").slice(0, 8), t = { accessories: 0 };
-    RPG_ME_ORDER.forEach(function (k, i) { t[k] = clampTrait(k, p[i]); });
-    return t;
-  }
-  function digits(t) { return RPG_ME_ORDER.map(function (k) { return t[k]; }).join(""); }
-  function randomCharacter() {
-    var t = { accessories: rnd(10), base: rnd(2), face: rnd(6), faceItem: rnd(10), hair: rnd(10), pants: rnd(10), shirt: rnd(10), skin: rnd(10), hatColor: rnd(10) };
-    return { word: null, t: t, hat: HATS[rnd(HATS.length)], fire: Math.random() < 0.15 };
-  }
-  function fromQuery(search) {
-    var q = new URLSearchParams(search);
-    if (!q.has("seed")) { return null; }
-    var seed = q.get("seed").trim(), c = { word: null, t: null, hat: "none", fire: q.get("fire") === "true" };
-    if (/^\d+$/.test(seed)) {
-      c.t = traitsFromDigits(seed);
-      if (q.has("accessories")) { c.t.accessories = clampTrait("accessories", q.get("accessories")); }
-    } else if (seed) {
-      c.word = seed.slice(0, 64);
-      c.t = traitsFromWord(c.word);
-    } else { return null; }
-    var hat = q.get("hat");
-    if (hat === "random") { hat = HATS[rnd(HATS.length)]; }
-    c.hat = HATS.indexOf(hat) !== -1 ? hat : "none";
+    c.word = word;
     return c;
   }
-  function params(c, forRpgMe) {
+  // rpg-me's numeric seed: one digit per trait, left-padded to 8
+  function fromDigits(seed) {
+    var p = seed.padStart(8, "0").slice(0, 8), c = blank();
+    RPG_ME_ORDER.forEach(function (k, i) { c[k] = clampTrait(k, p[i]); });
+    return c;
+  }
+  function digits(c) { return RPG_ME_ORDER.map(function (k) { return c[k]; }).join(""); }
+  // a word seed with nothing added keeps its friendly link (?seed=btopro)
+  function plainWord(c) {
+    if (!c.word) { return false; }
+    var w = fromWord(c.word), same = true;
+    codeSlots.forEach(function (s) { if (s.name !== "hat" && s.name !== "fire" && c[s.name] !== w[s.name]) { same = false; } });
+    return same && RPG_ME_HATS.indexOf(c.hat) !== -1;
+  }
+  function fromQuery(search) {
+    var q = new URLSearchParams(search), c = null;
+    if (q.has("code")) {
+      c = decodeCharacter(q.get("code"));
+    } else if (q.has("seed") && q.get("seed").trim()) {
+      var seed = q.get("seed").trim();
+      if (/^\d+$/.test(seed)) {
+        c = fromDigits(seed);
+        if (q.has("accessories")) { c.accessories = clampTrait("accessories", q.get("accessories")); }
+      } else {
+        c = fromWord(seed.slice(0, 64));
+      }
+      if (q.has("hat")) { c.hat = SLOT.hat.values.indexOf(q.get("hat")) !== -1 ? q.get("hat") : "none"; }
+      c.fire = q.get("fire") === "true";
+    }
+    return c ? sanitize(c) : null;
+  }
+  function query(c) {
     var p = new URLSearchParams();
-    p.set("seed", c.word && !forRpgMe ? c.word : digits(c.t));
-    p.set("hat", c.hat);
-    if (c.fire) { p.set("fire", "true"); }
-    if (!forRpgMe && !c.word && c.t.accessories) { p.set("accessories", String(c.t.accessories)); }
+    if (plainWord(c)) {
+      p.set("seed", c.word);
+      if (c.hat !== "none") { p.set("hat", c.hat); }
+      if (c.fire) { p.set("fire", "true"); }
+    } else {
+      p.set("code", encodeCharacter(c));
+    }
     return p.toString();
   }
-  function shareURL(c) { return location.origin + location.pathname + "?" + params(c, false); }
-  // the element's draw order (rpg-character render())
-  function layers(c, hatOverride) {
-    var t = c.t, hat = hatOverride || c.hat;
+  function shareURL(c) { return location.origin + location.pathname + "?" + query(c); }
+  // rpg-me only knows the 8 digits, its 10 hats and fire, so this link is the base look
+  function rpgMeURL(c) {
+    var p = new URLSearchParams(), h = gear(c, "hat");
+    p.set("seed", digits(c));
+    p.set("hat", RPG_ME_HATS.indexOf(h) !== -1 ? h : "none");
+    if (c.fire) { p.set("fire", "true"); }
+    return "https://rpg-me.hax.cloud/?" + p.toString();
+  }
+  function embed(c) { return '<rpg-character code="' + encodeCharacter(c) + '"></rpg-character>'; }
+
+  /* the element's rules: explicit choice wins, then the preset, then the season */
+  function season(c) { return c.seasonal ? seasonFor(new Date()) : null; }
+  function effPreset(c) {
+    if (c.preset !== "none") { return c.preset; }
+    var s = season(c);
+    if (s && s.preset) {
+      var p = seasonalPick(s.preset, encodeCharacter(c));
+      return PRESETS[p] ? p : "none";
+    }
+    return "none";
+  }
+  function gear(c, slot) {
+    if (c[slot] && c[slot] !== "none") { return c[slot]; }
+    var p = PRESETS[effPreset(c)];
+    if (p && p[slot]) { return p[slot]; }
+    var s = season(c);
+    if (s && s.hat && slot === "hat") { return seasonalPick(s.hat, encodeCharacter(c)); }
+    return "none";
+  }
+  // rpg-character render() draw order, as image / clipped image / cell / text ops
+  function ops(c) {
+    var preset = effPreset(c), hasPreset = preset !== "none";
+    var shaved = !!c.shaved || !!(hasPreset && PRESETS[preset].shaved);
+    var makeup = gear(c, "makeup"), hat = gear(c, "hat"), item = gear(c, "item");
+    var offhand = gear(c, "offhand"), feet = gear(c, "feet"), mask = gear(c, "mask");
     if (c.fire && hat === "none") { hat = "coffee"; }
-    return [
-      "skin/" + t.skin,
-      t.base === 1 ? "hair/" + t.hair : null,
-      "face/" + t.face,
-      "faceItem/" + t.faceItem,
-      "shirt/" + t.shirt,
-      "pants/" + t.pants,
-      "accessories/" + t.accessories,
-      "base/" + t.base,
-      "hatColor/" + t.hatColor,
-      c.fire ? "base/fire" : null,
-      hat !== "none" ? "hat/" + hat : null
-    ].filter(Boolean);
+    var hide = c.pose !== "none" ? poseArt[c.pose].hide : [];
+    var list = [];
+    function img(path, clip) { list.push({ img: path, hide: clip ? hide : [] }); }
+    img("skin/" + c.skin, true);
+    if (c.base === 1 && !shaved) { img("hair/" + c.hair); }
+    img(makeup !== "none" ? "makeup/" + makeup : "face/" + c.face);
+    img("faceItem/" + c.faceItem);
+    img("shirt/" + (hasPreset ? preset : c.shirt), true);
+    img("pants/" + (hasPreset ? preset : c.pants));
+    img("accessories/" + c.accessories);
+    img("base/" + (shaved ? "shaved" : c.base), true);
+    if (c.expression !== "none") { list.push({ cells: expressionArt[c.expression] }); }
+    if (feet !== "none") { img("feet/" + feet); }
+    if (c.pet !== "none" && PERCHED.indexOf(c.pet) === -1) { img("pet/" + c.pet); }
+    if (offhand !== "none" && hide.indexOf("left") === -1) { img("offhand/" + offhand); }
+    img(shaved ? "scalp/" + c.skin : "hatColor/" + c.hatColor);
+    if (c.fire) { img("base/fire"); }
+    if (mask !== "none") { img("mask/" + mask); }
+    if (hat !== "none") { img("hat/" + hat); }
+    if (c.pose !== "none") { list.push({ cells: poseArt[c.pose].cells }); }
+    if (c.pet !== "none" && PERCHED.indexOf(c.pet) !== -1) { img("pet/" + c.pet); }
+    if (item !== "none" && hide.indexOf("right") === -1) {
+      img("item/" + item);
+      if (item === "flag" && c.flagText) { list.push({ flag: c.flagText.substring(0, 4) }); }
+    }
+    return list;
+  }
+  function randomCharacter() {
+    var c = blank();
+    ["skin", "hair", "hatColor", "faceItem", "accessories", "shirt", "pants"].forEach(function (k) { c[k] = rnd(10); });
+    c.base = rnd(2);
+    c.face = rnd(6);
+    dress(c);
+    return c;
+  }
+  // a random look: a costume (seasonal ones more often in season) or a freestyle mix
+  function dress(c) {
+    ["preset", "hat", "mask", "makeup", "item", "offhand", "feet", "pet", "expression", "pose"].forEach(function (n) { c[n] = "none"; });
+    c.fire = false; c.shaved = false; c.flagText = "";
+    var s = seasonFor(new Date()), r = Math.random();
+    if (s && s.preset && r < 0.25) { c.preset = pick(s.preset); }
+    else if (r < 0.6) { c.preset = pick(LIST.preset); }
+    else {
+      if (Math.random() < 0.75) { c.hat = pick(RANDOM_HATS); }
+      if (Math.random() < 0.55) { c.item = pick(LIST.item); }
+      if (Math.random() < 0.12) { c.mask = pick(LIST.mask); }
+      if (Math.random() < 0.18) { c.makeup = pick(LIST.makeup); }
+      if (Math.random() < 0.12) { c.offhand = pick(LIST.offhand); }
+      if (Math.random() < 0.1) { c.feet = pick(LIST.feet); }
+      if (Math.random() < 0.05) { c.shaved = true; }
+      if (c.item === "flag") { c.flagText = "HAX"; }
+    }
+    if (Math.random() < 0.35) { c.pet = pick(LIST.pet); }
+    if (Math.random() < 0.45) { c.expression = pick(LIST.expression); }
+    if (Math.random() < 0.18) { c.pose = pick(LIST.pose); }
+    if (Math.random() < 0.08) { c.fire = true; }
+    return c;
   }
 
   /* ---------- sprite building ---------- */
@@ -260,11 +411,37 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     g.fillRect(0, 0, 113, 142);
     return c;
   }
-  function sprite(c, hatOverride) {
-    var list = layers(c, hatOverride);
-    return Promise.all(list.map(load)).then(function () {
-      var n = canvas(113, 142), g = n.getContext("2d");
-      list.forEach(function (p) { if (IMG[p]) { g.drawImage(IMG[p], 0, 0, 113, 142); } });
+  var clipC = canvas(113, 142), clipG = clipC.getContext("2d");
+  function sprite(c) {
+    var list = ops(c);
+    return Promise.all(list.filter(function (o) { return o.img; }).map(function (o) { return load(o.img); })).then(function () {
+      var n = canvas(113, 142), g = n.getContext("2d"), skin = skinColors[Number(c.skin)] || skinColors[0];
+      g.imageSmoothingEnabled = false;
+      list.forEach(function (o) {
+        if (o.img) {
+          if (!IMG[o.img]) { return; }
+          if (o.hide.length) {
+            clipG.clearRect(0, 0, 113, 142);
+            clipG.drawImage(IMG[o.img], 0, 0, 113, 142);
+            o.hide.forEach(function (side) { var r = armRegions[side]; clipG.clearRect(r[0], r[1], r[2], r[3]); });
+            g.drawImage(clipC, 0, 0);
+          } else {
+            g.drawImage(IMG[o.img], 0, 0, 113, 142);
+          }
+        } else if (o.cells) {
+          parseCells(o.cells).forEach(function (cell) {
+            g.fillStyle = cell[2] === "S" ? skin : overlayColors[cell[2]];
+            g.fillRect(3 + 5 * cell[1], 2 + 5 * cell[0], 5, 5);
+          });
+        } else if (o.flag) {
+          g.save();
+          g.fillStyle = "#ffffff";
+          g.font = "bold 8px 'Roboto Mono', monospace";
+          g.textAlign = "center";
+          g.fillText(o.flag, 103, 29, Math.min(o.flag.length * 5, 18));
+          g.restore();
+        }
+      });
       return { n: n, cy: tint(n, "#22e4ff"), mg: tint(n, "#ff2e88") };
     });
   }
@@ -381,28 +558,55 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
   }
 
   /* ---------- state changes ---------- */
-  var seedLabel = document.getElementById("seedLabel"), hatSel = document.getElementById("hat"), fireBox = document.getElementById("fire");
-  var status = document.getElementById("status"), rpgme = document.getElementById("rpgme");
-  HATS.forEach(function (h) { var o = document.createElement("option"); o.value = h; o.textContent = "Hat: " + h; hatSel.appendChild(o); });
+  var seedLabel = document.getElementById("seedLabel"), status = document.getElementById("status"), rpgme = document.getElementById("rpgme");
+  var pickers = { preset: document.getElementById("preset"), pet: document.getElementById("pet"), expression: document.getElementById("expression"), pose: document.getElementById("pose") };
+  var PICK_NAMES = { preset: "Costume", pet: "Pet", expression: "Mood", pose: "Pose" };
+  Object.keys(pickers).forEach(function (n) {
+    ["none"].concat(LIST[n]).forEach(function (v) {
+      var o = document.createElement("option");
+      o.value = v;
+      o.textContent = PICK_NAMES[n] + ": " + label(v);
+      pickers[n].appendChild(o);
+    });
+  });
+  var fireBox = document.getElementById("fire");
+  // inside someone else's frame (a preview, an embed) our own URL isn't shareable,
+  // so keep the HAX embed code and hide the link buttons
+  var framed = false;
+  try { framed = window.self !== window.top; } catch (e) { framed = true; }
+  if (framed) {
+    ["copy", "shareX", "shareLinkedIn"].forEach(function (id) { document.getElementById(id).hidden = true; });
+  }
 
   function describe(c) {
-    return "rpg-character, seed " + (c.word || digits(c.t)) + ", " + (c.hat === "none" ? "no hat" : c.hat + " hat") + (c.fire ? ", on fire" : "");
+    var parts = ["rpg-character"], p = effPreset(c), hat = gear(c, "hat"), item = gear(c, "item");
+    if (p !== "none") { parts.push(label(p).toLowerCase() + " costume"); }
+    else if (hat !== "none") { parts.push(label(hat).toLowerCase() + " hat"); }
+    if (item !== "none" && (c.pose === "none" || poseArt[c.pose].hide.indexOf("right") === -1)) { parts.push("holding " + label(item).toLowerCase()); }
+    if (c.pet !== "none") { parts.push("with a pet " + c.pet); }
+    if (c.expression !== "none") { parts.push(c.expression); }
+    if (c.pose !== "none") { parts.push(c.pose === "wave" ? "waving" : "cheering"); }
+    if (c.fire) { parts.push("on fire"); }
+    return parts.join(", ");
   }
   function syncUI(c) {
-    seedLabel.textContent = "seed: " + (c.word || digits(c.t));
-    hatSel.value = c.hat;
+    seedLabel.textContent = plainWord(c) ? "seed: " + c.word : "code: " + encodeCharacter(c);
+    Object.keys(pickers).forEach(function (n) { pickers[n].value = c[n]; });
     fireBox.checked = !!c.fire;
-    rpgme.href = "https://rpg-me.hax.cloud/?" + params(c, true);
+    rpgme.href = rpgMeURL(c);
     C.setAttribute("aria-label", describe(c) + ". Activate to remix.");
-    history.replaceState(null, "", "?" + params(c, false));
+    if (!framed) { history.replaceState(null, "", "?" + query(c)); }
   }
+  // other looks for the same character, for the idle glitch
   function loadAlts(c) {
-    var others = HATS.filter(function (h) { return h !== c.hat; });
-    var picks = [others[rnd(others.length)], others[rnd(others.length)]];
-    Promise.all(picks.map(function (h) { return sprite(c, h); })).then(function (s) { if (ch === c) { alts = s; } });
-    sprite(c, "error").then(function (s) { if (ch === c) { err = s; } });
+    var looks = [dress(clone(c)), dress(clone(c))];
+    looks.forEach(function (l) { delete l.word; ["base", "skin", "hair", "hatColor", "face", "faceItem", "accessories", "shirt", "pants"].forEach(function (k) { l[k] = c[k]; }); });
+    Promise.all(looks.map(sprite)).then(function (s) { if (ch === c) { alts = s; } });
+    var e = clone(c);
+    e.preset = "none"; e.mask = "none"; e.hat = "error";
+    sprite(e).then(function (s) { if (ch === c) { err = s; } });
   }
-  // glitch into a new character (or new hat or fire state)
+  // glitch into a new character (or a changed look)
   function become(c, announce) {
     settle = true;
     gT = performance.now();
@@ -416,17 +620,33 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     syncUI(c);
     if (announce) { status.textContent = "New character: " + describe(c) + "."; }
   }
-  // periodic glitch through other versions of the same character, landing back on it
+  // periodic glitch through other looks of the same character, landing back on it
   function echo() {
     settle = false;
     gT = performance.now();
   }
   function remix() { become(randomCharacter(), true); }
+  function change(fn) {
+    if (!ch) { return; }
+    var c = clone(ch);
+    fn(c);
+    become(sanitize(c), true);
+  }
 
   C.addEventListener("click", remix);
   document.getElementById("remix").addEventListener("click", remix);
-  hatSel.addEventListener("change", function () { if (ch) { become({ word: ch.word, t: ch.t, hat: hatSel.value, fire: ch.fire }, true); } });
-  fireBox.addEventListener("change", function () { if (ch) { become({ word: ch.word, t: ch.t, hat: ch.hat, fire: fireBox.checked }, true); } });
+  // picking a costume clears hand-picked gear so the costume shows as designed
+  pickers.preset.addEventListener("change", function () {
+    change(function (c) {
+      c.preset = pickers.preset.value;
+      ["hat", "mask", "makeup", "item", "offhand", "feet"].forEach(function (n) { c[n] = "none"; });
+      c.flagText = "";
+    });
+  });
+  ["pet", "expression", "pose"].forEach(function (n) {
+    pickers[n].addEventListener("change", function () { change(function (c) { c[n] = pickers[n].value; }); });
+  });
+  fireBox.addEventListener("change", function () { change(function (c) { c.fire = fireBox.checked; }); });
   var pauseBtn = document.getElementById("pause");
   function setPaused(v) {
     paused = v;
@@ -443,6 +663,10 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     var u = shareURL(ch);
     copyText(u).then(function () { status.textContent = "Link copied."; }, function () { status.textContent = "Copy this link: " + u; });
   });
+  document.getElementById("embed").addEventListener("click", function () {
+    var t = embed(ch);
+    copyText(t).then(function () { status.textContent = "Copied " + t + " for any HAX page."; }, function () { status.textContent = "Copy this: " + t; });
+  });
   document.getElementById("shareX").addEventListener("click", function () {
     window.open("https://x.com/intent/tweet?text=" + encodeURIComponent(SHARE_TEXT + " @HAXTheWeb") + "&url=" + encodeURIComponent(shareURL(ch)), "_blank", "noopener");
   });
@@ -456,7 +680,7 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     frame(t);
     requestAnimationFrame(loop);
   }
-  var start = fromQuery(location.search) || { word: "btopro", t: traitsFromWord("btopro"), hat: "none", fire: false };
+  var start = fromQuery(location.search) || fromWord("btopro");
   pauseBtn.textContent = paused ? "Play glitch" : "Pause glitch";
   pauseBtn.setAttribute("aria-pressed", paused ? "true" : "false");
   become(start, false);
@@ -465,6 +689,12 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
   window.rpgGlitch = {
     ready: function () { return !!cur && !pending && alts.length > 0 && !!err; },
     becomeFromQuery: function (qs) { var c = fromQuery(qs); if (c) { become(c, false); } },
+    // spec: { seed: "zpg", preset: "pirate", pet: "parrot", ... } onto a word seed (or blank)
+    becomeFrom: function (spec) {
+      var c = spec.seed ? fromWord(spec.seed) : blank();
+      Object.keys(spec).forEach(function (k) { if (k !== "seed") { c[k] = spec[k]; } });
+      become(sanitize(c), false);
+    },
     remix: remix,
     // take over the clock: render the scene at a given offset (ms) into a glitch
     manual: function () { manual = true; },
@@ -472,7 +702,6 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     renderAt: function (offset) { frame(gT + offset); },
     url: function () { return shareURL(ch); }
   };
-})();
 </script>
 </body>
 </html>
