@@ -17,12 +17,15 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [8-bit RPG dungeon](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png)
 - [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png)
 - [WANTED: HAX, the Open Web Outlaw (old-west poster, rpg-character in a cowboy hat)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg)
+- [RPG Glitch still (rpg-character on an 80s CRT)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png)
+
+## Interactive
+- [RPG Glitch: click for a new glitching rpg-character with a shareable link](https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch)
+- [HAX the Web (16-bit attract-mode game: an rpg-character collects 12 pieces of HAX lore, then a run report explains each)](https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-the-web-game)
 
 ## Explainers
-- [HAX the Web (16-bit attract-mode game: an rpg-character collects 12 pieces of HAX lore, then a run report explains each)](https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-the-web-game)
 - [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
 - [HAX The Web opening titles (30-second neon title-sequence homage, interactive page and stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-the-web-intro)
-
 - [HAX Episode XXVI: Return of the Open Web (space-opera opening crawl recapping HAX's history, standards and 2026 journey; parody format, original music)](https://github.com/haxtheweb/art/tree/main/presentation-materials/episode-xxvi)
 
 ## Policy

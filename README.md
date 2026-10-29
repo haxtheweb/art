@@ -16,6 +16,7 @@ A red-helmeted, steampunk-goggled time traveler who collects the best ideas of e
 | [`haxtheweb/`](haxtheweb/) | Logos, stickers, banners, thumbnails, GIFs, layered source files |
 | [`haxtheweb/wanted-poster/`](haxtheweb/wanted-poster/) | WANTED: HAX, the Open Web Outlaw: an old-west poster starring the `rpg-character` in a cowboy hat, with alt text and a social caption |
 | [`haxtheweb/hax-the-web-game/`](haxtheweb/hax-the-web-game/) | HAX the Web: a 16-bit attract-mode title screen and speed run where an `rpg-character` collects 12 pieces of HAX lore, then gets a run report. Playable page, stills and social posts |
+| [`haxtheweb/rpg-glitch/`](haxtheweb/rpg-glitch/) | RPG Glitch: the `rpg-character` glitching between versions of itself on an 80s CRT. Click for a new character; every character gets a shareable link that also opens in [rpg-me](https://github.com/haxtheweb/rpg-me) |
 | [`presentation-materials/episode-xxvi/`](presentation-materials/episode-xxvi/) | HAX Episode XXVI: Return of the Open Web: a space-opera opening crawl with an original synth fanfare, catching people up on HAX in 2026 |
 | [`presentation-materials/hax-the-web-intro/`](presentation-materials/hax-the-web-intro/) | HAX The Web opening titles: a 30-second neon title sequence |
 | [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills |
