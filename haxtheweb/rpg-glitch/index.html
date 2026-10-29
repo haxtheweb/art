@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>RPG Glitch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Glitch your way through rpg-character remixes on an 80s CRT. Every click is a new character with a link you can share.">
 <meta property="og:title" content="RPG Glitch: the future is remixable">
 <meta property="og:description" content="An rpg-character glitching between versions of itself on an 80s CRT. Click for a new one, then share the link.">
@@ -39,6 +40,7 @@
   --page-muted: var(--ddd-theme-default-limestoneGray);
   --control-bg: #0d1630;
   --control-border: #2a3a66;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
@@ -51,7 +53,9 @@ body {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: var(--ddd-spacing-6) var(--ddd-spacing-4);
+  padding-block: var(--ddd-spacing-6);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 h1 {
   font-family: var(--ddd-font-mono);
@@ -267,6 +271,13 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     codeSlots.forEach(function (s) { if (s.name !== "hat" && s.name !== "fire" && c[s.name] !== w[s.name]) { same = false; } });
     return same && RPG_ME_HATS.indexOf(c.hat) !== -1;
   }
+  var HASH_CODE = /^#(\d+-[0-9a-z]*)$/i;
+  function fromHash(hash) {
+    var m = HASH_CODE.exec(hash || "");
+    var c = m ? decodeCharacter(m[1]) : null;
+    return c ? sanitize(c) : null;
+  }
+  function hashCode(c) { var h = clone(c); h.flagText = ""; return encodeCharacter(h); }
   function fromQuery(search) {
     var q = new URLSearchParams(search), c = null;
     if (q.has("code")) {
@@ -399,7 +410,8 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
       var i = new Image();
       i.onload = function () { IMG[p] = i; resolve(); };
       i.onerror = resolve;
-      i.src = ART + p + ".svg";
+      // single-file builds inline the art as window.RPG_ART
+      i.src = window.RPG_ART && window.RPG_ART[p] ? "data:image/svg+xml;charset=utf-8," + encodeURIComponent(window.RPG_ART[p]) : ART + p + ".svg";
     });
   }
   function canvas(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; return c; }
@@ -596,6 +608,7 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     rpgme.href = rpgMeURL(c);
     C.setAttribute("aria-label", describe(c) + ". Activate to remix.");
     if (!framed) { history.replaceState(null, "", "?" + query(c)); }
+    else if (location.hash !== "#" + hashCode(c)) { location.replace("#" + hashCode(c)); }
   }
   // other looks for the same character, for the idle glitch
   function loadAlts(c) {
@@ -680,7 +693,11 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     frame(t);
     requestAnimationFrame(loop);
   }
-  var start = fromQuery(location.search) || fromWord("btopro");
+  var start = fromHash(location.hash) || fromQuery(location.search) || fromWord("btopro");
+  window.addEventListener("hashchange", function () {
+    var c = fromHash(location.hash);
+    if (c && (!ch || hashCode(c) !== hashCode(ch))) { become(c, true); }
+  });
   pauseBtn.textContent = paused ? "Play glitch" : "Pause glitch";
   pauseBtn.setAttribute("aria-pressed", paused ? "true" : "false");
   become(start, false);

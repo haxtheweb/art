@@ -7,7 +7,8 @@
     "still": "node render.mjs still",
     "gif": "node render.mjs gif",
     "all": "node render.mjs still && node render.mjs gif",
-    "sync-art": "sh sync-art.sh"
+    "sync-art": "sh sync-art.sh",
+    "single": "node build-single.mjs ../rpg-glitch-single.html"
   },
   "dependencies": {
     "@fontsource/roboto-mono": "^5.1.0",

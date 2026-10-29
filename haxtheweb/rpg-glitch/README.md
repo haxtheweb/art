@@ -12,7 +12,7 @@ The HAX [`rpg-character`](https://github.com/haxtheweb/webcomponents/tree/main/e
 | [`media/rpg-glitch-still.png`](media/rpg-glitch-still.png) | 1360×880 still (`btopro` as a knight with a dog). Used as the page's social preview image. |
 | [`media/rpg-glitch.gif`](media/rpg-glitch.gif) | 680px loop: knight with a dog, pirate with a parrot, wizard with an owl on fire, scientist with a slime, cheering astronaut, witch with a bat. For READMEs and chat. |
 | [`rpg-character/`](rpg-character/) | The element's SVG layers plus its `rpg-character-code.js`, `rpg-character-overlays.js` and `rpg-character-seasons.js`, copied from `webcomponents` main so the page works on any static host. Refresh with `tools/sync-art.sh`; don't hand-edit. |
-| [`tools/`](tools/) | `render.mjs` re-renders the still and GIF from `index.html`; `sync-art.sh` refreshes `rpg-character/` from `webcomponents` main. |
+| [`tools/`](tools/) | `render.mjs` re-renders the still and GIF from `index.html`; `sync-art.sh` refreshes `rpg-character/` from `webcomponents` main; `build-single.mjs` writes one self-contained HTML file with the art and modules inlined (about 260 KB), for hosts that serve a single page. |
 
 ## Shareable links
 
@@ -30,7 +30,7 @@ Examples: `?seed=btopro`, `?seed=zpg&hat=pirate`, `?seed=12345678&hat=ninja&fire
 
 **Edit in rpg-me** opens the base look (the 8 digits, plus the hat if rpg-me knows it, plus fire). rpg-me doesn't read character codes yet, so costumes, pets, moods and poses don't carry over.
 
-When the page runs inside someone else's frame (a preview or an embed), Copy link and the share buttons hide, since the framed URL isn't shareable; Copy HAX embed still works.
+The page also reads a bare `#<code>` hash (`#1-0104…`). When it runs inside someone else's frame (a preview, an embed, a claude.ai Artifact), it keeps the character in that hash instead, since only a plain hash survives there. Copy link and the share buttons hide in a frame; use the host's own share link, which carries the hash. Copy HAX embed still works.
 
 ## What's left out
 
