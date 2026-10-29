@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HAX the Web Attract Mode</title>
+<meta name="description" content="A 16-bit style HAX title screen and speed run. An rpg-character runs through the web collecting 12 pieces of HAX lore, then a run report explains what you collected and missed.">
+<meta property="og:title" content="HAX the Web">
+<meta property="og:description" content="Press start: race an rpg-character through the web and collect 12 pieces of HAX lore.">
+<meta property="og:image" content="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<style>
+/* Layout: one arcade cabinet (bezel, 16:9 pixel screen, control deck), then a run report of accent-cards.
+   Every color is a DDD token; hex values are only fallbacks until the DDD bundle registers its variables. */
+:root{
+  --bg:var(--ddd-theme-default-potentialMidnight,#000321);
+  --surface:var(--ddd-theme-default-nittanyNavy,#001e44);
+  --edge:var(--ddd-theme-default-beaverBlue,#1e407c);
+  --ink:var(--ddd-theme-default-white,#fff);
+  --dim:var(--ddd-theme-default-slateLight,#ccdae6);
+  --gold:var(--ddd-theme-default-keystoneYellow,#ffd100);
+  --sky:var(--ddd-theme-default-skyBlue,#009cde);
+  --got:var(--ddd-theme-default-futureLime,#99cc00);
+  --miss:var(--ddd-theme-default-discoveryCoral,#f2665e);
+  --pixel:"Press Start 2P", ui-monospace, monospace; /* game screen only */
+  color-scheme:dark;
+}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--ddd-font-primary,"Roboto",system-ui,sans-serif);font-size:var(--ddd-font-size-4xs,16px);line-height:1.5;
+  padding-left:max(var(--ddd-spacing-4,16px),env(safe-area-inset-left,0px));padding-right:max(var(--ddd-spacing-4,16px),env(safe-area-inset-right,0px));padding-block:var(--ddd-spacing-6,24px) var(--ddd-spacing-10,40px)}
+d-d-d{display:none}
+.cab{max-width:960px;margin:0 auto;display:grid;gap:var(--ddd-spacing-4,16px)}
+.marquee{display:flex;justify-content:space-between;align-items:baseline;gap:var(--ddd-spacing-3,12px);flex-wrap:wrap}
+.marquee h1{font-family:var(--ddd-font-navigation,"Roboto Condensed",sans-serif);font-weight:var(--ddd-font-weight-black,900);margin:0;color:var(--gold);letter-spacing:.04em;text-transform:uppercase;text-wrap:balance}
+.marquee span{font-family:var(--ddd-font-navigation,"Roboto Condensed",sans-serif);color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.bezel{background:var(--surface);border:var(--ddd-border-sm,2px solid) ;border-color:var(--edge);border-radius:var(--ddd-radius-lg,16px);padding:clamp(8px,2vw,18px);box-shadow:var(--ddd-boxShadow-xl,0 20px 60px -20px #000)}
+canvas{display:block;width:100%;max-width:100%;aspect-ratio:16/9;image-rendering:pixelated;image-rendering:crisp-edges;background:var(--surface);border-radius:var(--ddd-radius-xs,4px);cursor:pointer;touch-action:manipulation}
+canvas:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.deck{display:flex;flex-wrap:wrap;gap:var(--ddd-spacing-3,12px);align-items:end}
+.deck simple-cta{margin:0;--simple-cta-font-size:var(--ddd-font-size-4xs,16px)}
+.deck simple-cta.start{--ddd-theme-accent:var(--bg)}
+.player{display:flex;flex-wrap:wrap;gap:var(--ddd-spacing-3,12px) var(--ddd-spacing-5,20px);align-items:end;margin-left:auto}
+.player simple-fields-field{width:12em;max-width:100%;
+  --simple-fields-background-color:var(--surface);--simple-fields-select-background-color:var(--surface);
+  --simple-fields-color:var(--ink);--simple-fields-accent-color:var(--gold);
+  --simple-fields-border-color:var(--edge);--simple-fields-border-color-light:var(--edge);
+  --simple-fields-font-family:var(--ddd-font-primary,sans-serif);--simple-fields-font-size:var(--ddd-font-size-4xs,16px);
+  --simple-fields-detail-font-family:var(--ddd-font-navigation,sans-serif);--simple-icon-color:var(--ink);
+  background:var(--surface);border-radius:var(--ddd-radius-xs,4px);padding:var(--ddd-spacing-1,4px) var(--ddd-spacing-2,8px);color:var(--ink)}
+.player simple-fields-field#hat{width:9em}
+.player simple-fields-field#slow{width:auto;padding-inline:var(--ddd-spacing-3,12px)}
+
+.help{margin:0;color:var(--dim);max-width:72ch}
+.help{line-height:1.6}
+.help code{--ddd-theme-code-background-color:var(--surface);--ddd-theme-code-color:var(--ink);background:var(--surface);color:var(--ink);border-radius:var(--ddd-radius-xs,4px)}
+/* kbd keycap, matching the HAX UI keycap (.hax-ui-kbd) with DDD tokens */
+kbd{font-family:var(--ddd-font-mono,ui-monospace,monospace);font-size:var(--ddd-font-size-6xs,12px);color:var(--ink);background:var(--surface);
+  border:1px solid var(--edge);border-bottom-width:3px;border-radius:var(--ddd-radius-xs,4px);padding:0 var(--ddd-spacing-1,4px);white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.report{display:grid;gap:var(--ddd-spacing-4,16px);margin-top:var(--ddd-spacing-3,12px)}
+.report header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:var(--ddd-spacing-2,8px) var(--ddd-spacing-4,16px);border-bottom:var(--ddd-border-sm,2px solid);border-color:var(--edge);padding-bottom:var(--ddd-spacing-3,12px)}
+.report h2{font-family:var(--ddd-font-navigation,sans-serif);font-weight:var(--ddd-font-weight-bold,700);letter-spacing:.04em;text-transform:uppercase;color:var(--sky);margin:0}
+.report header p{margin:0;color:var(--dim);font-variant-numeric:tabular-nums}
+.report header strong{color:var(--ink)}
+#rbody{display:grid;gap:var(--ddd-spacing-6,24px)}
+.group h3{font-family:var(--ddd-font-navigation,sans-serif);letter-spacing:.12em;text-transform:uppercase;margin:0 0 var(--ddd-spacing-3,12px)}
+.group.missed h3{color:var(--miss)}
+.group.got h3{color:var(--got)}
+.group.all h3{color:var(--dim)}
+.lore{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:var(--ddd-spacing-4,16px);align-items:start}
+.lore accent-card{--accent-card-width:100%;--accent-card-background-color:var(--surface);--accent-card-color:var(--ink);--accent-card-footer-border-color:var(--edge);min-width:0}
+.lore accent-card.is-miss{--accent-card-border-color:var(--miss)}
+.lore h4{display:flex;align-items:center;gap:var(--ddd-spacing-3,12px);margin:var(--ddd-spacing-3,12px) 0 var(--ddd-spacing-2,8px);font-family:var(--ddd-font-navigation,sans-serif);font-weight:var(--ddd-font-weight-bold,700);color:var(--ink)}
+.chip{flex:none;width:36px;height:32px;display:grid;place-items:center;font-family:var(--ddd-font-mono,monospace);font-size:var(--ddd-font-size-6xs,12px);font-weight:700;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:var(--c);color:var(--bg)}
+.is-miss .chip{background:var(--ddd-theme-default-slateGray,#314d64);color:var(--dim)}
+.status{font-family:var(--ddd-font-navigation,sans-serif);font-size:var(--ddd-font-size-6xs,12px);font-weight:var(--ddd-font-weight-bold,700);letter-spacing:.1em;text-transform:uppercase;border-radius:var(--ddd-radius-rounded,100px);padding:2px var(--ddd-spacing-2,8px);font-style:normal;display:inline-block;margin-bottom:var(--ddd-spacing-2,8px);white-space:nowrap}
+.status.got{color:var(--bg);background:var(--got)}
+.status.miss{color:var(--bg);background:var(--miss)}
+.lore p{margin:0 0 var(--ddd-spacing-3,12px);color:var(--dim)}
+</style>
+
+</head>
+<body>
+<d-d-d></d-d-d>
+<div class="cab">
+  <div class="marquee"><h1 data-font-size="ms">HAX the Web</h1><span data-font-size="6xs">1 player &middot; attract mode</span></div>
+  <div class="bezel"><canvas id="c" width="320" height="180" tabindex="0" aria-label="HAX the Web title screen and run. Press Start to begin, Jump to jump."></canvas></div>
+  <div class="deck">
+    <simple-cta id="bStart" class="start" data-primary="16" label="Press start" hide-icon hotline></simple-cta>
+    <simple-cta id="bJump" data-primary="11" data-accent="6" label="Jump" hide-icon hotline></simple-cta>
+    <simple-cta id="bMute" data-primary="2" data-accent="6" label="Sound on" hide-icon></simple-cta>
+    <div class="player">
+      <simple-fields-field id="seed" type="text" label="Player seed" value="btopro" maxlength="32" autocomplete="off"></simple-fields-field>
+      <simple-fields-field id="hat" type="select" label="Hat" value="none"></simple-fields-field>
+      <simple-fields-field id="slow" type="checkbox" label="Play slower"></simple-fields-field>
+    </div>
+  </div>
+  <p class="help" data-font-size="4xs">Press <kbd>Enter</kbd> or tap the screen to play the intro jingle and start a run. Jump with <kbd>Space</kbd>, a tap, or the Jump button. Check <em>Play slower</em> for a gentler pace; the jumps and the world stay the same, everything just moves at 60% speed. The yellow arrows on the ground show where to jump, and each glowing badge you grab teaches one piece of HAX along the bottom of the screen. Your runner is a real <code>rpg-character</code> built from the player seed, so change it to meet someone new. Leave the title screen alone and a demo plays by itself.</p>
+  <p id="live" class="sr" aria-live="polite"></p>
+
+  <section class="report" aria-labelledby="rh">
+    <header><h2 id="rh" data-font-size="s">Run report</h2><p id="rsum" data-font-size="4xs">No run yet. Here is everything hidden in the world.</p></header>
+    <div id="rbody"></div>
+  </section>
+</div>
+
+<script>__HAXBUNDLE__
+</script>
+<script>const RPG_ASSETS=__ASSETS__;
+(()=>{
+const cv=document.getElementById('c'),x=cv.getContext('2d');
+x.imageSmoothingEnabled=false;
+const W=320,H=180,GROUND=136,BAR=154;
+const F='"Press Start 2P", monospace';
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- DDD palette for the canvas (read from the live DDD variables) ---------- */
+const D={potentialMidnight:'#000321',nittanyNavy:'#001e44',beaverBlue:'#1e407c',slateGray:'#314d64',slateLight:'#ccdae6',slateMaxLight:'#eef3f7',
+  skyBlue:'#009cde',skyLight:'#ccf0ff',pughBlue:'#96bee6',keystoneYellow:'#ffd100',roarGolden:'#bf8226',roarLight:'#f9eddc',inventOrange:'#e98300',
+  original87Pink:'#bc204b',discoveryCoral:'#f2665e',futureLime:'#99cc00',forestGreen:'#4a7729',creekTeal:'#3ea39e',athertonViolet:'#ac8dce',
+  wonderPurple:'#491d70',globalNeon:'#ebff00',shrineTan:'#b88965',white:'#ffffff'};
+function syncDDD(){try{const cs=getComputedStyle(document.documentElement);for(const k in D){const v=cs.getPropertyValue('--ddd-theme-default-'+k).trim();if(v)D[k]=v;}}catch(e){}}
+
+/* ---------- lore ---------- */
+const LORE=[
+ {c:'HX',t:'HAX',n:'HAX',k:'keystoneYellow',s:'Edit the web like a document',d:'HAX (Headless Authoring eXperience) is the editor. Drop in blocks and edit in place, and what comes out is clean, portable HTML.'},
+ {c:'CMS',t:'HAXCMS',n:'HAXcms',k:'inventOrange',s:'Sites are files. No database.',d:'HAXcms keeps every site as flat files, so a site can live in git, be copied anywhere and be published as a static site.'},
+ {c:'{}',t:'SITE.JSON',n:'site.json',k:'skyBlue',s:'A whole site in one outline',d:'site.json follows JSON Outline Schema: one file that describes every page in a site, its order and its hierarchy.'},
+ {c:'WC',t:'WEB COMPONENTS',n:'Web components',k:'futureLime',s:'Standard blocks that run anywhere',d:'Every HAX block is a standards-based web component, mostly built with Lit, so it works on any page and in any framework.'},
+ {c:'DDD',t:'DDD',n:'DDD',k:'original87Pink',s:'Design, Develop, Deliver',d:'DDD is the HAX design system. Shared tokens for color, spacing and type make every theme and block look like they belong together.'},
+ {c:'A11',t:'ACCESSIBILITY',n:'Accessibility',k:'athertonViolet',s:'Accessible by default',d:'Accessibility is built into the blocks and checked by audits, so authors produce WCAG-friendly pages without having to be experts.'},
+ {c:'CLI',t:'HAX CLI',n:'HAX CLI',k:'creekTeal',s:'Scaffold, audit and publish',d:'The hax command line scaffolds sites and web components, runs audits and publishes to surge, Netlify, Vercel or GitHub Pages.'},
+ {c:'MS',t:'MAGIC SCRIPT',n:'Magic script',k:'roarGolden',s:'Loads only the tags a page uses',d:'The magic script watches the page and loads just the web components it actually uses, on demand, with no build step for the author.'},
+ {c:'OD',t:'OUTLINE DESIGNER',n:'Outline designer',k:'pughBlue',s:'Restructure a site in bulk',d:'Outline designer lets you drag, rename, duplicate and reorder pages in bulk, then saves the whole outline in one pass.'},
+ {c:'OER',t:'OER',n:'OER',k:'globalNeon',s:'Open, remixable learning',d:'HAX grew up around open educational resources. Content is portable and licensed to be shared, copied and remixed.'},
+ {c:'IAM',t:'HAXIAM',n:'HAXiam',k:'skyLight',s:'A site for every learner',d:'HAXiam makes HAXcms multi-tenant: hundreds of people each get their own sites on one shared core, signed in through their institution.'},
+ {c:'PR',t:'PRAW',n:'PRAW',k:'shrineTan',s:'The rules HAX runs on',d:'PRAW is the community and administration hub: the rules, worldview and agent skills that keep people and AI building HAX the same way.'}
+];
+const col=L=>D[L.k];
+
+/* ---------- rpg-character (real HAX component art) ---------- */
+const HATS=['none','bunny','coffee','construction','cowboy','education','knight','ninja','party','pirate','watermelon'];
+const KEYS=['accessories','base','leg','face','faceItem','hair','pants','shirt','skin','hatColor'];
+const FUN={zpg:'7501517984378880262144',edtechjoker:'712215550',btopro:'7122155501'};
+function traits(seedStr){ // same seed math as rpg-character.js
+  let s=54;for(let i=0;i<seedStr.length&&i<64;i++)s*=seedStr.charCodeAt(i);
+  let d=BigInt(s).toString();if(FUN[seedStr])d=FUN[seedStr];
+  const t={};KEYS.forEach((k,i)=>{const v=d[i];if(v===undefined){t[k]=0;return;}
+    if(k==='base')t[k]=v>=5?1:0;else if(k==='face')t[k]=v>5?1:v;else t[k]=v;});
+  return t;
+}
+const loadImg=s=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(s);});
+async function compose(t,leg,hat,scale){
+  const c=document.createElement('canvas');c.width=Math.round(113*scale);c.height=Math.round(142*scale);
+  const cx=c.getContext('2d');
+  const order=['skin/'+t.skin,...(t.base==1?['hair/'+t.hair]:[]),'face/'+t.face,'faceItem/'+t.faceItem,'shirt/'+t.shirt,'pants/'+t.pants,'accessories/'+t.accessories,'base/'+t.base+leg,...(leg?['base/'+leg]:[]),'hatColor/'+t.hatColor,...(hat!=='none'?['hat/'+hat]:[])];
+  const imgs=await Promise.all(order.map(k=>RPG_ASSETS[k]?loadImg(RPG_ASSETS[k]):null));
+  imgs.forEach(i=>{if(i)cx.drawImage(i,0,0,c.width,c.height);});
+  return c;
+}
+const seedEl=document.getElementById('seed'),hatEl=document.getElementById('hat');
+let SPR=null,buildId=0;
+async function buildSprites(){
+  const id=++buildId,seed=String(seedEl.value||'').trim()||'haxtheweb',hat=HATS.includes(hatEl.value)?hatEl.value:'none';
+  const t=traits(seed);
+  const [s0,sR,sL,big]=await Promise.all([compose(t,'',hat,.2),compose(t,'R',hat,.2),compose(t,'L',hat,.2),compose(t,'',hat,.4)]);
+  if(id===buildId)SPR={'':s0,R:sR,L:sL,big};
+}
+
+/* ---------- world drawing ---------- */
+function hex(cx,cy,r,fill,stroke){x.beginPath();for(let i=0;i<6;i++){const a=Math.PI/3*i;x.lineTo(cx+Math.cos(a)*r,cy+Math.sin(a)*r);}x.closePath();x.fillStyle=fill;x.fill();if(stroke){x.lineWidth=2;x.strokeStyle=stroke;x.stroke();}}
+function badge(L,cx,cy,t){
+  cy+=Math.sin(t*0.12)*2;
+  x.globalAlpha=.35+.25*Math.sin(t*0.2);hex(cx,cy,15,col(L));x.globalAlpha=1;
+  hex(cx,cy,11,D.potentialMidnight,col(L));
+  x.fillStyle=col(L);x.font='6px '+F;x.textAlign='center';x.textBaseline='middle';x.fillText(L.c,cx+.5,cy+1);
+}
+function bit(cx,cy,t){const w=Math.abs(Math.cos(t*0.15+cx*0.05))*4+1;x.fillStyle=D.potentialMidnight;x.fillRect(Math.round(cx-w/2)-1,cy-5,Math.round(w)+2,10);x.fillStyle=D.skyBlue;x.fillRect(Math.round(cx-w/2),cy-4,Math.round(w),8);x.fillStyle=D.white;x.fillRect(Math.round(cx-w/2),cy-4,1,3);}
+function sky(){const g=x.createLinearGradient(0,0,0,GROUND);g.addColorStop(0,D.potentialMidnight);g.addColorStop(.55,D.nittanyNavy);g.addColorStop(1,D.beaverBlue);x.fillStyle=g;x.fillRect(0,0,W,GROUND);}
+function rnd(i){const s=Math.sin(i*127.1)*43758.5453;return s-Math.floor(s);}
+function clouds(cam){const p=cam*0.05;for(let i=Math.floor(p/90)-1;i<Math.floor(p/90)+5;i++){const cx=Math.round(i*90-p+rnd(i)*40),cy=Math.round(12+rnd(i+9)*26);x.fillStyle=D.slateLight;x.fillRect(cx,cy,34,6);x.fillRect(cx+6,cy-4,20,4);x.fillStyle=D.pughBlue;x.fillRect(cx,cy+6,34,2);}}
+function windows(cam){ // distant browser-window skyline
+  const p=cam*0.18,sp=58;
+  for(let i=Math.floor(p/sp)-1;i<Math.floor(p/sp)+8;i++){
+    const w=34+Math.floor(rnd(i)*26),h=30+Math.floor(rnd(i+3)*50),wx=Math.round(i*sp-p+rnd(i+7)*12),wy=112-h;
+    x.fillStyle=D.nittanyNavy;x.fillRect(wx,wy,w,h+24);
+    x.fillStyle=D.beaverBlue;x.fillRect(wx,wy,w,6);
+    x.fillStyle=D.discoveryCoral;x.fillRect(wx+2,wy+2,2,2);x.fillStyle=D.keystoneYellow;x.fillRect(wx+5,wy+2,2,2);x.fillStyle=D.futureLime;x.fillRect(wx+8,wy+2,2,2);
+    x.fillStyle=D.slateGray;for(let l=0;l<Math.floor(h/8);l++)x.fillRect(wx+4,wy+10+l*7,Math.floor((w-8)*(.4+rnd(i*10+l)*.6)),2);
+  }
+}
+function hills(cam){
+  const p=cam*0.45,yy=sx=>116+Math.sin((sx+p)*0.022)*8+Math.sin((sx+p)*0.057)*4;
+  x.fillStyle=D.slateGray;x.beginPath();x.moveTo(0,GROUND);for(let sx=0;sx<=W;sx+=4)x.lineTo(sx,yy(sx));x.lineTo(W,GROUND);x.fill();
+  x.fillStyle=D.creekTeal;for(let sx=0;sx<=W;sx+=4)x.fillRect(sx,Math.round(yy(sx)),4,2);
+}
+function blockTile(sx,sy,w,h,ix){
+  x.fillStyle=D.futureLime;x.fillRect(sx,sy,w,4);x.fillStyle=D.forestGreen;x.fillRect(sx,sy+4,w,2);
+  for(let r=0;r*12<h-6;r++)for(let c=0;c*16<w;c++){
+    const bw=Math.min(16,w-c*16),bh=Math.min(12,h-6-r*12);
+    x.fillStyle=((ix+c+r)%2)?D.wonderPurple:D.beaverBlue;x.fillRect(sx+c*16,sy+6+r*12,bw,bh);
+    if(bw>9&&bh>5){x.fillStyle=D.athertonViolet;x.fillRect(sx+c*16+3,sy+11+r*12,6,1);x.fillRect(sx+c*16+8,sy+11+r*12,1,4);}
+  }
+}
+function ground(cam){const s=Math.floor(cam/16);blockTile(-(cam-s*16),GROUND,W+32,BAR-GROUND,s);}
+function world(cam){sky();clouds(cam);windows(cam);hills(cam);ground(cam);}
+
+/* ---------- bottom learning bar ---------- */
+function txt(s,px,py,c,size=8,align='left',shadow=true){x.font=size+'px '+F;x.textAlign=align;x.textBaseline='top';if(shadow){x.fillStyle=D.potentialMidnight;x.fillText(s,px+1,py+1);}x.fillStyle=c;x.fillText(s,px,py);}
+function bar(L,headline,line,alpha=1){
+  x.fillStyle=D.potentialMidnight;x.fillRect(0,BAR,W,H-BAR);
+  x.fillStyle=L?col(L):D.beaverBlue;x.fillRect(0,BAR,W,2);
+  x.globalAlpha=alpha;
+  if(L){hex(15,BAR+13,9,D.potentialMidnight,col(L));x.fillStyle=col(L);x.font='5px '+F;x.textAlign='center';x.textBaseline='middle';x.fillText(L.c,15.5,BAR+14);}
+  const lx=L?30:10;
+  txt(headline,lx,BAR+5,L?col(L):D.keystoneYellow,8,'left',false);
+  txt(line,lx,BAR+16,D.white,6,'left',false);
+  x.globalAlpha=1;
+}
+
+/* ---------- audio (original chiptune) ---------- */
+const A={ctx:null,master:null,muted:false,music:null,nb:null};
+const mf=m=>440*Math.pow(2,(m-69)/12);
+function audioInit(){
+  if(!A.ctx){try{A.ctx=new (window.AudioContext||window.webkitAudioContext)();A.master=A.ctx.createGain();A.master.gain.value=A.muted?0:.2;A.master.connect(A.ctx.destination);
+    A.nb=A.ctx.createBuffer(1,A.ctx.sampleRate*.3,A.ctx.sampleRate);const d=A.nb.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;}catch(e){A.ctx=null;}}
+  if(A.ctx&&A.ctx.state==='suspended')A.ctx.resume();
+}
+function nt(dest,m,t,d,type,vol,slide){if(!A.ctx||!m)return;const o=A.ctx.createOscillator(),g=A.ctx.createGain();o.type=type;o.frequency.setValueAtTime(mf(m),t);if(slide)o.frequency.exponentialRampToValueAtTime(mf(m+slide),t+d);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+.008);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(dest);o.start(t);o.stop(t+d+.03);}
+function hat(dest,t,vol){if(!A.ctx)return;const s=A.ctx.createBufferSource(),f=A.ctx.createBiquadFilter(),g=A.ctx.createGain();s.buffer=A.nb;f.type='highpass';f.frequency.value=7000;g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.0001,t+.05);s.connect(f);f.connect(g);g.connect(dest);s.start(t);s.stop(t+.06);}
+function kick(dest,t){if(!A.ctx)return;const o=A.ctx.createOscillator(),g=A.ctx.createGain();o.type='sine';o.frequency.setValueAtTime(150,t);o.frequency.exponentialRampToValueAtTime(40,t+.12);g.gain.setValueAtTime(.9,t);g.gain.exponentialRampToValueAtTime(.0001,t+.16);o.connect(g);g.connect(dest);o.start(t);o.stop(t+.2);}
+function bus(){const g=A.ctx.createGain();g.gain.value=1;g.connect(A.master);return g;}
+function stopMusic(){if(A.music&&A.ctx){const g=A.music;g.gain.setTargetAtTime(0,A.ctx.currentTime,.05);setTimeout(()=>{try{g.disconnect()}catch(e){}},500);}A.music=null;}
+function jingle(){
+  if(!A.ctx)return 0;stopMusic();const b=A.music=bus(),st=60/160/4,t0=A.ctx.currentTime+.05;
+  const mel=[[71,1],[73,1],[75,1],[76,2],[80,2],[83,2],[88,4],[87,2],[85,2],[83,2],[80,2],[83,4],[0,2],[81,2],[85,2],[88,2],[90,4],[88,2],[87,2],[88,2],[90,2],[92,6],[88,8]];
+  let t=t0;for(const[m,l]of mel){nt(b,m,t,l*st*.95,'square',.22);nt(b,m?m-12:0,t,l*st*.9,'triangle',.12);t+=l*st;}
+  const bass=[[52,6],[64,6],[49,6],[61,6],[45,6],[57,6],[47,6],[59,6],[52,8]];
+  t=t0+3*st;for(const[m,l]of bass){nt(b,m-12,t,l*st*.85,'triangle',.5);nt(b,m+7,t,st*1.5,'square',.06);t+=l*st;}
+  for(let i=3;i<59;i+=2)hat(b,t0+i*st,.12);for(let i=3;i<59;i+=6)kick(b,t0+i*st);
+  return 59*st+.4;
+}
+function runMusic(seconds){
+  if(!A.ctx)return;stopMusic();const b=A.music=bus(),st=60/168/4,t0=A.ctx.currentTime+.05;
+  const bass=[52,0,64,0,52,52,64,0,49,0,61,0,49,49,61,0,45,0,57,0,45,45,57,0,47,0,59,0,47,59,47,59];
+  const lead=[76,0,0,80,0,0,83,0,85,0,0,83,0,80,0,0,81,0,0,85,0,0,88,0,87,0,85,0,83,0,80,0];
+  const loops=Math.ceil(seconds/(32*st));
+  for(let L=0;L<loops;L++)for(let i=0;i<32;i++){const t=t0+(L*32+i)*st;
+    nt(b,bass[i]?bass[i]-12:0,t,st*.9,'triangle',.45);
+    if(L>0)nt(b,lead[i],t,st*2.2,'square',.12);
+    if(i%2===0)hat(b,t,.08);if(i%8===0||i%8===5)kick(b,t);}
+}
+function endJingle(){if(!A.ctx)return;const b=A.music=bus(),st=.09;[[76,1],[80,1],[83,1],[88,2],[83,1],[88,4]].reduce((tt,[m,l])=>{nt(b,m,tt,l*st*.95,'square',.2);nt(b,m-24,tt,l*st*.9,'triangle',.4);return tt+l*st;},A.ctx.currentTime+.05);}
+function sfx(kind){if(!A.ctx)return;const t=A.ctx.currentTime,d=A.master;
+  if(kind==='bit')nt(d,86,t,.06,'triangle',.35,7);
+  if(kind==='jump')nt(d,55,t,.14,'square',.12,14);
+  if(kind==='lore')[76,80,83,88,92].forEach((m,i)=>nt(d,m,t+i*.045,.12,'square',.15));
+  if(kind==='start')nt(d,64,t,.25,'square',.2,24);
+}
+
+/* ---------- level + state ---------- */
+const SLOW=0.6,SPEED=3.8,V=5.2,G=0.28,AIR=2*V/G,PLAT_UP=40,PLAT_TH=8;
+const SW=23,SH=28,FOOT=26; // runner sprite size at 1/5 scale, feet row
+const slowEl=document.getElementById('slow');
+const isSlow=()=>{const v=slowEl.value;return v===true||v==='true'||v==='on'||(slowEl.shadowRoot&&!!slowEl.shadowRoot.querySelector('input[type=checkbox]:checked'));};
+let mode='title',frame=0,idle=0,flash=0,introLeft=0,titleCam=0,g=null;
+function buildLevel(skips){
+  const items=[],cues=[],plats=[];let px=300;
+  LORE.forEach((L,i)=>{
+    for(let k=0;k<5;k++)items.push({x:px+k*20,y:GROUND-12,type:'bit'});
+    px+=130;cues.push({x:px,skip:skips.has(i)});
+    if(i%3===2){
+      const top=GROUND-PLAT_UP;plats.push({x:px+70,w:170,top});
+      for(let k=0;k<4;k++)items.push({x:px+120+k*16,y:top-12,type:'bit'});
+      items.push({x:px+214,y:top-18,type:'lore',L});
+      px+=320;
+    }else{
+      const n=7;for(let k=1;k<=n;k++){const t=k*AIR/(n+1),ix=px+SPEED*t+11,iy=GROUND-(V*t-G*t*t/2)-14;items.push(k===4?{x:ix,y:iy-4,type:'lore',L}:{x:ix,y:iy,type:'bit'});}
+      px+=SPEED*AIR+80;
+    }
+  });
+  return{items,cues,plats,end:px+140};
+}
+function startRun(player){
+  const skips=new Set();
+  if(!player)while(skips.size<3)skips.add(Math.floor(Math.random()*LORE.length)); // the demo bot misses a few on purpose
+  const ts=isSlow()?SLOW:1; // time scale: speed x ts, gravity x ts^2 keeps every jump arc identical
+  g={ts,dist:0,hx:0,y:GROUND,vy:0,on:true,rot:0,cam:0,tick:0,player,buf:0,got:new Set(),bits:0,banner:null,parts:[],trail:[],ci:0,...buildLevel(skips)};
+  mode='run';idle=0;
+  if(player)runMusic(g.end/(SPEED*ts)/60+4);
+}
+function toTitle(){stopMusic();mode='title';idle=0;g=null;}
+function beginIntro(){audioInit();sfx('start');introLeft=Math.max(60,Math.round(jingle()*60)||240);mode='intro';idle=0;}
+function startPress(){audioInit();if(mode==='intro')return;if(mode!=='title')toTitle();beginIntro();}
+function jumpPress(){
+  audioInit();
+  if(mode==='run'&&g.player){if(g.on)doJump();else g.buf=8;return;}
+  if(mode==='title'||mode==='results'||(mode==='run'&&!g.player)){if(mode!=='title')toTitle();beginIntro();}
+}
+function doJump(){g.vy=-V*g.ts;g.on=false;g.buf=0;if(g.player)sfx('jump');}
+
+function update(){
+  g.tick++;g.hx+=SPEED*g.ts;g.cam=g.hx-80;
+  while(g.ci<g.cues.length&&g.hx>=g.cues[g.ci].x){if(!g.player&&!g.cues[g.ci].skip&&g.on)doJump();g.ci++;}
+  if(!g.on){g.vy+=G*g.ts*g.ts;g.y+=g.vy;g.rot+=0.42*g.ts;}
+  const cx=g.hx+SW/2;let support=GROUND;
+  for(const p of g.plats){if(cx<p.x||cx>p.x+p.w)continue;const ok=g.on?Math.abs(g.y-p.top)<=1:(g.vy>=0&&g.y-g.vy<=p.top+1&&g.y>=p.top-1);if(ok)support=Math.min(support,p.top);}
+  if(g.on&&support>g.y){g.on=false;g.vy=0;}
+  if(!g.on&&g.vy>=0&&g.y>=support){g.y=support;g.vy=0;g.on=true;g.rot=0;if(g.buf>0)doJump();}
+  if(g.buf>0)g.buf--;
+  g.dist+=SPEED*g.ts;
+  const hy=g.y-SH/2;
+  for(const it of g.items){if(it.got)continue;const dx=Math.abs(it.x-cx),dy=Math.abs(it.y-hy),lore=it.type==='lore';
+    if(dx<(lore?16:12)&&dy<(lore?20:15)){it.got=true;
+      if(!lore){g.bits++;if(g.player)sfx('bit');for(let k=0;k<4;k++)g.parts.push({x:it.x,y:it.y,vx:(Math.random()-.5)*3,vy:-Math.random()*2.5,l:18,c:D.skyBlue});}
+      else{g.got.add(it.L.t);if(g.player){sfx('lore');document.getElementById('live').textContent=it.L.n+': '+it.L.s;}g.banner={L:it.L,t:0};for(let k=0;k<14;k++)g.parts.push({x:it.x,y:it.y,vx:Math.cos(k/14*6.28)*2.4,vy:Math.sin(k/14*6.28)*2.4,l:26,c:col(it.L)});}}}
+  for(const p of g.parts){p.x+=p.vx;p.y+=p.vy;p.vy+=.08;p.l--;}g.parts=g.parts.filter(p=>p.l>0);
+  if(g.tick%Math.round(3/g.ts)===0)g.trail.push({x:g.hx,y:g.y,rot:g.rot,on:g.on,l:9});
+  for(const t of g.trail)t.l--;g.trail=g.trail.filter(t=>t.l>0);
+  if(g.banner)g.banner.t++;
+  if(g.hx>g.end){mode='results';idle=0;stopMusic();if(g.player)endJingle();report();}
+}
+
+/* ---------- draw ---------- */
+function runner(sx,sy,on,rot,frameKey,alpha=1){
+  if(!SPR)return;
+  const img=SPR[frameKey];x.globalAlpha=alpha;
+  if(on)x.drawImage(img,Math.round(sx),Math.round(sy-FOOT));
+  else{x.save();x.translate(Math.round(sx+SW/2),Math.round(sy-SH/2));x.rotate(RM?0:rot);x.drawImage(img,-Math.round(SW/2),-Math.round(SH/2));x.restore();}
+  x.globalAlpha=1;
+}
+function drawTitle(){
+  titleCam+=mode==='intro'?2.4:0.6;world(titleCam);
+  const cx=160,cy=62,spin=frame*(mode==='intro'?0.09:0.03);
+  x.save();x.translate(cx,cy);x.globalAlpha=.18;x.fillStyle=D.keystoneYellow;
+  for(let i=0;i<12;i++){x.rotate(Math.PI/6);x.beginPath();x.moveTo(0,0);x.lineTo(120,-10);x.lineTo(120,10);x.fill();}
+  x.restore();x.globalAlpha=1;
+  x.fillStyle=D.potentialMidnight;x.beginPath();x.arc(cx,cy,46,0,7);x.fill();
+  x.fillStyle=D.skyBlue;x.beginPath();x.arc(cx,cy,37,0,7);x.fill();
+  x.fillStyle=D.skyLight;x.fillRect(cx-37,cy+12,74,3);
+  for(let i=0;i<20;i++){const a=spin+i/20*Math.PI*2;hex(cx+Math.cos(a)*41.5,cy+Math.sin(a)*41.5,5,i%2?D.keystoneYellow:D.roarLight,D.potentialMidnight);}
+  if(SPR){const bob=Math.round(Math.sin(frame*0.1)*1.5);x.save();x.beginPath();x.arc(cx,cy,36,0,7);x.clip();x.drawImage(SPR.big,cx-Math.round(SPR.big.width/2),cy-27+bob);x.restore();}
+  x.fillStyle=D.potentialMidnight;x.beginPath();x.moveTo(36,98);x.lineTo(292,98);x.lineTo(284,124);x.lineTo(28,124);x.closePath();x.fill();
+  x.fillStyle=D.original87Pink;x.beginPath();x.moveTo(40,100);x.lineTo(288,100);x.lineTo(281,122);x.lineTo(33,122);x.closePath();x.fill();
+  x.fillStyle=D.discoveryCoral;x.fillRect(40,101,246,2);
+  txt('HAX THE WEB',161,104,D.white,16,'center');
+  if(mode==='intro')txt('GET READY',160,139,D.keystoneYellow,8,'center');
+  else if(Math.floor(frame/30)%2===0)txt('PRESS START',160,139,D.keystoneYellow,8,'center');
+  bar(null,'HAXTHEWEB.ORG','12 PIECES OF HAX LORE ARE HIDDEN IN THIS WORLD');
+}
+function drawRun(){
+  const cam=g.cam;world(cam);
+  for(const c of g.cues){const sx=Math.round(c.x-cam-8);if(sx<-20||sx>W)continue;const pulse=Math.floor(frame/8)%2;x.fillStyle=pulse?D.keystoneYellow:D.roarGolden;
+    for(let k=0;k<2;k++){const ay=GROUND-4-k*5;x.fillRect(sx+3,ay,2,2);x.fillRect(sx+1,ay+2,2,2);x.fillRect(sx+5,ay+2,2,2);}}
+  for(const p of g.plats){const sx=Math.round(p.x-cam);if(sx>W||sx+p.w<0)continue;x.fillStyle=D.potentialMidnight;x.fillRect(sx-1,p.top-1,p.w+2,PLAT_TH+2);blockTile(sx,p.top,p.w,PLAT_TH,Math.floor(p.x/16));x.fillStyle=D.keystoneYellow;x.fillRect(sx,p.top,p.w,1);}
+  for(const it of g.items){if(it.got)continue;const sx=it.x-cam;if(sx<-20||sx>W+20)continue;it.type==='bit'?bit(sx,Math.round(it.y),frame):badge(it.L,sx,it.y,frame);}
+  if(!RM){x.globalAlpha=.3;x.fillStyle=D.white;for(let i=0;i<5;i++){const ly=18+i*22,lx=W-((frame*9+i*61)%(W+60));x.fillRect(lx,ly,24+i*3,1);}x.globalAlpha=1;}
+  const legs=['','R','','L'],fk=legs[Math.floor(g.dist/15)%4];
+  for(const t of g.trail)runner(t.x-cam,t.y,t.on,t.rot,'',t.l/30);
+  runner(g.hx-cam,g.y,g.on,g.rot,g.on?fk:'');
+  for(const p of g.parts){x.fillStyle=p.c;x.fillRect(Math.round(p.x-cam),Math.round(p.y),2,2);}
+  const secs=Math.floor(g.tick/60);
+  txt('LORE',8,8,D.skyBlue);txt(g.got.size+'/'+LORE.length,48,8,D.white);
+  txt('BITS',8,20,D.skyBlue);txt(String(g.bits),48,20,D.white);
+  txt('TIME',8,32,D.skyBlue);txt(Math.floor(secs/60)+':'+String(secs%60).padStart(2,'0'),48,32,D.white);
+  if(!g.player&&Math.floor(frame/40)%2===0)txt('DEMO',312,8,D.keystoneYellow,8,'right');
+  if(g.ts<1)txt('SLOW',312,g.player?8:20,D.skyBlue,8,'right');
+  if(g.banner){const b=g.banner,a=Math.min(1,b.t/8);bar(b.L,b.L.t,b.L.s.toUpperCase(),a);}
+  else bar(null,g.player?'TAP OR SPACE TO JUMP':'DEMO RUN','JUMP AT THE ARROWS TO GRAB GLOWING LORE');
+}
+function drawResults(){
+  world(g.cam+frame*.3);
+  x.globalAlpha=.88;x.fillStyle=D.potentialMidnight;x.fillRect(20,10,280,138);x.globalAlpha=1;
+  x.fillStyle=D.keystoneYellow;x.fillRect(20,10,280,2);x.fillRect(20,146,280,2);
+  txt('RUN COMPLETE',160,20,D.keystoneYellow,12,'center');
+  const miss=LORE.length-g.got.size;
+  txt('LORE '+g.got.size+'/'+LORE.length+'   BITS '+g.bits,160,40,D.white,8,'center');
+  LORE.forEach((L,i)=>{const cx=55+(i%6)*42,cy=72+Math.floor(i/6)*30,have=g.got.has(L.t);
+    hex(cx,cy,12,D.potentialMidnight,have?col(L):D.slateGray);x.fillStyle=have?col(L):D.slateGray;x.font='6px '+F;x.textAlign='center';x.textBaseline='middle';x.fillText(L.c,cx+.5,cy+1);
+    if(!have){x.strokeStyle=D.discoveryCoral;x.lineWidth=2;x.beginPath();x.moveTo(cx+5,cy+5);x.lineTo(cx+11,cy+11);x.moveTo(cx+11,cy+5);x.lineTo(cx+5,cy+11);x.stroke();}});
+  if(Math.floor(frame/30)%2===0)txt('PRESS START',160,128,D.skyBlue,8,'center');
+  bar(null,miss?'MISSED '+miss+' PIECE'+(miss>1?'S':'')+' OF HAX':'PERFECT RUN! ALL 12 FOUND','THE RUN REPORT BELOW EXPLAINS EACH ONE');
+}
+function step(){
+  frame++;idle++;
+  if(mode==='title'&&idle>720)startRun(false);
+  if(mode==='intro'&&--introLeft<=0){flash=RM?0:16;startRun(true);}
+  if(mode==='run')update();
+  if(mode==='results'&&idle>(g.player?900:480))toTitle();
+}
+function render(){
+  if(mode==='title'||mode==='intro')drawTitle();else if(mode==='run')drawRun();else drawResults();
+  if(flash>0){x.globalAlpha=flash/16;x.fillStyle=D.white;x.fillRect(0,0,W,H);x.globalAlpha=1;flash--;}
+}
+
+/* ---------- run report (accent-card per piece of lore) ---------- */
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function card(L,state){
+  const lab=state==='miss'?'<span slot="subheading" class="status miss">Missed</span>':state==='got'?'<span slot="subheading" class="status got">Collected</span>':'';
+  return '<accent-card class="'+(state==='miss'?'is-miss':'')+'" style="--c:var(--ddd-theme-default-'+L.k+');--accent-card-border-color:var(--ddd-theme-default-'+L.k+')">'+
+    '<h4 slot="heading" data-font-size="xs"><span class="chip" aria-hidden="true">'+esc(L.c)+'</span>'+esc(L.n)+'</h4>'+lab+
+    '<p slot="content" data-font-size="4xs">'+esc(L.d)+'</p></accent-card>';
+}
+function group(cls,title,list,state){return list.length?'<div class="group '+cls+'"><h3 data-font-size="5xs">'+title+'</h3><div class="lore">'+list.map(L=>card(L,state)).join('')+'</div></div>':'';}
+function report(){
+  const got=LORE.filter(L=>g.got.has(L.t)),miss=LORE.filter(L=>!g.got.has(L.t));
+  document.getElementById('rsum').innerHTML=(g.player?'Your run':'Demo run')+': <strong>'+got.length+' of '+LORE.length+'</strong> collected, <strong>'+g.bits+'</strong> bits, '+(g.tick/60).toFixed(1)+'s'+(g.ts<1?' (slow mode)':'');
+  document.getElementById('rbody').innerHTML=group('missed','What you missed',miss,'miss')+group('got','What you collected',got,'got');
+}
+document.getElementById('rbody').innerHTML=group('all','Hidden in this world',LORE,'');
+
+/* ---------- loop + input ---------- */
+let last=performance.now(),acc=0,running=false;
+function loop(now){acc+=Math.min(100,now-last);last=now;while(acc>=1000/60){step();acc-=1000/60;}render();requestAnimationFrame(loop);}
+function boot(){if(running)return;running=true;syncDDD();last=performance.now();requestAnimationFrame(loop);}
+cv.addEventListener('pointerdown',e=>{e.preventDefault();cv.focus();if(mode==='title')startPress();else jumpPress();});
+// simple-cta renders a link; keep it from navigating and run the game action instead
+function cta(id,fn){const el=document.getElementById(id);el.addEventListener('click',e=>{e.preventDefault();fn();});return el;}
+cta('bStart',()=>{startPress();cv.focus({preventScroll:true});}); // keep Space for jumping, not restartingcta('bJump',jumpPress);
+const mb=cta('bMute',()=>{A.muted=!A.muted;mb.label=A.muted?'Sound off':'Sound on';mb.setAttribute('label',mb.label);if(A.master)A.master.gain.value=A.muted?0:.2;});
+const setHats=()=>{hatEl.itemsList=HATS.map(h=>({value:h,text:h}));hatEl.value='none';};
+customElements.whenDefined('simple-fields-field').then(setHats).catch(()=>{});setHats();
+let deb;seedEl.addEventListener('input',()=>{clearTimeout(deb);deb=setTimeout(buildSprites,150);});
+hatEl.addEventListener('input',()=>setTimeout(buildSprites,0));
+hatEl.addEventListener('value-changed',()=>setTimeout(buildSprites,0));
+addEventListener('keydown',e=>{
+  const tag=e.target.tagName;
+  if(tag==='SIMPLE-FIELDS-FIELD'||tag==='INPUT'||tag==='SELECT')return;
+  if(tag==='SIMPLE-CTA'){if(e.key===' '){e.preventDefault();e.target.click();}return;}
+  if(e.key==='Enter'){e.preventDefault();startPress();}
+  else if(e.key===' '||e.key==='ArrowUp'||e.key==='z'||e.key==='Z'){e.preventDefault();jumpPress();}
+});
+buildSprites();
+(document.fonts&&document.fonts.load?Promise.all([document.fonts.load('8px "Press Start 2P"'),document.fonts.load('16px "Press Start 2P"')]).catch(()=>{}):Promise.resolve()).then(boot);
+setTimeout(boot,1500);setTimeout(syncDDD,2500);
+})();
+</script>
+</body>
+</html>
