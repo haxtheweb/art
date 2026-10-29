@@ -20,6 +20,7 @@ Most variants are AI-generated remixes of the original human-made character; sev
 
 ## Explainers
 - [HAX in under a minute (interactive doodle board, MP4, GIF, PPTX, stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute)
+- [HAX The Web opening titles (30-second neon title-sequence homage, interactive page and stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-the-web-intro)
 
 - [HAX Episode XXVI: Return of the Open Web (space-opera opening crawl recapping HAX's history, standards and 2026 journey; parody format, original music)](https://github.com/haxtheweb/art/tree/main/presentation-materials/episode-xxvi)
 
