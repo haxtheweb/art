@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-a00a1496-9e50-472e-b589-11c8bb28f8fa</id>
+<indent>1</indent>
+<location>pages/item-a00a1496-9e50-472e-b589-11c8bb28f8fa/index.xml</location>
+<slug>helmet-mark</slug>
+<order>36</order>
+<parent>item-6bb46355-c148-45e1-bc29-54005eff5e86</parent>
+<title>Helmet mark</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png</image>
+<tags>logo</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png" alt="The World Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white."></media-image>
+<p>Black-background version: hax.png.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/hax-full.png">View on GitHub</a></li></ul>]]></content>
+</item>

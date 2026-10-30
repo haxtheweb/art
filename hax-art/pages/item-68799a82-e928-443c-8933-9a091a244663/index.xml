@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-68799a82-e928-443c-8933-9a091a244663</id>
+<indent>0</indent>
+<location>pages/item-68799a82-e928-443c-8933-9a091a244663/index.xml</location>
+<slug>use-the-art</slug>
+<order>50</order>
+<parent></parent>
+<title>Use the art</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.png</image>
+<tags></tags>
+<created>1793378715</created>
+<updated>1793378715</updated>
+</metadata>
+<content><![CDATA[<h2>Attribution</h2>
+<p>HAX (haxtheweb), <a href="https://github.com/haxtheweb/art">https://github.com/haxtheweb/art</a></p>
+<h2>License</h2>
+<p>The proposal is CC BY 4.0 for art HAX created; see <a href="https://github.com/haxtheweb/art/blob/main/LICENSING.md">LICENSING.md</a>. The interactive homages credit what inspired them on their own pages. A few World Traveler variants riff closely on other creators' characters or brands; those aren't shown here and are flagged in <a href="https://github.com/haxtheweb/art/blob/main/manifest.json">manifest.json</a> for review before promotion.</p>
+<h2>Hotlinking</h2>
+<p>Every image on this site is a raw GitHub URL, such as <code>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png</code>. File names in the repo are never renamed, so these links stay stable.</p>
+<h2>How this was made</h2>
+<p>Most World Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated.</p>
+<h2>Add to the collection</h2>
+<p>Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="https://github.com/haxtheweb/art/blob/main/AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding World Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.</p>]]></content>
+</item>

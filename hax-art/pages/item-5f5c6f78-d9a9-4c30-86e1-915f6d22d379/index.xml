@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-5f5c6f78-d9a9-4c30-86e1-915f6d22d379</id>
+<indent>1</indent>
+<location>pages/item-5f5c6f78-d9a9-4c30-86e1-915f6d22d379/index.xml</location>
+<slug>hax-in-a-minute</slug>
+<order>43</order>
+<parent>item-f0457acd-869a-4b57-9a23-764a6b8982f7</parent>
+<title>HAX in under a minute</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png</image>
+<tags>explainer</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/hax-in-a-minute.gif" alt="Whiteboard doodle explainer of HAX in five scenes, ending with five rockets labeled Docs, Portfolio, Website, Blog and Course lifting off through falling stars."></media-image>
+<p>A whiteboard-doodle explainer in five scenes: what HAX is, why the ecosystem is powerful, how the magic script makes later pages faster, the seven community pillars, and what you will launch. Its cast are real <code>rpg-character</code> combinations.</p>
+<simple-cta link="https://haxtheweb.github.io/art/presentation-materials/hax-in-a-minute/" label="Watch HAX in under a minute"></simple-cta>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-in-a-minute">MP4, GIFs, PPTX and stills on GitHub</a></li></ul>]]></content>
+</item>

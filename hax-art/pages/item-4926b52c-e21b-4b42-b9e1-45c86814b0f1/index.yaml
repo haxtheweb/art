@@ -1,0 +1,37 @@
+id: item-4926b52c-e21b-4b42-b9e1-45c86814b0f1
+indent: 1
+location: pages/item-4926b52c-e21b-4b42-b9e1-45c86814b0f1/index.yaml
+slug: episode-xxvi
+order: 45
+parent: item-f0457acd-869a-4b57-9a23-764a6b8982f7
+title: 'Episode XXVI: Return of the Open Web'
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg
+  tags: interactive
+  created: 1793378714
+  updated: 1793378714
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg"
+  alt="A starfield with gold text tilted back into space: Episode XXVI, Return
+  of the Open Web, the opening of a crawl about HAX in 2026."></media-image>
+
+  <p>A space-opera opening crawl that catches people up on HAX: where it came
+  from, the web standards it stands on, and where it is in 2026. It ends on a
+  Join the Rebellion card. Viewers with reduced motion get a static, readable
+  version.</p>
+
+  <p><em>A parody of the classic sci-fi film opening crawl. The text and the
+  synthesized fanfare are original, and no footage, logo or score is
+  used.</em></p>
+
+  <simple-cta
+  link="https://haxtheweb.github.io/art/presentation-materials/episode-xxvi/"
+  label="Watch Episode XXVI"></simple-cta>
+
+  <ul><li><a
+  href="https://github.com/haxtheweb/art/tree/main/presentation-materials/episode-xxvi">Files,
+  alt text and credits on GitHub</a></li></ul>

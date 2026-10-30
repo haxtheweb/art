@@ -1,0 +1,18 @@
+{
+  "id": "item-de50f4a4-27da-47c4-9f8e-21661aa11ef2",
+  "indent": 1,
+  "location": "pages/item-de50f4a4-27da-47c4-9f8e-21661aa11ef2/index.json",
+  "slug": "hax-history",
+  "order": 47,
+  "parent": "item-f0457acd-869a-4b57-9a23-764a6b8982f7",
+  "title": "HAX history",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png",
+    "tags": "diagram",
+    "created": 1793378714,
+    "updated": 1793378714
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png\" alt=\"Dense timeline of HAX history on a black background, with many small yellow lightbulb markers and labeled icons along a horizontal line.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/presentation-materials/HAX history.png\">View on GitHub</a></li></ul>"
+}

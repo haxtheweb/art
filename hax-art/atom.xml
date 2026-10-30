@@ -3,7 +3,7 @@
   <title>hax-art</title>
   <link href="https://localhost/hax-art/" rel="self" />
   <subtitle>own course</subtitle>
-  <updated>2026-10-30T15:25:51.000Z</updated>
+  <updated>2026-10-30T16:45:15.000Z</updated>
   <author>
       <name></name>
   </author>
@@ -11,9 +11,9 @@
   
   <entry>
     <title>HAX art</title>
-    <id>item-13f19a02-5b83-4d05-8bed-389c92f793f8</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-5d42a5fc-34a4-40c3-964f-e6709c06f1f4</id>
+    <updated>2026-10-30T16:45:12.000Z</updated>
+    <published>2026-10-30T16:45:12.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/home"/>
     
@@ -27,9 +27,9 @@
   </entry>
   <entry>
     <title>World Traveler</title>
-    <id>item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-95f4f002-4d5b-4cc6-b219-4ecc535e8944</id>
+    <updated>2026-10-30T16:45:12.000Z</updated>
+    <published>2026-10-30T16:45:12.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler"/>
     
@@ -41,9 +41,9 @@
   </entry>
   <entry>
     <title>Android portrait</title>
-    <id>item-f79f6456-675d-4de7-bd28-29e1239f6af1</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-59f0ae52-ce51-484f-8998-c69be178b658</id>
+    <updated>2026-10-30T16:45:12.000Z</updated>
+    <published>2026-10-30T16:45:12.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-01"/>
     <category term="portrait,flat-vector,robot" label="portrait,flat-vector,robot" />
@@ -55,9 +55,9 @@
   </entry>
   <entry>
     <title>Glitch double-exposure badge</title>
-    <id>item-faa143e0-8bd7-4b96-8c77-027797dbc865</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-4b08fa19-9ccd-421b-a421-16af323ffa8c</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-02"/>
     <category term="badge,starburst-badge,glitch,cartoon" label="badge,starburst-badge,glitch,cartoon" />
@@ -69,9 +69,9 @@
   </entry>
   <entry>
     <title>Egyptian wall</title>
-    <id>item-83c703d8-297f-4395-94b3-c81f9323e7bf</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-a6c16087-4abe-4244-94c2-06e0b59d1f5b</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-03"/>
     <category term="time-travel,painting,hieroglyphs" label="time-travel,painting,hieroglyphs" />
@@ -83,9 +83,9 @@
   </entry>
   <entry>
     <title>Helmet icon (checkerboard)</title>
-    <id>item-78927b22-b931-4513-9674-3ef0be0335c6</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-15d489e5-61ba-402c-9e9c-a4c5febd1cae</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-06"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -97,9 +97,9 @@
   </entry>
   <entry>
     <title>Cyberpunk traveler</title>
-    <id>item-e6d338b7-738a-444c-989d-f377edd6d210</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-b5d205d3-11a8-41a7-ad15-27dab2a2aab7</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-08"/>
     <category term="scene,photoreal,cyberpunk,human" label="scene,photoreal,cyberpunk,human" />
@@ -111,9 +111,9 @@
   </entry>
   <entry>
     <title>Green helmet portrait</title>
-    <id>item-0dc4caed-3d00-487f-b88d-e95d2fd524d8</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-0c56754c-f7b7-4758-a73e-82530dc6f3b6</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-09"/>
     <category term="icon,portrait,color-variant" label="icon,portrait,color-variant" />
@@ -125,9 +125,9 @@
   </entry>
   <entry>
     <title>Foil balloon</title>
-    <id>item-8e56f206-2970-4b60-9f79-246b12ee35f0</id>
-    <updated>2026-10-30T15:25:48.000Z</updated>
-    <published>2026-10-30T15:25:48.000Z</published>
+    <id>item-0e4f3c4b-bcf3-4ca1-881e-a87fe058575d</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-11"/>
     <category term="merch,product-mockup,3d,humor" label="merch,product-mockup,3d,humor" />
@@ -139,9 +139,9 @@
   </entry>
   <entry>
     <title>Paper-cut collage</title>
-    <id>item-46aeb500-8861-462c-a48f-9920d86774fb</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-7f2d106c-61a0-452c-b683-aa769bc9e98f</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-12"/>
     <category term="badge,paper-craft,collage,starburst-badge" label="badge,paper-craft,collage,starburst-badge" />
@@ -153,9 +153,9 @@
   </entry>
   <entry>
     <title>Hoodie kid, tan burst</title>
-    <id>item-1daf2506-b371-40f7-b09c-54441f68ed7a</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-bbb85098-86e8-477a-9a63-8c557ff295c8</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-13"/>
     <category term="badge,starburst-badge,flat-vector,sketch" label="badge,starburst-badge,flat-vector,sketch" />
@@ -167,9 +167,9 @@
   </entry>
   <entry>
     <title>Classic burst</title>
-    <id>item-98700464-fb22-4be0-897e-50577dbc0bc2</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-5e3d9d29-f312-494c-b33d-14bfa4b2815c</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-15"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -181,9 +181,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray</title>
-    <id>item-7931ba68-5eac-4706-9844-d63cc0032061</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-7f20634f-0a59-43f2-8945-0c7e837739ee</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-17"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -195,9 +195,9 @@
   </entry>
   <entry>
     <title>Halloween</title>
-    <id>item-198b071b-a60d-4671-94bf-c9d256221915</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-7fc651ed-fdbf-410d-808d-7de6456cf4db</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-18"/>
     <category term="seasonal,scene,gothic" label="seasonal,scene,gothic" />
@@ -209,9 +209,9 @@
   </entry>
   <entry>
     <title>8-bit RPG dungeon</title>
-    <id>item-326f75a8-e4d1-4969-aecf-10940991a0ac</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-b0acc48e-d77a-4e30-855f-4ecffb24a2ef</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-19"/>
     <category term="rpg,pixel-art,game" label="rpg,pixel-art,game" />
@@ -223,9 +223,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray (alt)</title>
-    <id>item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-c561de79-78dd-42ec-8c1c-5c5746318701</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-20"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -237,9 +237,9 @@
   </entry>
   <entry>
     <title>Pixel helmet face</title>
-    <id>item-14067244-e26b-4dda-965d-e3d705976a32</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-2a675af2-cc71-4086-a49e-190c5ef22fc1</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-22"/>
     <category term="icon,pixel-art,8-bit" label="icon,pixel-art,8-bit" />
@@ -251,9 +251,9 @@
   </entry>
   <entry>
     <title>Classic burst, face hidden</title>
-    <id>item-4293ae07-e18c-44a6-8007-41f106933108</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-ebed70fc-ffe2-46b7-8a87-c694d81f8f08</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-24"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -265,9 +265,9 @@
   </entry>
   <entry>
     <title>Helmet portrait, cyan goggles</title>
-    <id>item-bb4f3eb8-8f86-4fa4-b523-73dbde311a07</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-47ed8ce1-d7b0-45ff-ad3e-5f257f6f5912</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-25"/>
     <category term="icon,portrait" label="icon,portrait" />
@@ -279,9 +279,9 @@
   </entry>
   <entry>
     <title>Layered papercraft</title>
-    <id>item-b9906228-0ac1-487c-b27d-b67838a7b417</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-785b02ca-b446-4dc7-a78d-8063d64a325a</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-27"/>
     <category term="badge,paper-craft,3d,starburst-badge" label="badge,paper-craft,3d,starburst-badge" />
@@ -293,9 +293,9 @@
   </entry>
   <entry>
     <title>Toy-room 3D</title>
-    <id>item-0b7d83f6-a28e-4022-ab74-923710ce9aa5</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-a6884081-618e-4bbb-85ec-0b661df05bc7</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-28"/>
     <category term="scene,3d,render,character" label="scene,3d,render,character" />
@@ -307,9 +307,9 @@
   </entry>
   <entry>
     <title>The ocean is rising</title>
-    <id>item-85c0d2aa-9eae-490f-8447-133a4670ec1b</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-9c376a69-f45a-4839-81f4-ec96af7080c6</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-29"/>
     <category term="comic,engraving,web-metaphor" label="comic,engraving,web-metaphor" />
@@ -321,9 +321,9 @@
   </entry>
   <entry>
     <title>Sticker badge</title>
-    <id>item-3d005f77-bb1d-4689-892d-8fb7ebcd8ae5</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-67d1539a-4554-41bf-8839-918db071e891</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-30"/>
     <category term="sticker,flat-vector,color-variant" label="sticker,flat-vector,color-variant" />
@@ -335,9 +335,9 @@
   </entry>
   <entry>
     <title>Pixel helmet, detailed</title>
-    <id>item-d92d6e6a-b28a-4712-b22f-bf5efe1ef8ce</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-3b64c6bf-f55c-4e3a-88d6-c565475ee20a</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-31"/>
     <category term="icon,pixel-art,16-bit" label="icon,pixel-art,16-bit" />
@@ -349,9 +349,9 @@
   </entry>
   <entry>
     <title>I my tummy hurts</title>
-    <id>item-3472a634-13c1-4aaf-96df-f3bad7e07dd0</id>
-    <updated>2026-10-30T15:25:49.000Z</updated>
-    <published>2026-10-30T15:25:49.000Z</published>
+    <id>item-e1372a5f-e022-4878-b566-1e8cb814e602</id>
+    <updated>2026-10-30T16:45:13.000Z</updated>
+    <published>2026-10-30T16:45:13.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-34"/>
     <category term="humor,crayon,child-drawing" label="humor,crayon,child-drawing" />

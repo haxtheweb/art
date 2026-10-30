@@ -1,0 +1,18 @@
+{
+  "id": "item-2a675af2-cc71-4086-a49e-190c5ef22fc1",
+  "indent": 1,
+  "location": "pages/item-2a675af2-cc71-4086-a49e-190c5ef22fc1/index.json",
+  "slug": "world-traveler-22",
+  "order": 16,
+  "parent": "item-95f4f002-4d5b-4cc6-b219-4ecc535e8944",
+  "title": "Pixel helmet face",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg",
+    "tags": "icon,pixel-art,8-bit",
+    "created": 1793378713,
+    "updated": 1793378713
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg\" alt=\"Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below.\"></media-image>\n<ul><li><strong>Variant:</strong> #22</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 8 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> 8-bit form.</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-22.jpeg\">View on GitHub</a></li></ul>"
+}

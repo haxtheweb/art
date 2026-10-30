@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-a6884081-618e-4bbb-85ec-0b661df05bc7</id>
+<indent>1</indent>
+<location>pages/item-a6884081-618e-4bbb-85ec-0b661df05bc7/index.xml</location>
+<slug>world-traveler-28</slug>
+<order>20</order>
+<parent>item-95f4f002-4d5b-4cc6-b219-4ecc535e8944</parent>
+<title>Toy-room 3D</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png</image>
+<tags>scene,3d,render,character</tags>
+<created>1793378713</created>
+<updated>1793378713</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png" alt="A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks."></media-image>
+<ul><li><strong>Variant:</strong> #28</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> 3d, Render, Character</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-28.png">View on GitHub</a></li></ul>]]></content>
+</item>

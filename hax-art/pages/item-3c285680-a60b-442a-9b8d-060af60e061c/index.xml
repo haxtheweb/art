@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-3c285680-a60b-442a-9b8d-060af60e061c</id>
+<indent>1</indent>
+<location>pages/item-3c285680-a60b-442a-9b8d-060af60e061c/index.xml</location>
+<slug>hax-the-web-game</slug>
+<order>28</order>
+<parent>item-968e0c8f-d6d6-4f32-ab30-3d86af75fe1c</parent>
+<title>HAX the Web</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png</image>
+<tags>game</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png" alt="Title screen: the rpg-character inside a ring of hex links above a HAX THE WEB banner and a blinking PRESS START."></media-image>
+<p>A 16-bit title screen and speed run. Race an rpg-character through the web, jumping into glowing badges that each teach one piece of HAX, then read the run report.</p>
+<simple-cta link="https://haxtheweb.github.io/art/haxtheweb/hax-the-web-game/" label="Play HAX the Web"></simple-cta>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-the-web-game">Files, alt text and credits on GitHub</a></li></ul>]]></content>
+</item>

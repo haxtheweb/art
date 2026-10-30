@@ -1,0 +1,27 @@
+id: item-b70eaad1-9ecf-47ed-a6e6-77bac62ee98c
+indent: 1
+location: pages/item-b70eaad1-9ecf-47ed-a6e6-77bac62ee98c/index.yaml
+slug: contribute-flyer
+order: 40
+parent: item-6bb46355-c148-45e1-bc29-54005eff5e86
+title: Contribute flyer
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg
+  tags: poster
+  created: 1793378714
+  updated: 1793378714
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg"
+  alt="Dark flyer titled Contribute to HAX the Web, explaining what HAX is,
+  common use cases, the project in action and how to contribute, with QR
+  codes."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/presentation-materials/haxflyer.jpeg">View
+  on GitHub</a></li></ul>

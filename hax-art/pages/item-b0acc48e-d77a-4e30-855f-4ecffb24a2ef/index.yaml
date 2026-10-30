@@ -1,0 +1,33 @@
+id: item-b0acc48e-d77a-4e30-855f-4ecffb24a2ef
+indent: 1
+location: pages/item-b0acc48e-d77a-4e30-855f-4ecffb24a2ef/index.yaml
+slug: world-traveler-19
+order: 14
+parent: item-95f4f002-4d5b-4cc6-b219-4ecc535e8944
+title: 8-bit RPG dungeon
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png
+  tags: rpg,pixel-art,game
+  created: 1793378713
+  updated: 1793378713
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png"
+  alt="Pixel-art traveler in a torch-lit stone dungeon with a status plate
+  reading 'WORLD TRAVELER, HP 100/100, MP 50/100'."></media-image>
+
+  <ul><li><strong>Variant:</strong> #19</li><li><strong>Best for:</strong>
+  Rpg</li><li><strong>Style:</strong> Pixel art, Rpg,
+  Game</li><li><strong>Setting:</strong> Medieval
+  8bit</li><li><strong>Size:</strong> 1024 × 1024
+  px</li><li><strong>Notes:</strong> Links the traveler to the rpg-character
+  lineage.</li></ul>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-19.png">View
+  on GitHub</a></li></ul>

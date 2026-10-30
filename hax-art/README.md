@@ -9,19 +9,19 @@ Live (once Pages is on): **https://haxtheweb.github.io/art/** (redirects to `/ar
 | Section | What's in it |
 |---|---|
 | World Traveler | One page per HAX-original variant from [`manifest.json`](../manifest.json), with its alt text, role, style, setting and size. The grid filters by role. |
-| rpg-character | RPG Glitch, HAX the Web and the wanted poster, plus a live `<rpg-character>` on the section page. |
+| rpg-character | RPG Glitch, HAX the Web, HAX of the Web and the wanted poster, plus a live `<rpg-character>` on the section page. |
 | Brand | Logos, stickers, banners and posters from [`haxtheweb/`](../haxtheweb/). |
-| Talks | HAX in under a minute and the presentation diagrams. |
+| Talks | HAX in under a minute, the HAX The Web opening titles, Episode XXVI and the presentation diagrams. |
 | Use the art | Attribution, licensing, hotlinking and provenance. |
 
-Left out on purpose: World Traveler variants flagged `third_party_reference` in the manifest, the homage pieces AGENTS.md marks "review before official promotion" (HAX of the Web, the opening titles, Episode XXVI), and the EdTech Joker / DedSec series. A static HAXsite serves `site.json` as-is, so an unpublished page would still be public; they aren't added at all.
+The interactive homages (HAX of the Web, the opening titles, Episode XXVI) are included, and each page credits what inspired it. Left out on purpose: World Traveler variants flagged `third_party_reference` in the manifest, and the EdTech Joker / DedSec series. A static HAXsite serves `site.json` as-is, so an unpublished page would still be public; leave a page out rather than marking it unpublished.
 
 ## Editing
 
 The pages are generated. Don't hand-edit `site.json` or `pages/`; change the generator and rebuild:
 
 - [`tools/hax-art-items.mjs`](../tools/hax-art-items.mjs) holds the page list. World Traveler pages come from `manifest.json`, so a new variant with a manifest entry shows up on the next rebuild.
-- [`tools/rebuild-hax-art.sh`](../tools/rebuild-hax-art.sh) scaffolds the site with `hax site`, imports the pages with `hax site site:items-import`, removes the starter page and sets the title and hero image. Run it from the repo root with the HAX CLI installed (`npm install -g @haxtheweb/create`).
+- [`tools/rebuild-hax-art.sh`](../tools/rebuild-hax-art.sh) scaffolds the site with `hax site`, imports the pages with `hax site site:items-import`, removes the starter page, sets the title and hero image, and keeps this README. Run it from the repo root with the HAX CLI installed (`npm install -g @haxtheweb/create`).
 
 The HAX CLI commits to the surrounding git repo as it works ("Page deleted: …" and similar). Squash those into one commit before opening a pull request.
 

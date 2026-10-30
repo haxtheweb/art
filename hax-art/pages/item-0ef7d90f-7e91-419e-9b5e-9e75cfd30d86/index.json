@@ -1,0 +1,18 @@
+{
+  "id": "item-0ef7d90f-7e91-419e-9b5e-9e75cfd30d86",
+  "indent": 1,
+  "location": "pages/item-0ef7d90f-7e91-419e-9b5e-9e75cfd30d86/index.json",
+  "slug": "logo-explorations",
+  "order": 34,
+  "parent": "item-6bb46355-c148-45e1-bc29-54005eff5e86",
+  "title": "Logo explorations",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png",
+    "tags": "logo",
+    "created": 1793378714,
+    "updated": 1793378714
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png\" alt=\"Sheet of HAX logo sketches: the letters H, A and X stacked as black pixel blocks in several arrangements, some with THE and WEB tucked in.\"></media-image>\n<p>Seven sheets in all, in the haxtheweb folder (the files named 117737906 to 117737916).</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png\">View on GitHub</a></li></ul>"
+}
