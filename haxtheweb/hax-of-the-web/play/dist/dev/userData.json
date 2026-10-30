@@ -1,0 +1,11 @@
+{
+  "status": 200,
+  "data": {
+    "userName": "zpg",
+    "fName": "Zombie Pirate",
+    "lName": "Girl",
+    "userPicture": "",
+    "social": {},
+    "integrations": {}
+  }
+}

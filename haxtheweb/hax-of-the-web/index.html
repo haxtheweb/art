@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HAX of the Web: a Halloween arcade easter egg from HAXTheWeb. Insert a coin, try the cheat codes, and press start to play with a real HAXcms site.">
+<meta property="og:title" content="HAX of the Web">
+<meta property="og:description" content="A Halloween arcade easter egg from HAXTheWeb. Press start to play with a real HAXcms site.">
+<meta property="og:url" content="https://hax-of-the-web.surge.sh/">
+<meta property="og:image" content="https://hax-of-the-web.surge.sh/poster.png">
+<meta property="og:image:alt" content="An arcade title screen: a pixel-art zombie pirate girl in front of a haunted house under a full moon, beside dripping horror letters reading HAX of the Web, with PRESS START below.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050307">
+<link rel="icon" href="play/assets/favicon.png">
+<title>HAX of the Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+/* Layout: one 16:9 arcade screen scaled to fit, short bar beneath. Committed single dark look. */
+:root {
+  --void: #050307;
+  --night: #0d0810;
+  --bone: #f2e7cc;
+  --blood: #d01a26;
+  --keystone: #ffd100;
+  --beaver: #1e407c;
+  --merlin: #4b2d8a;
+  --muted: #a79cb3;
+  --f-horror: "Creepster", "Impact", "Haettenschweiler", fantasy;
+  --f-type: "Special Elite", "Courier New", monospace;
+  --f-arcade: "Press Start 2P", "Courier New", monospace;
+  --f-site: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+html { background: var(--void); }
+body {
+  background: var(--void); color: var(--bone); margin: 0;
+  padding-block: 20px 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  font-family: var(--f-type);
+}
+.page { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+
+.wrap { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-radius: 6px;
+  box-shadow: 0 0 0 1px #2a1a2a, 0 20px 60px rgba(160, 10, 20, .25); }
+.wrap:fullscreen { width: 100vw; height: 100vh; aspect-ratio: auto; border-radius: 0; }
+.stage { position: absolute; left: 0; top: 0; width: 960px; height: 540px; transform-origin: 0 0; overflow: hidden; background: var(--night); }
+.world { position: absolute; inset: 0; transition: filter 2s ease-in-out, transform 2s ease-in-out; }
+
+/* ---------- background HAX site ---------- */
+.site { position: absolute; left: 0; top: 0; width: 1500px; height: 1400px; background: #f4f1f6; color: #1d1a22; font-family: var(--f-site);
+  filter: brightness(.62) saturate(.75) contrast(1.05) blur(.7px); animation: pan 80s ease-in-out infinite; will-change: transform; }
+@keyframes pan {
+  0% { transform: translate(0, 0); } 25% { transform: translate(-540px, -160px); }
+  50% { transform: translate(-320px, -860px); } 75% { transform: translate(0, -560px); } 100% { transform: translate(0, 0); }
+}
+.s-top { height: 84px; background: var(--beaver); color: #fff; display: flex; align-items: center; gap: 18px; padding: 0 36px; }
+.s-logo { width: 52px; height: 52px; border-radius: 10px; background: var(--keystone); color: var(--beaver); font-weight: 700; display: grid; place-items: center; font-size: 18px; }
+.s-top h2 { margin: 0; font-size: 30px; }
+.s-top small { margin-left: auto; font-size: 16px; opacity: .85; }
+.s-body { display: grid; grid-template-columns: 300px 1fr; }
+.s-nav { background: #e4dde9; min-height: 1316px; padding: 28px 0; font-size: 17px; }
+.s-nav div { padding: 12px 28px; border-left: 5px solid transparent; }
+.s-nav .on { border-left-color: #e8711c; background: #fff3e6; font-weight: 700; }
+.s-nav .sub { padding-left: 52px; font-size: 15px; color: #4a4352; }
+.s-main { padding: 34px 56px; font-size: 18px; line-height: 1.6; }
+.crumb { font-size: 14px; color: #6a6272; margin-bottom: 10px; }
+.s-main h1 { font-size: 46px; margin: 0 0 12px; color: #6b1d10; }
+.s-main h3 { font-size: 26px; margin: 34px 0 10px; color: var(--beaver); }
+.s-main p { max-width: 70ch; margin: 0 0 14px; }
+.code { font-family: "Courier New", monospace; background: #221a2a; color: #ffb347; padding: 16px 20px; border-radius: 8px; font-size: 17px; max-width: 780px; white-space: pre; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 22px 0; max-width: 1080px; }
+.card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,.15); }
+.card .img { height: 150px; display: grid; place-items: center; background: #2b1a33; color: #fff; font-size: 64px; }
+.card .txt { padding: 14px 18px; font-size: 16px; }
+.card b { display: block; font-size: 19px; margin-bottom: 4px; color: #6b1d10; }
+.pumpkin { width: 110px; height: 84px; border-radius: 50%; position: relative; background:
+  radial-gradient(ellipse 30% 50% at 50% 50%, #ff9a2e 60%, transparent 62%),
+  radial-gradient(ellipse 30% 48% at 30% 50%, #f07f12 60%, transparent 62%),
+  radial-gradient(ellipse 30% 48% at 70% 50%, #f07f12 60%, transparent 62%),
+  radial-gradient(ellipse 50% 50% at 50% 50%, #d9650a 70%, transparent 72%); }
+.pumpkin::before { content: ""; position: absolute; left: 50%; top: -12px; width: 10px; height: 18px; background: #3f6b22; border-radius: 3px; transform: translateX(-50%) rotate(8deg); }
+.jcard { width: 74px; height: 104px; border-radius: 8px; background: #fff; color: #6b1d10; display: grid; place-items: center; font: 700 15px/1 var(--f-site); letter-spacing: 2px; writing-mode: vertical-rl; border: 4px double #6b1d10; }
+.collapse { border: 2px solid #c9bdd2; border-radius: 8px; padding: 12px 18px; margin: 10px 0; max-width: 780px; background: #fff; font-weight: 700; }
+.collapse span { color: #e8711c; margin-right: 10px; }
+.quiz { border-left: 8px solid var(--keystone); background: #fffbe6; padding: 16px 22px; max-width: 780px; margin: 18px 0; }
+.quiz div { margin-top: 8px; padding: 8px 12px; border: 1px solid #ddd2a0; border-radius: 6px; background: #fff; }
+.quiz .ok { border-color: #3f8a3a; background: #e9f7e6; font-weight: 700; }
+table.t { border-collapse: collapse; font-size: 16px; }
+table.t td, table.t th { border: 1px solid #c9bdd2; padding: 8px 14px; text-align: left; }
+table.t th { background: var(--beaver); color: #fff; }
+.konami { display: inline-block; font-family: var(--f-arcade); font-size: 15px; background: #1d1a22; color: var(--keystone); padding: 10px 14px; border-radius: 6px; letter-spacing: 3px; }
+
+/* ---------- atmosphere ---------- */
+.tint { position: absolute; inset: 0; background:
+  radial-gradient(ellipse 60% 55% at 49% 22%, rgba(80, 20, 70, .05), rgba(20, 4, 18, .55) 70%),
+  linear-gradient(180deg, rgba(45, 10, 45, .55) 0%, rgba(25, 6, 20, .62) 45%, rgba(6, 2, 8, .95) 85%); }
+.scene { position: absolute; inset: 0; }
+.win { animation: flick 3.1s steps(1) infinite; }
+.win:nth-of-type(2n) { animation-duration: 4.7s; }
+.win:nth-of-type(3n) { animation-duration: 2.3s; animation-delay: -1s; }
+@keyframes flick { 0%, 100% { opacity: .95; } 42% { opacity: .35; } 47% { opacity: .9; } 71% { opacity: .55; } }
+.bat { animation: fly linear infinite; }
+@keyframes fly { from { transform: translate(-80px, 0); } 50% { transform: translate(520px, -40px); } to { transform: translate(1100px, 10px); } }
+.fog { position: absolute; left: -20%; width: 140%; pointer-events: none; }
+.fog.a { bottom: -40px; height: 170px; background: radial-gradient(ellipse 30% 50% at 25% 60%, rgba(190, 170, 200, .22), transparent 70%), radial-gradient(ellipse 35% 45% at 70% 55%, rgba(190, 170, 200, .18), transparent 70%); animation: drift 26s ease-in-out infinite alternate; }
+.fog.b { bottom: 40px; height: 130px; background: radial-gradient(ellipse 28% 50% at 55% 50%, rgba(150, 130, 170, .14), transparent 70%), radial-gradient(ellipse 25% 45% at 10% 50%, rgba(150, 130, 170, .12), transparent 70%); animation: drift 38s ease-in-out infinite alternate-reverse; }
+@keyframes drift { from { transform: translateX(-6%); } to { transform: translateX(6%); } }
+
+/* ---------- zombie pirate girl (the real rpg-character element) ---------- */
+.zombie { position: absolute; left: 34px; bottom: -14px; width: 366px; height: 460px; transform-origin: 50% 100%; transition: transform .3s ease-in-out, filter .3s; }
+.zombie rpg-character { display: block; filter: drop-shadow(0 0 16px rgba(0, 0, 0, .75)) drop-shadow(0 0 22px rgba(102, 222, 82, .22)); }
+.zombie .sway { animation: sway 2.4s ease-in-out infinite; transform-origin: 50% 100%; }
+@keyframes sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg) translateY(4px); } }
+.stage.playing .zombie:not(.in) { transform: translateY(105%); }
+.zombie.in { animation: rise 2.1s cubic-bezier(.2, .8, .25, 1) both; }
+@keyframes rise { 0% { transform: translateY(105%) rotate(-3deg); } 55% { transform: translateY(8%) rotate(2deg); } 70% { transform: translateY(12%) rotate(-1deg); } 100% { transform: translateY(0) rotate(0); } }
+.zombie.dk { transform: scale(1.8); transform-origin: 50% 60%; filter: hue-rotate(30deg) saturate(1.3) brightness(1.2); }
+.zombie.float .sway { animation: floaty 2s ease-in-out infinite; }
+@keyframes floaty { 0%, 100% { transform: translateY(-10px); } 50% { transform: translateY(6px); } }
+
+/* ---------- title ---------- */
+.title { position: absolute; right: 26px; top: 190px; width: 430px; text-align: center; pointer-events: none; }
+.w { display: block; }
+.big { position: relative; font-family: var(--f-horror); font-size: 158px; line-height: .86; letter-spacing: 6px;
+  background: linear-gradient(180deg, #fffaf0 0%, var(--bone) 40%, #b9a273 78%, #6e5a3a 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 2px #2a0306;
+  filter: drop-shadow(0 5px 0 #3a0508) drop-shadow(0 0 22px rgba(210, 20, 34, .55)); }
+.of { display: flex; align-items: center; gap: 14px; justify-content: center; margin: 8px 0 6px; font-family: var(--f-type); font-size: 34px; letter-spacing: .5em; color: var(--blood); text-shadow: 0 0 12px rgba(208, 26, 38, .8); }
+.of::before, .of::after { content: ""; height: 3px; width: 70px; background: linear-gradient(90deg, transparent, var(--blood)); }
+.of::after { transform: scaleX(-1); }
+.drips { position: relative; height: 0; }
+.drip { position: absolute; top: -18px; width: 7px; border-radius: 0 0 6px 6px; background: linear-gradient(#7a0a10, var(--blood)); animation: drip 4.5s ease-in infinite; }
+.drip::after { content: ""; position: absolute; bottom: -5px; left: -2px; width: 11px; height: 11px; border-radius: 50%; background: var(--blood); }
+@keyframes drip { 0% { height: 0; opacity: 1; } 70% { height: 46px; opacity: 1; } 100% { height: 54px; opacity: 0; } }
+.stage.playing .w:not(.in) { opacity: 0; }
+.w.in { animation: slam .42s cubic-bezier(.2, 1.4, .35, 1) both; }
+@keyframes slam { 0% { transform: scale(2.8); opacity: 0; filter: blur(8px); } 55% { transform: scale(.94); opacity: 1; filter: blur(0); } 100% { transform: scale(1); opacity: 1; } }
+.stage.shake { animation: shake .45s linear; }
+@keyframes shake { 10% { margin: -6px 0 0 5px; } 20% { margin: 5px 0 0 -6px; } 30% { margin: -4px 0 0 -3px; } 45% { margin: 3px 0 0 4px; } 60% { margin: -2px 0 0 2px; } 80% { margin: 1px 0 0 -1px; } 100% { margin: 0; } }
+
+/* ---------- HUD + buttons ---------- */
+.hud { position: absolute; inset: 14px 20px auto; display: flex; justify-content: space-between; font-family: var(--f-arcade); font-size: 13px; color: var(--bone); text-shadow: 2px 2px 0 #000; pointer-events: none; }
+.hud .p1 { color: var(--keystone); }
+.copy { position: absolute; right: 20px; bottom: 14px; font-family: var(--f-arcade); font-size: 9px; color: var(--muted); pointer-events: none; }
+.controls { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.stage.playing .controls { visibility: hidden; }
+.press { font-family: var(--f-arcade); font-size: 20px; color: var(--keystone); background: rgba(0, 0, 0, .5); padding: 12px 20px; text-decoration: none;
+  text-shadow: 3px 3px 0 #5a0a10; animation: blink 1.1s steps(1) infinite; }
+.press:hover, .press:focus-visible { animation: none; outline: 3px solid var(--keystone); outline-offset: 3px; }
+@keyframes blink { 50% { color: transparent; text-shadow: none; } }
+.coin { font-family: var(--f-arcade); font-size: 10px; color: var(--bone); background: none; border: 0; padding: 6px 8px; cursor: pointer; letter-spacing: 1px; }
+.coin:hover { color: var(--keystone); }
+.coin:focus-visible { outline: 2px solid var(--keystone); }
+.merlin-btn { position: absolute; left: 16px; bottom: 14px; display: flex; align-items: center; gap: 10px; padding: 6px 14px 6px 6px; border-radius: 40px; border: 3px solid var(--keystone); background: #fff; cursor: pointer; z-index: 6;
+  box-shadow: 0 0 0 3px var(--merlin), 0 6px 18px rgba(0, 0, 0, .6); }
+.merlin-btn .m-ico { width: 48px; height: 48px; border-radius: 50%; background: #efe8fb; padding: 5px; flex: none; }
+.merlin-btn .m-txt { font-family: var(--f-arcade); font-size: 13px; color: var(--merlin); letter-spacing: 1px; text-align: left; line-height: 1.5; }
+.merlin-btn .m-txt small { display: block; font-size: 7px; color: #6a6272; letter-spacing: .5px; }
+.merlin-btn:hover, .merlin-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--merlin), 0 0 26px rgba(255, 209, 0, .9); transform: translateY(-2px); }
+.merlin-btn svg { width: 100%; height: 100%; display: block; }
+.merlin-btn.unlocked { animation: glow 1.6s ease-in-out infinite; }
+@keyframes glow { 50% { box-shadow: 0 0 0 3px var(--merlin), 0 0 30px rgba(255, 209, 0, .95); } }
+
+/* ---------- Merlin (super-daemon style) ---------- */
+.merlin { position: absolute; left: 50%; top: 96px; transform: translateX(-50%); width: 560px; background: #faf8fd; color: #1d1a22; border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .6), 0 0 0 3px var(--merlin); font-family: var(--f-site); overflow: hidden; z-index: 20; }
+.m-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #e2dbea; }
+.m-head svg { width: 28px; height: 28px; flex: none; }
+.m-head input { flex: 1; min-width: 0; font: 18px var(--f-site); border: 0; outline: none; background: none; color: #1d1a22; text-transform: uppercase; }
+.m-head input::placeholder { text-transform: none; color: #7a7085; }
+.m-close { border: 0; background: none; font: 700 13px var(--f-site); color: #6a6272; cursor: pointer; padding: 6px; }
+.m-list { max-height: 252px; overflow-y: auto; list-style: none; margin: 0; padding: 6px; }
+.m-list button { width: 100%; display: flex; align-items: center; gap: 12px; border: 0; background: none; padding: 9px 10px; border-radius: 8px; cursor: pointer; text-align: left; font: 15px var(--f-site); color: #1d1a22; }
+.m-list button:hover, .m-list button:focus-visible, .m-list button.sel { background: #ece4f6; outline: none; }
+.m-list .ic { width: 26px; text-align: center; font-size: 18px; }
+.m-list b { font-weight: 700; letter-spacing: .5px; }
+.m-list small { display: block; color: #6a6272; font-size: 12px; }
+.m-list .lock { color: #6a6272; }
+.m-list .lock b { font-family: var(--f-arcade); font-size: 11px; color: var(--merlin); letter-spacing: 2px; }
+.m-foot { padding: 7px 14px; font-size: 12px; color: #6a6272; border-top: 1px solid #e2dbea; }
+
+.bubble { position: absolute; left: 20px; bottom: 92px; max-width: 360px; background: #faf8fd; color: #1d1a22; border-radius: 12px; padding: 10px 14px; font: 15px/1.4 var(--f-site);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .5), 0 0 0 2px var(--merlin); z-index: 15; }
+.bubble::before { content: "Merlin"; display: block; font: 700 10px var(--f-arcade); color: var(--merlin); margin-bottom: 6px; letter-spacing: 1px; }
+.bubble::after { content: ""; position: absolute; left: 30px; bottom: -12px; border: 6px solid transparent; border-top-color: var(--merlin); }
+.toast { position: absolute; left: 50%; top: 44px; transform: translateX(-50%); background: var(--beaver); color: #fff; font: 700 16px var(--f-site); padding: 10px 18px; border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .5); white-space: nowrap; z-index: 25; animation: toastIn .25s ease-out; }
+@keyframes toastIn { from { transform: translate(-50%, -20px); opacity: 0; } }
+
+/* ---------- cheat effects ---------- */
+.fx { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 12; }
+.joker-emoji { position: absolute; font-size: 30px; animation: chaos linear infinite; }
+@keyframes chaos { 0% { transform: translate(0, 0) rotate(0); } 25% { transform: translate(60px, -40px) rotate(90deg) scale(1.3); } 50% { transform: translate(-30px, 50px) rotate(200deg) scale(.8); } 75% { transform: translate(-70px, -20px) rotate(290deg) scale(1.2); } 100% { transform: translate(0, 0) rotate(360deg); } }
+.nyan { position: absolute; left: -200px; font-size: 26px; white-space: nowrap; animation: nyanfly 2.2s linear forwards; }
+.nyan i { display: inline-block; width: 120px; height: 18px; vertical-align: middle; margin-right: -4px; background: linear-gradient(#ff2a2a 0 16.6%, #ff9a00 0 33.3%, #ffef00 0 50%, #33dd00 0 66.6%, #0099ff 0 83.3%, #6633ff 0); }
+@keyframes nyanfly { to { transform: translateX(1240px); } }
+.geo { position: absolute; inset: 0; background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000); background-size: 400% 400%; animation: rainbow 3s ease infinite;
+  display: grid; place-content: center; text-align: center; color: #fff; font: 700 34px "Comic Sans MS", "Chalkboard SE", cursive; text-shadow: 2px 2px 4px rgba(0, 0, 0, .8); opacity: .9; }
+.geo small { display: block; font-size: 18px; margin-top: 12px; }
+@keyframes rainbow { 50% { background-position: 100% 50%; } }
+.matrix { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stage.roll .world, .stage.roll .zombie, .stage.roll .title { transition: transform 2s ease-in-out; transform: rotate(720deg); }
+.stage.dark .world { filter: grayscale(1) brightness(.35) contrast(1.4); transform: rotate(-4deg) scale(1.08); }
+.stage.dark .title { animation: wobble 1.4s ease-in-out infinite; }
+@keyframes wobble { 50% { transform: skewX(-6deg) translateX(-8px); } }
+.stage.sepia .world { filter: sepia(.8) contrast(1.2) brightness(.9); }
+
+.flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; mix-blend-mode: overlay; z-index: 30; }
+.flash.go { animation: flash .7s ease-out; }
+.flash.red { background: #ff1a2a; mix-blend-mode: screen; }
+@keyframes flash { 0% { opacity: .65; } 100% { opacity: 0; } }  /* one soft pulse: stays well under 3 flashes per second */
+.scan { position: absolute; inset: 0; pointer-events: none; z-index: 31; background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .22) 0 1px, transparent 1px 3px), radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, .7) 100%); }
+
+/* ---------- HAX glitch (future-terminal-text) ---------- */
+future-terminal-text-lite { --future-terminal-text-color: transparent; font-weight: normal; display: inline; }
+.big.glitching { animation: glitchjit .12s steps(2) infinite; filter: drop-shadow(-5px 0 0 rgba(0, 255, 210, .75)) drop-shadow(5px 0 0 rgba(255, 0, 70, .8)) drop-shadow(0 5px 0 #3a0508); }
+@keyframes glitchjit { 0% { transform: translate(-3px, 1px) skewX(-8deg); } 50% { transform: translate(4px, -2px) skewX(6deg); } 100% { transform: translate(0, 0); } }
+
+.cheats-on { position: absolute; left: 170px; right: 170px; top: 12px; height: 22px; overflow: hidden; display: flex; align-items: center; gap: 10px; font-family: var(--f-arcade); font-size: 9px; letter-spacing: 1px; color: var(--keystone); text-shadow: 2px 2px 0 #000; pointer-events: none; }
+.cheats-on b { flex: none; color: #fff; background: var(--blood); padding: 4px 6px; text-shadow: none; font-weight: normal; }
+.cheats-on .track { flex: 1; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.cheats-on .track span { display: inline-block; white-space: nowrap; padding-left: 100%; animation: tick 34s linear infinite; }
+@keyframes tick { to { transform: translateX(-100%); } }
+
+/* ---------- attract mode: HAXcms being "played" ---------- */
+.demo { position: absolute; inset: 0; background: #000; cursor: pointer; animation: fadein .6s both; }
+.demo.out { animation: fadeout .6s both; }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeout { to { opacity: 0; } }
+.stage.demoing .controls, .stage.demoing .merlin-btn, .stage.demoing .cheats-on, .stage.demoing .copy, .stage.demoing .hud { visibility: hidden; }
+.stage.demoing .scan { opacity: .55; }
+.demo video { width: 100%; height: 100%; display: block; object-fit: cover; background: #fff; }
+.d-label { position: absolute; left: 20px; bottom: 22px; font-family: var(--f-arcade); font-size: 14px; color: var(--keystone); background: rgba(10, 5, 15, .85); padding: 8px 14px; text-shadow: 2px 2px 0 #5a0a10; animation: blink 1.1s steps(1) infinite; z-index: 2; }
+.d-coin { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); font-family: var(--f-arcade); font-size: 13px; color: #fff; background: rgba(10, 5, 15, .85); padding: 8px 14px; animation: blink 1.1s steps(1) infinite; animation-delay: .55s; z-index: 2; }
+
+/* ---------- bar ---------- */
+.bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; }
+.bar p { margin: 0; color: var(--muted); font-size: 15px; min-width: 0; }
+.bar p b { color: var(--bone); font-weight: normal; }
+.bar kbd { font-family: var(--f-arcade); font-size: 10px; color: var(--keystone); letter-spacing: 2px; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { font-family: var(--f-arcade); font-size: 11px; color: var(--bone); background: #1c1020; border: 2px solid #4a2a4a; padding: 10px 14px; cursor: pointer; }
+.btn:hover { border-color: var(--blood); }
+.btn:focus-visible { outline: 3px solid var(--keystone); outline-offset: 2px; }
+
+/* ---------- calm mode: on when the device asks for reduced motion, or the Motion button is off ---------- */
+:root.calm .cheats-on .track span { animation: none; padding-left: 0; }
+:root.calm :is(.site, .fog, .bat, .drip, .win, .zombie .sway, .press, .joker-emoji, .merlin-btn, .d-label, .d-coin, .geo, .caret, .toast, .nyan, .big.glitching) { animation: none !important; }
+:root.calm .stage.shake { animation: none; }
+:root.calm .stage.dark .title { animation: none; }
+:root.calm .stage.dark .world { transform: none; }
+:root.calm .stage.roll .world, :root.calm .stage.roll .zombie, :root.calm .stage.roll .title { transform: none; transition: none; }
+:root.calm .w.in, :root.calm .zombie.in { animation: calmfade .4s both; }
+:root.calm .flash { display: none; }
+:root.calm .big.glitching { filter: drop-shadow(0 5px 0 #3a0508) drop-shadow(0 0 22px rgba(210, 20, 34, .55)); }
+@keyframes calmfade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- screen-reader text, title heading ---------- */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+h1.title { margin: 0; font: inherit; }
+
+/* ---------- how to play ---------- */
+dialog.howto { max-width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 32px); overflow-y: auto; border: 3px solid var(--keystone); border-radius: 12px; background: #140b18; color: var(--bone); padding: 22px 26px; font: 16px/1.55 var(--f-site);
+  box-shadow: 0 0 0 4px var(--merlin), 0 20px 60px rgba(0, 0, 0, .7); }
+dialog.howto::backdrop { background: rgba(5, 3, 7, .8); }
+dialog.howto h2 { margin: 0 0 6px; font: 18px/1.4 var(--f-arcade); color: var(--keystone); }
+dialog.howto p { margin: 0 0 12px; }
+dialog.howto dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; margin: 0 0 14px; }
+dialog.howto dt { font: 11px/1.9 var(--f-arcade); color: var(--keystone); }
+dialog.howto dd { margin: 0; min-width: 0; }
+dialog.howto code { font-family: var(--f-arcade); font-size: 10px; color: #c9b8ff; word-break: break-word; }
+dialog.howto a { color: var(--keystone); }
+dialog.howto .close { float: right; }
+@media (max-width: 520px) { dialog.howto dl { grid-template-columns: 1fr; } }
+
+/* ---------- playground (real haxcms-site-builder in demo mode) ---------- */
+.playground { position: fixed; inset: 0; z-index: 1000; background: var(--void); display: flex; flex-direction: column;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.pg-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding-block: 8px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: #140b18; border-bottom: 3px solid var(--keystone); }
+.pg-bar strong { font: 13px var(--f-arcade); color: var(--keystone); letter-spacing: 1px; }
+.pg-bar span { color: var(--muted); font-size: 14px; flex: 1; min-width: 180px; }
+.pg-bar a { color: var(--keystone); font-size: 14px; }
+.playground iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+.pg-fail { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: min(520px, calc(100vw - 32px)); background: #140b18; border: 3px solid var(--keystone); border-radius: 12px; padding: 20px 24px; font: 16px/1.5 var(--f-site); color: var(--bone); }
+.pg-fail a { color: var(--keystone); }
+
+.credit-line { margin: 0; color: var(--muted); font-size: 13px; }
+.credit-line a { color: var(--keystone); }
+</style>
+</head>
+<body>
+<noscript><p class="credit-line">HAX of the Web needs JavaScript. Build your own site at <a href="https://hax.psu.edu">hax.psu.edu</a>.</p></noscript>
+<main class="page">
+  <div class="wrap" id="wrap">
+    <div class="stage" id="stage">
+      <div class="world" id="world">
+        <!-- Background: a Halloween HAXcms course site, slowly panning -->
+        <div class="site" aria-hidden="true">
+          <div class="s-top"><div class="s-logo">HAX</div><h2>Hallowed HAX: Web Components That Will Not Die</h2><small>Edit · Outline · Merlin</small></div>
+          <div class="s-body">
+            <nav class="s-nav">
+              <div>Welcome, Mortals</div>
+              <div>Unit 1: Pumpkin Patch Components</div>
+              <div class="on">Unit 2: The Haunted DOM</div>
+              <div class="sub">Ghosts in the Shadow Root</div>
+              <div class="sub">Slots of Doom</div>
+              <div class="sub">Possessed CSS Custom Properties</div>
+              <div>Unit 3: Raising the Undead Element</div>
+              <div>Unit 4: The Event Loop Never Sleeps</div>
+              <div>Unit 5: Merlin's Forbidden Programs</div>
+              <div>Candy Corn Quiz</div>
+              <div>The Crypt (Archive)</div>
+            </nav>
+            <main class="s-main">
+              <div class="crumb">Home › Unit 2: The Haunted DOM › Ghosts in the Shadow Root</div>
+              <h1>Ghosts in the Shadow Root</h1>
+              <p>Every custom element carries a spirit sealed away from the rest of the page. Outside styles cannot get in, and nothing inside leaks out. That is encapsulation, and tonight we summon it on purpose.</p>
+              <div class="code">this.attachShadow({ mode: "open" }); // the crypt door is unlocked
+customElements.define("zombie-pirate-girl", ZombiePirateGirl);</div>
+              <div class="cards">
+                <div class="card"><div class="img"><div class="pumpkin"></div></div><div class="txt"><b>Pumpkin Patch Components</b>Carve a jack-o-lantern element with DDD tokens.</div></div>
+                <div class="card"><div class="img"><div class="jcard">JOKER</div></div><div class="txt"><b>The Joker Program</b>Chaos, confetti and cash. Merlin knows it.</div></div>
+                <div class="card"><div class="img"><svg width="130" height="70" viewBox="0 0 24 10"><path d="M0 6 Q4 0 8 4 Q10 2 12 4 Q14 2 16 4 Q20 0 24 6 Q20 5 18 8 Q15 6 12 9 Q9 6 6 8 Q4 5 0 6Z" fill="#c9bdd2"/></svg></div><div class="txt"><b>Bats in the Belfry</b>Events bubble up out of the crypt and cross the shadow boundary.</div></div>
+              </div>
+              <div class="collapse"><span>▸</span>Slots of Doom: a named slot is a coffin with your name on it</div>
+              <div class="collapse"><span>▸</span>Why do custom elements never truly die? (They just get upgraded.)</div>
+              <div class="collapse"><span>▸</span>disconnectedCallback(): what happens to a component after it leaves the DOM</div>
+              <h3>Self check</h3>
+              <div class="quiz">Which lifecycle callback runs when a zombie rises into the DOM?
+                <div>attributeChangedCallback()</div>
+                <div class="ok">connectedCallback()</div>
+                <div>disconnectedCallback()</div>
+              </div>
+              <h3>Unit 5: Merlin's Forbidden Programs</h3>
+              <p>Merlin keeps a spellbook of programs that are not in any menu. Tonight they are all unsealed.</p>
+              <p><span class="konami">CHEAT CODES ACTIVATED</span></p>
+              <table class="t">
+                <tr><th>Program</th><th>Effect</th><th>Danger</th></tr>
+                <tr><td>SUMMONZOMBIE</td><td>Raises the undead</td><td>Arrr</td></tr>
+                <tr><td>JOKER</td><td>Chaos. It sends a message.</td><td>Extreme</td></tr>
+                <tr><td>ETERNALDARKNESS</td><td>Your sanity slips away</td><td>Unknown</td></tr>
+                <tr><td>DKMODE</td><td>Big head mode</td><td>Banana</td></tr>
+              </table>
+            </main>
+          </div>
+        </div>
+
+        <div class="tint"></div>
+
+        <svg class="scene" viewBox="0 0 960 540" aria-hidden="true">
+          <defs><radialGradient id="moonglow"><stop offset="0" stop-color="#f6e3b8" stop-opacity=".55"/><stop offset="1" stop-color="#f6e3b8" stop-opacity="0"/></radialGradient></defs>
+          <circle cx="470" cy="118" r="130" fill="url(#moonglow)"/>
+          <circle cx="470" cy="118" r="52" fill="#f3e6c4" opacity=".92"/>
+          <circle cx="452" cy="104" r="9" fill="#d9c9a3" opacity=".7"/>
+          <circle cx="486" cy="132" r="6" fill="#d9c9a3" opacity=".6"/>
+          <g fill="#0a0610">
+            <g class="bat" style="animation-duration:19s"><path transform="translate(0 150) scale(1.4)" d="M0 6 Q4 0 8 4 Q10 2 12 4 Q14 2 16 4 Q20 0 24 6 Q20 5 18 8 Q15 6 12 9 Q9 6 6 8 Q4 5 0 6Z"/></g>
+            <g class="bat" style="animation-duration:27s;animation-delay:-9s"><path transform="translate(0 90)" d="M0 6 Q4 0 8 4 Q10 2 12 4 Q14 2 16 4 Q20 0 24 6 Q20 5 18 8 Q15 6 12 9 Q9 6 6 8 Q4 5 0 6Z"/></g>
+            <g class="bat" style="animation-duration:23s;animation-delay:-15s"><path transform="translate(0 200) scale(.8)" d="M0 6 Q4 0 8 4 Q10 2 12 4 Q14 2 16 4 Q20 0 24 6 Q20 5 18 8 Q15 6 12 9 Q9 6 6 8 Q4 5 0 6Z"/></g>
+          </g>
+          <path d="M290 470 Q530 330 770 470 L770 540 L290 540Z" fill="#0b070e"/>
+          <g transform="translate(446 256) scale(1.2)">
+            <g fill="#08050a">
+              <rect x="0" y="60" width="140" height="60"/><polygon points="-4,62 35,24 74,62"/><polygon points="66,62 105,28 144,62"/>
+              <rect x="52" y="8" width="30" height="62"/><polygon points="47,12 67,-34 87,12"/><rect x="112" y="22" width="8" height="24"/><rect x="66" y="-46" width="2" height="14"/>
+            </g>
+            <g fill="#ffb347">
+              <rect class="win" x="14" y="74" width="10" height="13"/><rect class="win" x="30" y="74" width="10" height="13"/><rect class="win" x="100" y="74" width="10" height="13"/>
+              <rect class="win" x="118" y="74" width="10" height="13"/><rect class="win" x="62" y="26" width="10" height="13"/><rect class="win" x="30" y="44" width="9" height="9"/>
+            </g>
+            <rect x="62" y="96" width="14" height="24" fill="#5a1f0e"/>
+            <g fill="#08050a"><rect x="13" y="80" width="12" height="1.5"/><rect x="29" y="80" width="12" height="1.5"/><rect x="99" y="80" width="12" height="1.5"/><rect x="117" y="80" width="12" height="1.5"/><rect x="66.5" y="26" width="1.5" height="13"/></g>
+          </g>
+          <path d="M0 470 Q200 440 480 466 Q700 488 960 452 L960 540 L0 540Z" fill="#060408"/>
+          <g stroke="#060408" fill="none" stroke-linecap="round">
+            <path d="M760 466 L764 392" stroke-width="7"/>
+            <path d="M764 400 L742 370 L728 366 M762 416 L790 384 L806 378 M790 384 L792 362 M748 376 L746 356" stroke-width="3"/>
+          </g>
+          <g fill="#060408"><rect x="640" y="440" width="3" height="20"/><rect x="652" y="436" width="3" height="24"/><rect x="664" y="442" width="3" height="18"/><rect x="636" y="446" width="34" height="2.5"/></g>
+        </svg>
+        <div class="fog b"></div>
+      </div>
+
+      <div class="zombie" id="zombie">
+        <div class="sway">
+          <rpg-character id="rpg" seed="zpg" hat="pirate" height="460" width="366" walking speed="650" role="img" aria-label="Zombie pirate girl, the rpg-character web component with seed zpg and a pirate hat"></rpg-character>
+        </div>
+      </div>
+
+      <div class="fog a"></div>
+
+      <h1 class="title"><span class="sr-only">HAX of the Web</span><span aria-hidden="true">
+        <span class="w big" id="wHax"><future-terminal-text-lite id="haxGlitch" glitch-max="5" glitch-duration="50">HAX</future-terminal-text-lite></span>
+        <div class="drips" aria-hidden="true"><span class="drip" style="left:96px"></span><span class="drip" style="left:205px;animation-delay:-1.6s"></span><span class="drip" style="left:318px;animation-delay:-3s"></span></div>
+        <span class="w of" id="wOf">OF THE</span>
+        <span class="w big" id="wWeb"><future-terminal-text-lite id="webGlitch" glitch-max="5" glitch-duration="50">WEB</future-terminal-text-lite></span>
+        <div class="drips" aria-hidden="true"><span class="drip" style="left:120px;animation-delay:-2.2s"></span><span class="drip" style="left:270px;animation-delay:-.7s"></span></div>
+      </span></h1>
+
+      <div class="fx" id="fx"></div>
+
+      <div class="demo" id="demo" hidden>
+        <p class="sr-only" id="demoDesc">Demo play, no sound. Someone tours the Happy Halloween, Stay Safe site in HAXcms, opens the Candy Check page and selects Edit. They type a sentence, insert a multiple-choice question with the slash command, and fill in the question and answers in the Configure panel. Then they save, pick the wrong answer and get "Try again", and pick the right answer and get "You are correct!" with confetti.</p>
+        <video id="demoVid" muted playsinline preload="auto" aria-label="Demo play: building a Happy Halloween, Stay Safe site in HAXcms" aria-describedby="demoDesc" src="media/demo.mp4"></video>
+        <div class="d-label">DEMO PLAY</div>
+        <div class="d-coin">INSERT COIN</div>
+      </div>
+
+      <div class="cheats-on" aria-hidden="true"><b>CHEATS ACTIVATED</b><div class="track"><span>SUMMONZOMBIE ▸ JOKER ▸ DKMODE ▸ DOABARRELROLL ▸ DARKWEB ▸ ETERNALDARKNESS ▸ TIMETRAVEL ▸ NYANCAT ▸ GEOCITIES ▸ BEEPS</span></div></div>
+      <div class="hud" aria-hidden="true"><span class="p1">1P 031026</span><span>CREDIT <span id="credit">00</span></span></div>
+      <div class="copy" aria-hidden="true">© 2026 HAXTHEWEB</div>
+
+      <div class="controls">
+        <a class="press" id="press" href="play/index.html">PRESS START</a>
+        <button class="coin" id="coin" type="button">INSERT COIN ▸ PLAY INTRO WITH SOUND</button>
+      </div>
+
+      <button class="merlin-btn unlocked" id="merlinBtn" type="button" aria-haspopup="dialog"><span class="m-ico">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 1.5 6 17h13z" fill="#6a42c2"/><path d="M13.5 1.5c-1 3-1 6 1 9" stroke="#8f6be0" stroke-width="1" fill="none"/><path d="M2 17.5c5 2.6 15 2.6 20 0v2.2c-5 2.6-15 2.6-20 0z" fill="#4b2d8a"/><circle cx="12.5" cy="9" r="1.2" fill="#ffd100"/><circle cx="10" cy="13.2" r=".9" fill="#ffd100"/><circle cx="15.4" cy="12.6" r=".7" fill="#ffd100"/></svg></span><span class="m-txt">MERLIN<small>ALT+SHIFT</small></span>
+      </button>
+
+      <div class="merlin" id="merlin" hidden role="dialog" aria-modal="true" aria-label="Merlin">
+        <div class="m-head">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 1.5 6 17h13z" fill="#6a42c2"/><path d="M2 17.5c5 2.6 15 2.6 20 0v2.2c-5 2.6-15 2.6-20 0z" fill="#4b2d8a"/><circle cx="12.5" cy="9" r="1.2" fill="#ffd100"/></svg>
+          <input id="mInput" type="text" autocomplete="off" spellcheck="false" placeholder="Enter a program for Merlin…" aria-label="Program">
+          <button class="m-close" id="mClose" type="button">ESC</button>
+        </div>
+        <ul class="m-list" id="mList"></ul>
+        <div class="m-foot" id="mFoot">Alt+Shift (or Ctrl+Shift) toggles Merlin, just like in HAX.</div>
+      </div>
+
+      <div class="flash" id="flash"></div>
+      <div class="scan"></div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <p><b>HAX of the Web.</b> Insert a coin for the intro with sound. Cheat codes are activated: open <kbd>MERLIN</kbd> or type one anywhere.</p>
+    <div class="btns">
+      <button class="btn" id="howtoBtn" type="button">How to play</button>
+      <button class="btn" id="motionBtn" type="button" aria-pressed="true">Motion: On</button>
+      <button class="btn" id="replay" type="button">Replay</button>
+      <button class="btn" id="fs" type="button">Fullscreen</button>
+    </div>
+  </div>
+  <p class="credit-line">A Halloween easter egg from HAXTheWeb, the free tool for building accessible websites. Made with HAX web components. Build your own at <a href="https://hax.psu.edu" target="_blank" rel="noopener">hax.psu.edu</a>.</p>
+</main>
+
+<div id="live" class="sr-only" role="status" aria-live="polite"></div>
+
+<dialog class="howto" id="howto" aria-labelledby="howtoTitle">
+  <button class="btn close" id="howtoClose" type="button">Close</button>
+  <h2 id="howtoTitle">HOW TO PLAY</h2>
+  <p>HAX of the Web is a Halloween easter egg from HAXTheWeb. Everything on the title screen is built from real HAX web components, including our zombie pirate girl, the <code>rpg-character</code> element.</p>
+  <dl>
+    <dt>INSERT COIN</dt><dd>Plays the intro with sound. A deep announcer says "HAX… of the web." The words also appear on screen.</dd>
+    <dt>PRESS START</dt><dd>Opens a playable copy of a real HAXcms site, "Happy Halloween, Stay Safe!" Select Edit, type <code>/</code> in a paragraph to insert blocks, and try the quiz. Nothing is saved, so play freely.</dd>
+    <dt>MERLIN</dt><dd>The wizard hat in the corner (or Alt+Shift). Type a program name to run it.</dd>
+    <dt>CHEAT CODES</dt><dd>All activated. Type one on the title screen or pick it in Merlin: <code>SUMMONZOMBIE · JOKER · DKMODE · DOABARRELROLL · DARKWEB · ETERNALDARKNESS · TIMETRAVEL · NYANCAT · GEOCITIES · BEEPS</code></dd>
+    <dt>LEAVE IT ALONE</dt><dd>After 5 seconds she catches fire. After 10 seconds a demo plays of someone building the site in HAXcms. Click or press any key to come back.</dd>
+    <dt>MOTION</dt><dd>The Motion button turns off moving and flashing effects. It starts off automatically when your device asks for reduced motion.</dd>
+  </dl>
+  <p>Build your own site for free at <a href="https://hax.psu.edu" target="_blank" rel="noopener">hax.psu.edu</a>.</p>
+</dialog>
+
+<div class="playground" id="playground" hidden role="dialog" aria-modal="true" aria-labelledby="pgTitle">
+  <div class="pg-bar">
+    <strong id="pgTitle">HAX PLAYGROUND</strong>
+    <span>A real HAXcms site running in demo mode. Edit anything; nothing is saved.</span>
+    <button class="btn" id="pgReset" type="button">Start over</button>
+    <a href="https://hax.psu.edu" target="_blank" rel="noopener">Build your own at hax.psu.edu</a>
+    <button class="btn" id="pgBack" type="button">Back to title</button>
+  </div>
+  <iframe id="pgFrame" title="Playable copy of the Happy Halloween, Stay Safe! HAXcms site"></iframe>
+  <div class="pg-fail" id="pgFail" hidden>
+    <p><b>The playground can't run on this preview.</b> It loads the HAX editor from cdn.hax.cloud, and this page's host only allows scripts from a short list of sites. It works on the self-hosted release. Until then, build your own site for free at <a href="https://hax.psu.edu" target="_blank" rel="noopener">hax.psu.edu</a>.</p>
+  </div>
+</div>
+
+<script src="hax-elements.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

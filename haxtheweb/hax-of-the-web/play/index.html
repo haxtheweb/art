@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script>
+    // attempt to correctly set the base without knowing where we're installed fully...
+    // HAX of the Web playground: base is the "play" folder this file lives in, wherever it is hosted
+    (function () {
+      var p = document.location.pathname, i = p.indexOf('/play/');
+      document.write("<base href='" + (i !== -1 ? p.substring(0, i + 6) : p.substring(0, p.lastIndexOf('/') + 1)) + "' />");
+    })();
+    var mangedSEO = document.querySelectorAll('[data-managed-seo]');
+    for (var i = 0; i < mangedSEO.length; i++) {
+      var seoTag = mangedSEO[i];
+      seoTag.setAttribute('content', document.location.href);
+    }
+  </script>
+  <script type="importmap">
+    {
+      "scopes": {
+        "./custom/build/": {
+          "@haxtheweb/": "./build/es6/node_modules/@haxtheweb/"
+        }
+      }
+    }
+  </script>
+  <meta charset="utf-8">
+  <link rel="llms" href="llms.txt" title="LLM Content Map">
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="Markdown Summary">
+  <link rel="https://agentskills.io/rels/skills-index" type="application/json" href=".well-known/agent-skills/index.json" title="Agent Skills Discovery Index">
+  <link rel="preconnect" crossorigin href="https://fonts.googleapis.com">
+  <link rel="preconnect" crossorigin href="https://cdnjs.cloudflare.com">
+  <title>Happy Halloween, Stay Safe! · HAX playground</title>
+  <meta name="application-name" content="HAXcms" />
+  <meta name="apple-mobile-web-app-title" content="HAXcms" />
+  <meta name="og:sitename" property="og:sitename" content="HAXcms" />
+  <meta name="og:title" property="og:title" content="HAXcms" />
+  <meta name="twitter:title" property="twitter:title" content="HAXcms" />
+  <meta name="og:url" property="og:url" content="/" data-managed-seo />
+  <meta name="twitter:site" property="twitter:site" content="/" data-managed-seo />
+  <!-- build.js and build-haxcms.js are loaded via defer; preloading them is redundant and adds to critical-path bandwidth -->
+  <meta name="generator" content="HAXcms">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <link rel="icon" href="assets/icon-48x48.png">
+  <meta name="theme-color" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" sizes="48x48" href="assets/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192x192.png">
+  <meta name="msapplication-TileImage" content="assets/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="" />
+  <meta name="og:type" property="og:type" content="article" />
+  <meta name="og:description" property="og:description" content="" />
+  <meta name="og:image" property="og:image" content="" />
+  <meta name="twitter:card" property="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description" property="twitter:description" content="" />
+  <meta name="twitter:image" property="twitter:image" content="" />
+  <meta rel="cc:license" href="https://creativecommons.org/licenses/by-sa/4.0/" content="License: Creative Commons: Attribution Share a like"/>
+  
+  <!-- Service worker disabled via settings -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 98vh;
+    }
+    haxcms-site-builder {
+      display: block;
+      min-height: 100svh;
+    }
+
+  </style>
+  <style id="loadingstyles">
+    haxcms-site-builder {
+      display: block;
+    }
+    #loading {
+      background-color: #ffffff;
+      inset: 0;
+      opacity: 1;
+      position: fixed;
+      z-index: 99999999;
+    }
+    #loading.loaded {
+      animation: fade-out .1s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    #loading div.messaging {
+      color: rgba(0,0,0, 0.2);
+      left: 0px;
+      position: absolute;
+      right: 0px;
+      text-align: center;
+      top: 25vh;
+    }
+    #loading div.messaging h1 {
+      font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif !important;
+      line-height: 2;
+      font-size: 18px !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .progress-line,
+    .progress-line:before {
+      height: 8px;
+      width: 100%;
+      margin: auto;
+    }
+    .progress-line {
+      background-color: rgba(0,0,0, 0.1);
+      display: -webkit-flex;
+      display: flex;
+      width: 50vw;
+    }
+    .progress-line:before {
+      background-color: #FF2222;
+      content: '';
+      animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes running-progress {
+      0% {
+        margin-left: 0px;
+        margin-right: 100%;
+      }
+      50% {
+        margin-left: 25%;
+        margin-right: 0%;
+      }
+      100% {
+        margin-left: 100%;
+        margin-right: 0;
+      }
+    }
+    @keyframes fade-out {
+      0% {
+        opacity: 1;
+      }
+      99% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      #loading {
+        background-color: #333333;
+      }
+      #loading div.messaging {
+        color: rgba(255,255,255, 0.2);
+      }
+    }
+  </style>
+  <script id="loadingscript">
+    globalThis.dataLayer = globalThis.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    (function () {
+      var loadingDismissed = false;
+      var analyticsLoaded = false;
+      function loadAnalyticsFromManifest() {
+        if (analyticsLoaded) {
+          return;
+        }
+        analyticsLoaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        document.body.appendChild(script);
+        if (
+          globalThis.HAXCMS &&
+          globalThis.HAXCMS.requestAvailability &&
+          globalThis.HAXCMS.requestAvailability().store.getManifest()
+        ) {
+          var gaid =
+            globalThis.HAXCMS.requestAvailability().store.getManifest()
+              .metadata.site.settings.gaID || null;
+          if (gaid) {
+            gtag('config', gaid);
+            script.src =
+              'https://www.googletagmanager.com/gtag/js?id=' + gaid;
+          }
+        }
+      }
+      function hideLoading() {
+        if (loadingDismissed) {
+          return;
+        }
+        loadingDismissed = true;
+        var loadingEl = document.querySelector('#loading');
+        if (!loadingEl) {
+          return;
+        }
+        globalThis.requestAnimationFrame(function () {
+          globalThis.requestAnimationFrame(function () {
+            loadingEl.classList.add('loaded');
+            loadingEl.setAttribute('aria-busy', 'false');
+            setTimeout(function () {
+              loadingEl.setAttribute('hidden', 'hidden');
+            }, 120);
+          });
+        });
+      }
+      globalThis.addEventListener(
+        'json-outline-schema-active-body-changed',
+        function () {
+          hideLoading();
+        },
+        { once: true }
+      );
+      globalThis.addEventListener(
+        'haxcms-ready',
+        function () {
+          setTimeout(function () {
+            loadAnalyticsFromManifest();
+          }, 150);
+          setTimeout(function () {
+            hideLoading();
+          }, 2500);
+        },
+        { once: true }
+      );
+    })();
+  </script>
+</head>
+<body vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/">
+  <section role="alert" id="loading" aria-busy="true">
+    <div class="messaging">
+      <div class="progress-line"></div>
+      <h1>Loading..</h1>
+    </div>
+  </section>
+  <haxcms-site-builder id="site" file="site.json?2GQKWcJ3ni0xrL2X4_Dw_Sr9SeXqY2Sk3XblmvHVArA"></haxcms-site-builder>
+  <script>
+    globalThis.MicroFrontendRegistryConfig = globalThis.MicroFrontendRegistryConfig || {};
+    // Demo context: the real haxcms-site-builder and editor run against static
+    // fake endpoints in dist/dev, so nothing is saved (reload to start over).
+    globalThis.HAXCMSContext = "demo";
+    globalThis.__appCDN = document.location.search.indexOf("localcdn") !== -1 ? "./" : "https://cdn.hax.cloud/cdn/";
+    try {
+      // start on the zombie-green and pumpkin-orange journey palette
+      var mem = JSON.parse(localStorage.getItem("user-scaffold-ltMemory") || "{}");
+      if (mem.HAXCMSSitePalette === undefined) { mem.HAXCMSSitePalette = 0; localStorage.setItem("user-scaffold-ltMemory", JSON.stringify(mem)); }
+    } catch (e) {}
+    globalThis.appSettings = {
+      "createNodePath": "dist/dev/createNodePath.json",
+      "saveOutlinePath": "dist/dev/saveNode.json",
+      "saveManifestPath": "dist/dev/saveManifestPath.json",
+      "saveAppearanceSettingsPath": "dist/dev/saveAppearanceSettingsPath.json",
+      "saveSeoSettingsPath": "dist/dev/saveSeoSettingsPath.json",
+      "saveEditorSettingsPath": "dist/dev/saveEditorSettingsPath.json",
+      "savePlatformSettingsPath": "dist/dev/savePlatformSettingsPath.json",
+      "saveAllowedBlocksPath": "dist/dev/saveAllowedBlocksPath.json",
+      "getSiteFieldsPath": "dist/dev/getSiteFieldsPath.json",
+      "deleteNodePath": "dist/dev/saveNode.json",
+      "saveNodePath": "dist/dev/saveNode.json",
+      "contentSearchPath": "dist/dev/contentSearchPath.json",
+      "getUserDataPath": "dist/dev/userData.json",
+      "login": "dist/dev/login.json",
+      "refreshUrl": "dist/dev/refreshUrl.json",
+      "logout": "dist/dev/logout.json",
+      "connectionSettings": "dist/dev/connectionSettings.json",
+      "publishSitePath": "dist/dev/saveNode.json",
+      "fileOperationPath": "dist/dev/fileOperation.json",
+      "revertSitePath": "dist/dev/saveNode.json",
+      "getFieldsToken": "playground",
+      "appStore": { "url": "dist/dev/appstore.json" },
+      "jwt": "playground",
+      "method": "GET",
+      "demoSiteApiBasePath": "dist/dev/site-api"
+    };
+    // resolve the fake endpoints against this folder so they work in any sub-path
+    (function () {
+      var base = document.baseURI.replace(/[^/]*$/, "");
+      Object.keys(globalThis.appSettings).forEach(function (k) {
+        var v = globalThis.appSettings[k];
+        if (typeof v === "string" && v.indexOf("dist/dev/") === 0) globalThis.appSettings[k] = base + v;
+      });
+      globalThis.appSettings.appStore.url = base + globalThis.appSettings.appStore.url;
+    })();</script>
+  <script src="./build-haxcms.js"></script>
+  <script src="./build.js"></script>
+</body>
+</html>
