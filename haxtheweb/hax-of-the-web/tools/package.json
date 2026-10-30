@@ -1,0 +1,14 @@
+{
+  "name": "hax-of-the-web-tools",
+  "private": true,
+  "type": "module",
+  "description": "Builds the HAX of the Web title page (../index.html, ../app.js, ../hax-elements.js) and the two .htaccess security-header files from template.html and the HAX web components.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "@haxtheweb/future-terminal-text": "^26.8.0",
+    "@haxtheweb/rpg-character": "^26.8.0",
+    "esbuild": "^0.25.0"
+  }
+}

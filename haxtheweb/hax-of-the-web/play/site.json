@@ -1,0 +1,133 @@
+{
+  "id": "9e69ceb7-38c1-4d74-afed-db8f9fd1ba2a",
+  "title": "Happy Halloween, Stay Safe!",
+  "author": "",
+  "description": "Costumes, candy and carving, the spooky-safe way.",
+  "license": "by-sa",
+  "metadata": {
+    "author": {},
+    "site": {
+      "name": "happy-halloween",
+      "logo": "assets/banner.jpg",
+      "settings": {
+        "lang": "en-US",
+        "publishPagesOn": true,
+        "canonical": true,
+        "pathauto": true
+      },
+      "created": 1793194754,
+      "updated": 1793194754,
+      "git": {
+        "vendor": "github",
+        "branch": "gh-pages"
+      }
+    },
+    "theme": {
+      "element": "journey-theme",
+      "path": "@haxtheweb/journey-theme/journey-theme.js",
+      "name": "Journey",
+      "thumbnail": "@haxtheweb/haxcms-elements/lib/theme-screenshots/theme-journey-theme-thumb.jpg",
+      "description": "Start with a blank site using the Journey",
+      "category": [
+        "Website"
+      ],
+      "hidden": false,
+      "priority": -1,
+      "terrible": false,
+      "supportedPalettes": null
+    },
+    "node": {
+      "fields": {}
+    },
+    "platform": {
+      "audience": "expert",
+      "features": {},
+      "allowedBlocks": []
+    },
+    "build": {
+      "version": "26.8.0",
+      "structure": "course",
+      "type": "own"
+    }
+  },
+  "items": [
+    {
+      "id": "item-5438134c-7f4b-4d17-b926-3dbddae64e4a",
+      "indent": 0,
+      "location": "pages/item-5438134c-7f4b-4d17-b926-3dbddae64e4a/index.html",
+      "slug": "welcome",
+      "order": 0,
+      "parent": null,
+      "title": "Happy Halloween!",
+      "description": "",
+      "metadata": {
+        "created": 1793194754,
+        "updated": 1793194754
+      }
+    },
+    {
+      "id": "item-e7b589cf-3280-479f-aa60-58bf19d4ae1e",
+      "indent": 0,
+      "location": "pages/item-e7b589cf-3280-479f-aa60-58bf19d4ae1e/index.html",
+      "slug": "costume-safety",
+      "order": 1,
+      "parent": null,
+      "title": "Costume Safety",
+      "description": "",
+      "metadata": {
+        "created": 1793194932,
+        "updated": 1793194932,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "item-56678838-7301-42cc-815f-08175863382d",
+      "indent": 0,
+      "location": "pages/item-56678838-7301-42cc-815f-08175863382d/index.html",
+      "slug": "trick-or-treat-smarts",
+      "order": 2,
+      "parent": null,
+      "title": "Trick-or-Treat Smarts",
+      "description": "",
+      "metadata": {
+        "created": 1793194934,
+        "updated": 1793194934,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "item-90d89ee4-4eb3-4569-9094-efeb95a47908",
+      "indent": 0,
+      "location": "pages/item-90d89ee4-4eb3-4569-9094-efeb95a47908/index.html",
+      "slug": "candy-check",
+      "order": 3,
+      "parent": null,
+      "title": "Candy Check",
+      "description": "",
+      "metadata": {
+        "created": 1793194936,
+        "updated": 1793194936,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "item-a2e2dd7b-8419-40eb-8897-8869c793f737",
+      "indent": 0,
+      "location": "pages/item-a2e2dd7b-8419-40eb-8897-8869c793f737/index.html",
+      "slug": "pumpkin-carving-safety",
+      "order": 4,
+      "parent": null,
+      "title": "Pumpkin Carving Safety",
+      "description": "",
+      "metadata": {
+        "created": 1793194938,
+        "updated": 1793194938,
+        "images": [],
+        "videos": []
+      }
+    }
+  ]
+}

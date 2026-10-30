@@ -17,10 +17,12 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [8-bit RPG dungeon](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png)
 - [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png)
 - [WANTED: HAX, the Open Web Outlaw (old-west poster, rpg-character in a cowboy hat)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg)
+- [HAX of the Web title screen (zombie pirate girl rpg-character in front of a haunted house)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-of-the-web/poster.png)
 - [RPG Glitch still (rpg-character on an 80s CRT)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png)
 
 ## Interactive
 - [RPG Glitch: click for a new glitching rpg-character with a shareable link](https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch)
+- [HAX of the Web (Halloween arcade title-screen homage: zombie pirate girl rpg-character, Merlin cheat codes, PRESS START into a playable HAXcms site)](https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-of-the-web)
 - [HAX the Web (16-bit attract-mode game: an rpg-character collects 12 pieces of HAX lore, then a run report explains each)](https://github.com/haxtheweb/art/tree/main/haxtheweb/hax-the-web-game)
 
 ## Explainers
