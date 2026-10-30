@@ -1,0 +1,1 @@
+HAX logos, stickers, banners and posters. The vector logo is [HAXLogo.svg](https://github.com/haxtheweb/art/blob/main/HAXLogo.svg); layered source files (.psd, .ai) live in the [haxtheweb](https://github.com/haxtheweb/art/tree/main/haxtheweb) folder on GitHub.

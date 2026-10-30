@@ -6,6 +6,7 @@ This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-
 
 | Path | What it is |
 |---|---|
+| `hax-art/` | Portfolio HAXsite (glossy-portfolio-theme) that browses this repo's art by raw GitHub URL. Generated: edit `tools/hax-art-items.mjs` and run `tools/rebuild-hax-art.sh`, never hand-edit `hax-art/site.json` or `hax-art/pages/`. The HAX CLI commits to this repo as it runs; squash before a PR. Deployed with the rest of the repo by `.github/workflows/pages.yml`. |
 | `world-traveler/` | 36 variants of the **World Traveler**, HAX's mascot (also called *World Changer* or *Future Traveler*). Files are named `funny-traveler-NN.(png\|jpeg)`. |
 | `haxtheweb/` | HAX brand assets: logos, stickers, banners, thumbnails, GIFs, how-to graphics, and layered source files (`.psd`, `.ai`). |
 | `haxtheweb/rpg-glitch/` | Interactive page: the `rpg-character` glitching on an 80s CRT, with shareable rpg-me-compatible links. Its `rpg-character/` folder is a copy of the element's art from `webcomponents` main; refresh it with `tools/sync-art.sh`, don't hand-edit it. |

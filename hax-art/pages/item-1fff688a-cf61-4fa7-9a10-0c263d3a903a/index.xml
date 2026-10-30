@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-1fff688a-cf61-4fa7-9a10-0c263d3a903a</id>
+<indent>0</indent>
+<location>pages/item-1fff688a-cf61-4fa7-9a10-0c263d3a903a/index.xml</location>
+<slug>rpg-character</slug>
+<order>26</order>
+<parent></parent>
+<title>rpg-character</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png</image>
+<tags></tags>
+<created>1793373950</created>
+<updated>1793373950</updated>
+</metadata>
+<content><![CDATA[<p>The <code>rpg-character</code> is a HAX web component: a little pixel character built from a seed, with hats, costumes, pets and more. Every piece here uses the element's own art. Here is one, live on this page:</p>
+<rpg-character seed="btopro" hat="knight" walking=""></rpg-character>
+<ul><li><a href="https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character">rpg-character on GitHub</a></li><li><a href="https://rpg-me.hax.cloud/">Make your own in rpg-me</a></li></ul>]]></content>
+</item>

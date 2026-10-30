@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>hax-art</title>
+  <link href="https://localhost/hax-art/" rel="self" />
+  <subtitle>own course</subtitle>
+  <updated>2026-10-30T15:25:51.000Z</updated>
+  <author>
+      <name></name>
+  </author>
+  <id>https://localhost/hax-art/</id>
+  
+  <entry>
+    <title>HAX art</title>
+    <id>item-13f19a02-5b83-4d05-8bed-389c92f793f8</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/home"/>
+    
+    <content type="html">
+      <![CDATA[ <p>Art and media from <a href="https://haxtheweb.org">HAX</a>: open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the <a href="https://github.com/haxtheweb/art">haxtheweb/art</a> repository.</p>
+<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png" alt="The World Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle." caption="The World Traveler, HAX's mascot, in his classic pose."></media-image>
+<h2>Browse</h2>
+<ul><li><a href="world-traveler">World Traveler: the HAX mascot in every style</a></li><li><a href="rpg-character">rpg-character: games and toys starring HAX's pixel character</a></li><li><a href="brand">Brand: logos, stickers, banners and posters</a></li><li><a href="talks">Talks: diagrams and explainers for presentations</a></li><li><a href="use-the-art">Use the art: attribution, licensing and hotlinking</a></li></ul>
+<p><strong>Dream it, remix it, have it, share it.</strong></p> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>World Traveler</title>
+    <id>item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler"/>
+    
+    <content type="html">
+      <![CDATA[ <p>The World Traveler (also called World Changer or Future Traveler) moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator.</p>
+<p>He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role.</p>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/world-traveler">Character sheet and story on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Android portrait</title>
+    <id>item-f79f6456-675d-4de7-bd28-29e1239f6af1</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-01"/>
+    <category term="portrait,flat-vector,robot" label="portrait,flat-vector,robot" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg" alt="Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead."></media-image>
+<ul><li><strong>Variant:</strong> #01</li><li><strong>Best for:</strong> Portrait</li><li><strong>Style:</strong> Flat vector, Portrait, Robot</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1029 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-01.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Glitch double-exposure badge</title>
+    <id>item-faa143e0-8bd7-4b96-8c77-027797dbc865</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-02"/>
+    <category term="badge,starburst-badge,glitch,cartoon" label="badge,starburst-badge,glitch,cartoon" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png" alt="Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping."></media-image>
+<ul><li><strong>Variant:</strong> #02</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Glitch, Cartoon</li><li><strong>Setting:</strong> Digital</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-02.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Egyptian wall</title>
+    <id>item-83c703d8-297f-4395-94b3-c81f9323e7bf</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-03"/>
+    <category term="time-travel,painting,hieroglyphs" label="time-travel,painting,hieroglyphs" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png" alt="The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight beam, with a second figure at lower right."></media-image>
+<ul><li><strong>Variant:</strong> #03</li><li><strong>Best for:</strong> Time travel</li><li><strong>Style:</strong> Painting, Hieroglyphs, Time travel</li><li><strong>Setting:</strong> Ancient egypt</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Shows the 'takes the best ideas from every era' theme.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-03.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Helmet icon (checkerboard)</title>
+    <id>item-78927b22-b931-4513-9674-3ef0be0335c6</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-06"/>
+    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg" alt="Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background."></media-image>
+<ul><li><strong>Variant:</strong> #06</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> JPEG cannot be transparent: the checkerboard is baked into the pixels. Prefer 17/20 or the SVG logo for clean use.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-06.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Cyberpunk traveler</title>
+    <id>item-e6d338b7-738a-444c-989d-f377edd6d210</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-08"/>
+    <category term="scene,photoreal,cyberpunk,human" label="scene,photoreal,cyberpunk,human" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png" alt="A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back."></media-image>
+<ul><li><strong>Variant:</strong> #08</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> Photoreal, Cyberpunk, Human</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Closest to 'sees the future' framing.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-08.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Green helmet portrait</title>
+    <id>item-0dc4caed-3d00-487f-b88d-e95d2fd524d8</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-09"/>
+    <category term="icon,portrait,color-variant" label="icon,portrait,color-variant" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg" alt="Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #09</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Portrait, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Green colorway.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-09.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Foil balloon</title>
+    <id>item-8e56f206-2970-4b60-9f79-246b12ee35f0</id>
+    <updated>2026-10-30T15:25:48.000Z</updated>
+    <published>2026-10-30T15:25:48.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-11"/>
+    <category term="merch,product-mockup,3d,humor" label="merch,product-mockup,3d,humor" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-11.jpeg" alt="A silver star-shaped foil balloon printed with the helmeted traveler on a black background."></media-image>
+<ul><li><strong>Variant:</strong> #11</li><li><strong>Best for:</strong> Merch</li><li><strong>Style:</strong> Product mockup, 3d, Humor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-11.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-11.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Paper-cut collage</title>
+    <id>item-46aeb500-8861-462c-a48f-9920d86774fb</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-12"/>
+    <category term="badge,paper-craft,collage,starburst-badge" label="badge,paper-craft,collage,starburst-badge" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-12.png" alt="Torn-paper collage of the traveler resting his chin on his arm, red and white paper burst behind, yellow lightbulb."></media-image>
+<ul><li><strong>Variant:</strong> #12</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Paper craft, Collage, Starburst badge</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-12.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-12.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Hoodie kid, tan burst</title>
+    <id>item-1daf2506-b371-40f7-b09c-54441f68ed7a</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-13"/>
+    <category term="badge,starburst-badge,flat-vector,sketch" label="badge,starburst-badge,flat-vector,sketch" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-13.png" alt="Traveler in a red HAX hoodie with goggles and green backpack, hands on a desk, tan and orange starburst."></media-image>
+<ul><li><strong>Variant:</strong> #13</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector, Sketch</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-13.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-13.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Classic burst</title>
+    <id>item-98700464-fb22-4be0-897e-50577dbc0bc2</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-15"/>
+    <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png" alt="The baseline look: red helmet with HAX band, cyan goggles, green backpack with lightbulb, chin on arms, white starburst in a red circle."></media-image>
+<ul><li><strong>Variant:</strong> #15</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Good reference for the 'standard' on-model look.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-15.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Helmet icon, light gray</title>
+    <id>item-7931ba68-5eac-4706-9844-d63cc0032061</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-17"/>
+    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-17.jpeg" alt="Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #17</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 20.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-17.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-17.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Halloween</title>
+    <id>item-198b071b-a60d-4671-94bf-c9d256221915</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-18"/>
+    <category term="seasonal,scene,gothic" label="seasonal,scene,gothic" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-18.png" alt="The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins."></media-image>
+<ul><li><strong>Variant:</strong> #18</li><li><strong>Best for:</strong> Seasonal</li><li><strong>Style:</strong> Scene, Gothic, Seasonal</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-18.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-18.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>8-bit RPG dungeon</title>
+    <id>item-326f75a8-e4d1-4969-aecf-10940991a0ac</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-19"/>
+    <category term="rpg,pixel-art,game" label="rpg,pixel-art,game" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png" alt="Pixel-art traveler in a torch-lit stone dungeon with a status plate reading 'WORLD TRAVELER, HP 100/100, MP 50/100'."></media-image>
+<ul><li><strong>Variant:</strong> #19</li><li><strong>Best for:</strong> Rpg</li><li><strong>Style:</strong> Pixel art, Rpg, Game</li><li><strong>Setting:</strong> Medieval 8bit</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Links the traveler to the rpg-character lineage.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-19.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Helmet icon, light gray (alt)</title>
+    <id>item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-20"/>
+    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg" alt="Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #20</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 17.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-20.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Pixel helmet face</title>
+    <id>item-14067244-e26b-4dda-965d-e3d705976a32</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-22"/>
+    <category term="icon,pixel-art,8-bit" label="icon,pixel-art,8-bit" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg" alt="Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below."></media-image>
+<ul><li><strong>Variant:</strong> #22</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 8 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> 8-bit form.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-22.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Classic burst, face hidden</title>
+    <id>item-4293ae07-e18c-44a6-8007-41f106933108</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-24"/>
+    <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-24.jpeg" alt="Flat-vector starburst badge: helmet, goggles and backpack with the face hidden behind folded arms."></media-image>
+<ul><li><strong>Variant:</strong> #24</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-24.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-24.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Helmet portrait, cyan goggles</title>
+    <id>item-bb4f3eb8-8f86-4fa4-b523-73dbde311a07</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-25"/>
+    <category term="icon,portrait" label="icon,portrait" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-25.jpeg" alt="Red helmet with HAX band, glowing cyan goggles and a lightbulb on top, calm human face below, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #25</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Portrait</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-25.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-25.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Layered papercraft</title>
+    <id>item-b9906228-0ac1-487c-b27d-b67838a7b417</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-27"/>
+    <category term="badge,paper-craft,3d,starburst-badge" label="badge,paper-craft,3d,starburst-badge" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-27.png" alt="Layered cut-paper version of the traveler with soft shadows under a white and red burst."></media-image>
+<ul><li><strong>Variant:</strong> #27</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Paper craft, 3d, Starburst badge</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-27.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-27.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Toy-room 3D</title>
+    <id>item-0b7d83f6-a28e-4022-ab74-923710ce9aa5</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-28"/>
+    <category term="scene,3d,render,character" label="scene,3d,render,character" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png" alt="A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks."></media-image>
+<ul><li><strong>Variant:</strong> #28</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> 3d, Render, Character</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-28.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>The ocean is rising</title>
+    <id>item-85c0d2aa-9eae-490f-8447-133a4670ec1b</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-29"/>
+    <category term="comic,engraving,web-metaphor" label="comic,engraving,web-metaphor" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png" alt="Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption 'The ocean is rising.'"></media-image>
+<ul><li><strong>Variant:</strong> #29</li><li><strong>Best for:</strong> Comic</li><li><strong>Style:</strong> Engraving, Comic, Web metaphor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Supports the 'data flows like water' idea.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-29.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Sticker badge</title>
+    <id>item-3d005f77-bb1d-4689-892d-8fb7ebcd8ae5</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-30"/>
+    <category term="sticker,flat-vector,color-variant" label="sticker,flat-vector,color-variant" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.jpeg" alt="Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb."></media-image>
+<ul><li><strong>Variant:</strong> #30</li><li><strong>Best for:</strong> Sticker</li><li><strong>Style:</strong> Sticker, Flat vector, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-30.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Pixel helmet, detailed</title>
+    <id>item-d92d6e6a-b28a-4712-b22f-bf5efe1ef8ce</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-31"/>
+    <category term="icon,pixel-art,16-bit" label="icon,pixel-art,16-bit" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-31.jpeg" alt="Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face."></media-image>
+<ul><li><strong>Variant:</strong> #31</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 16 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> More detailed than 22.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-31.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-31.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>I my tummy hurts</title>
+    <id>item-3472a634-13c1-4aaf-96df-f3bad7e07dd0</id>
+    <updated>2026-10-30T15:25:49.000Z</updated>
+    <published>2026-10-30T15:25:49.000Z</published>
+    <summary></summary>
+    <link href="https://localhost/hax-art/world-traveler-34"/>
+    <category term="humor,crayon,child-drawing" label="humor,crayon,child-drawing" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-34.png" alt="Crayon-style drawing of the traveler looking distressed with the caption 'I MY TUMMY HURTS'."></media-image>
+<ul><li><strong>Variant:</strong> #34</li><li><strong>Best for:</strong> Humor</li><li><strong>Style:</strong> Crayon, Child drawing, Humor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Intentionally naive style.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-34.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-34.png">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+</feed>
