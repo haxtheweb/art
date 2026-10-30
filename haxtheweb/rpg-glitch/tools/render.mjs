@@ -15,7 +15,7 @@ const media = path.join(root, "media");
 const require = createRequire(import.meta.url);
 const fontDir = path.join(path.dirname(require.resolve("@fontsource/roboto-mono/package.json")), "files");
 const mode = process.argv[2] || "still";
-const TYPES = { ".html": "text/html", ".svg": "image/svg+xml", ".png": "image/png", ".woff2": "font/woff2" };
+const TYPES = { ".html": "text/html", ".js": "text/javascript", ".svg": "image/svg+xml", ".png": "image/png", ".woff2": "font/woff2" };
 
 const server = http.createServer(async (req, res) => {
   const u = new URL(req.url, "http://x");
@@ -40,15 +40,17 @@ const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePa
 const page = await browser.newPage({ viewport: { width: 1200, height: 900 } });
 await page.route(/fonts\.googleapis\.com/, (r) => r.fulfill({ contentType: "text/css", body: fontCSS }));
 await page.route(/fonts\.gstatic\.com/, (r) => r.abort());
-await page.goto(`${base}/?seed=btopro&hat=knight`);
+await page.goto(`${base}/?seed=btopro`);
 await page.evaluate(() => document.fonts.ready);
 const ready = () => page.waitForFunction(() => window.rpgGlitch && window.rpgGlitch.ready(), null, { timeout: 15000 });
 await ready();
 await page.evaluate(() => window.rpgGlitch.manual());
+const show = async (spec) => { await page.evaluate((s) => window.rpgGlitch.becomeFrom(s), spec); await ready(); };
 const shot = async () => Buffer.from((await page.evaluate(() => document.getElementById("scene").toDataURL("image/png"))).split(",")[1], "base64");
 await mkdir(media, { recursive: true });
 
 if (mode === "still") {
+  await show({ seed: "btopro", preset: "knight", pet: "dog", expression: "happy" });
   await page.evaluate(() => window.rpgGlitch.renderAt(1000));
   await writeFile(path.join(media, "rpg-glitch-still.png"), await shot());
 } else {
@@ -70,25 +72,22 @@ if (mode === "still") {
       await save();
     }
   };
-  const first = await page.evaluate(() => window.rpgGlitch.url());
+  // generic and HAX-original looks only (see EXCLUDED in index.html)
   const stops = [
-    { seed: "zpg", hat: "pirate" },
-    { seed: "edtechjoker", hat: "ninja", fire: true },
-    { seed: "57391820", hat: "cowboy", accessories: 4 },
+    { seed: "btopro", preset: "knight", pet: "dog", expression: "happy" },
+    { seed: "zpg", preset: "pirate", pet: "parrot" },
+    { seed: "edtechjoker", preset: "wizard", pet: "owl", fire: true },
+    { seed: "hax", preset: "scientist", pet: "slime", expression: "surprised" },
+    { seed: "camp", preset: "astronaut", pose: "cheer", expression: "happy" },
+    { seed: "october", preset: "witch", pet: "bat", expression: "wink" },
   ];
+  await show(stops[0]);
   await hold();
-  for (const c of stops) {
-    await page.evaluate((c) => {
-      const q = new URLSearchParams(Object.entries(c).map(([k, v]) => [k, String(v)]));
-      window.rpgGlitch.becomeFromQuery(q.toString());
-    }, c);
-    await ready();
+  for (const spec of stops.slice(1).concat([stops[0]])) {
+    await show(spec);
     await glitch();
-    await hold();
+    if (spec !== stops[0]) await hold();
   }
-  await page.evaluate((u) => window.rpgGlitch.becomeFromQuery(new URL(u).search.slice(1)), first);
-  await ready();
-  await glitch();
   execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-framerate", String(FPS), "-i", path.join(frames, "f%04d.png"),
     "-vf", "scale=680:-1:flags=neighbor,split[a][b];[a]palettegen=max_colors=96[p];[b][p]paletteuse=dither=none",
     "-loop", "0", path.join(media, "rpg-glitch.gif")]);
