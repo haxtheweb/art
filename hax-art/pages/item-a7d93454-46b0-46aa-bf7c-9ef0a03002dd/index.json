@@ -1,0 +1,18 @@
+{
+  "id": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+  "indent": 0,
+  "location": "pages/item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd/index.json",
+  "slug": "world-traveler",
+  "order": 1,
+  "parent": null,
+  "title": "World Traveler",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+    "tags": "",
+    "created": 1793373948,
+    "updated": 1793373948
+  },
+  "content": "<p>The World Traveler (also called World Changer or Future Traveler) moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator.</p>\n<p>He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role.</p>\n<ul><li><a href=\"https://github.com/haxtheweb/art/tree/main/world-traveler\">Character sheet and story on GitHub</a></li></ul>"
+}

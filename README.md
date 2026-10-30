@@ -12,6 +12,7 @@ A red-helmeted, steampunk-goggled time traveler who collects the best ideas of e
 
 | Path | Contents |
 |---|---|
+| [`hax-art/`](hax-art/) | **HAX art**, a portfolio HAXsite for browsing everything here, built with the HAX CLI. Live at [haxtheweb.github.io/art](https://haxtheweb.github.io/art/) once GitHub Pages is on |
 | [`world-traveler/`](world-traveler/) | 36 variants of the mascot, plus a contact sheet |
 | [`haxtheweb/`](haxtheweb/) | Logos, stickers, banners, thumbnails, GIFs, layered source files |
 | [`haxtheweb/wanted-poster/`](haxtheweb/wanted-poster/) | WANTED: HAX, the Open Web Outlaw: an old-west poster starring the `rpg-character` in a cowboy hat, with alt text and a social caption |

@@ -5,6 +5,7 @@
 Most variants are AI-generated remixes of the original human-made character; several parody other works and need review before official promotion. Attribution: HAX (haxtheweb), https://github.com/haxtheweb/art. Never rename or delete files: external sites hotlink them.
 
 ## Start here
+- [HAX art portfolio (a HAXsite browsing this repo)](https://haxtheweb.github.io/art/)
 - [AGENTS.md](https://github.com/haxtheweb/art/blob/main/AGENTS.md): repo map, usage guidance, contribution rules
 - [manifest.json](https://raw.githubusercontent.com/haxtheweb/art/main/manifest.json): catalog of all 36 World Traveler images with alt text, style tags, setting, third-party flags
 - [World Traveler story and character sheet](https://github.com/haxtheweb/art/blob/main/world-traveler/README.md)

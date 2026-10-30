@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-78927b22-b931-4513-9674-3ef0be0335c6</id>
+<indent>1</indent>
+<location>pages/item-78927b22-b931-4513-9674-3ef0be0335c6/index.xml</location>
+<slug>world-traveler-06</slug>
+<order>5</order>
+<parent>item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd</parent>
+<title>Helmet icon (checkerboard)</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg</image>
+<tags>icon,flat-vector</tags>
+<created>1793373948</created>
+<updated>1793373948</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg" alt="Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background."></media-image>
+<ul><li><strong>Variant:</strong> #06</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> JPEG cannot be transparent: the checkerboard is baked into the pixels. Prefer 17/20 or the SVG logo for clean use.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-06.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

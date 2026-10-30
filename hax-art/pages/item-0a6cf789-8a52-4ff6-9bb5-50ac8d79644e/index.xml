@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e</id>
+<indent>1</indent>
+<location>pages/item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e/index.xml</location>
+<slug>world-traveler-20</slug>
+<order>15</order>
+<parent>item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd</parent>
+<title>Helmet icon, light gray (alt)</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg</image>
+<tags>icon,flat-vector</tags>
+<created>1793373949</created>
+<updated>1793373949</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg" alt="Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #20</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 17.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-20.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

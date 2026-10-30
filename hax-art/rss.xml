@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>hax-art</title>
+    <link>https://localhost/hax-art/</link>
+    <description>own course</description>
+    <copyright>Copyright (C) 2026 https://localhost/hax-art</copyright>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2026 15:25:51 GMT</lastBuildDate>
+    <generator>HAXcms NodeJS</generator>
+    <atom:link href="https://localhost/hax-art/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>HAX art</title>
+      <link>https://localhost/hax-art/home</link>
+      <description>Art and media from HAX : open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the haxtheweb/art repository. Browse World Traveler: the HAX mascot in every style rpg-character: games and toys starring HAX&apos;s pixel character Brand: logos, stickers, banners and posters Talks: diagrams and explainers for presentations Use the art: attrib...</description>
+      <guid>https://localhost/hax-art/home</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>World Traveler</title>
+      <link>https://localhost/hax-art/world-traveler</link>
+      <description>The World Traveler (also called World Changer or Future Traveler) moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the rpg-character , itself a caricature of HAX&apos;s creator. He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role. Characte...</description>
+      <guid>https://localhost/hax-art/world-traveler</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Android portrait</title>
+      <link>https://localhost/hax-art/world-traveler-01</link>
+      <description>Variant: #01 Best for: Portrait Style: Flat vector, Portrait, Robot Setting: Future Size: 1024 × 1029 px Full-size file View on GitHub</description>
+      <category>portrait,flat-vector,robot</category>
+      <guid>https://localhost/hax-art/world-traveler-01</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Glitch double-exposure badge</title>
+      <link>https://localhost/hax-art/world-traveler-02</link>
+      <description>Variant: #02 Best for: Badge Style: Starburst badge, Glitch, Cartoon Setting: Digital Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>badge,starburst-badge,glitch,cartoon</category>
+      <guid>https://localhost/hax-art/world-traveler-02</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Egyptian wall</title>
+      <link>https://localhost/hax-art/world-traveler-03</link>
+      <description>Variant: #03 Best for: Time travel Style: Painting, Hieroglyphs, Time travel Setting: Ancient egypt Size: 1024 × 1024 px Notes: Shows the &apos;takes the best ideas from every era&apos; theme. Full-size file View on GitHub</description>
+      <category>time-travel,painting,hieroglyphs</category>
+      <guid>https://localhost/hax-art/world-traveler-03</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Helmet icon (checkerboard)</title>
+      <link>https://localhost/hax-art/world-traveler-06</link>
+      <description>Variant: #06 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: JPEG cannot be transparent: the checkerboard is baked into the pixels. Prefer 17/20 or the SVG logo for clean use. Full-size file View on GitHub</description>
+      <category>icon,flat-vector</category>
+      <guid>https://localhost/hax-art/world-traveler-06</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cyberpunk traveler</title>
+      <link>https://localhost/hax-art/world-traveler-08</link>
+      <description>Variant: #08 Best for: Scene Style: Photoreal, Cyberpunk, Human Setting: Future Size: 1024 × 1024 px Notes: Closest to &apos;sees the future&apos; framing. Full-size file View on GitHub</description>
+      <category>scene,photoreal,cyberpunk,human</category>
+      <guid>https://localhost/hax-art/world-traveler-08</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Green helmet portrait</title>
+      <link>https://localhost/hax-art/world-traveler-09</link>
+      <description>Variant: #09 Best for: Icon Style: Icon, Portrait, Color variant Setting: Brand Size: 1024 × 1024 px Notes: Green colorway. Full-size file View on GitHub</description>
+      <category>icon,portrait,color-variant</category>
+      <guid>https://localhost/hax-art/world-traveler-09</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Foil balloon</title>
+      <link>https://localhost/hax-art/world-traveler-11</link>
+      <description>Variant: #11 Best for: Merch Style: Product mockup, 3d, Humor Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>merch,product-mockup,3d,humor</category>
+      <guid>https://localhost/hax-art/world-traveler-11</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Paper-cut collage</title>
+      <link>https://localhost/hax-art/world-traveler-12</link>
+      <description>Variant: #12 Best for: Badge Style: Paper craft, Collage, Starburst badge Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>badge,paper-craft,collage,starburst-badge</category>
+      <guid>https://localhost/hax-art/world-traveler-12</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hoodie kid, tan burst</title>
+      <link>https://localhost/hax-art/world-traveler-13</link>
+      <description>Variant: #13 Best for: Badge Style: Starburst badge, Flat vector, Sketch Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>badge,starburst-badge,flat-vector,sketch</category>
+      <guid>https://localhost/hax-art/world-traveler-13</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Classic burst</title>
+      <link>https://localhost/hax-art/world-traveler-15</link>
+      <description>Variant: #15 Best for: Badge Style: Starburst badge, Flat vector Setting: Present Size: 1024 × 1024 px Notes: Good reference for the &apos;standard&apos; on-model look. Full-size file View on GitHub</description>
+      <category>badge,starburst-badge,flat-vector</category>
+      <guid>https://localhost/hax-art/world-traveler-15</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Helmet icon, light gray</title>
+      <link>https://localhost/hax-art/world-traveler-17</link>
+      <description>Variant: #17 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: Near-duplicate of 20. Full-size file View on GitHub</description>
+      <category>icon,flat-vector</category>
+      <guid>https://localhost/hax-art/world-traveler-17</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Halloween</title>
+      <link>https://localhost/hax-art/world-traveler-18</link>
+      <description>Variant: #18 Best for: Seasonal Style: Scene, Gothic, Seasonal Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>seasonal,scene,gothic</category>
+      <guid>https://localhost/hax-art/world-traveler-18</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>8-bit RPG dungeon</title>
+      <link>https://localhost/hax-art/world-traveler-19</link>
+      <description>Variant: #19 Best for: Rpg Style: Pixel art, Rpg, Game Setting: Medieval 8bit Size: 1024 × 1024 px Notes: Links the traveler to the rpg-character lineage. Full-size file View on GitHub</description>
+      <category>rpg,pixel-art,game</category>
+      <guid>https://localhost/hax-art/world-traveler-19</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Helmet icon, light gray (alt)</title>
+      <link>https://localhost/hax-art/world-traveler-20</link>
+      <description>Variant: #20 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: Near-duplicate of 17. Full-size file View on GitHub</description>
+      <category>icon,flat-vector</category>
+      <guid>https://localhost/hax-art/world-traveler-20</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Pixel helmet face</title>
+      <link>https://localhost/hax-art/world-traveler-22</link>
+      <description>Variant: #22 Best for: Icon Style: Pixel art, 8 bit, Icon Setting: Retro Size: 1024 × 1024 px Notes: 8-bit form. Full-size file View on GitHub</description>
+      <category>icon,pixel-art,8-bit</category>
+      <guid>https://localhost/hax-art/world-traveler-22</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Classic burst, face hidden</title>
+      <link>https://localhost/hax-art/world-traveler-24</link>
+      <description>Variant: #24 Best for: Badge Style: Starburst badge, Flat vector Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>badge,starburst-badge,flat-vector</category>
+      <guid>https://localhost/hax-art/world-traveler-24</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Helmet portrait, cyan goggles</title>
+      <link>https://localhost/hax-art/world-traveler-25</link>
+      <description>Variant: #25 Best for: Icon Style: Icon, Portrait Setting: Brand Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>icon,portrait</category>
+      <guid>https://localhost/hax-art/world-traveler-25</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Layered papercraft</title>
+      <link>https://localhost/hax-art/world-traveler-27</link>
+      <description>Variant: #27 Best for: Badge Style: Paper craft, 3d, Starburst badge Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>badge,paper-craft,3d,starburst-badge</category>
+      <guid>https://localhost/hax-art/world-traveler-27</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Toy-room 3D</title>
+      <link>https://localhost/hax-art/world-traveler-28</link>
+      <description>Variant: #28 Best for: Scene Style: 3d, Render, Character Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>scene,3d,render,character</category>
+      <guid>https://localhost/hax-art/world-traveler-28</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>The ocean is rising</title>
+      <link>https://localhost/hax-art/world-traveler-29</link>
+      <description>Variant: #29 Best for: Comic Style: Engraving, Comic, Web metaphor Setting: Present Size: 1024 × 1024 px Notes: Supports the &apos;data flows like water&apos; idea. Full-size file View on GitHub</description>
+      <category>comic,engraving,web-metaphor</category>
+      <guid>https://localhost/hax-art/world-traveler-29</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Sticker badge</title>
+      <link>https://localhost/hax-art/world-traveler-30</link>
+      <description>Variant: #30 Best for: Sticker Style: Sticker, Flat vector, Color variant Setting: Brand Size: 1024 × 1024 px Full-size file View on GitHub</description>
+      <category>sticker,flat-vector,color-variant</category>
+      <guid>https://localhost/hax-art/world-traveler-30</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>Pixel helmet, detailed</title>
+      <link>https://localhost/hax-art/world-traveler-31</link>
+      <description>Variant: #31 Best for: Icon Style: Pixel art, 16 bit, Icon Setting: Retro Size: 1024 × 1024 px Notes: More detailed than 22. Full-size file View on GitHub</description>
+      <category>icon,pixel-art,16-bit</category>
+      <guid>https://localhost/hax-art/world-traveler-31</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>I my tummy hurts</title>
+      <link>https://localhost/hax-art/world-traveler-34</link>
+      <description>Variant: #34 Best for: Humor Style: Crayon, Child drawing, Humor Setting: Present Size: 1024 × 1024 px Notes: Intentionally naive style. Full-size file View on GitHub</description>
+      <category>humor,crayon,child-drawing</category>
+      <guid>https://localhost/hax-art/world-traveler-34</guid>
+      <pubDate>Fri, 30 Oct 2026 15:25:49 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

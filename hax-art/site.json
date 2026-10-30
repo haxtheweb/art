@@ -1,0 +1,879 @@
+{
+  "id": "67771382-f765-4582-a551-1668f9e30101",
+  "title": "HAX art",
+  "author": "HAX (haxtheweb)",
+  "description": "Art and media from the HAX project, browsed with HAX.",
+  "license": "by-sa",
+  "metadata": {
+    "author": {
+      "name": "HAX (haxtheweb)"
+    },
+    "site": {
+      "name": "hax-art",
+      "logo": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+      "settings": {
+        "lang": "en-US",
+        "publishPagesOn": true,
+        "canonical": true,
+        "pathauto": true
+      },
+      "created": 1793373946,
+      "updated": 1793373951,
+      "git": {
+        "vendor": "github",
+        "branch": "gh-pages"
+      }
+    },
+    "theme": {
+      "element": "glossy-portfolio-theme",
+      "path": "@haxtheweb/glossy-portfolio-theme/glossy-portfolio-theme.js",
+      "name": "Glossy Portfolio",
+      "thumbnail": "@haxtheweb/haxcms-elements/lib/theme-screenshots/theme-glossy-portfolio-theme-thumb.jpg",
+      "description": "Start with a blank site using the Glossy Portfolio",
+      "category": [
+        "Website"
+      ],
+      "hidden": false,
+      "priority": 0,
+      "terrible": false,
+      "supportedPalettes": null,
+      "variables": {
+        "icon": "icons:record-voice-over",
+        "hexCode": "#c8102e",
+        "cssVariable": "--simple-colors-default-theme-light-blue-7",
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png"
+      }
+    },
+    "node": {
+      "fields": {}
+    },
+    "platform": {
+      "audience": "expert",
+      "features": {},
+      "allowedBlocks": []
+    },
+    "build": {
+      "version": "26.8.0",
+      "structure": "course",
+      "type": "own"
+    }
+  },
+  "items": [
+    {
+      "id": "item-13f19a02-5b83-4d05-8bed-389c92f793f8",
+      "indent": 0,
+      "location": "pages/item-13f19a02-5b83-4d05-8bed-389c92f793f8/index.html",
+      "slug": "home",
+      "order": 0,
+      "parent": null,
+      "title": "HAX art",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+        "tags": "",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "indent": 0,
+      "location": "pages/item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd/index.html",
+      "slug": "world-traveler",
+      "order": 1,
+      "parent": null,
+      "title": "World Traveler",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+        "tags": "",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-f79f6456-675d-4de7-bd28-29e1239f6af1",
+      "indent": 1,
+      "location": "pages/item-f79f6456-675d-4de7-bd28-29e1239f6af1/index.html",
+      "slug": "world-traveler-01",
+      "order": 2,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Android portrait",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg",
+        "tags": "portrait,flat-vector,robot",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-faa143e0-8bd7-4b96-8c77-027797dbc865",
+      "indent": 1,
+      "location": "pages/item-faa143e0-8bd7-4b96-8c77-027797dbc865/index.html",
+      "slug": "world-traveler-02",
+      "order": 3,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Glitch double-exposure badge",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png",
+        "tags": "badge,starburst-badge,glitch,cartoon",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-83c703d8-297f-4395-94b3-c81f9323e7bf",
+      "indent": 1,
+      "location": "pages/item-83c703d8-297f-4395-94b3-c81f9323e7bf/index.html",
+      "slug": "world-traveler-03",
+      "order": 4,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Egyptian wall",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png",
+        "tags": "time-travel,painting,hieroglyphs",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-78927b22-b931-4513-9674-3ef0be0335c6",
+      "indent": 1,
+      "location": "pages/item-78927b22-b931-4513-9674-3ef0be0335c6/index.html",
+      "slug": "world-traveler-06",
+      "order": 5,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Helmet icon (checkerboard)",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg",
+        "tags": "icon,flat-vector",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-e6d338b7-738a-444c-989d-f377edd6d210",
+      "indent": 1,
+      "location": "pages/item-e6d338b7-738a-444c-989d-f377edd6d210/index.html",
+      "slug": "world-traveler-08",
+      "order": 6,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Cyberpunk traveler",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png",
+        "tags": "scene,photoreal,cyberpunk,human",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-0dc4caed-3d00-487f-b88d-e95d2fd524d8",
+      "indent": 1,
+      "location": "pages/item-0dc4caed-3d00-487f-b88d-e95d2fd524d8/index.html",
+      "slug": "world-traveler-09",
+      "order": 7,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Green helmet portrait",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg",
+        "tags": "icon,portrait,color-variant",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-8e56f206-2970-4b60-9f79-246b12ee35f0",
+      "indent": 1,
+      "location": "pages/item-8e56f206-2970-4b60-9f79-246b12ee35f0/index.html",
+      "slug": "world-traveler-11",
+      "order": 8,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Foil balloon",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-11.jpeg",
+        "tags": "merch,product-mockup,3d,humor",
+        "created": 1793373948,
+        "updated": 1793373948
+      }
+    },
+    {
+      "id": "item-46aeb500-8861-462c-a48f-9920d86774fb",
+      "indent": 1,
+      "location": "pages/item-46aeb500-8861-462c-a48f-9920d86774fb/index.html",
+      "slug": "world-traveler-12",
+      "order": 9,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Paper-cut collage",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-12.png",
+        "tags": "badge,paper-craft,collage,starburst-badge",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-1daf2506-b371-40f7-b09c-54441f68ed7a",
+      "indent": 1,
+      "location": "pages/item-1daf2506-b371-40f7-b09c-54441f68ed7a/index.html",
+      "slug": "world-traveler-13",
+      "order": 10,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Hoodie kid, tan burst",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-13.png",
+        "tags": "badge,starburst-badge,flat-vector,sketch",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-98700464-fb22-4be0-897e-50577dbc0bc2",
+      "indent": 1,
+      "location": "pages/item-98700464-fb22-4be0-897e-50577dbc0bc2/index.html",
+      "slug": "world-traveler-15",
+      "order": 11,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Classic burst",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png",
+        "tags": "badge,starburst-badge,flat-vector",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-7931ba68-5eac-4706-9844-d63cc0032061",
+      "indent": 1,
+      "location": "pages/item-7931ba68-5eac-4706-9844-d63cc0032061/index.html",
+      "slug": "world-traveler-17",
+      "order": 12,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Helmet icon, light gray",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-17.jpeg",
+        "tags": "icon,flat-vector",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-198b071b-a60d-4671-94bf-c9d256221915",
+      "indent": 1,
+      "location": "pages/item-198b071b-a60d-4671-94bf-c9d256221915/index.html",
+      "slug": "world-traveler-18",
+      "order": 13,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Halloween",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-18.png",
+        "tags": "seasonal,scene,gothic",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-326f75a8-e4d1-4969-aecf-10940991a0ac",
+      "indent": 1,
+      "location": "pages/item-326f75a8-e4d1-4969-aecf-10940991a0ac/index.html",
+      "slug": "world-traveler-19",
+      "order": 14,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "8-bit RPG dungeon",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-19.png",
+        "tags": "rpg,pixel-art,game",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e",
+      "indent": 1,
+      "location": "pages/item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e/index.html",
+      "slug": "world-traveler-20",
+      "order": 15,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Helmet icon, light gray (alt)",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-20.jpeg",
+        "tags": "icon,flat-vector",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-14067244-e26b-4dda-965d-e3d705976a32",
+      "indent": 1,
+      "location": "pages/item-14067244-e26b-4dda-965d-e3d705976a32/index.html",
+      "slug": "world-traveler-22",
+      "order": 16,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Pixel helmet face",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-22.jpeg",
+        "tags": "icon,pixel-art,8-bit",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-4293ae07-e18c-44a6-8007-41f106933108",
+      "indent": 1,
+      "location": "pages/item-4293ae07-e18c-44a6-8007-41f106933108/index.html",
+      "slug": "world-traveler-24",
+      "order": 17,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Classic burst, face hidden",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-24.jpeg",
+        "tags": "badge,starburst-badge,flat-vector",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-bb4f3eb8-8f86-4fa4-b523-73dbde311a07",
+      "indent": 1,
+      "location": "pages/item-bb4f3eb8-8f86-4fa4-b523-73dbde311a07/index.html",
+      "slug": "world-traveler-25",
+      "order": 18,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Helmet portrait, cyan goggles",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-25.jpeg",
+        "tags": "icon,portrait",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-b9906228-0ac1-487c-b27d-b67838a7b417",
+      "indent": 1,
+      "location": "pages/item-b9906228-0ac1-487c-b27d-b67838a7b417/index.html",
+      "slug": "world-traveler-27",
+      "order": 19,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Layered papercraft",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-27.png",
+        "tags": "badge,paper-craft,3d,starburst-badge",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-0b7d83f6-a28e-4022-ab74-923710ce9aa5",
+      "indent": 1,
+      "location": "pages/item-0b7d83f6-a28e-4022-ab74-923710ce9aa5/index.html",
+      "slug": "world-traveler-28",
+      "order": 20,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Toy-room 3D",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-28.png",
+        "tags": "scene,3d,render,character",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-85c0d2aa-9eae-490f-8447-133a4670ec1b",
+      "indent": 1,
+      "location": "pages/item-85c0d2aa-9eae-490f-8447-133a4670ec1b/index.html",
+      "slug": "world-traveler-29",
+      "order": 21,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "The ocean is rising",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png",
+        "tags": "comic,engraving,web-metaphor",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-3d005f77-bb1d-4689-892d-8fb7ebcd8ae5",
+      "indent": 1,
+      "location": "pages/item-3d005f77-bb1d-4689-892d-8fb7ebcd8ae5/index.html",
+      "slug": "world-traveler-30",
+      "order": 22,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Sticker badge",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.jpeg",
+        "tags": "sticker,flat-vector,color-variant",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-d92d6e6a-b28a-4712-b22f-bf5efe1ef8ce",
+      "indent": 1,
+      "location": "pages/item-d92d6e6a-b28a-4712-b22f-bf5efe1ef8ce/index.html",
+      "slug": "world-traveler-31",
+      "order": 23,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Pixel helmet, detailed",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-31.jpeg",
+        "tags": "icon,pixel-art,16-bit",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-3472a634-13c1-4aaf-96df-f3bad7e07dd0",
+      "indent": 1,
+      "location": "pages/item-3472a634-13c1-4aaf-96df-f3bad7e07dd0/index.html",
+      "slug": "world-traveler-34",
+      "order": 24,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "I my tummy hurts",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-34.png",
+        "tags": "humor,crayon,child-drawing",
+        "created": 1793373949,
+        "updated": 1793373949
+      }
+    },
+    {
+      "id": "item-ebf7e261-d662-40d5-91c9-4ba0e4faf1e4",
+      "indent": 1,
+      "location": "pages/item-ebf7e261-d662-40d5-91c9-4ba0e4faf1e4/index.html",
+      "slug": "world-traveler-35",
+      "order": 25,
+      "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+      "title": "Pixel helmet, green goggles",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-35.jpeg",
+        "tags": "icon,pixel-art,8-bit,color-variant",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-1fff688a-cf61-4fa7-9a10-0c263d3a903a",
+      "indent": 0,
+      "location": "pages/item-1fff688a-cf61-4fa7-9a10-0c263d3a903a/index.html",
+      "slug": "rpg-character",
+      "order": 26,
+      "parent": null,
+      "title": "rpg-character",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
+        "tags": "",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-0d58382d-7d6d-4104-8bd8-8ec5979b2b38",
+      "indent": 1,
+      "location": "pages/item-0d58382d-7d6d-4104-8bd8-8ec5979b2b38/index.html",
+      "slug": "rpg-glitch",
+      "order": 27,
+      "parent": "item-1fff688a-cf61-4fa7-9a10-0c263d3a903a",
+      "title": "RPG Glitch",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch.gif",
+        "tags": "interactive",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-ece2e2ae-84f6-46dc-b1be-28635dbd599b",
+      "indent": 1,
+      "location": "pages/item-ece2e2ae-84f6-46dc-b1be-28635dbd599b/index.html",
+      "slug": "hax-the-web-game",
+      "order": 28,
+      "parent": "item-1fff688a-cf61-4fa7-9a10-0c263d3a903a",
+      "title": "HAX the Web",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png",
+        "tags": "game",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-f93a3fe1-0aaa-4342-936a-d58d24c8ee21",
+      "indent": 1,
+      "location": "pages/item-f93a3fe1-0aaa-4342-936a-d58d24c8ee21/index.html",
+      "slug": "wanted-poster",
+      "order": 29,
+      "parent": "item-1fff688a-cf61-4fa7-9a10-0c263d3a903a",
+      "title": "WANTED: HAX",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg",
+        "tags": "poster",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "indent": 0,
+      "location": "pages/item-20b19508-9643-4a3a-9181-78cbe6d5296b/index.html",
+      "slug": "brand",
+      "order": 30,
+      "parent": null,
+      "title": "Brand",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png",
+        "tags": "",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-49d3a6d5-4a1f-4742-91b7-e59a4535e394",
+      "indent": 1,
+      "location": "pages/item-49d3a6d5-4a1f-4742-91b7-e59a4535e394/index.html",
+      "slug": "hax-the-web-sticker",
+      "order": 31,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "HAX the Web sticker",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png",
+        "tags": "sticker",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-92086fe0-f812-4019-a251-62e497bd12cf",
+      "indent": 1,
+      "location": "pages/item-92086fe0-f812-4019-a251-62e497bd12cf/index.html",
+      "slug": "hax-wordmark",
+      "order": 32,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "h-a-x THE WEB wordmark",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png",
+        "tags": "logo",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-d0163527-5abd-444f-8f04-cd32f0f6f82b",
+      "indent": 1,
+      "location": "pages/item-d0163527-5abd-444f-8f04-cd32f0f6f82b/index.html",
+      "slug": "logo-explorations",
+      "order": 33,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "Logo explorations",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png",
+        "tags": "logo",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-cb531954-a9f2-43f4-8a96-004d0a193539",
+      "indent": 1,
+      "location": "pages/item-cb531954-a9f2-43f4-8a96-004d0a193539/index.html",
+      "slug": "world-changer-badge",
+      "order": 34,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "World Changer badge",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png",
+        "tags": "badge",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-780c94d7-62ad-48a8-8168-834d8f387cd4",
+      "indent": 1,
+      "location": "pages/item-780c94d7-62ad-48a8-8168-834d8f387cd4/index.html",
+      "slug": "helmet-mark",
+      "order": 35,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "Helmet mark",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png",
+        "tags": "logo",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-a94caf67-0fdf-4f96-a417-b2c721c363bb",
+      "indent": 1,
+      "location": "pages/item-a94caf67-0fdf-4f96-a417-b2c721c363bb/index.html",
+      "slug": "pattern-banner",
+      "order": 36,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "Pattern banner",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png",
+        "tags": "banner",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-4cf95a31-c0c4-47d9-9348-150344deb866",
+      "indent": 1,
+      "location": "pages/item-4cf95a31-c0c4-47d9-9348-150344deb866/index.html",
+      "slug": "web-inar-banner",
+      "order": 37,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "h-a-x THE WEB-INAR banner",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg",
+        "tags": "banner",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-0c8967da-5127-4ae7-8f05-4d02a1461796",
+      "indent": 1,
+      "location": "pages/item-0c8967da-5127-4ae7-8f05-4d02a1461796/index.html",
+      "slug": "hax-camp-poster",
+      "order": 38,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "HAX Camp poster",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg",
+        "tags": "poster",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-cba85bfd-e1fe-44e8-8e0b-849051ab6809",
+      "indent": 1,
+      "location": "pages/item-cba85bfd-e1fe-44e8-8e0b-849051ab6809/index.html",
+      "slug": "contribute-flyer",
+      "order": 39,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "Contribute flyer",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg",
+        "tags": "poster",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-5566e9ab-1d92-435d-ac27-1f879ad92427",
+      "indent": 1,
+      "location": "pages/item-5566e9ab-1d92-435d-ac27-1f879ad92427/index.html",
+      "slug": "video-thumbnails",
+      "order": 40,
+      "parent": "item-20b19508-9643-4a3a-9181-78cbe6d5296b",
+      "title": "Video thumbnails",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png",
+        "tags": "banner",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "indent": 0,
+      "location": "pages/item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f/index.html",
+      "slug": "talks",
+      "order": 41,
+      "parent": null,
+      "title": "Talks",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
+        "tags": "",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-eda0c24b-3c62-4b66-a93a-f838406fe794",
+      "indent": 1,
+      "location": "pages/item-eda0c24b-3c62-4b66-a93a-f838406fe794/index.html",
+      "slug": "hax-in-a-minute",
+      "order": 42,
+      "parent": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "title": "HAX in under a minute",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
+        "tags": "explainer",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-65a402d3-70ac-4961-8610-5dcc7c2e8c50",
+      "indent": 1,
+      "location": "pages/item-65a402d3-70ac-4961-8610-5dcc7c2e8c50/index.html",
+      "slug": "by-the-numbers",
+      "order": 43,
+      "parent": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "title": "HAX by the numbers",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/3.png",
+        "tags": "diagram",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-845ac68b-913f-43ad-a46c-79fa695ae0b1",
+      "indent": 1,
+      "location": "pages/item-845ac68b-913f-43ad-a46c-79fa695ae0b1/index.html",
+      "slug": "hax-history",
+      "order": 44,
+      "parent": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "title": "HAX history",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png",
+        "tags": "diagram",
+        "created": 1793373950,
+        "updated": 1793373950
+      }
+    },
+    {
+      "id": "item-04ba9025-6648-4f06-8726-3647ada1be50",
+      "indent": 1,
+      "location": "pages/item-04ba9025-6648-4f06-8726-3647ada1be50/index.html",
+      "slug": "legend",
+      "order": 45,
+      "parent": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "title": "Legend",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png",
+        "tags": "diagram",
+        "created": 1793373951,
+        "updated": 1793373951
+      }
+    },
+    {
+      "id": "item-31290301-d180-479b-bc8a-73453be60932",
+      "indent": 1,
+      "location": "pages/item-31290301-d180-479b-bc8a-73453be60932/index.html",
+      "slug": "class-club-lab",
+      "order": 46,
+      "parent": "item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f",
+      "title": "Class, club, lab",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/class-club-lab-pipeline.png",
+        "tags": "diagram",
+        "created": 1793373951,
+        "updated": 1793373951
+      }
+    },
+    {
+      "id": "item-34c51a34-07ad-4efd-8611-7d786d47c7d3",
+      "indent": 0,
+      "location": "pages/item-34c51a34-07ad-4efd-8611-7d786d47c7d3/index.html",
+      "slug": "use-the-art",
+      "order": 47,
+      "parent": null,
+      "title": "Use the art",
+      "description": "",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.png",
+        "tags": "",
+        "created": 1793373951,
+        "updated": 1793373951
+      }
+    }
+  ]
+}

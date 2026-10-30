@@ -1,0 +1,1 @@
+Diagrams and explainers for talks about HAX. The PNGs are ready for slides; the explainer comes as a page, a video, GIFs and a deck.

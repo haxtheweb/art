@@ -1,0 +1,39 @@
+id: item-13f19a02-5b83-4d05-8bed-389c92f793f8
+indent: 0
+location: pages/item-13f19a02-5b83-4d05-8bed-389c92f793f8/index.yaml
+slug: home
+order: 0
+parent: null
+title: HAX art
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png
+  tags: ''
+  created: 1793373948
+  updated: 1793373948
+content: >-
+  <p>Art and media from <a href="https://haxtheweb.org">HAX</a>: open-source
+  tools that let anyone create, remix and publish on the web without needing to
+  understand the web. This portfolio is itself a HAXsite, built with the HAX
+  CLI, and every image on it is pulled straight from the <a
+  href="https://github.com/haxtheweb/art">haxtheweb/art</a> repository.</p>
+
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png"
+  alt="The World Traveler: red helmet with a HAX band, cyan goggles and a green
+  backpack with a lightbulb, chin on his arms, in front of a white starburst in
+  a red circle." caption="The World Traveler, HAX's mascot, in his classic
+  pose."></media-image>
+
+  <h2>Browse</h2>
+
+  <ul><li><a href="world-traveler">World Traveler: the HAX mascot in every
+  style</a></li><li><a href="rpg-character">rpg-character: games and toys
+  starring HAX's pixel character</a></li><li><a href="brand">Brand: logos,
+  stickers, banners and posters</a></li><li><a href="talks">Talks: diagrams and
+  explainers for presentations</a></li><li><a href="use-the-art">Use the art:
+  attribution, licensing and hotlinking</a></li></ul>
+
+  <p><strong>Dream it, remix it, have it, share it.</strong></p>

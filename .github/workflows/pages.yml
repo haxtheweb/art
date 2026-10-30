@@ -1,0 +1,47 @@
+# Publishes this repo to GitHub Pages at https://haxtheweb.github.io/art/
+#   /art/          -> redirects to the hax-art portfolio
+#   /art/hax-art/  -> the portfolio (a HAXsite; HAXcms loads from cdn.hax.cloud)
+#   /art/<path>    -> every interactive piece and file, as in the repo
+# One-time setup: Settings > Pages > Build and deployment > Source: GitHub Actions.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage the site
+        run: |
+          mkdir _site
+          # layered sources (.psd, .ai) stay on GitHub; everything else is served
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
+            --exclude 'node_modules' --exclude '*.psd' --exclude '*.ai' ./ _site/
+          node tools/pages-hax-art.mjs _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

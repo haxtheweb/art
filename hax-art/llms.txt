@@ -1,0 +1,69 @@
+# hax-art
+
+> own course
+
+HAXcms is a file-based CMS: authored pages and metadata are stored as portable files, not locked into a database-only workflow.
+The canonical site structure is `site.json`, represented in JSON Outline Schema (`id`, `parent`, `order`, `slug`, `location`, and `metadata`).
+Use HAX CLI and ecosystem tooling to maintain human-authored content while keeping machine-readable outputs synchronized.
+Managed files (feeds, search indexes, manifests, and this `llms.txt`) are generated artifacts and should be rebuilt by tooling.
+
+## Core resources
+- [site.json](https://localhost/hax-art/site.json): Canonical site manifest and navigation tree in JSON Outline Schema format.
+- [llms.txt](https://localhost/hax-art/llms.txt): LLM-oriented guide to this site and its machine-readable resources.
+
+## Pages
+- [HAX art](https://localhost/hax-art/pages/item-13f19a02-5b83-4d05-8bed-389c92f793f8/index.md)
+- [World Traveler](https://localhost/hax-art/pages/item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd/index.md)
+- [Android portrait](https://localhost/hax-art/pages/item-f79f6456-675d-4de7-bd28-29e1239f6af1/index.md)
+- [Glitch double-exposure badge](https://localhost/hax-art/pages/item-faa143e0-8bd7-4b96-8c77-027797dbc865/index.md)
+- [Egyptian wall](https://localhost/hax-art/pages/item-83c703d8-297f-4395-94b3-c81f9323e7bf/index.md)
+- [Helmet icon (checkerboard)](https://localhost/hax-art/pages/item-78927b22-b931-4513-9674-3ef0be0335c6/index.md)
+- [Cyberpunk traveler](https://localhost/hax-art/pages/item-e6d338b7-738a-444c-989d-f377edd6d210/index.md)
+- [Green helmet portrait](https://localhost/hax-art/pages/item-0dc4caed-3d00-487f-b88d-e95d2fd524d8/index.md)
+- [Foil balloon](https://localhost/hax-art/pages/item-8e56f206-2970-4b60-9f79-246b12ee35f0/index.md)
+- [Paper-cut collage](https://localhost/hax-art/pages/item-46aeb500-8861-462c-a48f-9920d86774fb/index.md)
+- [Hoodie kid, tan burst](https://localhost/hax-art/pages/item-1daf2506-b371-40f7-b09c-54441f68ed7a/index.md)
+- [Classic burst](https://localhost/hax-art/pages/item-98700464-fb22-4be0-897e-50577dbc0bc2/index.md)
+- [Helmet icon, light gray](https://localhost/hax-art/pages/item-7931ba68-5eac-4706-9844-d63cc0032061/index.md)
+- [Halloween](https://localhost/hax-art/pages/item-198b071b-a60d-4671-94bf-c9d256221915/index.md)
+- [8-bit RPG dungeon](https://localhost/hax-art/pages/item-326f75a8-e4d1-4969-aecf-10940991a0ac/index.md)
+- [Helmet icon, light gray (alt)](https://localhost/hax-art/pages/item-0a6cf789-8a52-4ff6-9bb5-50ac8d79644e/index.md)
+- [Pixel helmet face](https://localhost/hax-art/pages/item-14067244-e26b-4dda-965d-e3d705976a32/index.md)
+- [Classic burst, face hidden](https://localhost/hax-art/pages/item-4293ae07-e18c-44a6-8007-41f106933108/index.md)
+- [Helmet portrait, cyan goggles](https://localhost/hax-art/pages/item-bb4f3eb8-8f86-4fa4-b523-73dbde311a07/index.md)
+- [Layered papercraft](https://localhost/hax-art/pages/item-b9906228-0ac1-487c-b27d-b67838a7b417/index.md)
+- [Toy-room 3D](https://localhost/hax-art/pages/item-0b7d83f6-a28e-4022-ab74-923710ce9aa5/index.md)
+- [The ocean is rising](https://localhost/hax-art/pages/item-85c0d2aa-9eae-490f-8447-133a4670ec1b/index.md)
+- [Sticker badge](https://localhost/hax-art/pages/item-3d005f77-bb1d-4689-892d-8fb7ebcd8ae5/index.md)
+- [Pixel helmet, detailed](https://localhost/hax-art/pages/item-d92d6e6a-b28a-4712-b22f-bf5efe1ef8ce/index.md)
+- [I my tummy hurts](https://localhost/hax-art/pages/item-3472a634-13c1-4aaf-96df-f3bad7e07dd0/index.md)
+- [Pixel helmet, green goggles](https://localhost/hax-art/pages/item-ebf7e261-d662-40d5-91c9-4ba0e4faf1e4/index.md)
+- [rpg-character](https://localhost/hax-art/pages/item-1fff688a-cf61-4fa7-9a10-0c263d3a903a/index.md)
+- [RPG Glitch](https://localhost/hax-art/pages/item-0d58382d-7d6d-4104-8bd8-8ec5979b2b38/index.md)
+- [HAX the Web](https://localhost/hax-art/pages/item-ece2e2ae-84f6-46dc-b1be-28635dbd599b/index.md)
+- [WANTED: HAX](https://localhost/hax-art/pages/item-f93a3fe1-0aaa-4342-936a-d58d24c8ee21/index.md)
+- [Brand](https://localhost/hax-art/pages/item-20b19508-9643-4a3a-9181-78cbe6d5296b/index.md)
+- [HAX the Web sticker](https://localhost/hax-art/pages/item-49d3a6d5-4a1f-4742-91b7-e59a4535e394/index.md)
+- [h-a-x THE WEB wordmark](https://localhost/hax-art/pages/item-92086fe0-f812-4019-a251-62e497bd12cf/index.md)
+- [Logo explorations](https://localhost/hax-art/pages/item-d0163527-5abd-444f-8f04-cd32f0f6f82b/index.md)
+- [World Changer badge](https://localhost/hax-art/pages/item-cb531954-a9f2-43f4-8a96-004d0a193539/index.md)
+- [Helmet mark](https://localhost/hax-art/pages/item-780c94d7-62ad-48a8-8168-834d8f387cd4/index.md)
+- [Pattern banner](https://localhost/hax-art/pages/item-a94caf67-0fdf-4f96-a417-b2c721c363bb/index.md)
+- [h-a-x THE WEB-INAR banner](https://localhost/hax-art/pages/item-4cf95a31-c0c4-47d9-9348-150344deb866/index.md)
+- [HAX Camp poster](https://localhost/hax-art/pages/item-0c8967da-5127-4ae7-8f05-4d02a1461796/index.md)
+- [Contribute flyer](https://localhost/hax-art/pages/item-cba85bfd-e1fe-44e8-8e0b-849051ab6809/index.md)
+- [Video thumbnails](https://localhost/hax-art/pages/item-5566e9ab-1d92-435d-ac27-1f879ad92427/index.md)
+- [Talks](https://localhost/hax-art/pages/item-0e6b7db0-f16a-4ae2-a43e-8b994a382b0f/index.md)
+- [HAX in under a minute](https://localhost/hax-art/pages/item-eda0c24b-3c62-4b66-a93a-f838406fe794/index.md)
+- [HAX by the numbers](https://localhost/hax-art/pages/item-65a402d3-70ac-4961-8610-5dcc7c2e8c50/index.md)
+- [HAX history](https://localhost/hax-art/pages/item-845ac68b-913f-43ad-a46c-79fa695ae0b1/index.md)
+- [Legend](https://localhost/hax-art/pages/item-04ba9025-6648-4f06-8726-3647ada1be50/index.md)
+- [Class, club, lab](https://localhost/hax-art/pages/item-31290301-d180-479b-bc8a-73453be60932/index.md)
+- [Use the art](https://localhost/hax-art/pages/item-34c51a34-07ad-4efd-8611-7d786d47c7d3/index.md)
+
+## Optional
+- [Search index](https://localhost/hax-art/lunrSearchIndex.json): Lunr corpus for quick full-text retrieval.
+- [RSS feed](https://localhost/hax-art/rss.xml): Site updates in RSS format.
+- [Atom feed](https://localhost/hax-art/atom.xml): Site updates in Atom format.
+- [Sitemap](https://localhost/hax-art/sitemap.xml): URL-level discovery map for the published site.
+- [Agent skills](https://localhost/hax-art/.well-known/agent-skills/index.json): Agent Skills discovery index (agentskills.io v0.2.0) listing skills that teach an agent how to read, author, audit, and remix this site.

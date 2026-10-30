@@ -1,0 +1,18 @@
+{
+  "id": "item-85c0d2aa-9eae-490f-8447-133a4670ec1b",
+  "indent": 1,
+  "location": "pages/item-85c0d2aa-9eae-490f-8447-133a4670ec1b/index.json",
+  "slug": "world-traveler-29",
+  "order": 21,
+  "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+  "title": "The ocean is rising",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png",
+    "tags": "comic,engraving,web-metaphor",
+    "created": 1793373949,
+    "updated": 1793373949
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png\" alt=\"Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption 'The ocean is rising.'\"></media-image>\n<ul><li><strong>Variant:</strong> #29</li><li><strong>Best for:</strong> Comic</li><li><strong>Style:</strong> Engraving, Comic, Web metaphor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Supports the 'data flows like water' idea.</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-29.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-29.png\">View on GitHub</a></li></ul>"
+}

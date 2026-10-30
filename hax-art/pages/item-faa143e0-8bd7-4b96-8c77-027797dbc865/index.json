@@ -1,0 +1,18 @@
+{
+  "id": "item-faa143e0-8bd7-4b96-8c77-027797dbc865",
+  "indent": 1,
+  "location": "pages/item-faa143e0-8bd7-4b96-8c77-027797dbc865/index.json",
+  "slug": "world-traveler-02",
+  "order": 3,
+  "parent": "item-a7d93454-46b0-46aa-bf7c-9ef0a03002dd",
+  "title": "Glitch double-exposure badge",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png",
+    "tags": "badge,starburst-badge,glitch,cartoon",
+    "created": 1793373948,
+    "updated": 1793373948
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png\" alt=\"Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping.\"></media-image>\n<ul><li><strong>Variant:</strong> #02</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Glitch, Cartoon</li><li><strong>Setting:</strong> Digital</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-02.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-02.png\">View on GitHub</a></li></ul>"
+}
