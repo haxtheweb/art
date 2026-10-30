@@ -1,0 +1,528 @@
+<title>HAX The Web Opening Titles</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A 30-second neon title sequence for HAX The Web, a fan homage to a 1980s synth-scored opening, with credits on HAX's purpose and growth.">
+<meta property="og:title" content="HAX The Web opening titles">
+<meta property="og:description" content="From a napkin in 2015 to 675 web components and 67,515 students. Open content changes the world.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-the-web-intro/media/stills/title-lock.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Questrial&family=Roboto+Condensed:wght@400;600&display=swap">
+<style>
+/* Layout: one full-bleed stage. A vector camera (the SVG viewBox) drifts over pixel neon letters while credits float centered; the letters assemble into a three-line HAX / THE / WEB mark, which rises to make room for a short end card. Single dark look on purpose. */
+:root {
+  --night: #050304;          /* stage black, warmed toward the red */
+  --neon: #ff4a3d;           /* lit tube edge */
+  --neon-deep: #d4101b;      /* glow body */
+  --ash: #cbc5c3;            /* credit text */
+  --ash-dim: #8a8280;        /* eyebrows, captions */
+  --ember: #2a0907;          /* ambient light on the backdrop */
+  --font-hax: "Press Start 2P", "VT323", "Courier New", monospace;
+  --font-credit: "Questrial", "Century Gothic", "Avant Garde", "Futura", system-ui, sans-serif;
+  --font-ui: "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--night); color: var(--ash); overflow: hidden; font-family: var(--font-credit); -webkit-font-smoothing: antialiased; }
+.stage { position: fixed; inset: 0; overflow: hidden; background: var(--night); }
+.ambient { position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 60% 45% at 50% var(--ay, 50%), var(--ember), transparent 70%); opacity: var(--ambient, 0); }
+.stage > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+#glow { opacity: var(--glow-o, .8); filter: blur(var(--blur, 8px)); }
+#glow text, #glow rect { fill: none; stroke: var(--neon-deep); stroke-width: 5; }
+#crisp text, #crisp rect { fill: url(#tube); stroke: var(--neon); stroke-width: 1.3; }
+.L text { font-family: var(--font-hax); stroke-linejoin: miter; }
+.vignette { position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 45%, color-mix(in srgb, var(--night) 92%, transparent) 100%); }
+.grain { position: absolute; inset: -60px; pointer-events: none; opacity: .07; mix-blend-mode: screen; background-size: 180px 180px; }
+.dip { position: absolute; inset: 0; background: var(--night); opacity: var(--dip, 0); pointer-events: none; }
+
+/* Credits */
+.credits { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.credit { grid-area: 1 / 1; text-align: center; opacity: 0; display: grid; justify-items: center; gap: .7em; width: 100%; }
+.credit .sub { max-width: 28em; font-size: clamp(.72rem, 1.6vmin + .3rem, 1.15rem); letter-spacing: .28em; text-transform: uppercase; color: var(--ash-dim);
+  text-shadow: 0 0 .5em var(--night), 0 0 1em var(--night); }
+.credit .main { max-width: 17em; font-size: clamp(1.45rem, 4.6vmin + .4rem, 3.4rem); line-height: 1.15; color: var(--ash); text-wrap: balance;
+  text-shadow: 0 0 .3em var(--night), 0 0 .8em var(--night), 0 0 1.4em var(--night); }
+.credit .main b { font-weight: 400; color: #ece6e4; font-variant-numeric: tabular-nums; }
+
+/* End card */
+.endcard { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  gap: 1rem; text-align: center; opacity: 0; visibility: hidden; overflow-y: auto;
+  padding-block: 2rem calc(5.2rem + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.endcard.on { visibility: visible; }
+.endcard h2 { margin: 0; font-family: var(--font-hax); font-weight: 400; font-size: clamp(.8rem, 1.9vmin + .35rem, 1.35rem); line-height: 1.6;
+  color: var(--neon); text-shadow: 0 0 6px var(--neon-deep), 0 0 18px color-mix(in srgb, var(--neon-deep) 60%, transparent); text-wrap: balance; max-width: 30ch; }
+.motto { margin: 0; font-size: clamp(.85rem, 1.5vmin + .5rem, 1.15rem); letter-spacing: .16em; text-transform: uppercase; color: var(--ash); }
+.links { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; }
+.links a { font-family: var(--font-ui); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem;
+  color: var(--ash); text-decoration: none; padding: .55rem .95rem; border: 1px solid color-mix(in srgb, var(--neon) 55%, transparent); border-radius: 2px; }
+.links a:hover { color: var(--night); background: var(--neon); }
+.fine { margin: 0; font-family: var(--font-ui); font-size: .72rem; color: var(--ash-dim); max-width: 62ch; line-height: 1.5; }
+.fine a { color: var(--ash); }
+
+/* Start overlay */
+.start { position: absolute; inset: 0; display: grid; place-content: end center; justify-items: center; gap: 1.1rem; text-align: center;
+  padding-block: 0 max(8vh, 3rem); background: linear-gradient(transparent 40%, color-mix(in srgb, var(--night) 88%, transparent) 78%);
+  transition: opacity .7s ease, visibility 0s linear .7s;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.start.gone { opacity: 0; visibility: hidden; }
+.play { width: clamp(84px, 15vmin, 120px); aspect-ratio: 1; border-radius: 50%; cursor: pointer; background: transparent;
+  border: 3px solid var(--neon); box-shadow: 0 0 24px var(--neon-deep), inset 0 0 18px color-mix(in srgb, var(--neon-deep) 60%, transparent);
+  display: grid; place-items: center; transition: transform .2s ease; }
+.play:hover { transform: scale(1.05); }
+.play svg { width: 40%; height: 40%; margin-left: 8%; fill: none; stroke: var(--neon); stroke-width: 6; stroke-linejoin: round; }
+.start p { margin: 0; font-size: clamp(.8rem, 1.4vmin + .5rem, 1rem); letter-spacing: .24em; text-transform: uppercase; color: var(--ash); }
+.start small { font-family: var(--font-ui); color: var(--ash-dim); font-size: .8rem; letter-spacing: .04em; }
+
+/* Controls */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: center; gap: .55rem;
+  padding: .6rem max(16px, env(safe-area-inset-right, 0px)) calc(.7rem + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background: linear-gradient(transparent, color-mix(in srgb, var(--night) 85%, transparent)); font-family: var(--font-ui); transition: opacity .5s ease; }
+.bar.idle { opacity: 0; }
+.bar button { flex: none; font: 600 .78rem/1 var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ash);
+  background: transparent; border: 1px solid color-mix(in srgb, var(--ash) 30%, transparent); border-radius: 2px; padding: .5rem .7rem; cursor: pointer; }
+.bar button:hover { border-color: var(--neon); color: #fff; }
+.bar input[type=range] { flex: 1; min-width: 0; accent-color: var(--neon); }
+.time { flex: none; font-size: .78rem; color: var(--ash-dim); font-variant-numeric: tabular-nums; min-width: 2.6em; text-align: right; }
+:focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; }
+.script { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(4.2rem + env(safe-area-inset-bottom, 0px));
+  width: min(420px, calc(100% - 32px)); max-height: 60vh; overflow-y: auto; background: color-mix(in srgb, var(--night) 94%, var(--neon) 6%);
+  border: 1px solid color-mix(in srgb, var(--neon) 35%, transparent); padding: 1rem 1.2rem; font-family: var(--font-ui); font-size: .9rem; line-height: 1.5; }
+.script h3 { margin: 0 0 .5rem; font: 600 .78rem/1 var(--font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--neon); }
+.script ol { margin: 0; padding-left: 1.3rem; display: grid; gap: .35rem; }
+.script span { color: var(--ash-dim); }
+@media (max-width: 520px) { .bar .wide { display: none; } }
+</style>
+
+<div class="stage" id="stage">
+  <div class="ambient"></div>
+  <svg id="glow" aria-hidden="true"></svg>
+  <svg id="crisp" role="img" aria-label="HAX, THE, WEB stacked on three lines in red neon pixel letters, with light bars">
+    <defs>
+      <linearGradient id="tube" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#3a0605" stop-opacity=".55"/>
+        <stop offset=".55" stop-color="#120202" stop-opacity=".35"/>
+        <stop offset="1" stop-color="#5c0b08" stop-opacity=".5"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="vignette"></div>
+  <div class="grain" id="grain"></div>
+  <div class="credits" id="credits" aria-hidden="true"></div>
+  <div class="dip" id="dip"></div>
+
+  <section class="endcard" id="endcard" aria-label="Closing card">
+    <h2>Open content changes the world.</h2>
+    <p class="motto">Dream it. Remix it. Have it. Share it.</p>
+    <nav class="links" aria-label="HAX links">
+      <a href="https://haxtheweb.org" target="_blank" rel="noopener">haxtheweb.org</a>
+      <a href="https://github.com/haxtheweb" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://bit.ly/hax-discord" target="_blank" rel="noopener">Discord</a>
+    </nav>
+    <p class="fine">A fan homage to a certain synth-scored 1980s title sequence. No claim to the intellectual property of Stranger Things or Netflix. Reworked from <a href="https://github.com/btopro/stranger-things" target="_blank" rel="noopener">btopro/stranger-things</a>. Original score synthesized live in your browser. Figures from the HAX history timeline, 2015 to 2025.</p>
+  </section>
+
+  <div class="start" id="start">
+    <button class="play" id="playBig" aria-label="Play the opening titles">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 4 L34 20 L8 36 Z"/></svg>
+    </button>
+    <p>HAX The Web &middot; opening titles</p>
+    <small>30 seconds &middot; sound on</small>
+  </div>
+</div>
+
+<div class="bar idle" id="bar" hidden>
+  <button id="btnPlay" aria-label="Pause">Pause</button>
+  <button id="btnRestart" class="wide">Restart</button>
+  <input type="range" id="scrub" min="0" max="30" step="0.05" value="0" aria-label="Timeline position">
+  <span class="time" id="time">0:00</span>
+  <button id="btnSound" aria-pressed="true">Sound on</button>
+  <button id="btnScript" aria-expanded="false" aria-controls="script">Script</button>
+</div>
+<aside class="script" id="script" hidden aria-label="Script">
+  <h3>Script</h3>
+  <ol id="scriptList"></ol>
+</aside>
+
+<script>
+(() => {
+  // ---------- content ----------
+  const CREDITS = [
+    { sub: "Headless Authoring eXperience", main: "Plain text and blocks that anyone can edit" },
+    { sub: "From a napkin in 2015", main: "to hundreds of Penn State courses, sites and portfolios" },
+    { sub: "Built from the open web", main: "<b>675</b> web components &middot; <b>53</b> editor blocks" },
+    { sub: "Published on hax.psu", main: "<b>247</b> sites &middot; <b>67,515</b> students reached" },
+    { sub: "Class &middot; Club &middot; Lab", main: "<b>567</b> students learned the web by building it" },
+    { sub: "Content you own", main: "Free and open. Moves in and out of HAX, forever." },
+  ];
+  const LINES = ["HAX", "THE", "WEB"];
+
+  // ---------- timeline (seconds) ----------
+  const BAR = 2.4;                     // 100 bpm, one bar = 16 sixteenths
+  const T = { music: 0.4, start: 0.8, credit: 2.6, A0: 16.4, hit: 22.0, rise: 23.4, total: 30 };
+
+  // ---------- helpers ----------
+  const $ = (id) => document.getElementById(id);
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const lerp = (a, b, p) => a + (b - a) * p;
+  const eOut = (p) => 1 - Math.pow(1 - p, 3);
+  const eIO = (p) => -(Math.cos(Math.PI * p) - 1) / 2;
+  const fade = (t, a, b, f = .5) => clamp((t - a) / f) * clamp((b - t) / f);
+  const hash = (n) => { const x = Math.sin(n * 127.1) * 43758.5453; return x - Math.floor(x); };
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const NS = "http://www.w3.org/2000/svg";
+
+  // ---------- credits DOM ----------
+  const credBox = $("credits");
+  const credEls = CREDITS.map((c) => {
+    const d = document.createElement("div"); d.className = "credit";
+    d.innerHTML = `<div class="sub">${c.sub}</div><div class="main">${c.main}</div>`;
+    credBox.appendChild(d); return d;
+  });
+  [...CREDITS.map((c) => `<span>${c.sub}:</span> ${c.main}`), "HAX / THE / WEB",
+   "Open content changes the world. Dream it. Remix it. Have it. Share it."]
+    .forEach((h) => { const li = document.createElement("li"); li.innerHTML = h; $("scriptList").appendChild(li); });
+
+  // ---------- logo geometry (units: small letters are 100 units tall in em) ----------
+  const crisp = $("crisp"), glow = $("glow");
+  const S = 100, BIG = 150, GAP = 14, GAP1 = 24;
+  let letters = [], bars = [], box = { x0: 0, x1: 0, y0: 0, y1: 0 }, cap = 87.5;
+  const gLogo = document.createElementNS(NS, "g"); crisp.appendChild(gLogo);
+
+  function ink(ch, size) { // real glyph ink box from canvas, so pixel letters line up exactly
+    const c = ink.c || (ink.c = document.createElement("canvas").getContext("2d"));
+    c.font = `${size}px "Press Start 2P"`;
+    const m = c.measureText(ch);
+    return { l: -m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, adv: m.width };
+  }
+  function addText(ch, size, x, y) {
+    const g = document.createElementNS(NS, "g"); g.setAttribute("class", "L");
+    const t = document.createElementNS(NS, "text");
+    t.textContent = ch; t.setAttribute("font-size", size); t.setAttribute("x", x); t.setAttribute("y", y);
+    g.appendChild(t); gLogo.appendChild(g); return g;
+  }
+  function addBar(x0, x1, y, h) {
+    const g = document.createElementNS(NS, "g"); g.setAttribute("class", "L");
+    const r = document.createElementNS(NS, "rect");
+    r.setAttribute("x", x0); r.setAttribute("y", y); r.setAttribute("width", Math.max(1, x1 - x0)); r.setAttribute("height", h);
+    g.appendChild(r); gLogo.appendChild(g); return { g, cx: (x0 + x1) / 2 };
+  }
+
+  function build() {
+    gLogo.innerHTML = ""; letters = []; bars = [];
+    cap = ink("H", S).a; const capB = ink("H", BIG).a;
+    const pitch = cap * 1.62;
+    const rows = LINES.map((word, li) => {
+      const glyphs = [...word].map((ch, i) => {
+        const big = li === 0 && (i === 0 || i === word.length - 1);
+        const size = big ? BIG : S, m = ink(ch, size);
+        return { ch, big, size, m, w: m.r - m.l };
+      });
+      const gap = li === 0 ? GAP1 : GAP;
+      const width = glyphs.reduce((s, g) => s + g.w, 0) + gap * (glyphs.length - 1);
+      return { glyphs, gap, width, base: li * pitch };
+    });
+    const W1 = rows[0].width;
+    rows.forEach((row, li) => {
+      let x = -row.width / 2;
+      row.glyphs.forEach((G) => {
+        const base = row.base + (G.big ? (capB - cap) / 2 : 0);
+        const g = addText(G.ch, G.size, x - G.m.l, base);
+        letters.push({ g, line: li, big: G.big, x0: x, x1: x + G.w, cx: x + G.w / 2, cy: base - (G.big ? capB : cap) / 2 });
+        x += G.w + row.gap;
+      });
+    });
+    // bars: one across the top between the big H and X, and two flanking THE
+    const H = letters[0], X = letters[2], hb = 7;
+    bars.push(addBar(H.x1 + 4, X.x0 - 4, -cap - 16, hb));
+    const the = rows[1], midY = the.base - cap / 2 - hb / 2;
+    bars.push(addBar(-W1 / 2, -the.width / 2 - GAP, midY, hb));
+    bars.push(addBar(the.width / 2 + GAP, W1 / 2, midY, hb));
+    box = { x0: -W1 / 2, x1: W1 / 2, y0: -cap - (capB - cap) / 2 - 18, y1: rows[2].base + 4 };
+    glow.innerHTML = ""; glow.appendChild(gLogo.cloneNode(true));
+    const gl = [...glow.querySelectorAll(".L")];
+    letters.forEach((L, i) => (L.gg = gl[i]));
+    bars.forEach((B, i) => (B.gg = gl[letters.length + i]));
+  }
+
+  // ---------- close-up shots during credits: k = letter index, w = view width in units, drift relative to the letter's center ----------
+  const SHOTS = [
+    { k: 0, w: 165, from: [-45, -40], to: [5, -15] },   // big H
+    { k: 5, w: 125, from: [30, -25], to: [-20, 10] },   // E
+    { k: 2, w: 210, from: [55, 35], to: [-25, -10] },   // big X
+    { k: 6, w: 140, from: [-30, 25], to: [20, -15] },   // W
+    { k: 4, w: 290, from: [-120, -10], to: [90, -5] },  // across THE
+    { k: 8, w: 185, from: [25, -40], to: [-10, 25] },   // B
+  ];
+
+  // ---------- render(t): everything is a pure function of time, so scrubbing works ----------
+  const stage = $("stage"), dip = $("dip"), endcard = $("endcard");
+  let vw = innerWidth, vh = innerHeight;
+  function camera(cx, cy, w) {
+    const h = w * vh / vw, vb = `${cx - w / 2} ${cy - h / 2} ${w} ${h}`;
+    crisp.setAttribute("viewBox", vb); glow.setAttribute("viewBox", vb);
+    return { ppu: vw / w, h };
+  }
+  function place(el, tr, o) { el.g.setAttribute("transform", tr); el.gg.setAttribute("transform", tr); el.g.style.opacity = o; el.gg.style.opacity = o; }
+  const flicker = (t) => 0.9 + 0.06 * Math.sin(t * 23.1) + 0.04 * Math.sin(t * 57.7 + 1.3);
+  function fitW(padX, padY) { // view width that fits the whole logo
+    const lw = (box.x1 - box.x0) * padX, lh = (box.y1 - box.y0) * padY;
+    return Math.max(lw, lh * vw / vh);
+  }
+  // a failing tube: letter k cuts out in short deterministic bursts
+  function tube(k, t) {
+    const win = (a, b) => t > a && t < b;
+    if (k === 7 && (win(23.0, 23.12) || win(23.22, 23.3) || win(26.6, 26.7) || win(28.9, 29.05))) return 0.15;
+    if (k === 1 && (win(25.1, 25.18) || win(25.26, 25.4))) return 0.2;
+    return 1;
+  }
+
+  function render(t) {
+    const lcx = (box.x0 + box.x1) / 2, lcy = (box.y0 + box.y1) / 2;
+    const full = fitW(1.3, 1.45);
+    let cx = lcx, cy = lcy, w = full, intensity = 1, dipV = 0;
+
+    if (t < T.A0) {
+      const i = clamp(Math.floor((t - T.start) / T.credit), 0, SHOTS.length - 1);
+      const s0 = T.start + i * T.credit, p = clamp((t - s0) / T.credit), sh = SHOTS[i], L = letters[sh.k];
+      cx = L.cx + lerp(sh.from[0], sh.to[0], eIO(p));
+      cy = L.cy + lerp(sh.from[1], sh.to[1], eIO(p));
+      w = sh.w * lerp(1.1, 0.95, p);
+      intensity = flicker(t) * clamp((t - 0.3) / 1);
+      dipV = t < T.start ? 1 - clamp(t / T.start) * 0.3 : Math.max(clamp(1 - (t - s0) / 0.3), clamp(1 - (s0 + T.credit - t) / 0.22)) * 0.85;
+    } else if (t < T.hit) {
+      const p = clamp((t - T.A0) / (T.hit - T.A0));
+      w = lerp(full * 0.55, full, eIO(p)); intensity = 0.8 + 0.25 * p;
+      dipV = clamp(1 - (t - T.A0) / 0.5) * 0.9;
+    } else {
+      intensity = 1.1 + 1.0 * Math.exp(-(t - T.hit) * 2.4);
+      w = lerp(full, full * 1.05, eOut(clamp((t - T.hit) / 1.4)));
+      const e = eIO(clamp((t - T.rise) / 1.6));
+      if (e > 0) { // pull back and lift the logo into the top third for the end card
+        const wEnd = Math.max(fitW(1.35, 1), (box.y1 - box.y0) / 0.3 * vw / vh);
+        w = lerp(w, wEnd, e);
+        const h = w * vh / vw;
+        cy = lerp(lcy, lcy - 0.24 * h + h / 2, e);
+      }
+    }
+
+    // letters
+    const n = letters.length;
+    letters.forEach((L, i) => {
+      if (t < T.A0) { place(L, "", 1); return; }
+      const lp = eOut(clamp((t - T.A0 - (L.big ? 0 : 0.35 + hash(i) * 1.4)) / (L.big ? 4.8 : 3.8)));
+      const side = L.cx < -1 ? -1 : L.cx > 1 ? 1 : (L.line === 1 ? -1 : 1);
+      const dx = side * (L.big ? 1100 : 420 + 220 * hash(i + 9)) * (1 - lp);
+      const dy = (L.line - 1) * 160 * (1 - lp) + (hash(i + 3) - 0.5) * 120 * (1 - lp);
+      const s = lerp(1.7, 1, lp);
+      const o = clamp(lp * 3) * tube(i, t);
+      place(L, `translate(${dx} ${dy}) translate(${L.cx} ${L.cy}) scale(${s}) translate(${-L.cx} ${-L.cy})`, o);
+    });
+    bars.forEach((B) => {
+      if (t < T.A0) { place(B, "", 1); return; }
+      const bp = eOut(clamp((t - (T.hit - 2.1)) / 2.1));
+      place(B, `translate(${B.cx} 0) scale(${Math.max(bp, 0.0001)} 1) translate(${-B.cx} 0)`, clamp(bp * 4));
+    });
+
+    const cam = camera(cx, cy, w);
+    stage.style.setProperty("--blur", clamp(cam.ppu * 1.5, 3, 30).toFixed(1) + "px");
+    stage.style.setProperty("--glow-o", clamp(0.55 * intensity, 0, 1).toFixed(3));
+    crisp.style.opacity = clamp(0.45 + 0.55 * intensity, 0, 1).toFixed(3);
+    stage.style.setProperty("--ambient", clamp(intensity * (t > T.A0 ? 0.9 : 0.55), 0, 1).toFixed(3));
+    stage.style.setProperty("--ay", lerp(50, 28, eIO(clamp((t - T.rise) / 1.6))) + "%");
+    dip.style.setProperty("--dip", dipV.toFixed(3));
+
+    credEls.forEach((el, i) => { const s0 = T.start + i * T.credit; el.style.opacity = fade(t, s0 + 0.35, s0 + T.credit - 0.22, 0.4).toFixed(3); });
+    const ec = clamp((t - T.rise - 1.1) / 1.2);
+    endcard.style.opacity = ec.toFixed(3);
+    endcard.style.transform = `translateY(${(1 - eOut(ec)) * 20}px)`;
+    endcard.classList.toggle("on", ec > 0.02);
+  }
+
+  // ---------- grain ----------
+  (() => {
+    const c = document.createElement("canvas"); c.width = c.height = 180;
+    const x = c.getContext("2d"), img = x.createImageData(180, 180);
+    for (let i = 0; i < img.data.length; i += 4) { const v = Math.random() * 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255; }
+    x.putImageData(img, 0, 0); $("grain").style.backgroundImage = `url(${c.toDataURL()})`;
+  })();
+  const grain = $("grain"); let lastGrain = 0;
+  function shakeGrain(now) {
+    if (reduced || now - lastGrain < 42) return; lastGrain = now;
+    grain.style.transform = `translate(${(Math.random() * 60) | 0}px, ${(Math.random() * 60) | 0}px)`;
+  }
+
+  // ---------- score: an original analog-style piece, synthesized with Web Audio ----------
+  // 16th-note up-and-down arpeggio through a resonant filter that opens over the cue,
+  // pulsing sub bass, a slow brass pad, a riser into the title, then a low boom and chord swell.
+  const mtof = (m) => 440 * Math.pow(2, (m - 69) / 12);
+  const CHORDS = [ // root, third above the octave
+    { r: 57, third: 15 },  // A minor
+    { r: 53, third: 16 },  // F major
+    { r: 57, third: 15 },  // A minor
+    { r: 52, third: 16 },  // E major
+  ];
+  const EVENTS = [];
+  (() => {
+    const s16 = BAR / 16, nBars = Math.ceil((T.total - T.music) / BAR);
+    for (let b = 0; b < nBars; b++) {
+      const t0 = T.music + b * BAR, { r, third } = CHORDS[b % 4];
+      const shape = [0, 7, 12, 14, third, 14, 12, 7];
+      const atHit = Math.abs(t0 - T.hit) < 0.01, after = t0 > T.hit + 0.01;
+      const lvl = after ? Math.max(0.25, 0.9 - (t0 - T.hit) / 9) : b < 2 ? 0.55 : 0.85;
+      for (let j = 0; j < 16; j++) EVENTS.push({ t: t0 + j * s16, type: "arp", m: r + shape[j % 8], lvl });
+      if (b >= 1) for (let j = 0; j < 8; j++) EVENTS.push({ t: t0 + j * s16 * 2, type: "bass", m: r - 24, lvl: after ? 0.7 : 1 });
+      if (b >= 3) EVENTS.push({ t: t0, type: "pad", ms: [r - 12, r - 5, r, r + third - 12], dur: BAR, lvl: atHit || after ? 1.6 : 1 });
+      if (atHit) EVENTS.push({ t: t0, type: "hit", m: r - 24 });
+    }
+    EVENTS.push({ t: T.hit - BAR * 1.5, type: "riser", dur: BAR * 1.5 });
+    EVENTS.sort((a, b) => a.t - b.t);
+  })();
+
+  let ctx = null, master = null, bus = null, delay = null, verb = null, noise = null, soundOn = true;
+  let schedIdx = 0, baseCtx = 0, baseT = 0;
+  function ensureAudio() {
+    if (ctx) return;
+    try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { ctx = null; return; }
+    const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 5; comp.attack.value = 0.005;
+    master = ctx.createGain(); master.gain.value = soundOn ? 0.9 : 0;
+    master.connect(comp); comp.connect(ctx.destination);
+    const len = ctx.sampleRate * 2; noise = ctx.createBuffer(1, len, ctx.sampleRate);
+    const d = noise.getChannelData(0); for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+    // generated hall reverb impulse
+    const ir = ctx.createBuffer(2, ctx.sampleRate * 3.2, ctx.sampleRate);
+    for (let ch = 0; ch < 2; ch++) { const a = ir.getChannelData(ch); for (let i = 0; i < a.length; i++) a[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / a.length, 2.6); }
+    verb = ctx.createConvolver(); verb.buffer = ir;
+    const vg = ctx.createGain(); vg.gain.value = 0.42; verb.connect(vg); vg.connect(master);
+  }
+  function newBus() {
+    if (!ctx) return;
+    if (bus) { const old = bus; old.gain.setTargetAtTime(0, ctx.currentTime, 0.05); setTimeout(() => old.disconnect(), 700); }
+    bus = ctx.createGain(); bus.connect(master); bus.connect(verb);
+    delay = ctx.createDelay(1); delay.delayTime.value = BAR * 3 / 16;
+    const fb = ctx.createGain(); fb.gain.value = 0.3; const wet = ctx.createGain(); wet.gain.value = 0.22;
+    delay.connect(fb); fb.connect(delay); delay.connect(wet); wet.connect(bus);
+  }
+  function osc(type, f, det, at, stop, dest) { const o = ctx.createOscillator(); o.type = type; o.frequency.value = f; o.detune.value = det; o.connect(dest); o.start(at); o.stop(stop); return o; }
+  function voice(ev, at) {
+    if (ev.type === "arp") {
+      const open = clamp((ev.t - T.music) / (T.hit - T.music));
+      const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.Q.value = 9;
+      const cut = 380 + 2600 * open * open + 260 * Math.sin(ev.t * 1.3);
+      f.frequency.setValueAtTime(cut * 2.2, at); f.frequency.exponentialRampToValueAtTime(cut, at + 0.12);
+      const g = ctx.createGain(); g.gain.setValueAtTime(0, at);
+      g.gain.linearRampToValueAtTime(0.11 * ev.lvl, at + 0.006); g.gain.exponentialRampToValueAtTime(0.0008, at + 0.22);
+      const fr = mtof(ev.m);
+      osc("sawtooth", fr, -7, at, at + 0.25, f); osc("sawtooth", fr, 7, at, at + 0.25, f); osc("square", fr / 2, 0, at, at + 0.25, f);
+      f.connect(g); g.connect(bus); g.connect(delay);
+    } else if (ev.type === "bass") {
+      const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.frequency.value = 180;
+      const g = ctx.createGain(); g.gain.setValueAtTime(0, at); g.gain.linearRampToValueAtTime(0.32 * ev.lvl, at + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.002, at + 0.27);
+      osc("sawtooth", mtof(ev.m), 0, at, at + 0.3, f); osc("sine", mtof(ev.m), 0, at, at + 0.3, f);
+      f.connect(g); g.connect(master);
+    } else if (ev.type === "pad") {
+      const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.frequency.setValueAtTime(500, at); f.frequency.linearRampToValueAtTime(1300, at + ev.dur); f.Q.value = 2;
+      const g = ctx.createGain(); g.gain.setValueAtTime(0, at); g.gain.linearRampToValueAtTime(0.028 * ev.lvl, at + 1.1); g.gain.linearRampToValueAtTime(0, at + ev.dur + 0.4);
+      ev.ms.forEach((m) => { osc("sawtooth", mtof(m), -9, at, at + ev.dur + 0.45, f); osc("sawtooth", mtof(m), 9, at, at + ev.dur + 0.45, f); });
+      f.connect(g); g.connect(bus);
+    } else if (ev.type === "hit") {
+      const b = ctx.createOscillator(); b.type = "sine"; b.frequency.setValueAtTime(110, at); b.frequency.exponentialRampToValueAtTime(34, at + 1.2);
+      const bg = ctx.createGain(); bg.gain.setValueAtTime(0.9, at); bg.gain.exponentialRampToValueAtTime(0.001, at + 2.6);
+      b.connect(bg); bg.connect(master); b.start(at); b.stop(at + 2.7);
+      const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.frequency.setValueAtTime(4000, at); f.frequency.exponentialRampToValueAtTime(260, at + 5);
+      const g = ctx.createGain(); g.gain.setValueAtTime(0, at); g.gain.linearRampToValueAtTime(0.09, at + 0.02); g.gain.exponentialRampToValueAtTime(0.001, at + 6);
+      [ev.m + 12, ev.m + 19, ev.m + 24, ev.m + 27, ev.m + 31].forEach((m) => { osc("sawtooth", mtof(m), -6, at, at + 6.1, f); osc("sawtooth", mtof(m), 6, at, at + 6.1, f); });
+      f.connect(g); g.connect(bus);
+      const n = ctx.createBufferSource(); n.buffer = noise; const ng = ctx.createGain();
+      ng.gain.setValueAtTime(0.3, at); ng.gain.exponentialRampToValueAtTime(0.001, at + 1.6);
+      n.connect(ng); ng.connect(bus); n.start(at); n.stop(at + 1.7);
+    } else if (ev.type === "riser") {
+      const n = ctx.createBufferSource(); n.buffer = noise; n.loop = true;
+      const f = ctx.createBiquadFilter(); f.type = "bandpass"; f.Q.value = 4;
+      f.frequency.setValueAtTime(250, at); f.frequency.exponentialRampToValueAtTime(8000, at + ev.dur);
+      const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, at); g.gain.exponentialRampToValueAtTime(0.2, at + ev.dur - 0.04); g.gain.linearRampToValueAtTime(0, at + ev.dur);
+      n.connect(f); f.connect(g); g.connect(bus); n.start(Math.max(at, ctx.currentTime)); n.stop(at + ev.dur);
+    }
+  }
+  function audioSync(t) {
+    if (!ctx) return;
+    newBus(); baseCtx = ctx.currentTime + 0.05; baseT = t;
+    schedIdx = EVENTS.findIndex((e) => e.t >= t - 0.001); if (schedIdx < 0) schedIdx = EVENTS.length;
+  }
+  function audioPump(t) {
+    if (!ctx || !bus) return;
+    while (schedIdx < EVENTS.length && EVENTS[schedIdx].t < t + 0.3) {
+      const ev = EVENTS[schedIdx++]; voice(ev, Math.max(ctx.currentTime, baseCtx + (ev.t - baseT)));
+    }
+  }
+  function audioStop() { if (ctx && bus) { bus.gain.setTargetAtTime(0, ctx.currentTime, 0.04); bus = null; } }
+
+  // ---------- transport ----------
+  let t = T.total, playing = false, last = 0, started = false;   // poster frame = the finished title
+  const bar = $("bar"), scrub = $("scrub"), timeEl = $("time"), btnPlay = $("btnPlay");
+  scrub.max = T.total;
+  const fmt = (s) => `0:${String(Math.floor(s)).padStart(2, "0")}`;
+  function frame(now) {
+    if (playing) {
+      t = ctx && bus ? baseT + (ctx.currentTime - baseCtx) : t + Math.min(0.1, (now - last) / 1000);
+      if (t >= T.total) { t = T.total; pause(); }
+      audioPump(t);
+    }
+    last = now;
+    render(Math.max(0, started ? t : T.hit + 1.2));
+    shakeGrain(now);
+    scrub.value = t; timeEl.textContent = fmt(Math.max(0, t));
+    requestAnimationFrame(frame);
+  }
+  function play() {
+    if (t >= T.total - 0.05) t = 0;
+    ensureAudio(); if (ctx && ctx.state === "suspended") ctx.resume();
+    playing = true; audioSync(t); last = performance.now();
+    btnPlay.textContent = "Pause"; btnPlay.setAttribute("aria-label", "Pause"); nudgeBar();
+  }
+  function pause() {
+    playing = false; audioStop();
+    btnPlay.textContent = "Play"; btnPlay.setAttribute("aria-label", "Play"); bar.classList.remove("idle");
+  }
+  function seek(v) { t = clamp(v, 0, T.total); if (playing) audioSync(t); }
+  function begin() { if (started) return; started = true; $("start").classList.add("gone"); bar.hidden = false; t = 0; play(); }
+
+  let idleTimer = 0;
+  function nudgeBar() {
+    bar.classList.remove("idle"); clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => { if (playing && !bar.matches(":focus-within") && $("script").hidden) bar.classList.add("idle"); }, 2400);
+  }
+  $("playBig").addEventListener("click", begin);
+  btnPlay.addEventListener("click", () => (playing ? pause() : play()));
+  $("btnRestart").addEventListener("click", () => { seek(0); if (!playing) play(); });
+  scrub.addEventListener("input", () => seek(parseFloat(scrub.value)));
+  $("btnSound").addEventListener("click", (e) => {
+    soundOn = !soundOn; e.currentTarget.textContent = soundOn ? "Sound on" : "Sound off";
+    e.currentTarget.setAttribute("aria-pressed", String(soundOn));
+    if (master) master.gain.setTargetAtTime(soundOn ? 0.9 : 0, ctx.currentTime, 0.05);
+  });
+  $("btnScript").addEventListener("click", (e) => {
+    const s = $("script"); s.hidden = !s.hidden; e.currentTarget.setAttribute("aria-expanded", String(!s.hidden)); nudgeBar();
+  });
+  addEventListener("pointermove", () => started && nudgeBar());
+  addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" && e.key !== " ") return;
+    if (e.key === " " || e.key === "k") { e.preventDefault(); started ? (playing ? pause() : play()) : begin(); }
+    else if (e.key === "ArrowRight") seek(t + 3);
+    else if (e.key === "ArrowLeft") seek(t - 3);
+    else return;
+    nudgeBar();
+  });
+  addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; });
+
+  // ---------- boot: wait for the pixel face so the letters measure correctly ----------
+  const ready = document.fonts && document.fonts.load
+    ? Promise.race([document.fonts.load('100px "Press Start 2P"'), new Promise((r) => setTimeout(r, 2500))])
+    : Promise.resolve();
+  ready.then(() => { build(); requestAnimationFrame(frame); });
+})();
+</script>

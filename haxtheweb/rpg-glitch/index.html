@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RPG Glitch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Glitch your way through rpg-character remixes on an 80s CRT. Every click is a new character with a link you can share.">
+<meta property="og:title" content="RPG Glitch: the future is remixable">
+<meta property="og:description" content="An rpg-character glitching between versions of itself on an 80s CRT. Click for a new one, then share the link.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap">
+<style>
+/* DDD base palette and spacing; the scene itself uses its own CRT palette (cyan, magenta, yellow on near-black). */
+:root {
+  --ddd-theme-default-nittanyNavy: #001e44;
+  --ddd-theme-default-potentialMidnight: #000321;
+  --ddd-theme-default-limestoneGray: #a2aaad;
+  --ddd-theme-default-limestoneLight: #e4e5e7;
+  --ddd-theme-default-white: #ffffff;
+  --ddd-theme-default-skyBlue: #009cde;
+  --ddd-theme-default-keystoneYellow: #ffd100;
+  --ddd-font-primary: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+  --ddd-font-mono: "Roboto Mono", ui-monospace, Menlo, Consolas, monospace;
+  --ddd-spacing-2: 8px;
+  --ddd-spacing-3: 12px;
+  --ddd-spacing-4: 16px;
+  --ddd-spacing-6: 24px;
+  --ddd-radius-sm: 4px;
+  --ddd-radius-md: 8px;
+  --crt-bg: #0b0b12;
+  --crt-cyan: #22e4ff;
+  --crt-magenta: #ff2e88;
+  --page-bg: var(--ddd-theme-default-potentialMidnight);
+  --page-fg: var(--ddd-theme-default-limestoneLight);
+  --page-muted: var(--ddd-theme-default-limestoneGray);
+  --control-bg: #0d1630;
+  --control-border: #2a3a66;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--page-fg);
+  font-family: var(--ddd-font-primary);
+  line-height: 1.5;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-block: var(--ddd-spacing-6);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1 {
+  font-family: var(--ddd-font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 var(--ddd-spacing-4);
+  color: var(--ddd-theme-default-white);
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.screen {
+  position: relative;
+  border-radius: var(--ddd-radius-md);
+  overflow: hidden;
+  border: 2px solid var(--control-border);
+  background: var(--crt-bg);
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ddd-spacing-3);
+  align-items: center;
+  margin-top: var(--ddd-spacing-4);
+}
+.seed {
+  font-family: var(--ddd-font-mono);
+  font-size: 15px;
+  padding: var(--ddd-spacing-2) var(--ddd-spacing-3);
+  border-radius: var(--ddd-radius-sm);
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  color: var(--crt-cyan);
+}
+button, select, a.btn, label.toggle {
+  font: inherit;
+  font-size: 15px;
+  color: var(--page-fg);
+  background: var(--control-bg);
+  border: 1px solid var(--control-border);
+  border-radius: var(--ddd-radius-sm);
+  padding: var(--ddd-spacing-2) var(--ddd-spacing-3);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ddd-spacing-2);
+}
+button:hover, select:hover, a.btn:hover, label.toggle:hover { border-color: var(--crt-cyan); }
+button.primary {
+  background: var(--crt-magenta);
+  border-color: var(--crt-magenta);
+  color: var(--ddd-theme-default-white);
+  font-weight: 700;
+}
+:focus-visible {
+  outline: 3px solid var(--ddd-theme-default-keystoneYellow);
+  outline-offset: 2px;
+}
+.spacer { flex: 1; }
+.status { min-height: 1.5em; margin-top: var(--ddd-spacing-3); color: var(--page-muted); font-size: 14px; }
+footer { margin-top: var(--ddd-spacing-6); color: var(--page-muted); font-size: 14px; }
+footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
+</style>
+</head>
+<body>
+<main>
+  <h1>rpg_glitch</h1>
+  <div class="screen">
+    <canvas id="scene" width="1360" height="880" role="img" aria-label="Loading rpg-character"></canvas>
+  </div>
+  <div class="controls" aria-label="Character controls">
+    <button class="primary" id="remix" type="button">Remix</button>
+    <span class="seed" id="seedLabel">seed: btopro</span>
+    <label class="sr-only" for="preset">Costume</label>
+    <select id="preset"></select>
+    <label class="sr-only" for="pet">Pet</label>
+    <select id="pet"></select>
+    <label class="sr-only" for="expression">Mood</label>
+    <select id="expression"></select>
+    <label class="sr-only" for="pose">Pose</label>
+    <select id="pose"></select>
+    <label class="toggle"><input type="checkbox" id="fire"> On fire</label>
+    <button id="pause" type="button" aria-pressed="false">Pause glitch</button>
+    <span class="spacer"></span>
+    <button id="copy" type="button">Copy link</button>
+    <button id="embed" type="button">Copy HAX embed</button>
+    <button id="shareX" type="button">Share on X</button>
+    <button id="shareLinkedIn" type="button">Share on LinkedIn</button>
+    <a class="btn" id="rpgme" href="https://rpg-me.hax.cloud/">Edit in rpg-me</a>
+  </div>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <footer>
+    Click the screen or press Remix for a new character. Every character has its own link, and Copy HAX embed gives you <code>&lt;rpg-character code="…"&gt;</code> to drop the exact same character into any HAX page. Edit in <a href="https://github.com/haxtheweb/rpg-me">rpg-me</a> opens its base look.
+    Made for <a href="https://haxtheweb.org">HAXTheWeb</a> with the <a href="https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character">rpg-character</a> element's own art. Source: <a href="https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch">haxtheweb/art</a>.
+  </footer>
+</main>
+<script type="module">
+  /* ---------- character model: the element's own code and overlay modules ---------- */
+  import { encodeCharacter, decodeCharacter, codeSlots } from "./rpg-character/rpg-character-code.js";
+  import { skinColors, overlayColors, expressionArt, poseArt, armRegions, parseCells } from "./rpg-character/rpg-character-overlays.js";
+  import { seasonFor, seasonalPick } from "./rpg-character/rpg-character-seasons.js";
+
+  var ART = "rpg-character/";
+  var SHARE_TEXT = "Check out my glitched RPG character, brought to the world by";
+  var FUN_KEYS = { zpg: "7501517984378880262144", edtechjoker: "712215550", btopro: "7122155501" };
+  var CHAR_BUILDER = ["accessories", "base", "leg", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
+  // rpg-me's 8-digit seed order, and the hats its (older) rpg-character knows
+  var RPG_ME_ORDER = ["base", "face", "faceItem", "hair", "pants", "shirt", "skin", "hatColor"];
+  var RPG_ME_HATS = ["none", "party", "bunny", "coffee", "construction", "cowboy", "education", "knight", "ninja", "pirate", "watermelon"];
+  // Left out on purpose: the element's pop-culture archetype presets and their
+  // signature pieces. RPG Glitch sticks to HAX-original and generic looks.
+  // Keep in step with EXCLUDE in tools/sync-art.sh.
+  var EXCLUDED = {
+    preset: ["space-knight", "boy-wizard", "ghost-hunter", "time-scientist", "adventurer", "plumber", "miner", "elf-hero", "trainer", "vigilante", "web-hero", "hammer-god", "monster"],
+    hat: ["plumber-cap", "trainer-cap", "long-cap", "cowl", "winged-helmet", "flat-top", "wild-hair", "messy-hair"],
+    mask: ["block-head", "web"],
+    makeup: ["monster", "round-glasses"],
+    item: ["laser-sword-blue", "laser-sword-green", "laser-sword-red", "beam-wand", "capture-ball", "war-hammer", "whip"],
+    offhand: ["proton-pack"],
+    feet: ["hoverboard"]
+  };
+  // preset gear defaults, from rpg-character.js (allowed presets only)
+  var PRESETS = {
+    hockey: { hat: "hockey", item: "hockey-stick", feet: "skates" }, football: { hat: "football", item: "football" },
+    firefighter: { hat: "firefighter" }, police: { hat: "police" }, veteran: { hat: "military" }, nurse: { hat: "nurse" },
+    it: { item: "phone" }, doctor: { hat: "doctor" }, soda: { hat: "soda", item: "milkshake" },
+    knight: { hat: "knight", item: "sword", offhand: "shield" }, pirate: { hat: "pirate", item: "sword" }, graduate: { hat: "education" },
+    basketball: { hat: "headband", item: "basketball" }, baseball: { hat: "baseball", item: "baseball-bat" }, soccer: { item: "soccer-ball" },
+    tennis: { hat: "visor", item: "tennis-racket" }, golf: { hat: "visor", item: "golf-club" }, cycling: { hat: "bike-helmet" },
+    teacher: { item: "book" }, scientist: { hat: "goggles", item: "flask" }, chef: { hat: "chef", item: "spatula" },
+    farmer: { hat: "straw", item: "pitchfork" }, artist: { hat: "beret", item: "paintbrush", offhand: "palette" }, musician: { item: "guitar" },
+    mail: { hat: "mail", item: "envelope" }, pilot: { hat: "pilot" }, astronaut: { hat: "astronaut" },
+    construction: { hat: "construction", item: "hammer" }, wizard: { hat: "wizard", item: "wand", makeup: "white-beard" },
+    superhero: { makeup: "domino" }, robot: { hat: "robot" }, dinosaur: { hat: "dino" }, ninja: { hat: "ninja", item: "sword" },
+    witch: { hat: "witch", item: "broom" }, vampire: { makeup: "fangs" }, mummy: { mask: "mummy" }, skeleton: { makeup: "skull" },
+    ghost: { mask: "ghost" }, pumpkin: { mask: "pumpkin", item: "candy-bucket" }, zombie: { makeup: "zombie" },
+    santa: { hat: "santa", item: "sack", makeup: "white-beard" }, elf: { hat: "elf", item: "candy-cane" },
+    reindeer: { hat: "antlers", makeup: "red-nose" }, snowman: { hat: "top-hat", makeup: "carrot" },
+    "easter-bunny": { hat: "bunny", item: "basket", makeup: "bunny" }, colonial: { hat: "tricorn", item: "sword" },
+    reaper: { hat: "hood", item: "scythe", makeup: "skull" }, wrestler: { mask: "wrestler", item: "champ-belt" },
+    werewolf: { mask: "werewolf" }, horseman: { mask: "shadow", item: "jack-o-lantern" }, mascot: { mask: "lion" },
+    band: { hat: "shako", item: "trumpet" }
+  };
+  var PERCHED = ["parrot", "owl", "bat"];
+  var COSTUME_HATS = ["helmet", "astronaut", "wizard", "witch", "robot", "dino", "santa", "elf", "antlers", "tricorn", "wig", "hood", "shako", "edit", "error", "good", "warning"];
+  var SLOT = {};
+  codeSlots.forEach(function (s) { SLOT[s.name] = s; });
+  function allowed(name) {
+    return SLOT[name].values.filter(function (v) { return v !== "none" && v !== "random" && (EXCLUDED[name] || []).indexOf(v) === -1; });
+  }
+  var LIST = {};
+  ["preset", "hat", "mask", "makeup", "item", "offhand", "feet", "pet", "expression", "pose"].forEach(function (n) { LIST[n] = allowed(n); });
+  var RANDOM_HATS = LIST.hat.filter(function (h) { return COSTUME_HATS.indexOf(h) === -1; });
+
+  function rnd(n) { return Math.floor(Math.random() * n); }
+  function pick(list) { return list[rnd(list.length)]; }
+  function label(v) { return v === "it" ? "IT" : v === "none" ? "none" : (v.charAt(0).toUpperCase() + v.slice(1)).replace(/-/g, " "); }
+  function blank() {
+    var c = { flagText: "" };
+    codeSlots.forEach(function (s) { c[s.name] = s.values[0]; });
+    return c;
+  }
+  function clone(c) { var o = {}; for (var k in c) { o[k] = c[k]; } return o; }
+  // drop anything excluded, and resolve hat "random" the way the element does
+  function sanitize(c) {
+    Object.keys(EXCLUDED).forEach(function (n) { if (EXCLUDED[n].indexOf(c[n]) !== -1) { c[n] = "none"; } });
+    if (c.hat === "random") { c.hat = pick(RANDOM_HATS); }
+    if (PRESETS[c.preset] === undefined) { c.preset = "none"; }
+    return c;
+  }
+  function clampTrait(k, v) {
+    v = parseInt(v, 10);
+    if (isNaN(v) || v < 0) { v = 0; }
+    if (k === "base") { return v >= 1 ? 1 : 0; }
+    if (k === "face") { return v > 5 ? 5 : v; }
+    return v > 9 ? 9 : v;
+  }
+  // rpg-character's traitsFromSeed(), for word seeds like "btopro"
+  function fromWord(word) {
+    var s = 54;
+    for (var i = 0; i < word.length && i < 64; i++) { s *= word.charCodeAt(i); }
+    var d = FUN_KEYS[word] || BigInt(s).toString(), c = blank();
+    CHAR_BUILDER.forEach(function (k, i) {
+      if (k === "leg") { return; }
+      var v = d[i] !== undefined ? parseInt(d[i], 10) : 0;
+      if (k === "base") { c[k] = v >= 5 ? 1 : 0; }
+      else if (k === "face") { c[k] = v > 5 ? 1 : v; }
+      else { c[k] = v; }
+    });
+    c.word = word;
+    return c;
+  }
+  // rpg-me's numeric seed: one digit per trait, left-padded to 8
+  function fromDigits(seed) {
+    var p = seed.padStart(8, "0").slice(0, 8), c = blank();
+    RPG_ME_ORDER.forEach(function (k, i) { c[k] = clampTrait(k, p[i]); });
+    return c;
+  }
+  function digits(c) { return RPG_ME_ORDER.map(function (k) { return c[k]; }).join(""); }
+  // a word seed with nothing added keeps its friendly link (?seed=btopro)
+  function plainWord(c) {
+    if (!c.word) { return false; }
+    var w = fromWord(c.word), same = true;
+    codeSlots.forEach(function (s) { if (s.name !== "hat" && s.name !== "fire" && c[s.name] !== w[s.name]) { same = false; } });
+    return same && RPG_ME_HATS.indexOf(c.hat) !== -1;
+  }
+  var HASH_CODE = /^#(\d+-[0-9a-z]*)$/i;
+  function fromHash(hash) {
+    var m = HASH_CODE.exec(hash || "");
+    var c = m ? decodeCharacter(m[1]) : null;
+    return c ? sanitize(c) : null;
+  }
+  function hashCode(c) { var h = clone(c); h.flagText = ""; return encodeCharacter(h); }
+  function fromQuery(search) {
+    var q = new URLSearchParams(search), c = null;
+    if (q.has("code")) {
+      c = decodeCharacter(q.get("code"));
+    } else if (q.has("seed") && q.get("seed").trim()) {
+      var seed = q.get("seed").trim();
+      if (/^\d+$/.test(seed)) {
+        c = fromDigits(seed);
+        if (q.has("accessories")) { c.accessories = clampTrait("accessories", q.get("accessories")); }
+      } else {
+        c = fromWord(seed.slice(0, 64));
+      }
+      if (q.has("hat")) { c.hat = SLOT.hat.values.indexOf(q.get("hat")) !== -1 ? q.get("hat") : "none"; }
+      c.fire = q.get("fire") === "true";
+    }
+    return c ? sanitize(c) : null;
+  }
+  function query(c) {
+    var p = new URLSearchParams();
+    if (plainWord(c)) {
+      p.set("seed", c.word);
+      if (c.hat !== "none") { p.set("hat", c.hat); }
+      if (c.fire) { p.set("fire", "true"); }
+    } else {
+      p.set("code", encodeCharacter(c));
+    }
+    return p.toString();
+  }
+  function shareURL(c) { return location.origin + location.pathname + "?" + query(c); }
+  // rpg-me only knows the 8 digits, its 10 hats and fire, so this link is the base look
+  function rpgMeURL(c) {
+    var p = new URLSearchParams(), h = gear(c, "hat");
+    p.set("seed", digits(c));
+    p.set("hat", RPG_ME_HATS.indexOf(h) !== -1 ? h : "none");
+    if (c.fire) { p.set("fire", "true"); }
+    return "https://rpg-me.hax.cloud/?" + p.toString();
+  }
+  function embed(c) { return '<rpg-character code="' + encodeCharacter(c) + '"></rpg-character>'; }
+
+  /* the element's rules: explicit choice wins, then the preset, then the season */
+  function season(c) { return c.seasonal ? seasonFor(new Date()) : null; }
+  function effPreset(c) {
+    if (c.preset !== "none") { return c.preset; }
+    var s = season(c);
+    if (s && s.preset) {
+      var p = seasonalPick(s.preset, encodeCharacter(c));
+      return PRESETS[p] ? p : "none";
+    }
+    return "none";
+  }
+  function gear(c, slot) {
+    if (c[slot] && c[slot] !== "none") { return c[slot]; }
+    var p = PRESETS[effPreset(c)];
+    if (p && p[slot]) { return p[slot]; }
+    var s = season(c);
+    if (s && s.hat && slot === "hat") { return seasonalPick(s.hat, encodeCharacter(c)); }
+    return "none";
+  }
+  // rpg-character render() draw order, as image / clipped image / cell / text ops
+  function ops(c) {
+    var preset = effPreset(c), hasPreset = preset !== "none";
+    var shaved = !!c.shaved || !!(hasPreset && PRESETS[preset].shaved);
+    var makeup = gear(c, "makeup"), hat = gear(c, "hat"), item = gear(c, "item");
+    var offhand = gear(c, "offhand"), feet = gear(c, "feet"), mask = gear(c, "mask");
+    if (c.fire && hat === "none") { hat = "coffee"; }
+    var hide = c.pose !== "none" ? poseArt[c.pose].hide : [];
+    var list = [];
+    function img(path, clip) { list.push({ img: path, hide: clip ? hide : [] }); }
+    img("skin/" + c.skin, true);
+    if (c.base === 1 && !shaved) { img("hair/" + c.hair); }
+    img(makeup !== "none" ? "makeup/" + makeup : "face/" + c.face);
+    img("faceItem/" + c.faceItem);
+    img("shirt/" + (hasPreset ? preset : c.shirt), true);
+    img("pants/" + (hasPreset ? preset : c.pants));
+    img("accessories/" + c.accessories);
+    img("base/" + (shaved ? "shaved" : c.base), true);
+    if (c.expression !== "none") { list.push({ cells: expressionArt[c.expression] }); }
+    if (feet !== "none") { img("feet/" + feet); }
+    if (c.pet !== "none" && PERCHED.indexOf(c.pet) === -1) { img("pet/" + c.pet); }
+    if (offhand !== "none" && hide.indexOf("left") === -1) { img("offhand/" + offhand); }
+    img(shaved ? "scalp/" + c.skin : "hatColor/" + c.hatColor);
+    if (c.fire) { img("base/fire"); }
+    if (mask !== "none") { img("mask/" + mask); }
+    if (hat !== "none") { img("hat/" + hat); }
+    if (c.pose !== "none") { list.push({ cells: poseArt[c.pose].cells }); }
+    if (c.pet !== "none" && PERCHED.indexOf(c.pet) !== -1) { img("pet/" + c.pet); }
+    if (item !== "none" && hide.indexOf("right") === -1) {
+      img("item/" + item);
+      if (item === "flag" && c.flagText) { list.push({ flag: c.flagText.substring(0, 4) }); }
+    }
+    return list;
+  }
+  function randomCharacter() {
+    var c = blank();
+    ["skin", "hair", "hatColor", "faceItem", "accessories", "shirt", "pants"].forEach(function (k) { c[k] = rnd(10); });
+    c.base = rnd(2);
+    c.face = rnd(6);
+    dress(c);
+    return c;
+  }
+  // a random look: a costume (seasonal ones more often in season) or a freestyle mix
+  function dress(c) {
+    ["preset", "hat", "mask", "makeup", "item", "offhand", "feet", "pet", "expression", "pose"].forEach(function (n) { c[n] = "none"; });
+    c.fire = false; c.shaved = false; c.flagText = "";
+    var s = seasonFor(new Date()), r = Math.random();
+    if (s && s.preset && r < 0.25) { c.preset = pick(s.preset); }
+    else if (r < 0.6) { c.preset = pick(LIST.preset); }
+    else {
+      if (Math.random() < 0.75) { c.hat = pick(RANDOM_HATS); }
+      if (Math.random() < 0.55) { c.item = pick(LIST.item); }
+      if (Math.random() < 0.12) { c.mask = pick(LIST.mask); }
+      if (Math.random() < 0.18) { c.makeup = pick(LIST.makeup); }
+      if (Math.random() < 0.12) { c.offhand = pick(LIST.offhand); }
+      if (Math.random() < 0.1) { c.feet = pick(LIST.feet); }
+      if (Math.random() < 0.05) { c.shaved = true; }
+      if (c.item === "flag") { c.flagText = "HAX"; }
+    }
+    if (Math.random() < 0.35) { c.pet = pick(LIST.pet); }
+    if (Math.random() < 0.45) { c.expression = pick(LIST.expression); }
+    if (Math.random() < 0.18) { c.pose = pick(LIST.pose); }
+    if (Math.random() < 0.08) { c.fire = true; }
+    return c;
+  }
+
+  /* ---------- sprite building ---------- */
+  var IMG = {};
+  function load(p) {
+    if (IMG[p]) { return Promise.resolve(); }
+    return new Promise(function (resolve) {
+      var i = new Image();
+      i.onload = function () { IMG[p] = i; resolve(); };
+      i.onerror = resolve;
+      // single-file builds inline the art as window.RPG_ART
+      i.src = window.RPG_ART && window.RPG_ART[p] ? "data:image/svg+xml;charset=utf-8," + encodeURIComponent(window.RPG_ART[p]) : ART + p + ".svg";
+    });
+  }
+  function canvas(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; return c; }
+  function tint(src, col) {
+    var c = canvas(113, 142), g = c.getContext("2d");
+    g.drawImage(src, 0, 0);
+    g.globalCompositeOperation = "source-in";
+    g.fillStyle = col;
+    g.fillRect(0, 0, 113, 142);
+    return c;
+  }
+  var clipC = canvas(113, 142), clipG = clipC.getContext("2d");
+  function sprite(c) {
+    var list = ops(c);
+    return Promise.all(list.filter(function (o) { return o.img; }).map(function (o) { return load(o.img); })).then(function () {
+      var n = canvas(113, 142), g = n.getContext("2d"), skin = skinColors[Number(c.skin)] || skinColors[0];
+      g.imageSmoothingEnabled = false;
+      list.forEach(function (o) {
+        if (o.img) {
+          if (!IMG[o.img]) { return; }
+          if (o.hide.length) {
+            clipG.clearRect(0, 0, 113, 142);
+            clipG.drawImage(IMG[o.img], 0, 0, 113, 142);
+            o.hide.forEach(function (side) { var r = armRegions[side]; clipG.clearRect(r[0], r[1], r[2], r[3]); });
+            g.drawImage(clipC, 0, 0);
+          } else {
+            g.drawImage(IMG[o.img], 0, 0, 113, 142);
+          }
+        } else if (o.cells) {
+          parseCells(o.cells).forEach(function (cell) {
+            g.fillStyle = cell[2] === "S" ? skin : overlayColors[cell[2]];
+            g.fillRect(3 + 5 * cell[1], 2 + 5 * cell[0], 5, 5);
+          });
+        } else if (o.flag) {
+          g.save();
+          g.fillStyle = "#ffffff";
+          g.font = "bold 8px 'Roboto Mono', monospace";
+          g.textAlign = "center";
+          g.fillText(o.flag, 103, 29, Math.min(o.flag.length * 5, 18));
+          g.restore();
+        }
+      });
+      return { n: n, cy: tint(n, "#22e4ff"), mg: tint(n, "#ff2e88") };
+    });
+  }
+
+  /* ---------- scene ---------- */
+  var C = document.getElementById("scene"), x = C.getContext("2d");
+  var W = 680, H = 440, S = C.width / W, R = Math.random;
+  var GLITCH_MS = 300, HOLD_MS = 4200;
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var paused = reduceMotion;
+  var ch = null, cur = null, prv = null, err = null, alts = [], pending = null, gT = -1e9, settle = true;
+
+  var bg = canvas(C.width, C.height);
+  (function paintBackground() {
+    var b = bg.getContext("2d");
+    b.scale(S, S);
+    b.fillStyle = "#0b0b12"; b.fillRect(0, 0, W, H);
+    var stars = ["#f4f4f8", "#22e4ff", "#f5e663", "#ff2e88"];
+    for (var i = 0; i < 110; i++) { b.fillStyle = stars[i % 4]; var s = i % 7 ? 2 : 4; b.fillRect((i * 137) % W, (i * 71) % 250, s, s); }
+    b.fillStyle = "#ff2e88";
+    for (var y = 0; y < 90; y += 6) { var w = Math.sqrt(Math.max(0, 8100 - (90 - y) * (90 - y))); b.fillRect(340 - w, 150 + y, w * 2, y % 12 ? 4 : 2); }
+    for (var a = 0; a < W; a += 8) { var h1 = 120 + 45 * Math.sin(a * 0.013) + 25 * Math.sin(a * 0.05); b.fillStyle = "#13132a"; b.fillRect(a, 330 - h1, 8, h1); }
+    for (var a2 = 0; a2 < W; a2 += 8) { var h2 = 60 + 30 * Math.sin(a2 * 0.021 + 2) + 15 * Math.sin(a2 * 0.09); b.fillStyle = "#1d1d3d"; b.fillRect(a2, 330 - h2, 8, h2); }
+    b.fillStyle = "#140a22"; b.fillRect(0, 330, W, 110);
+    b.fillStyle = "#ff2e88"; b.fillRect(0, 329, W, 2);
+    b.strokeStyle = "rgba(255,46,136,0.5)"; b.lineWidth = 1;
+    for (var k = 1; k < 10; k++) { var gy = 330 + k * k * 1.2; if (gy > H) { break; } b.beginPath(); b.moveTo(0, gy); b.lineTo(W, gy); b.stroke(); }
+    for (var v = -14; v <= 14; v++) { b.beginPath(); b.moveTo(340 + v * 12, 330); b.lineTo(340 + v * 95, H); b.stroke(); }
+  })();
+  var scan = canvas(C.width, C.height);
+  (function paintScanlines() {
+    var g = scan.getContext("2d");
+    g.fillStyle = "rgba(0,0,0,0.38)";
+    for (var y = 0; y < C.height; y += 3 * S) { g.fillRect(0, y, C.width, S); }
+  })();
+  var tmp = canvas(C.width, C.height), tg = tmp.getContext("2d");
+  var pc = canvas(113, 142), pg = pc.getContext("2d");
+  function grab() { tg.clearRect(0, 0, tmp.width, tmp.height); tg.drawImage(C, 0, 0); }
+  function copy(sx, sy, sw, sh, dx, dy) {
+    if (sw <= 0 || sh <= 0) { return; }
+    x.drawImage(tmp, sx * S, sy * S, sw * S, sh * S, dx, dy, sw, sh);
+  }
+  function pixelate(src, block) {
+    var w = Math.max(4, Math.round(113 / block)), h = Math.max(5, Math.round(142 / block));
+    pg.imageSmoothingEnabled = true;
+    pg.clearRect(0, 0, 113, 142);
+    pg.drawImage(src, 0, 0, w, h);
+    return [w, h];
+  }
+  function caption(jitter) {
+    x.textAlign = "center";
+    x.font = "bold 32px 'Roboto Mono', ui-monospace, Menlo, Consolas, monospace";
+    [["#22e4ff", -2 - jitter], ["#ff2e88", 2 + jitter], ["#f4f4f8", 0]].forEach(function (l) {
+      x.fillStyle = l[0]; x.fillText("hax_the_web", 340 + l[1], 392);
+    });
+    x.font = "15px 'Roboto Mono', ui-monospace, Menlo, Consolas, monospace";
+    x.fillStyle = "#22e4ff";
+    x.fillText("// the future is remixable", 340, 420);
+    x.textAlign = "left";
+  }
+  function frame(now) {
+    var e = now - gT;
+    if (pending && e >= GLITCH_MS) { gT = now - GLITCH_MS + 40; e = GLITCH_MS - 40; }
+    var gl = !paused && e >= 0 && e < GLITCH_MS;
+    var p = Math.min(1, Math.max(0, e / GLITCH_MS)), k = gl ? 1 - p * 0.6 : 0;
+    if (!paused && ch && !pending && e > HOLD_MS) { echo(); }
+    x.setTransform(S, 0, 0, S, 0, 0);
+    x.imageSmoothingEnabled = false;
+    x.drawImage(bg, 0, 0, W, H);
+    var sc = 2, w = 113 * sc, h = 142 * sc, sx = 227, sy = 52;
+    if (cur) {
+      var to = cur, from = settle ? (prv || cur) : cur;
+      if (!gl) {
+        x.globalAlpha = 0.35; x.drawImage(to.cy, sx - 2, sy, w, h); x.drawImage(to.mg, sx + 2, sy, w, h);
+        x.globalAlpha = 1; x.drawImage(to.n, sx, sy, w, h);
+      } else if (R() < 0.3) {
+        var pick = R() < p ? to : (settle ? from : alts[rnd(alts.length)] || to);
+        var d = pixelate(pick.n, 3 + Math.floor(R() * 8 * k));
+        x.globalAlpha = 0.7; x.drawImage(pc, 0, 0, d[0], d[1], sx - 12 * k, sy, w, h);
+        x.globalAlpha = 1; x.drawImage(pc, 0, 0, d[0], d[1], sx + (R() - 0.5) * 40 * k, sy, w, h);
+      } else {
+        var yy = 0;
+        while (yy < 142) {
+          var sh = Math.min(142 - yy, 3 + Math.floor(R() * 16));
+          var src;
+          if (err && R() < 0.15) { src = err; }
+          else if (R() < p) { src = to; }
+          else { src = settle ? from : (alts[rnd(alts.length)] || to); }
+          var dx = (R() - 0.5) * 180 * k, sp = 6 + 28 * k;
+          x.globalAlpha = 0.75;
+          x.drawImage(src.cy, 0, yy, 113, sh, sx + dx - sp, sy + yy * sc, w, sh * sc);
+          x.drawImage(src.mg, 0, yy, 113, sh, sx + dx + sp, sy + yy * sc, w, sh * sc);
+          x.globalAlpha = 1;
+          x.drawImage(src.n, 0, yy, 113, sh, sx + dx, sy + yy * sc, w, sh * sc);
+          yy += sh;
+        }
+      }
+    }
+    caption(gl ? Math.floor(k * 8) : 0);
+    if (gl) {
+      grab();
+      var tears = 3 + Math.floor(R() * 7 * k);
+      for (var i = 0; i < tears; i++) { var ty = Math.floor(R() * H), th = 2 + Math.floor(R() * 36 * k); copy(0, ty, W, Math.min(th, H - ty), (R() - 0.5) * 140 * k, ty); }
+      var blocks = Math.floor(R() * 6 * k);
+      for (var j = 0; j < blocks; j++) { var bw = 20 + R() * 110, bh = 6 + R() * 36, ax = R() * (W - bw), ay = R() * (H - bh); copy(ax, ay, bw, bh, ax + (R() - 0.5) * 160, ay + (R() - 0.5) * 40); }
+      if (R() < 0.3) { x.globalCompositeOperation = "difference"; x.fillStyle = R() < 0.5 ? "#22e4ff" : "#ff2e88"; x.fillRect(0, R() * H, W, 8 + R() * 50); x.globalCompositeOperation = "source-over"; }
+      for (var n = 0; n < 1600 * k; n++) { var gr = Math.floor(R() * 255); x.fillStyle = "rgba(" + gr + "," + gr + "," + gr + ",0.55)"; x.fillRect(R() * W, R() * H, 2, 2); }
+      var lines = 2 + Math.floor(R() * 4);
+      for (var l = 0; l < lines; l++) { var ly = R() * H; x.fillStyle = "rgba(34,228,255,0.5)"; x.fillRect(-3, ly, W, 2); x.fillStyle = "rgba(255,46,136,0.5)"; x.fillRect(3, ly + 1, W, 2); x.fillStyle = "rgba(255,255,255,0.7)"; x.fillRect(0, ly, W, 2); }
+    }
+    if (!paused) { var ry = (now / 30) % (H + 90) - 45; x.fillStyle = "rgba(255,255,255,0.035)"; x.fillRect(0, ry, W, 45); }
+    x.drawImage(scan, 0, 0, W, H);
+    x.fillStyle = "rgba(0,0,0,0.3)"; x.fillRect(0, 0, W, 6); x.fillRect(0, H - 6, W, 6); x.fillRect(0, 0, 6, H); x.fillRect(W - 6, 0, 6, H);
+  }
+
+  /* ---------- state changes ---------- */
+  var seedLabel = document.getElementById("seedLabel"), status = document.getElementById("status"), rpgme = document.getElementById("rpgme");
+  var pickers = { preset: document.getElementById("preset"), pet: document.getElementById("pet"), expression: document.getElementById("expression"), pose: document.getElementById("pose") };
+  var PICK_NAMES = { preset: "Costume", pet: "Pet", expression: "Mood", pose: "Pose" };
+  Object.keys(pickers).forEach(function (n) {
+    ["none"].concat(LIST[n]).forEach(function (v) {
+      var o = document.createElement("option");
+      o.value = v;
+      o.textContent = PICK_NAMES[n] + ": " + label(v);
+      pickers[n].appendChild(o);
+    });
+  });
+  var fireBox = document.getElementById("fire");
+  // inside someone else's frame (a preview, an embed) our own URL isn't shareable,
+  // so keep the HAX embed code and hide the link buttons
+  var framed = false;
+  try { framed = window.self !== window.top; } catch (e) { framed = true; }
+  if (framed) {
+    ["copy", "shareX", "shareLinkedIn"].forEach(function (id) { document.getElementById(id).hidden = true; });
+  }
+
+  function describe(c) {
+    var parts = ["rpg-character"], p = effPreset(c), hat = gear(c, "hat"), item = gear(c, "item");
+    if (p !== "none") { parts.push(label(p).toLowerCase() + " costume"); }
+    else if (hat !== "none") { parts.push(label(hat).toLowerCase() + " hat"); }
+    if (item !== "none" && (c.pose === "none" || poseArt[c.pose].hide.indexOf("right") === -1)) { parts.push("holding " + label(item).toLowerCase()); }
+    if (c.pet !== "none") { parts.push("with a pet " + c.pet); }
+    if (c.expression !== "none") { parts.push(c.expression); }
+    if (c.pose !== "none") { parts.push(c.pose === "wave" ? "waving" : "cheering"); }
+    if (c.fire) { parts.push("on fire"); }
+    return parts.join(", ");
+  }
+  function syncUI(c) {
+    seedLabel.textContent = plainWord(c) ? "seed: " + c.word : "code: " + encodeCharacter(c);
+    Object.keys(pickers).forEach(function (n) { pickers[n].value = c[n]; });
+    fireBox.checked = !!c.fire;
+    rpgme.href = rpgMeURL(c);
+    C.setAttribute("aria-label", describe(c) + ". Activate to remix.");
+    if (!framed) { history.replaceState(null, "", "?" + query(c)); }
+    else if (location.hash !== "#" + hashCode(c)) { location.replace("#" + hashCode(c)); }
+  }
+  // other looks for the same character, for the idle glitch
+  function loadAlts(c) {
+    var looks = [dress(clone(c)), dress(clone(c))];
+    looks.forEach(function (l) { delete l.word; ["base", "skin", "hair", "hatColor", "face", "faceItem", "accessories", "shirt", "pants"].forEach(function (k) { l[k] = c[k]; }); });
+    Promise.all(looks.map(sprite)).then(function (s) { if (ch === c) { alts = s; } });
+    var e = clone(c);
+    e.preset = "none"; e.mask = "none"; e.hat = "error";
+    sprite(e).then(function (s) { if (ch === c) { err = s; } });
+  }
+  // glitch into a new character (or a changed look)
+  function become(c, announce) {
+    settle = true;
+    gT = performance.now();
+    var job = sprite(c).then(function (s) {
+      if (pending !== job) { return; }
+      prv = cur; cur = s; ch = c; pending = null;
+      alts = []; loadAlts(c);
+      if (paused) { frame(gT + GLITCH_MS + 10); }
+    });
+    pending = job;
+    syncUI(c);
+    if (announce) { status.textContent = "New character: " + describe(c) + "."; }
+  }
+  // periodic glitch through other looks of the same character, landing back on it
+  function echo() {
+    settle = false;
+    gT = performance.now();
+  }
+  function remix() { become(randomCharacter(), true); }
+  function change(fn) {
+    if (!ch) { return; }
+    var c = clone(ch);
+    fn(c);
+    become(sanitize(c), true);
+  }
+
+  C.addEventListener("click", remix);
+  document.getElementById("remix").addEventListener("click", remix);
+  // picking a costume clears hand-picked gear so the costume shows as designed
+  pickers.preset.addEventListener("change", function () {
+    change(function (c) {
+      c.preset = pickers.preset.value;
+      ["hat", "mask", "makeup", "item", "offhand", "feet"].forEach(function (n) { c[n] = "none"; });
+      c.flagText = "";
+    });
+  });
+  ["pet", "expression", "pose"].forEach(function (n) {
+    pickers[n].addEventListener("change", function () { change(function (c) { c[n] = pickers[n].value; }); });
+  });
+  fireBox.addEventListener("change", function () { change(function (c) { c.fire = fireBox.checked; }); });
+  var pauseBtn = document.getElementById("pause");
+  function setPaused(v) {
+    paused = v;
+    pauseBtn.setAttribute("aria-pressed", v ? "true" : "false");
+    pauseBtn.textContent = v ? "Play glitch" : "Pause glitch";
+    if (v) { frame(gT + GLITCH_MS + 10); } else { requestAnimationFrame(loop); }
+  }
+  pauseBtn.addEventListener("click", function () { setPaused(!paused); });
+  function copyText(t) {
+    if (navigator.clipboard && navigator.clipboard.writeText) { return navigator.clipboard.writeText(t); }
+    return Promise.reject(new Error("no clipboard"));
+  }
+  document.getElementById("copy").addEventListener("click", function () {
+    var u = shareURL(ch);
+    copyText(u).then(function () { status.textContent = "Link copied."; }, function () { status.textContent = "Copy this link: " + u; });
+  });
+  document.getElementById("embed").addEventListener("click", function () {
+    var t = embed(ch);
+    copyText(t).then(function () { status.textContent = "Copied " + t + " for any HAX page."; }, function () { status.textContent = "Copy this: " + t; });
+  });
+  document.getElementById("shareX").addEventListener("click", function () {
+    window.open("https://x.com/intent/tweet?text=" + encodeURIComponent(SHARE_TEXT + " @HAXTheWeb") + "&url=" + encodeURIComponent(shareURL(ch)), "_blank", "noopener");
+  });
+  document.getElementById("shareLinkedIn").addEventListener("click", function () {
+    window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(shareURL(ch)), "_blank", "noopener");
+  });
+
+  var manual = false;
+  function loop(t) {
+    if (paused || manual) { return; }
+    frame(t);
+    requestAnimationFrame(loop);
+  }
+  var start = fromHash(location.hash) || fromQuery(location.search) || fromWord("btopro");
+  window.addEventListener("hashchange", function () {
+    var c = fromHash(location.hash);
+    if (c && (!ch || hashCode(c) !== hashCode(ch))) { become(c, true); }
+  });
+  pauseBtn.textContent = paused ? "Play glitch" : "Pause glitch";
+  pauseBtn.setAttribute("aria-pressed", paused ? "true" : "false");
+  become(start, false);
+  if (paused) { frame(0); } else { requestAnimationFrame(loop); }
+  // expose for the media renderer in tools/
+  window.rpgGlitch = {
+    ready: function () { return !!cur && !pending && alts.length > 0 && !!err; },
+    becomeFromQuery: function (qs) { var c = fromQuery(qs); if (c) { become(c, false); } },
+    // spec: { seed: "zpg", preset: "pirate", pet: "parrot", ... } onto a word seed (or blank)
+    becomeFrom: function (spec) {
+      var c = spec.seed ? fromWord(spec.seed) : blank();
+      Object.keys(spec).forEach(function (k) { if (k !== "seed") { c[k] = spec[k]; } });
+      become(sanitize(c), false);
+    },
+    remix: remix,
+    // take over the clock: render the scene at a given offset (ms) into a glitch
+    manual: function () { manual = true; },
+    glitch: function (echoOnly) { if (echoOnly) { echo(); } gT = performance.now(); return gT; },
+    renderAt: function (offset) { frame(gT + offset); },
+    url: function () { return shareURL(ch); }
+  };
+</script>
+</body>
+</html>

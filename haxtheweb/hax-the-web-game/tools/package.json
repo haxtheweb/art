@@ -1,0 +1,25 @@
+{
+  "name": "hax-the-web-game-tools",
+  "private": true,
+  "type": "module",
+  "description": "Builds ../index.html from template.html, the HAX web components and the rpg-character art, and renders the stills in ../media.",
+  "scripts": {
+    "build": "node build.mjs",
+    "stills": "node stills.mjs",
+    "all": "node build.mjs && node stills.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/press-start-2p": "^5.3.0",
+    "@fontsource/roboto": "^5.3.0",
+    "@fontsource/roboto-condensed": "^5.3.0",
+    "@fontsource/roboto-slab": "^5.3.0",
+    "@haxtheweb/accent-card": "^26.8.0",
+    "@haxtheweb/d-d-d": "^26.8.0",
+    "@haxtheweb/rpg-character": "^26.8.0",
+    "@haxtheweb/simple-cta": "^26.8.0",
+    "@haxtheweb/simple-fields": "^26.8.0",
+    "@haxtheweb/simple-icon": "^26.8.0",
+    "esbuild": "^0.25.0",
+    "playwright": "^1.50.0"
+  }
+}
