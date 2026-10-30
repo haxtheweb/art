@@ -1,0 +1,26 @@
+id: item-c0a9ecce-e36e-41a5-8e3d-a07c09030a6b
+indent: 1
+location: pages/item-c0a9ecce-e36e-41a5-8e3d-a07c09030a6b/index.yaml
+slug: web-inar-banner
+order: 38
+parent: item-6bb46355-c148-45e1-bc29-54005eff5e86
+title: h-a-x THE WEB-INAR banner
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg
+  tags: banner
+  created: 1793378714
+  updated: 1793378714
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg"
+  alt="Event banner: h-a-x THE WEB-INAR in white pixel letters between pixel
+  braces on a dark hexagon pattern."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX
+  Eventbrite.jpg">View on GitHub</a></li></ul>

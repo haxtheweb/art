@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-d0987399-ac75-4613-8bed-162fa4b43f8e</id>
+<indent>1</indent>
+<location>pages/item-d0987399-ac75-4613-8bed-162fa4b43f8e/index.xml</location>
+<slug>hax-the-web-intro</slug>
+<order>44</order>
+<parent>item-f0457acd-869a-4b57-9a23-764a6b8982f7</parent>
+<title>HAX The Web opening titles</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-the-web-intro/media/stills/title-lock.jpg</image>
+<tags>interactive</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-the-web-intro/media/stills/title-lock.jpg" alt="HAX / THE / WEB in red neon pixel letters, with a light bar over the A and bars flanking THE."></media-image>
+<p>A 30-second neon title sequence. Credits tell the HAX story from a napkin in 2015 to hundreds of courses while red neon letters drift by, then lock into the HAX / THE / WEB mark. Play, pause, scrub, or read every credit as text.</p>
+<p><em>A fan homage to the synth-scored opening titles of a 1980s-set TV series. The letters, credits and type are HAX's own.</em></p>
+<simple-cta link="https://haxtheweb.github.io/art/presentation-materials/hax-the-web-intro/" label="Watch the opening titles"></simple-cta>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-the-web-intro">Files, alt text and credits on GitHub</a></li></ul>]]></content>
+</item>

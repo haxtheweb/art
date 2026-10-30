@@ -1,0 +1,18 @@
+{
+  "id": "item-a5cd5f8a-d403-42f3-bce0-75d9d5cca639",
+  "indent": 1,
+  "location": "pages/item-a5cd5f8a-d403-42f3-bce0-75d9d5cca639/index.json",
+  "slug": "by-the-numbers",
+  "order": 46,
+  "parent": "item-f0457acd-869a-4b57-9a23-764a6b8982f7",
+  "title": "HAX by the numbers",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/3.png",
+    "tags": "diagram",
+    "created": 1793378714,
+    "updated": 1793378714
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/3.png\" alt=\"HAX by the numbers, 2015 to 2025: six colored icons with counts, including 675, 53, 29, 44, 247, 567, 67,515 and 14.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/3.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/presentation-materials/3.png\">View on GitHub</a></li></ul>"
+}

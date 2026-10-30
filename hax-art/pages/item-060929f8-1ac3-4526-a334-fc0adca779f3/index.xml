@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-060929f8-1ac3-4526-a334-fc0adca779f3</id>
+<indent>1</indent>
+<location>pages/item-060929f8-1ac3-4526-a334-fc0adca779f3/index.xml</location>
+<slug>hax-wordmark</slug>
+<order>33</order>
+<parent>item-6bb46355-c148-45e1-bc29-54005eff5e86</parent>
+<title>h-a-x THE WEB wordmark</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png</image>
+<tags>logo</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png" alt="The h-a-x THE WEB wordmark in black pixel letters between pixel curly braces."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/2019-08-14_13-05-52.png">View on GitHub</a></li></ul>]]></content>
+</item>

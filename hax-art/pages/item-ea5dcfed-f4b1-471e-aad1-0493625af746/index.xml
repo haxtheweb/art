@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-ea5dcfed-f4b1-471e-aad1-0493625af746</id>
+<indent>1</indent>
+<location>pages/item-ea5dcfed-f4b1-471e-aad1-0493625af746/index.xml</location>
+<slug>rpg-glitch</slug>
+<order>27</order>
+<parent>item-968e0c8f-d6d6-4f32-ab30-3d86af75fe1c</parent>
+<title>RPG Glitch</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch.gif</image>
+<tags>interactive</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch.gif" alt="A pixel rpg-character on an 80s CRT over a synthwave grid, tearing into cyan and magenta slices and reassembling in a new costume, captioned hax_the_web, the future is remixable."></media-image>
+<p>The rpg-character on an 80s CRT, glitching between versions of itself. Click for a new character with a costume, pet, mood and pose from the element's wardrobe. Every character gets a link and a HAX embed code.</p>
+<simple-cta link="https://haxtheweb.github.io/art/haxtheweb/rpg-glitch/" label="Play RPG Glitch"></simple-cta>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch">Files, alt text and credits on GitHub</a></li></ul>]]></content>
+</item>

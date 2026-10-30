@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-f0457acd-869a-4b57-9a23-764a6b8982f7</id>
+<indent>0</indent>
+<location>pages/item-f0457acd-869a-4b57-9a23-764a6b8982f7/index.xml</location>
+<slug>talks</slug>
+<order>42</order>
+<parent></parent>
+<title>Talks</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png</image>
+<tags></tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<p>Diagrams and explainers for talks about HAX. The PNGs are ready for slides; the explainer comes as a page, a video, GIFs and a deck.</p>]]></content>
+</item>

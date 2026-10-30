@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-0c56754c-f7b7-4758-a73e-82530dc6f3b6</id>
+<indent>1</indent>
+<location>pages/item-0c56754c-f7b7-4758-a73e-82530dc6f3b6/index.xml</location>
+<slug>world-traveler-09</slug>
+<order>7</order>
+<parent>item-95f4f002-4d5b-4cc6-b219-4ecc535e8944</parent>
+<title>Green helmet portrait</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg</image>
+<tags>icon,portrait,color-variant</tags>
+<created>1793378713</created>
+<updated>1793378713</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg" alt="Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #09</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Portrait, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Green colorway.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-09.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-09.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

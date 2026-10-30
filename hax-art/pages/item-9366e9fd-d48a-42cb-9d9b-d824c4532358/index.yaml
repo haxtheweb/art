@@ -1,0 +1,25 @@
+id: item-9366e9fd-d48a-42cb-9d9b-d824c4532358
+indent: 1
+location: pages/item-9366e9fd-d48a-42cb-9d9b-d824c4532358/index.yaml
+slug: pattern-banner
+order: 37
+parent: item-6bb46355-c148-45e1-bc29-54005eff5e86
+title: Pattern banner
+description: ''
+metadata:
+  published: true
+  image: https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png
+  tags: banner
+  created: 1793378714
+  updated: 1793378714
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png"
+  alt="Wide gray banner of hexagons scattered with small pixel icons: hats,
+  lightning bolts, molecules and tiny characters."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/Asset 1.png">View
+  on GitHub</a></li></ul>

@@ -1,0 +1,18 @@
+{
+  "id": "item-b5d205d3-11a8-41a7-ad15-27dab2a2aab7",
+  "indent": 1,
+  "location": "pages/item-b5d205d3-11a8-41a7-ad15-27dab2a2aab7/index.json",
+  "slug": "world-traveler-08",
+  "order": 6,
+  "parent": "item-95f4f002-4d5b-4cc6-b219-4ecc535e8944",
+  "title": "Cyberpunk traveler",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png",
+    "tags": "scene,photoreal,cyberpunk,human",
+    "created": 1793378713,
+    "updated": 1793378713
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png\" alt=\"A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back.\"></media-image>\n<ul><li><strong>Variant:</strong> #08</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> Photoreal, Cyberpunk, Human</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Closest to 'sees the future' framing.</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-08.png\">View on GitHub</a></li></ul>"
+}

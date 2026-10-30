@@ -178,6 +178,18 @@ const pieces = [
     source: TREE + "haxtheweb/wanted-poster",
     tags: ["poster"],
   },
+  {
+    id: "hax-of-the-web",
+    title: "HAX of the Web",
+    still: "haxtheweb/hax-of-the-web/poster.png",
+    alt: "Arcade title screen: a pixel-art zombie pirate girl in front of a haunted house under a full moon, beside dripping horror letters reading HAX of the Web, with PRESS START below.",
+    text: "A Halloween arcade title screen starring the rpg-character's zombie pirate girl (the element's zpg seed). Type cheat codes, ask Merlin, or press start to drop into a real HAXcms site and edit it.",
+    credit: "A homage to the title screen of a 1990s light-gun zombie arcade game. Its art, audio and text are all original.",
+    play: PAGES + "haxtheweb/hax-of-the-web/",
+    also: [["https://hax-of-the-web.surge.sh/", "Also live on surge"]],
+    source: TREE + "haxtheweb/hax-of-the-web",
+    tags: ["game"],
+  },
 ];
 pieces.forEach((x) =>
   add({
@@ -191,8 +203,9 @@ pieces.forEach((x) =>
     content: [
       image(x.still, x.alt),
       p(x.text),
+      x.credit ? p(`<em>${esc(x.credit)}</em>`) : "",
       x.play ? cta(x.play, `Play ${x.title}`) : "",
-      links([[x.source, "Files, alt text and credits on GitHub"]]),
+      links([...(x.also || []), [x.source, "Files, alt text and credits on GitHub"]]),
     ].filter(Boolean).join("\n"),
   }),
 );
@@ -257,6 +270,48 @@ add({
     links([[TREE + "presentation-materials/hax-in-a-minute", "MP4, GIFs, PPTX and stills on GitHub"]]),
   ].join("\n"),
 });
+const showpieces = [
+  {
+    id: "hax-the-web-intro",
+    title: "HAX The Web opening titles",
+    still: "presentation-materials/hax-the-web-intro/media/stills/title-lock.jpg",
+    alt: "HAX / THE / WEB in red neon pixel letters, with a light bar over the A and bars flanking THE.",
+    text: "A 30-second neon title sequence. Credits tell the HAX story from a napkin in 2015 to hundreds of courses while red neon letters drift by, then lock into the HAX / THE / WEB mark. Play, pause, scrub, or read every credit as text.",
+    credit: "A fan homage to the synth-scored opening titles of a 1980s-set TV series. The letters, credits and type are HAX's own.",
+    play: PAGES + "presentation-materials/hax-the-web-intro/",
+    label: "Watch the opening titles",
+    source: TREE + "presentation-materials/hax-the-web-intro",
+  },
+  {
+    id: "episode-xxvi",
+    title: "Episode XXVI: Return of the Open Web",
+    still: "presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg",
+    alt: "A starfield with gold text tilted back into space: Episode XXVI, Return of the Open Web, the opening of a crawl about HAX in 2026.",
+    text: "A space-opera opening crawl that catches people up on HAX: where it came from, the web standards it stands on, and where it is in 2026. It ends on a Join the Rebellion card. Viewers with reduced motion get a static, readable version.",
+    credit: "A parody of the classic sci-fi film opening crawl. The text and the synthesized fanfare are original, and no footage, logo or score is used.",
+    play: PAGES + "presentation-materials/episode-xxvi/",
+    label: "Watch Episode XXVI",
+    source: TREE + "presentation-materials/episode-xxvi",
+  },
+];
+showpieces.forEach((x) =>
+  add({
+    id: x.id,
+    parent: "talks",
+    title: x.title,
+    slug: x.id,
+    description: x.text,
+    image: raw(x.still),
+    tags: ["interactive"],
+    content: [
+      image(x.still, x.alt),
+      p(x.text),
+      p(`<em>${esc(x.credit)}</em>`),
+      cta(x.play, x.label),
+      links([[x.source, "Files, alt text and credits on GitHub"]]),
+    ].join("\n"),
+  }),
+);
 const talks = [
   ["by-the-numbers", "HAX by the numbers", "presentation-materials/3.png", "HAX by the numbers, 2015 to 2025: six colored icons with counts, including 675, 53, 29, 44, 247, 567, 67,515 and 14.", "diagram"],
   ["hax-history", "HAX history", "presentation-materials/HAX history.png", "Dense timeline of HAX history on a black background, with many small yellow lightbulb markers and labeled icons along a horizontal line.", "diagram"],
@@ -287,20 +342,20 @@ add({
     `<h2>Attribution</h2>`,
     p("HAX (haxtheweb), <a href=\"https://github.com/haxtheweb/art\">https://github.com/haxtheweb/art</a>"),
     `<h2>License</h2>`,
-    p(`The proposal is CC BY 4.0 for art HAX created; see <a href="${REPO}LICENSING.md">LICENSING.md</a>. Some World Traveler variants riff on other creators' work. Those aren't shown on this site; they are flagged in <a href="${REPO}manifest.json">manifest.json</a> for review before promotion.`),
+    p(`The proposal is CC BY 4.0 for art HAX created; see <a href="${REPO}LICENSING.md">LICENSING.md</a>. The interactive homages credit what inspired them on their own pages. A few World Traveler variants riff closely on other creators' characters or brands; those aren't shown here and are flagged in <a href="${REPO}manifest.json">manifest.json</a> for review before promotion.`),
     `<h2>Hotlinking</h2>`,
     p("Every image on this site is a raw GitHub URL, such as <code>" + raw("world-traveler/funny-traveler-15.png") + "</code>. File names in the repo are never renamed, so these links stay stable."),
     `<h2>How this was made</h2>`,
-    p("Most World Traveler variants are AI-generated remixes of the original human-made character. RPG Glitch, the HAX the Web game, the wanted poster and HAX in under a minute were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
+    p("Most World Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
     `<h2>Add to the collection</h2>`,
     p(`Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="${REPO}AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding World Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.`),
   ].join("\n"),
 });
 
-// Variants and pieces that riff on other creators' work (manifest.json
-// third_party_reference, and the homage pieces AGENTS.md marks "review before
-// official promotion") are left out on purpose. A static HAXsite serves
-// site.json as-is, so an unpublished page would still be public.
+// World Traveler variants flagged third_party_reference in manifest.json are
+// left out; the interactive homages are in, each crediting its inspiration.
+// A static HAXsite serves site.json as-is, so an unpublished page would still
+// be public: leave a page out rather than marking it unpublished.
 
 await writeFile(out, JSON.stringify(items, null, 2));
 console.log(`wrote ${items.length} pages (${items.filter((i) => !i.metadata.published).length} unpublished) to ${out}`);

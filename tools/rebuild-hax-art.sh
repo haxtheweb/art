@@ -6,6 +6,8 @@
 set -e
 cd "$(dirname "$0")/.."
 TMP=$(mktemp -d)
+# keep the hand-written README across rebuilds
+[ -f hax-art/README.md ] && cp hax-art/README.md "$TMP/README.md"
 rm -rf hax-art
 hax site hax-art --theme "glossy-portfolio-theme" --y --no-i --skip --quiet > /dev/null
 # the CLI makes each new site its own git repo; this one lives in haxtheweb/art
@@ -28,5 +30,6 @@ s.metadata.theme.variables.image = RAW + 'funny-traveler-08.png';
 s.metadata.theme.variables.hexCode = '#c8102e';
 fs.writeFileSync('site.json', JSON.stringify(s, null, 2));
 "
+[ -f "$TMP/README.md" ] && cp "$TMP/README.md" README.md
 rm -rf "$TMP"
 echo "hax-art rebuilt: $(node -e "console.log(require('./site.json').items.length)") pages"

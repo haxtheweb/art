@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-f9dfd585-3f8f-49f9-b69b-a8737b4e1c54</id>
+<indent>1</indent>
+<location>pages/item-f9dfd585-3f8f-49f9-b69b-a8737b4e1c54/index.xml</location>
+<slug>world-changer-badge</slug>
+<order>35</order>
+<parent>item-6bb46355-c148-45e1-bc29-54005eff5e86</parent>
+<title>World Changer badge</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png</image>
+<tags>badge</tags>
+<created>1793378714</created>
+<updated>1793378714</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png" alt="Circular badge: the World Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu World changer-circle.png">View on GitHub</a></li></ul>]]></content>
+</item>
