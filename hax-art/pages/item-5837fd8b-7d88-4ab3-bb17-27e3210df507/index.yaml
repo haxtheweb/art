@@ -1,0 +1,27 @@
+id: item-5837fd8b-7d88-4ab3-bb17-27e3210df507
+indent: 1
+location: pages/item-5837fd8b-7d88-4ab3-bb17-27e3210df507/index.yaml
+slug: world-changer-badge
+order: 35
+parent: item-e9f5e998-3363-4d5a-9693-7b3b0b83e734
+title: Future Traveler badge
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png
+  tags: badge
+  created: 1794018147
+  updated: 1794018147
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png"
+  alt="Circular badge: the Future Traveler in a red HAX helmet and cyan goggles
+  peeking over his arms in front of a red and white starburst, lightbulb
+  glowing."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu World
+  changer-circle.png">View on GitHub</a></li></ul>

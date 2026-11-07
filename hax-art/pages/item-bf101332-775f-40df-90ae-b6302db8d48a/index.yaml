@@ -1,0 +1,27 @@
+id: item-bf101332-775f-40df-90ae-b6302db8d48a
+indent: 1
+location: pages/item-bf101332-775f-40df-90ae-b6302db8d48a/index.yaml
+slug: helmet-mark
+order: 36
+parent: item-e9f5e998-3363-4d5a-9693-7b3b0b83e734
+title: Helmet mark
+description: ''
+metadata:
+  published: true
+  image: https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png
+  tags: logo
+  created: 1794018147
+  updated: 1794018147
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png"
+  alt="The Future Traveler's red HAX helmet and glowing cyan goggles peeking
+  over folded arms, on white."></media-image>
+
+  <p>Black-background version: hax.png.</p>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/hax-full.png">View
+  on GitHub</a></li></ul>

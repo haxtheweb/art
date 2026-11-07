@@ -1,10 +1,12 @@
-# The World Traveler
+# The Future Traveler
 
-![All 36 World Traveler variants](contact-sheet.jpg)
+![All 36 Future Traveler variants](contact-sheet.jpg)
 
 > **Dream it, remix it, have it, share it.**
 
-The World Traveler (a.k.a. **World Changer**, **Future Traveler**) is the mascot of [HAX](https://haxtheweb.org). He is fun, a bit silly, and on a mission: to travel to the future and bring the rest of us along.
+The **Future Traveler** is the official mascot of [HAX](https://haxtheweb.org). He traveled to the future to bring our ideas to life. He is fun, a bit silly, and on a mission to bring the rest of us along.
+
+> **Naming:** always call him the Future Traveler. Older material called him the *World Traveler* or *World Changer*; those names are retired. This folder keeps its `world-traveler/` name (and files keep theirs) because external sites hotlink these paths.
 
 ## Story
 

@@ -7,14 +7,14 @@ This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-
 | Path | What it is |
 |---|---|
 | `hax-art/` | Portfolio HAXsite (glossy-portfolio-theme) that browses this repo's art by raw GitHub URL. Generated: edit `tools/hax-art-items.mjs` and run `tools/rebuild-hax-art.sh`, never hand-edit `hax-art/site.json` or `hax-art/pages/`. The HAX CLI commits to this repo as it runs; squash before a PR. Deployed with the rest of the repo by `.github/workflows/pages.yml`. |
-| `world-traveler/` | 36 variants of the **World Traveler**, HAX's mascot (also called *World Changer* or *Future Traveler*). Files are named `funny-traveler-NN.(png\|jpeg)`. |
+| `world-traveler/` | 36 variants of the **Future Traveler**, HAX's official mascot (formerly called *World Traveler* or *World Changer*; always use Future Traveler now). The folder keeps its old name because paths are hotlinked. Files are named `funny-traveler-NN.(png\|jpeg)`. |
 | `haxtheweb/` | HAX brand assets: logos, stickers, banners, thumbnails, GIFs, how-to graphics, and layered source files (`.psd`, `.ai`). |
 | `haxtheweb/rpg-glitch/` | Interactive page: the `rpg-character` glitching on an 80s CRT, with shareable rpg-me-compatible links. Its `rpg-character/` folder is a copy of the element's art from `webcomponents` main; refresh it with `tools/sync-art.sh`, don't hand-edit it. |
 | `haxtheweb/hax-the-web-game/` | HAX the Web: a 16-bit attract-mode game where the `rpg-character` collects 12 pieces of HAX lore, then gets a run report. `index.html` is built from `tools/template.html` by `tools/build.mjs`; edit the template, not the built page. |
 | `haxtheweb/hax-of-the-web/` | HAX of the Web: a Halloween arcade title-screen homage (parody format, review before official promotion) with the `rpg-character` zombie pirate girl, Merlin cheat codes, and a playable HAXcms site in `play/` (`haxcms-site-builder` in demo mode, nothing saves). `index.html`, `app.js`, `hax-elements.js` and both `.htaccess` files are built from `tools/template.html` by `tools/build.mjs`; edit the template, not the built files. |
 | `presentation-materials/` | Diagrams for talks (HAX history, legend, class-club-lab pipeline), `hax-in-a-minute/`: a one-minute doodle explainer with MP4, GIF, PPTX and stills, `episode-xxvi/`: a space-opera opening crawl (HTML) about HAX in 2026, and `hax-the-web-intro/`: a 30-second neon opening-titles homage (interactive page plus stills; parody, review before official promotion). |
 | `HAXLogo.svg` | Primary vector logo. |
-| `manifest.json` | Catalog of every World Traveler image: alt text, style tags, setting, size, third-party flags. |
+| `manifest.json` | Catalog of every Future Traveler image: alt text, style tags, setting, size, third-party flags. |
 | `llms.txt` | Short index for LLM crawlers. |
 | `LICENSING.md` | Reuse terms (proposed CC BY 4.0 for art; read the third-party caveat). |
 
@@ -22,7 +22,7 @@ Use `world-traveler/contact-sheet.jpg` to see all 36 variants in one image befor
 
 ## The one-paragraph version
 
-The World Traveler is a fun, slightly silly time traveler in a red helmet with a "HAX" visor band, steampunk goggles with cyan lenses, a green backpack, and a lightbulb on a stalk. He travels through time collecting the best ideas of every era and carrying them into the future so everyone can see what's possible: a world where data flows like water. He is a caricature of the creator of HAX, via the `rpg-character` lineage. His message: **Dream it, remix it, have it, share it.** In HAX terms: people should be able to author, remix and publish with a well-structured voice online without needing to learn how the web works.
+The Future Traveler is HAX's official mascot: a fun, slightly silly time traveler in a red helmet with a "HAX" visor band, steampunk goggles with cyan lenses, a green backpack, and a lightbulb on a stalk. He traveled to the future to bring our ideas to life, collecting the best ideas of every era and carrying them forward so everyone can see what's possible: a world where data flows like water. He is a caricature of the creator of HAX, via the `rpg-character` lineage. His message: **Dream it, remix it, have it, share it.** In HAX terms: people should be able to author, remix and publish with a well-structured voice online without needing to learn how the web works.
 
 ## How to use this art when you help a human
 

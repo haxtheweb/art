@@ -30,7 +30,7 @@ A 30-second neon title sequence for HAX, done as a fan homage to the synth-score
 
 Made with an AI assistant (Claude) under HAX team direction. It replaces the broken CSS-only attempt in [btopro/stranger-things](https://github.com/btopro/stranger-things), which was forked from wbobeirne's CSS demo. No commercial font file or recorded music is bundled.
 
-It is a parody homage. HAX claims no intellectual property in Stranger Things, which belongs to Netflix. As with the parody World Traveler variants (see [`LICENSING.md`](../../LICENSING.md)), review it before any official promotion.
+It is a parody homage. HAX claims no intellectual property in Stranger Things, which belongs to Netflix. As with the parody Future Traveler variants (see [`LICENSING.md`](../../LICENSING.md)), review it before any official promotion.
 
 ## Posting it
 

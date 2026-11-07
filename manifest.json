@@ -1,14 +1,15 @@
 {
   "name": "haxtheweb/art",
-  "description": "Artwork for HAX (haxtheweb.org). The World Traveler is HAX's mascot: a red-helmeted time traveler in steampunk goggles who carries the best ideas of every era into the future.",
+  "description": "Artwork for HAX (haxtheweb.org). The Future Traveler is HAX's official mascot: a red-helmeted time traveler in steampunk goggles who traveled to the future to bring our ideas to life.",
   "license_status": "proposed CC BY 4.0 for artwork (see LICENSING.md); repo LICENSE file is still Apache-2.0",
   "attribution": "HAX (haxtheweb) - https://github.com/haxtheweb/art",
   "character": {
-    "name": "World Traveler",
-    "aliases": [
-      "World Changer",
-      "Future Traveler"
+    "name": "Future Traveler",
+    "former_names": [
+      "World Traveler",
+      "World Changer"
     ],
+    "naming_note": "Always use Future Traveler. Former names are retired; the world-traveler/ folder and world_traveler keys keep their names for compatibility with hotlinks and existing consumers.",
     "tagline": "Dream it, remix it, have it, share it."
   },
   "contact_sheet": "https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/contact-sheet.jpg",

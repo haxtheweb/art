@@ -1,0 +1,18 @@
+{
+  "id": "item-fee827a1-21de-4c60-a9ce-ae675752ce72",
+  "indent": 1,
+  "location": "pages/item-fee827a1-21de-4c60-a9ce-ae675752ce72/index.json",
+  "slug": "pattern-banner",
+  "order": 37,
+  "parent": "item-e9f5e998-3363-4d5a-9693-7b3b0b83e734",
+  "title": "Pattern banner",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png",
+    "tags": "banner",
+    "created": 1794018147,
+    "updated": 1794018147
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png\" alt=\"Wide gray banner of hexagons scattered with small pixel icons: hats, lightning bolts, molecules and tiny characters.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/Asset 1.png\">View on GitHub</a></li></ul>"
+}

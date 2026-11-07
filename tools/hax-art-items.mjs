@@ -73,10 +73,10 @@ add({
   image: raw("world-traveler/funny-traveler-15.png"),
   content: [
     p("Art and media from <a href=\"https://haxtheweb.org\">HAX</a>: open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the <a href=\"https://github.com/haxtheweb/art\">haxtheweb/art</a> repository."),
-    image("world-traveler/funny-traveler-15.png", "The World Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle.", "The World Traveler, HAX's mascot, in his classic pose."),
+    image("world-traveler/funny-traveler-15.png", "The Future Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle.", "The Future Traveler, HAX's official mascot, in his classic pose."),
     `<h2>Browse</h2>`,
     links([
-      ["world-traveler", "World Traveler: the HAX mascot in every style"],
+      ["world-traveler", "Future Traveler: the HAX mascot in every style"],
       ["rpg-character", "rpg-character: games and toys starring HAX's pixel character"],
       ["brand", "Brand: logos, stickers, banners and posters"],
       ["talks", "Talks: diagrams and explainers for presentations"],
@@ -86,18 +86,18 @@ add({
   ].join("\n"),
 });
 
-// ---------- World Traveler ----------
+// ---------- Future Traveler ----------
 const wt = manifest.world_traveler;
 const publicWT = wt.filter((x) => !x.third_party_reference);
 add({
   id: "world-traveler",
-  title: "World Traveler",
+  title: "Future Traveler",
   slug: "world-traveler",
   description: "HAX's mascot, a red-helmeted time traveler, in every style.",
   image: raw("world-traveler/funny-traveler-15.png"),
   tags: [],
   content: [
-    p("The World Traveler (also called World Changer or Future Traveler) moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator."),
+    p("The Future Traveler, HAX's official mascot, traveled to the future to bring our ideas to life. He moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator."),
     p("He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role."),
     links([[TREE + "world-traveler", "Character sheet and story on GitHub"]]),
   ].join("\n"),
@@ -225,8 +225,8 @@ const brand = [
   ["hax-the-web-sticker", "HAX the Web sticker", "haxtheweb/hax-the-web-sticker_v1-2.png", "Die-cut sticker: the h-a-x THE WEB wordmark in chunky black pixel letters between pixel curly braces, with a white border.", "sticker", "Transparent version: hax-the-web-sticker-v1-2-transparent.png."],
   ["hax-wordmark", "h-a-x THE WEB wordmark", "haxtheweb/2019-08-14_13-05-52.png", "The h-a-x THE WEB wordmark in black pixel letters between pixel curly braces.", "logo"],
   ["logo-explorations", "Logo explorations", "haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png", "Sheet of HAX logo sketches: the letters H, A and X stacked as black pixel blocks in several arrangements, some with THE and WEB tucked in.", "logo", "Seven sheets in all, in the haxtheweb folder (the files named 117737906 to 117737916)."],
-  ["world-changer-badge", "World Changer badge", "haxtheweb/HAX.psu World changer-circle.png", "Circular badge: the World Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing.", "badge"],
-  ["helmet-mark", "Helmet mark", "haxtheweb/hax-full.png", "The World Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white.", "logo", "Black-background version: hax.png."],
+  ["world-changer-badge", "Future Traveler badge", "haxtheweb/HAX.psu World changer-circle.png", "Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing.", "badge"],
+  ["helmet-mark", "Helmet mark", "haxtheweb/hax-full.png", "The Future Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white.", "logo", "Black-background version: hax.png."],
   ["pattern-banner", "Pattern banner", "haxtheweb/Asset 1.png", "Wide gray banner of hexagons scattered with small pixel icons: hats, lightning bolts, molecules and tiny characters.", "banner"],
   ["web-inar-banner", "h-a-x THE WEB-INAR banner", "haxtheweb/HAX Eventbrite.jpg", "Event banner: h-a-x THE WEB-INAR in white pixel letters between pixel braces on a dark hexagon pattern.", "banner"],
   ["hax-camp-poster", "HAX Camp poster", "haxtheweb/haxcampposter.jpg", "HAX Camp event poster with the h-a-x THE WEB wordmark over a photo of a stone university tower, followed by event details.", "poster"],
@@ -342,17 +342,17 @@ add({
     `<h2>Attribution</h2>`,
     p("HAX (haxtheweb), <a href=\"https://github.com/haxtheweb/art\">https://github.com/haxtheweb/art</a>"),
     `<h2>License</h2>`,
-    p(`The proposal is CC BY 4.0 for art HAX created; see <a href="${REPO}LICENSING.md">LICENSING.md</a>. The interactive homages credit what inspired them on their own pages. A few World Traveler variants riff closely on other creators' characters or brands; those aren't shown here and are flagged in <a href="${REPO}manifest.json">manifest.json</a> for review before promotion.`),
+    p(`The proposal is CC BY 4.0 for art HAX created; see <a href="${REPO}LICENSING.md">LICENSING.md</a>. The interactive homages credit what inspired them on their own pages. A few Future Traveler variants riff closely on other creators' characters or brands; those aren't shown here and are flagged in <a href="${REPO}manifest.json">manifest.json</a> for review before promotion.`),
     `<h2>Hotlinking</h2>`,
     p("Every image on this site is a raw GitHub URL, such as <code>" + raw("world-traveler/funny-traveler-15.png") + "</code>. File names in the repo are never renamed, so these links stay stable."),
     `<h2>How this was made</h2>`,
-    p("Most World Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
+    p("Most Future Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
     `<h2>Add to the collection</h2>`,
-    p(`Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="${REPO}AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding World Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.`),
+    p(`Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="${REPO}AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding Future Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.`),
   ].join("\n"),
 });
 
-// World Traveler variants flagged third_party_reference in manifest.json are
+// Future Traveler variants flagged third_party_reference in manifest.json are
 // left out; the interactive homages are in, each crediting its inspiration.
 // A static HAXsite serves site.json as-is, so an unpublished page would still
 // be public: leave a page out rather than marking it unpublished.

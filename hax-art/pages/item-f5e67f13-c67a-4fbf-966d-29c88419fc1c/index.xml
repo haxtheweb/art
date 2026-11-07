@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-f5e67f13-c67a-4fbf-966d-29c88419fc1c</id>
+<indent>1</indent>
+<location>pages/item-f5e67f13-c67a-4fbf-966d-29c88419fc1c/index.xml</location>
+<slug>world-traveler-35</slug>
+<order>25</order>
+<parent>item-fc6835b7-b6e9-4858-92d1-9a962e9e4517</parent>
+<title>Pixel helmet, green goggles</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-35.jpeg</image>
+<tags>icon,pixel-art,8-bit,color-variant</tags>
+<created>1794018146</created>
+<updated>1794018146</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-35.jpeg" alt="Pixel-art orange helmet with HAX band and dark green goggles with cyan lenses, a lightbulb on top."></media-image>
+<ul><li><strong>Variant:</strong> #35</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 8 bit, Icon, Color variant</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-35.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-35.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

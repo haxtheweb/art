@@ -2,11 +2,11 @@
 
 Artwork for **[HAX](https://haxtheweb.org)**: open-source tools that let anyone create, remix and publish on the web without needing to understand the web.
 
-![The World Traveler in 36 variants](world-traveler/contact-sheet.jpg)
+![The Future Traveler in 36 variants](world-traveler/contact-sheet.jpg)
 
-## Meet the World Traveler
+## Meet the Future Traveler
 
-A red-helmeted, steampunk-goggled time traveler who collects the best ideas of every era and carries them into the future, where data flows like water. **Dream it, remix it, have it, share it.** Read his story and character sheet in [`world-traveler/`](world-traveler/README.md).
+HAX's official mascot: a red-helmeted, steampunk-goggled time traveler who traveled to the future to bring our ideas to life. He collects the best ideas of every era and carries them into the future, where data flows like water. **Dream it, remix it, have it, share it.** Read his story and character sheet in [`world-traveler/`](world-traveler/README.md).
 
 ## What's in this repo
 
