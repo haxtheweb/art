@@ -792,6 +792,178 @@
     {
       "path": "HAXLogo.svg",
       "description": "Primary HAX logo (vector). Also at haxtheweb/HAXlogo.svg."
+    },
+    {
+      "path": "future-traveler-icons/",
+      "description": "Future Traveler icon concepts in DDD colors: 9 die-cut stickers, 3 paper stickers (sticker frame with paper-cut layers) and 6 paper cuts after funny-traveler-12. SVG plus 512px PNG each, a contact sheet, and index.html where the lightbulb glows on hover or keyboard focus (static under reduced motion). Made in code (SVG) by Claude, an AI, under HAX team direction; rebuilt by tools/future-traveler-icons.py.",
+      "status": "concept, not in use",
+      "reuse": "hax-original-or-unreviewed",
+      "contact_sheet": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/contact-sheet.jpg",
+      "demo": "index.html",
+      "files": [
+        {
+          "id": "future-traveler-icon-sticker-creek-teal",
+          "title": "Sticker on creekTeal",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-creek-teal.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-creek-teal.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-creek-teal.png",
+          "alt": "Die-cut sticker: the Future Traveler's red helmet with a black HAX visor and cyan goggles on a creekTeal rounded square with a thick white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-beaver-blue",
+          "title": "Sticker on beaverBlue",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-beaver-blue.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-beaver-blue.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-beaver-blue.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on a beaverBlue rounded square with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-sky-blue",
+          "title": "Sticker on skyBlue",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-sky-blue.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-sky-blue.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-sky-blue.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on a skyBlue rounded square with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-opportunity-green",
+          "title": "Sticker on opportunityGreen",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-opportunity-green.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-opportunity-green.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-opportunity-green.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on an opportunityGreen rounded square with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-wonder-purple",
+          "title": "Sticker on wonderPurple",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-wonder-purple.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-wonder-purple.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-wonder-purple.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on a wonderPurple rounded square with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-invent-orange",
+          "title": "Sticker on inventOrange",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-invent-orange.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-invent-orange.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-invent-orange.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on an inventOrange rounded square with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-potential-midnight",
+          "title": "Sticker on potentialMidnight, skyBlue rim",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-potential-midnight.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-potential-midnight.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-potential-midnight.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on a near-black potentialMidnight square with a skyBlue border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-limestone-max-light",
+          "title": "Sticker on limestoneMaxLight, beaverBlue rim",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-limestone-max-light.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-limestone-max-light.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-limestone-max-light.png",
+          "alt": "Die-cut sticker: red helmet with a HAX visor and cyan goggles on a pale limestone square with a beaverBlue border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-sticker-round-beaver-blue",
+          "title": "Round sticker on beaverBlue",
+          "family": "sticker",
+          "file": "future-traveler-icons/svg/sticker-round-beaver-blue.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/sticker-round-beaver-blue.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/sticker-round-beaver-blue.png",
+          "alt": "Round die-cut sticker: red helmet with a HAX visor and cyan goggles on a beaverBlue circle with a white border; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-sticker-creek-teal",
+          "title": "Paper sticker on creekTeal, white paper",
+          "family": "paper-sticker",
+          "file": "future-traveler-icons/svg/paper-sticker-creek-teal.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-sticker-creek-teal.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-sticker-creek-teal.png",
+          "alt": "Cut-paper layers inside a white die-cut sticker: red helmet with a HAX visor and cyan goggles over a white paper starburst on creekTeal, soft shadows; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-sticker-wonder-purple",
+          "title": "Paper sticker on wonderPurple, athertonViolet paper",
+          "family": "paper-sticker",
+          "file": "future-traveler-icons/svg/paper-sticker-wonder-purple.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-sticker-wonder-purple.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-sticker-wonder-purple.png",
+          "alt": "Cut-paper layers inside a white die-cut sticker: red helmet with a HAX visor and cyan goggles over a violet paper starburst on wonderPurple, soft shadows; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-sticker-beaver-blue",
+          "title": "Paper sticker on beaverBlue, skyBlue paper",
+          "family": "paper-sticker",
+          "file": "future-traveler-icons/svg/paper-sticker-beaver-blue.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-sticker-beaver-blue.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-sticker-beaver-blue.png",
+          "alt": "Cut-paper layers inside a white die-cut sticker: red helmet with a HAX visor and cyan goggles over a skyBlue paper starburst on beaverBlue, soft shadows; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-hax-red",
+          "title": "Paper cut in HAX red, white paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-hax-red.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-hax-red.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-hax-red.png",
+          "alt": "Cut-paper badge after funny-traveler-12: red helmet with a HAX visor and cyan goggles in front of a green pack, over a white starburst on a red circle, soft shadows; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-beaver-blue",
+          "title": "Paper cut on beaverBlue, white paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-beaver-blue.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-beaver-blue.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-beaver-blue.png",
+          "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a white starburst on a beaverBlue circle; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-creek-teal",
+          "title": "Paper cut on creekTeal, creekLight paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-creek-teal.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-creek-teal.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-creek-teal.png",
+          "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a pale teal starburst on a creekTeal circle; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-wonder-purple",
+          "title": "Paper cut on wonderPurple, athertonViolet paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-wonder-purple.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-wonder-purple.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-wonder-purple.png",
+          "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a violet starburst on a wonderPurple circle; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-potential-midnight",
+          "title": "Paper cut on potentialMidnight, skyBlue paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-potential-midnight.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-potential-midnight.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-potential-midnight.png",
+          "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a skyBlue starburst on a near-black circle; lightbulb top right."
+        },
+        {
+          "id": "future-traveler-icon-paper-cut-invent-orange",
+          "title": "Paper cut on inventOrange, white paper",
+          "family": "paper-cut",
+          "file": "future-traveler-icons/svg/paper-cut-invent-orange.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/svg/paper-cut-invent-orange.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-icons/png/paper-cut-invent-orange.png",
+          "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a white starburst on an inventOrange circle; lightbulb top right."
+        }
+      ]
     }
   ]
 }
