@@ -1,0 +1,26 @@
+id: item-e6dae777-924e-4d22-b61e-0e6d2c615a5d
+indent: 1
+location: pages/item-e6dae777-924e-4d22-b61e-0e6d2c615a5d/index.yaml
+slug: hax-wordmark
+order: 33
+parent: item-e9f5e998-3363-4d5a-9693-7b3b0b83e734
+title: h-a-x THE WEB wordmark
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png
+  tags: logo
+  created: 1794018147
+  updated: 1794018147
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png"
+  alt="The h-a-x THE WEB wordmark in black pixel letters between pixel curly
+  braces."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/2019-08-14_13-05-52.png">View
+  on GitHub</a></li></ul>

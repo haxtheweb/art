@@ -1,0 +1,1 @@
+cli: hax site node:delete --item-id "item-d3b4fb81-2786-46c0-bcc2-959139e49a9e" --quiet "true" --title "New Page"

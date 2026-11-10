@@ -3,7 +3,7 @@
   <title>hax-art</title>
   <link href="https://localhost/hax-art/" rel="self" />
   <subtitle>own course</subtitle>
-  <updated>2026-10-30T16:45:15.000Z</updated>
+  <updated>2026-11-07T02:22:27.000Z</updated>
   <author>
       <name></name>
   </author>
@@ -11,39 +11,39 @@
   
   <entry>
     <title>HAX art</title>
-    <id>item-5d42a5fc-34a4-40c3-964f-e6709c06f1f4</id>
-    <updated>2026-10-30T16:45:12.000Z</updated>
-    <published>2026-10-30T16:45:12.000Z</published>
+    <id>item-9ca4452e-3922-4d4c-a4ec-8d58e1840545</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/home"/>
     
     <content type="html">
       <![CDATA[ <p>Art and media from <a href="https://haxtheweb.org">HAX</a>: open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the <a href="https://github.com/haxtheweb/art">haxtheweb/art</a> repository.</p>
-<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png" alt="The World Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle." caption="The World Traveler, HAX's mascot, in his classic pose."></media-image>
+<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png" alt="The Future Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle." caption="The Future Traveler, HAX's official mascot, in his classic pose."></media-image>
 <h2>Browse</h2>
-<ul><li><a href="world-traveler">World Traveler: the HAX mascot in every style</a></li><li><a href="rpg-character">rpg-character: games and toys starring HAX's pixel character</a></li><li><a href="brand">Brand: logos, stickers, banners and posters</a></li><li><a href="talks">Talks: diagrams and explainers for presentations</a></li><li><a href="use-the-art">Use the art: attribution, licensing and hotlinking</a></li></ul>
+<ul><li><a href="world-traveler">Future Traveler: the HAX mascot in every style</a></li><li><a href="rpg-character">rpg-character: games and toys starring HAX's pixel character</a></li><li><a href="brand">Brand: logos, stickers, banners and posters</a></li><li><a href="talks">Talks: diagrams and explainers for presentations</a></li><li><a href="use-the-art">Use the art: attribution, licensing and hotlinking</a></li></ul>
 <p><strong>Dream it, remix it, have it, share it.</strong></p> ]]>
     </content>
   </entry>
   <entry>
-    <title>World Traveler</title>
-    <id>item-95f4f002-4d5b-4cc6-b219-4ecc535e8944</id>
-    <updated>2026-10-30T16:45:12.000Z</updated>
-    <published>2026-10-30T16:45:12.000Z</published>
+    <title>Future Traveler</title>
+    <id>item-fc6835b7-b6e9-4858-92d1-9a962e9e4517</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler"/>
     
     <content type="html">
-      <![CDATA[ <p>The World Traveler (also called World Changer or Future Traveler) moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator.</p>
+      <![CDATA[ <p>The Future Traveler, HAX's official mascot, traveled to the future to bring our ideas to life. He moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator.</p>
 <p>He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role.</p>
 <ul><li><a href="https://github.com/haxtheweb/art/tree/main/world-traveler">Character sheet and story on GitHub</a></li></ul> ]]>
     </content>
   </entry>
   <entry>
     <title>Android portrait</title>
-    <id>item-59f0ae52-ce51-484f-8998-c69be178b658</id>
-    <updated>2026-10-30T16:45:12.000Z</updated>
-    <published>2026-10-30T16:45:12.000Z</published>
+    <id>item-3f810b3f-fcc9-45dc-b29f-061e0ba43eee</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-01"/>
     <category term="portrait,flat-vector,robot" label="portrait,flat-vector,robot" />
@@ -55,9 +55,9 @@
   </entry>
   <entry>
     <title>Glitch double-exposure badge</title>
-    <id>item-4b08fa19-9ccd-421b-a421-16af323ffa8c</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-e9f65578-25e6-4a6d-923b-f26a329af9fa</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-02"/>
     <category term="badge,starburst-badge,glitch,cartoon" label="badge,starburst-badge,glitch,cartoon" />
@@ -69,9 +69,9 @@
   </entry>
   <entry>
     <title>Egyptian wall</title>
-    <id>item-a6c16087-4abe-4244-94c2-06e0b59d1f5b</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-b08c11e2-14d0-468f-a2eb-adb679e28538</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-03"/>
     <category term="time-travel,painting,hieroglyphs" label="time-travel,painting,hieroglyphs" />
@@ -83,9 +83,9 @@
   </entry>
   <entry>
     <title>Helmet icon (checkerboard)</title>
-    <id>item-15d489e5-61ba-402c-9e9c-a4c5febd1cae</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-31c69c12-eaa9-4587-9317-71bf8e7ee2b9</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-06"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -97,9 +97,9 @@
   </entry>
   <entry>
     <title>Cyberpunk traveler</title>
-    <id>item-b5d205d3-11a8-41a7-ad15-27dab2a2aab7</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-1327b976-a027-4c66-9e2b-8bf54219ced2</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-08"/>
     <category term="scene,photoreal,cyberpunk,human" label="scene,photoreal,cyberpunk,human" />
@@ -111,9 +111,9 @@
   </entry>
   <entry>
     <title>Green helmet portrait</title>
-    <id>item-0c56754c-f7b7-4758-a73e-82530dc6f3b6</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-a275f41d-dae9-4d63-9d9d-eb02e9bef98d</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-09"/>
     <category term="icon,portrait,color-variant" label="icon,portrait,color-variant" />
@@ -125,9 +125,9 @@
   </entry>
   <entry>
     <title>Foil balloon</title>
-    <id>item-0e4f3c4b-bcf3-4ca1-881e-a87fe058575d</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-40199bf2-c694-4096-bf24-e8751585ea3b</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-11"/>
     <category term="merch,product-mockup,3d,humor" label="merch,product-mockup,3d,humor" />
@@ -139,9 +139,9 @@
   </entry>
   <entry>
     <title>Paper-cut collage</title>
-    <id>item-7f2d106c-61a0-452c-b683-aa769bc9e98f</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-2b9e5569-5950-4963-9cf0-49308b107f15</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-12"/>
     <category term="badge,paper-craft,collage,starburst-badge" label="badge,paper-craft,collage,starburst-badge" />
@@ -153,9 +153,9 @@
   </entry>
   <entry>
     <title>Hoodie kid, tan burst</title>
-    <id>item-bbb85098-86e8-477a-9a63-8c557ff295c8</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-9bfd85fa-e03d-4d23-b807-492eb1eb73d7</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-13"/>
     <category term="badge,starburst-badge,flat-vector,sketch" label="badge,starburst-badge,flat-vector,sketch" />
@@ -167,9 +167,9 @@
   </entry>
   <entry>
     <title>Classic burst</title>
-    <id>item-5e3d9d29-f312-494c-b33d-14bfa4b2815c</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-61584488-6821-46f7-9ea0-ca148d95d051</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-15"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -181,9 +181,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray</title>
-    <id>item-7f20634f-0a59-43f2-8945-0c7e837739ee</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-d9301112-ea5d-4d62-a378-cfb508b1d11c</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-17"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -195,9 +195,9 @@
   </entry>
   <entry>
     <title>Halloween</title>
-    <id>item-7fc651ed-fdbf-410d-808d-7de6456cf4db</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-854705d0-de61-403f-9268-838e21fcc85b</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-18"/>
     <category term="seasonal,scene,gothic" label="seasonal,scene,gothic" />
@@ -209,9 +209,9 @@
   </entry>
   <entry>
     <title>8-bit RPG dungeon</title>
-    <id>item-b0acc48e-d77a-4e30-855f-4ecffb24a2ef</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-3ad7f1d0-0002-4883-b108-c477ca9b18f3</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-19"/>
     <category term="rpg,pixel-art,game" label="rpg,pixel-art,game" />
@@ -223,9 +223,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray (alt)</title>
-    <id>item-c561de79-78dd-42ec-8c1c-5c5746318701</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-7074f09b-6052-41bd-a430-863aa95e2abf</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-20"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -237,9 +237,9 @@
   </entry>
   <entry>
     <title>Pixel helmet face</title>
-    <id>item-2a675af2-cc71-4086-a49e-190c5ef22fc1</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-a89b83a2-e14c-4946-9d83-ee618ef76053</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-22"/>
     <category term="icon,pixel-art,8-bit" label="icon,pixel-art,8-bit" />
@@ -251,9 +251,9 @@
   </entry>
   <entry>
     <title>Classic burst, face hidden</title>
-    <id>item-ebed70fc-ffe2-46b7-8a87-c694d81f8f08</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-a33403be-f9be-4a95-b6c1-6855a5d3479e</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-24"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -265,9 +265,9 @@
   </entry>
   <entry>
     <title>Helmet portrait, cyan goggles</title>
-    <id>item-47ed8ce1-d7b0-45ff-ad3e-5f257f6f5912</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-153ec511-d48e-4afd-a45c-14dec94ce733</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-25"/>
     <category term="icon,portrait" label="icon,portrait" />
@@ -279,9 +279,9 @@
   </entry>
   <entry>
     <title>Layered papercraft</title>
-    <id>item-785b02ca-b446-4dc7-a78d-8063d64a325a</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-d715a2f8-def6-48d2-a01e-38ff6263b3be</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-27"/>
     <category term="badge,paper-craft,3d,starburst-badge" label="badge,paper-craft,3d,starburst-badge" />
@@ -293,9 +293,9 @@
   </entry>
   <entry>
     <title>Toy-room 3D</title>
-    <id>item-a6884081-618e-4bbb-85ec-0b661df05bc7</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-5f71a9fc-551c-45ce-b7a6-7022efb86350</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-28"/>
     <category term="scene,3d,render,character" label="scene,3d,render,character" />
@@ -307,9 +307,9 @@
   </entry>
   <entry>
     <title>The ocean is rising</title>
-    <id>item-9c376a69-f45a-4839-81f4-ec96af7080c6</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-44aa3580-11aa-4db1-b238-65d609f5c138</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-29"/>
     <category term="comic,engraving,web-metaphor" label="comic,engraving,web-metaphor" />
@@ -321,9 +321,9 @@
   </entry>
   <entry>
     <title>Sticker badge</title>
-    <id>item-67d1539a-4554-41bf-8839-918db071e891</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-76a7c99a-68fb-4746-9a4d-5b591d4d4422</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-30"/>
     <category term="sticker,flat-vector,color-variant" label="sticker,flat-vector,color-variant" />
@@ -335,9 +335,9 @@
   </entry>
   <entry>
     <title>Pixel helmet, detailed</title>
-    <id>item-3b64c6bf-f55c-4e3a-88d6-c565475ee20a</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-83c839d2-dfcd-47bc-9088-c3ad795249cf</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-31"/>
     <category term="icon,pixel-art,16-bit" label="icon,pixel-art,16-bit" />
@@ -349,9 +349,9 @@
   </entry>
   <entry>
     <title>I my tummy hurts</title>
-    <id>item-e1372a5f-e022-4878-b566-1e8cb814e602</id>
-    <updated>2026-10-30T16:45:13.000Z</updated>
-    <published>2026-10-30T16:45:13.000Z</published>
+    <id>item-ce5f4a6e-bc4c-44b1-b192-e7775e69d636</id>
+    <updated>2026-11-07T02:22:26.000Z</updated>
+    <published>2026-11-07T02:22:26.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/world-traveler-34"/>
     <category term="humor,crayon,child-drawing" label="humor,crayon,child-drawing" />

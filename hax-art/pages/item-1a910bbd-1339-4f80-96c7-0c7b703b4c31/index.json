@@ -1,0 +1,18 @@
+{
+  "id": "item-1a910bbd-1339-4f80-96c7-0c7b703b4c31",
+  "indent": 1,
+  "location": "pages/item-1a910bbd-1339-4f80-96c7-0c7b703b4c31/index.json",
+  "slug": "hax-the-web-sticker",
+  "order": 32,
+  "parent": "item-e9f5e998-3363-4d5a-9693-7b3b0b83e734",
+  "title": "HAX the Web sticker",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png",
+    "tags": "sticker",
+    "created": 1794018147,
+    "updated": 1794018147
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png\" alt=\"Die-cut sticker: the h-a-x THE WEB wordmark in chunky black pixel letters between pixel curly braces, with a white border.\"></media-image>\n<p>Transparent version: hax-the-web-sticker-v1-2-transparent.png.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/hax-the-web-sticker_v1-2.png\">View on GitHub</a></li></ul>"
+}
