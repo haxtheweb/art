@@ -31,6 +31,9 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [HAX The Web opening titles (30-second neon title-sequence homage, interactive page and stills)](https://github.com/haxtheweb/art/tree/main/presentation-materials/hax-the-web-intro)
 - [HAX Episode XXVI: Return of the Open Web (space-opera opening crawl recapping HAX's history, standards and 2026 journey; parody format, original music)](https://github.com/haxtheweb/art/tree/main/presentation-materials/episode-xxvi)
 
+## Concepts (not in use)
+- [Future Traveler icon concepts (sticker and paper-cut icons in DDD colors; the lightbulb glows on hover or focus)](https://github.com/haxtheweb/art/tree/main/future-traveler-icons)
+
 ## Policy
 - [LICENSING.md](https://github.com/haxtheweb/art/blob/main/LICENSING.md): proposed CC BY 4.0 for HAX-original art; third-party parodies excluded
 
