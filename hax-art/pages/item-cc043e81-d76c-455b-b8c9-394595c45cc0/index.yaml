@@ -1,0 +1,29 @@
+id: item-cc043e81-d76c-455b-b8c9-394595c45cc0
+indent: 1
+location: pages/item-cc043e81-d76c-455b-b8c9-394595c45cc0/index.yaml
+slug: video-thumbnails
+order: 42
+parent: item-d5666dc4-967c-468e-ada9-93cdf552b398
+title: Video thumbnails
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png
+  tags: banner
+  created: 1794432982
+  updated: 1794432982
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png"
+  alt="Video thumbnail: HAX THE WEB ADVENTURE in bold red, white and purple
+  letters over a black and white photo, with a red starburst
+  badge."></media-image>
+
+  <p>More in the haxtheweb folder: developer.png and how to use.png.</p>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/Creating web
+  components.png">View on GitHub</a></li></ul>

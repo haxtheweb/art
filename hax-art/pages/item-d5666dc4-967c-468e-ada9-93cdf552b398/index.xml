@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-d5666dc4-967c-468e-ada9-93cdf552b398</id>
+<indent>0</indent>
+<location>pages/item-d5666dc4-967c-468e-ada9-93cdf552b398/index.xml</location>
+<slug>brand</slug>
+<order>32</order>
+<parent></parent>
+<title>Brand</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png</image>
+<tags></tags>
+<created>1794432982</created>
+<updated>1794432982</updated>
+</metadata>
+<content><![CDATA[<p>HAX logos, stickers, banners and posters. The vector logo is <a href="https://github.com/haxtheweb/art/blob/main/HAXLogo.svg">HAXLogo.svg</a>; layered source files (.psd, .ai) live in the <a href="https://github.com/haxtheweb/art/tree/main/haxtheweb">haxtheweb</a> folder on GitHub.</p>]]></content>
+</item>
