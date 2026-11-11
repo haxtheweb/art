@@ -1,0 +1,18 @@
+{
+  "id": "item-72fb5b0e-4305-4146-a1ae-7e18c933ba5a",
+  "indent": 1,
+  "location": "pages/item-72fb5b0e-4305-4146-a1ae-7e18c933ba5a/index.json",
+  "slug": "legend",
+  "order": 49,
+  "parent": "item-7cefc259-c642-4e36-9e20-783629c693a1",
+  "title": "Legend",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png",
+    "tags": "diagram",
+    "created": 1794432982,
+    "updated": 1794432982
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png\" alt=\"Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png\">View on GitHub</a></li></ul>"
+}

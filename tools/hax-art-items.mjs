@@ -160,6 +160,15 @@ const pieces = [
     tags: ["interactive"],
   },
   {
+    id: "hax-morph",
+    title: "HAX Morph",
+    still: "haxtheweb/hax-morph/media/hax-morph.gif",
+    alt: "Pixel text reads HAX, then breaks apart into rainbow pixel blocks, scanline tears and streams of ones and zeros with rpg-characters flashing through the static, rebuilding as Headless Authoring Experience, back to HAX, then Human, Agent, Experience, with the H, A and X lit in teal.",
+    text: "HAX decays into Headless Authoring Experience, back to HAX, then into Human, Agent, Experience. Every transition breaks down into pixel blocks and bit noise, with rpg-characters thrown into the static.",
+    source: TREE + "haxtheweb/hax-morph",
+    tags: ["gif"],
+  },
+  {
     id: "hax-the-web-game",
     title: "HAX the Web",
     still: "haxtheweb/hax-the-web-game/media/01-title.png",

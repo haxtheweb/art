@@ -1,0 +1,16 @@
+{
+  "name": "hax-morph-tools",
+  "private": true,
+  "type": "module",
+  "description": "Renders the rpg-character sprites from webcomponents main, then the HAX Morph GIF and still.",
+  "scripts": {
+    "sprites": "node sprites.mjs",
+    "render": "python3 render.py",
+    "all": "node sprites.mjs && python3 render.py"
+  },
+  "dependencies": {
+    "@fontsource/press-start-2p": "^5.1.0",
+    "esbuild": "^0.24.0",
+    "playwright": "^1.50.0"
+  }
+}

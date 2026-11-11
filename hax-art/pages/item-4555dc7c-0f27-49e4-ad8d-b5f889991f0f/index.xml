@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-4555dc7c-0f27-49e4-ad8d-b5f889991f0f</id>
+<indent>1</indent>
+<location>pages/item-4555dc7c-0f27-49e4-ad8d-b5f889991f0f/index.xml</location>
+<slug>helmet-mark</slug>
+<order>37</order>
+<parent>item-d5666dc4-967c-468e-ada9-93cdf552b398</parent>
+<title>Helmet mark</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png</image>
+<tags>logo</tags>
+<created>1794432982</created>
+<updated>1794432982</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png" alt="The Future Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white."></media-image>
+<p>Black-background version: hax.png.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/hax-full.png">View on GitHub</a></li></ul>]]></content>
+</item>
