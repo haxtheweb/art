@@ -1,13 +1,13 @@
 # AGENTS.md: guide for LLMs and coding agents
 
-This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-source ecosystem for authoring and publishing web content without needing to understand the web. Start here, then read `manifest.json` (machine-readable catalog) and `world-traveler/README.md` (the mascot's story).
+This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-source ecosystem for authoring and publishing web content without needing to understand the web. Start here, then read `manifest.json` (machine-readable catalog) and `future-traveler/README.md` (the mascot's story).
 
 ## What's here
 
 | Path | What it is |
 |---|---|
 | `hax-art/` | Portfolio HAXsite (glossy-portfolio-theme) that browses this repo's art by raw GitHub URL. Generated: edit `tools/hax-art-items.mjs` and run `tools/rebuild-hax-art.sh`, never hand-edit `hax-art/site.json` or `hax-art/pages/`. The HAX CLI commits to this repo as it runs; squash before a PR. Deployed with the rest of the repo by `.github/workflows/pages.yml`. |
-| `world-traveler/` | 36 variants of the **Future Traveler**, HAX's official mascot (formerly called *World Traveler* or *World Changer*; always use Future Traveler now). The folder keeps its old name because paths are hotlinked. Files are named `funny-traveler-NN.(png\|jpeg)`. |
+| `future-traveler/` | 36 variants of the **Future Traveler**, HAX's official mascot (formerly called *World Traveler* or *World Changer*; always use Future Traveler now). Files are named `funny-traveler-NN.(png\|jpeg)`. |
 | `haxtheweb/` | HAX brand assets: logos, stickers, banners, thumbnails, GIFs, how-to graphics, and layered source files (`.psd`, `.ai`). |
 | `haxtheweb/rpg-glitch/` | Interactive page: the `rpg-character` glitching on an 80s CRT, with shareable rpg-me-compatible links. Its `rpg-character/` folder is a copy of the element's art from `webcomponents` main; refresh it with `tools/sync-art.sh`, don't hand-edit it. |
 | `haxtheweb/hax-morph/` | HAX Morph: a looping GIF where HAX glitches into Headless Authoring Experience, back to HAX, then into Human, Agent, Experience, with `rpg-character` sprites in the glitches. `media/` is built by `tools/render.py` and `sprites/` by `tools/sprites.mjs` (from `webcomponents` main); edit the tools, not the outputs. |
@@ -20,7 +20,7 @@ This repo holds artwork for **HAX** (HAXtheweb, https://haxtheweb.org), an open-
 | `llms.txt` | Short index for LLM crawlers. |
 | `LICENSING.md` | Reuse terms (proposed CC BY 4.0 for art; read the third-party caveat). |
 
-Use `world-traveler/contact-sheet.jpg` to see all 36 variants in one image before opening individual files.
+Use `future-traveler/contact-sheet.jpg` to see all 36 variants in one image before opening individual files.
 
 ## The one-paragraph version
 
@@ -30,16 +30,16 @@ The Future Traveler is HAX's official mascot: a fun, slightly silly time travele
 
 - **Explaining HAX:** use the traveler as the friendly face. Pair an image with one plain sentence: *HAX lets you create, remix and publish web content without needing to understand the web.*
 - **Pick by role** (the `role` field in the manifest): `badge` (circular starburst, best for avatars and social), `icon` (helmet-only, best for small sizes), `rpg`/`card`/`game` (playful, for community and events), `comic` (web metaphors), `time-travel` (era-hopping), `merch` (mockups).
-- **Default look** for anything on-brand: `world-traveler/funny-traveler-15.png` (classic burst). Small-size icon: `funny-traveler-17.jpeg` or `HAXLogo.svg`.
+- **Default look** for anything on-brand: `future-traveler/funny-traveler-15.png` (classic burst). Small-size icon: `funny-traveler-17.jpeg` or `HAXLogo.svg`.
 - **Always write alt text.** Start from the manifest's `alt` field and adapt it to the page's purpose.
-- **Don't invent lore.** If you're asked what something "means" and the answer isn't in `world-traveler/README.md`, say you're not sure rather than guessing.
+- **Don't invent lore.** If you're asked what something "means" and the answer isn't in `future-traveler/README.md`, say you're not sure rather than guessing.
 
 ## Rules for contributing to this repo
 
-1. **Never rename or delete existing files.** External sites hotlink these paths. Add new files; deprecate in `manifest.json`.
+1. **Don't rename or delete existing files unless a maintainer asks.** External sites hotlink these paths. Add new files; deprecate in `manifest.json`. When a rename does happen, update every reference in this repo (including `manifest.json`, `llms.txt` and the generated `hax-art/` site) and in [PRAW](https://github.com/haxtheweb/praw) in the same change.
 2. **New traveler variants:** use the next number (`funny-traveler-37.*`), then add a manifest entry (`id`, `file`, `url`, `alt`, `role`, `styles`, `setting`, `width`, `height`, `bytes`, `canon`, `third_party_reference`, `reuse`, `notes`).
 3. **Be honest about provenance.** Most variants are AI-generated remixes of the original human-made character. Say so; never present generated art as hand-drawn. Several variants deliberately parody other works (see `third_party_reference`).
-4. **Keep the on-model features** (see "Character sheet" in `world-traveler/README.md`).
+4. **Keep the on-model features** (see "Character sheet" in `future-traveler/README.md`).
 5. **Open a PR, don't push to `main`.** Describe which files each change touches. A human reviews and merges.
 6. **No machine-specific paths** in docs or scripts; link by GitHub URL.
 7. Source files (`.psd`, `.ai`) are large binaries; don't re-export or recompress them.

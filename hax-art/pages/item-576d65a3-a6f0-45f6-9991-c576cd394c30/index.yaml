@@ -1,7 +1,7 @@
 id: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 indent: 0
 location: pages/item-576d65a3-a6f0-45f6-9991-c576cd394c30/index.yaml
-slug: world-traveler
+slug: future-traveler
 order: 1
 parent: null
 title: Future Traveler
@@ -9,7 +9,7 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png
   tags: ''
   created: 1794432981
   updated: 1794432981
@@ -26,5 +26,5 @@ content: >-
   role.</p>
 
   <ul><li><a
-  href="https://github.com/haxtheweb/art/tree/main/world-traveler">Character
+  href="https://github.com/haxtheweb/art/tree/main/future-traveler">Character
   sheet and story on GitHub</a></li></ul>

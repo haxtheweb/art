@@ -3,18 +3,18 @@
 <id>item-93796bec-4286-41fb-8440-11ba13d54113</id>
 <indent>1</indent>
 <location>pages/item-93796bec-4286-41fb-8440-11ba13d54113/index.xml</location>
-<slug>world-changer-badge</slug>
+<slug>future-traveler-badge</slug>
 <order>36</order>
 <parent>item-d5666dc4-967c-468e-ada9-93cdf552b398</parent>
 <title>Future Traveler badge</title>
 <description></description>
 <metadata>
 <published>true</published>
-<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png</image>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png</image>
 <tags>badge</tags>
 <created>1794432982</created>
 <updated>1794432982</updated>
 </metadata>
-<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png" alt="Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing."></media-image>
-<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20World%20changer-circle.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu World changer-circle.png">View on GitHub</a></li></ul>]]></content>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png" alt="Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu Future traveler-circle.png">View on GitHub</a></li></ul>]]></content>
 </item>

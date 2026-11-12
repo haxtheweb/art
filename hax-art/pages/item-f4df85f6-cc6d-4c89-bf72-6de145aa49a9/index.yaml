@@ -1,7 +1,7 @@
 id: item-f4df85f6-cc6d-4c89-bf72-6de145aa49a9
 indent: 1
 location: pages/item-f4df85f6-cc6d-4c89-bf72-6de145aa49a9/index.yaml
-slug: world-traveler-15
+slug: future-traveler-15
 order: 11
 parent: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 title: Classic burst
@@ -9,13 +9,13 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png
   tags: badge,starburst-badge,flat-vector
   created: 1794432982
   updated: 1794432982
 content: >-
   <media-image
-  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png"
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png"
   alt="The baseline look: red helmet with HAX band, cyan goggles, green backpack
   with lightbulb, chin on arms, white starburst in a red circle."></media-image>
 
@@ -27,7 +27,7 @@ content: >-
   look.</li></ul>
 
   <ul><li><a
-  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png">Full-size
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png">Full-size
   file</a></li><li><a
-  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-15.png">View
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-15.png">View
   on GitHub</a></li></ul>

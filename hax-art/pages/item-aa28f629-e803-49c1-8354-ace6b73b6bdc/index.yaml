@@ -9,7 +9,7 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-30.png
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg
   tags: ''
   created: 1794432983
   updated: 1794432983
@@ -32,8 +32,8 @@ content: >-
   <h2>Hotlinking</h2>
 
   <p>Every image on this site is a raw GitHub URL, such as
-  <code>https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png</code>.
-  File names in the repo are never renamed, so these links stay stable.</p>
+  <code>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png</code>.
+  File names in the repo are kept stable, so these links rarely change.</p>
 
   <h2>How this was made</h2>
 

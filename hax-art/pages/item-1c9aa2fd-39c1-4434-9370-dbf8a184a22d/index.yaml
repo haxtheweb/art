@@ -1,7 +1,7 @@
 id: item-1c9aa2fd-39c1-4434-9370-dbf8a184a22d
 indent: 1
 location: pages/item-1c9aa2fd-39c1-4434-9370-dbf8a184a22d/index.yaml
-slug: world-traveler-03
+slug: future-traveler-03
 order: 4
 parent: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 title: Egyptian wall
@@ -9,13 +9,13 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png
   tags: time-travel,painting,hieroglyphs
   created: 1794432981
   updated: 1794432981
 content: >-
   <media-image
-  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png"
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png"
   alt="The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight
   beam, with a second figure at lower right."></media-image>
 
@@ -27,7 +27,7 @@ content: >-
   era' theme.</li></ul>
 
   <ul><li><a
-  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-03.png">Full-size
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png">Full-size
   file</a></li><li><a
-  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-03.png">View
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-03.png">View
   on GitHub</a></li></ul>

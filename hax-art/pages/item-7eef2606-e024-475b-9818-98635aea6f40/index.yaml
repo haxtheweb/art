@@ -1,7 +1,7 @@
 id: item-7eef2606-e024-475b-9818-98635aea6f40
 indent: 1
 location: pages/item-7eef2606-e024-475b-9818-98635aea6f40/index.yaml
-slug: world-traveler-01
+slug: future-traveler-01
 order: 2
 parent: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 title: Android portrait
@@ -9,13 +9,13 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg
   tags: portrait,flat-vector,robot
   created: 1794432981
   updated: 1794432981
 content: >-
   <media-image
-  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg"
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg"
   alt="Red android-style face with glowing cyan goggles, a HAX band across the
   brow and a gold lightbulb on the forehead."></media-image>
 
@@ -25,7 +25,7 @@ content: >-
   1024 × 1029 px</li></ul>
 
   <ul><li><a
-  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-01.jpeg">Full-size
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg">Full-size
   file</a></li><li><a
-  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-01.jpeg">View
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-01.jpeg">View
   on GitHub</a></li></ul>

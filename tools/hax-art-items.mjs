@@ -70,13 +70,13 @@ add({
   title: "HAX art",
   slug: "home",
   description: "Art and media from the HAX project, browsed with HAX.",
-  image: raw("world-traveler/funny-traveler-15.png"),
+  image: raw("future-traveler/funny-traveler-15.png"),
   content: [
     p("Art and media from <a href=\"https://haxtheweb.org\">HAX</a>: open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the <a href=\"https://github.com/haxtheweb/art\">haxtheweb/art</a> repository."),
-    image("world-traveler/funny-traveler-15.png", "The Future Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle.", "The Future Traveler, HAX's official mascot, in his classic pose."),
+    image("future-traveler/funny-traveler-15.png", "The Future Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle.", "The Future Traveler, HAX's official mascot, in his classic pose."),
     `<h2>Browse</h2>`,
     links([
-      ["world-traveler", "Future Traveler: the HAX mascot in every style"],
+      ["future-traveler", "Future Traveler: the HAX mascot in every style"],
       ["rpg-character", "rpg-character: games and toys starring HAX's pixel character"],
       ["brand", "Brand: logos, stickers, banners and posters"],
       ["talks", "Talks: diagrams and explainers for presentations"],
@@ -87,19 +87,19 @@ add({
 });
 
 // ---------- Future Traveler ----------
-const wt = manifest.world_traveler;
+const wt = manifest.future_traveler;
 const publicWT = wt.filter((x) => !x.third_party_reference);
 add({
-  id: "world-traveler",
+  id: "future-traveler",
   title: "Future Traveler",
-  slug: "world-traveler",
+  slug: "future-traveler",
   description: "HAX's mascot, a red-helmeted time traveler, in every style.",
-  image: raw("world-traveler/funny-traveler-15.png"),
+  image: raw("future-traveler/funny-traveler-15.png"),
   tags: [],
   content: [
     p("The Future Traveler, HAX's official mascot, traveled to the future to bring our ideas to life. He moves through time, taking the best ideas of every era and carrying them into the future, where data flows like water. He is a variant of the <code>rpg-character</code>, itself a caricature of HAX's creator."),
     p("He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role."),
-    links([[TREE + "world-traveler", "Character sheet and story on GitHub"]]),
+    links([[TREE + "future-traveler", "Character sheet and story on GitHub"]]),
   ].join("\n"),
 });
 const wtPage = (x, parent, published) => {
@@ -109,7 +109,7 @@ const wtPage = (x, parent, published) => {
     parent,
     published,
     title: x.title,
-    slug: `world-traveler-${n}`,
+    slug: `future-traveler-${n}`,
     description: x.alt,
     image: x.url,
     tags: [x.role, ...x.styles.filter((s) => s !== x.role)],
@@ -133,7 +133,7 @@ const wtPage = (x, parent, published) => {
     ].filter(Boolean).join("\n"),
   });
 };
-publicWT.forEach((x) => wtPage(x, "world-traveler", true));
+publicWT.forEach((x) => wtPage(x, "future-traveler", true));
 
 // ---------- rpg-character ----------
 add({
@@ -225,7 +225,7 @@ add({
   title: "Brand",
   slug: "brand",
   description: "Logos, stickers, banners and posters.",
-  image: raw("haxtheweb/HAX.psu World changer-circle.png"),
+  image: raw("haxtheweb/HAX.psu Future traveler-circle.png"),
   content: [
     p("HAX logos, stickers, banners and posters. The vector logo is <a href=\"" + REPO + "HAXLogo.svg\">HAXLogo.svg</a>; layered source files (.psd, .ai) live in the <a href=\"" + TREE + "haxtheweb\">haxtheweb</a> folder on GitHub."),
   ].join("\n"),
@@ -234,7 +234,7 @@ const brand = [
   ["hax-the-web-sticker", "HAX the Web sticker", "haxtheweb/hax-the-web-sticker_v1-2.png", "Die-cut sticker: the h-a-x THE WEB wordmark in chunky black pixel letters between pixel curly braces, with a white border.", "sticker", "Transparent version: hax-the-web-sticker-v1-2-transparent.png."],
   ["hax-wordmark", "h-a-x THE WEB wordmark", "haxtheweb/2019-08-14_13-05-52.png", "The h-a-x THE WEB wordmark in black pixel letters between pixel curly braces.", "logo"],
   ["logo-explorations", "Logo explorations", "haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png", "Sheet of HAX logo sketches: the letters H, A and X stacked as black pixel blocks in several arrangements, some with THE and WEB tucked in.", "logo", "Seven sheets in all, in the haxtheweb folder (the files named 117737906 to 117737916)."],
-  ["world-changer-badge", "Future Traveler badge", "haxtheweb/HAX.psu World changer-circle.png", "Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing.", "badge"],
+  ["future-traveler-badge", "Future Traveler badge", "haxtheweb/HAX.psu Future traveler-circle.png", "Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing.", "badge"],
   ["helmet-mark", "Helmet mark", "haxtheweb/hax-full.png", "The Future Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white.", "logo", "Black-background version: hax.png."],
   ["pattern-banner", "Pattern banner", "haxtheweb/Asset 1.png", "Wide gray banner of hexagons scattered with small pixel icons: hats, lightning bolts, molecules and tiny characters.", "banner"],
   ["web-inar-banner", "h-a-x THE WEB-INAR banner", "haxtheweb/HAX Eventbrite.jpg", "Event banner: h-a-x THE WEB-INAR in white pixel letters between pixel braces on a dark hexagon pattern.", "banner"],
@@ -346,14 +346,14 @@ add({
   title: "Use the art",
   slug: "use-the-art",
   description: "Attribution, licensing and hotlinking.",
-  image: raw("world-traveler/funny-traveler-30.png"),
+  image: raw("future-traveler/funny-traveler-30.jpeg"),
   content: [
     `<h2>Attribution</h2>`,
     p("HAX (haxtheweb), <a href=\"https://github.com/haxtheweb/art\">https://github.com/haxtheweb/art</a>"),
     `<h2>License</h2>`,
     p(`The proposal is CC BY 4.0 for art HAX created; see <a href="${REPO}LICENSING.md">LICENSING.md</a>. The interactive homages credit what inspired them on their own pages. A few Future Traveler variants riff closely on other creators' characters or brands; those aren't shown here and are flagged in <a href="${REPO}manifest.json">manifest.json</a> for review before promotion.`),
     `<h2>Hotlinking</h2>`,
-    p("Every image on this site is a raw GitHub URL, such as <code>" + raw("world-traveler/funny-traveler-15.png") + "</code>. File names in the repo are never renamed, so these links stay stable."),
+    p("Every image on this site is a raw GitHub URL, such as <code>" + raw("future-traveler/funny-traveler-15.png") + "</code>. File names in the repo are kept stable, so these links rarely change."),
     `<h2>How this was made</h2>`,
     p("Most Future Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
     `<h2>Add to the collection</h2>`,
