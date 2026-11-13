@@ -6,7 +6,7 @@
 
 The **Future Traveler** is the official mascot of [HAX](https://haxtheweb.org). He traveled to the future to bring our ideas to life. He is fun, a bit silly, and on a mission to bring the rest of us along.
 
-> **Naming:** always call him the Future Traveler. Older material called him the *World Traveler* or *World Changer*; those names are retired. This folder keeps its `world-traveler/` name (and files keep theirs) because external sites hotlink these paths.
+> **Naming:** always call him the Future Traveler. Older material called him the *World Traveler* or *World Changer*; those names are retired.
 
 ## Story
 

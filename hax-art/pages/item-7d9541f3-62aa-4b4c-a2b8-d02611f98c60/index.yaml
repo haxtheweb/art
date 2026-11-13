@@ -1,7 +1,7 @@
 id: item-7d9541f3-62aa-4b4c-a2b8-d02611f98c60
 indent: 1
 location: pages/item-7d9541f3-62aa-4b4c-a2b8-d02611f98c60/index.yaml
-slug: world-traveler-06
+slug: future-traveler-06
 order: 5
 parent: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 title: Helmet icon (checkerboard)
@@ -9,13 +9,13 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-06.jpeg
   tags: icon,flat-vector
   created: 1794432981
   updated: 1794432981
 content: >-
   <media-image
-  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg"
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-06.jpeg"
   alt="Orange helmet icon with HAX band, green goggles and a lightbulb on top,
   on a checkerboard background."></media-image>
 
@@ -27,7 +27,7 @@ content: >-
   use.</li></ul>
 
   <ul><li><a
-  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-06.jpeg">Full-size
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-06.jpeg">Full-size
   file</a></li><li><a
-  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-06.jpeg">View
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-06.jpeg">View
   on GitHub</a></li></ul>

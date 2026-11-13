@@ -1,7 +1,7 @@
 id: item-50ae5306-713e-4662-9798-75cadbad84c3
 indent: 1
 location: pages/item-50ae5306-713e-4662-9798-75cadbad84c3/index.yaml
-slug: world-traveler-08
+slug: future-traveler-08
 order: 6
 parent: item-576d65a3-a6f0-45f6-9991-c576cd394c30
 title: Cyberpunk traveler
@@ -9,13 +9,13 @@ description: ''
 metadata:
   published: true
   image: >-
-    https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-08.png
   tags: scene,photoreal,cyberpunk,human
   created: 1794432981
   updated: 1794432981
 content: >-
   <media-image
-  source="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png"
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-08.png"
   alt="A man in a red HAX hoodie and goggles holding a glowing lightbulb on a
   cable, in a neon rain-soaked city, sword on his back."></media-image>
 
@@ -26,7 +26,7 @@ content: >-
   framing.</li></ul>
 
   <ul><li><a
-  href="https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-08.png">Full-size
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-08.png">Full-size
   file</a></li><li><a
-  href="https://github.com/haxtheweb/art/blob/main/world-traveler/funny-traveler-08.png">View
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-08.png">View
   on GitHub</a></li></ul>

@@ -2,4 +2,4 @@ The Future Traveler, HAX's official mascot, traveled to the future to bring our 
 
 He is on-model when he has a red helmet with a HAX visor band, steampunk goggles, a lightbulb on a stalk and a green backpack. The variants change the style and the setting, never those features. Filter the grid below by role.
 
-*   [Character sheet and story on GitHub](https://github.com/haxtheweb/art/tree/main/world-traveler)
+*   [Character sheet and story on GitHub](https://github.com/haxtheweb/art/tree/main/future-traveler)

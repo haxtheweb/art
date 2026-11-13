@@ -20,7 +20,7 @@ hax site node:delete --item-id "$STARTER" --y --no-i --quiet > /dev/null
 node -e "
 const fs = require('fs');
 const s = JSON.parse(fs.readFileSync('site.json', 'utf8'));
-const RAW = 'https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/';
+const RAW = 'https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/';
 s.title = 'HAX art';
 s.description = 'Art and media from the HAX project, browsed with HAX.';
 s.author = 'HAX (haxtheweb)';

@@ -304,7 +304,7 @@ a{{color:var(--focus)}}
 <p>Sticker and paper-cut icons for HAX's official mascot, the Future Traveler, in DDD colors. <strong>Concepts only, not in use.</strong></p>
 <p class="muted">Hover or tab to an icon: his lightbulb glows once, rays spring out, then it stays lit. With reduced motion on, it just lights up. Small previews show 40 and 20 px.</p>
 {sections}
-<p class="muted" style="margin-top:40px">Made in code (SVG) by Claude, an AI, under HAX team direction, from <a href="../world-traveler/funny-traveler-15.png">funny-traveler-15</a> and <a href="../world-traveler/funny-traveler-12.png">funny-traveler-12</a>. Source: <a href="https://github.com/haxtheweb/art/tree/main/future-traveler-icons">future-traveler-icons</a>.</p>
+<p class="muted" style="margin-top:40px">Made in code (SVG) by Claude, an AI, under HAX team direction, from <a href="../future-traveler/funny-traveler-15.png">funny-traveler-15</a> and <a href="../future-traveler/funny-traveler-12.png">funny-traveler-12</a>. Source: <a href="https://github.com/haxtheweb/art/tree/main/future-traveler-icons">future-traveler-icons</a>.</p>
 </main>
 </body>
 </html>

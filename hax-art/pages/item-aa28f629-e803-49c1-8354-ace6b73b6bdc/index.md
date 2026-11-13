@@ -11,7 +11,7 @@ The proposal is CC BY 4.0 for art HAX created; see [LICENSING.md](https://github
 Hotlinking
 ----------
 
-Every image on this site is a raw GitHub URL, such as `https://raw.githubusercontent.com/haxtheweb/art/main/world-traveler/funny-traveler-15.png`. File names in the repo are never renamed, so these links stay stable.
+Every image on this site is a raw GitHub URL, such as `https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png`. File names in the repo are kept stable, so these links rarely change.
 
 How this was made
 -----------------

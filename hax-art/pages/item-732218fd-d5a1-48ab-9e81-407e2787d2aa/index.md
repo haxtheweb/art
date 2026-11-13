@@ -3,7 +3,7 @@ Art and media from [HAX](https://haxtheweb.org): open-source tools that let anyo
 Browse
 ------
 
-*   [Future Traveler: the HAX mascot in every style](world-traveler)
+*   [Future Traveler: the HAX mascot in every style](future-traveler)
 *   [rpg-character: games and toys starring HAX's pixel character](rpg-character)
 *   [Brand: logos, stickers, banners and posters](brand)
 *   [Talks: diagrams and explainers for presentations](talks)

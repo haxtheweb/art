@@ -1,6 +1,6 @@
 # Future Traveler icon concepts
 
-**Status: concepts, not in use.** Icon explorations for HAX's official mascot, the Future Traveler, kept here because they're fun. For anything on-brand today, use [`funny-traveler-15.png`](../world-traveler/funny-traveler-15.png) (see [AGENTS.md](../AGENTS.md)).
+**Status: concepts, not in use.** Icon explorations for HAX's official mascot, the Future Traveler, kept here because they're fun. For anything on-brand today, use [`funny-traveler-15.png`](../future-traveler/funny-traveler-15.png) (see [AGENTS.md](../AGENTS.md)).
 
 ![All 18 icon concepts](contact-sheet.jpg)
 
@@ -12,7 +12,7 @@ Open [`index.html`](index.html) to try them: hover or tab to an icon and his lig
 |---|---|---|
 | Sticker | Die-cut sticker; the white (or colored) border keeps it readable on any surface. | `sticker-*` (9, incl. one round) |
 | Paper sticker | The sticker frame with paper-cut layers and soft shadows inside. | `paper-sticker-*` (3) |
-| Paper cut | Layered cut paper after [`funny-traveler-12.png`](../world-traveler/funny-traveler-12.png). | `paper-cut-*` (6) |
+| Paper cut | Layered cut paper after [`funny-traveler-12.png`](../future-traveler/funny-traveler-12.png). | `paper-cut-*` (6) |
 
 Each file name ends with the [DDD](https://github.com/haxtheweb/webcomponents/tree/master/elements/d-d-d) color token it sits on. The mascot keeps his own colors: red helmet, black HAX visor, cyan goggles, green pack, keystoneYellow bulb. On potentialMidnight the bulb's outline switches to limestoneLight, since dark ink disappears there.
 
