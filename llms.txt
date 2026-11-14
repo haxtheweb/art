@@ -14,6 +14,7 @@ Most variants are AI-generated remixes of the original human-made character; sev
 ## Key images
 - [Default mascot (classic burst)](https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png)
 - [Helmet icon](https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg)
+- [Future Traveler logo: the platform logo and app icon (SVG; favicon, manifest and installer sizes alongside)](https://github.com/haxtheweb/art/tree/main/future-traveler-logo)
 - [Primary logo (SVG)](https://raw.githubusercontent.com/haxtheweb/art/main/HAXLogo.svg)
 - [8-bit RPG dungeon](https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png)
 - [Egyptian wall (time travel)](https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png)
