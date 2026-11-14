@@ -23,6 +23,7 @@ HAX's official mascot: a red-helmeted, steampunk-goggled time traveler who trave
 | [`presentation-materials/episode-xxvi/`](presentation-materials/episode-xxvi/) | HAX Episode XXVI: Return of the Open Web: a space-opera opening crawl with an original synth fanfare, catching people up on HAX in 2026 |
 | [`presentation-materials/hax-the-web-intro/`](presentation-materials/hax-the-web-intro/) | HAX The Web opening titles: a 30-second neon title sequence |
 | [`presentation-materials/`](presentation-materials/) | Diagrams for talks, and [HAX in under a minute](presentation-materials/hax-in-a-minute/): a doodle explainer as MP4, GIF, PPTX and stills |
+| [`future-traveler-logo/`](future-traveler-logo/) | The logo that represents the HAX platform: the `hax:future-traveler` icon in every size favicons, manifests and app installers need. Default icon for new HAXcms sites and the desktop app |
 | [`HAXLogo.svg`](HAXLogo.svg) | Primary logo |
 | [`manifest.json`](manifest.json) | Machine-readable catalog with alt text and tags |
 | [`AGENTS.md`](AGENTS.md) / [`llms.txt`](llms.txt) | Guides for LLMs and coding agents |

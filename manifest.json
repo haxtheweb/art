@@ -965,6 +965,44 @@
           "alt": "Cut-paper badge: red helmet with a HAX visor and cyan goggles in front of a green pack, over a white starburst on an inventOrange circle; lightbulb top right."
         }
       ]
+    },
+    {
+      "path": "future-traveler-logo/",
+      "description": "The logo that represents the HAX platform: the hax:future-traveler icon from hax-iconset in the sizes favicons, web app manifests and app installers need. Three masters (transparent logo, logo on white for maskable and iOS icons, macOS app tile) as SVG and PNG, plus ready-to-copy icon sets for the HAXcms site boilerplate, the HAXcms platform pages and the desktop app. Renders made in code by Claude, an AI, under HAX team direction; rebuilt by tools/future-traveler-logo.py.",
+      "status": "in use: default icon for new HAXcms sites, the HAXcms platform pages and the desktop app",
+      "reuse": "hax-original-or-unreviewed",
+      "source": "https://github.com/haxtheweb/webcomponents/blob/master/elements/hax-iconset/lib/svgs/hax/future-traveler.svg",
+      "files": [
+        {
+          "id": "future-traveler-logo",
+          "title": "Logo",
+          "file": "future-traveler-logo/svg/logo.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/svg/logo.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/png/logo-512.png",
+          "alt": "HAX Future Traveler logo: a red helmet with HAX in white letters, green goggles with cyan lenses, and a lightbulb on top, on a transparent background."
+        },
+        {
+          "id": "future-traveler-logo-on-white",
+          "title": "Logo on white",
+          "file": "future-traveler-logo/svg/logo-on-white.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/svg/logo-on-white.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/png/logo-on-white-512.png",
+          "alt": "HAX Future Traveler logo: a red helmet with HAX in white letters, green goggles with cyan lenses, and a lightbulb on top, centered on a white square with room to crop."
+        },
+        {
+          "id": "future-traveler-logo-app-tile",
+          "title": "App tile",
+          "file": "future-traveler-logo/svg/logo-app-tile.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/svg/logo-app-tile.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-logo/png/logo-app-tile-512.png",
+          "alt": "HAX Future Traveler logo: a red helmet with HAX in white letters, green goggles with cyan lenses, and a lightbulb on top, on a white rounded-square app tile."
+        }
+      ],
+      "sets": {
+        "haxcms-site-assets/": "assets/ icons of a HAXcms site, named as the site boilerplate names them",
+        "haxcms-platform-assets/": "assets/ icons of the HAXcms platform pages",
+        "desktop/": "icon.ico, icon.icns and icon.png for the desktop app"
+      }
     }
   ]
 }
