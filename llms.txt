@@ -22,6 +22,7 @@ Most variants are AI-generated remixes of the original human-made character; sev
 - [HAX of the Web title screen (zombie pirate girl rpg-character in front of a haunted house)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-of-the-web/poster.png)
 - [RPG Glitch still (rpg-character on an 80s CRT)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png)
 - [HAX Morph (HAX glitches into Headless Authoring Experience, then Human, Agent, Experience; looping GIF)](https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-morph/media/hax-morph.gif)
+- [HAX posters (campus and social campaign: 35 posters, contact sheet, alt text; video, GIF and print files on the media-2026-11 release)](https://github.com/haxtheweb/art/tree/main/haxtheweb/posters)
 
 ## Interactive
 - [RPG Glitch: click for a new glitching rpg-character with a shareable link](https://github.com/haxtheweb/art/tree/main/haxtheweb/rpg-glitch)
