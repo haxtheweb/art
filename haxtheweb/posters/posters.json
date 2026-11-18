@@ -1,0 +1,1599 @@
+{
+  "name": "HAX posters and social media",
+  "release": "https://github.com/haxtheweb/art/releases/tag/media-2026-11",
+  "note": "Stills live in git. Video, GIF and print PDFs live as assets on the release above so they don't bloat the repo's history.",
+  "posters": [
+    {
+      "id": "1880s",
+      "series": "HAX across time",
+      "title": "1880s steam age",
+      "file": "social/hax_1880s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Sepia Victorian engraving-style poster: \"The Grand & Marvellous HAX, Open Source Authoring Engine\" with brass gears, a human, the Future Traveler and a lightbulb forming Humans + Agents = Experience, above seven stone pillars labeled with the HAX pillars on a Ubiquity base.",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1880s.pdf"
+    },
+    {
+      "id": "1900s",
+      "series": "HAX across time",
+      "title": "1900s modern marvel",
+      "file": "social/hax_1900s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1900s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Cream Art Nouveau poster: \"HAX, a Modern Marvel of the New Century\" with a human, the Future Traveler and a lightbulb, a Headless Authoring Experience ribbon and seven pillars on a Ubiquity base.",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1900s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1900s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1900s.pdf"
+    },
+    {
+      "id": "1920s",
+      "series": "HAX across time",
+      "title": "1920s roaring twenties",
+      "file": "social/hax_1920s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1920s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Black and gold Art Deco poster: \"The Cat's Pajamas presents HAX, Humans + Agents = Amazing Experience\" with seven gold-lined pillars on Ubiquity and the line \"Humans lead. Agents help. Ideas ship.\"",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1920s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1920s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1920s.pdf"
+    },
+    {
+      "id": "1970s",
+      "series": "HAX across time",
+      "title": "1970s rainbow",
+      "file": "social/hax_1970s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Warm 1970s poster with a rainbow arch over chunky HAX lettering, three circular badges for humans, agents and experience, and seven striped pillars on Ubiquity. Tagline: \"Every era had its tools. This one's yours.\"",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1970s.pdf"
+    },
+    {
+      "id": "1980s",
+      "series": "HAX across time",
+      "title": "1980s corporate (Paul Rand homage)",
+      "file": "social/hax_1980s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Striped black-and-white 1980s corporate poster riffing on Paul Rand: pixel human, Future Traveler and lightbulb above striped HAX letters, with seven striped pillars on Ubiquity.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Riffs on Paul Rand's striped corporate identity work; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1980s.pdf"
+    },
+    {
+      "id": "1980s_cyberpunk",
+      "series": "HAX across time",
+      "title": "1980s cyberpunk",
+      "file": "social/hax_1980s_cyberpunk_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Neon pink and cyan cyberpunk poster on a dark grid: glowing HAX, Humans + Agents = Experience in neon frames and seven neon pillars on Ubiquity.",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1980s_cyberpunk.pdf"
+    },
+    {
+      "id": "1990s",
+      "series": "HAX across time",
+      "title": "1990s early web",
+      "file": "social/hax_1990s_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1990s_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Early-web style poster with rainbow WordArt-like HAX, a Windows-style dialog showing Humans + Agents = Experience, a Headless Authoring Experience banner, seven pillars and a \"Ubiquity 100%\" progress bar.",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1990s.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1990s.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1990s.pdf"
+    },
+    {
+      "id": "gameboy",
+      "series": "Game consoles",
+      "title": "Game Boy",
+      "file": "social/hax_gameboy_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Four-shade green handheld-console poster: HAX in pixel type, \"Open Source, Est. 2017\", humans + agents = experience sprites and seven pixel pillars on Ubiquity.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Homage to the Nintendo Game Boy look; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gameboy.pdf"
+    },
+    {
+      "id": "gba",
+      "series": "Game consoles",
+      "title": "Game Boy Advance",
+      "file": "social/hax_gba_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Bright handheld-console poster in pink, blue and green pixel type with humans + agents = experience sprites and seven colored pillars on Ubiquity.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Homage to the Game Boy Advance look; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gba.pdf"
+    },
+    {
+      "id": "ps",
+      "series": "Game consoles",
+      "title": "PlayStation",
+      "file": "social/hax_ps_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Pale grey 32-bit console poster: chunky 3D HAX letters in red, teal and green, a pixel explorer + the Future Traveler = a lightbulb, and seven 3D colored pillars on Ubiquity. Tagline: \"Every era had its tools. This one's yours.\"",
+      "reuse": "homage-review-before-promoting",
+      "note": "Homage to the original PlayStation boot look; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_ps.pdf"
+    },
+    {
+      "id": "wii",
+      "series": "Game consoles",
+      "title": "Wii",
+      "file": "social/hax_wii_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_wii_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "White console-menu style poster with rounded panels: HAX in red, cyan and green pixel letters, a human, the Future Traveler and a lightbulb in rounded tiles, and seven pill-shaped pillars on Ubiquity.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Homage to the Wii menu look; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wii.pdf"
+    },
+    {
+      "id": "hacker",
+      "series": "Game consoles",
+      "title": "Hacker",
+      "file": "social/hax_hacker_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Black terminal-style poster with HAX built from ASCII blocks, a hooded human, the Future Traveler and a lightbulb, and glitching ASCII pillars on Ubiquity.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by hacker-game aesthetics (Watch Dogs); review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_hacker.pdf"
+    },
+    {
+      "id": "quest",
+      "series": "Quest, comics, recruiting",
+      "title": "HAX Quest",
+      "file": "social/hax_quest_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Green Game Boy-style RPG battle: the Future Traveler casts the seven pillars as spells at THE VOID, a dark cloud saying \"Nothing matters.\" Menu: Learn, Build, Remix, Grow, with Run and Hide crossed out. QR code to hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Handheld RPG battle-screen homage; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest.pdf"
+    },
+    {
+      "id": "quest_comic",
+      "series": "Quest, comics, recruiting",
+      "title": "HAX Quest comic",
+      "file": "social/hax_quest_comic_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "\"The Quest: Future Traveler vs the Void\" as four Game Boy-style battle panels, ending with \"Create your future!\" and a QR code.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Handheld RPG battle-screen homage; review before official promotion.",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest_comic.pdf"
+    },
+    {
+      "id": "sunday",
+      "series": "Quest, comics, recruiting",
+      "title": "Sunday Funnies",
+      "file": "social/hax_sunday_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_sunday_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s halftone Sunday comic strip, \"The Future Traveler: Sunday Funnies, Skill Up Edition,\" in six panels: a student who thinks nothing matters meets the Future Traveler, learns web components, builds and remixes, and together they zap the Void. Ends with \"Your quest starts now,\" a QR code, hax.psu.edu and hax.cloud.",
+      "reuse": "hax-original",
+      "note": "Styled after 1960s newspaper print (halftone dots); no specific strip is copied.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_sunday.pdf"
+    },
+    {
+      "id": "needyou",
+      "series": "Quest, comics, recruiting",
+      "title": "I Need You",
+      "file": "social/hax_needyou_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_needyou_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Vintage recruiting poster: the Future Traveler points at the viewer above \"I NEED YOU to defeat the Void. Your ideas. Your creativity. Your passions. Enlist today.\"",
+      "reuse": "homage-review-before-promoting",
+      "note": "Riffs on the classic \"I Want You\" recruiting poster; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_needyou.pdf"
+    },
+    {
+      "id": "wecan",
+      "series": "Quest, comics, recruiting",
+      "title": "We Can Build It!",
+      "file": "social/hax_wecan_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_wecan_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Yellow wartime-style poster: the Future Traveler flexes a green arm under a speech bubble reading \"We can build it!\" with \"We need your ideas,\" a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by the \"We Can Do It!\" Rosie the Riveter poster; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wecan.pdf"
+    },
+    {
+      "id": "now",
+      "series": "Quest, comics, recruiting",
+      "title": "You made it to the future",
+      "file": "social/hax_now_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Starry 8-bit poster: \"STOP: NOW. You made it to the future.\" Humans + Agents = Amazing Experience, seven pillars on Ubiquity, \"Start building.\" and a QR code.",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_now.pdf"
+    },
+    {
+      "id": "tomorrow_all",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: UBIQUITY",
+      "file": "social/hax_tomorrow_all_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted in all seven pillar colors. Title \"UBIQUITY\", tagline \"The home of the future, now!\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_all.pdf"
+    },
+    {
+      "id": "tomorrow_accessible",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: ACCESSIBLE",
+      "file": "social/hax_tomorrow_accessible_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_accessible_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Beaver Blue. Title \"ACCESSIBLE\", tagline \"Built for everyone, by everyone.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_accessible.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_accessible.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_accessible.pdf"
+    },
+    {
+      "id": "tomorrow_efficient",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: EFFICIENT",
+      "file": "social/hax_tomorrow_efficient_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_efficient_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Invent Orange. Title \"EFFICIENT\", tagline \"Fast for the people who make it and the people who use it.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_efficient.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_efficient.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_efficient.pdf"
+    },
+    {
+      "id": "tomorrow_extensible",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: EXTENSIBLE",
+      "file": "social/hax_tomorrow_extensible_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_extensible_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Creek Teal. Title \"EXTENSIBLE\", tagline \"If it's missing, anyone can build it.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_extensible.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_extensible.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_extensible.pdf"
+    },
+    {
+      "id": "tomorrow_open",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: FREE AND OPEN",
+      "file": "social/hax_tomorrow_open_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_open_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Keystone Yellow. Title \"FREE AND OPEN\", tagline \"Open by design: built on standards, owned by you.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_open.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_open.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_open.pdf"
+    },
+    {
+      "id": "tomorrow_agnostic",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: PLATFORM AGNOSTIC",
+      "file": "social/hax_tomorrow_agnostic_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_agnostic_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Sky Blue. Title \"PLATFORM AGNOSTIC\", tagline \"Any format, any screen, any browser.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_agnostic.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_agnostic.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_agnostic.pdf"
+    },
+    {
+      "id": "tomorrow_remixable",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: REMIXABLE",
+      "file": "social/hax_tomorrow_remixable_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_remixable_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Original 87 Pink. Title \"REMIXABLE\", tagline \"Break it down, mix it up, make it new.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_remixable.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_remixable.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_remixable.pdf"
+    },
+    {
+      "id": "tomorrow_sustainable",
+      "series": "World of Tomorrow pillars",
+      "title": "World of Tomorrow: SUSTAINABLE",
+      "file": "social/hax_tomorrow_sustainable_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_sustainable_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Future Lime. Title \"SUSTAINABLE\", tagline \"Built to last, light on the planet.\", with a QR code and hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Inspired by 1960s world-of-tomorrow and space travel posters; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.gif",
+      "print_11x17": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_sustainable.pdf"
+    },
+    {
+      "id": "heroes_accessible",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Accessible Traveler",
+      "file": "social/hax_heroes_accessible_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_accessible_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a blue Future Traveler figure with its universal access shield in the bubble, labeled \"Accessible Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.gif"
+    },
+    {
+      "id": "heroes_efficient",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Efficient Traveler",
+      "file": "social/hax_heroes_efficient_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_efficient_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a orange Future Traveler figure with its lightning turbo boots in the bubble, labeled \"Efficient Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.gif"
+    },
+    {
+      "id": "heroes_extensible",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Extensible Traveler",
+      "file": "social/hax_heroes_extensible_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_extensible_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a teal Future Traveler figure with its infinite brick builder in the bubble, labeled \"Extensible Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.gif"
+    },
+    {
+      "id": "heroes_open",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Free and Open Traveler",
+      "file": "social/hax_heroes_open_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_open_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a yellow Future Traveler figure with its golden open key in the bubble, labeled \"Free and Open Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.gif"
+    },
+    {
+      "id": "heroes_agnostic",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Platform Agnostic Traveler",
+      "file": "social/hax_heroes_agnostic_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_agnostic_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a sky blue Future Traveler figure with its every-screen gauntlet in the bubble, labeled \"Platform Agnostic Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.gif"
+    },
+    {
+      "id": "heroes_remixable",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Remixable Traveler",
+      "file": "social/hax_heroes_remixable_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_remixable_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a pink Future Traveler figure with its remix blaster in the bubble, labeled \"Remixable Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.gif"
+    },
+    {
+      "id": "heroes_sustainable",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Sustainable Traveler",
+      "file": "social/hax_heroes_sustainable_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_sustainable_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a lime Future Traveler figure with its evergreen seed pod in the bubble, labeled \"Sustainable Traveler\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.gif"
+    },
+    {
+      "id": "heroes_ubiquity",
+      "series": "HAX Heroes",
+      "title": "HAX Heroes: Ubiquity Traveler (chase figure)",
+      "file": "social/hax_heroes_ubiquity_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_heroes_ubiquity_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "Toy blister card, \"HAX Heroes, the Future Traveler collection\": a gold Future Traveler figure with its all seven pillar accessories in the bubble, labeled \"Ubiquity Traveler (chase figure)\".",
+      "reuse": "hax-original",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.gif"
+    },
+    {
+      "id": "stage_select",
+      "series": "HAX Heroes",
+      "title": "Select a Pillar",
+      "file": "social/hax_stage_select_poster.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_stage_select_poster.png",
+      "width": 1080,
+      "height": 1350,
+      "alt": "NES-style \"Push start, select a pillar\" grid: eight-bit heads for the seven pillars, the Future Traveler in the center and THE VOID, with a QR code to hax.psu.edu.",
+      "reuse": "homage-review-before-promoting",
+      "note": "Homage to an 8-bit boss-select screen; review before official promotion.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.gif"
+    },
+    {
+      "id": "bulletin_board",
+      "series": "Scenes",
+      "title": "Bulletin board",
+      "file": "hax_bulletin_board.png",
+      "url": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png",
+      "width": 1920,
+      "height": 1080,
+      "reuse": "hax-original",
+      "alt": "A campus bulletin board covered in the HAX posters, some peeling, under the banner \"HAX: Take one. Skill up. Build the future.\" Pixel students reach up to read them; the Void looms on the left and a bright future city glows on the right, where the Future Traveler waits.",
+      "video": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.mp4",
+      "gif": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.gif"
+    }
+  ],
+  "release_assets": [
+    {
+      "file": "hax_1880s.mp4",
+      "kind": "video",
+      "about": "1880s steam age",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.mp4",
+      "bytes": 1607981
+    },
+    {
+      "file": "hax_1880s.gif",
+      "kind": "gif",
+      "about": "1880s steam age",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.gif",
+      "bytes": 2734405
+    },
+    {
+      "file": "hax_campus_1880s.pdf",
+      "kind": "print-11x17",
+      "about": "1880s steam age",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1880s.pdf",
+      "bytes": 888449
+    },
+    {
+      "file": "hax_1900s.mp4",
+      "kind": "video",
+      "about": "1900s modern marvel",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1900s.mp4",
+      "bytes": 2977711
+    },
+    {
+      "file": "hax_1900s.gif",
+      "kind": "gif",
+      "about": "1900s modern marvel",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1900s.gif",
+      "bytes": 3943721
+    },
+    {
+      "file": "hax_campus_1900s.pdf",
+      "kind": "print-11x17",
+      "about": "1900s modern marvel",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1900s.pdf",
+      "bytes": 755549
+    },
+    {
+      "file": "hax_1920s.mp4",
+      "kind": "video",
+      "about": "1920s roaring twenties",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1920s.mp4",
+      "bytes": 328526
+    },
+    {
+      "file": "hax_1920s.gif",
+      "kind": "gif",
+      "about": "1920s roaring twenties",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1920s.gif",
+      "bytes": 508650
+    },
+    {
+      "file": "hax_campus_1920s.pdf",
+      "kind": "print-11x17",
+      "about": "1920s roaring twenties",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1920s.pdf",
+      "bytes": 794420
+    },
+    {
+      "file": "hax_1970s.mp4",
+      "kind": "video",
+      "about": "1970s rainbow",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.mp4",
+      "bytes": 299550
+    },
+    {
+      "file": "hax_1970s.gif",
+      "kind": "gif",
+      "about": "1970s rainbow",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.gif",
+      "bytes": 444876
+    },
+    {
+      "file": "hax_campus_1970s.pdf",
+      "kind": "print-11x17",
+      "about": "1970s rainbow",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1970s.pdf",
+      "bytes": 745645
+    },
+    {
+      "file": "hax_1980s.mp4",
+      "kind": "video",
+      "about": "1980s corporate (Paul Rand homage)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s.mp4",
+      "bytes": 212359
+    },
+    {
+      "file": "hax_1980s.gif",
+      "kind": "gif",
+      "about": "1980s corporate (Paul Rand homage)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s.gif",
+      "bytes": 118255
+    },
+    {
+      "file": "hax_campus_1980s.pdf",
+      "kind": "print-11x17",
+      "about": "1980s corporate (Paul Rand homage)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1980s.pdf",
+      "bytes": 562580
+    },
+    {
+      "file": "hax_1980s_cyberpunk.mp4",
+      "kind": "video",
+      "about": "1980s cyberpunk",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.mp4",
+      "bytes": 2089289
+    },
+    {
+      "file": "hax_1980s_cyberpunk.gif",
+      "kind": "gif",
+      "about": "1980s cyberpunk",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.gif",
+      "bytes": 2795950
+    },
+    {
+      "file": "hax_campus_1980s_cyberpunk.pdf",
+      "kind": "print-11x17",
+      "about": "1980s cyberpunk",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1980s_cyberpunk.pdf",
+      "bytes": 782055
+    },
+    {
+      "file": "hax_1990s.mp4",
+      "kind": "video",
+      "about": "1990s early web",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1990s.mp4",
+      "bytes": 670806
+    },
+    {
+      "file": "hax_1990s.gif",
+      "kind": "gif",
+      "about": "1990s early web",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1990s.gif",
+      "bytes": 669751
+    },
+    {
+      "file": "hax_campus_1990s.pdf",
+      "kind": "print-11x17",
+      "about": "1990s early web",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1990s.pdf",
+      "bytes": 634709
+    },
+    {
+      "file": "hax_gameboy.mp4",
+      "kind": "video",
+      "about": "Game Boy",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.mp4",
+      "bytes": 268915
+    },
+    {
+      "file": "hax_gameboy.gif",
+      "kind": "gif",
+      "about": "Game Boy",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.gif",
+      "bytes": 151737
+    },
+    {
+      "file": "hax_campus_gameboy.pdf",
+      "kind": "print-11x17",
+      "about": "Game Boy",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gameboy.pdf",
+      "bytes": 1068070
+    },
+    {
+      "file": "hax_gba.mp4",
+      "kind": "video",
+      "about": "Game Boy Advance",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.mp4",
+      "bytes": 135442
+    },
+    {
+      "file": "hax_gba.gif",
+      "kind": "gif",
+      "about": "Game Boy Advance",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.gif",
+      "bytes": 214915
+    },
+    {
+      "file": "hax_campus_gba.pdf",
+      "kind": "print-11x17",
+      "about": "Game Boy Advance",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gba.pdf",
+      "bytes": 611837
+    },
+    {
+      "file": "hax_ps.mp4",
+      "kind": "video",
+      "about": "PlayStation",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.mp4",
+      "bytes": 233300
+    },
+    {
+      "file": "hax_ps.gif",
+      "kind": "gif",
+      "about": "PlayStation",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.gif",
+      "bytes": 145701
+    },
+    {
+      "file": "hax_campus_ps.pdf",
+      "kind": "print-11x17",
+      "about": "PlayStation",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_ps.pdf",
+      "bytes": 565622
+    },
+    {
+      "file": "hax_wii.mp4",
+      "kind": "video",
+      "about": "Wii",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.mp4",
+      "bytes": 287187
+    },
+    {
+      "file": "hax_wii.gif",
+      "kind": "gif",
+      "about": "Wii",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.gif",
+      "bytes": 541755
+    },
+    {
+      "file": "hax_campus_wii.pdf",
+      "kind": "print-11x17",
+      "about": "Wii",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wii.pdf",
+      "bytes": 619926
+    },
+    {
+      "file": "hax_hacker.mp4",
+      "kind": "video",
+      "about": "Hacker",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.mp4",
+      "bytes": 2425697
+    },
+    {
+      "file": "hax_hacker.gif",
+      "kind": "gif",
+      "about": "Hacker",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.gif",
+      "bytes": 1236950
+    },
+    {
+      "file": "hax_campus_hacker.pdf",
+      "kind": "print-11x17",
+      "about": "Hacker",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_hacker.pdf",
+      "bytes": 1035526
+    },
+    {
+      "file": "hax_quest.mp4",
+      "kind": "video",
+      "about": "HAX Quest",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.mp4",
+      "bytes": 3093900
+    },
+    {
+      "file": "hax_quest.gif",
+      "kind": "gif",
+      "about": "HAX Quest",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.gif",
+      "bytes": 2254985
+    },
+    {
+      "file": "hax_campus_quest.pdf",
+      "kind": "print-11x17",
+      "about": "HAX Quest",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest.pdf",
+      "bytes": 1053886
+    },
+    {
+      "file": "hax_campus_quest_comic.pdf",
+      "kind": "print-11x17",
+      "about": "HAX Quest comic",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest_comic.pdf",
+      "bytes": 961865
+    },
+    {
+      "file": "hax_sunday.mp4",
+      "kind": "video",
+      "about": "Sunday Funnies",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.mp4",
+      "bytes": 8032345
+    },
+    {
+      "file": "hax_sunday.gif",
+      "kind": "gif",
+      "about": "Sunday Funnies",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.gif",
+      "bytes": 6019686
+    },
+    {
+      "file": "hax_campus_sunday.pdf",
+      "kind": "print-11x17",
+      "about": "Sunday Funnies",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_sunday.pdf",
+      "bytes": 1487391
+    },
+    {
+      "file": "hax_needyou.mp4",
+      "kind": "video",
+      "about": "I Need You",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.mp4",
+      "bytes": 697098
+    },
+    {
+      "file": "hax_needyou.gif",
+      "kind": "gif",
+      "about": "I Need You",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.gif",
+      "bytes": 964151
+    },
+    {
+      "file": "hax_campus_needyou.pdf",
+      "kind": "print-11x17",
+      "about": "I Need You",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_needyou.pdf",
+      "bytes": 1266221
+    },
+    {
+      "file": "hax_wecan.mp4",
+      "kind": "video",
+      "about": "We Can Build It!",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.mp4",
+      "bytes": 324338
+    },
+    {
+      "file": "hax_wecan.gif",
+      "kind": "gif",
+      "about": "We Can Build It!",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.gif",
+      "bytes": 311253
+    },
+    {
+      "file": "hax_campus_wecan.pdf",
+      "kind": "print-11x17",
+      "about": "We Can Build It!",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wecan.pdf",
+      "bytes": 644566
+    },
+    {
+      "file": "hax_now.mp4",
+      "kind": "video",
+      "about": "You made it to the future",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.mp4",
+      "bytes": 3058043
+    },
+    {
+      "file": "hax_now.gif",
+      "kind": "gif",
+      "about": "You made it to the future",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.gif",
+      "bytes": 2040921
+    },
+    {
+      "file": "hax_campus_now.pdf",
+      "kind": "print-11x17",
+      "about": "You made it to the future",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_now.pdf",
+      "bytes": 617389
+    },
+    {
+      "file": "hax_tomorrow_all.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: UBIQUITY",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.mp4",
+      "bytes": 856077
+    },
+    {
+      "file": "hax_tomorrow_all.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: UBIQUITY",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.gif",
+      "bytes": 1294377
+    },
+    {
+      "file": "hax_campus_tomorrow_all.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: UBIQUITY",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_all.pdf",
+      "bytes": 1221512
+    },
+    {
+      "file": "hax_tomorrow_accessible.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: ACCESSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_accessible.mp4",
+      "bytes": 789644
+    },
+    {
+      "file": "hax_tomorrow_accessible.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: ACCESSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_accessible.gif",
+      "bytes": 1265335
+    },
+    {
+      "file": "hax_campus_tomorrow_accessible.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: ACCESSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_accessible.pdf",
+      "bytes": 1223323
+    },
+    {
+      "file": "hax_tomorrow_efficient.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: EFFICIENT",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_efficient.mp4",
+      "bytes": 724543
+    },
+    {
+      "file": "hax_tomorrow_efficient.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: EFFICIENT",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_efficient.gif",
+      "bytes": 1106823
+    },
+    {
+      "file": "hax_campus_tomorrow_efficient.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: EFFICIENT",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_efficient.pdf",
+      "bytes": 1212495
+    },
+    {
+      "file": "hax_tomorrow_extensible.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: EXTENSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_extensible.mp4",
+      "bytes": 737113
+    },
+    {
+      "file": "hax_tomorrow_extensible.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: EXTENSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_extensible.gif",
+      "bytes": 1072593
+    },
+    {
+      "file": "hax_campus_tomorrow_extensible.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: EXTENSIBLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_extensible.pdf",
+      "bytes": 1212258
+    },
+    {
+      "file": "hax_tomorrow_open.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: FREE AND OPEN",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_open.mp4",
+      "bytes": 699521
+    },
+    {
+      "file": "hax_tomorrow_open.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: FREE AND OPEN",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_open.gif",
+      "bytes": 1104665
+    },
+    {
+      "file": "hax_campus_tomorrow_open.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: FREE AND OPEN",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_open.pdf",
+      "bytes": 1229752
+    },
+    {
+      "file": "hax_tomorrow_agnostic.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: PLATFORM AGNOSTIC",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_agnostic.mp4",
+      "bytes": 725685
+    },
+    {
+      "file": "hax_tomorrow_agnostic.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: PLATFORM AGNOSTIC",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_agnostic.gif",
+      "bytes": 1003343
+    },
+    {
+      "file": "hax_campus_tomorrow_agnostic.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: PLATFORM AGNOSTIC",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_agnostic.pdf",
+      "bytes": 1226137
+    },
+    {
+      "file": "hax_tomorrow_remixable.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: REMIXABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_remixable.mp4",
+      "bytes": 775848
+    },
+    {
+      "file": "hax_tomorrow_remixable.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: REMIXABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_remixable.gif",
+      "bytes": 1113195
+    },
+    {
+      "file": "hax_campus_tomorrow_remixable.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: REMIXABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_remixable.pdf",
+      "bytes": 1210176
+    },
+    {
+      "file": "hax_tomorrow_sustainable.mp4",
+      "kind": "video",
+      "about": "World of Tomorrow: SUSTAINABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.mp4",
+      "bytes": 704604
+    },
+    {
+      "file": "hax_tomorrow_sustainable.gif",
+      "kind": "gif",
+      "about": "World of Tomorrow: SUSTAINABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.gif",
+      "bytes": 1094117
+    },
+    {
+      "file": "hax_campus_tomorrow_sustainable.pdf",
+      "kind": "print-11x17",
+      "about": "World of Tomorrow: SUSTAINABLE",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_sustainable.pdf",
+      "bytes": 1218204
+    },
+    {
+      "file": "hax_heroes_accessible.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Accessible Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.mp4",
+      "bytes": 771675
+    },
+    {
+      "file": "hax_heroes_accessible.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Accessible Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.gif",
+      "bytes": 2304584
+    },
+    {
+      "file": "hax_heroes_efficient.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Efficient Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.mp4",
+      "bytes": 932760
+    },
+    {
+      "file": "hax_heroes_efficient.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Efficient Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.gif",
+      "bytes": 2640249
+    },
+    {
+      "file": "hax_heroes_extensible.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Extensible Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.mp4",
+      "bytes": 856502
+    },
+    {
+      "file": "hax_heroes_extensible.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Extensible Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.gif",
+      "bytes": 2769041
+    },
+    {
+      "file": "hax_heroes_open.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Free and Open Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.mp4",
+      "bytes": 982490
+    },
+    {
+      "file": "hax_heroes_open.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Free and Open Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.gif",
+      "bytes": 2528717
+    },
+    {
+      "file": "hax_heroes_agnostic.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Platform Agnostic Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.mp4",
+      "bytes": 887280
+    },
+    {
+      "file": "hax_heroes_agnostic.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Platform Agnostic Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.gif",
+      "bytes": 2702148
+    },
+    {
+      "file": "hax_heroes_remixable.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Remixable Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.mp4",
+      "bytes": 820142
+    },
+    {
+      "file": "hax_heroes_remixable.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Remixable Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.gif",
+      "bytes": 2555076
+    },
+    {
+      "file": "hax_heroes_sustainable.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Sustainable Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.mp4",
+      "bytes": 934278
+    },
+    {
+      "file": "hax_heroes_sustainable.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Sustainable Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.gif",
+      "bytes": 2633081
+    },
+    {
+      "file": "hax_heroes_ubiquity.mp4",
+      "kind": "video",
+      "about": "HAX Heroes: Ubiquity Traveler (chase figure)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.mp4",
+      "bytes": 968482
+    },
+    {
+      "file": "hax_heroes_ubiquity.gif",
+      "kind": "gif",
+      "about": "HAX Heroes: Ubiquity Traveler (chase figure)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.gif",
+      "bytes": 2593259
+    },
+    {
+      "file": "hax_stage_select.mp4",
+      "kind": "video",
+      "about": "Select a Pillar",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.mp4",
+      "bytes": 913092
+    },
+    {
+      "file": "hax_stage_select.gif",
+      "kind": "gif",
+      "about": "Select a Pillar",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.gif",
+      "bytes": 1161228
+    },
+    {
+      "file": "hax_bulletin_board.mp4",
+      "kind": "video",
+      "about": "Bulletin board",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.mp4",
+      "bytes": 3967706
+    },
+    {
+      "file": "hax_bulletin_board.gif",
+      "kind": "gif",
+      "about": "Bulletin board",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.gif",
+      "bytes": 4966606
+    },
+    {
+      "file": "hax_campus_print_pack.pdf",
+      "kind": "print-11x17",
+      "about": "Every campus poster in one PDF",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_print_pack.pdf",
+      "bytes": 24838992
+    },
+    {
+      "file": "hax_story_generic.mp4",
+      "kind": "video",
+      "about": "Story: three students (fictional) find HAX Lab, learn by doing and ride off with the Future Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_story_generic.mp4",
+      "bytes": 7004440
+    },
+    {
+      "file": "hax_story_generic.gif",
+      "kind": "gif",
+      "about": "Story: three students (fictional) find HAX Lab, learn by doing and ride off with the Future Traveler",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_story_generic.gif",
+      "bytes": 6533415
+    },
+    {
+      "file": "hax_story_real.mp4",
+      "kind": "video",
+      "about": "Story: Jimmy Kane, Winston White and Zach Dodson, from HAX Lab to Ford, IBM and Penn State",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_story_real.mp4",
+      "bytes": 7460347
+    },
+    {
+      "file": "hax_story_real.gif",
+      "kind": "gif",
+      "about": "Story: Jimmy Kane, Winston White and Zach Dodson, from HAX Lab to Ford, IBM and Penn State",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_story_real.gif",
+      "bytes": 6600834
+    },
+    {
+      "file": "hax_stage_accessible_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, accessible, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_accessible_full.mp4",
+      "bytes": 2833965
+    },
+    {
+      "file": "hax_stage_accessible_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, accessible, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_accessible_1_select.mp4",
+      "bytes": 338130
+    },
+    {
+      "file": "hax_stage_accessible_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, accessible, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_accessible_2_card.mp4",
+      "bytes": 533683
+    },
+    {
+      "file": "hax_stage_accessible_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, accessible, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_accessible_3_demo.mp4",
+      "bytes": 1444404
+    },
+    {
+      "file": "hax_stage_accessible_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, accessible, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_accessible_4_clear.mp4",
+      "bytes": 521663
+    },
+    {
+      "file": "hax_stage_efficient_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, efficient, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_efficient_full.mp4",
+      "bytes": 2737268
+    },
+    {
+      "file": "hax_stage_efficient_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, efficient, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_efficient_1_select.mp4",
+      "bytes": 336960
+    },
+    {
+      "file": "hax_stage_efficient_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, efficient, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_efficient_2_card.mp4",
+      "bytes": 525347
+    },
+    {
+      "file": "hax_stage_efficient_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, efficient, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_efficient_3_demo.mp4",
+      "bytes": 1327124
+    },
+    {
+      "file": "hax_stage_efficient_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, efficient, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_efficient_4_clear.mp4",
+      "bytes": 551752
+    },
+    {
+      "file": "hax_stage_extensible_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, extensible, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_extensible_full.mp4",
+      "bytes": 2923517
+    },
+    {
+      "file": "hax_stage_extensible_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, extensible, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_extensible_1_select.mp4",
+      "bytes": 336080
+    },
+    {
+      "file": "hax_stage_extensible_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, extensible, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_extensible_2_card.mp4",
+      "bytes": 531537
+    },
+    {
+      "file": "hax_stage_extensible_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, extensible, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_extensible_3_demo.mp4",
+      "bytes": 1523212
+    },
+    {
+      "file": "hax_stage_extensible_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, extensible, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_extensible_4_clear.mp4",
+      "bytes": 536595
+    },
+    {
+      "file": "hax_stage_open_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, open, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_open_full.mp4",
+      "bytes": 2662310
+    },
+    {
+      "file": "hax_stage_open_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, open, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_open_1_select.mp4",
+      "bytes": 336628
+    },
+    {
+      "file": "hax_stage_open_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, open, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_open_2_card.mp4",
+      "bytes": 542114
+    },
+    {
+      "file": "hax_stage_open_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, open, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_open_3_demo.mp4",
+      "bytes": 1217881
+    },
+    {
+      "file": "hax_stage_open_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, open, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_open_4_clear.mp4",
+      "bytes": 569594
+    },
+    {
+      "file": "hax_stage_agnostic_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, agnostic, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_agnostic_full.mp4",
+      "bytes": 2678833
+    },
+    {
+      "file": "hax_stage_agnostic_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, agnostic, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_agnostic_1_select.mp4",
+      "bytes": 337192
+    },
+    {
+      "file": "hax_stage_agnostic_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, agnostic, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_agnostic_2_card.mp4",
+      "bytes": 529824
+    },
+    {
+      "file": "hax_stage_agnostic_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, agnostic, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_agnostic_3_demo.mp4",
+      "bytes": 1273783
+    },
+    {
+      "file": "hax_stage_agnostic_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, agnostic, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_agnostic_4_clear.mp4",
+      "bytes": 541949
+    },
+    {
+      "file": "hax_stage_remixable_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, remixable, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_remixable_full.mp4",
+      "bytes": 2829231
+    },
+    {
+      "file": "hax_stage_remixable_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, remixable, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_remixable_1_select.mp4",
+      "bytes": 337137
+    },
+    {
+      "file": "hax_stage_remixable_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, remixable, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_remixable_2_card.mp4",
+      "bytes": 520373
+    },
+    {
+      "file": "hax_stage_remixable_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, remixable, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_remixable_3_demo.mp4",
+      "bytes": 1446280
+    },
+    {
+      "file": "hax_stage_remixable_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, remixable, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_remixable_4_clear.mp4",
+      "bytes": 529356
+    },
+    {
+      "file": "hax_stage_sustainable_full.mp4",
+      "kind": "video",
+      "about": "Pillar stage, sustainable, full 42 s",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_sustainable_full.mp4",
+      "bytes": 2972301
+    },
+    {
+      "file": "hax_stage_sustainable_1_select.mp4",
+      "kind": "video",
+      "about": "Pillar stage, sustainable, segment 1: select",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_sustainable_1_select.mp4",
+      "bytes": 336157
+    },
+    {
+      "file": "hax_stage_sustainable_2_card.mp4",
+      "kind": "video",
+      "about": "Pillar stage, sustainable, segment 2: power card",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_sustainable_2_card.mp4",
+      "bytes": 526567
+    },
+    {
+      "file": "hax_stage_sustainable_3_demo.mp4",
+      "kind": "video",
+      "about": "Pillar stage, sustainable, segment 3: live demo on haxtheweb.org",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_sustainable_3_demo.mp4",
+      "bytes": 1573328
+    },
+    {
+      "file": "hax_stage_sustainable_4_clear.mp4",
+      "kind": "video",
+      "about": "Pillar stage, sustainable, segment 4: stage clear",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_sustainable_4_clear.mp4",
+      "bytes": 540164
+    },
+    {
+      "file": "hax_logo_sting.mp4",
+      "kind": "video",
+      "about": "Rolling H cube logo sting with jingle",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_logo_sting.mp4",
+      "bytes": 5042697
+    },
+    {
+      "file": "hax_logo_sting.gif",
+      "kind": "gif",
+      "about": "Rolling H cube logo sting",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_logo_sting.gif",
+      "bytes": 11121328
+    },
+    {
+      "file": "hax_logo_sting_360px.gif",
+      "kind": "gif",
+      "about": "Rolling H cube logo sting, 360 px wide",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_logo_sting_360px.gif",
+      "bytes": 1172588
+    },
+    {
+      "file": "hax_logo_sting_400px.gif",
+      "kind": "gif",
+      "about": "Rolling H cube logo sting, 400 px wide",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_logo_sting_400px.gif",
+      "bytes": 1585035
+    },
+    {
+      "file": "hax_logo_sting_480px.gif",
+      "kind": "gif",
+      "about": "Rolling H cube logo sting, 480 px wide",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_logo_sting_480px.gif",
+      "bytes": 2210659
+    },
+    {
+      "file": "hax_intro_gameboy.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: gameboy homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_gameboy.mp4",
+      "bytes": 209020
+    },
+    {
+      "file": "hax_intro_gameboy.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: gameboy homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_gameboy.gif",
+      "bytes": 58862
+    },
+    {
+      "file": "hax_intro_gba.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: gba homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_gba.mp4",
+      "bytes": 187483
+    },
+    {
+      "file": "hax_intro_gba.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: gba homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_gba.gif",
+      "bytes": 166877
+    },
+    {
+      "file": "hax_intro_playstation.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: playstation homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_playstation.mp4",
+      "bytes": 323532
+    },
+    {
+      "file": "hax_intro_playstation.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: playstation homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_playstation.gif",
+      "bytes": 304182
+    },
+    {
+      "file": "hax_intro_n64.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: n64 homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_n64.mp4",
+      "bytes": 487204
+    },
+    {
+      "file": "hax_intro_n64.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: n64 homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_n64.gif",
+      "bytes": 781103
+    },
+    {
+      "file": "hax_intro_wii.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: wii homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_wii.mp4",
+      "bytes": 472521
+    },
+    {
+      "file": "hax_intro_wii.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: wii homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_wii.gif",
+      "bytes": 731538
+    },
+    {
+      "file": "hax_intro_hacker.mp4",
+      "kind": "video",
+      "about": "Console start-up intro: hacker homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_hacker.mp4",
+      "bytes": 10096923
+    },
+    {
+      "file": "hax_intro_hacker.gif",
+      "kind": "gif",
+      "about": "Console start-up intro: hacker homage",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_intro_hacker.gif",
+      "bytes": 3213019
+    },
+    {
+      "file": "hax_posters_source.tar.gz",
+      "kind": "source",
+      "about": "Python and Playwright scripts that render every piece above (paths are from the original workspace)",
+      "url": "https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_posters_source.tar.gz",
+      "bytes": 2459522
+    }
+  ]
+}

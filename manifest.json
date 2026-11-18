@@ -1003,6 +1003,14 @@
         "haxcms-platform-assets/": "assets/ icons of the HAXcms platform pages",
         "desktop/": "icon.ico, icon.icns and icon.png for the desktop app"
       }
+    },
+    {
+      "path": "haxtheweb/posters/",
+      "description": "HAX campus and social poster campaign: 35 posters in 1080×1350 (HAX across time, console homages, the Quest vs THE VOID, recruiting, World of Tomorrow pillars, HAX Heroes) and a bulletin board scene, each with alt text and reuse flags in posters.json. Rendered in code by Claude, an AI, under HAX team direction.",
+      "catalog": "haxtheweb/posters/posters.json",
+      "large_media": "Videos, GIFs and 11×17 print PDFs live on the GitHub release media-2026-11 (https://github.com/haxtheweb/art/releases/tag/media-2026-11), not in git.",
+      "contains_future_traveler": true,
+      "reuse": "mixed: hax-original, and homage-review-before-promoting where flagged per poster"
     }
   ]
 }
