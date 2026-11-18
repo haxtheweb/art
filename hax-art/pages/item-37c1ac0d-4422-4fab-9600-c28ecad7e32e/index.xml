@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-37c1ac0d-4422-4fab-9600-c28ecad7e32e</id>
+<indent>1</indent>
+<location>pages/item-37c1ac0d-4422-4fab-9600-c28ecad7e32e/index.xml</location>
+<slug>future-traveler-badge</slug>
+<order>36</order>
+<parent>item-9d646bf1-d0fb-4003-8102-0b25eda87609</parent>
+<title>Future Traveler badge</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png</image>
+<tags>badge</tags>
+<created>1795040652</created>
+<updated>1795040652</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png" alt="Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu Future traveler-circle.png">View on GitHub</a></li></ul>]]></content>
+</item>

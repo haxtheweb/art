@@ -79,6 +79,7 @@ add({
       ["future-traveler", "Future Traveler: the HAX mascot in every style"],
       ["rpg-character", "rpg-character: games and toys starring HAX's pixel character"],
       ["brand", "Brand: logos, stickers, banners and posters"],
+      ["posters", "Posters: the HAX campus and social campaign"],
       ["talks", "Talks: diagrams and explainers for presentations"],
       ["use-the-art", "Use the art: attribution, licensing and hotlinking"],
     ]),
@@ -255,6 +256,102 @@ brand.forEach(([id, title, file, alt, tag, note]) =>
   }),
 );
 
+// ---------- Posters ----------
+// One page per poster in haxtheweb/posters/posters.json. Stills are in git;
+// video, GIF and 11x17 print files are assets on the GitHub release the
+// catalog names, so those links work once that release is published.
+const POSTERS = "haxtheweb/posters/";
+const posterCat = JSON.parse(await readFile(path.join(root, POSTERS, "posters.json"), "utf8"));
+const asset = (name) => (posterCat.release_assets.find((a) => a.file === name) || {}).url;
+const SERIES_TAG = {
+  "HAX across time": "across-time",
+  "Game consoles": "consoles",
+  "The Quest": "quest",
+  "World of Tomorrow pillars": "tomorrow",
+  "Stage select": "stage-select",
+  Scenes: "scene",
+};
+const PILLAR_NAME = {
+  accessible: "Accessible",
+  efficient: "Efficient",
+  extensible: "Extensible",
+  open: "Free and Open",
+  agnostic: "Platform Agnostic",
+  remixable: "Remixable",
+  sustainable: "Sustainable",
+};
+add({
+  id: "posters",
+  title: "Posters",
+  slug: "posters",
+  description: "The HAX campus and social campaign: posters across time, console homages, the Quest and the World of Tomorrow.",
+  image: raw(POSTERS + "social/hax_tomorrow_all_poster.png"),
+  content: [
+    p("Posters for the HAX campus and social campaign. HAX brings the best ideas of every era into the future, so the series travels from the 1880s to the 1990s, through console start-up screens and a Game Boy battle against THE VOID, to a World of Tomorrow poster for each HAX pillar. Each poster is a 1080×1350 still for social posts; most also come as a 5-second video, a GIF and an 11×17 print."),
+    image(POSTERS + "contact-sheet.jpg", "Every HAX poster grouped by series: HAX across time, game consoles, the Quest, World of Tomorrow pillars, stage select, and the bulletin board scene.", "The whole campaign at a glance."),
+    links([
+      [TREE + "haxtheweb/posters", "Stills, alt text and the catalog on GitHub"],
+      [posterCat.release, "Videos, GIFs and print PDFs (GitHub release)"],
+    ]),
+  ].join("\n"),
+});
+posterCat.posters.forEach((x) => {
+  const pillar = x.id.startsWith("tomorrow_") ? x.id.slice("tomorrow_".length) : null;
+  const stage = pillar && PILLAR_NAME[pillar] ? asset(`hax_stage_${pillar}_full.mp4`) : null;
+  add({
+    id: `poster-${x.id.replace(/_/g, "-")}`,
+    parent: "posters",
+    title: x.title,
+    slug: `poster-${x.id.replace(/_/g, "-")}`,
+    description: x.alt,
+    image: x.url,
+    tags: [SERIES_TAG[x.series] || "poster"],
+    content: [
+      image(POSTERS + x.file, x.alt),
+      facts([
+        ["Series", x.series],
+        ["Size", `${x.width} × ${x.height} px`],
+      ]),
+      x.note ? p(`<strong>Review before promoting.</strong> ${esc(x.note)} See <a href="${REPO}LICENSING.md">LICENSING.md</a>.`) : "",
+      stage ? p(`See the ${esc(PILLAR_NAME[pillar])} pillar in action in its 42-second stage video, recorded on the live haxtheweb.org.`) : "",
+      links([
+        [x.url, "Full-size still"],
+        ...(x.video ? [[x.video, "Video (MP4)"]] : []),
+        ...(x.gif ? [[x.gif, "GIF"]] : []),
+        ...(x.print_11x17 ? [[x.print_11x17, "11×17 print (PDF)"]] : []),
+        ...(stage ? [[stage, `${PILLAR_NAME[pillar]} stage video (MP4)`]] : []),
+        [REPO + POSTERS + x.file, "View on GitHub"],
+      ]),
+    ].filter(Boolean).join("\n"),
+  });
+});
+add({
+  id: "poster-videos",
+  parent: "posters",
+  title: "Campaign videos",
+  slug: "poster-videos",
+  description: "Pillar stage videos, student stories, the logo sting and console start-up intros.",
+  image: raw(POSTERS + "social/hax_stage_select_poster.png"),
+  tags: ["video"],
+  content: [
+    p("Videos from the campaign that don't have a poster of their own. They live on the GitHub release, not in git."),
+    `<h2>Pillar stages</h2>`,
+    p("An 8-bit stage select, a power card, a live demo recorded on the real haxtheweb.org, and a stage-clear card, 42 seconds each. Every stage also comes as four separate segment files on the release."),
+    links(Object.entries(PILLAR_NAME).map(([k, v]) => [asset(`hax_stage_${k}_full.mp4`), v])),
+    `<h2>Stories</h2>`,
+    links([
+      [asset("hax_story_generic.mp4"), "Three students find HAX Lab, learn by doing and ride into the future (fictional)"],
+      [asset("hax_story_real.mp4"), "Jimmy Kane, Winston White and Zach Dodson: from HAX Lab to Ford, IBM and Penn State"],
+    ]),
+    `<h2>Logo sting and console intros</h2>`,
+    links([
+      [asset("hax_logo_sting.mp4"), "Rolling H cube logo sting"],
+      ...["gameboy", "gba", "playstation", "wii", "hacker"].map((k) => [asset(`hax_intro_${k}.mp4`), `Start-up intro: ${{ gameboy: "Game Boy", gba: "Game Boy Advance", playstation: "PlayStation", wii: "Wii", hacker: "Hacker (ASCII)" }[k]}`]),
+    ]),
+    p("<em>The console intros are homages to well-known start-up screens: review them before official promotion.</em>"),
+  ].join("\n"),
+});
+
 // ---------- Talks ----------
 add({
   id: "talks",
@@ -355,7 +452,7 @@ add({
     `<h2>Hotlinking</h2>`,
     p("Every image on this site is a raw GitHub URL, such as <code>" + raw("future-traveler/funny-traveler-15.png") + "</code>. File names in the repo are kept stable, so these links rarely change."),
     `<h2>How this was made</h2>`,
-    p("Most Future Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
+    p("Most Future Traveler variants are AI-generated remixes of the original human-made character. The interactive pieces (RPG Glitch, the HAX the Web game, HAX of the Web, the wanted poster, HAX in under a minute, the opening titles and Episode XXVI) and the poster campaign were made with an AI assistant (Claude) under HAX team direction. HAX's own writing and brand marks are not AI-generated."),
     `<h2>Add to the collection</h2>`,
     p(`Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="${REPO}AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding Future Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.`),
   ].join("\n"),

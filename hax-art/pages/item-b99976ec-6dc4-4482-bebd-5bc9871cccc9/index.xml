@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-b99976ec-6dc4-4482-bebd-5bc9871cccc9</id>
+<indent>1</indent>
+<location>pages/item-b99976ec-6dc4-4482-bebd-5bc9871cccc9/index.xml</location>
+<slug>legend</slug>
+<order>75</order>
+<parent>item-000216b2-bce1-47fa-8285-7b4fc78530a1</parent>
+<title>Legend</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png</image>
+<tags>diagram</tags>
+<created>1795040654</created>
+<updated>1795040654</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png" alt="Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png">View on GitHub</a></li></ul>]]></content>
+</item>

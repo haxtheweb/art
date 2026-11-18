@@ -1,0 +1,18 @@
+{
+  "id": "item-d095bd90-394f-426e-b23d-948cf61e2bbd",
+  "indent": 1,
+  "location": "pages/item-d095bd90-394f-426e-b23d-948cf61e2bbd/index.json",
+  "slug": "poster-hacker",
+  "order": 54,
+  "parent": "item-6966ca15-6e54-4e26-8993-b1f58d25961c",
+  "title": "Hacker",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png",
+    "tags": "consoles",
+    "created": 1795040653,
+    "updated": 1795040653
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png\" alt=\"Black terminal-style poster with HAX built from ASCII blocks, a hooded human, the Future Traveler and a lightbulb, and glitching ASCII pillars on Ubiquity.\"></media-image>\n<ul><li><strong>Series:</strong> Game consoles</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<p><strong>Review before promoting.</strong> Inspired by hacker-game aesthetics (Watch Dogs); review before official promotion. See <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.mp4\">Video (MP4)</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.gif\">GIF</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_hacker.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_hacker_poster.png\">View on GitHub</a></li></ul>"
+}

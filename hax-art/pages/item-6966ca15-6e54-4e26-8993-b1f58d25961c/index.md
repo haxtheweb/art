@@ -1,0 +1,4 @@
+Posters for the HAX campus and social campaign. HAX brings the best ideas of every era into the future, so the series travels from the 1880s to the 1990s, through console start-up screens and a Game Boy battle against THE VOID, to a World of Tomorrow poster for each HAX pillar. Each poster is a 1080×1350 still for social posts; most also come as a 5-second video, a GIF and an 11×17 print.
+
+*   [Stills, alt text and the catalog on GitHub](https://github.com/haxtheweb/art/tree/main/haxtheweb/posters)
+*   [Videos, GIFs and print PDFs (GitHub release)](https://github.com/haxtheweb/art/releases/tag/media-2026-11)

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-8ee1d9f1-a812-4cf0-9493-1f6d6325f2c6</id>
+<indent>1</indent>
+<location>pages/item-8ee1d9f1-a812-4cf0-9493-1f6d6325f2c6/index.xml</location>
+<slug>future-traveler-01</slug>
+<order>2</order>
+<parent>item-6adabed3-d9f0-47b0-8107-a81fd391f6de</parent>
+<title>Android portrait</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg</image>
+<tags>portrait,flat-vector,robot</tags>
+<created>1795040651</created>
+<updated>1795040651</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg" alt="Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead."></media-image>
+<ul><li><strong>Variant:</strong> #01</li><li><strong>Best for:</strong> Portrait</li><li><strong>Style:</strong> Flat vector, Portrait, Robot</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1029 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-01.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

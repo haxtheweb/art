@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-1c006e6a-77ea-4eeb-a5cc-4d0e84e57855</id>
+<indent>1</indent>
+<location>pages/item-1c006e6a-77ea-4eeb-a5cc-4d0e84e57855/index.xml</location>
+<slug>wanted-poster</slug>
+<order>30</order>
+<parent>item-5c0a3f69-5887-44d0-a42b-4622eec3ba84</parent>
+<title>WANTED: HAX</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg</image>
+<tags>poster</tags>
+<created>1795040652</created>
+<updated>1795040652</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg" alt="A weathered old-west wanted poster tacked to a dark wall: WANTED HAX, aka The Open Web Outlaw, with an engraved-style rpg-character in a cowboy hat and a $0 reward because the source is free for any who fork it."></media-image>
+<p>An old-west wanted poster for the Open Web Outlaw, starring the rpg-character in its cowboy hat. The reward is $0, because the source is already free for anyone who forks it.</p>
+<ul><li><a href="https://github.com/haxtheweb/art/tree/main/haxtheweb/wanted-poster">Files, alt text and credits on GitHub</a></li></ul>]]></content>
+</item>
