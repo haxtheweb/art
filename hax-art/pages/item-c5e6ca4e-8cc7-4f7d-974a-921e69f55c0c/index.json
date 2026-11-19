@@ -1,0 +1,18 @@
+{
+  "id": "item-c5e6ca4e-8cc7-4f7d-974a-921e69f55c0c",
+  "indent": 0,
+  "location": "pages/item-c5e6ca4e-8cc7-4f7d-974a-921e69f55c0c/index.json",
+  "slug": "brand",
+  "order": 52,
+  "parent": null,
+  "title": "Brand",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png",
+    "tags": "",
+    "created": 1795115294,
+    "updated": 1795115294
+  },
+  "content": "<p>HAX logos, stickers, banners and posters. The vector logo is <a href=\"https://github.com/haxtheweb/art/blob/main/HAXLogo.svg\">HAXLogo.svg</a>; layered source files (.psd, .ai) live in the <a href=\"https://github.com/haxtheweb/art/tree/main/haxtheweb\">haxtheweb</a> folder on GitHub.</p>"
+}

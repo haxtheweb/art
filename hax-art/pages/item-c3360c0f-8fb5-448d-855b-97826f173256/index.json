@@ -1,0 +1,18 @@
+{
+  "id": "item-c3360c0f-8fb5-448d-855b-97826f173256",
+  "indent": 1,
+  "location": "pages/item-c3360c0f-8fb5-448d-855b-97826f173256/index.json",
+  "slug": "hax-camp-poster",
+  "order": 60,
+  "parent": "item-c5e6ca4e-8cc7-4f7d-974a-921e69f55c0c",
+  "title": "HAX Camp poster",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg",
+    "tags": "poster",
+    "created": 1795115294,
+    "updated": 1795115294
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg\" alt=\"HAX Camp event poster with the h-a-x THE WEB wordmark over a photo of a stone university tower, followed by event details.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/haxcampposter.jpg\">View on GitHub</a></li></ul>"
+}

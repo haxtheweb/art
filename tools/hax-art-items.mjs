@@ -77,6 +77,7 @@ add({
     `<h2>Browse</h2>`,
     links([
       ["future-traveler", "Future Traveler: the HAX mascot in every style"],
+      ["future-traveler-eras", "Future Traveler across time: the icon in every era"],
       ["rpg-character", "rpg-character: games and toys starring HAX's pixel character"],
       ["brand", "Brand: logos, stickers, banners and posters"],
       ["posters", "Posters: the HAX campus and social campaign"],
@@ -135,6 +136,58 @@ const wtPage = (x, parent, published) => {
   });
 };
 publicWT.forEach((x) => wtPage(x, "future-traveler", true));
+
+// ---------- Future Traveler across time ----------
+// One page per era icon in future-traveler-eras/eras.json. The icons are
+// exported from the network bar's code in haxtheweb/webcomponents.
+const ERAS = "future-traveler-eras/";
+const eraCat = JSON.parse(await readFile(path.join(root, ERAS, "eras.json"), "utf8"));
+add({
+  id: "future-traveler-eras",
+  title: "Future Traveler across time",
+  slug: "future-traveler-eras",
+  description: "The Future Traveler icon drawn the way each era would have drawn it.",
+  image: raw(ERAS + "contact-sheet.jpg"),
+  content: [
+    p("The Future Traveler has collected the best ideas of every era in his backpack, so his icon can be drawn the way each era would have drawn it: an 1880s engraving, a 1920s gold line drawing, a neon sign, four greens on a handheld screen. He is still him in all of them: the helmet with HAX on it, the goggles, the lightbulb."),
+    image(ERAS + "contact-sheet.jpg", "The Future Traveler icon in 19 era versions on dark gray, from the icon as it ships through engraving, art nouveau, art deco, rainbow, stripes, neon, handheld pixels, early web, polygons and terminal, to the 1960s world of tomorrow in eight pillar colors.", "Every era at a glance."),
+    p("These are the eras the Future Traveler remixes through at the right end of the HAX network bar: hover him and he tears through every one, click and he stays in the next. Each follows one of the styles the <a href=\"posters\">posters</a> tell the story of the pillars in, and the world of tomorrow comes once per pillar, in that pillar's color."),
+    p("The icons are drawn in code (SVG) by Claude, an AI, under HAX team direction."),
+    links([
+      [TREE + "future-traveler-eras", "SVG and PNG files, alt text and the catalog on GitHub"],
+      ["https://github.com/haxtheweb/webcomponents/blob/master/elements/hax-network-bar/lib/hax-future-traveler.js", "The code that draws them"],
+    ]),
+  ].join("\n"),
+});
+eraCat.eras.forEach((x) => {
+  const png = ERAS + "png/" + x.id + ".png";
+  add({
+    id: x.id.replace("future-traveler-", "era-"),
+    parent: "future-traveler-eras",
+    title: x.title,
+    slug: x.id.replace("future-traveler-", "era-"),
+    description: x.alt,
+    image: raw(png),
+    tags: [x.pillar ? "pillar" : "era", x.era],
+    content: [
+      image(png, x.alt),
+      facts([
+        ["Era", x.title],
+        ["Pillar", x.pillar ? label(x.pillar) : ""],
+        ["Size", "24 by 24 grid SVG, 512 × 512 px PNG"],
+      ]),
+      x.third_party_reference
+        ? p(`<strong>Review before promoting.</strong> Follows ${esc(x.third_party_reference)}. See <a href="${REPO}LICENSING.md">LICENSING.md</a>.`)
+        : "",
+      links([
+        [x.url, "SVG file"],
+        [x.png, "PNG file"],
+        ...(x.after_poster ? [[REPO + x.after_poster, "The poster it follows"]] : []),
+        [REPO + x.file, "View on GitHub"],
+      ]),
+    ].filter(Boolean).join("\n"),
+  });
+});
 
 // ---------- rpg-character ----------
 add({

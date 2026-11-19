@@ -1,0 +1,34 @@
+id: item-cb559362-8168-4528-8aa0-6bbb6346264c
+indent: 0
+location: pages/item-cb559362-8168-4528-8aa0-6bbb6346264c/index.yaml
+slug: posters
+order: 63
+parent: null
+title: Posters
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png
+  tags: ''
+  created: 1795115294
+  updated: 1795115294
+content: >-
+  <p>Posters for the HAX campus and social campaign. HAX brings the best ideas
+  of every era into the future, so the series travels from the 1880s to the
+  1990s, through console start-up screens and a Game Boy battle against THE
+  VOID, to a World of Tomorrow poster for each HAX pillar. Each poster is a
+  1080×1350 still for social posts; most also come as a 5-second video, a GIF
+  and an 11×17 print.</p>
+
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/contact-sheet.jpg"
+  alt="Every HAX poster grouped by series: HAX across time, game consoles, the
+  Quest, World of Tomorrow pillars, stage select, and the bulletin board scene."
+  caption="The whole campaign at a glance."></media-image>
+
+  <ul><li><a
+  href="https://github.com/haxtheweb/art/tree/main/haxtheweb/posters">Stills,
+  alt text and the catalog on GitHub</a></li><li><a
+  href="https://github.com/haxtheweb/art/releases/tag/media-2026-11">Videos,
+  GIFs and print PDFs (GitHub release)</a></li></ul>

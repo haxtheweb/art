@@ -1,0 +1,26 @@
+id: item-14d01778-b460-4ac0-9b1a-99d28feaaab2
+indent: 1
+location: pages/item-14d01778-b460-4ac0-9b1a-99d28feaaab2/index.yaml
+slug: legend
+order: 95
+parent: item-00ca7ee2-df57-4b39-8754-011f3443c3ae
+title: Legend
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png
+  tags: diagram
+  created: 1795115295
+  updated: 1795115295
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png"
+  alt="Legend for the HAX diagrams on black: icons for developers, projects and
+  end users, each with its role."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png">View
+  on GitHub</a></li></ul>

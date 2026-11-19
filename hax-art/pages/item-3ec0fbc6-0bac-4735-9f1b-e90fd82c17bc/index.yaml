@@ -1,0 +1,31 @@
+id: item-3ec0fbc6-0bac-4735-9f1b-e90fd82c17bc
+indent: 1
+location: pages/item-3ec0fbc6-0bac-4735-9f1b-e90fd82c17bc/index.yaml
+slug: future-traveler-25
+order: 18
+parent: item-a05177fe-be3a-49b5-9f69-cfec7196fdad
+title: Helmet portrait, cyan goggles
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-25.jpeg
+  tags: icon,portrait
+  created: 1795115292
+  updated: 1795115292
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-25.jpeg"
+  alt="Red helmet with HAX band, glowing cyan goggles and a lightbulb on top,
+  calm human face below, on light gray."></media-image>
+
+  <ul><li><strong>Variant:</strong> #25</li><li><strong>Best for:</strong>
+  Icon</li><li><strong>Style:</strong> Icon,
+  Portrait</li><li><strong>Setting:</strong>
+  Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-25.jpeg">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-25.jpeg">View
+  on GitHub</a></li></ul>

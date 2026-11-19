@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-5f9d9075-170d-485f-a34b-10a41bc4c740</id>
+<indent>1</indent>
+<location>pages/item-5f9d9075-170d-485f-a34b-10a41bc4c740/index.xml</location>
+<slug>era-web</slug>
+<order>35</order>
+<parent>item-74c59cf7-6797-484e-8255-712d54bafef2</parent>
+<title>1990s early web</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png</image>
+<tags>era,web</tags>
+<created>1795115293</created>
+<updated>1795115293</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png" alt="The Future Traveler in 1990s early web style: a rainbow gradient helmet with a hard navy drop shadow, a playful HAX and bright blue lenses."></media-image>
+<ul><li><strong>Era:</strong> 1990s early web</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-web.svg">SVG file</a></li><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png">PNG file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1990s_poster.png">The poster it follows</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-web.svg">View on GitHub</a></li></ul>]]></content>
+</item>

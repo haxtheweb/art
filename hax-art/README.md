@@ -9,6 +9,7 @@ Live (once Pages is on): **https://haxtheweb.github.io/art/** (redirects to `/ar
 | Section | What's in it |
 |---|---|
 | Future Traveler | One page per HAX-original variant from [`manifest.json`](../manifest.json), with its alt text, role, style, setting and size. The grid filters by role. |
+| Future Traveler across time | One page per era icon in [`future-traveler-eras/eras.json`](../future-traveler-eras/eras.json), with its alt text, the poster it follows and links to the SVG and PNG. |
 | rpg-character | RPG Glitch, HAX the Web, HAX of the Web and the wanted poster, plus a live `<rpg-character>` on the section page. |
 | Brand | Logos, stickers, banners and posters from [`haxtheweb/`](../haxtheweb/). |
 | Posters | One page per poster in [`haxtheweb/posters/posters.json`](../haxtheweb/posters/posters.json), with alt text, series and links to its video, GIF and 11×17 print on the GitHub release, plus a page listing the campaign videos (pillar stages, stories, logo sting, console intros). The grid filters by series. |
