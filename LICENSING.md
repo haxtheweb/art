@@ -14,6 +14,8 @@ Many Future Traveler variants are *inspired remixes* of other works (this is int
 
 These are flagged in [`manifest.json`](manifest.json) with `third_party_reference` and `reuse: "homage-review-before-promoting"`. Treat them as fun community art, not official promotional material, and don't use them commercially without checking the underlying source.
 
+The homage posters in [`haxtheweb/posters/`](haxtheweb/posters/) have had that review: the maintainer went through them in November 2026 and the ones still in the collection were kept. They carry `reuse: "homage-reviewed-kept"` in [`posters.json`](haxtheweb/posters/posters.json). The same caution about the underlying sources still applies to commercial use.
+
 ## Open questions for maintainers
 
 1. Confirm CC BY 4.0 for HAX-original art, and whether to add it as a separate `LICENSE-ART` file or replace `LICENSE`.
