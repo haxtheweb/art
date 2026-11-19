@@ -36,6 +36,7 @@ Most variants are AI-generated remixes of the original human-made character; sev
 
 ## Concepts (not in use)
 - [Future Traveler icon concepts (sticker and paper-cut icons in DDD colors; the lightbulb glows on hover or focus)](https://github.com/haxtheweb/art/tree/main/future-traveler-icons)
+- [The Future Traveler across time (the icon in 19 era versions, one per poster style and pillar; the network bar remixes through them)](https://github.com/haxtheweb/art/tree/main/future-traveler-eras)
 
 ## Policy
 - [LICENSING.md](https://github.com/haxtheweb/art/blob/main/LICENSING.md): proposed CC BY 4.0 for HAX-original art; third-party parodies excluded

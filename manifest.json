@@ -1011,6 +1011,224 @@
       "large_media": "Videos, GIFs and 11×17 print PDFs live on the GitHub release media-2026-11 (https://github.com/haxtheweb/art/releases/tag/media-2026-11), not in git.",
       "contains_future_traveler": true,
       "reuse": "mixed: hax-original, and homage-review-before-promoting where flagged per poster"
+    },
+    {
+      "path": "future-traveler-eras/",
+      "description": "The Future Traveler icon drawn the way each era would have drawn it: 11 eras, one for each style the posters tell the pillars' story in, plus the 1960s world of tomorrow in each of the 8 pillar colors (19 files). SVG on a 24 grid plus a 512px PNG each, and a contact sheet. Made in code (SVG) by Claude, an AI, under HAX team direction; exported from the network bar's lib/hax-future-traveler.js in haxtheweb/webcomponents, which is the source.",
+      "status": "in use: the network bar's Future Traveler remixes through them on hover and click",
+      "reuse": "hax-original-or-unreviewed",
+      "contact_sheet": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/contact-sheet.jpg",
+      "catalog": "future-traveler-eras/eras.json",
+      "files": [
+        {
+          "id": "future-traveler-now",
+          "title": "Today",
+          "era": "now",
+          "file": "future-traveler-eras/svg/future-traveler-now.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-now.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-now.png",
+          "alt": "The Future Traveler icon as it ships: a red dome helmet with HAX in white, a green goggle band with two cyan lenses, and a pale lightbulb on a short stalk above."
+        },
+        {
+          "id": "future-traveler-steam",
+          "title": "1880s steam age",
+          "era": "steam",
+          "file": "future-traveler-eras/svg/future-traveler-steam.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-steam.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-steam.png",
+          "alt": "The Future Traveler as an 1880s engraving: sepia helmet with ink contour lines and a serif HAX, brass goggles ringed with gear teeth, an outlined bulb.",
+          "after_poster": "haxtheweb/posters/social/hax_1880s_poster.png"
+        },
+        {
+          "id": "future-traveler-nouveau",
+          "title": "1900s modern marvel",
+          "era": "nouveau",
+          "file": "future-traveler-eras/svg/future-traveler-nouveau.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-nouveau.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-nouveau.png",
+          "alt": "The Future Traveler in art nouveau style: a teal helmet outlined in cream with a serif HAX, gold lenses, and gold whiplash curves rising at both sides.",
+          "after_poster": "haxtheweb/posters/social/hax_1900s_poster.png"
+        },
+        {
+          "id": "future-traveler-deco",
+          "title": "1920s roaring twenties",
+          "era": "deco",
+          "file": "future-traveler-eras/svg/future-traveler-deco.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-deco.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-deco.png",
+          "alt": "The Future Traveler in art deco style: a black helmet lined in gold with a gold HAX, gold lenses and a gold sunburst fanning out behind him.",
+          "after_poster": "haxtheweb/posters/social/hax_1920s_poster.png"
+        },
+        {
+          "id": "future-traveler-rainbow",
+          "title": "1970s rainbow",
+          "era": "rainbow",
+          "file": "future-traveler-eras/svg/future-traveler-rainbow.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-rainbow.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png",
+          "alt": "The Future Traveler in 1970s style: his helmet is one warm arch inside another, brown, red, orange, yellow and cream, with amber lenses.",
+          "after_poster": "haxtheweb/posters/social/hax_1970s_poster.png"
+        },
+        {
+          "id": "future-traveler-stripes",
+          "title": "1980s corporate",
+          "era": "stripes",
+          "file": "future-traveler-eras/svg/future-traveler-stripes.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-stripes.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png",
+          "alt": "The Future Traveler in 1980s corporate style: his helmet is built from white horizontal stripes, with white goggles, on no background.",
+          "after_poster": "haxtheweb/posters/social/hax_1980s_poster.png",
+          "third_party_reference": "hax_1980s_poster (Paul Rand homage)"
+        },
+        {
+          "id": "future-traveler-neon",
+          "title": "1980s cyberpunk",
+          "era": "neon",
+          "file": "future-traveler-eras/svg/future-traveler-neon.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-neon.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png",
+          "alt": "The Future Traveler as a neon sign: a pink tube outline of the helmet and HAX, cyan goggle rings and a yellow bulb ring, each with a soft glow.",
+          "after_poster": "haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png"
+        },
+        {
+          "id": "future-traveler-handheld",
+          "title": "Handheld, four greens",
+          "era": "handheld",
+          "file": "future-traveler-eras/svg/future-traveler-handheld.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-handheld.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-handheld.png",
+          "alt": "The Future Traveler as chunky pixels in four shades of green on a light green handheld screen.",
+          "after_poster": "haxtheweb/posters/social/hax_gameboy_poster.png",
+          "third_party_reference": "hax_gameboy_poster (handheld console homage)"
+        },
+        {
+          "id": "future-traveler-web",
+          "title": "1990s early web",
+          "era": "web",
+          "file": "future-traveler-eras/svg/future-traveler-web.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-web.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png",
+          "alt": "The Future Traveler in 1990s early web style: a rainbow gradient helmet with a hard navy drop shadow, a playful HAX and bright blue lenses.",
+          "after_poster": "haxtheweb/posters/social/hax_1990s_poster.png"
+        },
+        {
+          "id": "future-traveler-polygon",
+          "title": "32-bit polygons",
+          "era": "polygon",
+          "file": "future-traveler-eras/svg/future-traveler-polygon.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-polygon.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png",
+          "alt": "The Future Traveler in 32-bit style: a helmet of flat-shaded red polygons, teal faceted goggles and a faceted yellow bulb.",
+          "after_poster": "haxtheweb/posters/social/hax_ps_poster.png",
+          "third_party_reference": "hax_ps_poster (32-bit console homage)"
+        },
+        {
+          "id": "future-traveler-terminal",
+          "title": "Terminal",
+          "era": "terminal",
+          "file": "future-traveler-eras/svg/future-traveler-terminal.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-terminal.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-terminal.png",
+          "alt": "The Future Traveler on a terminal: green phosphor outlines, a dashed inner arc, HAX in monospace and a block cursor at the lower right.",
+          "after_poster": "haxtheweb/posters/social/hax_hacker_poster.png"
+        },
+        {
+          "id": "future-traveler-tomorrow-ubiquity",
+          "title": "1960s world of tomorrow: Ubiquity",
+          "era": "tomorrow",
+          "pillar": "ubiquity",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-ubiquity.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-ubiquity.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-ubiquity.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a teal helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted teal orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_all_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-accessible",
+          "title": "1960s world of tomorrow: Accessible",
+          "era": "tomorrow",
+          "pillar": "accessible",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-accessible.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-accessible.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-accessible.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Beaver Blue helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Beaver Blue orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_accessible_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-efficient",
+          "title": "1960s world of tomorrow: Efficient",
+          "era": "tomorrow",
+          "pillar": "efficient",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-efficient.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-efficient.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-efficient.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Invent Orange helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Invent Orange orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_efficient_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-extensible",
+          "title": "1960s world of tomorrow: Extensible",
+          "era": "tomorrow",
+          "pillar": "extensible",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-extensible.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-extensible.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-extensible.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Creek Teal helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Creek Teal orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_extensible_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-open",
+          "title": "1960s world of tomorrow: Free and open",
+          "era": "tomorrow",
+          "pillar": "open",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-open.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-open.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-open.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Keystone Yellow helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Keystone Yellow orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_open_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-agnostic",
+          "title": "1960s world of tomorrow: Platform agnostic",
+          "era": "tomorrow",
+          "pillar": "agnostic",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-agnostic.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-agnostic.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-agnostic.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Sky Blue helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Sky Blue orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_agnostic_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-remixable",
+          "title": "1960s world of tomorrow: Remixable",
+          "era": "tomorrow",
+          "pillar": "remixable",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-remixable.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-remixable.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-remixable.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Original 87 Pink helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Original 87 Pink orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_remixable_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        },
+        {
+          "id": "future-traveler-tomorrow-sustainable",
+          "title": "1960s world of tomorrow: Sustainable",
+          "era": "tomorrow",
+          "pillar": "sustainable",
+          "file": "future-traveler-eras/svg/future-traveler-tomorrow-sustainable.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-tomorrow-sustainable.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-sustainable.png",
+          "alt": "The Future Traveler as a 1960s travel poster badge: a Future Lime helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Future Lime orbit ring and an orange star.",
+          "after_poster": "haxtheweb/posters/social/hax_tomorrow_sustainable_poster.png",
+          "third_party_reference": "hax_tomorrow posters (1960s travel poster homage)"
+        }
+      ]
     }
   ]
 }
