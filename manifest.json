@@ -1010,7 +1010,7 @@
       "catalog": "haxtheweb/posters/posters.json",
       "large_media": "Videos, GIFs and 11×17 print PDFs live on the GitHub release media-2026-11 (https://github.com/haxtheweb/art/releases/tag/media-2026-11), not in git.",
       "contains_future_traveler": true,
-      "reuse": "mixed: hax-original, and homage-review-before-promoting where flagged per poster"
+      "reuse": "mixed: hax-original, and homage-reviewed-kept where flagged per poster (the maintainer reviewed the homage posters in November 2026 and kept these)"
     },
     {
       "path": "future-traveler-eras/",
