@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-5d0f0705-a3c3-4bca-8b93-676c771eaaab</id>
+<indent>1</indent>
+<location>pages/item-5d0f0705-a3c3-4bca-8b93-676c771eaaab/index.xml</location>
+<slug>future-traveler-17</slug>
+<order>12</order>
+<parent>item-58085bc0-4b63-48ac-ba7d-9e824510aa5e</parent>
+<title>Helmet icon, light gray</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg</image>
+<tags>icon,flat-vector</tags>
+<created>1795130465</created>
+<updated>1795130465</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg" alt="Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray."></media-image>
+<ul><li><strong>Variant:</strong> #17</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 20.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-17.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

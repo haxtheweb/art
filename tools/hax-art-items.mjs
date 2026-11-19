@@ -79,6 +79,7 @@ add({
       ["future-traveler", "Future Traveler: the HAX mascot in every style"],
       ["future-traveler-eras", "Future Traveler across time: the icon in every era"],
       ["rpg-character", "rpg-character: games and toys starring HAX's pixel character"],
+      ["rpg-me", "RPG me: make the character that is you across HAX"],
       ["brand", "Brand: logos, stickers, banners and posters"],
       ["posters", "Posters: the HAX campus and social campaign"],
       ["talks", "Talks: diagrams and explainers for presentations"],
@@ -199,7 +200,25 @@ add({
   content: [
     p("The <code>rpg-character</code> is a HAX web component: a little pixel character built from a seed, with hats, costumes, pets and more. Every piece here uses the element's own art. Here is one, live on this page:"),
     `<rpg-character seed="btopro" hat="knight" walking></rpg-character>`,
-    links([["https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character", "rpg-character on GitHub"], ["https://rpg-me.hax.cloud/", "Make your own in rpg-me"]]),
+    links([["https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character", "rpg-character on GitHub"], ["rpg-me", "RPG me: make your own"]]),
+  ].join("\n"),
+});
+// RPG me is one of HAX Art's tools: a stand-alone app at its own address,
+// presented here (and in the HAX network bar) as part of the art movement.
+add({
+  id: "rpg-me",
+  title: "RPG me",
+  slug: "rpg-me",
+  parent: "rpg-character",
+  description: "Make the character that is you across HAX, in a stand-alone tool at rpg-me.hax.cloud.",
+  image: raw("haxtheweb/rpg-glitch/media/rpg-glitch-still.png"),
+  tags: ["tool", "interactive"],
+  content: [
+    p("RPG me is one of the tools of the HAX art movement: a character builder for the <code>rpg-character</code>. Pick a base, face, hair, clothes, skin, hat and more, and RPG me gives you a seed and a link for the character that stands for you across HAX. That character walks in the HAX network bar on every HAX site."),
+    `<rpg-character seed="HAX" walking></rpg-character>`,
+    p("RPG me is its own app, at its own address. It lives here because it is part of the art; it runs on its own so you can share it, link to it and come back to it."),
+    cta("https://rpg-me.hax.cloud/", "Open RPG me"),
+    links([["https://github.com/haxtheweb/rpg-me", "rpg-me on GitHub"], ["rpg-glitch", "RPG Glitch: its links open in RPG me"]]),
   ].join("\n"),
 });
 const pieces = [

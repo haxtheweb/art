@@ -1,0 +1,27 @@
+id: item-7c59c236-0801-4305-bee4-d4960061f0c3
+indent: 1
+location: pages/item-7c59c236-0801-4305-bee4-d4960061f0c3/index.yaml
+slug: future-traveler-badge
+order: 57
+parent: item-30217c84-fb20-45c5-932b-0698be71201d
+title: Future Traveler badge
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png
+  tags: badge
+  created: 1795130466
+  updated: 1795130466
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png"
+  alt="Circular badge: the Future Traveler in a red HAX helmet and cyan goggles
+  peeking over his arms in front of a red and white starburst, lightbulb
+  glowing."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/HAX.psu Future
+  traveler-circle.png">View on GitHub</a></li></ul>
