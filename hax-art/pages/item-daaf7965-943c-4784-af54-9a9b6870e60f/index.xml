@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-daaf7965-943c-4784-af54-9a9b6870e60f</id>
+<indent>1</indent>
+<location>pages/item-daaf7965-943c-4784-af54-9a9b6870e60f/index.xml</location>
+<slug>future-traveler-18</slug>
+<order>13</order>
+<parent>item-a05177fe-be3a-49b5-9f69-cfec7196fdad</parent>
+<title>Halloween</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-18.png</image>
+<tags>seasonal,scene,gothic</tags>
+<created>1795115292</created>
+<updated>1795115292</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-18.png" alt="The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins."></media-image>
+<ul><li><strong>Variant:</strong> #18</li><li><strong>Best for:</strong> Seasonal</li><li><strong>Style:</strong> Scene, Gothic, Seasonal</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-18.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-18.png">View on GitHub</a></li></ul>]]></content>
+</item>

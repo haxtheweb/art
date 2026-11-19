@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-cddb0ba3-7fd0-43ce-a37f-f11c4955db0d</id>
+<indent>1</indent>
+<location>pages/item-cddb0ba3-7fd0-43ce-a37f-f11c4955db0d/index.xml</location>
+<slug>era-neon</slug>
+<order>33</order>
+<parent>item-74c59cf7-6797-484e-8255-712d54bafef2</parent>
+<title>1980s cyberpunk</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png</image>
+<tags>era,neon</tags>
+<created>1795115293</created>
+<updated>1795115293</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png" alt="The Future Traveler as a neon sign: a pink tube outline of the helmet and HAX, cyan goggle rings and a yellow bulb ring, each with a soft glow."></media-image>
+<ul><li><strong>Era:</strong> 1980s cyberpunk</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-neon.svg">SVG file</a></li><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png">PNG file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png">The poster it follows</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-neon.svg">View on GitHub</a></li></ul>]]></content>
+</item>
