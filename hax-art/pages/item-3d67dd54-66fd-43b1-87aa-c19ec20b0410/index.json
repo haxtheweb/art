@@ -1,0 +1,18 @@
+{
+  "id": "item-3d67dd54-66fd-43b1-87aa-c19ec20b0410",
+  "indent": 1,
+  "location": "pages/item-3d67dd54-66fd-43b1-87aa-c19ec20b0410/index.json",
+  "slug": "poster-quest-comic",
+  "order": 56,
+  "parent": "item-6966ca15-6e54-4e26-8993-b1f58d25961c",
+  "title": "HAX Quest comic",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png",
+    "tags": "quest",
+    "created": 1795040653,
+    "updated": 1795040653
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png\" alt=\"&quot;The Quest: Future Traveler vs the Void&quot; as four Game Boy-style battle panels, ending with &quot;Create your future!&quot; and a QR code.\"></media-image>\n<ul><li><strong>Series:</strong> The Quest</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<p><strong>Review before promoting.</strong> Handheld RPG battle-screen homage; review before official promotion. See <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest_comic.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_quest_comic_poster.png\">View on GitHub</a></li></ul>"
+}

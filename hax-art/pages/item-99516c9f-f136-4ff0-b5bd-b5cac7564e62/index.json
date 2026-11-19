@@ -1,0 +1,18 @@
+{
+  "id": "item-99516c9f-f136-4ff0-b5bd-b5cac7564e62",
+  "indent": 1,
+  "location": "pages/item-99516c9f-f136-4ff0-b5bd-b5cac7564e62/index.json",
+  "slug": "poster-gba",
+  "order": 52,
+  "parent": "item-6966ca15-6e54-4e26-8993-b1f58d25961c",
+  "title": "Game Boy Advance",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png",
+    "tags": "consoles",
+    "created": 1795040653,
+    "updated": 1795040653
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png\" alt=\"Bright handheld-console poster in pink, blue and green pixel type with humans + agents = experience sprites and seven colored pillars on Ubiquity.\"></media-image>\n<ul><li><strong>Series:</strong> Game consoles</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<p><strong>Review before promoting.</strong> Homage to the Game Boy Advance look; review before official promotion. See <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.mp4\">Video (MP4)</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gba.gif\">GIF</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gba.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_gba_poster.png\">View on GitHub</a></li></ul>"
+}

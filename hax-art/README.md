@@ -11,10 +11,11 @@ Live (once Pages is on): **https://haxtheweb.github.io/art/** (redirects to `/ar
 | Future Traveler | One page per HAX-original variant from [`manifest.json`](../manifest.json), with its alt text, role, style, setting and size. The grid filters by role. |
 | rpg-character | RPG Glitch, HAX the Web, HAX of the Web and the wanted poster, plus a live `<rpg-character>` on the section page. |
 | Brand | Logos, stickers, banners and posters from [`haxtheweb/`](../haxtheweb/). |
+| Posters | One page per poster in [`haxtheweb/posters/posters.json`](../haxtheweb/posters/posters.json), with alt text, series and links to its video, GIF and 11×17 print on the GitHub release, plus a page listing the campaign videos (pillar stages, stories, logo sting, console intros). The grid filters by series. |
 | Talks | HAX in under a minute, the HAX The Web opening titles, Episode XXVI and the presentation diagrams. |
 | Use the art | Attribution, licensing, hotlinking and provenance. |
 
-The interactive homages (HAX of the Web, the opening titles, Episode XXVI) are included, and each page credits what inspired it. Left out on purpose: Future Traveler variants flagged `third_party_reference` in the manifest, and the EdTech Joker / DedSec series. A static HAXsite serves `site.json` as-is, so an unpublished page would still be public; leave a page out rather than marking it unpublished.
+The interactive homages (HAX of the Web, the opening titles, Episode XXVI) and the homage posters are included, and each page credits what inspired it. Left out on purpose: Future Traveler variants flagged `third_party_reference` in the manifest, and the EdTech Joker / DedSec series. A static HAXsite serves `site.json` as-is, so an unpublished page would still be public; leave a page out rather than marking it unpublished.
 
 ## Editing
 

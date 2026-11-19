@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-d3ecae31-dc99-446f-9bc0-a96f0b7c8a5a</id>
+<indent>1</indent>
+<location>pages/item-d3ecae31-dc99-446f-9bc0-a96f0b7c8a5a/index.xml</location>
+<slug>video-thumbnails</slug>
+<order>42</order>
+<parent>item-9d646bf1-d0fb-4003-8102-0b25eda87609</parent>
+<title>Video thumbnails</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png</image>
+<tags>banner</tags>
+<created>1795040652</created>
+<updated>1795040652</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png" alt="Video thumbnail: HAX THE WEB ADVENTURE in bold red, white and purple letters over a black and white photo, with a red starburst badge."></media-image>
+<p>More in the haxtheweb folder: developer.png and how to use.png.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/Creating web components.png">View on GitHub</a></li></ul>]]></content>
+</item>

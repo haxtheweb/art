@@ -1,13 +1,13 @@
 # HAX posters and social media
 
-Posters for the HAX campus and social campaign: HAX across time, console homages, the Quest against THE VOID, recruiting posters, World of Tomorrow pillar posters, HAX Heroes action-figure cards and a bulletin board scene. Every poster has a 1080×1350 social still here; most also have a 5-second MP4, a GIF and an 11×17 campus print.
+Posters for the HAX campus and social campaign: HAX across time, console homages, the Quest against THE VOID, World of Tomorrow pillar posters, a stage select screen and a bulletin board scene (23 posters plus the scene). Every poster has a 1080×1350 social still here; most also have a 5-second MP4, a GIF and an 11×17 campus print.
 
-![All HAX posters grouped by series: HAX across time, game consoles, quest and recruiting, World of Tomorrow pillars, HAX Heroes, and the bulletin board scene](contact-sheet.jpg)
+![All HAX posters grouped by series: HAX across time, game consoles, the Quest, World of Tomorrow pillars, stage select, and the bulletin board scene](contact-sheet.jpg)
 
 ## Where the files live
 
 - **In this repo (git):** the social stills in [`social/`](social/), the bulletin board still, this README, the [contact sheet](contact-sheet.jpg) and [`posters.json`](posters.json) (catalog with alt text, reuse flags and links).
-- **On the release [`media-2026-11`](https://github.com/haxtheweb/art/releases/tag/media-2026-11):** every MP4, GIF and 11×17 print PDF, the pillar stage videos, the story videos, the logo sting, the console intros and `hax_posters_source.tar.gz` (the scripts that render all of it). Release assets are stored by GitHub outside the repo's history, so cloning stays small and nothing is lost. To add a new version later, upload it to a new release rather than committing it.
+- **On the release [`media-2026-11`](https://github.com/haxtheweb/art/releases/tag/media-2026-11):** every MP4, GIF and 11×17 print PDF, the pillar stage videos, the story videos, the logo sting, the console intros and `hax_posters_source.tar.gz` (the scripts that render all of it). Release assets are stored by GitHub outside the repo's history, so cloning stays small and nothing is lost. To add a new version later, upload it to a new release rather than committing it, so links already in use keep working.
 
 > The release starts as a **draft**: its download links work once a maintainer publishes it.
 
@@ -36,23 +36,15 @@ Posters for the HAX campus and social campaign: HAX across time, console homages
   Alt text: Bright handheld-console poster in pink, blue and green pixel type with humans + agents = experience sprites and seven colored pillars on Ubiquity.
 - **PlayStation** ⚠️ homage, review before promoting: [still](social/hax_ps_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_ps.pdf)  
   Alt text: Pale grey 32-bit console poster: chunky 3D HAX letters in red, teal and green, a pixel explorer + the Future Traveler = a lightbulb, and seven 3D colored pillars on Ubiquity. Tagline: "Every era had its tools. This one's yours."
-- **Wii** ⚠️ homage, review before promoting: [still](social/hax_wii_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wii.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wii.pdf)  
-  Alt text: White console-menu style poster with rounded panels: HAX in red, cyan and green pixel letters, a human, the Future Traveler and a lightbulb in rounded tiles, and seven pill-shaped pillars on Ubiquity.
 - **Hacker** ⚠️ homage, review before promoting: [still](social/hax_hacker_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_hacker.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_hacker.pdf)  
   Alt text: Black terminal-style poster with HAX built from ASCII blocks, a hooded human, the Future Traveler and a lightbulb, and glitching ASCII pillars on Ubiquity.
 
-## Quest, comics, recruiting
+## The Quest
 
 - **HAX Quest** ⚠️ homage, review before promoting: [still](social/hax_quest_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_quest.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest.pdf)  
   Alt text: Green Game Boy-style RPG battle: the Future Traveler casts the seven pillars as spells at THE VOID, a dark cloud saying "Nothing matters." Menu: Learn, Build, Remix, Grow, with Run and Hide crossed out. QR code to hax.psu.edu.
 - **HAX Quest comic** ⚠️ homage, review before promoting: [still](social/hax_quest_comic_poster.png) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_quest_comic.pdf)  
   Alt text: "The Quest: Future Traveler vs the Void" as four Game Boy-style battle panels, ending with "Create your future!" and a QR code.
-- **Sunday Funnies**: [still](social/hax_sunday_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_sunday.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_sunday.pdf)  
-  Alt text: 1960s halftone Sunday comic strip, "The Future Traveler: Sunday Funnies, Skill Up Edition," in six panels: a student who thinks nothing matters meets the Future Traveler, learns web components, builds and remixes, and together they zap the Void. Ends with "Your quest starts now," a QR code, hax.psu.edu and hax.cloud.
-- **I Need You** ⚠️ homage, review before promoting: [still](social/hax_needyou_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_needyou.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_needyou.pdf)  
-  Alt text: Vintage recruiting poster: the Future Traveler points at the viewer above "I NEED YOU to defeat the Void. Your ideas. Your creativity. Your passions. Enlist today."
-- **We Can Build It!** ⚠️ homage, review before promoting: [still](social/hax_wecan_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_wecan.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_wecan.pdf)  
-  Alt text: Yellow wartime-style poster: the Future Traveler flexes a green arm under a speech bubble reading "We can build it!" with "We need your ideas," a QR code and hax.psu.edu.
 - **You made it to the future**: [still](social/hax_now_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_now.pdf)  
   Alt text: Starry 8-bit poster: "STOP: NOW. You made it to the future." Humans + Agents = Amazing Experience, seven pillars on Ubiquity, "Start building." and a QR code.
 
@@ -75,24 +67,8 @@ Posters for the HAX campus and social campaign: HAX across time, console homages
 - **World of Tomorrow: SUSTAINABLE** ⚠️ homage, review before promoting: [still](social/hax_tomorrow_sustainable_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_sustainable.gif) · [11×17 PDF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_sustainable.pdf)  
   Alt text: 1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Future Lime. Title "SUSTAINABLE", tagline "Built to last, light on the planet.", with a QR code and hax.psu.edu.
 
-## HAX Heroes
+## Stage select
 
-- **HAX Heroes: Accessible Traveler**: [still](social/hax_heroes_accessible_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_accessible.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a blue Future Traveler figure with its universal access shield in the bubble, labeled "Accessible Traveler".
-- **HAX Heroes: Efficient Traveler**: [still](social/hax_heroes_efficient_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_efficient.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a orange Future Traveler figure with its lightning turbo boots in the bubble, labeled "Efficient Traveler".
-- **HAX Heroes: Extensible Traveler**: [still](social/hax_heroes_extensible_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_extensible.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a teal Future Traveler figure with its infinite brick builder in the bubble, labeled "Extensible Traveler".
-- **HAX Heroes: Free and Open Traveler**: [still](social/hax_heroes_open_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_open.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a yellow Future Traveler figure with its golden open key in the bubble, labeled "Free and Open Traveler".
-- **HAX Heroes: Platform Agnostic Traveler**: [still](social/hax_heroes_agnostic_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_agnostic.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a sky blue Future Traveler figure with its every-screen gauntlet in the bubble, labeled "Platform Agnostic Traveler".
-- **HAX Heroes: Remixable Traveler**: [still](social/hax_heroes_remixable_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_remixable.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a pink Future Traveler figure with its remix blaster in the bubble, labeled "Remixable Traveler".
-- **HAX Heroes: Sustainable Traveler**: [still](social/hax_heroes_sustainable_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_sustainable.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a lime Future Traveler figure with its evergreen seed pod in the bubble, labeled "Sustainable Traveler".
-- **HAX Heroes: Ubiquity Traveler (chase figure)**: [still](social/hax_heroes_ubiquity_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_heroes_ubiquity.gif)  
-  Alt text: Toy blister card, "HAX Heroes, the Future Traveler collection": a gold Future Traveler figure with its all seven pillar accessories in the bubble, labeled "Ubiquity Traveler (chase figure)".
 - **Select a Pillar** ⚠️ homage, review before promoting: [still](social/hax_stage_select_poster.png) · [MP4](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.mp4) · [GIF](https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_stage_select.gif)  
   Alt text: NES-style "Push start, select a pillar" grid: eight-bit heads for the seven pillars, the Future Traveler in the center and THE VOID, with a QR code to hax.psu.edu.
 
@@ -105,10 +81,10 @@ Posters for the HAX campus and social campaign: HAX across time, console homages
 
 All on the release; see `release_assets` in [`posters.json`](posters.json) for every file.
 
-- **Pillar stages** (`hax_stage_<pillar>_full.mp4`, 42 s each, 1080×1350): an 8-bit stage select, a power card, a live demo recorded on the real haxtheweb.org, and a stage-clear card with a QR code. Each comes as four separate segment files (`_1_select`, `_2_card`, `_3_demo`, `_4_clear`) so the demo can be swapped. Pillars: accessible, efficient, extensible, open, agnostic, remixable, sustainable.
+- **Pillar stages** (`hax_stage_<pillar>_full.mp4`, 42 s each, 1080×1350): an 8-bit stage select, a power card, a live demo recorded on the real haxtheweb.org, and a stage-clear card with a QR code. Each comes as four separate segment files (`_1_select`, `_2_card`, `_3_demo`, `_4_clear`) so the demo can be swapped. Pillars: accessible (auto contrast in light and dark mode), efficient (loads only the parts a page uses), extensible (every block is a web component), open (pages saved as standard HTML and web components, the site as open JSON), agnostic (any screen, and the HAX CLI pulling the live site into a folder that runs static or on a server), remixable (one interior page in four themes), sustainable (content saved as small plain HTML).
 - **Stories** (1920×1080): `hax_story_generic` (three fictional students) and `hax_story_real` (Jimmy Kane, Winston White and Zach Dodson). Get each person's OK before posting the real one.
 - **Logo sting:** `hax_logo_sting.mp4` (with jingle) and GIFs at full size, 480, 400 and 360 px.
-- **Console intros:** `hax_intro_<gameboy|gba|playstation|n64|wii|hacker>` MP4 and GIF. Homages: review before promoting.
+- **Console intros:** `hax_intro_<gameboy|gba|playstation|wii|hacker>` MP4 and GIF. Homages: review before promoting.
 
 ## Links on the art
 
@@ -116,6 +92,6 @@ QR codes go to https://hax.psu.edu. Printed links: hax.psu.edu, browser.hax.clou
 
 ## Provenance
 
-Rendered procedurally by Claude (an AI assistant) in Python (Pillow, NumPy, ffmpeg) under HAX team direction, not hand-drawn. Characters come from the [`rpg-character`](https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character) element and the `hax:world-traveler` icon (the Future Traveler). Pillar icons are Material Symbols (Apache-2.0); fonts are open-licensed (SIL OFL), including Press Start 2P. Music and sound effects are synthesized in code. The pillar stage demos are real recordings of https://haxtheweb.org, and the numbers on screen were measured from the live site in November 2026.
+Rendered procedurally by Claude (an AI assistant) in Python (Pillow, NumPy, ffmpeg) under HAX team direction, not hand-drawn. Characters come from the [`rpg-character`](https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character) element and the `hax:world-traveler` icon (the Future Traveler). Pillar icons are Material Symbols (Apache-2.0); fonts are open-licensed (SIL OFL), including Press Start 2P. Music and sound effects are synthesized in code. The pillar stage demos are real recordings of https://haxtheweb.org (and, for platform agnostic, of a local copy made with the HAX CLI), and the numbers on screen were measured from them in November 2026.
 
-Pieces flagged ⚠️ riff on other works or brands (console start-ups, recruiting posters, 1960s travel posters, an 8-bit boss-select screen, Paul Rand's striped logo style). They copy no specific artwork, but per [LICENSING.md](../../LICENSING.md) treat them as community art and review before official promotion.
+Pieces flagged ⚠️ riff on other works or brands (console start-ups, 1960s travel posters, an 8-bit boss-select screen, Paul Rand's striped logo style). They copy no specific artwork, but per [LICENSING.md](../../LICENSING.md) treat them as community art and review before official promotion.
