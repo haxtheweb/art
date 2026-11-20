@@ -1,4 +1,5 @@
 # Publishes this repo to GitHub Pages at https://haxtheweb.github.io/art/
+# (the portfolio alone is also at https://art.hax.cloud/, on Vercel from hax-art/vercel.json)
 #   /art/          -> redirects to the hax-art portfolio
 #   /art/hax-art/  -> the portfolio (a HAXsite; HAXcms loads from cdn.hax.cloud)
 #   /art/<path>    -> every interactive piece and file, as in the repo

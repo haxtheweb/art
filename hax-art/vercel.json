@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo no dependencies to install",
+  "buildCommand": "npm run ghpages:build",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.[A-Za-z0-9]+$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
