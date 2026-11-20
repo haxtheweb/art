@@ -3,7 +3,7 @@
   <title>hax-art</title>
   <link href="https://localhost/hax-art/" rel="self" />
   <subtitle>own course</subtitle>
-  <updated>2026-11-19T19:08:15.000Z</updated>
+  <updated>2026-11-19T23:21:09.000Z</updated>
   <author>
       <name></name>
   </author>
@@ -11,9 +11,9 @@
   
   <entry>
     <title>HAX art</title>
-    <id>item-c2ab192f-dfdb-4af3-9e65-f342183891f5</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-1293902f-7d2c-4f7c-b1e5-dbd7c4bdcb56</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/home"/>
     
@@ -21,15 +21,15 @@
       <![CDATA[ <p>Art and media from <a href="https://haxtheweb.org">HAX</a>: open-source tools that let anyone create, remix and publish on the web without needing to understand the web. This portfolio is itself a HAXsite, built with the HAX CLI, and every image on it is pulled straight from the <a href="https://github.com/haxtheweb/art">haxtheweb/art</a> repository.</p>
 <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png" alt="The Future Traveler: red helmet with a HAX band, cyan goggles and a green backpack with a lightbulb, chin on his arms, in front of a white starburst in a red circle." caption="The Future Traveler, HAX's official mascot, in his classic pose."></media-image>
 <h2>Browse</h2>
-<ul><li><a href="future-traveler">Future Traveler: the HAX mascot in every style</a></li><li><a href="future-traveler-eras">Future Traveler across time: the icon in every era</a></li><li><a href="rpg-character">rpg-character: games and toys starring HAX's pixel character</a></li><li><a href="brand">Brand: logos, stickers, banners and posters</a></li><li><a href="posters">Posters: the HAX campus and social campaign</a></li><li><a href="talks">Talks: diagrams and explainers for presentations</a></li><li><a href="use-the-art">Use the art: attribution, licensing and hotlinking</a></li></ul>
+<ul><li><a href="future-traveler">Future Traveler: the HAX mascot in every style</a></li><li><a href="future-traveler-eras">Future Traveler across time: the icon in every era</a></li><li><a href="rpg-character">rpg-character: games and toys starring HAX's pixel character</a></li><li><a href="rpg-me">RPG me: make the character that is you across HAX</a></li><li><a href="brand">Brand: logos, stickers, banners and posters</a></li><li><a href="posters">Posters: the HAX campus and social campaign</a></li><li><a href="talks">Talks: diagrams and explainers for presentations</a></li><li><a href="use-the-art">Use the art: attribution, licensing and hotlinking</a></li></ul>
 <p><strong>Dream it, remix it, have it, share it.</strong></p> ]]>
     </content>
   </entry>
   <entry>
     <title>Future Traveler</title>
-    <id>item-a05177fe-be3a-49b5-9f69-cfec7196fdad</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-58085bc0-4b63-48ac-ba7d-9e824510aa5e</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler"/>
     
@@ -41,9 +41,9 @@
   </entry>
   <entry>
     <title>Android portrait</title>
-    <id>item-22e935a6-e0e2-4112-a7a5-62e6481678d4</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-af37734a-5823-4f0f-a208-214daf6a9055</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-01"/>
     <category term="portrait,flat-vector,robot" label="portrait,flat-vector,robot" />
@@ -55,9 +55,9 @@
   </entry>
   <entry>
     <title>Glitch double-exposure badge</title>
-    <id>item-2f85aae9-ab00-48bc-821d-9c2dd42ba720</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-ef86d4d6-1782-4ffb-afc2-2a1a867abcd3</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-02"/>
     <category term="badge,starburst-badge,glitch,cartoon" label="badge,starburst-badge,glitch,cartoon" />
@@ -69,9 +69,9 @@
   </entry>
   <entry>
     <title>Egyptian wall</title>
-    <id>item-94b9689c-8648-46e7-a787-c0389ec9f694</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-f249d035-9519-46ad-af06-b70d07a51255</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-03"/>
     <category term="time-travel,painting,hieroglyphs" label="time-travel,painting,hieroglyphs" />
@@ -83,9 +83,9 @@
   </entry>
   <entry>
     <title>Helmet icon (checkerboard)</title>
-    <id>item-3224818a-461c-4d8e-b2e5-ce73ce115272</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-b0394129-c2fb-44b2-8b39-808af35aeceb</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-06"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -97,9 +97,9 @@
   </entry>
   <entry>
     <title>Cyberpunk traveler</title>
-    <id>item-62c2ad49-bf2f-4099-a9a0-4f7bd1959a50</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-465390a6-99cc-4b59-950e-a1ff74155fea</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-08"/>
     <category term="scene,photoreal,cyberpunk,human" label="scene,photoreal,cyberpunk,human" />
@@ -111,9 +111,9 @@
   </entry>
   <entry>
     <title>Green helmet portrait</title>
-    <id>item-862b4e82-b91f-4442-9471-d087e2ca9998</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-2ebfc302-1652-4122-a5b7-e2c6ddeab27d</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-09"/>
     <category term="icon,portrait,color-variant" label="icon,portrait,color-variant" />
@@ -125,9 +125,9 @@
   </entry>
   <entry>
     <title>Foil balloon</title>
-    <id>item-36647bdc-7c8f-4aa1-8014-69402f6e048d</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-496c02e5-c604-45f9-baa0-7cffd3563810</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-11"/>
     <category term="merch,product-mockup,3d,humor" label="merch,product-mockup,3d,humor" />
@@ -139,9 +139,9 @@
   </entry>
   <entry>
     <title>Paper-cut collage</title>
-    <id>item-ac8376c7-3e32-48e8-9157-1cd5bd53b3ac</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-877858f8-e665-46d1-ab6e-3a6be7ef7fea</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-12"/>
     <category term="badge,paper-craft,collage,starburst-badge" label="badge,paper-craft,collage,starburst-badge" />
@@ -153,9 +153,9 @@
   </entry>
   <entry>
     <title>Hoodie kid, tan burst</title>
-    <id>item-fd68ac2c-a738-449e-b77d-3ba6477bc620</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-b0d722ec-fd1e-4002-96c5-c0ba2415b6c8</id>
+    <updated>2026-11-19T23:21:04.000Z</updated>
+    <published>2026-11-19T23:21:04.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-13"/>
     <category term="badge,starburst-badge,flat-vector,sketch" label="badge,starburst-badge,flat-vector,sketch" />
@@ -167,9 +167,9 @@
   </entry>
   <entry>
     <title>Classic burst</title>
-    <id>item-01548133-3c4f-4217-ac99-56e6feb3dc93</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-0e4e609e-6930-44ae-aba8-8a1be0df21cc</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-15"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -181,9 +181,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray</title>
-    <id>item-606f22ed-b43d-42da-9578-40588b7bef93</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-5d0f0705-a3c3-4bca-8b93-676c771eaaab</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-17"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -195,9 +195,9 @@
   </entry>
   <entry>
     <title>Halloween</title>
-    <id>item-daaf7965-943c-4784-af54-9a9b6870e60f</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-b31ec0cb-3668-46a4-89cf-452bbce5ce0b</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-18"/>
     <category term="seasonal,scene,gothic" label="seasonal,scene,gothic" />
@@ -209,9 +209,9 @@
   </entry>
   <entry>
     <title>8-bit RPG dungeon</title>
-    <id>item-fe22c118-8fe8-4987-817f-ea8912a0ed93</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-e86a372a-8aa9-425c-9647-aa6fe71fed6c</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-19"/>
     <category term="rpg,pixel-art,game" label="rpg,pixel-art,game" />
@@ -223,9 +223,9 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray (alt)</title>
-    <id>item-45281e97-1ba1-4476-b736-05d9567f168c</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-1a4e3aad-561e-4232-9d01-bd574d555463</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-20"/>
     <category term="icon,flat-vector" label="icon,flat-vector" />
@@ -237,9 +237,9 @@
   </entry>
   <entry>
     <title>Pixel helmet face</title>
-    <id>item-4b006eeb-fd13-41b0-b16e-77f541a7b348</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-ef1cb6b6-9575-4fb7-bf52-b59eee7122bb</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-22"/>
     <category term="icon,pixel-art,8-bit" label="icon,pixel-art,8-bit" />
@@ -251,9 +251,9 @@
   </entry>
   <entry>
     <title>Classic burst, face hidden</title>
-    <id>item-61a786ae-2a3c-490d-b508-ba41c5ce75aa</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-c82b9006-69d6-4152-9e7b-6bf9f45cca75</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-24"/>
     <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
@@ -265,9 +265,9 @@
   </entry>
   <entry>
     <title>Helmet portrait, cyan goggles</title>
-    <id>item-3ec0fbc6-0bac-4735-9f1b-e90fd82c17bc</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-9a0b179a-d26e-4e42-bfd1-5e2e7e86b84b</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-25"/>
     <category term="icon,portrait" label="icon,portrait" />
@@ -279,9 +279,9 @@
   </entry>
   <entry>
     <title>Layered papercraft</title>
-    <id>item-2b997c80-36a5-40f2-9a47-2c023653061c</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-d4800282-0f69-450a-8739-98edb9fbd7df</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-27"/>
     <category term="badge,paper-craft,3d,starburst-badge" label="badge,paper-craft,3d,starburst-badge" />
@@ -293,9 +293,9 @@
   </entry>
   <entry>
     <title>Toy-room 3D</title>
-    <id>item-8d96a216-4ee8-45c1-a108-fe89e8138e9e</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-916951b8-2855-4630-bd45-5481ec7ee31e</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-28"/>
     <category term="scene,3d,render,character" label="scene,3d,render,character" />
@@ -307,9 +307,9 @@
   </entry>
   <entry>
     <title>The ocean is rising</title>
-    <id>item-1f9fea76-a400-43e8-b847-be15a55546d3</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-1f154d78-f129-46ba-9476-cb90998a9448</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-29"/>
     <category term="comic,engraving,web-metaphor" label="comic,engraving,web-metaphor" />
@@ -321,9 +321,9 @@
   </entry>
   <entry>
     <title>Sticker badge</title>
-    <id>item-355c454b-111e-48bc-9114-ff6b497857f6</id>
-    <updated>2026-11-19T19:08:12.000Z</updated>
-    <published>2026-11-19T19:08:12.000Z</published>
+    <id>item-95a9e9c3-8eca-4dbb-8156-1f1e481130ef</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-30"/>
     <category term="sticker,flat-vector,color-variant" label="sticker,flat-vector,color-variant" />
@@ -335,9 +335,9 @@
   </entry>
   <entry>
     <title>Pixel helmet, detailed</title>
-    <id>item-a106e3c5-f967-4f23-bcb0-b264b4279eb7</id>
-    <updated>2026-11-19T19:08:13.000Z</updated>
-    <published>2026-11-19T19:08:13.000Z</published>
+    <id>item-095d8e55-1a48-4727-9940-dc883b41aa22</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-31"/>
     <category term="icon,pixel-art,16-bit" label="icon,pixel-art,16-bit" />
@@ -349,9 +349,9 @@
   </entry>
   <entry>
     <title>I my tummy hurts</title>
-    <id>item-4273e87c-008a-4c1a-9768-4c5cbfeb95e6</id>
-    <updated>2026-11-19T19:08:13.000Z</updated>
-    <published>2026-11-19T19:08:13.000Z</published>
+    <id>item-7ba633b3-bb60-425b-9546-97ebc318f06b</id>
+    <updated>2026-11-19T23:21:05.000Z</updated>
+    <published>2026-11-19T23:21:05.000Z</published>
     <summary></summary>
     <link href="https://localhost/hax-art/future-traveler-34"/>
     <category term="humor,crayon,child-drawing" label="humor,crayon,child-drawing" />

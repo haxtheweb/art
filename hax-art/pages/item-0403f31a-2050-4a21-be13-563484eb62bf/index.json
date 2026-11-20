@@ -1,0 +1,18 @@
+{
+  "id": "item-0403f31a-2050-4a21-be13-563484eb62bf",
+  "indent": 1,
+  "location": "pages/item-0403f31a-2050-4a21-be13-563484eb62bf/index.json",
+  "slug": "poster-1980s-cyberpunk",
+  "order": 70,
+  "parent": "item-14ab292f-58eb-4d46-a999-cd14c85ab03d",
+  "title": "1980s cyberpunk",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png",
+    "tags": "across-time",
+    "created": 1795130467,
+    "updated": 1795130467
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png\" alt=\"Neon pink and cyan cyberpunk poster on a dark grid: glowing HAX, Humans + Agents = Experience in neon frames and seven neon pillars on Ubiquity.\"></media-image>\n<ul><li><strong>Series:</strong> HAX across time</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.mp4\">Video (MP4)</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1980s_cyberpunk.gif\">GIF</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1980s_cyberpunk.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png\">View on GitHub</a></li></ul>"
+}

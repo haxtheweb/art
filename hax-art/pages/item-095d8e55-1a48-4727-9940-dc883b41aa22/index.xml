@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-095d8e55-1a48-4727-9940-dc883b41aa22</id>
+<indent>1</indent>
+<location>pages/item-095d8e55-1a48-4727-9940-dc883b41aa22/index.xml</location>
+<slug>future-traveler-31</slug>
+<order>23</order>
+<parent>item-58085bc0-4b63-48ac-ba7d-9e824510aa5e</parent>
+<title>Pixel helmet, detailed</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-31.jpeg</image>
+<tags>icon,pixel-art,16-bit</tags>
+<created>1795130465</created>
+<updated>1795130465</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-31.jpeg" alt="Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face."></media-image>
+<ul><li><strong>Variant:</strong> #31</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 16 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> More detailed than 22.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-31.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-31.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

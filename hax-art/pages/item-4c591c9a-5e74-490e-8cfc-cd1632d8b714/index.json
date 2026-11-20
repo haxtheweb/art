@@ -1,0 +1,18 @@
+{
+  "id": "item-4c591c9a-5e74-490e-8cfc-cd1632d8b714",
+  "indent": 1,
+  "location": "pages/item-4c591c9a-5e74-490e-8cfc-cd1632d8b714/index.json",
+  "slug": "rpg-me",
+  "order": 47,
+  "parent": "item-25b7824c-0ba3-489e-b2f6-7d72e128b2ca",
+  "title": "RPG me",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
+    "tags": "tool,interactive",
+    "created": 1795130466,
+    "updated": 1795130466
+  },
+  "content": "<p>RPG me is one of the tools of the HAX art movement: a character builder for the <code>rpg-character</code>. Pick a base, face, hair, clothes, skin, hat and more, and RPG me gives you a seed and a link for the character that stands for you across HAX. That character walks in the HAX network bar on every HAX site.</p>\n<rpg-character seed=\"HAX\" walking=\"\"></rpg-character>\n<p>RPG me is its own app, at its own address. It lives here because it is part of the art; it runs on its own so you can share it, link to it and come back to it.</p>\n<simple-cta link=\"https://rpg-me.hax.cloud/\" label=\"Open RPG me\"></simple-cta>\n<ul><li><a href=\"https://github.com/haxtheweb/rpg-me\">rpg-me on GitHub</a></li><li><a href=\"rpg-glitch\">RPG Glitch: its links open in RPG me</a></li></ul>"
+}
