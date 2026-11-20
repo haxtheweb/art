@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-63304349-5783-4d45-b278-a878614994dc</id>
+<indent>1</indent>
+<location>pages/item-63304349-5783-4d45-b278-a878614994dc/index.xml</location>
+<slug>poster-ps</slug>
+<order>74</order>
+<parent>item-85ee3468-0ee1-4364-b2ac-c78348314325</parent>
+<title>PlayStation</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png</image>
+<tags>consoles</tags>
+<created>1795189037</created>
+<updated>1795189037</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png" alt="Pale grey 32-bit console poster: chunky 3D HAX letters in red, teal and green, a pixel explorer + the Future Traveler = a lightbulb, and seven 3D colored pillars on Ubiquity. Tagline: &quot;Every era had its tools. This one's yours.&quot;"></media-image>
+<ul><li><strong>Series:</strong> Game consoles</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>
+<p><strong>Review before promoting.</strong> Homage to the original PlayStation boot look; reviewed and kept, November 2026. See <a href="https://github.com/haxtheweb/art/blob/main/LICENSING.md">LICENSING.md</a>.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png">Full-size still</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.mp4">Video (MP4)</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_ps.gif">GIF</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_ps.pdf">11×17 print (PDF)</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_ps_poster.png">View on GitHub</a></li></ul>]]></content>
+</item>

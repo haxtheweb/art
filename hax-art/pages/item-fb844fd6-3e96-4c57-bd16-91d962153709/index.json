@@ -1,0 +1,18 @@
+{
+  "id": "item-fb844fd6-3e96-4c57-bd16-91d962153709",
+  "indent": 1,
+  "location": "pages/item-fb844fd6-3e96-4c57-bd16-91d962153709/index.json",
+  "slug": "future-traveler-28",
+  "order": 20,
+  "parent": "item-c7b78297-474f-46df-a74f-af39a2d8fa35",
+  "title": "Toy-room 3D",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-28.png",
+    "tags": "scene,3d,render,character",
+    "created": 1795189035,
+    "updated": 1795189035
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-28.png\" alt=\"A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks.\"></media-image>\n<ul><li><strong>Variant:</strong> #28</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> 3d, Render, Character</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-28.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-28.png\">View on GitHub</a></li></ul>"
+}

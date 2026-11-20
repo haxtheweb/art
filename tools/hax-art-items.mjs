@@ -203,21 +203,22 @@ add({
     links([["https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character", "rpg-character on GitHub"], ["rpg-me", "RPG me: make your own"]]),
   ].join("\n"),
 });
-// RPG me is one of HAX Art's tools: a stand-alone app at its own address,
-// presented here (and in the HAX network bar) as part of the art movement.
+// RPG me is one of HAX Art's tools: a stand-alone service at its own address,
+// rpg.art.hax.cloud. It is not in the HAX network bar; this site's menu is
+// where it is linked from, so it is a top-level page (on RPG me, the bar
+// lights up Art).
 add({
   id: "rpg-me",
   title: "RPG me",
   slug: "rpg-me",
-  parent: "rpg-character",
-  description: "Make the character that is you across HAX, in a stand-alone tool at rpg-me.hax.cloud.",
+  description: "Make the character that is you across HAX, in a stand-alone tool at rpg.art.hax.cloud.",
   image: raw("haxtheweb/rpg-glitch/media/rpg-glitch-still.png"),
   tags: ["tool", "interactive"],
   content: [
-    p("RPG me is one of the tools of the HAX art movement: a character builder for the <code>rpg-character</code>. Pick a base, face, hair, clothes, skin, hat and more, and RPG me gives you a seed and a link for the character that stands for you across HAX. That character walks in the HAX network bar on every HAX site."),
+    p("RPG me is one of the tools of the HAX art movement: a character builder for the <code>rpg-character</code>. Pick a base, face, hair, clothes, skin, hat and more, and RPG me gives you a character code and a link that rebuild the character that stands for you across HAX, on any page that loads HAX."),
     `<rpg-character seed="HAX" walking></rpg-character>`,
-    p("RPG me is its own app, at its own address. It lives here because it is part of the art; it runs on its own so you can share it, link to it and come back to it."),
-    cta("https://rpg-me.hax.cloud/", "Open RPG me"),
+    p("RPG me is its own app, at its own address: rpg.art.hax.cloud. It lives here because it is part of the art; it runs on its own so you can share it, link to it and come back to it. Its old address, rpg-me.hax.cloud, takes you there."),
+    cta("https://rpg.art.hax.cloud/", "Open RPG me"),
     links([["https://github.com/haxtheweb/rpg-me", "rpg-me on GitHub"], ["rpg-glitch", "RPG Glitch: its links open in RPG me"]]),
   ].join("\n"),
 });
