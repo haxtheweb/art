@@ -2,7 +2,7 @@
 
 A HAXsite for browsing the art and media in this repo, built with the [HAX CLI](https://github.com/haxtheweb/create) and the `glossy-portfolio-theme`. It holds no copies of the art: every image is a raw GitHub URL into this repo, and every interactive piece links to its GitHub Pages address.
 
-Live (once Pages is on): **https://haxtheweb.github.io/art/** (redirects to `/art/hax-art/`).
+Live at **https://art.hax.cloud/** (Vercel, rooted at this folder: `vercel.json` runs `npm run ghpages:build` and sends deep links like `/rpg-me` to the site). The whole repo is also on GitHub Pages, where **https://haxtheweb.github.io/art/** redirects to `/art/hax-art/` and the interactive pieces live. `tools/rebuild-hax-art.sh` keeps `vercel.json` and this README across rebuilds.
 
 ## Sections
 
