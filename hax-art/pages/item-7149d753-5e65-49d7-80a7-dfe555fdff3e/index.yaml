@@ -1,0 +1,27 @@
+id: item-7149d753-5e65-49d7-80a7-dfe555fdff3e
+indent: 1
+location: pages/item-7149d753-5e65-49d7-80a7-dfe555fdff3e/index.yaml
+slug: hax-history
+order: 95
+parent: item-c5db723e-2744-4095-95ac-204c1c8ce9d3
+title: HAX history
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png
+  tags: diagram
+  created: 1795189037
+  updated: 1795189037
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png"
+  alt="Dense timeline of HAX history on a black background, with many small
+  yellow lightbulb markers and labeled icons along a horizontal
+  line."></media-image>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png">Full-size
+  file</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/presentation-materials/HAX
+  history.png">View on GitHub</a></li></ul>

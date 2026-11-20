@@ -153,7 +153,7 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     <button id="embed" type="button">Copy HAX embed</button>
     <button id="shareX" type="button">Share on X</button>
     <button id="shareLinkedIn" type="button">Share on LinkedIn</button>
-    <a class="btn" id="rpgme" href="https://rpg-me.hax.cloud/">Edit in rpg-me</a>
+    <a class="btn" id="rpgme" href="https://rpg.art.hax.cloud/">Edit in rpg-me</a>
   </div>
   <p class="status" id="status" role="status" aria-live="polite"></p>
   <footer>
@@ -313,7 +313,7 @@ footer a, .status a { color: var(--ddd-theme-default-skyBlue); }
     p.set("seed", digits(c));
     p.set("hat", RPG_ME_HATS.indexOf(h) !== -1 ? h : "none");
     if (c.fire) { p.set("fire", "true"); }
-    return "https://rpg-me.hax.cloud/?" + p.toString();
+    return "https://rpg.art.hax.cloud/?" + p.toString();
   }
   function embed(c) { return '<rpg-character code="' + encodeCharacter(c) + '"></rpg-character>'; }
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-ae3a27c4-6bd5-4170-9e2d-db430fe9a86a</id>
+<indent>1</indent>
+<location>pages/item-ae3a27c4-6bd5-4170-9e2d-db430fe9a86a/index.xml</location>
+<slug>future-traveler-35</slug>
+<order>25</order>
+<parent>item-c7b78297-474f-46df-a74f-af39a2d8fa35</parent>
+<title>Pixel helmet, green goggles</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-35.jpeg</image>
+<tags>icon,pixel-art,8-bit,color-variant</tags>
+<created>1795189035</created>
+<updated>1795189035</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-35.jpeg" alt="Pixel-art orange helmet with HAX band and dark green goggles with cyan lenses, a lightbulb on top."></media-image>
+<ul><li><strong>Variant:</strong> #35</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 8 bit, Icon, Color variant</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-35.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-35.jpeg">View on GitHub</a></li></ul>]]></content>
+</item>

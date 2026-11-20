@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-cbbd842c-60eb-4110-a25b-42833d5e0bf0</id>
+<indent>1</indent>
+<location>pages/item-cbbd842c-60eb-4110-a25b-42833d5e0bf0/index.xml</location>
+<slug>future-traveler-19</slug>
+<order>14</order>
+<parent>item-c7b78297-474f-46df-a74f-af39a2d8fa35</parent>
+<title>8-bit RPG dungeon</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png</image>
+<tags>rpg,pixel-art,game</tags>
+<created>1795189035</created>
+<updated>1795189035</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png" alt="Pixel-art traveler in a torch-lit stone dungeon with a status plate reading 'WORLD TRAVELER, HP 100/100, MP 50/100'."></media-image>
+<ul><li><strong>Variant:</strong> #19</li><li><strong>Best for:</strong> Rpg</li><li><strong>Style:</strong> Pixel art, Rpg, Game</li><li><strong>Setting:</strong> Medieval 8bit</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Links the traveler to the rpg-character lineage.</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-19.png">View on GitHub</a></li></ul>]]></content>
+</item>

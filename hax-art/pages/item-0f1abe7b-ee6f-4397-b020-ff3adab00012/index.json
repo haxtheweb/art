@@ -1,0 +1,18 @@
+{
+  "id": "item-0f1abe7b-ee6f-4397-b020-ff3adab00012",
+  "indent": 1,
+  "location": "pages/item-0f1abe7b-ee6f-4397-b020-ff3adab00012/index.json",
+  "slug": "era-stripes",
+  "order": 32,
+  "parent": "item-23374aca-829b-44c5-a8ac-6503f461d186",
+  "title": "1980s corporate",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png",
+    "tags": "era,stripes",
+    "created": 1795189035,
+    "updated": 1795189035
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png\" alt=\"The Future Traveler in 1980s corporate style: his helmet is built from white horizontal stripes, with white goggles, on no background.\"></media-image>\n<ul><li><strong>Era:</strong> 1980s corporate</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>\n<p><strong>Review before promoting.</strong> Follows hax_1980s_poster (Paul Rand homage). See <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-stripes.svg\">SVG file</a></li><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png\">PNG file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1980s_poster.png\">The poster it follows</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-stripes.svg\">View on GitHub</a></li></ul>"
+}
