@@ -1,6 +1,6 @@
 # The Future Traveler across time
 
-![The Future Traveler icon in 19 era versions](contact-sheet.jpg)
+![The Future Traveler icon in 20 era versions](contact-sheet.jpg)
 
 **Status: in use.** These are the eras the Future Traveler remixes through at the right end of the HAX network bar: hover him and he tears through every one, click and he stays in the next.
 
@@ -19,6 +19,7 @@ Each era follows one of the styles the [poster campaign](../haxtheweb/posters/) 
 | ![1980s cyberpunk](png/future-traveler-neon.png) | 1980s cyberpunk | [`future-traveler-neon.svg`](svg/future-traveler-neon.svg) | [poster](../haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png) |
 | ![Handheld, four greens](png/future-traveler-handheld.png) | Handheld, four greens | [`future-traveler-handheld.svg`](svg/future-traveler-handheld.svg) | [poster](../haxtheweb/posters/social/hax_gameboy_poster.png) |
 | ![1990s early web](png/future-traveler-web.png) | 1990s early web | [`future-traveler-web.svg`](svg/future-traveler-web.svg) | [poster](../haxtheweb/posters/social/hax_1990s_poster.png) |
+| ![1990s snapback](png/future-traveler-snapback.png) | 1990s snapback | [`future-traveler-snapback.svg`](svg/future-traveler-snapback.svg) | the helmet worn as a red ball cap, no poster yet |
 | ![32-bit polygons](png/future-traveler-polygon.png) | 32-bit polygons | [`future-traveler-polygon.svg`](svg/future-traveler-polygon.svg) | [poster](../haxtheweb/posters/social/hax_ps_poster.png) |
 | ![Terminal](png/future-traveler-terminal.png) | Terminal | [`future-traveler-terminal.svg`](svg/future-traveler-terminal.svg) | [poster](../haxtheweb/posters/social/hax_hacker_poster.png) |
 | ![1960s world of tomorrow: Ubiquity](png/future-traveler-tomorrow-ubiquity.png) | 1960s world of tomorrow: Ubiquity | [`future-traveler-tomorrow-ubiquity.svg`](svg/future-traveler-tomorrow-ubiquity.svg) | [poster](../haxtheweb/posters/social/hax_tomorrow_all_poster.png) |
@@ -35,7 +36,7 @@ Each era follows one of the styles the [poster campaign](../haxtheweb/posters/) 
 - `svg/`: 24 by 24 grid vector, each with a `<title>`. No scripts, no outside references.
 - `png/`: 512 by 512 renders with a transparent background (the handheld era and the world of tomorrow carry their own).
 - [`eras.json`](eras.json): the catalog with alt text, the poster each follows and third-party flags. The same entries are in [`manifest.json`](../manifest.json) under `other_groups`.
-- `contact-sheet.jpg`: all 19 in catalog order on the network bar's dark gray.
+- `contact-sheet.jpg`: all 20 in catalog order on the network bar's dark gray.
 
 ## Where they come from
 

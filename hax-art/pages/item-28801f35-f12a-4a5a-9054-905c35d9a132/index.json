@@ -1,0 +1,18 @@
+{
+  "id": "item-28801f35-f12a-4a5a-9054-905c35d9a132",
+  "indent": 1,
+  "location": "pages/item-28801f35-f12a-4a5a-9054-905c35d9a132/index.json",
+  "slug": "poster-gameboy",
+  "order": 73,
+  "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
+  "title": "Game Boy",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png",
+    "tags": "consoles",
+    "created": 1795458310,
+    "updated": 1795458310
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png\" alt=\"Four-shade green handheld-console poster: HAX in pixel type, &quot;Open Source, Est. 2017&quot;, humans + agents = experience sprites and seven pixel pillars on Ubiquity.\"></media-image>\n<ul><li><strong>Series:</strong> Game consoles</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<p><strong>Review before promoting.</strong> Homage to the Nintendo Game Boy look; reviewed and kept, November 2026. See <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>.</p>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.mp4\">Video (MP4)</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_gameboy.gif\">GIF</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_gameboy.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_gameboy_poster.png\">View on GitHub</a></li></ul>"
+}

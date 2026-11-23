@@ -1,0 +1,18 @@
+{
+  "id": "item-83ffa1b1-0517-4042-9602-973948bfa469",
+  "indent": 1,
+  "location": "pages/item-83ffa1b1-0517-4042-9602-973948bfa469/index.json",
+  "slug": "era-snapback",
+  "order": 36,
+  "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
+  "title": "1990s snapback",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png",
+    "tags": "era,snapback",
+    "created": 1795458309,
+    "updated": 1795458309
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png\" alt=\"The Future Traveler in a 1990s snapback: the helmet as a red ball cap with panel seams and a top button the stalk grows from, HAX in white above the snapback opening and its strap of three white snaps, the green goggle band with cyan lenses, and a lit yellow bulb.\"></media-image>\n<ul><li><strong>Era:</strong> 1990s snapback</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-snapback.svg\">SVG file</a></li><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png\">PNG file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-snapback.svg\">View on GitHub</a></li></ul>"
+}

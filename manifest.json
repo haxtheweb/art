@@ -1014,7 +1014,7 @@
     },
     {
       "path": "future-traveler-eras/",
-      "description": "The Future Traveler icon drawn the way each era would have drawn it: 11 eras, one for each style the posters tell the pillars' story in, plus the 1960s world of tomorrow in each of the 8 pillar colors (19 files). SVG on a 24 grid plus a 512px PNG each, and a contact sheet. Made in code (SVG) by Claude, an AI, under HAX team direction; exported from the network bar's lib/hax-future-traveler.js in haxtheweb/webcomponents, which is the source.",
+      "description": "The Future Traveler icon drawn the way each era would have drawn it: 11 eras, one for each style the posters tell the pillars' story in, a 1990s snapback with no poster yet, plus the 1960s world of tomorrow in each of the 8 pillar colors (20 files). SVG on a 24 grid plus a 512px PNG each, and a contact sheet. Made in code (SVG) by Claude, an AI, under HAX team direction; exported from the network bar's lib/hax-future-traveler.js in haxtheweb/webcomponents, which is the source.",
       "status": "in use: the network bar's Future Traveler remixes through them on hover and click",
       "reuse": "hax-original-or-unreviewed",
       "contact_sheet": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/contact-sheet.jpg",
@@ -1110,6 +1110,15 @@
           "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png",
           "alt": "The Future Traveler in 1990s early web style: a rainbow gradient helmet with a hard navy drop shadow, a playful HAX and bright blue lenses.",
           "after_poster": "haxtheweb/posters/social/hax_1990s_poster.png"
+        },
+        {
+          "id": "future-traveler-snapback",
+          "title": "1990s snapback",
+          "era": "snapback",
+          "file": "future-traveler-eras/svg/future-traveler-snapback.svg",
+          "url": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-snapback.svg",
+          "png": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png",
+          "alt": "The Future Traveler in a 1990s snapback: the helmet as a red ball cap with panel seams and a top button the stalk grows from, HAX in white above the snapback opening and its strap of three white snaps, the green goggle band with cyan lenses, and a lit yellow bulb."
         },
         {
           "id": "future-traveler-polygon",

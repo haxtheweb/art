@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-3015f07a-7871-49d0-9582-deec5c860eac</id>
+<indent>1</indent>
+<location>pages/item-3015f07a-7871-49d0-9582-deec5c860eac/index.xml</location>
+<slug>era-polygon</slug>
+<order>37</order>
+<parent>item-71a48b7a-c36f-46c4-b72d-cfa8c3076042</parent>
+<title>32-bit polygons</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png</image>
+<tags>era,polygon</tags>
+<created>1795458309</created>
+<updated>1795458309</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png" alt="The Future Traveler in 32-bit style: a helmet of flat-shaded red polygons, teal faceted goggles and a faceted yellow bulb."></media-image>
+<ul><li><strong>Era:</strong> 32-bit polygons</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>
+<p><strong>Review before promoting.</strong> Follows hax_ps_poster (32-bit console homage). See <a href="https://github.com/haxtheweb/art/blob/main/LICENSING.md">LICENSING.md</a>.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-polygon.svg">SVG file</a></li><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png">PNG file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_ps_poster.png">The poster it follows</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-polygon.svg">View on GitHub</a></li></ul>]]></content>
+</item>
