@@ -68,7 +68,7 @@ let body = rest.slice(0, app.index) + '<script src="app.js"></script>' + rest.sl
 body = body
   .replace("<script>/*{{RPG_BUNDLE}}*/</script>", '<script src="hax-elements.js"></script>')
   .replace('src="data:video/mp4;base64,{{DEMO_MP4}}"', 'src="media/demo.mp4"');
-if (/<script>|\{\{/.test(body)) throw new Error("index.html would still contain inline script or a placeholder");
+if (body.includes("<script>") || body.includes("{{")) throw new Error("index.html would still contain inline script or a placeholder");
 
 const SITE = "https://hax-of-the-web.surge.sh/";
 const meta = `<meta charset="utf-8">

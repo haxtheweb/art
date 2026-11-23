@@ -1,0 +1,9 @@
+# Interactive pieces scanned by .github/workflows/a11y.yml (paths from the
+# repo root). The hax-art portfolio is scanned separately from its site.json.
+future-traveler-icons/
+haxtheweb/hax-of-the-web/
+haxtheweb/hax-the-web-game/
+haxtheweb/rpg-glitch/
+presentation-materials/episode-xxvi/
+presentation-materials/hax-in-a-minute/
+presentation-materials/hax-the-web-intro/
