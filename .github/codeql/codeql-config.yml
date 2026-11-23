@@ -1,0 +1,24 @@
+name: "haxtheweb/art CodeQL config"
+# Generated and vendored files, scanned where they are made, not here:
+# - hax-art/: HAXcms site boilerplate (from haxcms-nodejs / haxcms-php),
+#   replaced when the site is rebuilt. hax-art/custom/src is still scanned.
+# - built pages and bundles: AGENTS.md says to edit their tools/template
+#   files, which are scanned; the outputs inline third-party bundles (lit).
+# - rpg-character copies synced from haxtheweb/webcomponents.
+paths-ignore:
+  - hax-art/index.html
+  - hax-art/ghpages.html
+  - hax-art/404.html
+  - hax-art/offline.html
+  - hax-art/service-worker.js
+  - hax-art/build.js
+  - hax-art/build-haxcms.js
+  - hax-art/assets/babel-top.js
+  - hax-art/assets/babel-bottom.js
+  - hax-art/custom/build
+  - haxtheweb/hax-of-the-web/index.html
+  - haxtheweb/hax-of-the-web/app.js
+  - haxtheweb/hax-of-the-web/hax-elements.js
+  - haxtheweb/hax-the-web-game/index.html
+  - haxtheweb/rpg-glitch/rpg-character
+  - .github/a11y/node_modules

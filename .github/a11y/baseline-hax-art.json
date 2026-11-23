@@ -1,0 +1,98 @@
+{
+  "/": {
+    "link-in-text-block": 2
+  },
+  "/brand": {
+    "link-in-text-block": 2
+  },
+  "/era-handheld": {
+    "link-in-text-block": 1
+  },
+  "/era-polygon": {
+    "link-in-text-block": 1
+  },
+  "/era-stripes": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-accessible": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-agnostic": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-efficient": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-extensible": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-open": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-remixable": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-sustainable": {
+    "link-in-text-block": 1
+  },
+  "/era-tomorrow-ubiquity": {
+    "link-in-text-block": 1
+  },
+  "/future-traveler-eras": {
+    "link-in-text-block": 1
+  },
+  "/home": {
+    "link-in-text-block": 2
+  },
+  "/poster-1980s": {
+    "link-in-text-block": 1
+  },
+  "/poster-gameboy": {
+    "link-in-text-block": 1
+  },
+  "/poster-gba": {
+    "link-in-text-block": 1
+  },
+  "/poster-hacker": {
+    "link-in-text-block": 1
+  },
+  "/poster-ps": {
+    "link-in-text-block": 1
+  },
+  "/poster-quest": {
+    "link-in-text-block": 1
+  },
+  "/poster-quest-comic": {
+    "link-in-text-block": 1
+  },
+  "/poster-stage-select": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-accessible": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-agnostic": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-all": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-efficient": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-extensible": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-open": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-remixable": {
+    "link-in-text-block": 1
+  },
+  "/poster-tomorrow-sustainable": {
+    "link-in-text-block": 1
+  },
+  "/use-the-art": {
+    "link-in-text-block": 4
+  }
+}
