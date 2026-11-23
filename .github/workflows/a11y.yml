@@ -4,6 +4,9 @@ name: Accessibility
 # - the hax-art portfolio: every page in hax-art/site.json, built the same
 #   way as its deploys (npm run ghpages:build), HAX elements from the CDN
 # - the interactive pieces listed in .github/a11y/pages.txt
+# Pages load only from the site, the HAX CDNs and raw.githubusercontent.com
+# (the portfolio shows this repo's art by raw GitHub URL); other third-party
+# hosts are blocked so results don't change with services we don't run.
 # The baseline files record the violations present when this check was
 # added; a pull request fails only when a page gets a new kind of violation
 # or more failing elements than its baseline. Fixing things never fails it.
@@ -48,11 +51,11 @@ jobs:
           cd .github/a11y && npx playwright install --with-deps chromium
       - name: Interactive pieces
         if: always()
-        run: node .github/a11y/a11y-scan.mjs --root . --pages .github/a11y/pages.txt --baseline .github/a11y/baseline-pieces.json
+        run: node .github/a11y/a11y-scan.mjs --root . --pages .github/a11y/pages.txt --allow-hosts raw.githubusercontent.com --baseline .github/a11y/baseline-pieces.json
       - name: Static build of the portfolio (same as deploy)
         if: always()
         working-directory: hax-art
         run: npm run ghpages:build
       - name: Portfolio pages
         if: always()
-        run: node .github/a11y/a11y-scan.mjs --root hax-art --site-json hax-art/site.json --baseline .github/a11y/baseline-hax-art.json
+        run: node .github/a11y/a11y-scan.mjs --root hax-art --site-json hax-art/site.json --allow-hosts raw.githubusercontent.com --baseline .github/a11y/baseline-hax-art.json
