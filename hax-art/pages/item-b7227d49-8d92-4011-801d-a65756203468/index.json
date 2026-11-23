@@ -1,0 +1,18 @@
+{
+  "id": "item-b7227d49-8d92-4011-801d-a65756203468",
+  "indent": 1,
+  "location": "pages/item-b7227d49-8d92-4011-801d-a65756203468/index.json",
+  "slug": "future-traveler-30",
+  "order": 22,
+  "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+  "title": "Sticker badge",
+  "description": "",
+  "metadata": {
+    "published": true,
+    "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg",
+    "tags": "sticker,flat-vector,color-variant",
+    "created": 1795458308,
+    "updated": 1795458308
+  },
+  "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg\" alt=\"Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb.\"></media-image>\n<ul><li><strong>Variant:</strong> #30</li><li><strong>Best for:</strong> Sticker</li><li><strong>Style:</strong> Sticker, Flat vector, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-30.jpeg\">View on GitHub</a></li></ul>"
+}

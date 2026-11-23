@@ -1,0 +1,36 @@
+id: item-65ea430f-732f-483b-b5e5-22190e7123a4
+indent: 1
+location: pages/item-65ea430f-732f-483b-b5e5-22190e7123a4/index.yaml
+slug: poster-1880s
+order: 66
+parent: item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b
+title: 1880s steam age
+description: ''
+metadata:
+  published: true
+  image: >-
+    https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png
+  tags: across-time
+  created: 1795458310
+  updated: 1795458310
+content: >-
+  <media-image
+  source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png"
+  alt="Sepia Victorian engraving-style poster: &quot;The Grand &amp; Marvellous
+  HAX, Open Source Authoring Engine&quot; with brass gears, a human, the Future
+  Traveler and a lightbulb forming Humans + Agents = Experience, above seven
+  stone pillars labeled with the HAX pillars on a Ubiquity base."></media-image>
+
+  <ul><li><strong>Series:</strong> HAX across
+  time</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>
+
+  <ul><li><a
+  href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png">Full-size
+  still</a></li><li><a
+  href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.mp4">Video
+  (MP4)</a></li><li><a
+  href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1880s.gif">GIF</a></li><li><a
+  href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1880s.pdf">11×17
+  print (PDF)</a></li><li><a
+  href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1880s_poster.png">View
+  on GitHub</a></li></ul>

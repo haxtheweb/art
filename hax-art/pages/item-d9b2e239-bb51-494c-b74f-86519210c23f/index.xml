@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>item-d9b2e239-bb51-494c-b74f-86519210c23f</id>
+<indent>1</indent>
+<location>pages/item-d9b2e239-bb51-494c-b74f-86519210c23f/index.xml</location>
+<slug>poster-bulletin-board</slug>
+<order>89</order>
+<parent>item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b</parent>
+<title>Bulletin board</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png</image>
+<tags>scene</tags>
+<created>1795458310</created>
+<updated>1795458310</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png" alt="A campus bulletin board covered in the HAX posters, some peeling, under the banner &quot;HAX: Take one. Skill up. Build the future.&quot; Pixel students reach up to read them; the Void looms on the left and a bright future city glows on the right, where the Future Traveler waits."></media-image>
+<ul><li><strong>Series:</strong> Scenes</li><li><strong>Size:</strong> 1920 × 1080 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png">Full-size still</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.mp4">Video (MP4)</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_bulletin_board.gif">GIF</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/hax_bulletin_board.png">View on GitHub</a></li></ul>]]></content>
+</item>
