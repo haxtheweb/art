@@ -1,6 +1,6 @@
-# hax-art
+# HAX art
 
-> own course
+> Art and media from the HAX project, browsed with HAX.
 
 HAXcms is a file-based CMS: authored pages and metadata are stored as portable files, not locked into a database-only workflow.
 The canonical site structure is `site.json`, represented in JSON Outline Schema (`id`, `parent`, `order`, `slug`, `location`, and `metadata`).
@@ -8,114 +8,118 @@ Use HAX CLI and ecosystem tooling to maintain human-authored content while keepi
 Managed files (feeds, search indexes, manifests, and this `llms.txt`) are generated artifacts and should be rebuilt by tooling.
 
 ## Core resources
-- [site.json](https://localhost/hax-art/site.json): Canonical site manifest and navigation tree in JSON Outline Schema format.
-- [llms.txt](https://localhost/hax-art/llms.txt): LLM-oriented guide to this site and its machine-readable resources.
+- [site.json](https://art.hax.cloud/site.json): Canonical site manifest and navigation tree in JSON Outline Schema format.
+- [llms.txt](https://art.hax.cloud/llms.txt): LLM-oriented guide to this site and its machine-readable resources.
+- [llms-full.txt](https://art.hax.cloud/llms-full.txt): The whole site as one markdown document, in outline order.
+- [Whole site as HTML](https://art.hax.cloud/x/api/v1/site/export/html): Every page in one HTML document.
+- [AGENTS.md](https://art.hax.cloud/AGENTS.md): Instructions for AI agents working on this site's files.
 
 ## Pages
-- [HAX art](https://localhost/hax-art/pages/item-e2927e99-6ded-44ae-8bf3-5a20b8b05c80/index.md)
-- [Future Traveler](https://localhost/hax-art/pages/item-b5606110-9736-444f-a008-290ef38afb09/index.md)
-- [Android portrait](https://localhost/hax-art/pages/item-94f3eaed-0a62-4e2d-b95b-4ad4f5fd1657/index.md)
-- [Glitch double-exposure badge](https://localhost/hax-art/pages/item-caef695e-551f-4111-8638-d7ea423de371/index.md)
-- [Egyptian wall](https://localhost/hax-art/pages/item-dc14b82b-51f6-45a7-aeaf-5004855361a7/index.md)
-- [Helmet icon (checkerboard)](https://localhost/hax-art/pages/item-4f7d3b6c-6951-408f-9fb0-b9b0bb7be2b9/index.md)
-- [Cyberpunk traveler](https://localhost/hax-art/pages/item-f008c14d-5ac8-4df4-b1d2-bf2479d7de70/index.md)
-- [Green helmet portrait](https://localhost/hax-art/pages/item-2f62d403-3878-4efb-a1e3-8c1b8b9c90a2/index.md)
-- [Foil balloon](https://localhost/hax-art/pages/item-91be326e-5816-49b0-8b55-bfeaefc0032c/index.md)
-- [Paper-cut collage](https://localhost/hax-art/pages/item-b3276f33-2e23-4b6f-8f83-b68a0f30a4f7/index.md)
-- [Hoodie kid, tan burst](https://localhost/hax-art/pages/item-2c37a135-9410-43ad-8c44-325ef4979746/index.md)
-- [Classic burst](https://localhost/hax-art/pages/item-7cd1c7cf-32b7-4430-a14a-4deec54164f1/index.md)
-- [Helmet icon, light gray](https://localhost/hax-art/pages/item-ef25c5aa-e18d-4d27-b966-c6ec9515299e/index.md)
-- [Halloween](https://localhost/hax-art/pages/item-8a3fc908-697b-43fa-a49c-acbe1d3ce18b/index.md)
-- [8-bit RPG dungeon](https://localhost/hax-art/pages/item-bbaa901c-5278-40a8-9e25-e250d9525658/index.md)
-- [Helmet icon, light gray (alt)](https://localhost/hax-art/pages/item-ddfd0bcd-d763-408b-9c33-c34c25701dab/index.md)
-- [Pixel helmet face](https://localhost/hax-art/pages/item-309ac06b-af2f-49b5-b787-152497e4610e/index.md)
-- [Classic burst, face hidden](https://localhost/hax-art/pages/item-81625a35-59a2-4169-abe4-bb5cedaeb00e/index.md)
-- [Helmet portrait, cyan goggles](https://localhost/hax-art/pages/item-8ab61a31-ca7b-4f47-88c7-e8862778e3bc/index.md)
-- [Layered papercraft](https://localhost/hax-art/pages/item-bee6a92f-16ab-41e3-9177-e68717b35fcc/index.md)
-- [Toy-room 3D](https://localhost/hax-art/pages/item-921c3fbf-ffbf-4473-99ba-6f08cc43a9f3/index.md)
-- [The ocean is rising](https://localhost/hax-art/pages/item-e5cd8fe1-77e1-4572-ae39-4093b76c23ab/index.md)
-- [Sticker badge](https://localhost/hax-art/pages/item-b7227d49-8d92-4011-801d-a65756203468/index.md)
-- [Pixel helmet, detailed](https://localhost/hax-art/pages/item-8e807cbc-2259-46e0-a195-948d78ba05c2/index.md)
-- [I my tummy hurts](https://localhost/hax-art/pages/item-f9e61104-d29a-4b85-8e99-835b39a56c97/index.md)
-- [Pixel helmet, green goggles](https://localhost/hax-art/pages/item-cfd86d2d-3d5b-40b1-a7e7-cace634533fa/index.md)
-- [Future Traveler across time](https://localhost/hax-art/pages/item-71a48b7a-c36f-46c4-b72d-cfa8c3076042/index.md)
-- [Today](https://localhost/hax-art/pages/item-d2a248dd-ef9f-4c60-a71a-16d7e9ac0749/index.md)
-- [1880s steam age](https://localhost/hax-art/pages/item-56cf54de-b813-445c-898a-f93cda6e90a3/index.md)
-- [1900s modern marvel](https://localhost/hax-art/pages/item-c2edaca0-587c-4b76-a9f5-bf52f463f4b3/index.md)
-- [1920s roaring twenties](https://localhost/hax-art/pages/item-7cd15a36-5c57-42d0-92c4-b95aa46e3c8d/index.md)
-- [1970s rainbow](https://localhost/hax-art/pages/item-e19dbea3-9f9b-4b1d-a497-e5cf5eb68181/index.md)
-- [1980s corporate](https://localhost/hax-art/pages/item-8bc8b417-e894-4c5f-b007-b62db06cc5d9/index.md)
-- [1980s cyberpunk](https://localhost/hax-art/pages/item-a5e1edc5-87b6-4f01-878a-7e11283e52ae/index.md)
-- [Handheld, four greens](https://localhost/hax-art/pages/item-4f5976df-4522-4c57-886d-b582804669f1/index.md)
-- [1990s early web](https://localhost/hax-art/pages/item-c400a6d9-ec46-46ba-ad98-9c31f231258d/index.md)
-- [1990s snapback](https://localhost/hax-art/pages/item-83ffa1b1-0517-4042-9602-973948bfa469/index.md)
-- [32-bit polygons](https://localhost/hax-art/pages/item-3015f07a-7871-49d0-9582-deec5c860eac/index.md)
-- [Terminal](https://localhost/hax-art/pages/item-5f0a8d4c-54b8-4c7f-aa28-6bbdaac4badd/index.md)
-- [1960s world of tomorrow: Ubiquity](https://localhost/hax-art/pages/item-a4f54a05-af1b-4a85-8884-fd0580595010/index.md)
-- [1960s world of tomorrow: Accessible](https://localhost/hax-art/pages/item-49d2ada5-75a0-4ca7-95c1-f4854fc58a75/index.md)
-- [1960s world of tomorrow: Efficient](https://localhost/hax-art/pages/item-4084a4f3-c252-4905-b9b0-2c57da15e8d6/index.md)
-- [1960s world of tomorrow: Extensible](https://localhost/hax-art/pages/item-75902a8e-c03a-4d23-8000-02b6a970f6cd/index.md)
-- [1960s world of tomorrow: Free and open](https://localhost/hax-art/pages/item-9f49acb9-f347-4367-a178-0205a231be43/index.md)
-- [1960s world of tomorrow: Platform agnostic](https://localhost/hax-art/pages/item-f884cde6-582c-42ac-8bb8-2e94a48503ad/index.md)
-- [1960s world of tomorrow: Remixable](https://localhost/hax-art/pages/item-d0075610-526c-469d-8b32-b394f81bc3ba/index.md)
-- [1960s world of tomorrow: Sustainable](https://localhost/hax-art/pages/item-fc7a1210-403c-435d-ae31-409eda207d81/index.md)
-- [rpg-character](https://localhost/hax-art/pages/item-ff9d804a-fd8d-49db-8517-98874ed7f059/index.md)
-- [RPG Glitch](https://localhost/hax-art/pages/item-f67d7c2b-7db9-4a80-bbed-840222dc4fd0/index.md)
-- [HAX Morph](https://localhost/hax-art/pages/item-9916ba26-7c44-46b7-8157-60808444dc40/index.md)
-- [HAX the Web](https://localhost/hax-art/pages/item-420c538e-116d-4170-a951-b4803f69ae0d/index.md)
-- [WANTED: HAX](https://localhost/hax-art/pages/item-7bf618e7-3fbc-4512-a7b6-e3195fea6827/index.md)
-- [HAX of the Web](https://localhost/hax-art/pages/item-6201f4b2-96bf-4ed4-b58c-d68846ff30f4/index.md)
-- [RPG me](https://localhost/hax-art/pages/item-a43252d3-ce1e-4eca-ab24-aaa64c8d1230/index.md)
-- [Brand](https://localhost/hax-art/pages/item-4dc5aac3-9cf7-48fb-a384-865c7d875613/index.md)
-- [HAX the Web sticker](https://localhost/hax-art/pages/item-e4d96488-2942-41ba-acba-aebf09119d0c/index.md)
-- [h-a-x THE WEB wordmark](https://localhost/hax-art/pages/item-ccbab782-3bd2-4b37-be9f-0484ebe74f56/index.md)
-- [Logo explorations](https://localhost/hax-art/pages/item-60fbe214-bb5f-4033-90b8-c61c276133c4/index.md)
-- [Future Traveler badge](https://localhost/hax-art/pages/item-0b19ce33-5f17-4634-af2c-8062e360da19/index.md)
-- [Helmet mark](https://localhost/hax-art/pages/item-b6af19b3-ce7f-451f-b8e8-6930219458b0/index.md)
-- [Pattern banner](https://localhost/hax-art/pages/item-1b463bea-343c-4615-b943-53308af527c6/index.md)
-- [h-a-x THE WEB-INAR banner](https://localhost/hax-art/pages/item-bf581d19-b122-401e-b2c0-3c7cf51f2193/index.md)
-- [HAX Camp poster](https://localhost/hax-art/pages/item-1aee679f-bb8e-44a6-a825-540483955720/index.md)
-- [Contribute flyer](https://localhost/hax-art/pages/item-bce51c5c-fecb-439c-8085-e353426fff64/index.md)
-- [Video thumbnails](https://localhost/hax-art/pages/item-e1ccc245-899e-476c-ade0-1a72dcca04e7/index.md)
-- [Posters](https://localhost/hax-art/pages/item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b/index.md)
-- [1880s steam age](https://localhost/hax-art/pages/item-65ea430f-732f-483b-b5e5-22190e7123a4/index.md)
-- [1900s modern marvel](https://localhost/hax-art/pages/item-96f06f21-9869-49b1-8004-bb11b901444c/index.md)
-- [1920s roaring twenties](https://localhost/hax-art/pages/item-cf6d5c44-e6dd-4b49-b3aa-a79c376ceb41/index.md)
-- [1970s rainbow](https://localhost/hax-art/pages/item-c812cb38-4331-4a70-bc2b-6d89c030f48a/index.md)
-- [1980s corporate (Paul Rand homage)](https://localhost/hax-art/pages/item-cd4b3360-c9f3-4227-8d08-a1e2181d82ca/index.md)
-- [1980s cyberpunk](https://localhost/hax-art/pages/item-bb28344e-3511-4b06-b483-8befab60eee7/index.md)
-- [1990s early web](https://localhost/hax-art/pages/item-d7997f68-9bd9-425a-9c6b-91f7ca71699b/index.md)
-- [Game Boy](https://localhost/hax-art/pages/item-28801f35-f12a-4a5a-9054-905c35d9a132/index.md)
-- [Game Boy Advance](https://localhost/hax-art/pages/item-99b57efa-d7c6-4e4c-9d50-c62ab3a897d3/index.md)
-- [PlayStation](https://localhost/hax-art/pages/item-d1d340d0-c35b-463e-a5a7-e61a5d01b686/index.md)
-- [Hacker](https://localhost/hax-art/pages/item-2407e28a-ff22-4061-acb5-34f6bc242885/index.md)
-- [HAX Quest](https://localhost/hax-art/pages/item-cfde479b-a6cb-4215-99f4-be306aed10f3/index.md)
-- [HAX Quest comic](https://localhost/hax-art/pages/item-e4252040-86c4-44ec-b504-1649d6a7239e/index.md)
-- [You made it to the future](https://localhost/hax-art/pages/item-f46b2116-8110-4a65-ba94-8ac40b15e1f1/index.md)
-- [World of Tomorrow: UBIQUITY](https://localhost/hax-art/pages/item-4213c91c-bd26-4fe2-b3bd-479f1890e836/index.md)
-- [World of Tomorrow: ACCESSIBLE](https://localhost/hax-art/pages/item-d0fc5c8c-4933-4ba3-87e9-965aebd4a3de/index.md)
-- [World of Tomorrow: EFFICIENT](https://localhost/hax-art/pages/item-39b58c4f-9e47-4b4f-aa01-1bfc03e7280d/index.md)
-- [World of Tomorrow: EXTENSIBLE](https://localhost/hax-art/pages/item-09583432-4be2-478a-91af-062be3240499/index.md)
-- [World of Tomorrow: FREE AND OPEN](https://localhost/hax-art/pages/item-23e04509-8431-43b8-96ef-e3746bdd3163/index.md)
-- [World of Tomorrow: PLATFORM AGNOSTIC](https://localhost/hax-art/pages/item-8f5403f0-be2f-4897-99e3-84eaa5f1bad7/index.md)
-- [World of Tomorrow: REMIXABLE](https://localhost/hax-art/pages/item-b7a047a0-f4ef-47c4-a4de-dcac7e9385dc/index.md)
-- [World of Tomorrow: SUSTAINABLE](https://localhost/hax-art/pages/item-b8501822-73ac-4bc7-b8e9-a87d320cc9c5/index.md)
-- [Select a Pillar](https://localhost/hax-art/pages/item-ef6e1ac1-4d33-47bd-afb5-9ae2b5843dba/index.md)
-- [Bulletin board](https://localhost/hax-art/pages/item-d9b2e239-bb51-494c-b74f-86519210c23f/index.md)
-- [Campaign videos](https://localhost/hax-art/pages/item-fe80a09e-5f24-4370-819d-f662166625c4/index.md)
-- [Talks](https://localhost/hax-art/pages/item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23/index.md)
-- [HAX in under a minute](https://localhost/hax-art/pages/item-a16bc9da-00f6-44c5-931d-7cfe7012620d/index.md)
-- [HAX The Web opening titles](https://localhost/hax-art/pages/item-4505b2f9-6f40-47bb-b860-3f907131a261/index.md)
-- [Episode XXVI: Return of the Open Web](https://localhost/hax-art/pages/item-238bbddd-0054-4bca-ab4e-53831c3e78e2/index.md)
-- [HAX by the numbers](https://localhost/hax-art/pages/item-80c54b1f-7fe8-4056-b169-5e3384176073/index.md)
-- [HAX history](https://localhost/hax-art/pages/item-e1d1cc79-b36c-4830-9249-4c65e4be22da/index.md)
-- [Legend](https://localhost/hax-art/pages/item-b6f5f468-c4d2-40ad-9d8b-7e9133ca6600/index.md)
-- [Class, club, lab](https://localhost/hax-art/pages/item-6240f096-f3e8-43c9-b9d2-a164ca55b68c/index.md)
-- [Use the art](https://localhost/hax-art/pages/item-6a6ab168-ec11-4856-9e59-f385c611baa4/index.md)
+- [HAX art](https://art.hax.cloud/pages/item-e2927e99-6ded-44ae-8bf3-5a20b8b05c80/index.md): Art and media from HAX: open-source tools that let anyone create, remix and publish on the web without needing to understand the web.
+- [Future Traveler](https://art.hax.cloud/pages/item-b5606110-9736-444f-a008-290ef38afb09/index.md): The Future Traveler, HAX's official mascot, traveled to the future to bring our ideas to life.
+- [Android portrait](https://art.hax.cloud/pages/item-94f3eaed-0a62-4e2d-b95b-4ad4f5fd1657/index.md): Variant: #01 Best for: Portrait Style: Flat vector, Portrait, Robot Setting: Future Size: 1024 × 1029 px Full-size file View on GitHub
+- [Glitch double-exposure badge](https://art.hax.cloud/pages/item-caef695e-551f-4111-8638-d7ea423de371/index.md): Variant: #02 Best for: Badge Style: Starburst badge, Glitch, Cartoon Setting: Digital Size: 1024 × 1024 px Full-size file View on GitHub
+- [Egyptian wall](https://art.hax.cloud/pages/item-dc14b82b-51f6-45a7-aeaf-5004855361a7/index.md): Variant: #03 Best for: Time travel Style: Painting, Hieroglyphs, Time travel Setting: Ancient egypt Size: 1024 × 1024 px Notes: Shows the 'takes the best ideas from every era' theme.
+- [Helmet icon (checkerboard)](https://art.hax.cloud/pages/item-4f7d3b6c-6951-408f-9fb0-b9b0bb7be2b9/index.md): Variant: #06 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: JPEG cannot be transparent: the checkerboard is baked into the pixels.
+- [Cyberpunk traveler](https://art.hax.cloud/pages/item-f008c14d-5ac8-4df4-b1d2-bf2479d7de70/index.md): Variant: #08 Best for: Scene Style: Photoreal, Cyberpunk, Human Setting: Future Size: 1024 × 1024 px Notes: Closest to 'sees the future' framing.
+- [Green helmet portrait](https://art.hax.cloud/pages/item-2f62d403-3878-4efb-a1e3-8c1b8b9c90a2/index.md): Variant: #09 Best for: Icon Style: Icon, Portrait, Color variant Setting: Brand Size: 1024 × 1024 px Notes: Green colorway.
+- [Foil balloon](https://art.hax.cloud/pages/item-91be326e-5816-49b0-8b55-bfeaefc0032c/index.md): Variant: #11 Best for: Merch Style: Product mockup, 3d, Humor Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [Paper-cut collage](https://art.hax.cloud/pages/item-b3276f33-2e23-4b6f-8f83-b68a0f30a4f7/index.md): Variant: #12 Best for: Badge Style: Paper craft, Collage, Starburst badge Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [Hoodie kid, tan burst](https://art.hax.cloud/pages/item-2c37a135-9410-43ad-8c44-325ef4979746/index.md): Variant: #13 Best for: Badge Style: Starburst badge, Flat vector, Sketch Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [Classic burst](https://art.hax.cloud/pages/item-7cd1c7cf-32b7-4430-a14a-4deec54164f1/index.md): Variant: #15 Best for: Badge Style: Starburst badge, Flat vector Setting: Present Size: 1024 × 1024 px Notes: Good reference for the 'standard' on-model look.
+- [Helmet icon, light gray](https://art.hax.cloud/pages/item-ef25c5aa-e18d-4d27-b966-c6ec9515299e/index.md): Variant: #17 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: Near-duplicate of 20.
+- [Halloween](https://art.hax.cloud/pages/item-8a3fc908-697b-43fa-a49c-acbe1d3ce18b/index.md): Variant: #18 Best for: Seasonal Style: Scene, Gothic, Seasonal Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [8-bit RPG dungeon](https://art.hax.cloud/pages/item-bbaa901c-5278-40a8-9e25-e250d9525658/index.md): Variant: #19 Best for: Rpg Style: Pixel art, Rpg, Game Setting: Medieval 8bit Size: 1024 × 1024 px Notes: Links the traveler to the rpg-character lineage.
+- [Helmet icon, light gray (alt)](https://art.hax.cloud/pages/item-ddfd0bcd-d763-408b-9c33-c34c25701dab/index.md): Variant: #20 Best for: Icon Style: Icon, Flat vector Setting: Brand Size: 1024 × 1024 px Notes: Near-duplicate of 17.
+- [Pixel helmet face](https://art.hax.cloud/pages/item-309ac06b-af2f-49b5-b787-152497e4610e/index.md): Variant: #22 Best for: Icon Style: Pixel art, 8 bit, Icon Setting: Retro Size: 1024 × 1024 px Notes: 8-bit form.
+- [Classic burst, face hidden](https://art.hax.cloud/pages/item-81625a35-59a2-4169-abe4-bb5cedaeb00e/index.md): Variant: #24 Best for: Badge Style: Starburst badge, Flat vector Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [Helmet portrait, cyan goggles](https://art.hax.cloud/pages/item-8ab61a31-ca7b-4f47-88c7-e8862778e3bc/index.md): Variant: #25 Best for: Icon Style: Icon, Portrait Setting: Brand Size: 1024 × 1024 px Full-size file View on GitHub
+- [Layered papercraft](https://art.hax.cloud/pages/item-bee6a92f-16ab-41e3-9177-e68717b35fcc/index.md): Variant: #27 Best for: Badge Style: Paper craft, 3d, Starburst badge Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [Toy-room 3D](https://art.hax.cloud/pages/item-921c3fbf-ffbf-4473-99ba-6f08cc43a9f3/index.md): Variant: #28 Best for: Scene Style: 3d, Render, Character Setting: Present Size: 1024 × 1024 px Full-size file View on GitHub
+- [The ocean is rising](https://art.hax.cloud/pages/item-e5cd8fe1-77e1-4572-ae39-4093b76c23ab/index.md): Variant: #29 Best for: Comic Style: Engraving, Comic, Web metaphor Setting: Present Size: 1024 × 1024 px Notes: Supports the 'data flows like water' idea.
+- [Sticker badge](https://art.hax.cloud/pages/item-b7227d49-8d92-4011-801d-a65756203468/index.md): Variant: #30 Best for: Sticker Style: Sticker, Flat vector, Color variant Setting: Brand Size: 1024 × 1024 px Full-size file View on GitHub
+- [Pixel helmet, detailed](https://art.hax.cloud/pages/item-8e807cbc-2259-46e0-a195-948d78ba05c2/index.md): Variant: #31 Best for: Icon Style: Pixel art, 16 bit, Icon Setting: Retro Size: 1024 × 1024 px Notes: More detailed than 22.
+- [I my tummy hurts](https://art.hax.cloud/pages/item-f9e61104-d29a-4b85-8e99-835b39a56c97/index.md): Variant: #34 Best for: Humor Style: Crayon, Child drawing, Humor Setting: Present Size: 1024 × 1024 px Notes: Intentionally naive style.
+- [Pixel helmet, green goggles](https://art.hax.cloud/pages/item-cfd86d2d-3d5b-40b1-a7e7-cace634533fa/index.md): Variant: #35 Best for: Icon Style: Pixel art, 8 bit, Icon, Color variant Setting: Retro Size: 1024 × 1024 px Full-size file View on GitHub
+- [Future Traveler across time](https://art.hax.cloud/pages/item-71a48b7a-c36f-46c4-b72d-cfa8c3076042/index.md): The Future Traveler has collected the best ideas of every era in his backpack, so his icon can be drawn the way each era would have drawn it: an 1880s engraving, a 1920s gold line drawing, a neon sign, four greens on a handheld screen.
+- [Today](https://art.hax.cloud/pages/item-d2a248dd-ef9f-4c60-a71a-16d7e9ac0749/index.md): Era: Today Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file View on GitHub
+- [1880s steam age](https://art.hax.cloud/pages/item-56cf54de-b813-445c-898a-f93cda6e90a3/index.md): Era: 1880s steam age Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1900s modern marvel](https://art.hax.cloud/pages/item-c2edaca0-587c-4b76-a9f5-bf52f463f4b3/index.md): Era: 1900s modern marvel Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1920s roaring twenties](https://art.hax.cloud/pages/item-7cd15a36-5c57-42d0-92c4-b95aa46e3c8d/index.md): Era: 1920s roaring twenties Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1970s rainbow](https://art.hax.cloud/pages/item-e19dbea3-9f9b-4b1d-a497-e5cf5eb68181/index.md): Era: 1970s rainbow Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1980s corporate](https://art.hax.cloud/pages/item-8bc8b417-e894-4c5f-b007-b62db06cc5d9/index.md): Era: 1980s corporate Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1980s cyberpunk](https://art.hax.cloud/pages/item-a5e1edc5-87b6-4f01-878a-7e11283e52ae/index.md): Era: 1980s cyberpunk Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [Handheld, four greens](https://art.hax.cloud/pages/item-4f5976df-4522-4c57-886d-b582804669f1/index.md): Era: Handheld, four greens Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1990s early web](https://art.hax.cloud/pages/item-c400a6d9-ec46-46ba-ad98-9c31f231258d/index.md): Era: 1990s early web Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1990s snapback](https://art.hax.cloud/pages/item-83ffa1b1-0517-4042-9602-973948bfa469/index.md): Era: 1990s snapback Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file View on GitHub
+- [32-bit polygons](https://art.hax.cloud/pages/item-3015f07a-7871-49d0-9582-deec5c860eac/index.md): Era: 32-bit polygons Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [Terminal](https://art.hax.cloud/pages/item-5f0a8d4c-54b8-4c7f-aa28-6bbdaac4badd/index.md): Era: Terminal Size: 24 by 24 grid SVG, 512 × 512 px PNG SVG file PNG file The poster it follows View on GitHub
+- [1960s world of tomorrow: Ubiquity](https://art.hax.cloud/pages/item-a4f54a05-af1b-4a85-8884-fd0580595010/index.md): Era: 1960s world of tomorrow: Ubiquity Pillar: Ubiquity Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Accessible](https://art.hax.cloud/pages/item-49d2ada5-75a0-4ca7-95c1-f4854fc58a75/index.md): Era: 1960s world of tomorrow: Accessible Pillar: Accessible Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Efficient](https://art.hax.cloud/pages/item-4084a4f3-c252-4905-b9b0-2c57da15e8d6/index.md): Era: 1960s world of tomorrow: Efficient Pillar: Efficient Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Extensible](https://art.hax.cloud/pages/item-75902a8e-c03a-4d23-8000-02b6a970f6cd/index.md): Era: 1960s world of tomorrow: Extensible Pillar: Extensible Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Free and open](https://art.hax.cloud/pages/item-9f49acb9-f347-4367-a178-0205a231be43/index.md): Era: 1960s world of tomorrow: Free and open Pillar: Open Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Platform agnostic](https://art.hax.cloud/pages/item-f884cde6-582c-42ac-8bb8-2e94a48503ad/index.md): Era: 1960s world of tomorrow: Platform agnostic Pillar: Agnostic Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Remixable](https://art.hax.cloud/pages/item-d0075610-526c-469d-8b32-b394f81bc3ba/index.md): Era: 1960s world of tomorrow: Remixable Pillar: Remixable Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [1960s world of tomorrow: Sustainable](https://art.hax.cloud/pages/item-fc7a1210-403c-435d-ae31-409eda207d81/index.md): Era: 1960s world of tomorrow: Sustainable Pillar: Sustainable Size: 24 by 24 grid SVG, 512 × 512 px PNG Review before promoting.
+- [rpg-character](https://art.hax.cloud/pages/item-ff9d804a-fd8d-49db-8517-98874ed7f059/index.md): The rpg-character is a HAX web component: a little pixel character built from a seed, with hats, costumes, pets and more.
+- [RPG Glitch](https://art.hax.cloud/pages/item-f67d7c2b-7db9-4a80-bbed-840222dc4fd0/index.md): The rpg-character on an 80s CRT, glitching between versions of itself.
+- [HAX Morph](https://art.hax.cloud/pages/item-9916ba26-7c44-46b7-8157-60808444dc40/index.md): HAX decays into Headless Authoring Experience, back to HAX, then into Human, Agent, Experience.
+- [HAX the Web](https://art.hax.cloud/pages/item-420c538e-116d-4170-a951-b4803f69ae0d/index.md): A 16-bit title screen and speed run. Race an rpg-character through the web, jumping into glowing badges that each teach one piece of HAX, then read the run report.
+- [WANTED: HAX](https://art.hax.cloud/pages/item-7bf618e7-3fbc-4512-a7b6-e3195fea6827/index.md): An old-west wanted poster for the Open Web Outlaw, starring the rpg-character in its cowboy hat.
+- [HAX of the Web](https://art.hax.cloud/pages/item-6201f4b2-96bf-4ed4-b58c-d68846ff30f4/index.md): A Halloween arcade title screen starring the rpg-character's zombie pirate girl (the element's zpg seed).
+- [RPG me](https://art.hax.cloud/pages/item-a43252d3-ce1e-4eca-ab24-aaa64c8d1230/index.md): RPG me is one of the tools of the HAX art movement: a character builder for the rpg-character.
+- [Brand](https://art.hax.cloud/pages/item-4dc5aac3-9cf7-48fb-a384-865c7d875613/index.md): HAX logos, stickers, banners and posters. The vector logo is HAXLogo.svg; layered source files (.psd, .ai) live in the haxtheweb folder on GitHub.
+- [HAX the Web sticker](https://art.hax.cloud/pages/item-e4d96488-2942-41ba-acba-aebf09119d0c/index.md): Transparent version: hax-the-web-sticker-v1-2-transparent.png.
+- [h-a-x THE WEB wordmark](https://art.hax.cloud/pages/item-ccbab782-3bd2-4b37-be9f-0484ebe74f56/index.md): Full-size file View on GitHub
+- [Logo explorations](https://art.hax.cloud/pages/item-60fbe214-bb5f-4033-90b8-c61c276133c4/index.md): Seven sheets in all, in the haxtheweb folder (the files named 117737906 to 117737916).
+- [Future Traveler badge](https://art.hax.cloud/pages/item-0b19ce33-5f17-4634-af2c-8062e360da19/index.md): Full-size file View on GitHub
+- [Helmet mark](https://art.hax.cloud/pages/item-b6af19b3-ce7f-451f-b8e8-6930219458b0/index.md): Black-background version: hax.png. Full-size file View on GitHub
+- [Pattern banner](https://art.hax.cloud/pages/item-1b463bea-343c-4615-b943-53308af527c6/index.md): Full-size file View on GitHub
+- [h-a-x THE WEB-INAR banner](https://art.hax.cloud/pages/item-bf581d19-b122-401e-b2c0-3c7cf51f2193/index.md): Full-size file View on GitHub
+- [HAX Camp poster](https://art.hax.cloud/pages/item-1aee679f-bb8e-44a6-a825-540483955720/index.md): Full-size file View on GitHub
+- [Contribute flyer](https://art.hax.cloud/pages/item-bce51c5c-fecb-439c-8085-e353426fff64/index.md): Full-size file View on GitHub
+- [Video thumbnails](https://art.hax.cloud/pages/item-e1ccc245-899e-476c-ade0-1a72dcca04e7/index.md): More in the haxtheweb folder: developer.png and how to use.png.
+- [Posters](https://art.hax.cloud/pages/item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b/index.md): Posters for the HAX campus and social campaign.
+- [1880s steam age](https://art.hax.cloud/pages/item-65ea430f-732f-483b-b5e5-22190e7123a4/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [1900s modern marvel](https://art.hax.cloud/pages/item-96f06f21-9869-49b1-8004-bb11b901444c/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [1920s roaring twenties](https://art.hax.cloud/pages/item-cf6d5c44-e6dd-4b49-b3aa-a79c376ceb41/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [1970s rainbow](https://art.hax.cloud/pages/item-c812cb38-4331-4a70-bc2b-6d89c030f48a/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [1980s corporate (Paul Rand homage)](https://art.hax.cloud/pages/item-cd4b3360-c9f3-4227-8d08-a1e2181d82ca/index.md): Series: HAX across time Size: 1080 × 1350 px Review before promoting.
+- [1980s cyberpunk](https://art.hax.cloud/pages/item-bb28344e-3511-4b06-b483-8befab60eee7/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [1990s early web](https://art.hax.cloud/pages/item-d7997f68-9bd9-425a-9c6b-91f7ca71699b/index.md): Series: HAX across time Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [Game Boy](https://art.hax.cloud/pages/item-28801f35-f12a-4a5a-9054-905c35d9a132/index.md): Series: Game consoles Size: 1080 × 1350 px Review before promoting.
+- [Game Boy Advance](https://art.hax.cloud/pages/item-99b57efa-d7c6-4e4c-9d50-c62ab3a897d3/index.md): Series: Game consoles Size: 1080 × 1350 px Review before promoting.
+- [PlayStation](https://art.hax.cloud/pages/item-d1d340d0-c35b-463e-a5a7-e61a5d01b686/index.md): Series: Game consoles Size: 1080 × 1350 px Review before promoting.
+- [Hacker](https://art.hax.cloud/pages/item-2407e28a-ff22-4061-acb5-34f6bc242885/index.md): Series: Game consoles Size: 1080 × 1350 px Review before promoting.
+- [HAX Quest](https://art.hax.cloud/pages/item-cfde479b-a6cb-4215-99f4-be306aed10f3/index.md): Series: The Quest Size: 1080 × 1350 px Review before promoting.
+- [HAX Quest comic](https://art.hax.cloud/pages/item-e4252040-86c4-44ec-b504-1649d6a7239e/index.md): Series: The Quest Size: 1080 × 1350 px Review before promoting.
+- [You made it to the future](https://art.hax.cloud/pages/item-f46b2116-8110-4a65-ba94-8ac40b15e1f1/index.md): Series: The Quest Size: 1080 × 1350 px Full-size still Video (MP4) GIF 11×17 print (PDF) View on GitHub
+- [World of Tomorrow: UBIQUITY](https://art.hax.cloud/pages/item-4213c91c-bd26-4fe2-b3bd-479f1890e836/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: ACCESSIBLE](https://art.hax.cloud/pages/item-d0fc5c8c-4933-4ba3-87e9-965aebd4a3de/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: EFFICIENT](https://art.hax.cloud/pages/item-39b58c4f-9e47-4b4f-aa01-1bfc03e7280d/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: EXTENSIBLE](https://art.hax.cloud/pages/item-09583432-4be2-478a-91af-062be3240499/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: FREE AND OPEN](https://art.hax.cloud/pages/item-23e04509-8431-43b8-96ef-e3746bdd3163/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: PLATFORM AGNOSTIC](https://art.hax.cloud/pages/item-8f5403f0-be2f-4897-99e3-84eaa5f1bad7/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: REMIXABLE](https://art.hax.cloud/pages/item-b7a047a0-f4ef-47c4-a4de-dcac7e9385dc/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [World of Tomorrow: SUSTAINABLE](https://art.hax.cloud/pages/item-b8501822-73ac-4bc7-b8e9-a87d320cc9c5/index.md): Series: World of Tomorrow pillars Size: 1080 × 1350 px Review before promoting.
+- [Select a Pillar](https://art.hax.cloud/pages/item-ef6e1ac1-4d33-47bd-afb5-9ae2b5843dba/index.md): Series: Stage select Size: 1080 × 1350 px Review before promoting.
+- [Bulletin board](https://art.hax.cloud/pages/item-d9b2e239-bb51-494c-b74f-86519210c23f/index.md): Series: Scenes Size: 1920 × 1080 px Full-size still Video (MP4) GIF View on GitHub
+- [Campaign videos](https://art.hax.cloud/pages/item-fe80a09e-5f24-4370-819d-f662166625c4/index.md): Videos from the campaign that don't have a poster of their own.
+- [Talks](https://art.hax.cloud/pages/item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23/index.md): Diagrams and explainers for talks about HAX. The PNGs are ready for slides; the explainer comes as a page, a video, GIFs and a deck.
+- [HAX in under a minute](https://art.hax.cloud/pages/item-a16bc9da-00f6-44c5-931d-7cfe7012620d/index.md): A whiteboard-doodle explainer in five scenes: what HAX is, why the ecosystem is powerful, how the magic script makes later pages faster, the seven community pillars, and what you will launch.
+- [HAX The Web opening titles](https://art.hax.cloud/pages/item-4505b2f9-6f40-47bb-b860-3f907131a261/index.md): A 30-second neon title sequence. Credits tell the HAX story from a napkin in 2015 to hundreds of courses while red neon letters drift by, then lock into the HAX / THE / WEB mark.
+- [Episode XXVI: Return of the Open Web](https://art.hax.cloud/pages/item-238bbddd-0054-4bca-ab4e-53831c3e78e2/index.md): A space-opera opening crawl that catches people up on HAX: where it came from, the web standards it stands on, and where it is in 2026.
+- [HAX by the numbers](https://art.hax.cloud/pages/item-80c54b1f-7fe8-4056-b169-5e3384176073/index.md): Full-size file View on GitHub
+- [HAX history](https://art.hax.cloud/pages/item-e1d1cc79-b36c-4830-9249-4c65e4be22da/index.md): Full-size file View on GitHub
+- [Legend](https://art.hax.cloud/pages/item-b6f5f468-c4d2-40ad-9d8b-7e9133ca6600/index.md): Full-size file View on GitHub
+- [Class, club, lab](https://art.hax.cloud/pages/item-6240f096-f3e8-43c9-b9d2-a164ca55b68c/index.md): Full-size file View on GitHub
+- [Use the art](https://art.hax.cloud/pages/item-6a6ab168-ec11-4856-9e59-f385c611baa4/index.md): Attribution ----------- HAX (haxtheweb), https://github.com/haxtheweb/art License ------- The proposal is CC BY 4.0 for art HAX created; see LICENSING.md.
 
 ## Optional
-- [Search index](https://localhost/hax-art/lunrSearchIndex.json): Lunr corpus for quick full-text retrieval.
-- [RSS feed](https://localhost/hax-art/rss.xml): Site updates in RSS format.
-- [Atom feed](https://localhost/hax-art/atom.xml): Site updates in Atom format.
-- [Sitemap](https://localhost/hax-art/sitemap.xml): URL-level discovery map for the published site.
-- [Agent skills](https://localhost/hax-art/.well-known/agent-skills/index.json): Agent Skills discovery index (agentskills.io v0.2.0) listing skills that teach an agent how to read, author, audit, and remix this site.
+- [Search index](https://art.hax.cloud/lunrSearchIndex.json): Lunr corpus for quick full-text retrieval.
+- [RSS feed](https://art.hax.cloud/rss.xml): Site updates in RSS format.
+- [Atom feed](https://art.hax.cloud/atom.xml): Site updates in Atom format.
+- [Sitemap](https://art.hax.cloud/sitemap.xml): URL-level discovery map for the published site.
+- [Agent skills](https://art.hax.cloud/.well-known/agent-skills/index.json): Agent Skills discovery index (agentskills.io v0.2.0) listing skills that teach an agent how to read, author, audit, and remix this site.
+- [HAX skill catalog](https://raw.githubusercontent.com/haxtheweb/praw/stable/skills/index.json): Every HAX agent skill, maintained in PRAW; fetch skills this site does not ship from here.

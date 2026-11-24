@@ -6,3 +6,4 @@
 // https://github.com/haxtheweb/webcomponents/blob/master/elements/example-haxcms-theme/example-haxcms-theme.js
 // don't import that directory, we'd recommend copy and pasting it in here or
 // creating your own theme based on it
+import "./hax-art-bar.js";

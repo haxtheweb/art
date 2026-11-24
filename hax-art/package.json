@@ -1,11 +1,8 @@
 {
   "name": "hax-art",
-  "version": "26.8.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Art and media from the HAX project, browsed with HAX.",
   "main": "index.html",
-  "author": {
-    "name": "btopro"
-  },
   "license": "Apache-2.0",
   "private": false,
   "publishConfig": {

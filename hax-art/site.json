@@ -22,7 +22,8 @@
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
-      }
+      },
+      "domain": "https://art.hax.cloud"
     },
     "theme": {
       "element": "glossy-portfolio-theme",
