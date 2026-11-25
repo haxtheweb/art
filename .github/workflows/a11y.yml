@@ -1,8 +1,9 @@
 name: Accessibility
 
 # axe-core scan (WCAG 2.0 and 2.1 A and AA) of what this repo publishes:
-# - the hax-art portfolio: every page in hax-art/site.json, built the same
-#   way as its deploys (npm run ghpages:build), HAX elements from the CDN
+# - the hax-art portfolio: every page in hax-art/site.json, built by the
+#   command in hax-art/vercel.json (the HAX CLI's site:build-static into
+#   hax-art/_static/, the build art.hax.cloud ships), HAX elements from the CDN
 # - the interactive pieces listed in .github/a11y/pages.txt
 # Pages load only from the site, the HAX CDNs and raw.githubusercontent.com
 # (the portfolio shows this repo's art by raw GitHub URL); other third-party
@@ -52,10 +53,10 @@ jobs:
       - name: Interactive pieces
         if: always()
         run: node .github/a11y/a11y-scan.mjs --root . --pages .github/a11y/pages.txt --allow-hosts raw.githubusercontent.com --baseline .github/a11y/baseline-pieces.json
-      - name: Static build of the portfolio (same as deploy)
+      - name: Static build of the portfolio (the hax-art/vercel.json build command)
         if: always()
         working-directory: hax-art
-        run: npm run ghpages:build
+        run: sh -c "$(node -p "require('./vercel.json').buildCommand")"
       - name: Portfolio pages
         if: always()
-        run: node .github/a11y/a11y-scan.mjs --root hax-art --site-json hax-art/site.json --allow-hosts raw.githubusercontent.com --baseline .github/a11y/baseline-hax-art.json
+        run: node .github/a11y/a11y-scan.mjs --root hax-art/_static --site-json hax-art/site.json --allow-hosts raw.githubusercontent.com --baseline .github/a11y/baseline-hax-art.json
