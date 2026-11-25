@@ -2,12 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "echo no dependencies to install",
-  "buildCommand": "npm run ghpages:build",
-  "outputDirectory": ".",
-  "rewrites": [
-    {
-      "source": "/((?!.*\\.[A-Za-z0-9]+$).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "buildCommand": "npx --yes @haxtheweb/create site site:build-static --root . --out-dir _static --domain https://art.hax.cloud/ --y --no-i",
+  "outputDirectory": "_static"
 }
