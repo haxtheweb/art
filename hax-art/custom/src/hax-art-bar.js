@@ -16,6 +16,10 @@
  *
  * The bar is imported here, not up front, so the rest of this site's code
  * still runs if it can't load.
+ *
+ * The goggles come with it: the bar's "Contribute with the goggles" in
+ * Merlin, Merlin's developer list and ?goggles= links put them on right
+ * here, over the art. Their code loads the first time they go on.
  */
 const HEADER_OFFSET = `
   glossy-portfolio-header {
@@ -80,6 +84,15 @@ import("@haxtheweb/hax-network-bar/hax-network-bar.js")
       addBar();
     } else {
       globalThis.addEventListener("DOMContentLoaded", addBar, { once: true });
+    }
+  })
+  .catch(() => {});
+
+// the goggles on this site (older HAX builds without siteGoggles skip it)
+import("@haxtheweb/haxcms-elements/lib/core/ui/haxcms-goggles-site.js")
+  .then((m) => {
+    if (m && typeof m.siteGoggles === "function") {
+      m.siteGoggles();
     }
   })
   .catch(() => {});
