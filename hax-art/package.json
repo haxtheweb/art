@@ -1,6 +1,6 @@
 {
   "name": "hax-art",
-  "version": "0.0.0",
+  "version": "26.11.0",
   "description": "Art and media from the HAX project, browsed with HAX.",
   "main": "index.html",
   "license": "Apache-2.0",

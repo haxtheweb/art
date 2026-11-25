@@ -7,8 +7,8 @@
     "build": "node build.mjs"
   },
   "devDependencies": {
-    "@haxtheweb/future-terminal-text": "^26.8.0",
-    "@haxtheweb/rpg-character": "^26.8.0",
+    "@haxtheweb/future-terminal-text": "^26.11.0",
+    "@haxtheweb/rpg-character": "^26.11.0",
     "esbuild": "^0.25.0"
   }
 }
