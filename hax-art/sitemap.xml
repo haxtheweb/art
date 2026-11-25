@@ -600,4 +600,22 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://art.hax.cloud/about</loc>
+    <lastmod>2026-11-25T14:55:12.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://art.hax.cloud/contact</loc>
+    <lastmod>2026-11-25T14:55:13.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://art.hax.cloud/privacy</loc>
+    <lastmod>2026-11-25T14:55:15.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>

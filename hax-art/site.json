@@ -23,7 +23,11 @@
         "vendor": "github",
         "branch": "gh-pages"
       },
-      "domain": "https://art.hax.cloud"
+      "domain": "https://art.hax.cloud",
+      "sameAs": [
+        "https://github.com/haxtheweb",
+        "https://github.com/haxtheweb/art"
+      ]
     },
     "theme": {
       "element": "glossy-portfolio-theme",
@@ -1757,6 +1761,63 @@
         "tags": "",
         "created": 1795458311,
         "updated": 1795458311
+      }
+    },
+    {
+      "id": "item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1",
+      "indent": 0,
+      "location": "pages/item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1/index.html",
+      "slug": "about",
+      "order": 100,
+      "parent": null,
+      "title": "About",
+      "description": "What this site is and who makes it.",
+      "metadata": {
+        "created": 1795618512,
+        "updated": 1795618512,
+        "images": [],
+        "videos": [],
+        "published": true,
+        "files": [],
+        "hideInMenu": false
+      }
+    },
+    {
+      "id": "item-240ccb66-8533-4dd4-b3eb-6c9a92cf0035",
+      "indent": 0,
+      "location": "pages/item-240ccb66-8533-4dd4-b3eb-6c9a92cf0035/index.html",
+      "slug": "contact",
+      "order": 101,
+      "parent": null,
+      "title": "Contact",
+      "description": "How to reach the people who make HAX.",
+      "metadata": {
+        "created": 1795618513,
+        "updated": 1795618513,
+        "images": [],
+        "videos": [],
+        "published": true,
+        "files": [],
+        "hideInMenu": false
+      }
+    },
+    {
+      "id": "item-df55570d-6a2a-4db9-b2cc-a6eddb7b490c",
+      "indent": 0,
+      "location": "pages/item-df55570d-6a2a-4db9-b2cc-a6eddb7b490c/index.html",
+      "slug": "privacy",
+      "order": 102,
+      "parent": null,
+      "title": "Privacy",
+      "description": "What this site keeps about you, in plain words.",
+      "metadata": {
+        "created": 1795618515,
+        "updated": 1795618515,
+        "images": [],
+        "videos": [],
+        "published": true,
+        "files": [],
+        "hideInMenu": true
       }
     }
   ]

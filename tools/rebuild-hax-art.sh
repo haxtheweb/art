@@ -34,6 +34,7 @@ s.description = 'Art and media from the HAX project, browsed with HAX.';
 s.author = 'HAX (haxtheweb)';
 s.metadata.author = { name: 'HAX (haxtheweb)' };
 s.metadata.site.domain = 'https://art.hax.cloud';
+s.metadata.site.sameAs = ['https://github.com/haxtheweb', 'https://github.com/haxtheweb/art'];
 s.metadata.site.logo = RAW + 'funny-traveler-15.png';
 s.metadata.theme.variables.image = RAW + 'funny-traveler-08.png';
 s.metadata.theme.variables.hexCode = '#c8102e';

@@ -54,6 +54,8 @@ function add(item) {
     description: item.description || "",
     metadata: {
       published: item.published !== false,
+      // left out of the menu, still linked (the Privacy page)
+      ...(item.hideInMenu ? { hideInMenu: true } : {}),
       image: item.image || "",
       // a comma-separated string, as `hax site node:add --tags` writes it;
       // older HAXcms runtimes still call tags.split()
@@ -529,6 +531,32 @@ add({
     `<h2>Add to the collection</h2>`,
     p(`Open a pull request on <a href="https://github.com/haxtheweb/art">haxtheweb/art</a>; <a href="${REPO}AGENTS.md">AGENTS.md</a> has the rules. To refresh this site after adding Future Traveler variants, run <code>node tools/hax-art-items.mjs</code> and import the result with the HAX CLI.`),
   ].join("\n"),
+});
+
+// ---------- About, Contact, Privacy ----------
+// the trust pages every HAX starter site has: About and Contact at the end of
+// the menu, Privacy left out of it and linked from Contact
+add({
+  id: "about",
+  title: "About",
+  slug: "about",
+  description: "What this site is and who makes it.",
+  content: "<p>HAX art collects the art and media of the HAX project: the Future Traveler mascot, brand assets, posters and materials from talks, browsed with HAX itself.</p><p>How you may reuse the art is described in <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>; some pieces reference other works, and that file says which.</p><p>It is made by the HAX project (HAXTheWeb), an open-source effort to let anyone author, remix and publish on the web without needing to learn how the web works. This site is itself a HAX site; <a href=\"https://github.com/haxtheweb/art\">its source is on GitHub</a>.</p><p>To see how every part of HAX connects, visit <a href=\"https://hax.cloud/\">hax.cloud</a>. To get in touch, use the <a href=\"contact\">Contact</a> page.</p>",
+});
+add({
+  id: "contact",
+  title: "Contact",
+  slug: "contact",
+  description: "How to reach the people who make HAX.",
+  content: "<p>Want to use the art, or have an idea for a new piece? Here is how to reach the people who make HAX.</p><ul><li><strong>Chat:</strong> the <a href=\"https://discord.gg/aCGxmRHEJP\">HAX Discord</a> is the quickest way to reach us.</li><li><strong>Bugs and ideas:</strong> open an issue in <a href=\"https://github.com/haxtheweb/issues\">haxtheweb/issues</a>, the one queue for every part of HAX.</li><li><strong>Email:</strong> <a href=\"mailto:hax@psu.edu\">hax@psu.edu</a></li><li><strong>Security:</strong> report a vulnerability privately through <a href=\"https://github.com/haxtheweb/issues/security/advisories\">GitHub security advisories</a>.</li></ul><p><a href=\"privacy\">How we handle what you send us</a></p>",
+});
+add({
+  id: "privacy",
+  title: "Privacy",
+  slug: "privacy",
+  description: "What this site keeps about you, in plain words.",
+  hideInMenu: true,
+  content: "<p>What this site keeps about you, in plain words.</p><h2>Your choices</h2><privacy-choices></privacy-choices><h2>What this site keeps</h2><p>Your choices are kept in this browser only. This site sets no other cookies, runs no analytics and has no trackers of its own.</p><h2>Hosting</h2><p>The service that hosts this site keeps ordinary request logs, such as the address a request came from, as every web host does.</p><h2>Videos and other embeds</h2><p>Videos from YouTube or Vimeo and content from other companies wait until you allow that company. Each one asks where it appears, and you can change your answer above.</p><h2>What you send us</h2><p>When you email us, post in the HAX Discord or open a GitHub issue, we use what you send only to answer you and to improve HAX. Discord and GitHub keep what you post under their own privacy policies.</p><h2>Questions</h2><p>Ask us through the <a href=\"contact\">Contact</a> page.</p>",
 });
 
 // Future Traveler variants flagged third_party_reference in manifest.json are
