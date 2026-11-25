@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>era-rainbow</id>
+<indent>1</indent>
+<location>pages/era-rainbow/index.xml</location>
+<slug>era-rainbow</slug>
+<order>31</order>
+<parent>future-traveler-eras</parent>
+<title>1970s rainbow</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png</image>
+<tags>
+<item>era</item>
+<item>rainbow</item>
+</tags>
+<created>1795458309</created>
+<updated>1795622194</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png" alt="The Future Traveler in 1970s style: his helmet is one warm arch inside another, brown, red, orange, yellow and cream, with amber lenses."></media-image>
+<ul><li><strong>Era:</strong> 1970s rainbow</li><li><strong>Size:</strong> 24 by 24 grid SVG, 512 × 512 px PNG</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/svg/future-traveler-rainbow.svg">SVG file</a></li><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png">PNG file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1970s_poster.png">The poster it follows</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler-eras/svg/future-traveler-rainbow.svg">View on GitHub</a></li></ul>]]></content>
+</item>

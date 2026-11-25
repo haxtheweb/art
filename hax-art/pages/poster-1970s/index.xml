@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>poster-1970s</id>
+<indent>1</indent>
+<location>pages/poster-1970s/index.xml</location>
+<slug>poster-1970s</slug>
+<order>69</order>
+<parent>posters</parent>
+<title>1970s rainbow</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png</image>
+<tags>
+<item>across-time</item>
+</tags>
+<created>1795458310</created>
+<updated>1795622194</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png" alt="Warm 1970s poster with a rainbow arch over chunky HAX lettering, three circular badges for humans, agents and experience, and seven striped pillars on Ubiquity. Tagline: &quot;Every era had its tools. This one's yours.&quot;"></media-image>
+<ul><li><strong>Series:</strong> HAX across time</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png">Full-size still</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.mp4">Video (MP4)</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_1970s.gif">GIF</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_1970s.pdf">11×17 print (PDF)</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_1970s_poster.png">View on GitHub</a></li></ul>]]></content>
+</item>
