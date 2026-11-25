@@ -115,6 +115,8 @@ Managed files (feeds, search indexes, manifests, and this `llms.txt`) are genera
 - [Legend](https://art.hax.cloud/pages/item-b6f5f468-c4d2-40ad-9d8b-7e9133ca6600/index.md): Full-size file View on GitHub
 - [Class, club, lab](https://art.hax.cloud/pages/item-6240f096-f3e8-43c9-b9d2-a164ca55b68c/index.md): Full-size file View on GitHub
 - [Use the art](https://art.hax.cloud/pages/item-6a6ab168-ec11-4856-9e59-f385c611baa4/index.md): Attribution ----------- HAX (haxtheweb), https://github.com/haxtheweb/art License ------- The proposal is CC BY 4.0 for art HAX created; see LICENSING.md.
+- [About](https://art.hax.cloud/pages/item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1/index.md): What this site is and who makes it.
+- [Contact](https://art.hax.cloud/pages/item-240ccb66-8533-4dd4-b3eb-6c9a92cf0035/index.md): How to reach the people who make HAX.
 
 ## Optional
 - [Search index](https://art.hax.cloud/lunrSearchIndex.json): Lunr corpus for quick full-text retrieval.

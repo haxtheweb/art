@@ -1,0 +1,17 @@
+{
+    "id": "item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1",
+    "indent": 0,
+    "location": "pages/item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1/index.json",
+    "slug": "about",
+    "order": 9,
+    "parent": null,
+    "title": "About",
+    "description": "What this site is and who makes it.",
+    "metadata": {
+        "created": 1795618512,
+        "updated": 1795618512,
+        "images": [],
+        "videos": []
+    },
+    "content": "<p>HAX art collects the art and media of the HAX project: the Future Traveler mascot, brand assets, posters and materials from talks, browsed with HAX itself.</p><p>How you may reuse the art is described in <a href=\"https://github.com/haxtheweb/art/blob/main/LICENSING.md\">LICENSING.md</a>; some pieces reference other works, and that file says which.</p><p>It is made by the HAX project (HAXTheWeb), an open-source effort to let anyone author, remix and publish on the web without needing to learn how the web works. This site is itself a HAX site; <a href=\"https://github.com/haxtheweb/art\">its source is on GitHub</a>.</p><p>To see how every part of HAX connects, visit <a href=\"https://hax.cloud/\">hax.cloud</a>. To get in touch, use the <a href=\"contact\">Contact</a> page.</p>"
+}
