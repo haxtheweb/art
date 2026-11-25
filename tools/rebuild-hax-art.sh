@@ -44,4 +44,6 @@ fs.writeFileSync('site.json', JSON.stringify(s, null, 2));
 [ -d "$TMP/custom-src" ] && rm -rf custom/src && cp -r "$TMP/custom-src" custom/src
 [ -f "$TMP/custom.es6.js" ] && cp "$TMP/custom.es6.js" custom/build/custom.es6.js
 rm -rf "$TMP"
+# vercel.json builds into _static/; keep that output out of git
+grep -qx '_static/' .gitignore 2>/dev/null || printf '\n# site:build-static output (Vercel build)\n_static/\n' >> .gitignore
 echo "hax-art rebuilt: $(node -e "console.log(require('./site.json').items.length)") pages"
