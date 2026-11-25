@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>class-club-lab</id>
+<indent>1</indent>
+<location>pages/class-club-lab/index.xml</location>
+<slug>class-club-lab</slug>
+<order>98</order>
+<parent>talks</parent>
+<title>Class, club, lab</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/class-club-lab-pipeline.png</image>
+<tags>
+<item>diagram</item>
+</tags>
+<created>1795458311</created>
+<updated>1795622194</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/class-club-lab-pipeline.png" alt="Venn diagram of three overlapping circles labeled Class, Club and Lab."></media-image>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/class-club-lab-pipeline.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/presentation-materials/class-club-lab-pipeline.png">View on GitHub</a></li></ul>]]></content>
+</item>

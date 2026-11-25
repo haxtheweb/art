@@ -3,17 +3,17 @@
   <title>HAX art</title>
   <link href="https://art.hax.cloud/" rel="self" />
   <subtitle>Art and media from the HAX project, browsed with HAX.</subtitle>
-  <updated>2026-11-23T18:25:11.000Z</updated>
+  <updated>2026-11-25T15:56:34.000Z</updated>
   <author>
       <name>HAX (haxtheweb)</name>
   </author>
   <id>https://art.hax.cloud/</id>
   <entry>
     <title>HAX art</title>
-    <id>item-e2927e99-6ded-44ae-8bf3-5a20b8b05c80</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>home</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Art and media from the HAX project, browsed with HAX.</summary>
     <link href="https://art.hax.cloud/home"/>
     
     <content type="html">
@@ -25,11 +25,25 @@
     </content>
   </entry>
   <entry>
-    <title>Future Traveler</title>
-    <id>item-b5606110-9736-444f-a008-290ef38afb09</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <title>Android portrait</title>
+    <id>future-traveler-01</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead.</summary>
+    <link href="https://art.hax.cloud/future-traveler-01"/>
+    <category term="portrait" label="portrait" /><category term="flat-vector" label="flat-vector" /><category term="robot" label="robot" />
+    <content type="html">
+      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg" alt="Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead."></media-image>
+<ul><li><strong>Variant:</strong> #01</li><li><strong>Best for:</strong> Portrait</li><li><strong>Style:</strong> Flat vector, Portrait, Robot</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1029 px</li></ul>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-01.jpeg">View on GitHub</a></li></ul> ]]>
+    </content>
+  </entry>
+  <entry>
+    <title>Future Traveler</title>
+    <id>future-traveler</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
+    <published>2026-11-23T18:25:08.000Z</published>
+    <summary>HAX&apos;s mascot, a red-helmeted time traveler, in every style.</summary>
     <link href="https://art.hax.cloud/future-traveler"/>
     
     <content type="html">
@@ -39,27 +53,13 @@
     </content>
   </entry>
   <entry>
-    <title>Android portrait</title>
-    <id>item-94f3eaed-0a62-4e2d-b95b-4ad4f5fd1657</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
-    <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
-    <link href="https://art.hax.cloud/future-traveler-01"/>
-    <category term="portrait,flat-vector,robot" label="portrait,flat-vector,robot" />
-    <content type="html">
-      <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg" alt="Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead."></media-image>
-<ul><li><strong>Variant:</strong> #01</li><li><strong>Best for:</strong> Portrait</li><li><strong>Style:</strong> Flat vector, Portrait, Robot</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1029 px</li></ul>
-<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/future-traveler/funny-traveler-01.jpeg">View on GitHub</a></li></ul> ]]>
-    </content>
-  </entry>
-  <entry>
     <title>Glitch double-exposure badge</title>
-    <id>item-caef695e-551f-4111-8638-d7ea423de371</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-02</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping.</summary>
     <link href="https://art.hax.cloud/future-traveler-02"/>
-    <category term="badge,starburst-badge,glitch,cartoon" label="badge,starburst-badge,glitch,cartoon" />
+    <category term="badge" label="badge" /><category term="starburst-badge" label="starburst-badge" /><category term="glitch" label="glitch" /><category term="cartoon" label="cartoon" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-02.png" alt="Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping."></media-image>
 <ul><li><strong>Variant:</strong> #02</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Glitch, Cartoon</li><li><strong>Setting:</strong> Digital</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -68,12 +68,12 @@
   </entry>
   <entry>
     <title>Egyptian wall</title>
-    <id>item-dc14b82b-51f6-45a7-aeaf-5004855361a7</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-03</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight beam, with a second figure at lower right.</summary>
     <link href="https://art.hax.cloud/future-traveler-03"/>
-    <category term="time-travel,painting,hieroglyphs" label="time-travel,painting,hieroglyphs" />
+    <category term="time-travel" label="time-travel" /><category term="painting" label="painting" /><category term="hieroglyphs" label="hieroglyphs" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png" alt="The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight beam, with a second figure at lower right."></media-image>
 <ul><li><strong>Variant:</strong> #03</li><li><strong>Best for:</strong> Time travel</li><li><strong>Style:</strong> Painting, Hieroglyphs, Time travel</li><li><strong>Setting:</strong> Ancient egypt</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Shows the 'takes the best ideas from every era' theme.</li></ul>
@@ -82,12 +82,12 @@
   </entry>
   <entry>
     <title>Helmet icon (checkerboard)</title>
-    <id>item-4f7d3b6c-6951-408f-9fb0-b9b0bb7be2b9</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-06</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background.</summary>
     <link href="https://art.hax.cloud/future-traveler-06"/>
-    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <category term="icon" label="icon" /><category term="flat-vector" label="flat-vector" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-06.jpeg" alt="Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background."></media-image>
 <ul><li><strong>Variant:</strong> #06</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> JPEG cannot be transparent: the checkerboard is baked into the pixels. Prefer 17/20 or the SVG logo for clean use.</li></ul>
@@ -96,12 +96,12 @@
   </entry>
   <entry>
     <title>Cyberpunk traveler</title>
-    <id>item-f008c14d-5ac8-4df4-b1d2-bf2479d7de70</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-08</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back.</summary>
     <link href="https://art.hax.cloud/future-traveler-08"/>
-    <category term="scene,photoreal,cyberpunk,human" label="scene,photoreal,cyberpunk,human" />
+    <category term="scene" label="scene" /><category term="photoreal" label="photoreal" /><category term="cyberpunk" label="cyberpunk" /><category term="human" label="human" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-08.png" alt="A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back."></media-image>
 <ul><li><strong>Variant:</strong> #08</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> Photoreal, Cyberpunk, Human</li><li><strong>Setting:</strong> Future</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Closest to 'sees the future' framing.</li></ul>
@@ -110,12 +110,12 @@
   </entry>
   <entry>
     <title>Green helmet portrait</title>
-    <id>item-2f62d403-3878-4efb-a1e3-8c1b8b9c90a2</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-09</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray.</summary>
     <link href="https://art.hax.cloud/future-traveler-09"/>
-    <category term="icon,portrait,color-variant" label="icon,portrait,color-variant" />
+    <category term="icon" label="icon" /><category term="portrait" label="portrait" /><category term="color-variant" label="color-variant" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-09.jpeg" alt="Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray."></media-image>
 <ul><li><strong>Variant:</strong> #09</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Portrait, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Green colorway.</li></ul>
@@ -124,12 +124,12 @@
   </entry>
   <entry>
     <title>Foil balloon</title>
-    <id>item-91be326e-5816-49b0-8b55-bfeaefc0032c</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-11</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>A silver star-shaped foil balloon printed with the helmeted traveler on a black background.</summary>
     <link href="https://art.hax.cloud/future-traveler-11"/>
-    <category term="merch,product-mockup,3d,humor" label="merch,product-mockup,3d,humor" />
+    <category term="merch" label="merch" /><category term="product-mockup" label="product-mockup" /><category term="3d" label="3d" /><category term="humor" label="humor" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-11.jpeg" alt="A silver star-shaped foil balloon printed with the helmeted traveler on a black background."></media-image>
 <ul><li><strong>Variant:</strong> #11</li><li><strong>Best for:</strong> Merch</li><li><strong>Style:</strong> Product mockup, 3d, Humor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -138,12 +138,12 @@
   </entry>
   <entry>
     <title>Paper-cut collage</title>
-    <id>item-b3276f33-2e23-4b6f-8f83-b68a0f30a4f7</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-12</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Torn-paper collage of the traveler resting his chin on his arm, red and white paper burst behind, yellow lightbulb.</summary>
     <link href="https://art.hax.cloud/future-traveler-12"/>
-    <category term="badge,paper-craft,collage,starburst-badge" label="badge,paper-craft,collage,starburst-badge" />
+    <category term="badge" label="badge" /><category term="paper-craft" label="paper-craft" /><category term="collage" label="collage" /><category term="starburst-badge" label="starburst-badge" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-12.png" alt="Torn-paper collage of the traveler resting his chin on his arm, red and white paper burst behind, yellow lightbulb."></media-image>
 <ul><li><strong>Variant:</strong> #12</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Paper craft, Collage, Starburst badge</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -152,12 +152,12 @@
   </entry>
   <entry>
     <title>Hoodie kid, tan burst</title>
-    <id>item-2c37a135-9410-43ad-8c44-325ef4979746</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-13</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Traveler in a red HAX hoodie with goggles and green backpack, hands on a desk, tan and orange starburst.</summary>
     <link href="https://art.hax.cloud/future-traveler-13"/>
-    <category term="badge,starburst-badge,flat-vector,sketch" label="badge,starburst-badge,flat-vector,sketch" />
+    <category term="badge" label="badge" /><category term="starburst-badge" label="starburst-badge" /><category term="flat-vector" label="flat-vector" /><category term="sketch" label="sketch" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-13.png" alt="Traveler in a red HAX hoodie with goggles and green backpack, hands on a desk, tan and orange starburst."></media-image>
 <ul><li><strong>Variant:</strong> #13</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector, Sketch</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -166,12 +166,12 @@
   </entry>
   <entry>
     <title>Classic burst</title>
-    <id>item-7cd1c7cf-32b7-4430-a14a-4deec54164f1</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-15</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>The baseline look: red helmet with HAX band, cyan goggles, green backpack with lightbulb, chin on arms, white starburst in a red circle.</summary>
     <link href="https://art.hax.cloud/future-traveler-15"/>
-    <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
+    <category term="badge" label="badge" /><category term="starburst-badge" label="starburst-badge" /><category term="flat-vector" label="flat-vector" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png" alt="The baseline look: red helmet with HAX band, cyan goggles, green backpack with lightbulb, chin on arms, white starburst in a red circle."></media-image>
 <ul><li><strong>Variant:</strong> #15</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Good reference for the 'standard' on-model look.</li></ul>
@@ -180,12 +180,12 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray</title>
-    <id>item-ef25c5aa-e18d-4d27-b966-c6ec9515299e</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-17</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray.</summary>
     <link href="https://art.hax.cloud/future-traveler-17"/>
-    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <category term="icon" label="icon" /><category term="flat-vector" label="flat-vector" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg" alt="Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray."></media-image>
 <ul><li><strong>Variant:</strong> #17</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 20.</li></ul>
@@ -194,12 +194,12 @@
   </entry>
   <entry>
     <title>Halloween</title>
-    <id>item-8a3fc908-697b-43fa-a49c-acbe1d3ce18b</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-18</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins.</summary>
     <link href="https://art.hax.cloud/future-traveler-18"/>
-    <category term="seasonal,scene,gothic" label="seasonal,scene,gothic" />
+    <category term="seasonal" label="seasonal" /><category term="scene" label="scene" /><category term="gothic" label="gothic" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-18.png" alt="The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins."></media-image>
 <ul><li><strong>Variant:</strong> #18</li><li><strong>Best for:</strong> Seasonal</li><li><strong>Style:</strong> Scene, Gothic, Seasonal</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -208,12 +208,12 @@
   </entry>
   <entry>
     <title>8-bit RPG dungeon</title>
-    <id>item-bbaa901c-5278-40a8-9e25-e250d9525658</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-19</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Pixel-art traveler in a torch-lit stone dungeon with a status plate reading &apos;WORLD TRAVELER, HP 100/100, MP 50/100&apos;.</summary>
     <link href="https://art.hax.cloud/future-traveler-19"/>
-    <category term="rpg,pixel-art,game" label="rpg,pixel-art,game" />
+    <category term="rpg" label="rpg" /><category term="pixel-art" label="pixel-art" /><category term="game" label="game" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png" alt="Pixel-art traveler in a torch-lit stone dungeon with a status plate reading 'WORLD TRAVELER, HP 100/100, MP 50/100'."></media-image>
 <ul><li><strong>Variant:</strong> #19</li><li><strong>Best for:</strong> Rpg</li><li><strong>Style:</strong> Pixel art, Rpg, Game</li><li><strong>Setting:</strong> Medieval 8bit</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Links the traveler to the rpg-character lineage.</li></ul>
@@ -222,12 +222,12 @@
   </entry>
   <entry>
     <title>Helmet icon, light gray (alt)</title>
-    <id>item-ddfd0bcd-d763-408b-9c33-c34c25701dab</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-20</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray.</summary>
     <link href="https://art.hax.cloud/future-traveler-20"/>
-    <category term="icon,flat-vector" label="icon,flat-vector" />
+    <category term="icon" label="icon" /><category term="flat-vector" label="flat-vector" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-20.jpeg" alt="Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray."></media-image>
 <ul><li><strong>Variant:</strong> #20</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Flat vector</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Near-duplicate of 17.</li></ul>
@@ -236,12 +236,12 @@
   </entry>
   <entry>
     <title>Pixel helmet face</title>
-    <id>item-309ac06b-af2f-49b5-b787-152497e4610e</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-22</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below.</summary>
     <link href="https://art.hax.cloud/future-traveler-22"/>
-    <category term="icon,pixel-art,8-bit" label="icon,pixel-art,8-bit" />
+    <category term="icon" label="icon" /><category term="pixel-art" label="pixel-art" /><category term="8-bit" label="8-bit" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-22.jpeg" alt="Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below."></media-image>
 <ul><li><strong>Variant:</strong> #22</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 8 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> 8-bit form.</li></ul>
@@ -250,12 +250,12 @@
   </entry>
   <entry>
     <title>Classic burst, face hidden</title>
-    <id>item-81625a35-59a2-4169-abe4-bb5cedaeb00e</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-24</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Flat-vector starburst badge: helmet, goggles and backpack with the face hidden behind folded arms.</summary>
     <link href="https://art.hax.cloud/future-traveler-24"/>
-    <category term="badge,starburst-badge,flat-vector" label="badge,starburst-badge,flat-vector" />
+    <category term="badge" label="badge" /><category term="starburst-badge" label="starburst-badge" /><category term="flat-vector" label="flat-vector" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-24.jpeg" alt="Flat-vector starburst badge: helmet, goggles and backpack with the face hidden behind folded arms."></media-image>
 <ul><li><strong>Variant:</strong> #24</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Starburst badge, Flat vector</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -264,12 +264,12 @@
   </entry>
   <entry>
     <title>Helmet portrait, cyan goggles</title>
-    <id>item-8ab61a31-ca7b-4f47-88c7-e8862778e3bc</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-25</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Red helmet with HAX band, glowing cyan goggles and a lightbulb on top, calm human face below, on light gray.</summary>
     <link href="https://art.hax.cloud/future-traveler-25"/>
-    <category term="icon,portrait" label="icon,portrait" />
+    <category term="icon" label="icon" /><category term="portrait" label="portrait" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-25.jpeg" alt="Red helmet with HAX band, glowing cyan goggles and a lightbulb on top, calm human face below, on light gray."></media-image>
 <ul><li><strong>Variant:</strong> #25</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Icon, Portrait</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -278,12 +278,12 @@
   </entry>
   <entry>
     <title>Layered papercraft</title>
-    <id>item-bee6a92f-16ab-41e3-9177-e68717b35fcc</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-27</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Layered cut-paper version of the traveler with soft shadows under a white and red burst.</summary>
     <link href="https://art.hax.cloud/future-traveler-27"/>
-    <category term="badge,paper-craft,3d,starburst-badge" label="badge,paper-craft,3d,starburst-badge" />
+    <category term="badge" label="badge" /><category term="paper-craft" label="paper-craft" /><category term="3d" label="3d" /><category term="starburst-badge" label="starburst-badge" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-27.png" alt="Layered cut-paper version of the traveler with soft shadows under a white and red burst."></media-image>
 <ul><li><strong>Variant:</strong> #27</li><li><strong>Best for:</strong> Badge</li><li><strong>Style:</strong> Paper craft, 3d, Starburst badge</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -292,12 +292,12 @@
   </entry>
   <entry>
     <title>Toy-room 3D</title>
-    <id>item-921c3fbf-ffbf-4473-99ba-6f08cc43a9f3</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-28</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks.</summary>
     <link href="https://art.hax.cloud/future-traveler-28"/>
-    <category term="scene,3d,render,character" label="scene,3d,render,character" />
+    <category term="scene" label="scene" /><category term="3d" label="3d" /><category term="render" label="render" /><category term="character" label="character" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-28.png" alt="A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks."></media-image>
 <ul><li><strong>Variant:</strong> #28</li><li><strong>Best for:</strong> Scene</li><li><strong>Style:</strong> 3d, Render, Character</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -306,12 +306,12 @@
   </entry>
   <entry>
     <title>The ocean is rising</title>
-    <id>item-e5cd8fe1-77e1-4572-ae39-4093b76c23ab</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-29</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption &apos;The ocean is rising.&apos;</summary>
     <link href="https://art.hax.cloud/future-traveler-29"/>
-    <category term="comic,engraving,web-metaphor" label="comic,engraving,web-metaphor" />
+    <category term="comic" label="comic" /><category term="engraving" label="engraving" /><category term="web-metaphor" label="web-metaphor" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-29.png" alt="Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption 'The ocean is rising.'"></media-image>
 <ul><li><strong>Variant:</strong> #29</li><li><strong>Best for:</strong> Comic</li><li><strong>Style:</strong> Engraving, Comic, Web metaphor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Supports the 'data flows like water' idea.</li></ul>
@@ -320,12 +320,12 @@
   </entry>
   <entry>
     <title>Sticker badge</title>
-    <id>item-b7227d49-8d92-4011-801d-a65756203468</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-30</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb.</summary>
     <link href="https://art.hax.cloud/future-traveler-30"/>
-    <category term="sticker,flat-vector,color-variant" label="sticker,flat-vector,color-variant" />
+    <category term="sticker" label="sticker" /><category term="flat-vector" label="flat-vector" /><category term="color-variant" label="color-variant" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg" alt="Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb."></media-image>
 <ul><li><strong>Variant:</strong> #30</li><li><strong>Best for:</strong> Sticker</li><li><strong>Style:</strong> Sticker, Flat vector, Color variant</li><li><strong>Setting:</strong> Brand</li><li><strong>Size:</strong> 1024 × 1024 px</li></ul>
@@ -334,12 +334,12 @@
   </entry>
   <entry>
     <title>Pixel helmet, detailed</title>
-    <id>item-8e807cbc-2259-46e0-a195-948d78ba05c2</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-31</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face.</summary>
     <link href="https://art.hax.cloud/future-traveler-31"/>
-    <category term="icon,pixel-art,16-bit" label="icon,pixel-art,16-bit" />
+    <category term="icon" label="icon" /><category term="pixel-art" label="pixel-art" /><category term="16-bit" label="16-bit" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-31.jpeg" alt="Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face."></media-image>
 <ul><li><strong>Variant:</strong> #31</li><li><strong>Best for:</strong> Icon</li><li><strong>Style:</strong> Pixel art, 16 bit, Icon</li><li><strong>Setting:</strong> Retro</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> More detailed than 22.</li></ul>
@@ -348,12 +348,12 @@
   </entry>
   <entry>
     <title>I my tummy hurts</title>
-    <id>item-f9e61104-d29a-4b85-8e99-835b39a56c97</id>
-    <updated>2026-11-23T18:25:08.000Z</updated>
+    <id>future-traveler-34</id>
+    <updated>2026-11-25T15:56:34.000Z</updated>
     <published>2026-11-23T18:25:08.000Z</published>
-    <summary></summary>
+    <summary>Crayon-style drawing of the traveler looking distressed with the caption &apos;I MY TUMMY HURTS&apos;.</summary>
     <link href="https://art.hax.cloud/future-traveler-34"/>
-    <category term="humor,crayon,child-drawing" label="humor,crayon,child-drawing" />
+    <category term="humor" label="humor" /><category term="crayon" label="crayon" /><category term="child-drawing" label="child-drawing" />
     <content type="html">
       <![CDATA[ <media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-34.png" alt="Crayon-style drawing of the traveler looking distressed with the caption 'I MY TUMMY HURTS'."></media-image>
 <ul><li><strong>Variant:</strong> #34</li><li><strong>Best for:</strong> Humor</li><li><strong>Style:</strong> Crayon, Child drawing, Humor</li><li><strong>Setting:</strong> Present</li><li><strong>Size:</strong> 1024 × 1024 px</li><li><strong>Notes:</strong> Intentionally naive style.</li></ul>

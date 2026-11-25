@@ -18,7 +18,7 @@
         "pathauto": true
       },
       "created": 1795458307,
-      "updated": 1795458311,
+      "updated": 1795622194,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -36,12 +36,18 @@
       "thumbnail": "@haxtheweb/haxcms-elements/lib/theme-screenshots/theme-glossy-portfolio-theme-thumb.jpg",
       "description": "Start with a blank site using the Glossy Portfolio",
       "category": [
-        "Website"
+        "Website",
+        "Portfolio"
       ],
       "hidden": false,
       "priority": 0,
       "terrible": false,
       "supportedPalettes": null,
+      "layout": "Top nav",
+      "designSystem": null,
+      "inspiredBy": null,
+      "inspiredByTheme": null,
+      "acceptsDesignSystems": false,
       "variables": {
         "icon": "icons:record-voice-over",
         "hexCode": "#c8102e",
@@ -56,1769 +62,2004 @@
       "audience": "expert",
       "features": {},
       "allowedBlocks": []
-    },
-    "build": {
-      "structure": "course",
-      "type": "own"
     }
   },
   "items": [
     {
-      "id": "item-e2927e99-6ded-44ae-8bf3-5a20b8b05c80",
+      "id": "home",
       "indent": 0,
-      "location": "pages/item-e2927e99-6ded-44ae-8bf3-5a20b8b05c80/index.html",
+      "location": "pages/home/index.html",
       "slug": "home",
       "order": 0,
       "parent": null,
       "title": "HAX art",
-      "description": "",
+      "description": "Art and media from the HAX project, browsed with HAX.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png",
-        "tags": "",
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "id": "future-traveler-01",
+      "indent": 1,
+      "location": "pages/future-traveler-01/index.html",
+      "slug": "future-traveler-01",
+      "order": 0,
+      "parent": "future-traveler",
+      "title": "Android portrait",
+      "description": "Red android-style face with glowing cyan goggles, a HAX band across the brow and a gold lightbulb on the forehead.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg",
+        "tags": [
+          "portrait",
+          "flat-vector",
+          "robot"
+        ],
+        "created": 1795458308,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-now",
+      "indent": 1,
+      "location": "pages/era-now/index.html",
+      "slug": "era-now",
+      "order": 0,
+      "parent": "future-traveler-eras",
+      "title": "Today",
+      "description": "The Future Traveler icon as it ships: a red dome helmet with HAX in white, a green goggle band with two cyan lenses, and a pale lightbulb on a short stalk above.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-now.png",
+        "tags": [
+          "era",
+          "now"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "rpg-glitch",
+      "indent": 1,
+      "location": "pages/rpg-glitch/index.html",
+      "slug": "rpg-glitch",
+      "order": 0,
+      "parent": "rpg-character",
+      "title": "RPG Glitch",
+      "description": "The rpg-character on an 80s CRT, glitching between versions of itself. Click for a new character with a costume, pet, mood and pose from the element's wardrobe. Every character gets a link and a HAX embed code.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch.gif",
+        "tags": [
+          "interactive"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-the-web-sticker",
+      "indent": 1,
+      "location": "pages/hax-the-web-sticker/index.html",
+      "slug": "hax-the-web-sticker",
+      "order": 0,
+      "parent": "brand",
+      "title": "HAX the Web sticker",
+      "description": "Die-cut sticker: the h-a-x THE WEB wordmark in chunky black pixel letters between pixel curly braces, with a white border.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png",
+        "tags": [
+          "sticker"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1880s",
+      "indent": 1,
+      "location": "pages/poster-1880s/index.html",
+      "slug": "poster-1880s",
+      "order": 0,
+      "parent": "posters",
+      "title": "1880s steam age",
+      "description": "Sepia Victorian engraving-style poster: \"The Grand & Marvellous HAX, Open Source Authoring Engine\" with brass gears, a human, the Future Traveler and a lightbulb forming Humans + Agents = Experience, above seven stone pillars labeled with the HAX pillars on a Ubiquity base.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-in-a-minute",
+      "indent": 1,
+      "location": "pages/hax-in-a-minute/index.html",
+      "slug": "hax-in-a-minute",
+      "order": 0,
+      "parent": "talks",
+      "title": "HAX in under a minute",
+      "description": "A one-minute doodle explainer of HAX.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
+        "tags": [
+          "explainer"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "future-traveler",
       "indent": 0,
-      "location": "pages/item-b5606110-9736-444f-a008-290ef38afb09/index.html",
+      "location": "pages/future-traveler/index.html",
       "slug": "future-traveler",
       "order": 1,
       "parent": null,
       "title": "Future Traveler",
-      "description": "",
+      "description": "HAX's mascot, a red-helmeted time traveler, in every style.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png",
-        "tags": "",
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-94f3eaed-0a62-4e2d-b95b-4ad4f5fd1657",
+      "id": "future-traveler-02",
       "indent": 1,
-      "location": "pages/item-94f3eaed-0a62-4e2d-b95b-4ad4f5fd1657/index.html",
-      "slug": "future-traveler-01",
-      "order": 2,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
-      "title": "Android portrait",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-01.jpeg",
-        "tags": "portrait,flat-vector,robot",
-        "created": 1795458308,
-        "updated": 1795458308
-      }
-    },
-    {
-      "id": "item-caef695e-551f-4111-8638-d7ea423de371",
-      "indent": 1,
-      "location": "pages/item-caef695e-551f-4111-8638-d7ea423de371/index.html",
+      "location": "pages/future-traveler-02/index.html",
       "slug": "future-traveler-02",
-      "order": 3,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 1,
+      "parent": "future-traveler",
       "title": "Glitch double-exposure badge",
-      "description": "",
+      "description": "Starburst badge with the traveler duplicated and glitching, several HAX visors overlapping.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-02.png",
-        "tags": "badge,starburst-badge,glitch,cartoon",
+        "tags": [
+          "badge",
+          "starburst-badge",
+          "glitch",
+          "cartoon"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-dc14b82b-51f6-45a7-aeaf-5004855361a7",
+      "id": "future-traveler-03",
       "indent": 1,
-      "location": "pages/item-dc14b82b-51f6-45a7-aeaf-5004855361a7/index.html",
+      "location": "pages/future-traveler-03/index.html",
       "slug": "future-traveler-03",
-      "order": 4,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 2,
+      "parent": "future-traveler",
       "title": "Egyptian wall",
-      "description": "",
+      "description": "The traveler drawn on a torch-lit hieroglyph wall, lit by a flashlight beam, with a second figure at lower right.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-03.png",
-        "tags": "time-travel,painting,hieroglyphs",
+        "tags": [
+          "time-travel",
+          "painting",
+          "hieroglyphs"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-4f7d3b6c-6951-408f-9fb0-b9b0bb7be2b9",
+      "id": "future-traveler-06",
       "indent": 1,
-      "location": "pages/item-4f7d3b6c-6951-408f-9fb0-b9b0bb7be2b9/index.html",
+      "location": "pages/future-traveler-06/index.html",
       "slug": "future-traveler-06",
-      "order": 5,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 3,
+      "parent": "future-traveler",
       "title": "Helmet icon (checkerboard)",
-      "description": "",
+      "description": "Orange helmet icon with HAX band, green goggles and a lightbulb on top, on a checkerboard background.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-06.jpeg",
-        "tags": "icon,flat-vector",
+        "tags": [
+          "icon",
+          "flat-vector"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-f008c14d-5ac8-4df4-b1d2-bf2479d7de70",
+      "id": "future-traveler-08",
       "indent": 1,
-      "location": "pages/item-f008c14d-5ac8-4df4-b1d2-bf2479d7de70/index.html",
+      "location": "pages/future-traveler-08/index.html",
       "slug": "future-traveler-08",
-      "order": 6,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 4,
+      "parent": "future-traveler",
       "title": "Cyberpunk traveler",
-      "description": "",
+      "description": "A man in a red HAX hoodie and goggles holding a glowing lightbulb on a cable, in a neon rain-soaked city, sword on his back.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-08.png",
-        "tags": "scene,photoreal,cyberpunk,human",
+        "tags": [
+          "scene",
+          "photoreal",
+          "cyberpunk",
+          "human"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-2f62d403-3878-4efb-a1e3-8c1b8b9c90a2",
+      "id": "future-traveler-09",
       "indent": 1,
-      "location": "pages/item-2f62d403-3878-4efb-a1e3-8c1b8b9c90a2/index.html",
+      "location": "pages/future-traveler-09/index.html",
       "slug": "future-traveler-09",
-      "order": 7,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 5,
+      "parent": "future-traveler",
       "title": "Green helmet portrait",
-      "description": "",
+      "description": "Green helmet icon with a smiling human face, HAX band, goggles and lightbulb, on light gray.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-09.jpeg",
-        "tags": "icon,portrait,color-variant",
+        "tags": [
+          "icon",
+          "portrait",
+          "color-variant"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-91be326e-5816-49b0-8b55-bfeaefc0032c",
+      "id": "future-traveler-11",
       "indent": 1,
-      "location": "pages/item-91be326e-5816-49b0-8b55-bfeaefc0032c/index.html",
+      "location": "pages/future-traveler-11/index.html",
       "slug": "future-traveler-11",
-      "order": 8,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 6,
+      "parent": "future-traveler",
       "title": "Foil balloon",
-      "description": "",
+      "description": "A silver star-shaped foil balloon printed with the helmeted traveler on a black background.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-11.jpeg",
-        "tags": "merch,product-mockup,3d,humor",
+        "tags": [
+          "merch",
+          "product-mockup",
+          "3d",
+          "humor"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-b3276f33-2e23-4b6f-8f83-b68a0f30a4f7",
+      "id": "future-traveler-12",
       "indent": 1,
-      "location": "pages/item-b3276f33-2e23-4b6f-8f83-b68a0f30a4f7/index.html",
+      "location": "pages/future-traveler-12/index.html",
       "slug": "future-traveler-12",
-      "order": 9,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 7,
+      "parent": "future-traveler",
       "title": "Paper-cut collage",
-      "description": "",
+      "description": "Torn-paper collage of the traveler resting his chin on his arm, red and white paper burst behind, yellow lightbulb.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-12.png",
-        "tags": "badge,paper-craft,collage,starburst-badge",
+        "tags": [
+          "badge",
+          "paper-craft",
+          "collage",
+          "starburst-badge"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-2c37a135-9410-43ad-8c44-325ef4979746",
+      "id": "future-traveler-13",
       "indent": 1,
-      "location": "pages/item-2c37a135-9410-43ad-8c44-325ef4979746/index.html",
+      "location": "pages/future-traveler-13/index.html",
       "slug": "future-traveler-13",
-      "order": 10,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 8,
+      "parent": "future-traveler",
       "title": "Hoodie kid, tan burst",
-      "description": "",
+      "description": "Traveler in a red HAX hoodie with goggles and green backpack, hands on a desk, tan and orange starburst.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-13.png",
-        "tags": "badge,starburst-badge,flat-vector,sketch",
+        "tags": [
+          "badge",
+          "starburst-badge",
+          "flat-vector",
+          "sketch"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-7cd1c7cf-32b7-4430-a14a-4deec54164f1",
+      "id": "future-traveler-15",
       "indent": 1,
-      "location": "pages/item-7cd1c7cf-32b7-4430-a14a-4deec54164f1/index.html",
+      "location": "pages/future-traveler-15/index.html",
       "slug": "future-traveler-15",
-      "order": 11,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 9,
+      "parent": "future-traveler",
       "title": "Classic burst",
-      "description": "",
+      "description": "The baseline look: red helmet with HAX band, cyan goggles, green backpack with lightbulb, chin on arms, white starburst in a red circle.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-15.png",
-        "tags": "badge,starburst-badge,flat-vector",
+        "tags": [
+          "badge",
+          "starburst-badge",
+          "flat-vector"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-ef25c5aa-e18d-4d27-b966-c6ec9515299e",
+      "id": "future-traveler-17",
       "indent": 1,
-      "location": "pages/item-ef25c5aa-e18d-4d27-b966-c6ec9515299e/index.html",
+      "location": "pages/future-traveler-17/index.html",
       "slug": "future-traveler-17",
-      "order": 12,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 10,
+      "parent": "future-traveler",
       "title": "Helmet icon, light gray",
-      "description": "",
+      "description": "Orange helmet with HAX band, green goggles with cyan lenses and a lightbulb on top, on light gray.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-17.jpeg",
-        "tags": "icon,flat-vector",
+        "tags": [
+          "icon",
+          "flat-vector"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-8a3fc908-697b-43fa-a49c-acbe1d3ce18b",
+      "id": "future-traveler-18",
       "indent": 1,
-      "location": "pages/item-8a3fc908-697b-43fa-a49c-acbe1d3ce18b/index.html",
+      "location": "pages/future-traveler-18/index.html",
       "slug": "future-traveler-18",
-      "order": 13,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 11,
+      "parent": "future-traveler",
       "title": "Halloween",
-      "description": "",
+      "description": "The traveler lies chin-on-arms on cobblestones under a full moon among twisted trees and pumpkins.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-18.png",
-        "tags": "seasonal,scene,gothic",
+        "tags": [
+          "seasonal",
+          "scene",
+          "gothic"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-bbaa901c-5278-40a8-9e25-e250d9525658",
+      "id": "future-traveler-19",
       "indent": 1,
-      "location": "pages/item-bbaa901c-5278-40a8-9e25-e250d9525658/index.html",
+      "location": "pages/future-traveler-19/index.html",
       "slug": "future-traveler-19",
-      "order": 14,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 12,
+      "parent": "future-traveler",
       "title": "8-bit RPG dungeon",
-      "description": "",
+      "description": "Pixel-art traveler in a torch-lit stone dungeon with a status plate reading 'WORLD TRAVELER, HP 100/100, MP 50/100'.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-19.png",
-        "tags": "rpg,pixel-art,game",
+        "tags": [
+          "rpg",
+          "pixel-art",
+          "game"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-ddfd0bcd-d763-408b-9c33-c34c25701dab",
+      "id": "future-traveler-20",
       "indent": 1,
-      "location": "pages/item-ddfd0bcd-d763-408b-9c33-c34c25701dab/index.html",
+      "location": "pages/future-traveler-20/index.html",
       "slug": "future-traveler-20",
-      "order": 15,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 13,
+      "parent": "future-traveler",
       "title": "Helmet icon, light gray (alt)",
-      "description": "",
+      "description": "Orange helmet with HAX band, green goggles and a lightbulb on top, on light gray.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-20.jpeg",
-        "tags": "icon,flat-vector",
+        "tags": [
+          "icon",
+          "flat-vector"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-309ac06b-af2f-49b5-b787-152497e4610e",
+      "id": "future-traveler-22",
       "indent": 1,
-      "location": "pages/item-309ac06b-af2f-49b5-b787-152497e4610e/index.html",
+      "location": "pages/future-traveler-22/index.html",
       "slug": "future-traveler-22",
-      "order": 16,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 14,
+      "parent": "future-traveler",
       "title": "Pixel helmet face",
-      "description": "",
+      "description": "Pixel-art orange helmet with HAX band, green goggles and lightbulb, a smiling human face below.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-22.jpeg",
-        "tags": "icon,pixel-art,8-bit",
+        "tags": [
+          "icon",
+          "pixel-art",
+          "8-bit"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-81625a35-59a2-4169-abe4-bb5cedaeb00e",
+      "id": "future-traveler-24",
       "indent": 1,
-      "location": "pages/item-81625a35-59a2-4169-abe4-bb5cedaeb00e/index.html",
+      "location": "pages/future-traveler-24/index.html",
       "slug": "future-traveler-24",
-      "order": 17,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 15,
+      "parent": "future-traveler",
       "title": "Classic burst, face hidden",
-      "description": "",
+      "description": "Flat-vector starburst badge: helmet, goggles and backpack with the face hidden behind folded arms.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-24.jpeg",
-        "tags": "badge,starburst-badge,flat-vector",
+        "tags": [
+          "badge",
+          "starburst-badge",
+          "flat-vector"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-8ab61a31-ca7b-4f47-88c7-e8862778e3bc",
+      "id": "future-traveler-25",
       "indent": 1,
-      "location": "pages/item-8ab61a31-ca7b-4f47-88c7-e8862778e3bc/index.html",
+      "location": "pages/future-traveler-25/index.html",
       "slug": "future-traveler-25",
-      "order": 18,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 16,
+      "parent": "future-traveler",
       "title": "Helmet portrait, cyan goggles",
-      "description": "",
+      "description": "Red helmet with HAX band, glowing cyan goggles and a lightbulb on top, calm human face below, on light gray.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-25.jpeg",
-        "tags": "icon,portrait",
+        "tags": [
+          "icon",
+          "portrait"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-bee6a92f-16ab-41e3-9177-e68717b35fcc",
+      "id": "future-traveler-27",
       "indent": 1,
-      "location": "pages/item-bee6a92f-16ab-41e3-9177-e68717b35fcc/index.html",
+      "location": "pages/future-traveler-27/index.html",
       "slug": "future-traveler-27",
-      "order": 19,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 17,
+      "parent": "future-traveler",
       "title": "Layered papercraft",
-      "description": "",
+      "description": "Layered cut-paper version of the traveler with soft shadows under a white and red burst.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-27.png",
-        "tags": "badge,paper-craft,3d,starburst-badge",
+        "tags": [
+          "badge",
+          "paper-craft",
+          "3d",
+          "starburst-badge"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-921c3fbf-ffbf-4473-99ba-6f08cc43a9f3",
+      "id": "future-traveler-28",
       "indent": 1,
-      "location": "pages/item-921c3fbf-ffbf-4473-99ba-6f08cc43a9f3/index.html",
+      "location": "pages/future-traveler-28/index.html",
       "slug": "future-traveler-28",
-      "order": 20,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 18,
+      "parent": "future-traveler",
       "title": "Toy-room 3D",
-      "description": "",
+      "description": "A small 3D-rendered traveler in a red HAX hoodie, hands in pockets, in a sunlit playroom with books and blocks.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-28.png",
-        "tags": "scene,3d,render,character",
+        "tags": [
+          "scene",
+          "3d",
+          "render",
+          "character"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-e5cd8fe1-77e1-4572-ae39-4093b76c23ab",
+      "id": "future-traveler-29",
       "indent": 1,
-      "location": "pages/item-e5cd8fe1-77e1-4572-ae39-4093b76c23ab/index.html",
+      "location": "pages/future-traveler-29/index.html",
       "slug": "future-traveler-29",
-      "order": 21,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 19,
+      "parent": "future-traveler",
       "title": "The ocean is rising",
-      "description": "",
+      "description": "Engraving-style circle: the traveler surfs a giant wave above sandcastles; caption 'The ocean is rising.'",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-29.png",
-        "tags": "comic,engraving,web-metaphor",
+        "tags": [
+          "comic",
+          "engraving",
+          "web-metaphor"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-b7227d49-8d92-4011-801d-a65756203468",
+      "id": "future-traveler-30",
       "indent": 1,
-      "location": "pages/item-b7227d49-8d92-4011-801d-a65756203468/index.html",
+      "location": "pages/future-traveler-30/index.html",
       "slug": "future-traveler-30",
-      "order": 22,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 20,
+      "parent": "future-traveler",
       "title": "Sticker badge",
-      "description": "",
+      "description": "Teal rounded badge showing a red helmet with HAX band, blue goggles and a gold lightbulb.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg",
-        "tags": "sticker,flat-vector,color-variant",
+        "tags": [
+          "sticker",
+          "flat-vector",
+          "color-variant"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-8e807cbc-2259-46e0-a195-948d78ba05c2",
+      "id": "future-traveler-31",
       "indent": 1,
-      "location": "pages/item-8e807cbc-2259-46e0-a195-948d78ba05c2/index.html",
+      "location": "pages/future-traveler-31/index.html",
       "slug": "future-traveler-31",
-      "order": 23,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 21,
+      "parent": "future-traveler",
       "title": "Pixel helmet, detailed",
-      "description": "",
+      "description": "Detailed pixel-art orange helmet with HAX band, cyan goggles, lightbulb and a smiling face.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-31.jpeg",
-        "tags": "icon,pixel-art,16-bit",
+        "tags": [
+          "icon",
+          "pixel-art",
+          "16-bit"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-f9e61104-d29a-4b85-8e99-835b39a56c97",
+      "id": "future-traveler-34",
       "indent": 1,
-      "location": "pages/item-f9e61104-d29a-4b85-8e99-835b39a56c97/index.html",
+      "location": "pages/future-traveler-34/index.html",
       "slug": "future-traveler-34",
-      "order": 24,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 22,
+      "parent": "future-traveler",
       "title": "I my tummy hurts",
-      "description": "",
+      "description": "Crayon-style drawing of the traveler looking distressed with the caption 'I MY TUMMY HURTS'.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-34.png",
-        "tags": "humor,crayon,child-drawing",
+        "tags": [
+          "humor",
+          "crayon",
+          "child-drawing"
+        ],
         "created": 1795458308,
-        "updated": 1795458308
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-cfd86d2d-3d5b-40b1-a7e7-cace634533fa",
+      "id": "future-traveler-35",
       "indent": 1,
-      "location": "pages/item-cfd86d2d-3d5b-40b1-a7e7-cace634533fa/index.html",
+      "location": "pages/future-traveler-35/index.html",
       "slug": "future-traveler-35",
-      "order": 25,
-      "parent": "item-b5606110-9736-444f-a008-290ef38afb09",
+      "order": 23,
+      "parent": "future-traveler",
       "title": "Pixel helmet, green goggles",
-      "description": "",
+      "description": "Pixel-art orange helmet with HAX band and dark green goggles with cyan lenses, a lightbulb on top.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-35.jpeg",
-        "tags": "icon,pixel-art,8-bit,color-variant",
+        "tags": [
+          "icon",
+          "pixel-art",
+          "8-bit",
+          "color-variant"
+        ],
         "created": 1795458309,
-        "updated": 1795458309
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "indent": 0,
-      "location": "pages/item-71a48b7a-c36f-46c4-b72d-cfa8c3076042/index.html",
-      "slug": "future-traveler-eras",
-      "order": 26,
-      "parent": null,
-      "title": "Future Traveler across time",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/contact-sheet.jpg",
-        "tags": "",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-d2a248dd-ef9f-4c60-a71a-16d7e9ac0749",
+      "id": "era-steam",
       "indent": 1,
-      "location": "pages/item-d2a248dd-ef9f-4c60-a71a-16d7e9ac0749/index.html",
-      "slug": "era-now",
-      "order": 27,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "Today",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-now.png",
-        "tags": "era,now",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-56cf54de-b813-445c-898a-f93cda6e90a3",
-      "indent": 1,
-      "location": "pages/item-56cf54de-b813-445c-898a-f93cda6e90a3/index.html",
+      "location": "pages/era-steam/index.html",
       "slug": "era-steam",
-      "order": 28,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
+      "order": 1,
+      "parent": "future-traveler-eras",
       "title": "1880s steam age",
-      "description": "",
+      "description": "The Future Traveler as an 1880s engraving: sepia helmet with ink contour lines and a serif HAX, brass goggles ringed with gear teeth, an outlined bulb.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-steam.png",
-        "tags": "era,steam",
+        "tags": [
+          "era",
+          "steam"
+        ],
         "created": 1795458309,
-        "updated": 1795458309
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-c2edaca0-587c-4b76-a9f5-bf52f463f4b3",
+      "id": "hax-morph",
       "indent": 1,
-      "location": "pages/item-c2edaca0-587c-4b76-a9f5-bf52f463f4b3/index.html",
-      "slug": "era-nouveau",
-      "order": 29,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1900s modern marvel",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-nouveau.png",
-        "tags": "era,nouveau",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-7cd15a36-5c57-42d0-92c4-b95aa46e3c8d",
-      "indent": 1,
-      "location": "pages/item-7cd15a36-5c57-42d0-92c4-b95aa46e3c8d/index.html",
-      "slug": "era-deco",
-      "order": 30,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1920s roaring twenties",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-deco.png",
-        "tags": "era,deco",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-e19dbea3-9f9b-4b1d-a497-e5cf5eb68181",
-      "indent": 1,
-      "location": "pages/item-e19dbea3-9f9b-4b1d-a497-e5cf5eb68181/index.html",
-      "slug": "era-rainbow",
-      "order": 31,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1970s rainbow",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png",
-        "tags": "era,rainbow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-8bc8b417-e894-4c5f-b007-b62db06cc5d9",
-      "indent": 1,
-      "location": "pages/item-8bc8b417-e894-4c5f-b007-b62db06cc5d9/index.html",
-      "slug": "era-stripes",
-      "order": 32,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1980s corporate",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png",
-        "tags": "era,stripes",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-a5e1edc5-87b6-4f01-878a-7e11283e52ae",
-      "indent": 1,
-      "location": "pages/item-a5e1edc5-87b6-4f01-878a-7e11283e52ae/index.html",
-      "slug": "era-neon",
-      "order": 33,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1980s cyberpunk",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png",
-        "tags": "era,neon",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-4f5976df-4522-4c57-886d-b582804669f1",
-      "indent": 1,
-      "location": "pages/item-4f5976df-4522-4c57-886d-b582804669f1/index.html",
-      "slug": "era-handheld",
-      "order": 34,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "Handheld, four greens",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-handheld.png",
-        "tags": "era,handheld",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-c400a6d9-ec46-46ba-ad98-9c31f231258d",
-      "indent": 1,
-      "location": "pages/item-c400a6d9-ec46-46ba-ad98-9c31f231258d/index.html",
-      "slug": "era-web",
-      "order": 35,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1990s early web",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png",
-        "tags": "era,web",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-83ffa1b1-0517-4042-9602-973948bfa469",
-      "indent": 1,
-      "location": "pages/item-83ffa1b1-0517-4042-9602-973948bfa469/index.html",
-      "slug": "era-snapback",
-      "order": 36,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1990s snapback",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png",
-        "tags": "era,snapback",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-3015f07a-7871-49d0-9582-deec5c860eac",
-      "indent": 1,
-      "location": "pages/item-3015f07a-7871-49d0-9582-deec5c860eac/index.html",
-      "slug": "era-polygon",
-      "order": 37,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "32-bit polygons",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png",
-        "tags": "era,polygon",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-5f0a8d4c-54b8-4c7f-aa28-6bbdaac4badd",
-      "indent": 1,
-      "location": "pages/item-5f0a8d4c-54b8-4c7f-aa28-6bbdaac4badd/index.html",
-      "slug": "era-terminal",
-      "order": 38,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "Terminal",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-terminal.png",
-        "tags": "era,terminal",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-a4f54a05-af1b-4a85-8884-fd0580595010",
-      "indent": 1,
-      "location": "pages/item-a4f54a05-af1b-4a85-8884-fd0580595010/index.html",
-      "slug": "era-tomorrow-ubiquity",
-      "order": 39,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Ubiquity",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-ubiquity.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-49d2ada5-75a0-4ca7-95c1-f4854fc58a75",
-      "indent": 1,
-      "location": "pages/item-49d2ada5-75a0-4ca7-95c1-f4854fc58a75/index.html",
-      "slug": "era-tomorrow-accessible",
-      "order": 40,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Accessible",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-accessible.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-4084a4f3-c252-4905-b9b0-2c57da15e8d6",
-      "indent": 1,
-      "location": "pages/item-4084a4f3-c252-4905-b9b0-2c57da15e8d6/index.html",
-      "slug": "era-tomorrow-efficient",
-      "order": 41,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Efficient",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-efficient.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-75902a8e-c03a-4d23-8000-02b6a970f6cd",
-      "indent": 1,
-      "location": "pages/item-75902a8e-c03a-4d23-8000-02b6a970f6cd/index.html",
-      "slug": "era-tomorrow-extensible",
-      "order": 42,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Extensible",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-extensible.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-9f49acb9-f347-4367-a178-0205a231be43",
-      "indent": 1,
-      "location": "pages/item-9f49acb9-f347-4367-a178-0205a231be43/index.html",
-      "slug": "era-tomorrow-open",
-      "order": 43,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Free and open",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-open.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-f884cde6-582c-42ac-8bb8-2e94a48503ad",
-      "indent": 1,
-      "location": "pages/item-f884cde6-582c-42ac-8bb8-2e94a48503ad/index.html",
-      "slug": "era-tomorrow-agnostic",
-      "order": 44,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Platform agnostic",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-agnostic.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-d0075610-526c-469d-8b32-b394f81bc3ba",
-      "indent": 1,
-      "location": "pages/item-d0075610-526c-469d-8b32-b394f81bc3ba/index.html",
-      "slug": "era-tomorrow-remixable",
-      "order": 45,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Remixable",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-remixable.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-fc7a1210-403c-435d-ae31-409eda207d81",
-      "indent": 1,
-      "location": "pages/item-fc7a1210-403c-435d-ae31-409eda207d81/index.html",
-      "slug": "era-tomorrow-sustainable",
-      "order": 46,
-      "parent": "item-71a48b7a-c36f-46c4-b72d-cfa8c3076042",
-      "title": "1960s world of tomorrow: Sustainable",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-sustainable.png",
-        "tags": "pillar,tomorrow",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
-      "indent": 0,
-      "location": "pages/item-ff9d804a-fd8d-49db-8517-98874ed7f059/index.html",
-      "slug": "rpg-character",
-      "order": 47,
-      "parent": null,
-      "title": "rpg-character",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
-        "tags": "",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-f67d7c2b-7db9-4a80-bbed-840222dc4fd0",
-      "indent": 1,
-      "location": "pages/item-f67d7c2b-7db9-4a80-bbed-840222dc4fd0/index.html",
-      "slug": "rpg-glitch",
-      "order": 49,
-      "parent": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
-      "title": "RPG Glitch",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch.gif",
-        "tags": "interactive",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-9916ba26-7c44-46b7-8157-60808444dc40",
-      "indent": 1,
-      "location": "pages/item-9916ba26-7c44-46b7-8157-60808444dc40/index.html",
+      "location": "pages/hax-morph/index.html",
       "slug": "hax-morph",
-      "order": 50,
-      "parent": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
+      "order": 1,
+      "parent": "rpg-character",
       "title": "HAX Morph",
-      "description": "",
+      "description": "HAX decays into Headless Authoring Experience, back to HAX, then into Human, Agent, Experience. Every transition breaks down into pixel blocks and bit noise, with rpg-characters thrown into the static.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-morph/media/hax-morph.gif",
-        "tags": "gif",
+        "tags": [
+          "gif"
+        ],
         "created": 1795458309,
-        "updated": 1795458309
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-420c538e-116d-4170-a951-b4803f69ae0d",
+      "id": "hax-wordmark",
       "indent": 1,
-      "location": "pages/item-420c538e-116d-4170-a951-b4803f69ae0d/index.html",
-      "slug": "hax-the-web-game",
-      "order": 51,
-      "parent": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
-      "title": "HAX the Web",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png",
-        "tags": "game",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-7bf618e7-3fbc-4512-a7b6-e3195fea6827",
-      "indent": 1,
-      "location": "pages/item-7bf618e7-3fbc-4512-a7b6-e3195fea6827/index.html",
-      "slug": "wanted-poster",
-      "order": 52,
-      "parent": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
-      "title": "WANTED: HAX",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg",
-        "tags": "poster",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-6201f4b2-96bf-4ed4-b58c-d68846ff30f4",
-      "indent": 1,
-      "location": "pages/item-6201f4b2-96bf-4ed4-b58c-d68846ff30f4/index.html",
-      "slug": "hax-of-the-web",
-      "order": 53,
-      "parent": "item-ff9d804a-fd8d-49db-8517-98874ed7f059",
-      "title": "HAX of the Web",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-of-the-web/poster.png",
-        "tags": "game",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-a43252d3-ce1e-4eca-ab24-aaa64c8d1230",
-      "indent": 0,
-      "location": "pages/item-a43252d3-ce1e-4eca-ab24-aaa64c8d1230/index.html",
-      "slug": "rpg-me",
-      "order": 48,
-      "parent": null,
-      "title": "RPG me",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
-        "tags": "tool,interactive",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "indent": 0,
-      "location": "pages/item-4dc5aac3-9cf7-48fb-a384-865c7d875613/index.html",
-      "slug": "brand",
-      "order": 54,
-      "parent": null,
-      "title": "Brand",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png",
-        "tags": "",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-e4d96488-2942-41ba-acba-aebf09119d0c",
-      "indent": 1,
-      "location": "pages/item-e4d96488-2942-41ba-acba-aebf09119d0c/index.html",
-      "slug": "hax-the-web-sticker",
-      "order": 55,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "HAX the Web sticker",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-sticker_v1-2.png",
-        "tags": "sticker",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-ccbab782-3bd2-4b37-be9f-0484ebe74f56",
-      "indent": 1,
-      "location": "pages/item-ccbab782-3bd2-4b37-be9f-0484ebe74f56/index.html",
+      "location": "pages/hax-wordmark/index.html",
       "slug": "hax-wordmark",
-      "order": 56,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
+      "order": 1,
+      "parent": "brand",
       "title": "h-a-x THE WEB wordmark",
-      "description": "",
+      "description": "The h-a-x THE WEB wordmark in black pixel letters between pixel curly braces.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/2019-08-14_13-05-52.png",
-        "tags": "logo",
+        "tags": [
+          "logo"
+        ],
         "created": 1795458309,
-        "updated": 1795458309
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-60fbe214-bb5f-4033-90b8-c61c276133c4",
+      "id": "poster-1900s",
       "indent": 1,
-      "location": "pages/item-60fbe214-bb5f-4033-90b8-c61c276133c4/index.html",
-      "slug": "logo-explorations",
-      "order": 57,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Logo explorations",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png",
-        "tags": "logo",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-0b19ce33-5f17-4634-af2c-8062e360da19",
-      "indent": 1,
-      "location": "pages/item-0b19ce33-5f17-4634-af2c-8062e360da19/index.html",
-      "slug": "future-traveler-badge",
-      "order": 58,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Future Traveler badge",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png",
-        "tags": "badge",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-b6af19b3-ce7f-451f-b8e8-6930219458b0",
-      "indent": 1,
-      "location": "pages/item-b6af19b3-ce7f-451f-b8e8-6930219458b0/index.html",
-      "slug": "helmet-mark",
-      "order": 59,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Helmet mark",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png",
-        "tags": "logo",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-1b463bea-343c-4615-b943-53308af527c6",
-      "indent": 1,
-      "location": "pages/item-1b463bea-343c-4615-b943-53308af527c6/index.html",
-      "slug": "pattern-banner",
-      "order": 60,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Pattern banner",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png",
-        "tags": "banner",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-bf581d19-b122-401e-b2c0-3c7cf51f2193",
-      "indent": 1,
-      "location": "pages/item-bf581d19-b122-401e-b2c0-3c7cf51f2193/index.html",
-      "slug": "web-inar-banner",
-      "order": 61,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "h-a-x THE WEB-INAR banner",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg",
-        "tags": "banner",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-1aee679f-bb8e-44a6-a825-540483955720",
-      "indent": 1,
-      "location": "pages/item-1aee679f-bb8e-44a6-a825-540483955720/index.html",
-      "slug": "hax-camp-poster",
-      "order": 62,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "HAX Camp poster",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg",
-        "tags": "poster",
-        "created": 1795458309,
-        "updated": 1795458309
-      }
-    },
-    {
-      "id": "item-bce51c5c-fecb-439c-8085-e353426fff64",
-      "indent": 1,
-      "location": "pages/item-bce51c5c-fecb-439c-8085-e353426fff64/index.html",
-      "slug": "contribute-flyer",
-      "order": 63,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Contribute flyer",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg",
-        "tags": "poster",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-e1ccc245-899e-476c-ade0-1a72dcca04e7",
-      "indent": 1,
-      "location": "pages/item-e1ccc245-899e-476c-ade0-1a72dcca04e7/index.html",
-      "slug": "video-thumbnails",
-      "order": 64,
-      "parent": "item-4dc5aac3-9cf7-48fb-a384-865c7d875613",
-      "title": "Video thumbnails",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png",
-        "tags": "banner",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "indent": 0,
-      "location": "pages/item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b/index.html",
-      "slug": "posters",
-      "order": 65,
-      "parent": null,
-      "title": "Posters",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png",
-        "tags": "",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-65ea430f-732f-483b-b5e5-22190e7123a4",
-      "indent": 1,
-      "location": "pages/item-65ea430f-732f-483b-b5e5-22190e7123a4/index.html",
-      "slug": "poster-1880s",
-      "order": 66,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1880s steam age",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1880s_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-96f06f21-9869-49b1-8004-bb11b901444c",
-      "indent": 1,
-      "location": "pages/item-96f06f21-9869-49b1-8004-bb11b901444c/index.html",
+      "location": "pages/poster-1900s/index.html",
       "slug": "poster-1900s",
-      "order": 67,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
+      "order": 1,
+      "parent": "posters",
       "title": "1900s modern marvel",
-      "description": "",
+      "description": "Cream Art Nouveau poster: \"HAX, a Modern Marvel of the New Century\" with a human, the Future Traveler and a lightbulb, a Headless Authoring Experience ribbon and seven pillars on a Ubiquity base.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1900s_poster.png",
-        "tags": "across-time",
+        "tags": [
+          "across-time"
+        ],
         "created": 1795458310,
-        "updated": 1795458310
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-cf6d5c44-e6dd-4b49-b3aa-a79c376ceb41",
+      "id": "hax-the-web-intro",
       "indent": 1,
-      "location": "pages/item-cf6d5c44-e6dd-4b49-b3aa-a79c376ceb41/index.html",
-      "slug": "poster-1920s",
-      "order": 68,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1920s roaring twenties",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1920s_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-c812cb38-4331-4a70-bc2b-6d89c030f48a",
-      "indent": 1,
-      "location": "pages/item-c812cb38-4331-4a70-bc2b-6d89c030f48a/index.html",
-      "slug": "poster-1970s",
-      "order": 69,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1970s rainbow",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-cd4b3360-c9f3-4227-8d08-a1e2181d82ca",
-      "indent": 1,
-      "location": "pages/item-cd4b3360-c9f3-4227-8d08-a1e2181d82ca/index.html",
-      "slug": "poster-1980s",
-      "order": 70,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1980s corporate (Paul Rand homage)",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-bb28344e-3511-4b06-b483-8befab60eee7",
-      "indent": 1,
-      "location": "pages/item-bb28344e-3511-4b06-b483-8befab60eee7/index.html",
-      "slug": "poster-1980s-cyberpunk",
-      "order": 71,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1980s cyberpunk",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-d7997f68-9bd9-425a-9c6b-91f7ca71699b",
-      "indent": 1,
-      "location": "pages/item-d7997f68-9bd9-425a-9c6b-91f7ca71699b/index.html",
-      "slug": "poster-1990s",
-      "order": 72,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "1990s early web",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1990s_poster.png",
-        "tags": "across-time",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-28801f35-f12a-4a5a-9054-905c35d9a132",
-      "indent": 1,
-      "location": "pages/item-28801f35-f12a-4a5a-9054-905c35d9a132/index.html",
-      "slug": "poster-gameboy",
-      "order": 73,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Game Boy",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png",
-        "tags": "consoles",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-99b57efa-d7c6-4e4c-9d50-c62ab3a897d3",
-      "indent": 1,
-      "location": "pages/item-99b57efa-d7c6-4e4c-9d50-c62ab3a897d3/index.html",
-      "slug": "poster-gba",
-      "order": 74,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Game Boy Advance",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png",
-        "tags": "consoles",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-d1d340d0-c35b-463e-a5a7-e61a5d01b686",
-      "indent": 1,
-      "location": "pages/item-d1d340d0-c35b-463e-a5a7-e61a5d01b686/index.html",
-      "slug": "poster-ps",
-      "order": 75,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "PlayStation",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png",
-        "tags": "consoles",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-2407e28a-ff22-4061-acb5-34f6bc242885",
-      "indent": 1,
-      "location": "pages/item-2407e28a-ff22-4061-acb5-34f6bc242885/index.html",
-      "slug": "poster-hacker",
-      "order": 76,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Hacker",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png",
-        "tags": "consoles",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-cfde479b-a6cb-4215-99f4-be306aed10f3",
-      "indent": 1,
-      "location": "pages/item-cfde479b-a6cb-4215-99f4-be306aed10f3/index.html",
-      "slug": "poster-quest",
-      "order": 77,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "HAX Quest",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_poster.png",
-        "tags": "quest",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-e4252040-86c4-44ec-b504-1649d6a7239e",
-      "indent": 1,
-      "location": "pages/item-e4252040-86c4-44ec-b504-1649d6a7239e/index.html",
-      "slug": "poster-quest-comic",
-      "order": 78,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "HAX Quest comic",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png",
-        "tags": "quest",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-f46b2116-8110-4a65-ba94-8ac40b15e1f1",
-      "indent": 1,
-      "location": "pages/item-f46b2116-8110-4a65-ba94-8ac40b15e1f1/index.html",
-      "slug": "poster-now",
-      "order": 79,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "You made it to the future",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png",
-        "tags": "quest",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-4213c91c-bd26-4fe2-b3bd-479f1890e836",
-      "indent": 1,
-      "location": "pages/item-4213c91c-bd26-4fe2-b3bd-479f1890e836/index.html",
-      "slug": "poster-tomorrow-all",
-      "order": 80,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: UBIQUITY",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-d0fc5c8c-4933-4ba3-87e9-965aebd4a3de",
-      "indent": 1,
-      "location": "pages/item-d0fc5c8c-4933-4ba3-87e9-965aebd4a3de/index.html",
-      "slug": "poster-tomorrow-accessible",
-      "order": 81,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: ACCESSIBLE",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_accessible_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-39b58c4f-9e47-4b4f-aa01-1bfc03e7280d",
-      "indent": 1,
-      "location": "pages/item-39b58c4f-9e47-4b4f-aa01-1bfc03e7280d/index.html",
-      "slug": "poster-tomorrow-efficient",
-      "order": 82,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: EFFICIENT",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_efficient_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-09583432-4be2-478a-91af-062be3240499",
-      "indent": 1,
-      "location": "pages/item-09583432-4be2-478a-91af-062be3240499/index.html",
-      "slug": "poster-tomorrow-extensible",
-      "order": 83,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: EXTENSIBLE",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_extensible_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-23e04509-8431-43b8-96ef-e3746bdd3163",
-      "indent": 1,
-      "location": "pages/item-23e04509-8431-43b8-96ef-e3746bdd3163/index.html",
-      "slug": "poster-tomorrow-open",
-      "order": 84,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: FREE AND OPEN",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_open_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-8f5403f0-be2f-4897-99e3-84eaa5f1bad7",
-      "indent": 1,
-      "location": "pages/item-8f5403f0-be2f-4897-99e3-84eaa5f1bad7/index.html",
-      "slug": "poster-tomorrow-agnostic",
-      "order": 85,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: PLATFORM AGNOSTIC",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_agnostic_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-b7a047a0-f4ef-47c4-a4de-dcac7e9385dc",
-      "indent": 1,
-      "location": "pages/item-b7a047a0-f4ef-47c4-a4de-dcac7e9385dc/index.html",
-      "slug": "poster-tomorrow-remixable",
-      "order": 86,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: REMIXABLE",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_remixable_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-b8501822-73ac-4bc7-b8e9-a87d320cc9c5",
-      "indent": 1,
-      "location": "pages/item-b8501822-73ac-4bc7-b8e9-a87d320cc9c5/index.html",
-      "slug": "poster-tomorrow-sustainable",
-      "order": 87,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "World of Tomorrow: SUSTAINABLE",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_sustainable_poster.png",
-        "tags": "tomorrow",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-ef6e1ac1-4d33-47bd-afb5-9ae2b5843dba",
-      "indent": 1,
-      "location": "pages/item-ef6e1ac1-4d33-47bd-afb5-9ae2b5843dba/index.html",
-      "slug": "poster-stage-select",
-      "order": 88,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Select a Pillar",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_stage_select_poster.png",
-        "tags": "stage-select",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-d9b2e239-bb51-494c-b74f-86519210c23f",
-      "indent": 1,
-      "location": "pages/item-d9b2e239-bb51-494c-b74f-86519210c23f/index.html",
-      "slug": "poster-bulletin-board",
-      "order": 89,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Bulletin board",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png",
-        "tags": "scene",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-fe80a09e-5f24-4370-819d-f662166625c4",
-      "indent": 1,
-      "location": "pages/item-fe80a09e-5f24-4370-819d-f662166625c4/index.html",
-      "slug": "poster-videos",
-      "order": 90,
-      "parent": "item-acf9b5f9-ce5e-4e77-a42e-0f1a398fbb0b",
-      "title": "Campaign videos",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_stage_select_poster.png",
-        "tags": "video",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
-      "indent": 0,
-      "location": "pages/item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23/index.html",
-      "slug": "talks",
-      "order": 91,
-      "parent": null,
-      "title": "Talks",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
-        "tags": "",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-a16bc9da-00f6-44c5-931d-7cfe7012620d",
-      "indent": 1,
-      "location": "pages/item-a16bc9da-00f6-44c5-931d-7cfe7012620d/index.html",
-      "slug": "hax-in-a-minute",
-      "order": 92,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
-      "title": "HAX in under a minute",
-      "description": "",
-      "metadata": {
-        "published": true,
-        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
-        "tags": "explainer",
-        "created": 1795458310,
-        "updated": 1795458310
-      }
-    },
-    {
-      "id": "item-4505b2f9-6f40-47bb-b860-3f907131a261",
-      "indent": 1,
-      "location": "pages/item-4505b2f9-6f40-47bb-b860-3f907131a261/index.html",
+      "location": "pages/hax-the-web-intro/index.html",
       "slug": "hax-the-web-intro",
-      "order": 93,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 1,
+      "parent": "talks",
       "title": "HAX The Web opening titles",
-      "description": "",
+      "description": "A 30-second neon title sequence. Credits tell the HAX story from a napkin in 2015 to hundreds of courses while red neon letters drift by, then lock into the HAX / THE / WEB mark. Play, pause, scrub, or read every credit as text.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-the-web-intro/media/stills/title-lock.jpg",
-        "tags": "interactive",
+        "tags": [
+          "interactive"
+        ],
         "created": 1795458310,
-        "updated": 1795458310
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-238bbddd-0054-4bca-ab4e-53831c3e78e2",
+      "id": "future-traveler-eras",
+      "indent": 0,
+      "location": "pages/future-traveler-eras/index.html",
+      "slug": "future-traveler-eras",
+      "order": 2,
+      "parent": null,
+      "title": "Future Traveler across time",
+      "description": "The Future Traveler icon drawn the way each era would have drawn it.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/contact-sheet.jpg",
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-nouveau",
       "indent": 1,
-      "location": "pages/item-238bbddd-0054-4bca-ab4e-53831c3e78e2/index.html",
+      "location": "pages/era-nouveau/index.html",
+      "slug": "era-nouveau",
+      "order": 2,
+      "parent": "future-traveler-eras",
+      "title": "1900s modern marvel",
+      "description": "The Future Traveler in art nouveau style: a teal helmet outlined in cream with a serif HAX, gold lenses, and gold whiplash curves rising at both sides.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-nouveau.png",
+        "tags": [
+          "era",
+          "nouveau"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-deco",
+      "indent": 1,
+      "location": "pages/era-deco/index.html",
+      "slug": "era-deco",
+      "order": 3,
+      "parent": "future-traveler-eras",
+      "title": "1920s roaring twenties",
+      "description": "The Future Traveler in art deco style: a black helmet lined in gold with a gold HAX, gold lenses and a gold sunburst fanning out behind him.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-deco.png",
+        "tags": [
+          "era",
+          "deco"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-rainbow",
+      "indent": 1,
+      "location": "pages/era-rainbow/index.html",
+      "slug": "era-rainbow",
+      "order": 4,
+      "parent": "future-traveler-eras",
+      "title": "1970s rainbow",
+      "description": "The Future Traveler in 1970s style: his helmet is one warm arch inside another, brown, red, orange, yellow and cream, with amber lenses.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-rainbow.png",
+        "tags": [
+          "era",
+          "rainbow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-stripes",
+      "indent": 1,
+      "location": "pages/era-stripes/index.html",
+      "slug": "era-stripes",
+      "order": 5,
+      "parent": "future-traveler-eras",
+      "title": "1980s corporate",
+      "description": "The Future Traveler in 1980s corporate style: his helmet is built from white horizontal stripes, with white goggles, on no background.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-stripes.png",
+        "tags": [
+          "era",
+          "stripes"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-neon",
+      "indent": 1,
+      "location": "pages/era-neon/index.html",
+      "slug": "era-neon",
+      "order": 6,
+      "parent": "future-traveler-eras",
+      "title": "1980s cyberpunk",
+      "description": "The Future Traveler as a neon sign: a pink tube outline of the helmet and HAX, cyan goggle rings and a yellow bulb ring, each with a soft glow.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-neon.png",
+        "tags": [
+          "era",
+          "neon"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-handheld",
+      "indent": 1,
+      "location": "pages/era-handheld/index.html",
+      "slug": "era-handheld",
+      "order": 7,
+      "parent": "future-traveler-eras",
+      "title": "Handheld, four greens",
+      "description": "The Future Traveler as chunky pixels in four shades of green on a light green handheld screen.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-handheld.png",
+        "tags": [
+          "era",
+          "handheld"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-web",
+      "indent": 1,
+      "location": "pages/era-web/index.html",
+      "slug": "era-web",
+      "order": 8,
+      "parent": "future-traveler-eras",
+      "title": "1990s early web",
+      "description": "The Future Traveler in 1990s early web style: a rainbow gradient helmet with a hard navy drop shadow, a playful HAX and bright blue lenses.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-web.png",
+        "tags": [
+          "era",
+          "web"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-snapback",
+      "indent": 1,
+      "location": "pages/era-snapback/index.html",
+      "slug": "era-snapback",
+      "order": 9,
+      "parent": "future-traveler-eras",
+      "title": "1990s snapback",
+      "description": "The Future Traveler in a 1990s snapback: the helmet as a red ball cap with panel seams and a top button the stalk grows from, HAX in white above the snapback opening and its strap of three white snaps, the green goggle band with cyan lenses, and a lit yellow bulb.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-snapback.png",
+        "tags": [
+          "era",
+          "snapback"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-polygon",
+      "indent": 1,
+      "location": "pages/era-polygon/index.html",
+      "slug": "era-polygon",
+      "order": 10,
+      "parent": "future-traveler-eras",
+      "title": "32-bit polygons",
+      "description": "The Future Traveler in 32-bit style: a helmet of flat-shaded red polygons, teal faceted goggles and a faceted yellow bulb.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-polygon.png",
+        "tags": [
+          "era",
+          "polygon"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-terminal",
+      "indent": 1,
+      "location": "pages/era-terminal/index.html",
+      "slug": "era-terminal",
+      "order": 11,
+      "parent": "future-traveler-eras",
+      "title": "Terminal",
+      "description": "The Future Traveler on a terminal: green phosphor outlines, a dashed inner arc, HAX in monospace and a block cursor at the lower right.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-terminal.png",
+        "tags": [
+          "era",
+          "terminal"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-ubiquity",
+      "indent": 1,
+      "location": "pages/era-tomorrow-ubiquity/index.html",
+      "slug": "era-tomorrow-ubiquity",
+      "order": 12,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Ubiquity",
+      "description": "The Future Traveler as a 1960s travel poster badge: a teal helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted teal orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-ubiquity.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-accessible",
+      "indent": 1,
+      "location": "pages/era-tomorrow-accessible/index.html",
+      "slug": "era-tomorrow-accessible",
+      "order": 13,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Accessible",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Beaver Blue helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Beaver Blue orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-accessible.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-efficient",
+      "indent": 1,
+      "location": "pages/era-tomorrow-efficient/index.html",
+      "slug": "era-tomorrow-efficient",
+      "order": 14,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Efficient",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Invent Orange helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Invent Orange orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-efficient.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-extensible",
+      "indent": 1,
+      "location": "pages/era-tomorrow-extensible/index.html",
+      "slug": "era-tomorrow-extensible",
+      "order": 15,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Extensible",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Creek Teal helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Creek Teal orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-extensible.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-open",
+      "indent": 1,
+      "location": "pages/era-tomorrow-open/index.html",
+      "slug": "era-tomorrow-open",
+      "order": 16,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Free and open",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Keystone Yellow helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Keystone Yellow orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-open.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-agnostic",
+      "indent": 1,
+      "location": "pages/era-tomorrow-agnostic/index.html",
+      "slug": "era-tomorrow-agnostic",
+      "order": 17,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Platform agnostic",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Sky Blue helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Sky Blue orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-agnostic.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-remixable",
+      "indent": 1,
+      "location": "pages/era-tomorrow-remixable/index.html",
+      "slug": "era-tomorrow-remixable",
+      "order": 18,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Remixable",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Original 87 Pink helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Original 87 Pink orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-remixable.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "era-tomorrow-sustainable",
+      "indent": 1,
+      "location": "pages/era-tomorrow-sustainable/index.html",
+      "slug": "era-tomorrow-sustainable",
+      "order": 19,
+      "parent": "future-traveler-eras",
+      "title": "1960s world of tomorrow: Sustainable",
+      "description": "The Future Traveler as a 1960s travel poster badge: a Future Lime helmet with HAX, navy goggles with cream lenses, on a cream disc with a tilted Future Lime orbit ring and an orange star.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler-eras/png/future-traveler-tomorrow-sustainable.png",
+        "tags": [
+          "pillar",
+          "tomorrow"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-the-web-game",
+      "indent": 1,
+      "location": "pages/hax-the-web-game/index.html",
+      "slug": "hax-the-web-game",
+      "order": 2,
+      "parent": "rpg-character",
+      "title": "HAX the Web",
+      "description": "A 16-bit title screen and speed run. Race an rpg-character through the web, jumping into glowing badges that each teach one piece of HAX, then read the run report.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-the-web-game/media/01-title.png",
+        "tags": [
+          "game"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "logo-explorations",
+      "indent": 1,
+      "location": "pages/logo-explorations/index.html",
+      "slug": "logo-explorations",
+      "order": 2,
+      "parent": "brand",
+      "title": "Logo explorations",
+      "description": "Sheet of HAX logo sketches: the letters H, A and X stacked as black pixel blocks in several arrangements, some with THE and WEB tucked in.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/117737906-d7618480-b1c8-11eb-8971-0885bdedd853.png",
+        "tags": [
+          "logo"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1920s",
+      "indent": 1,
+      "location": "pages/poster-1920s/index.html",
+      "slug": "poster-1920s",
+      "order": 2,
+      "parent": "posters",
+      "title": "1920s roaring twenties",
+      "description": "Black and gold Art Deco poster: \"The Cat's Pajamas presents HAX, Humans + Agents = Amazing Experience\" with seven gold-lined pillars on Ubiquity and the line \"Humans lead. Agents help. Ideas ship.\"",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1920s_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "episode-xxvi",
+      "indent": 1,
+      "location": "pages/episode-xxvi/index.html",
       "slug": "episode-xxvi",
-      "order": 94,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 2,
+      "parent": "talks",
       "title": "Episode XXVI: Return of the Open Web",
-      "description": "",
+      "description": "A space-opera opening crawl that catches people up on HAX: where it came from, the web standards it stands on, and where it is in 2026. It ends on a Join the Rebellion card. Viewers with reduced motion get a static, readable version.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg",
-        "tags": "interactive",
+        "tags": [
+          "interactive"
+        ],
         "created": 1795458310,
-        "updated": 1795458310
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-80c54b1f-7fe8-4056-b169-5e3384176073",
+      "id": "rpg-character",
+      "indent": 0,
+      "location": "pages/rpg-character/index.html",
+      "slug": "rpg-character",
+      "order": 3,
+      "parent": null,
+      "title": "rpg-character",
+      "description": "Games and toys starring HAX's remixable pixel character.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "wanted-poster",
       "indent": 1,
-      "location": "pages/item-80c54b1f-7fe8-4056-b169-5e3384176073/index.html",
+      "location": "pages/wanted-poster/index.html",
+      "slug": "wanted-poster",
+      "order": 3,
+      "parent": "rpg-character",
+      "title": "WANTED: HAX",
+      "description": "An old-west wanted poster for the Open Web Outlaw, starring the rpg-character in its cowboy hat. The reward is $0, because the source is already free for anyone who forks it.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/wanted-poster/hax-wanted-poster-wall.jpg",
+        "tags": [
+          "poster"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-of-the-web",
+      "indent": 1,
+      "location": "pages/hax-of-the-web/index.html",
+      "slug": "hax-of-the-web",
+      "order": 4,
+      "parent": "rpg-character",
+      "title": "HAX of the Web",
+      "description": "A Halloween arcade title screen starring the rpg-character's zombie pirate girl (the element's zpg seed). Type cheat codes, ask Merlin, or press start to drop into a real HAXcms site and edit it.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-of-the-web/poster.png",
+        "tags": [
+          "game"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "future-traveler-badge",
+      "indent": 1,
+      "location": "pages/future-traveler-badge/index.html",
+      "slug": "future-traveler-badge",
+      "order": 3,
+      "parent": "brand",
+      "title": "Future Traveler badge",
+      "description": "Circular badge: the Future Traveler in a red HAX helmet and cyan goggles peeking over his arms in front of a red and white starburst, lightbulb glowing.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png",
+        "tags": [
+          "badge"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1970s",
+      "indent": 1,
+      "location": "pages/poster-1970s/index.html",
+      "slug": "poster-1970s",
+      "order": 3,
+      "parent": "posters",
+      "title": "1970s rainbow",
+      "description": "Warm 1970s poster with a rainbow arch over chunky HAX lettering, three circular badges for humans, agents and experience, and seven striped pillars on Ubiquity. Tagline: \"Every era had its tools. This one's yours.\"",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1970s_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "by-the-numbers",
+      "indent": 1,
+      "location": "pages/by-the-numbers/index.html",
       "slug": "by-the-numbers",
-      "order": 95,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 3,
+      "parent": "talks",
       "title": "HAX by the numbers",
-      "description": "",
+      "description": "HAX by the numbers, 2015 to 2025: six colored icons with counts, including 675, 53, 29, 44, 247, 567, 67,515 and 14.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/3.png",
-        "tags": "diagram",
+        "tags": [
+          "diagram"
+        ],
         "created": 1795458311,
-        "updated": 1795458311
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-e1d1cc79-b36c-4830-9249-4c65e4be22da",
+      "id": "rpg-me",
+      "indent": 0,
+      "location": "pages/rpg-me/index.html",
+      "slug": "rpg-me",
+      "order": 4,
+      "parent": null,
+      "title": "RPG me",
+      "description": "Make the character that is you across HAX, in a stand-alone tool at rpg.art.hax.cloud.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png",
+        "tags": [
+          "tool",
+          "interactive"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "helmet-mark",
       "indent": 1,
-      "location": "pages/item-e1d1cc79-b36c-4830-9249-4c65e4be22da/index.html",
+      "location": "pages/helmet-mark/index.html",
+      "slug": "helmet-mark",
+      "order": 4,
+      "parent": "brand",
+      "title": "Helmet mark",
+      "description": "The Future Traveler's red HAX helmet and glowing cyan goggles peeking over folded arms, on white.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/hax-full.png",
+        "tags": [
+          "logo"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1980s",
+      "indent": 1,
+      "location": "pages/poster-1980s/index.html",
+      "slug": "poster-1980s",
+      "order": 4,
+      "parent": "posters",
+      "title": "1980s corporate (Paul Rand homage)",
+      "description": "Striped black-and-white 1980s corporate poster riffing on Paul Rand: pixel human, Future Traveler and lightbulb above striped HAX letters, with seven striped pillars on Ubiquity.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-history",
+      "indent": 1,
+      "location": "pages/hax-history/index.html",
       "slug": "hax-history",
-      "order": 96,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 4,
+      "parent": "talks",
       "title": "HAX history",
-      "description": "",
+      "description": "Dense timeline of HAX history on a black background, with many small yellow lightbulb markers and labeled icons along a horizontal line.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/HAX%20history.png",
-        "tags": "diagram",
+        "tags": [
+          "diagram"
+        ],
         "created": 1795458311,
-        "updated": 1795458311
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-b6f5f468-c4d2-40ad-9d8b-7e9133ca6600",
+      "id": "brand",
+      "indent": 0,
+      "location": "pages/brand/index.html",
+      "slug": "brand",
+      "order": 5,
+      "parent": null,
+      "title": "Brand",
+      "description": "Logos, stickers, banners and posters.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png",
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "pattern-banner",
       "indent": 1,
-      "location": "pages/item-b6f5f468-c4d2-40ad-9d8b-7e9133ca6600/index.html",
+      "location": "pages/pattern-banner/index.html",
+      "slug": "pattern-banner",
+      "order": 5,
+      "parent": "brand",
+      "title": "Pattern banner",
+      "description": "Wide gray banner of hexagons scattered with small pixel icons: hats, lightning bolts, molecules and tiny characters.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Asset%201.png",
+        "tags": [
+          "banner"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "web-inar-banner",
+      "indent": 1,
+      "location": "pages/web-inar-banner/index.html",
+      "slug": "web-inar-banner",
+      "order": 6,
+      "parent": "brand",
+      "title": "h-a-x THE WEB-INAR banner",
+      "description": "Event banner: h-a-x THE WEB-INAR in white pixel letters between pixel braces on a dark hexagon pattern.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX%20Eventbrite.jpg",
+        "tags": [
+          "banner"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "hax-camp-poster",
+      "indent": 1,
+      "location": "pages/hax-camp-poster/index.html",
+      "slug": "hax-camp-poster",
+      "order": 7,
+      "parent": "brand",
+      "title": "HAX Camp poster",
+      "description": "HAX Camp event poster with the h-a-x THE WEB wordmark over a photo of a stone university tower, followed by event details.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/haxcampposter.jpg",
+        "tags": [
+          "poster"
+        ],
+        "created": 1795458309,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "contribute-flyer",
+      "indent": 1,
+      "location": "pages/contribute-flyer/index.html",
+      "slug": "contribute-flyer",
+      "order": 8,
+      "parent": "brand",
+      "title": "Contribute flyer",
+      "description": "Dark flyer titled Contribute to HAX the Web, explaining what HAX is, common use cases, the project in action and how to contribute, with QR codes.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/haxflyer.jpeg",
+        "tags": [
+          "poster"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "video-thumbnails",
+      "indent": 1,
+      "location": "pages/video-thumbnails/index.html",
+      "slug": "video-thumbnails",
+      "order": 9,
+      "parent": "brand",
+      "title": "Video thumbnails",
+      "description": "Video thumbnail: HAX THE WEB ADVENTURE in bold red, white and purple letters over a black and white photo, with a red starburst badge.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/Creating%20web%20components.png",
+        "tags": [
+          "banner"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1980s-cyberpunk",
+      "indent": 1,
+      "location": "pages/poster-1980s-cyberpunk/index.html",
+      "slug": "poster-1980s-cyberpunk",
+      "order": 5,
+      "parent": "posters",
+      "title": "1980s cyberpunk",
+      "description": "Neon pink and cyan cyberpunk poster on a dark grid: glowing HAX, Humans + Agents = Experience in neon frames and seven neon pillars on Ubiquity.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1980s_cyberpunk_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "legend",
+      "indent": 1,
+      "location": "pages/legend/index.html",
       "slug": "legend",
-      "order": 97,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 5,
+      "parent": "talks",
       "title": "Legend",
-      "description": "",
+      "description": "Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png",
-        "tags": "diagram",
+        "tags": [
+          "diagram"
+        ],
         "created": 1795458311,
-        "updated": 1795458311
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-6240f096-f3e8-43c9-b9d2-a164ca55b68c",
+      "id": "posters",
+      "indent": 0,
+      "location": "pages/posters/index.html",
+      "slug": "posters",
+      "order": 6,
+      "parent": null,
+      "title": "Posters",
+      "description": "The HAX campus and social campaign: posters across time, console homages, the Quest and the World of Tomorrow.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png",
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-1990s",
       "indent": 1,
-      "location": "pages/item-6240f096-f3e8-43c9-b9d2-a164ca55b68c/index.html",
+      "location": "pages/poster-1990s/index.html",
+      "slug": "poster-1990s",
+      "order": 6,
+      "parent": "posters",
+      "title": "1990s early web",
+      "description": "Early-web style poster with rainbow WordArt-like HAX, a Windows-style dialog showing Humans + Agents = Experience, a Headless Authoring Experience banner, seven pillars and a \"Ubiquity 100%\" progress bar.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_1990s_poster.png",
+        "tags": [
+          "across-time"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-gameboy",
+      "indent": 1,
+      "location": "pages/poster-gameboy/index.html",
+      "slug": "poster-gameboy",
+      "order": 7,
+      "parent": "posters",
+      "title": "Game Boy",
+      "description": "Four-shade green handheld-console poster: HAX in pixel type, \"Open Source, Est. 2017\", humans + agents = experience sprites and seven pixel pillars on Ubiquity.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gameboy_poster.png",
+        "tags": [
+          "consoles"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-gba",
+      "indent": 1,
+      "location": "pages/poster-gba/index.html",
+      "slug": "poster-gba",
+      "order": 8,
+      "parent": "posters",
+      "title": "Game Boy Advance",
+      "description": "Bright handheld-console poster in pink, blue and green pixel type with humans + agents = experience sprites and seven colored pillars on Ubiquity.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_gba_poster.png",
+        "tags": [
+          "consoles"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-ps",
+      "indent": 1,
+      "location": "pages/poster-ps/index.html",
+      "slug": "poster-ps",
+      "order": 9,
+      "parent": "posters",
+      "title": "PlayStation",
+      "description": "Pale grey 32-bit console poster: chunky 3D HAX letters in red, teal and green, a pixel explorer + the Future Traveler = a lightbulb, and seven 3D colored pillars on Ubiquity. Tagline: \"Every era had its tools. This one's yours.\"",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_ps_poster.png",
+        "tags": [
+          "consoles"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-hacker",
+      "indent": 1,
+      "location": "pages/poster-hacker/index.html",
+      "slug": "poster-hacker",
+      "order": 10,
+      "parent": "posters",
+      "title": "Hacker",
+      "description": "Black terminal-style poster with HAX built from ASCII blocks, a hooded human, the Future Traveler and a lightbulb, and glitching ASCII pillars on Ubiquity.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_hacker_poster.png",
+        "tags": [
+          "consoles"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-quest",
+      "indent": 1,
+      "location": "pages/poster-quest/index.html",
+      "slug": "poster-quest",
+      "order": 11,
+      "parent": "posters",
+      "title": "HAX Quest",
+      "description": "Green Game Boy-style RPG battle: the Future Traveler casts the seven pillars as spells at THE VOID, a dark cloud saying \"Nothing matters.\" Menu: Learn, Build, Remix, Grow, with Run and Hide crossed out. QR code to hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_poster.png",
+        "tags": [
+          "quest"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-quest-comic",
+      "indent": 1,
+      "location": "pages/poster-quest-comic/index.html",
+      "slug": "poster-quest-comic",
+      "order": 12,
+      "parent": "posters",
+      "title": "HAX Quest comic",
+      "description": "\"The Quest: Future Traveler vs the Void\" as four Game Boy-style battle panels, ending with \"Create your future!\" and a QR code.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_quest_comic_poster.png",
+        "tags": [
+          "quest"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-now",
+      "indent": 1,
+      "location": "pages/poster-now/index.html",
+      "slug": "poster-now",
+      "order": 13,
+      "parent": "posters",
+      "title": "You made it to the future",
+      "description": "Starry 8-bit poster: \"STOP: NOW. You made it to the future.\" Humans + Agents = Amazing Experience, seven pillars on Ubiquity, \"Start building.\" and a QR code.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png",
+        "tags": [
+          "quest"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-all",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-all/index.html",
+      "slug": "poster-tomorrow-all",
+      "order": 14,
+      "parent": "posters",
+      "title": "World of Tomorrow: UBIQUITY",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted in all seven pillar colors. Title \"UBIQUITY\", tagline \"The home of the future, now!\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-accessible",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-accessible/index.html",
+      "slug": "poster-tomorrow-accessible",
+      "order": 15,
+      "parent": "posters",
+      "title": "World of Tomorrow: ACCESSIBLE",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Beaver Blue. Title \"ACCESSIBLE\", tagline \"Built for everyone, by everyone.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_accessible_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-efficient",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-efficient/index.html",
+      "slug": "poster-tomorrow-efficient",
+      "order": 16,
+      "parent": "posters",
+      "title": "World of Tomorrow: EFFICIENT",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Invent Orange. Title \"EFFICIENT\", tagline \"Fast for the people who make it and the people who use it.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_efficient_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-extensible",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-extensible/index.html",
+      "slug": "poster-tomorrow-extensible",
+      "order": 17,
+      "parent": "posters",
+      "title": "World of Tomorrow: EXTENSIBLE",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Creek Teal. Title \"EXTENSIBLE\", tagline \"If it's missing, anyone can build it.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_extensible_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-open",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-open/index.html",
+      "slug": "poster-tomorrow-open",
+      "order": 18,
+      "parent": "posters",
+      "title": "World of Tomorrow: FREE AND OPEN",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Keystone Yellow. Title \"FREE AND OPEN\", tagline \"Open by design: built on standards, owned by you.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_open_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-agnostic",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-agnostic/index.html",
+      "slug": "poster-tomorrow-agnostic",
+      "order": 19,
+      "parent": "posters",
+      "title": "World of Tomorrow: PLATFORM AGNOSTIC",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Sky Blue. Title \"PLATFORM AGNOSTIC\", tagline \"Any format, any screen, any browser.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_agnostic_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-remixable",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-remixable/index.html",
+      "slug": "poster-tomorrow-remixable",
+      "order": 20,
+      "parent": "posters",
+      "title": "World of Tomorrow: REMIXABLE",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Original 87 Pink. Title \"REMIXABLE\", tagline \"Break it down, mix it up, make it new.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_remixable_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-tomorrow-sustainable",
+      "indent": 1,
+      "location": "pages/poster-tomorrow-sustainable/index.html",
+      "slug": "poster-tomorrow-sustainable",
+      "order": 21,
+      "parent": "posters",
+      "title": "World of Tomorrow: SUSTAINABLE",
+      "description": "1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted Future Lime. Title \"SUSTAINABLE\", tagline \"Built to last, light on the planet.\", with a QR code and hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_sustainable_poster.png",
+        "tags": [
+          "tomorrow"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-stage-select",
+      "indent": 1,
+      "location": "pages/poster-stage-select/index.html",
+      "slug": "poster-stage-select",
+      "order": 22,
+      "parent": "posters",
+      "title": "Select a Pillar",
+      "description": "NES-style \"Push start, select a pillar\" grid: eight-bit heads for the seven pillars, the Future Traveler in the center and THE VOID, with a QR code to hax.psu.edu.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_stage_select_poster.png",
+        "tags": [
+          "stage-select"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-bulletin-board",
+      "indent": 1,
+      "location": "pages/poster-bulletin-board/index.html",
+      "slug": "poster-bulletin-board",
+      "order": 23,
+      "parent": "posters",
+      "title": "Bulletin board",
+      "description": "A campus bulletin board covered in the HAX posters, some peeling, under the banner \"HAX: Take one. Skill up. Build the future.\" Pixel students reach up to read them; the Void looms on the left and a bright future city glows on the right, where the Future Traveler waits.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/hax_bulletin_board.png",
+        "tags": [
+          "scene"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "poster-videos",
+      "indent": 1,
+      "location": "pages/poster-videos/index.html",
+      "slug": "poster-videos",
+      "order": 24,
+      "parent": "posters",
+      "title": "Campaign videos",
+      "description": "Pillar stage videos, student stories, the logo sting and console start-up intros.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_stage_select_poster.png",
+        "tags": [
+          "video"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "class-club-lab",
+      "indent": 1,
+      "location": "pages/class-club-lab/index.html",
       "slug": "class-club-lab",
-      "order": 98,
-      "parent": "item-e7b4d46e-93f9-48c0-8905-28ec9a29fc23",
+      "order": 6,
+      "parent": "talks",
       "title": "Class, club, lab",
-      "description": "",
+      "description": "Venn diagram of three overlapping circles labeled Class, Club and Lab.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/class-club-lab-pipeline.png",
-        "tags": "diagram",
+        "tags": [
+          "diagram"
+        ],
         "created": 1795458311,
-        "updated": 1795458311
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-6a6ab168-ec11-4856-9e59-f385c611baa4",
+      "id": "talks",
       "indent": 0,
-      "location": "pages/item-6a6ab168-ec11-4856-9e59-f385c611baa4/index.html",
+      "location": "pages/talks/index.html",
+      "slug": "talks",
+      "order": 7,
+      "parent": null,
+      "title": "Talks",
+      "description": "Diagrams and explainers for presentations.",
+      "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/hax-in-a-minute/media/stills/05-lift-off.png",
+        "created": 1795458310,
+        "updated": 1795622194
+      }
+    },
+    {
+      "id": "use-the-art",
+      "indent": 0,
+      "location": "pages/use-the-art/index.html",
       "slug": "use-the-art",
-      "order": 99,
+      "order": 8,
       "parent": null,
       "title": "Use the art",
-      "description": "",
+      "description": "Attribution, licensing and hotlinking.",
       "metadata": {
         "published": true,
         "image": "https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/funny-traveler-30.jpeg",
-        "tags": "",
         "created": 1795458311,
-        "updated": 1795458311
+        "updated": 1795622194
       }
     },
     {
-      "id": "item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1",
+      "id": "about",
       "indent": 0,
-      "location": "pages/item-e1f5c39d-291c-44ba-98a7-4c1cc55b58d1/index.html",
+      "location": "pages/about/index.html",
       "slug": "about",
-      "order": 100,
+      "order": 9,
       "parent": null,
       "title": "About",
       "description": "What this site is and who makes it.",
       "metadata": {
-        "created": 1795618512,
-        "updated": 1795618512,
-        "images": [],
-        "videos": [],
         "published": true,
-        "files": [],
-        "hideInMenu": false
+        "created": 1795618512,
+        "updated": 1795618512
       }
     },
     {
-      "id": "item-240ccb66-8533-4dd4-b3eb-6c9a92cf0035",
+      "id": "contact",
       "indent": 0,
-      "location": "pages/item-240ccb66-8533-4dd4-b3eb-6c9a92cf0035/index.html",
+      "location": "pages/contact/index.html",
       "slug": "contact",
-      "order": 101,
+      "order": 10,
       "parent": null,
       "title": "Contact",
       "description": "How to reach the people who make HAX.",
       "metadata": {
-        "created": 1795618513,
-        "updated": 1795618513,
-        "images": [],
-        "videos": [],
         "published": true,
-        "files": [],
-        "hideInMenu": false
+        "created": 1795618513,
+        "updated": 1795618513
       }
     },
     {
-      "id": "item-df55570d-6a2a-4db9-b2cc-a6eddb7b490c",
+      "id": "privacy",
       "indent": 0,
-      "location": "pages/item-df55570d-6a2a-4db9-b2cc-a6eddb7b490c/index.html",
+      "location": "pages/privacy/index.html",
       "slug": "privacy",
-      "order": 102,
+      "order": 11,
       "parent": null,
       "title": "Privacy",
       "description": "What this site keeps about you, in plain words.",
       "metadata": {
-        "created": 1795618515,
-        "updated": 1795618515,
-        "images": [],
-        "videos": [],
         "published": true,
-        "files": [],
-        "hideInMenu": true
+        "hideInMenu": true,
+        "created": 1795618515,
+        "updated": 1795618515
       }
     }
-  ]
+  ],
+  "location": "/_sites/hax-art/index.html"
 }

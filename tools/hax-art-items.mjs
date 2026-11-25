@@ -201,7 +201,7 @@ add({
   image: raw("haxtheweb/rpg-glitch/media/rpg-glitch-still.png"),
   content: [
     p("The <code>rpg-character</code> is a HAX web component: a little pixel character built from a seed, with hats, costumes, pets and more. Every piece here uses the element's own art. Here is one, live on this page:"),
-    `<rpg-character seed="btopro" hat="knight" walking></rpg-character>`,
+    `<rpg-character seed="btopro" hat="knight" walking=""></rpg-character>`,
     links([["https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character", "rpg-character on GitHub"], ["rpg-me", "RPG me: make your own"]]),
   ].join("\n"),
 });
@@ -218,7 +218,7 @@ add({
   tags: ["tool", "interactive"],
   content: [
     p("RPG me is one of the tools of the HAX art movement: a character builder for the <code>rpg-character</code>. Pick a base, face, hair, clothes, skin, hat and more, and RPG me gives you a character code and a link that rebuild the character that stands for you across HAX, on any page that loads HAX."),
-    `<rpg-character seed="HAX" walking></rpg-character>`,
+    `<rpg-character seed="HAX" walking=""></rpg-character>`,
     p("RPG me is its own app, at its own address: rpg.art.hax.cloud. It lives here because it is part of the art; it runs on its own so you can share it, link to it and come back to it. Its old address, rpg-me.hax.cloud, takes you there."),
     cta("https://rpg.art.hax.cloud/", "Open RPG me"),
     links([["https://github.com/haxtheweb/rpg-me", "rpg-me on GitHub"], ["rpg-glitch", "RPG Glitch: its links open in RPG me"]]),

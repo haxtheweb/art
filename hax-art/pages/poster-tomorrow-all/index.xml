@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+<id>poster-tomorrow-all</id>
+<indent>1</indent>
+<location>pages/poster-tomorrow-all/index.xml</location>
+<slug>poster-tomorrow-all</slug>
+<order>80</order>
+<parent>posters</parent>
+<title>World of Tomorrow: UBIQUITY</title>
+<description></description>
+<metadata>
+<published>true</published>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png</image>
+<tags>
+<item>tomorrow</item>
+</tags>
+<created>1795458310</created>
+<updated>1795622194</updated>
+</metadata>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png" alt="1960s travel-poster style: a pixel Future Traveler beside a geodesic sphere, rocket and rainbow on a red planet, tinted in all seven pillar colors. Title &quot;UBIQUITY&quot;, tagline &quot;The home of the future, now!&quot;, with a QR code and hax.psu.edu."></media-image>
+<ul><li><strong>Series:</strong> World of Tomorrow pillars</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>
+<p><strong>Review before promoting.</strong> Inspired by 1960s world-of-tomorrow and space travel posters; reviewed and kept, November 2026. See <a href="https://github.com/haxtheweb/art/blob/main/LICENSING.md">LICENSING.md</a>.</p>
+<ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png">Full-size still</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.mp4">Video (MP4)</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_tomorrow_all.gif">GIF</a></li><li><a href="https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_tomorrow_all.pdf">11×17 print (PDF)</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_tomorrow_all_poster.png">View on GitHub</a></li></ul>]]></content>
+</item>

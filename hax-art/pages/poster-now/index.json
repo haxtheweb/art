@@ -1,0 +1,20 @@
+{
+    "id": "poster-now",
+    "indent": 1,
+    "location": "pages/poster-now/index.json",
+    "slug": "poster-now",
+    "order": 79,
+    "parent": "posters",
+    "title": "You made it to the future",
+    "description": "",
+    "metadata": {
+        "published": true,
+        "image": "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png",
+        "tags": [
+            "quest"
+        ],
+        "created": 1795458310,
+        "updated": 1795622194
+    },
+    "content": "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png\" alt=\"Starry 8-bit poster: &quot;STOP: NOW. You made it to the future.&quot; Humans + Agents = Amazing Experience, seven pillars on Ubiquity, &quot;Start building.&quot; and a QR code.\"></media-image>\n<ul><li><strong>Series:</strong> The Quest</li><li><strong>Size:</strong> 1080 × 1350 px</li></ul>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/posters/social/hax_now_poster.png\">Full-size still</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.mp4\">Video (MP4)</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_now.gif\">GIF</a></li><li><a href=\"https://github.com/haxtheweb/art/releases/download/media-2026-11/hax_campus_now.pdf\">11×17 print (PDF)</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/haxtheweb/posters/social/hax_now_poster.png\">View on GitHub</a></li></ul>"
+}

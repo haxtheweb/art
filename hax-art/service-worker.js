@@ -22,7 +22,7 @@ var shellFiles = [
     ],
     [
         "site.json",
-        "yAPUUlaj4mMGIa1XzJciupqWF4i_t1pfJ77S3wQosU"
+        "F8OIf6a5SPnb7R_vENTlK2tE6eaizW5i5cL8wgYQnQ"
     ],
     [
         "manifest.json",
@@ -34,7 +34,7 @@ var shellFiles = [
     ],
     [
         "assets/icon-192x192.png",
-        "EcnlN6ctJkwmmpRGcDlhsOkWe1BBYB0v1wG6TxuvqlY"
+        "k4C4DjZEcqOxT8WyXVRmMLra_kVPjpLQSMlp96fxxQ"
     ]
 ];
 

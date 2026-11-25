@@ -1,0 +1,14 @@
+id: brand
+indent: 0
+location: pages/brand/index.yaml
+slug: brand
+order: 54
+parent: null
+title: Brand
+description: ""
+metadata:
+  published: true
+  image: "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/HAX.psu%20Future%20traveler-circle.png"
+  created: 1795458309
+  updated: 1795622194
+content: "<p>HAX logos, stickers, banners and posters. The vector logo is <a href=\"https://github.com/haxtheweb/art/blob/main/HAXLogo.svg\">HAXLogo.svg</a>; layered source files (.psd, .ai) live in the <a href=\"https://github.com/haxtheweb/art/tree/main/haxtheweb\">haxtheweb</a> folder on GitHub.</p>"
