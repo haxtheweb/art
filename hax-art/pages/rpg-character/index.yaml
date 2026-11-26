@@ -8,7 +8,7 @@ title: rpg-character
 description: ""
 metadata:
   published: true
-  image: "https://raw.githubusercontent.com/haxtheweb/art/main/haxtheweb/rpg-glitch/media/rpg-glitch-still.png"
+  image: "https://raw.githubusercontent.com/haxtheweb/art/main/web/haxtheweb/rpg-glitch/media/rpg-glitch-still-800w.webp"
   created: 1795458309
   updated: 1795622194
 content: "<p>The <code>rpg-character</code> is a HAX web component: a little pixel character built from a seed, with hats, costumes, pets and more. Every piece here uses the element's own art. Here is one, live on this page:</p>\n<rpg-character seed=\"btopro\" hat=\"knight\" walking=\"\"></rpg-character>\n<ul><li><a href=\"https://github.com/haxtheweb/webcomponents/tree/main/elements/rpg-character\">rpg-character on GitHub</a></li><li><a href=\"rpg-me\">RPG me: make your own</a></li></ul>"

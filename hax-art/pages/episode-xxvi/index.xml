@@ -10,14 +10,14 @@
 <description></description>
 <metadata>
 <published>true</published>
-<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg</image>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/episode-xxvi/episode-xxvi-crawl-800w.webp</image>
 <tags>
 <item>interactive</item>
 </tags>
 <created>1795458310</created>
-<updated>1795622194</updated>
+<updated>1795711246</updated>
 </metadata>
-<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/episode-xxvi/episode-xxvi-crawl.jpg" alt="A starfield with gold text tilted back into space: Episode XXVI, Return of the Open Web, the opening of a crawl about HAX in 2026."></media-image>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/episode-xxvi/episode-xxvi-crawl-1600w.webp" alt="A starfield with gold text tilted back into space: Episode XXVI, Return of the Open Web, the opening of a crawl about HAX in 2026."></media-image>
 <p>A space-opera opening crawl that catches people up on HAX: where it came from, the web standards it stands on, and where it is in 2026. It ends on a Join the Rebellion card. Viewers with reduced motion get a static, readable version.</p>
 <p><em>A parody of the classic sci-fi film opening crawl. The text and the synthesized fanfare are original, and no footage, logo or score is used.</em></p>
 <simple-cta link="https://haxtheweb.github.io/art/presentation-materials/episode-xxvi/" label="Watch Episode XXVI"></simple-cta>

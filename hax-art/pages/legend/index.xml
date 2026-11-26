@@ -10,13 +10,13 @@
 <description></description>
 <metadata>
 <published>true</published>
-<image>https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png</image>
+<image>https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/Legend-800w.webp</image>
 <tags>
 <item>diagram</item>
 </tags>
 <created>1795458311</created>
-<updated>1795622194</updated>
+<updated>1795711246</updated>
 </metadata>
-<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png" alt="Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role."></media-image>
+<content><![CDATA[<media-image source="https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/Legend-1600w.webp" alt="Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role."></media-image>
 <ul><li><a href="https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png">Full-size file</a></li><li><a href="https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png">View on GitHub</a></li></ul>]]></content>
 </item>

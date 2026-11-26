@@ -8,20 +8,41 @@
 // repo promises never to rename), so the site holds no copies of the art.
 // Interactive pieces link to their GitHub Pages address.
 import { readFile, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const out = process.argv[2];
 if (!out) {
-  console.error("usage: node tools/hax-art-items.mjs <out.json>");
+  console.error("usage: node tools/hax-art-items.mjs <out.json> | --list-images");
   process.exit(1);
 }
+// --list-images prints every image the site shows, one repo path per line,
+// for tools/web-images.py to make web-sized copies of
+const listImages = out === "--list-images";
 const RAW = "https://raw.githubusercontent.com/haxtheweb/art/main/";
 const PAGES = "https://haxtheweb.github.io/art/";
 const REPO = "https://github.com/haxtheweb/art/blob/main/";
 const TREE = "https://github.com/haxtheweb/art/tree/main/";
 const raw = (p) => RAW + p.split("/").map(encodeURIComponent).join("/");
+// Web-sized copies (tools/web-images.py): the hero, cards and in-page images
+// use a WebP copy under web/ when there is one, so a page doesn't download
+// multi-megabyte originals to show them a few hundred pixels wide. The
+// originals keep their paths and every page links the full-size file.
+const shown = new Set();
+const webCopy = (file, width) => {
+  shown.add(file);
+  const copy = `web/${file.replace(/\.[^./]+$/, "")}-${width}w.webp`;
+  return existsSync(path.join(root, copy)) ? raw(copy) : raw(file);
+};
+// a card's image, given as a raw URL (or a manifest url), as its 800px copy
+const cardImage = (url) => {
+  if (typeof url !== "string" || url.indexOf(RAW) !== 0) {
+    return url || "";
+  }
+  return webCopy(decodeURIComponent(url.substring(RAW.length)), 800);
+};
 const esc = (s) =>
   String(s)
     .replace(/&/g, "&amp;")
@@ -32,7 +53,7 @@ const manifest = JSON.parse(await readFile(path.join(root, "manifest.json"), "ut
 
 // ---------- small HTML helpers (HAX-capable tags only) ----------
 const image = (file, alt, caption) =>
-  `<media-image source="${raw(file)}" alt="${esc(alt)}"${caption ? ` caption="${esc(caption)}"` : ""}></media-image>`;
+  `<media-image source="${webCopy(file, 1600)}" alt="${esc(alt)}"${caption ? ` caption="${esc(caption)}"` : ""}></media-image>`;
 const p = (text) => `<p>${text}</p>`;
 const cta = (link, label) => `<simple-cta link="${esc(link)}" label="${esc(label)}"></simple-cta>`;
 const links = (pairs) =>
@@ -56,7 +77,7 @@ function add(item) {
       published: item.published !== false,
       // left out of the menu, still linked (the Privacy page)
       ...(item.hideInMenu ? { hideInMenu: true } : {}),
-      image: item.image || "",
+      image: cardImage(item.image),
       // a comma-separated string, as `hax site node:add --tags` writes it;
       // older HAXcms runtimes still call tags.split()
       tags: (item.tags || []).join(","),
@@ -564,5 +585,12 @@ add({
 // A static HAXsite serves site.json as-is, so an unpublished page would still
 // be public: leave a page out rather than marking it unpublished.
 
+if (listImages) {
+  // the hero and the logo, set by tools/rebuild-hax-art.sh
+  shown.add("future-traveler/funny-traveler-08.png");
+  shown.add("future-traveler/funny-traveler-15.png");
+  console.log([...shown].join("\n"));
+  process.exit(0);
+}
 await writeFile(out, JSON.stringify(items, null, 2));
 console.log(`wrote ${items.length} pages (${items.filter((i) => !i.metadata.published).length} unpublished) to ${out}`);
