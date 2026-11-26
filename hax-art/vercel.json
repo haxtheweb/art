@@ -10,7 +10,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\", </index.md>; rel=\"alternate\"; type=\"text/markdown\", </sitemap.xml>; rel=\"sitemap\""
+          "value": "<https://raw.githubusercontent.com/haxtheweb/art/main/web/future-traveler/funny-traveler-08-1600w.jpg>; rel=preload; as=image; fetchpriority=high, </llms.txt>; rel=\"describedby\"; type=\"text/markdown\", </index.md>; rel=\"alternate\"; type=\"text/markdown\", </sitemap.xml>; rel=\"sitemap\""
         }
       ]
     }
