@@ -8,9 +8,9 @@ title: Legend
 description: ""
 metadata:
   published: true
-  image: "https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png"
+  image: "https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/Legend-800w.webp"
   tags:
     - diagram
   created: 1795458311
-  updated: 1795622194
-content: "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png\" alt=\"Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png\">View on GitHub</a></li></ul>"
+  updated: 1795711246
+content: "<media-image source=\"https://raw.githubusercontent.com/haxtheweb/art/main/web/presentation-materials/Legend-1600w.webp\" alt=\"Legend for the HAX diagrams on black: icons for developers, projects and end users, each with its role.\"></media-image>\n<ul><li><a href=\"https://raw.githubusercontent.com/haxtheweb/art/main/presentation-materials/Legend.png\">Full-size file</a></li><li><a href=\"https://github.com/haxtheweb/art/blob/main/presentation-materials/Legend.png\">View on GitHub</a></li></ul>"

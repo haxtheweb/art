@@ -22,6 +22,18 @@ rm -rf hax-art/.git hax-art/.github
 # paths the HAXcms site folder contract retires (nothing loads them), in
 # case the installed CLI still writes them
 rm -rf hax-art/false hax-art/theme hax-art/create-cli.recipe
+# web-sized WebP copies of every image the site shows (hero, cards, page
+# images, the logo), so pages don't download multi-megabyte originals;
+# hax-art-items.mjs uses a copy wherever one exists, the original otherwise
+if command -v python3 > /dev/null && python3 -c "import PIL" 2> /dev/null; then
+  node tools/hax-art-items.mjs --list-images | python3 tools/web-images.py
+  python3 tools/web-images.py --widths 160 future-traveler/funny-traveler-15.png
+  # the hero is also the site's social card (og:image): JPEG, which every
+  # network previews
+  python3 tools/web-images.py --widths 1600 --format jpg future-traveler/funny-traveler-08.png
+else
+  echo "python3 with Pillow not found: using the original images (see tools/web-images.py)"
+fi
 node tools/hax-art-items.mjs "$TMP/items.json"
 # a page whose title, description and content are unchanged keeps its
 # created / updated dates, and a changed page keeps its created date, so a
@@ -58,14 +70,17 @@ PREVIOUS_SITE="$TMP/previous-site.json" node -e "
 const fs = require('fs');
 const s = JSON.parse(fs.readFileSync('site.json', 'utf8'));
 const RAW = 'https://raw.githubusercontent.com/haxtheweb/art/main/future-traveler/';
+const WEB = 'https://raw.githubusercontent.com/haxtheweb/art/main/web/future-traveler/';
+// the web-sized copy when tools/web-images.py made one, the original otherwise
+const pick = (copy, original) => fs.existsSync('../web/future-traveler/' + copy) ? WEB + copy : RAW + original;
 s.title = 'HAX art';
 s.description = 'Art and media from the HAX project, browsed with HAX.';
 s.author = 'HAX (haxtheweb)';
 s.metadata.author = { name: 'HAX (haxtheweb)' };
 s.metadata.site.domain = 'https://art.hax.cloud';
 s.metadata.site.sameAs = ['https://github.com/haxtheweb', 'https://github.com/haxtheweb/art'];
-s.metadata.site.logo = RAW + 'funny-traveler-15.png';
-s.metadata.theme.variables.image = RAW + 'funny-traveler-08.png';
+s.metadata.site.logo = pick('funny-traveler-15-160w.webp', 'funny-traveler-15.png');
+s.metadata.theme.variables.image = pick('funny-traveler-08-1600w.jpg', 'funny-traveler-08.png');
 s.metadata.theme.variables.hexCode = '#c8102e';
 if (fs.existsSync(process.env.PREVIOUS_SITE || '')) {
   const prev = JSON.parse(fs.readFileSync(process.env.PREVIOUS_SITE, 'utf8'));
